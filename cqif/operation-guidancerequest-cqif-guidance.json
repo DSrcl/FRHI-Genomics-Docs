@@ -1,0 +1,72 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "guidancerequest-cqif-guidance",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>guidance</h2><p>OPERATION: guidance</p><div><p>The guidance operation requests clinical decision support guidance based on a specific knowledge module</p>\n</div><p>URL: [base]/$guidance</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>request</td><td>1..*</td><td>Basic</td><td/><td><div><p>The input guidance request information</p>\n</div></td></tr><tr><td>IN</td><td>inputResource</td><td>0..*</td><td>DomainResource</td><td/><td><div><p>Input data for the request(s)</p>\n</div></td></tr><tr><td>OUT</td><td>response</td><td>1..*</td><td>Basic</td><td/><td><div><p>The results of the request(s)</p>\n</div></td></tr><tr><td>OUT</td><td>outputResource</td><td>0..*</td><td>DomainResource</td><td/><td><div><p>Any output resources of the request(s)</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/guidancerequest-cqif-guidance",
+  "name": "guidance",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The guidance operation requests clinical decision support guidance based on a specific knowledge module",
+  "status": "draft",
+  "date": "2015-07-26T15:54:10-04:00",
+  "kind": "operation",
+  "code": "guidance",
+  "system": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "request",
+      "use": "in",
+      "min": 1,
+      "max": "*",
+      "documentation": "The input guidance request information",
+      "type": "Basic",
+      "profile": {
+        "reference": "http://hl7.org/fhir/StructureDefinition/guidancerequest-cqif-cqif-guidancerequest"
+      }
+    },
+    {
+      "name": "inputResource",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "Input data for the request(s)",
+      "type": "DomainResource"
+    },
+    {
+      "name": "response",
+      "use": "out",
+      "min": 1,
+      "max": "*",
+      "documentation": "The results of the request(s)",
+      "type": "Basic",
+      "profile": {
+        "reference": "http://hl7.org/fhir/StructureDefinition/guidanceresponse-cqif-cqif-guidanceresponse"
+      }
+    },
+    {
+      "name": "outputResource",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Any output resources of the request(s)",
+      "type": "DomainResource"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><AuditEvent xmlns="http://hl7.org/fhir">
+ <id value="example-rest"/>
+  <text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example-rest</p><h3>Events</h3><table><tr><td>-</td><td><b>Type</b></td><td><b>Subtype</b></td><td><b>Action</b></td><td><b>DateTime</b></td><td><b>Outcome</b></td></tr><tr><td>*</td><td>Restful Operation <span>(Details : {http://hl7.org/fhir/audit-event-type code &#39;rest&#39; = &#39;RESTful Operation&#39;, given as &#39;Restful Operation&#39;})</span></td><td>vread <span>(Details : {http://hl7.org/fhir/restful-interaction code &#39;vread&#39; = &#39;vread&#39;, given as &#39;vread&#39;})</span></td><td>R</td><td>Jun 20, 2013 7:42:24 PM</td><td>0</td></tr></table><h3>Participants</h3><table><tr><td>-</td><td><b>UserId</b></td><td><b>AltId</b></td><td><b>Name</b></td><td><b>Requestor</b></td></tr><tr><td>*</td><td>95</td><td>601847123</td><td>Grahame Grieve</td><td>true</td></tr></table><h3>Sources</h3><table><tr><td>-</td><td><b>Site</b></td><td><b>Identifier</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Cloud</td><td>hl7connect.healthintersections.com.au</td><td>Web Server (Details: http://hl7.org/fhir/security-source-type code 3 = &#39;Web Server&#39;, stated as &#39;Web Server&#39;)</td></tr></table><h3>Objects</h3><table><tr><td>-</td><td><b>Reference</b></td><td><b>Type</b></td><td><b>Lifecycle</b></td></tr><tr><td>*</td><td><a>Patient/example/_history/1</a></td><td>2</td><td>6</td></tr></table></div></text><event>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/audit-event-type"/>
+        <code value="rest"/>
+        <display value="Restful Operation"/>
+      </coding>
+    </type>
+    <subtype>
+      <coding>
+        <system value="http://hl7.org/fhir/restful-interaction"/>
+        <code value="vread"/>
+        <display value="vread"/>
+      </coding>
+    </subtype>
+    <action value="R"/>
+    <dateTime value="2013-06-20T23:42:24Z"/>
+    <outcome value="0"/>
+  </event>
+  <participant>
+    <userId value="95"/>
+    <altId value="601847123"/>
+    <name value="Grahame Grieve"/>
+    <requestor value="true"/>
+  </participant>
+  <source>
+    <site value="Cloud"/>
+    <identifier value="hl7connect.healthintersections.com.au"/>
+    <type>
+      <system value="http://hl7.org/fhir/security-source-type"/>
+      <code value="3"/>
+      <display value="Web Server"/>
+    </type>
+  </source>
+  <object>
+    <reference>
+      <reference value="Patient/example/_history/1"/>
+    </reference>
+    <type value="2"/>
+    <lifecycle value="6"/>
+  </object>
+</AuditEvent>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="patient-hspc-addressUse"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>HSPC Address Use</h2>
+      <p>A set of codes that describe the manner in which an addressed is used.</p>
+      <p>This value set has an inline code system Intermountain Healthcare HDD, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>15053040
+            <a name="15053040"> </a>
+          </td>
+          <td>Permanent</td>
+          <td>A place of permanent physical residence.</td>
+        </tr>
+        <tr>
+          <td>50450836
+            <a name="50450836"> </a>
+          </td>
+          <td>Primary office</td>
+          <td>An office, work, or business location that represents where the most work time is spent..</td>
+        </tr>
+      </table>
+      <p>In addition, this value set includes codes from other code systems:</p>
+      <ul>
+        <li>Include these codes as defined in 
+          <a href="../v3/AddressUse/index.html">http://hl7.org/fhir/v3/AddressUse</a>
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>BAD</td>
+              <td>Bad address</td>
+              <td>Description: A flag indicating that the address is bad, in fact, useless.</td>
+            </tr>
+            <tr>
+              <td>PHYS</td>
+              <td>Physical visit address</td>
+              <td>Description: Used primarily to visit an address.</td>
+            </tr>
+            <tr>
+              <td>PST</td>
+              <td>Postal address</td>
+              <td>Description: Used to send mail.</td>
+            </tr>
+            <tr>
+              <td>HP</td>
+              <td>Primary home</td>
+              <td>Description: The primary home, to reach a person after business hours.</td>
+            </tr>
+            <tr>
+              <td>PUB</td>
+              <td>Public</td>
+              <td>Description: Indicates a work place address or telecommunication address that is a &#39;standard&#39; address which may reach a reception service, mail-room, or other intermediary prior to the target entity.</td>
+            </tr>
+            <tr>
+              <td>TMP</td>
+              <td>Temporary address</td>
+              <td>Description: A temporary address, may be good for visit or mailing. Note that an address history can provide more detailed information.</td>
+            </tr>
+            <tr>
+              <td>HV</td>
+              <td>Vacation home</td>
+              <td>Description: A vacation home, to reach a person while on vacation.</td>
+            </tr>
+            <tr>
+              <td>WP</td>
+              <td>Work place</td>
+              <td>Description: An office address. First choice for business related contacts during business hours.</td>
+            </tr>
+            <tr>
+              <td>H</td>
+              <td>Home address</td>
+              <td>Description: A communication address at a home, attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call. Typically used with urgent cases, or if no other contacts are available.</td>
+            </tr>
+            <tr>
+              <td>DIR</td>
+              <td>Direct address</td>
+              <td>Description: Indicates a work place address or telecommunication address that reaches the individual or organization directly without intermediaries. For phones, often referred to as a &#39;private line&#39;.</td>
+            </tr>
+            <tr>
+              <td>CONF</td>
+              <td>Confidential address</td>
+              <td>Description: Indicates that the address is considered sensitive and should only be shared or published in accordance with organizational controls governing patient demographic information with increased sensitivity. Uses of Addresses.   Lloyd to supply more complete description.</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/patient-hspc-addressUse"/>
+  <version value="0.5.0"/>
+  <name value="HSPC Address Use"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <description value="A set of codes that describe the manner in which an addressed is used."/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <system value="Intermountain Healthcare HDD"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="15053040"/>
+      <display value="Permanent"/>
+      <definition value="A place of permanent physical residence."/>
+    </concept>
+    <concept>
+      <code value="50450836"/>
+      <display value="Primary office"/>
+      <definition value="An office, work, or business location that represents where the most work time is spent.."/>
+    </concept>
+  </codeSystem>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/AddressUse"/>
+      <concept>
+        <code value="BAD"/>
+        <display value="Bad address"/>
+      </concept>
+      <concept>
+        <code value="PHYS"/>
+        <display value="Physical visit address"/>
+      </concept>
+      <concept>
+        <code value="PST"/>
+        <display value="Postal address"/>
+      </concept>
+      <concept>
+        <code value="HP"/>
+        <display value="Primary home"/>
+      </concept>
+      <concept>
+        <code value="PUB"/>
+        <display value="Public"/>
+      </concept>
+      <concept>
+        <code value="TMP"/>
+        <display value="Temporary address"/>
+      </concept>
+      <concept>
+        <code value="HV"/>
+        <display value="Vacation home"/>
+      </concept>
+      <concept>
+        <code value="WP"/>
+        <display value="Work place"/>
+      </concept>
+      <concept>
+        <code value="H"/>
+        <display value="Home address"/>
+      </concept>
+      <concept>
+        <code value="DIR"/>
+        <display value="Direct address"/>
+      </concept>
+      <concept>
+        <code value="CONF"/>
+        <display value="Confidential address"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

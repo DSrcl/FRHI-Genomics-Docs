@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <name value="Type options for Patient.deceased[x]"/>
+      <description value="Type options for Patient.deceased[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:cb0c1200-3685-4df4-8a83-a35b8ab14c42"/>
+        <timestamp value="2015-07-24T17:36:05-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="boolean"/>
+          <display value="boolean"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="dateTime"/>
+          <display value="dateTime"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs3"/>
+      <name value="Type options for Patient.multipleBirth[x]"/>
+      <description value="Type options for Patient.multipleBirth[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:17212d2b-086a-4611-bb10-9809a1a9ebc0"/>
+        <timestamp value="2015-07-24T17:36:05-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="boolean"/>
+          <display value="boolean"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="integer"/>
+          <display value="integer"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs4"/>
+      <name value="Type options for Patient.careProvider"/>
+      <description value="Type options for Patient.careProvider"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:4a0c7ee7-3f6c-4975-833b-4a5228c5b1f6"/>
+        <timestamp value="2015-07-24T17:36:05-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2014-11-17T00:00:00-05:00"/>
+  <publisher value="Health Level Seven International (Orders and Observations - US Lab)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="Subject of lab test."/>
+    </extension>
+    <linkId value="Patient"/>
+    <title value="Patient with expanded contact information"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Patient.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="Patient.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="Patient.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Patient.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      </extension>
+      <linkId value="Patient.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      </extension>
+      <linkId value="Patient.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="An Extension"/>
+      </extension>
+      <linkId value="Patient.extension"/>
+      <text value="Extension"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      </extension>
+      <linkId value="Patient.modifierExtension"/>
+      <text value="Extensions that cannot be ignored"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="An identifier for this patient."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="Patient.identifier"/>
+      <text value="An identifier for this patient"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A name associated with the individual."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Name"/>
+      </extension>
+      <linkId value="Patient.name"/>
+      <text value="A name associated with the patient"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.name.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.name.family"/>
+        <text value="family:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </question>
+      <question>
+        <linkId value="Patient.name.given"/>
+        <text value="given:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="ContactPoint"/>
+      </extension>
+      <linkId value="Patient.telecom"/>
+      <text value="A contact detail for the individual"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.telecom.system"/>
+        <text value="type:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.telecom.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.telecom.use"/>
+        <text value="use:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="ContactPoint"/>
+      </extension>
+      <linkId value="Patient.telecom"/>
+      <text value="A contact detail for the individual"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.telecom.system"/>
+        <text value="type:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.telecom.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.telecom.use"/>
+        <text value="use:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="ContactPoint"/>
+      </extension>
+      <linkId value="Patient.telecom"/>
+      <text value="A contact detail for the individual"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.telecom.system"/>
+        <text value="type:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.telecom.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.telecom.use"/>
+        <text value="use:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Patient.gender"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.gender.value"/>
+        <text value="gender"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The date of birth for the individual."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="Patient.birthDate"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.birthDate.value"/>
+        <text value="The date of birth for the individual"/>
+        <type value="dateTime"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Indicates if the individual is deceased or not."/>
+      </extension>
+      <linkId value="Patient.deceased[x]"/>
+      <text value="Indicates if the individual is deceased or not"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.deceased[x]._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <options>
+          <reference value="#vs2"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="Patient.deceased[x]._boolean"/>
+          <question>
+            <linkId value="Patient.deceased[x]._boolean.value"/>
+            <text value="boolean"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="datetime"/>
+          </extension>
+          <linkId value="Patient.deceased[x]._dateTime"/>
+          <question>
+            <linkId value="Patient.deceased[x]._dateTime.value"/>
+            <text value="dateTime"/>
+            <type value="dateTime"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Addresses for the individual."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Address"/>
+      </extension>
+      <linkId value="Patient.address"/>
+      <text value="Addresses for the individual"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.address.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.address.line"/>
+        <text value="line:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </question>
+      <question>
+        <linkId value="Patient.address.city"/>
+        <text value="city:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.address.state"/>
+        <text value="state:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.address.postalCode"/>
+        <text value="post code:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.address.country"/>
+        <text value="country:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.address.use"/>
+        <text value="use:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="This field contains a patient&#39;s most recent marital (civil) status."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="Patient.maritalStatus"/>
+      <text value="Marital (civil) status of a patient"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.maritalStatus.coding"/>
+        <text value="code:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Patient.maritalStatus.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Indicates whether the patient is part of a multiple or indicates the actual birth order."/>
+      </extension>
+      <linkId value="Patient.multipleBirth[x]"/>
+      <text value="Whether patient is part of a multiple birth"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.multipleBirth[x]._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <options>
+          <reference value="#vs3"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="Patient.multipleBirth[x]._boolean"/>
+          <question>
+            <linkId value="Patient.multipleBirth[x]._boolean.value"/>
+            <text value="boolean"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="integer"/>
+          </extension>
+          <linkId value="Patient.multipleBirth[x]._integer"/>
+          <question>
+            <linkId value="Patient.multipleBirth[x]._integer.value"/>
+            <text value="integer"/>
+            <type value="integer"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Image of the patient."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Attachment"/>
+      </extension>
+      <linkId value="Patient.photo"/>
+      <text value="Image of the patient"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A contact party (e.g. guardian, partner, friend) for the patient."/>
+      </extension>
+      <linkId value="Patient.contact"/>
+      <title value="A contact party (e.g. guardian, partner, friend) for the patient"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Patient.contact.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.contact.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="Patient.contact.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="Patient.contact.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The nature of the relationship between the patient and the contact person."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="Patient.contact.relationship"/>
+        <text value="The kind of relationship"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.contact.relationship.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.relationship.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A name associated with the contact person."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Name"/>
+        </extension>
+        <linkId value="Patient.contact.name"/>
+        <text value="A name associated with the contact person"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.contact.name.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.name.family"/>
+          <text value="family:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.name.given"/>
+          <text value="given:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A contact detail for the person, e.g. a telephone number or an email address."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="ContactPoint"/>
+        </extension>
+        <linkId value="Patient.contact.telecom"/>
+        <text value="A contact detail for the person"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.contact.telecom.system"/>
+          <text value="type:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.telecom.value"/>
+          <text value="value:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.telecom.use"/>
+          <text value="use:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Address for the contact person."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Address"/>
+        </extension>
+        <linkId value="Patient.contact.address"/>
+        <text value="Address for the contact person"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.contact.address.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.address.line"/>
+          <text value="line:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.address.city"/>
+          <text value="city:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.address.state"/>
+          <text value="state:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.address.postalCode"/>
+          <text value="post code:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.address.country"/>
+          <text value="country:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.address.use"/>
+          <text value="use:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="Patient.contact.gender"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.contact.gender.value"/>
+          <text value="gender"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Organization on behalf of which the contact is acting or for which the contact is working."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="Patient.contact.organization"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="Patient.contact.organization.value"/>
+          <text value="Organization that is associated with the contact"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The period during which this contact person or organization is valid to be contacted relating to this patient."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Period"/>
+        </extension>
+        <linkId value="Patient.contact.period"/>
+        <text value="The period during which this contact person or organization is valid to be contacted relating to this patient"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.contact.period.low"/>
+          <text value="start:"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.contact.period.end"/>
+          <text value="end:"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="This patient is known to be an animal."/>
+      </extension>
+      <linkId value="Patient.animal"/>
+      <title value="This patient is known to be an animal (non-human)"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Patient.animal.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.animal.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="Patient.animal.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="Patient.animal.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies the high level taxonomic categorization of the kind of animal."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="Patient.animal.species"/>
+        <text value="E.g. Dog, Cow"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.animal.species.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.animal.species.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies the detailed categorization of the kind of animal."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="Patient.animal.breed"/>
+        <text value="E.g. Poodle, Angus"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.animal.breed.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.animal.breed.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicates the current state of the animal&#39;s reproductive organs."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="Patient.animal.genderStatus"/>
+        <text value="E.g. Neutered, Intact"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.animal.genderStatus.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.animal.genderStatus.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Languages which may be used to communicate with the patient about his or her health."/>
+      </extension>
+      <linkId value="Patient.communication"/>
+      <title value="A list of Languages which may be used to communicate with the patient about his or her health"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Patient.communication.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.communication.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="Patient.communication.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="Patient.communication.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case. E.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="Patient.communication.language"/>
+        <text value="The language which can be used to communicate with the patient about his or her health"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.communication.language.coding"/>
+          <text value="code:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Patient.communication.language.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicates whether or not the Patient prefers this language (over other languages he masters up a certain level)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="boolean"/>
+        </extension>
+        <linkId value="Patient.communication.preferred"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.communication.preferred.value"/>
+          <text value="Language preference indicator"/>
+          <type value="boolean"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Patient&#39;s nominated care provider."/>
+      </extension>
+      <linkId value="Patient.careProvider"/>
+      <text value="Patient&#39;s nominated care provider"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.careProvider._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <options>
+          <reference value="#vs4"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Patient.careProvider._Organization"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Patient.careProvider._Organization.value"/>
+            <text value="Organization"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Patient.careProvider._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Patient.careProvider._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Organization that is the custodian of the patient record."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="Patient.managingOrganization"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="Patient.managingOrganization.value"/>
+        <text value="Organization that is the custodian of the patient record"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Link to another patient resource that concerns the same actual patient."/>
+      </extension>
+      <linkId value="Patient.link"/>
+      <title value="Link to another patient resource that concerns the same actual person"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Patient.link.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.link.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="Patient.link.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="Patient.link.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The other patient resource that the link refers to."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="Patient.link.other"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="Patient.link.other.value"/>
+          <text value="The other patient resource that the link refers to"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The type of link between this patient resource and another patient resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="Patient.link.type"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Patient.link.type.value"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Whether this patient record is in active use."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="boolean"/>
+      </extension>
+      <linkId value="Patient.active"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Patient.active.value"/>
+        <text value="Whether this patient&#39;s record is in active use"/>
+        <type value="boolean"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+  </group>
+</Questionnaire>

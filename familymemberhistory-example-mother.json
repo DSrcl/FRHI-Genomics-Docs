@@ -1,0 +1,39 @@
+{
+  "resourceType": "FamilyMemberHistory",
+  "id": "mother",
+  "text": {
+    "status": "generated",
+    "div": "<div>Mother died of a stroke aged 56</div>"
+  },
+  "patient": {
+    "reference": "Patient/100",
+    "display": "Peter Patient"
+  },
+  "relationship": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/familial-relationship",
+        "code": "mother"
+      }
+    ]
+  },
+  "condition": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "371041009",
+            "display": "Embolic Stroke"
+          }
+        ],
+        "text": "Stroke"
+      },
+      "onsetAge": {
+        "value": 56,
+        "units": "a",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
+}

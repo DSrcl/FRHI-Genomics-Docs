@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <name value="Type options for RiskAssessment.subject"/>
+      <description value="Type options for RiskAssessment.subject"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:9299d73e-41a4-46b7-9689-8140dd0ebb69"/>
+        <timestamp value="2015-07-24T17:34:19-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Group"/>
+          <display value="Group"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs3"/>
+      <name value="Type options for RiskAssessment.performer"/>
+      <description value="Type options for RiskAssessment.performer"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:3b89ef7e-e2b5-4b8c-bde7-148e18c55f11"/>
+        <timestamp value="2015-07-24T17:34:19-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Device"/>
+          <display value="Device"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs4"/>
+      <name value="Type options for RiskAssessment.prediction.probability[x]"/>
+      <description value="Type options for RiskAssessment.prediction.probability[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:d3691e70-ad1b-4997-b71f-806737073943"/>
+        <timestamp value="2015-07-24T17:34:19-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="decimal"/>
+          <display value="decimal"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Range"/>
+          <display value="Range"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="CodeableConcept"/>
+          <display value="CodeableConcept"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs5"/>
+      <name value="Type options for RiskAssessment.prediction.when[x]"/>
+      <description value="Type options for RiskAssessment.prediction.when[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:0b37b529-6474-4ba1-89bb-79cea0ea5518"/>
+        <timestamp value="2015-07-24T17:34:19-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Period"/>
+          <display value="Period"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Range"/>
+          <display value="Range"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-07-24T17:31:16-04:00"/>
+  <publisher value="Health Level Seven International (Clinical Decision Support)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="An assessment of the likely outcome(s) for a patient or other subject as well as the likelihood of each outcome."/>
+    </extension>
+    <linkId value="RiskAssessment"/>
+    <title value="Potential outcomes for a subject with likelihood"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="RiskAssessment.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="RiskAssessment.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="RiskAssessment.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="RiskAssessment.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="RiskAssessment.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="RiskAssessment.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="RiskAssessment.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      </extension>
+      <linkId value="RiskAssessment.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      </extension>
+      <linkId value="RiskAssessment.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      </extension>
+      <linkId value="RiskAssessment.extension"/>
+      <text value="Additional Content defined by implementations"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      </extension>
+      <linkId value="RiskAssessment.modifierExtension"/>
+      <text value="Extensions that cannot be ignored"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The patient or group the risk assessment applies to."/>
+      </extension>
+      <linkId value="RiskAssessment.subject"/>
+      <text value="Who/what does assessment apply to?"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="RiskAssessment.subject._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <options>
+          <reference value="#vs2"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="RiskAssessment.subject._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="RiskAssessment.subject._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="RiskAssessment.subject._Group"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Group?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="RiskAssessment.subject._Group.value"/>
+            <text value="Group"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The date (and possibly time) the risk assessment was performed."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="RiskAssessment.date"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="RiskAssessment.date.value"/>
+        <text value="When was assessment made?"/>
+        <type value="dateTime"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="For assessments or prognosis specific to a particular condition, indicates the condition being assessed."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="RiskAssessment.condition"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Condition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="RiskAssessment.condition.value"/>
+        <text value="Condition assessed"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The provider or software application that performed the assessment."/>
+      </extension>
+      <linkId value="RiskAssessment.performer"/>
+      <text value="Who did assessment?"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="RiskAssessment.performer._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <options>
+          <reference value="#vs3"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="RiskAssessment.performer._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="RiskAssessment.performer._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="RiskAssessment.performer._Device"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Device?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="RiskAssessment.performer._Device.value"/>
+            <text value="Device"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Business identifier assigned to the risk assessment."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="RiskAssessment.identifier"/>
+      <text value="Unique identifier for the assessment"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="RiskAssessment.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="RiskAssessment.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="RiskAssessment.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The algorithm, processs or mechanism used to evaluate the risk."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="RiskAssessment.method"/>
+      <text value="Evaluation mechanism"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="RiskAssessment.method.coding"/>
+        <text value="code:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="RiskAssessment.method.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Indicates the source data considered as part of the assessment (FamilyHistory, Observations, Procedures, Conditions, etc.)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="RiskAssessment.basis"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Resource?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="RiskAssessment.basis.value"/>
+        <text value="Information used in assessment"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Describes the expected outcome for the subject."/>
+      </extension>
+      <linkId value="RiskAssessment.prediction"/>
+      <title value="Outcome predicted"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="RiskAssessment.prediction.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="RiskAssessment.prediction.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="RiskAssessment.prediction.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="RiskAssessment.prediction.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="One of the potential outcomes for the patient (e.g. remission, death,  a particular condition)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="RiskAssessment.prediction.outcome"/>
+        <text value="Possible outcome for the subject"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="RiskAssessment.prediction.outcome.coding"/>
+          <text value="code:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="RiskAssessment.prediction.outcome.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="How likely is the outcome (in the specified timeframe)."/>
+        </extension>
+        <linkId value="RiskAssessment.prediction.probability[x]"/>
+        <text value="Likelihood of specified outcome"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="RiskAssessment.prediction.probability[x]._type"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <options>
+            <reference value="#vs4"/>
+          </options>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="decimal"/>
+            </extension>
+            <linkId value="RiskAssessment.prediction.probability[x]._decimal"/>
+            <question>
+              <linkId value="RiskAssessment.prediction.probability[x]._decimal.value"/>
+              <text value="decimal"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Range"/>
+            </extension>
+            <linkId value="RiskAssessment.prediction.probability[x]._Range"/>
+            <text value="Range"/>
+            <question>
+              <linkId value="RiskAssessment.prediction.probability[x]._Range.low"/>
+              <text value="low:"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="RiskAssessment.prediction.probability[x]._Range.high"/>
+              <text value="high:"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="RiskAssessment.prediction.probability[x]._Range.units"/>
+              <text value="units:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="CodeableConcept"/>
+            </extension>
+            <linkId value="RiskAssessment.prediction.probability[x]._CodeableConcept"/>
+            <text value="CodeableConcept"/>
+            <question>
+              <linkId value="RiskAssessment.prediction.probability[x]._CodeableConcept.coding"/>
+              <text value="code:"/>
+              <type value="open-choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="RiskAssessment.prediction.probability[x]._CodeableConcept.text"/>
+              <text value="text:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicates the risk for this particular subject (with their specific characteristics) divided by the risk of the population in general.  (Numbers greater than 1 = higher risk than the population, numbers less than 1 = lower risk.)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="decimal"/>
+        </extension>
+        <linkId value="RiskAssessment.prediction.relativeRisk"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="RiskAssessment.prediction.relativeRisk.value"/>
+          <text value="Relative likelihood"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicates the period of time or age range of the subject to which the specified probability applies."/>
+        </extension>
+        <linkId value="RiskAssessment.prediction.when[x]"/>
+        <text value="Timeframe or age range"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="RiskAssessment.prediction.when[x]._type"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <options>
+            <reference value="#vs5"/>
+          </options>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Period"/>
+            </extension>
+            <linkId value="RiskAssessment.prediction.when[x]._Period"/>
+            <text value="Period"/>
+            <question>
+              <linkId value="RiskAssessment.prediction.when[x]._Period.low"/>
+              <text value="start:"/>
+              <type value="dateTime"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="RiskAssessment.prediction.when[x]._Period.end"/>
+              <text value="end:"/>
+              <type value="dateTime"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Range"/>
+            </extension>
+            <linkId value="RiskAssessment.prediction.when[x]._Range"/>
+            <text value="Range"/>
+            <question>
+              <linkId value="RiskAssessment.prediction.when[x]._Range.low"/>
+              <text value="low:"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="RiskAssessment.prediction.when[x]._Range.high"/>
+              <text value="high:"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="RiskAssessment.prediction.when[x]._Range.units"/>
+              <text value="units:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Additional information explaining the basis for the prediction."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="RiskAssessment.prediction.rationale"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="RiskAssessment.prediction.rationale.value"/>
+          <text value="Explanation of prediction"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A description of the steps that might be taken to reduce the identified risk(s)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="RiskAssessment.mitigation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="RiskAssessment.mitigation.value"/>
+        <text value="How to reduce risk"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+  </group>
+</Questionnaire>

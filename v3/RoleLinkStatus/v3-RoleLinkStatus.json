@@ -1,0 +1,88 @@
+{
+  "resourceType": "ValueSet",
+  "id": "v3-RoleLinkStatus",
+  "meta": {
+    "lastUpdated": "2015-03-23T00:00:00.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>Release Date: 2015-03-23</p>\r\n<p>OID for code system: 2.16.840.1.113883.5.1137</p>\r\n<p>OID for value set: 2.16.840.1.113883.1.11.20413 (this is the value set that includes the entire code system)</p>\r\n<h2>Description</h2>\r\n<p>\n                  \n                     Description:Codes representing possible states of a RoleLink, as defined by the RoleLink class state machine.<br/>\r\n\n               </p>\r\n<hr/>\r\n<table class=\"grid\">\r\n <tr><td><b>Level</b></td><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>\r\n <tr><td>1</td><td>NORMAL<a name=\"NORMAL\"> </a></td><td>normal</td><td>\n                        \n                           Description: The 'typical' state. Excludes &quot;nullified&quot; which represents the termination state of a RoleLink instance that was created in error.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;ACTIVE<a name=\"ACTIVE\"> </a></td><td>active</td><td>\n                        \n                           Description: The state indicates the RoleLink is in progress.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;CANCELLED<a name=\"CANCELLED\"> </a></td><td>cancelled</td><td>\n                        \n                           Description: The terminal state resulting from abandoning the RoleLink prior to or after activation.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;COMPLETED<a name=\"COMPLETED\"> </a></td><td>completed</td><td>\n                        \n                           Description: The terminal state representing the successful completion of the RoleLink.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;PENDING<a name=\"PENDING\"> </a></td><td>pending</td><td>\n                        \n                           Description: The state indicates the RoleLink has not yet become active.<br/>\r\n\n                     </td></tr>\r\n <tr><td>1</td><td>NULLIFIED<a name=\"NULLIFIED\"> </a></td><td>nullified</td><td>\n                        \n                           Description: The state representing the termination of a RoleLink instance that was created in error.<br/>\r\n\n                     </td></tr>\r\n</table>\r\n</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.1.11.20413"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/v3-RoleLinkStatus",
+  "version": "2015-03-23",
+  "name": "v3 Code System RoleLinkStatus",
+  "publisher": "HL7, Inc",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "  Description:\r\nCodes representing possible states of a RoleLink, as defined by the RoleLink class state machine.",
+  "status": "active",
+  "experimental": false,
+  "date": "2015-03-23",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.5.1137"
+      }
+    ],
+    "system": "http://hl7.org/fhir/v3/RoleLinkStatus",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "NORMAL",
+        "abstract": false,
+        "display": "normal",
+        "definition": "Description: The 'typical' state. Excludes \"nullified\" which represents the termination state of a RoleLink instance that was created in error.",
+        "concept": [
+          {
+            "code": "ACTIVE",
+            "abstract": false,
+            "display": "active",
+            "definition": "Description: The state indicates the RoleLink is in progress."
+          },
+          {
+            "code": "CANCELLED",
+            "abstract": false,
+            "display": "cancelled",
+            "definition": "Description: The terminal state resulting from abandoning the RoleLink prior to or after activation."
+          },
+          {
+            "code": "COMPLETED",
+            "abstract": false,
+            "display": "completed",
+            "definition": "Description: The terminal state representing the successful completion of the RoleLink."
+          },
+          {
+            "code": "PENDING",
+            "abstract": false,
+            "display": "pending",
+            "definition": "Description: The state indicates the RoleLink has not yet become active."
+          }
+        ]
+      },
+      {
+        "code": "NULLIFIED",
+        "abstract": false,
+        "display": "nullified",
+        "definition": "Description: The state representing the termination of a RoleLink instance that was created in error."
+      }
+    ]
+  }
+}

@@ -1,0 +1,963 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "qs1",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs2",
+      "name": "Type options for Communication.sender",
+      "description": "Type options for Communication.sender",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:c92b6e04-001f-4d4a-8add-c29928fd6661",
+        "timestamp": "2015-07-24T17:36:15-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "practitioner-qicore-qicore-practitioner",
+            "display": "practitioner-qicore-qicore-practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "patient-qicore-qicore-patient",
+            "display": "patient-qicore-qicore-patient"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "device-qicore-qicore-device",
+            "display": "device-qicore-qicore-device"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "relatedperson-qicore-qicore-relatedperson",
+            "display": "relatedperson-qicore-qicore-relatedperson"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "organization-qicore-qicore-organization",
+            "display": "organization-qicore-qicore-organization"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs3",
+      "name": "Type options for Communication.recipient",
+      "description": "Type options for Communication.recipient",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:52161fab-4492-4a66-9761-263fd7ba6d1c",
+        "timestamp": "2015-07-24T17:36:15-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "practitioner-qicore-qicore-practitioner",
+            "display": "practitioner-qicore-qicore-practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "patient-qicore-qicore-patient",
+            "display": "patient-qicore-qicore-patient"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "device-qicore-qicore-device",
+            "display": "device-qicore-qicore-device"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "relatedperson-qicore-qicore-relatedperson",
+            "display": "relatedperson-qicore-qicore-relatedperson"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "organization-qicore-qicore-organization",
+            "display": "organization-qicore-qicore-organization"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs4",
+      "name": "Type options for Communication.payload.content[x]",
+      "description": "Type options for Communication.payload.content[x]",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:a05e67d3-6ec3-48b3-baf5-182e7aa7d4b9",
+        "timestamp": "2015-07-24T17:36:15-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "string",
+            "display": "string"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Attachment",
+            "display": "Attachment"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Resource",
+            "display": "Resource"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "draft",
+  "date": "2015-02-27T00:00:00-05:00",
+  "publisher": "Health Level Seven International (Clinical Quality Information - QI-Core)",
+  "group": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+        "valueString": "An occurrence of information being transmitted. E.g., an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition."
+      }
+    ],
+    "linkId": "Communication",
+    "title": "A record of information transmitted from a sender to a receiver",
+    "required": false,
+    "repeats": true,
+    "group": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "Communication.id",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.id.value",
+            "text": "Logical id of this artifact",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."
+          }
+        ],
+        "linkId": "Communication.meta",
+        "text": "Metadata about the resource",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "uri"
+          }
+        ],
+        "linkId": "Communication.implicitRules",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.implicitRules.value",
+            "text": "A set of rules under which this content was created",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The base language in which the resource is written."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "Communication.language",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.language.value",
+            "text": "language",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."
+          }
+        ],
+        "linkId": "Communication.text",
+        "text": "Text summary of the resource, for human interpretation",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."
+          }
+        ],
+        "linkId": "Communication.contained",
+        "text": "Contained, inline Resources",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "An Extension"
+          }
+        ],
+        "linkId": "Communication.extension",
+        "text": "Extension",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+          }
+        ],
+        "linkId": "Communication.modifierExtension",
+        "text": "Extensions that cannot be ignored",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifiers associated with this Communication that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Identifier"
+          }
+        ],
+        "linkId": "Communication.identifier",
+        "text": "Unique identifier",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.identifier.label",
+            "text": "label:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "Communication.identifier.system",
+            "text": "system:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "Communication.identifier.value",
+            "text": "value:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The type of message conveyed such as alert, notification, reminder, instruction, etc."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "Communication.category",
+        "text": "Message category",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.category.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "Communication.category.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The entity (e.g., person, organization, clinical information system, or device) which was the source of the communication."
+          }
+        ],
+        "linkId": "Communication.sender",
+        "text": "Message sender",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.sender._type",
+            "text": "type",
+            "type": "choice",
+            "required": false,
+            "repeats": false,
+            "options": {
+              "reference": "#vs2"
+            },
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.sender._practitioner-qicore-qicore-practitioner",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/practitioner-qicore-qicore-practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.sender._practitioner-qicore-qicore-practitioner.value",
+                    "text": "practitioner-qicore-qicore-practitioner",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.sender._patient-qicore-qicore-patient",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/patient-qicore-qicore-patient?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.sender._patient-qicore-qicore-patient.value",
+                    "text": "patient-qicore-qicore-patient",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.sender._device-qicore-qicore-device",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/device-qicore-qicore-device?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.sender._device-qicore-qicore-device.value",
+                    "text": "device-qicore-qicore-device",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.sender._relatedperson-qicore-qicore-relatedperson",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/relatedperson-qicore-qicore-relatedperson?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.sender._relatedperson-qicore-qicore-relatedperson.value",
+                    "text": "relatedperson-qicore-qicore-relatedperson",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.sender._organization-qicore-qicore-organization",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/organization-qicore-qicore-organization?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.sender._organization-qicore-qicore-organization.value",
+                    "text": "organization-qicore-qicore-organization",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The entity (e.g., person, organization, clinical information system, or device) which was the target of the communication."
+          }
+        ],
+        "linkId": "Communication.recipient",
+        "text": "Message recipient",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.recipient._type",
+            "text": "type",
+            "type": "choice",
+            "required": false,
+            "repeats": false,
+            "options": {
+              "reference": "#vs3"
+            },
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.recipient._practitioner-qicore-qicore-practitioner",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/practitioner-qicore-qicore-practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.recipient._practitioner-qicore-qicore-practitioner.value",
+                    "text": "practitioner-qicore-qicore-practitioner",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.recipient._patient-qicore-qicore-patient",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/patient-qicore-qicore-patient?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.recipient._patient-qicore-qicore-patient.value",
+                    "text": "patient-qicore-qicore-patient",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.recipient._device-qicore-qicore-device",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/device-qicore-qicore-device?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.recipient._device-qicore-qicore-device.value",
+                    "text": "device-qicore-qicore-device",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.recipient._relatedperson-qicore-qicore-relatedperson",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/relatedperson-qicore-qicore-relatedperson?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.recipient._relatedperson-qicore-qicore-relatedperson.value",
+                    "text": "relatedperson-qicore-qicore-relatedperson",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Communication.recipient._organization-qicore-qicore-organization",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/organization-qicore-qicore-organization?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Communication.recipient._organization-qicore-qicore-organization.value",
+                    "text": "organization-qicore-qicore-organization",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Text, attachment(s), or resource(s) that was communicated to the recipient."
+          }
+        ],
+        "linkId": "Communication.payload",
+        "title": "Message payload",
+        "required": false,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "Communication.payload.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Communication.payload.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+              }
+            ],
+            "linkId": "Communication.payload.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+              }
+            ],
+            "linkId": "Communication.payload.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "An individual message part for multi-part messages."
+              }
+            ],
+            "linkId": "Communication.payload.content[x]",
+            "text": "Message part content",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Communication.payload.content[x]._type",
+                "text": "type",
+                "type": "choice",
+                "required": false,
+                "repeats": false,
+                "options": {
+                  "reference": "#vs4"
+                },
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "string"
+                      }
+                    ],
+                    "linkId": "Communication.payload.content[x]._string",
+                    "question": [
+                      {
+                        "linkId": "Communication.payload.content[x]._string.value",
+                        "text": "string",
+                        "type": "string",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Attachment"
+                      }
+                    ],
+                    "linkId": "Communication.payload.content[x]._Attachment",
+                    "text": "Attachment"
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "Communication.payload.content[x]._Resource",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Resource?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "Communication.payload.content[x]._Resource.value",
+                        "text": "Resource",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The communication medium, e.g., email, fax."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "Communication.medium",
+        "text": "Communication medium",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.medium.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "Communication.medium.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The status of the transmission."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "Communication.status",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.status.value",
+            "text": "status",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The encounter within which the communication was sent."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "Communication.encounter",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/encounter-qicore-qicore-encounter?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "Communication.encounter.value",
+            "text": "Encounter leading to message",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The time when this communication was sent."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "datetime"
+          }
+        ],
+        "linkId": "Communication.sent",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.sent.value",
+            "text": "When sent",
+            "type": "dateTime",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The time when this communication arrived at the destination."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "datetime"
+          }
+        ],
+        "linkId": "Communication.received",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.received.value",
+            "text": "When received",
+            "type": "dateTime",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The reason or justification for the communication."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "Communication.reason",
+        "text": "Indication for message",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Communication.reason.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "Communication.reason.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The patient who was the focus of this communication."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "Communication.subject",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/patient-qicore-qicore-patient?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "Communication.subject.value",
+            "text": "Focus of message",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      }
+    ]
+  }
+}

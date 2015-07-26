@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="v3-ParticipationSignature"/>
+  <meta>
+    <lastUpdated value="2015-03-23T00:00:00.000-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2015-03-23</p>
+
+      <p>OID for code system: 2.16.840.1.113883.5.89</p>
+
+      <p>OID for value set: 2.16.840.1.113883.1.11.10282 (this is the value set that includes the entire code system)</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  A set of codes specifying whether and how the participant has attested his participation through a signature and or whether such a signature is needed.
+        <br/>
+
+                  
+                     Examples: A surgical Procedure act object (representing a procedure report) requires a signature of the performing and responsible surgeon, and possibly other participants. (See also: Participation.signatureText.)
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td>intended</td>
+          <td>
+                        The particpant intends to provide a signature.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>S
+            <a name="S"> </a>
+          </td>
+          <td>signed</td>
+          <td>
+                        Signature has been affixed, either written on file, or electronic (incl. digital) signature in Participation.signatureText.
+            <br/>
+
+                     
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>1</td>
+          <td>X
+            <a name="X"> </a>
+          </td>
+          <td>required</td>
+          <td>
+                        A signature for the service is required of this actor.
+            <br/>
+
+                     
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.1.11.10282"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/v3-ParticipationSignature"/>
+  <version value="2015-03-23"/>
+  <name value="v3 Code System ParticipationSignature"/>
+  <publisher value="HL7, Inc"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org"/>
+    </telecom>
+  </contact>
+  <description value=" A set of codes specifying whether and how the participant has attested his participation through a signature and or whether such a signature is needed.  Examples:
+A surgical Procedure act object (representing a procedure report) requires a signature of the performing and responsible surgeon, and possibly other participants. (See also: Participation.signatureText.)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2015-03-23"/>
+  <codeSystem>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.5.89"/>
+    </extension>
+    <system value="http://hl7.org/fhir/v3/ParticipationSignature"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="I"/>
+      <abstract value="false"/>
+      <display value="intended"/>
+      <definition value="The particpant intends to provide a signature."/>
+    </concept>
+    <concept>
+      <code value="S"/>
+      <abstract value="false"/>
+      <display value="signed"/>
+      <definition value="Signature has been affixed, either written on file, or electronic (incl. digital) signature in Participation.signatureText."/>
+    </concept>
+    <concept>
+      <code value="X"/>
+      <abstract value="false"/>
+      <display value="required"/>
+      <definition value="A signature for the service is required of this actor."/>
+    </concept>
+  </codeSystem>
+</ValueSet>

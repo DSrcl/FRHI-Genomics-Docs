@@ -1,0 +1,2742 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Contraindication.questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/contraindication.questionnaire.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="contraindication.html">Contraindication</a></li>        <li><b>Generated Questionnaire</b></li>          <!-- contraindication.questionnaire.html / resource-questionnaire:Contraindication / Questionnaire -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="contraindication.html">Content</a></li><li><a href="contraindication-examples.html">Examples</a></li><li><a href="contraindication-definitions.html">Detailed Descriptions</a></li><li><a href="contraindication-mappings.html">Mappings</a></li><li><a href="contraindication-profiles.html">Profiles</a></li><li class="active"><a href="#">HTML Form</a></li></ul>
+
+
+<h2><span class="sectioncount">4.10.8<a name="4.10.8"> </a></span> Contraindication.questionnaire - Example Form <a href="contraindication.questionnaire.html#4.10.8" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>
+This is an example form based on a questionnaire generated from the definition, to help visualise the content. See also the <a href="contraindication.questionnaire.xml.html">XML</a> or <a href="contraindication.questionnaire.json.html">JSON</a> questionnaire.
+</p>
+
+  <!-- DOCTYPE html --><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<script type="text/javascript">  <!-- var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validateContraindication(node) {
+  var groupNodes = findDiv(node, "Contraindication");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_id(divNode, "Contraindication.id")
+         && validateContraindication_meta(divNode, "Contraindication.meta")
+         && validateContraindication_implicitRules(divNode, "Contraindication.implicitRules")
+         && validateContraindication_language(divNode, "Contraindication.language")
+         && validateContraindication_text(divNode, "Contraindication.text")
+         && validateContraindication_contained(divNode, "Contraindication.contained")
+         && validateContraindication_extension(divNode, "Contraindication.extension")
+         && validateContraindication_modifierExtension(divNode, "Contraindication.modifierExtension")
+         && validateContraindication_patient(divNode, "Contraindication.patient")
+         && validateContraindication_category(divNode, "Contraindication.category")
+         && validateContraindication_severity(divNode, "Contraindication.severity")
+         && validateContraindication_implicated(divNode, "Contraindication.implicated")
+         && validateContraindication_detail(divNode, "Contraindication.detail")
+         && validateContraindication_date(divNode, "Contraindication.date")
+         && validateContraindication_author(divNode, "Contraindication.author")
+         && validateContraindication_identifier(divNode, "Contraindication.identifier")
+         && validateContraindication_reference(divNode, "Contraindication.reference")
+         && validateContraindication_mitigation(divNode, "Contraindication.mitigation");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_id(node) {
+  var groupNodes = findDiv(node, "Contraindication.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_id_value(divNode, "Contraindication.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_id_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_meta(node) {
+  var groupNodes = findDiv(node, "Contraindication.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_implicitRules(node) {
+  var groupNodes = findDiv(node, "Contraindication.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_implicitRules_value(divNode, "Contraindication.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_language(node) {
+  var groupNodes = findDiv(node, "Contraindication.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_language_value(divNode, "Contraindication.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_language_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_text(node) {
+  var groupNodes = findDiv(node, "Contraindication.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_contained(node) {
+  var groupNodes = findDiv(node, "Contraindication.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_extension(node) {
+  var groupNodes = findDiv(node, "Contraindication.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_modifierExtension(node) {
+  var groupNodes = findDiv(node, "Contraindication.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_patient(node) {
+  var groupNodes = findDiv(node, "Contraindication.patient");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_patient_value(divNode, "Contraindication.patient.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_patient_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.patient.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_category(node) {
+  var groupNodes = findDiv(node, "Contraindication.category");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_category_coding(divNode, "Contraindication.category.coding")
+         && validateContraindication_category_text(divNode, "Contraindication.category.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_category_coding(node) {
+  var answerNodes = findAnswers(node, "Contraindication.category.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_category_text(node) {
+  var answerNodes = findAnswers(node, "Contraindication.category.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_severity(node) {
+  var groupNodes = findDiv(node, "Contraindication.severity");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_severity_value(divNode, "Contraindication.severity.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_severity_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.severity.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_implicated(node) {
+  var groupNodes = findDiv(node, "Contraindication.implicated");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_implicated_value(divNode, "Contraindication.implicated.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_implicated_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.implicated.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_detail(node) {
+  var groupNodes = findDiv(node, "Contraindication.detail");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_detail_value(divNode, "Contraindication.detail.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_detail_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.detail.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_date(node) {
+  var groupNodes = findDiv(node, "Contraindication.date");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_date_value(divNode, "Contraindication.date.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_date_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.date.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_author(node) {
+  var groupNodes = findDiv(node, "Contraindication.author");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_author__type(divNode, "Contraindication.author._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_author__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "Practitioner", "display": "Practitioner"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Device", "display": "Device"}];
+  var answerNodes = findAnswers(node, "Contraindication.author._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_author__Practitioner_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.author._Practitioner[1]Contraindication.author._Practitioner.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_author__Device_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.author._Device[1]Contraindication.author._Device.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_identifier(node) {
+  var groupNodes = findDiv(node, "Contraindication.identifier");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_identifier_label(divNode, "Contraindication.identifier.label")
+         && validateContraindication_identifier_system(divNode, "Contraindication.identifier.system")
+         && validateContraindication_identifier_value(divNode, "Contraindication.identifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_identifier_label(node) {
+  var answerNodes = findAnswers(node, "Contraindication.identifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_identifier_system(node) {
+  var answerNodes = findAnswers(node, "Contraindication.identifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_identifier_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.identifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_reference(node) {
+  var groupNodes = findDiv(node, "Contraindication.reference");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_reference_value(divNode, "Contraindication.reference.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_reference_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.reference.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_mitigation(node) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_mitigation_id(divNode, "Contraindication.mitigation.id")
+         && validateContraindication_mitigation_extension(divNode, "Contraindication.mitigation.extension")
+         && validateContraindication_mitigation_modifierExtension(divNode, "Contraindication.mitigation.modifierExtension")
+         && validateContraindication_mitigation_action(divNode, "Contraindication.mitigation.action")
+         && validateContraindication_mitigation_date(divNode, "Contraindication.mitigation.date")
+         && validateContraindication_mitigation_author(divNode, "Contraindication.mitigation.author");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_mitigation_id(node) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_mitigation_id_value(divNode, "Contraindication.mitigation.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_mitigation_id_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_mitigation_extension(node) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_mitigation_modifierExtension(node) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_mitigation_action(node) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.action");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "Contraindication.mitigation.action");
+    node.focus()
+    alert('Must have at least 1 occurrences of: What mitigation?');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_mitigation_action_coding(divNode, "Contraindication.mitigation.action.coding")
+         && validateContraindication_mitigation_action_text(divNode, "Contraindication.mitigation.action.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_mitigation_action_coding(node) {
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.action.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_mitigation_action_text(node) {
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.action.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_mitigation_date(node) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.date");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_mitigation_date_value(divNode, "Contraindication.mitigation.date.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_mitigation_date_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.date.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateContraindication_mitigation_author(node) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.author");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateContraindication_mitigation_author_value(divNode, "Contraindication.mitigation.author.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateContraindication_mitigation_author_value(node) {
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.author.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function serializeContraindication(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication",
+      "title":"Clinical issue with action"
+    }
+    var childGroups = [];    serializeContraindication_id(groupNodes[i], childGroups);
+    serializeContraindication_meta(groupNodes[i], childGroups);
+    serializeContraindication_implicitRules(groupNodes[i], childGroups);
+    serializeContraindication_language(groupNodes[i], childGroups);
+    serializeContraindication_text(groupNodes[i], childGroups);
+    serializeContraindication_contained(groupNodes[i], childGroups);
+    serializeContraindication_extension(groupNodes[i], childGroups);
+    serializeContraindication_modifierExtension(groupNodes[i], childGroups);
+    serializeContraindication_patient(groupNodes[i], childGroups);
+    serializeContraindication_category(groupNodes[i], childGroups);
+    serializeContraindication_severity(groupNodes[i], childGroups);
+    serializeContraindication_implicated(groupNodes[i], childGroups);
+    serializeContraindication_detail(groupNodes[i], childGroups);
+    serializeContraindication_date(groupNodes[i], childGroups);
+    serializeContraindication_author(groupNodes[i], childGroups);
+    serializeContraindication_identifier(groupNodes[i], childGroups);
+    serializeContraindication_reference(groupNodes[i], childGroups);
+    serializeContraindication_mitigation(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_id(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.id"
+    }
+    var childQuestions = [];    serializeContraindication_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_id_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.id.value",
+      "text":"Logical id of this artifact"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_meta(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.meta");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.meta",
+      "text":"Metadata about the resource"
+    }
+  }
+
+}
+
+
+function serializeContraindication_implicitRules(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.implicitRules");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.implicitRules"
+    }
+    var childQuestions = [];    serializeContraindication_implicitRules_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_implicitRules_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.implicitRules.value",
+      "text":"A set of rules under which this content was created"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.implicitRules.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_language(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.language");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.language"
+    }
+    var childQuestions = [];    serializeContraindication_language_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_language_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.language.value",
+      "text":"language"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.language.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_text(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.text");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.text",
+      "text":"Text summary of the resource, for human interpretation"
+    }
+  }
+
+}
+
+
+function serializeContraindication_contained(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.contained");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.contained",
+      "text":"Contained, inline Resources"
+    }
+  }
+
+}
+
+
+function serializeContraindication_extension(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeContraindication_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeContraindication_patient(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.patient");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.patient"
+    }
+    var childQuestions = [];    serializeContraindication_patient_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_patient_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.patient.value",
+      "text":"Associated patient"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.patient.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_category(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.category");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.category",
+      "text":"E.g. Drug-drug, duplicate therapy, etc."
+    }
+    var childQuestions = [];    serializeContraindication_category_coding(groupNodes[i], childQuestions);
+    serializeContraindication_category_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_category_coding(node, answers) {
+  var question = {
+      "linkId":"Contraindication.category.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.category.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_category_text(node, answers) {
+  var question = {
+      "linkId":"Contraindication.category.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.category.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_severity(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.severity");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.severity"
+    }
+    var childQuestions = [];    serializeContraindication_severity_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_severity_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.severity.value",
+      "text":"severity"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.severity.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_implicated(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.implicated");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.implicated"
+    }
+    var childQuestions = [];    serializeContraindication_implicated_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_implicated_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.implicated.value",
+      "text":"Problem resource"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.implicated.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_detail(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.detail");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.detail"
+    }
+    var childQuestions = [];    serializeContraindication_detail_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_detail_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.detail.value",
+      "text":"Description and context"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.detail.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_date(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.date");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.date"
+    }
+    var childQuestions = [];    serializeContraindication_date_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_date_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.date.value",
+      "text":"When identified"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.date.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_author(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.author");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.author",
+      "text":"Who found issue?"
+    }
+    var childQuestions = [];    serializeContraindication_author__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_author__type(node, answers) {
+  var question = {
+      "linkId":"Contraindication.author._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.author._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_author__Practitioner_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.author._Practitioner[1]Contraindication.author._Practitioner.value",
+      "text":"Practitioner"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.author._Practitioner[1]Contraindication.author._Practitioner.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_author__Device_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.author._Device[1]Contraindication.author._Device.value",
+      "text":"Device"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.author._Device[1]Contraindication.author._Device.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_identifier(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.identifier");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.identifier",
+      "text":"Unique id for the contraindication"
+    }
+    var childQuestions = [];    serializeContraindication_identifier_label(groupNodes[i], childQuestions);
+    serializeContraindication_identifier_system(groupNodes[i], childQuestions);
+    serializeContraindication_identifier_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_identifier_label(node, answers) {
+  var question = {
+      "linkId":"Contraindication.identifier.label",
+      "text":"label:"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.identifier.label");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_identifier_system(node, answers) {
+  var question = {
+      "linkId":"Contraindication.identifier.system",
+      "text":"system:"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.identifier.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_identifier_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.identifier.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.identifier.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_reference(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.reference");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.reference"
+    }
+    var childQuestions = [];    serializeContraindication_reference_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_reference_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.reference.value",
+      "text":"Authority for issue"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.reference.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.mitigation",
+      "title":"Step taken to address"
+    }
+    var childGroups = [];    serializeContraindication_mitigation_id(groupNodes[i], childGroups);
+    serializeContraindication_mitigation_extension(groupNodes[i], childGroups);
+    serializeContraindication_mitigation_modifierExtension(groupNodes[i], childGroups);
+    serializeContraindication_mitigation_action(groupNodes[i], childGroups);
+    serializeContraindication_mitigation_date(groupNodes[i], childGroups);
+    serializeContraindication_mitigation_author(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_id(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.mitigation.id"
+    }
+    var childQuestions = [];    serializeContraindication_mitigation_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_id_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.mitigation.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_extension(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.mitigation.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.mitigation.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_action(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.action");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.mitigation.action",
+      "text":"What mitigation?"
+    }
+    var childQuestions = [];    serializeContraindication_mitigation_action_coding(groupNodes[i], childQuestions);
+    serializeContraindication_mitigation_action_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_action_coding(node, answers) {
+  var question = {
+      "linkId":"Contraindication.mitigation.action.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.action.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_action_text(node, answers) {
+  var question = {
+      "linkId":"Contraindication.mitigation.action.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.action.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_date(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.date");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.mitigation.date"
+    }
+    var childQuestions = [];    serializeContraindication_mitigation_date_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_date_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.mitigation.date.value",
+      "text":"Date committed"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.date.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_author(node, groups) {
+  var groupNodes = findDiv(node, "Contraindication.mitigation.author");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Contraindication.mitigation.author"
+    }
+    var childQuestions = [];    serializeContraindication_mitigation_author_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeContraindication_mitigation_author_value(node, answers) {
+  var question = {
+      "linkId":"Contraindication.mitigation.author.value",
+      "text":"Who is committing?"
+    }
+  var answerNodes = findAnswers(node, "Contraindication.mitigation.author.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+function validateQuestionnaire() {
+  return validateContraindication(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function serializeQuestionnaire() {
+  var rootGroup = serializeContraindication(document.getElementById("div-cnt"));
+  if (rootGroup.length == 0)
+    delete answers.group
+  else
+    answers.group = rootGroup;
+  return answers;
+} --></script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/json2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/statuspage.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jtip.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jcookie.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js" type="text/javascript"> </script>
+      <script type="text/javascript">  <!-- var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>"; --></script>
+      <script type="text/javascript">  <!-- var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+        && this.style.display != "none";
+  });
+}
+
+function setAddFocus(node, linkId) {
+  $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+  }).last().next(":input").focus();
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  serializeQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    serializeQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+} --></script>
+      <script type="text/javascript">  <!-- var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+} --></script>
+      <script type="text/javascript">  <!-- var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+} --></script>
+      <style type="null">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript">  <!-- //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      } --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+<div id="div-cnt">
+         <h3><span class="sectioncount">4.10.8.1<a name="4.10.8.1"> </a></span> Clinical issue with action <a href="contraindication.questionnaire.html#4.10.8.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e56">
+            <span style="display:none">Contraindication</span>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e74.1">
+               <span style="display:none">Contraindication.id</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.id.value</span> Logical id of this artifact</td>
+                        <td>
+                           <input name="Path:Contraindication[1]Contraindication.id[1]Contraindication.id.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e74.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.id</span>
+            <span style="display:none">1</span>
+            <p>Metadata about the resource</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e112.1">
+               <span style="display:none">Contraindication.meta</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e112.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.meta</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e131.1">
+               <span style="display:none">Contraindication.implicitRules</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:Contraindication[1]Contraindication.implicitRules[1]Contraindication.implicitRules.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e131.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.implicitRules</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e169.1">
+               <span style="display:none">Contraindication.language</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e169.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e207.1">
+               <span style="display:none">Contraindication.text</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e207.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e227.1">
+               <span style="display:none">Contraindication.contained</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e227.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.contained</span>
+            <span style="display:none">1</span>
+            <p>Additional Content defined by implementations</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e246.1">
+               <span style="display:none">Contraindication.extension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e246.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.extension</span>
+            <span style="display:none">1</span>
+            <p>Extensions that cannot be ignored</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e265.1">
+               <span style="display:none">Contraindication.modifierExtension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e265.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.modifierExtension</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e284.1">
+               <span style="display:none">Contraindication.patient</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.patient.value</span> Associated patient</td>
+                        <td>
+                           <input tabindex="text" name="Path:Contraindication[1]Contraindication.patient[1]Contraindication.patient.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e284.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.patient</span>
+            <span style="display:none">1</span>
+            <p>E.g. Drug-drug, duplicate therapy, etc.</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e327.1">
+               <span style="display:none">Contraindication.category</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.category.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.category.text</span> text:</td>
+                        <td>
+                           <input name="Path:Contraindication[1]Contraindication.category[1]Contraindication.category.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e327.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.category</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e383.1">
+               <span style="display:none">Contraindication.severity</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.severity.value</span> severity</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e383.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.severity</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e422.1">
+               <span style="display:none">Contraindication.implicated</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.implicated.value</span> Problem resource</td>
+                        <td>
+                           <input tabindex="text" name="Path:Contraindication[1]Contraindication.implicated[1]Contraindication.implicated.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e422.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.implicated</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e465.1">
+               <span style="display:none">Contraindication.detail</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.detail.value</span> Description and context</td>
+                        <td>
+                           <input name="Path:Contraindication[1]Contraindication.detail[1]Contraindication.detail.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e465.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.detail</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e503.1">
+               <span style="display:none">Contraindication.date</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.date.value</span> When identified</td>
+                        <td>
+                           <input onblur="checkDateTime(this)" maxlength="26" name="Path:Contraindication[1]Contraindication.date[1]Contraindication.date.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e503.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.date</span>
+            <span style="display:none">1</span>
+            <p>Who found issue?</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e541.1">
+               <span style="display:none">Contraindication.author</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.author._type</span> type</td>
+                        <td>
+                           <input name="Path:Contraindication[1]Contraindication.author[1]" type="radio" value="Practitioner"/>
+                           <span> Practitioner</span>
+                           <br/>
+                           <input name="Path:Contraindication[1]Contraindication.author[1]" type="radio" value="Device"/>
+                           <span> Device</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e541.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.author</span>
+            <span style="display:none">1</span>
+            <p>Unique id for the contraindication</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e631.1">
+               <span style="display:none">Contraindication.identifier</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.identifier.label</span> label:</td>
+                        <td>
+                           <input name="Path:Contraindication[1]Contraindication.identifier[1]Contraindication.identifier.label[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.identifier.system</span> system:</td>
+                        <td>
+                           <input name="Path:Contraindication[1]Contraindication.identifier[1]Contraindication.identifier.system[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.identifier.value</span> value:</td>
+                        <td>
+                           <input name="Path:Contraindication[1]Contraindication.identifier[1]Contraindication.identifier.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e631.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.identifier</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e703.1">
+               <span style="display:none">Contraindication.reference</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Contraindication.reference.value</span> Authority for issue</td>
+                        <td>
+                           <input name="Path:Contraindication[1]Contraindication.reference[1]Contraindication.reference.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e703.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.reference</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">4.10.8.1.1<a name="4.10.8.1.1"> </a></span> Step taken to address <a href="contraindication.questionnaire.html#4.10.8.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e742.1">
+               <span style="display:none">Contraindication.mitigation</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e760.1.1">
+                  <span style="display:none">Contraindication.mitigation.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Contraindication.mitigation.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:Contraindication[1]Contraindication.mitigation[1]Contraindication.mitigation.id[1]Contraindication.mitigation.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e760.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">Contraindication.mitigation.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e798.1.1">
+                  <span style="display:none">Contraindication.mitigation.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e798.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">Contraindication.mitigation.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e817.1.1">
+                  <span style="display:none">Contraindication.mitigation.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e817.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">Contraindication.mitigation.modifierExtension</span>
+               <span style="display:none">1</span>
+               <p>What mitigation?</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e836.1.1">
+                  <span style="display:none">Contraindication.mitigation.action</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Contraindication.mitigation.action.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Contraindication.mitigation.action.text</span> text:</td>
+                           <td>
+                              <input name="Path:Contraindication[1]Contraindication.mitigation[1]Contraindication.mitigation.action[1]Contraindication.mitigation.action.text[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e836.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">Contraindication.mitigation.action</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e892.1.1">
+                  <span style="display:none">Contraindication.mitigation.date</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Contraindication.mitigation.date.value</span> Date committed</td>
+                           <td>
+                              <input onblur="checkDateTime(this)" maxlength="26" name="Path:Contraindication[1]Contraindication.mitigation[1]Contraindication.mitigation.date[1]Contraindication.mitigation.date.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e892.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">Contraindication.mitigation.date</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e931.1.1">
+                  <span style="display:none">Contraindication.mitigation.author</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Contraindication.mitigation.author.value</span> Who is committing?</td>
+                           <td>
+                              <input tabindex="text" name="Path:Contraindication[1]Contraindication.mitigation[1]Contraindication.mitigation.author[1]Contraindication.mitigation.author.value[1]"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e931.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">Contraindication.mitigation.author</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e742.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">Contraindication.mitigation</span>
+            <span style="display:none">1</span>
+         </div>
+         <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e56', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+         <span style="display:none">Contraindication</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+</body>
+</html>
+
+<p>
+  <!-- spacer -->
+ 
+</p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:33-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fcontraindication.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fcontraindication.questionnaire.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

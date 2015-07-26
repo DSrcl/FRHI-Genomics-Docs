@@ -1,0 +1,1575 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medicationadministration-immunization-protocol",
+  "url": "http://hl7.org/fhir/StructureDefinition/medicationadministration-immunization-protocol",
+  "name": "What protocol was followed",
+  "publisher": "Health Level Seven International (Public Health Emergency Response)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/special/committees/pher"
+        }
+      ]
+    }
+  ],
+  "description": "Contains information about the protocol(s) under which the vaccine was administered.",
+  "status": "draft",
+  "date": "2015-03-18",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    }
+  ],
+  "kind": "datatype",
+  "constrainedType": "Extension",
+  "abstract": false,
+  "contextType": "resource",
+  "context": [
+    "MedicationAdministration"
+  ],
+  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "snapshot": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "What protocol was followed",
+        "definition": "Contains information about the protocol(s) under which the vaccine was administered.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "(V2.x doesn't seem to provide for this)"
+          },
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM]"
+          }
+        ]
+      },
+      {
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": true,
+          "rules": "openAtEnd"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "doseSequence",
+        "short": "What dose number within series?",
+        "definition": "Nominal position in a series.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].sequenceNumber"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "doseSequence",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueInteger",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "description",
+        "short": "Details of vaccine protocol",
+        "definition": "Contains the description about the protocol under which the vaccine was administered.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].text"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "description",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueString",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "authority",
+        "short": "Who is responsible for protocol",
+        "definition": "Indicates the authority who published the protocol?  E.g. ACIP.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].participation[typeCode=AUT].COCT_MT090200UV"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "authority",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueReference",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "series",
+        "short": "Name of vaccine series",
+        "definition": "One possible path to achieve presumed immunity against a disease - within the context of an authority.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM]"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "series",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueString",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "seriesDoses",
+        "short": "Recommended number of doses for immunity",
+        "definition": "The recommended number of doses to achieve immunity.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].text"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "seriesDoses",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueInteger",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "doseTarget",
+        "short": "Disease immunized against",
+        "definition": "The targeted disease.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship.target[classCode=OBS].code"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "doseTarget",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueCodeableConcept",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The disease target of the vaccination protocol",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-target"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "doseStatus",
+        "short": "Does dose count towards immunity?",
+        "definition": "Indicates if the immunization event should \"count\" against  the protocol.",
+        "comments": "May need to differentiate between status declarations by a provider vs. a CDS engine.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].playedRole[classCode=INGR].scopedRole.scoper[classCode=MMAT].playedRole[classCode=HLTHCHRT].participation[typeCode=SBJ].observation[classCode=OBS].value"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "doseStatus",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueCodeableConcept",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The status of the vaccination protocol (i.e. should this count)",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "doseStatusReason",
+        "short": "Why does does count/not count?",
+        "definition": "Provides an explanation as to why a immunization event should or should not count against the protocol.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].playedRole[classCode=INGR].scopedRole.scoper[classCode=MMAT].playedRole[classCode=HLTHCHRT].participation[typeCode=SBJ].observation[classCode=OBS].reasonCode"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "doseStatusReason",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueCodeableConcept",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The reason for the determining if a vaccination should count or why vaccination should not count.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status-reason"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/medicationadministration-immunization-protocol",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "*"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "What protocol was followed",
+        "definition": "Contains information about the protocol(s) under which the vaccine was administered.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "(V2.x doesn't seem to provide for this)"
+          },
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM]"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "doseSequence",
+        "short": "What dose number within series?",
+        "definition": "Nominal position in a series.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].sequenceNumber"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "doseSequence"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "description",
+        "short": "Details of vaccine protocol",
+        "definition": "Contains the description about the protocol under which the vaccine was administered.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].text"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "authority",
+        "short": "Who is responsible for protocol",
+        "definition": "Indicates the authority who published the protocol?  E.g. ACIP.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].participation[typeCode=AUT].COCT_MT090200UV"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "authority"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "series",
+        "short": "Name of vaccine series",
+        "definition": "One possible path to achieve presumed immunity against a disease - within the context of an authority.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM]"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "series"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "seriesDoses",
+        "short": "Recommended number of doses for immunity",
+        "definition": "The recommended number of doses to achieve immunity.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].text"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "seriesDoses"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "doseTarget",
+        "short": "Disease immunized against",
+        "definition": "The targeted disease.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship.target[classCode=OBS].code"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "doseTarget"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The disease target of the vaccination protocol",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-target"
+          }
+        }
+      },
+      {
+        "path": "Extension.extension",
+        "name": "doseStatus",
+        "short": "Does dose count towards immunity?",
+        "definition": "Indicates if the immunization event should \"count\" against  the protocol.",
+        "comments": "May need to differentiate between status declarations by a provider vs. a CDS engine.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].playedRole[classCode=INGR].scopedRole.scoper[classCode=MMAT].playedRole[classCode=HLTHCHRT].participation[typeCode=SBJ].observation[classCode=OBS].value"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "doseStatus"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The status of the vaccination protocol (i.e. should this count)",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status"
+          }
+        }
+      },
+      {
+        "path": "Extension.extension",
+        "name": "doseStatusReason",
+        "short": "Why does does count/not count?",
+        "definition": "Provides an explanation as to why a immunization event should or should not count against the protocol.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].playedRole[classCode=INGR].scopedRole.scoper[classCode=MMAT].playedRole[classCode=HLTHCHRT].participation[typeCode=SBJ].observation[classCode=OBS].reasonCode"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "doseStatusReason"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The reason for the determining if a vaccination should count or why vaccination should not count.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status-reason"
+          }
+        }
+      },
+      {
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/medicationadministration-immunization-protocol"
+      },
+      {
+        "path": "Extension.value[x]",
+        "min": 0,
+        "max": "0"
+      }
+    ]
+  }
+}

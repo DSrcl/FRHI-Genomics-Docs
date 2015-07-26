@@ -1,0 +1,809 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "basic-cqif-relatedResource",
+  "url": "http://hl7.org/fhir/StructureDefinition/basic-cqif-relatedResource",
+  "name": "relatedResource",
+  "display": "relatedResource",
+  "publisher": "Health Level Seven, Inc. - CDS WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "description": "Related resources such as additional documentation, supporting evidence, or bibliographic references.",
+  "status": "draft",
+  "date": "2015-05-30",
+  "kind": "datatype",
+  "constrainedType": "Extension",
+  "abstract": false,
+  "contextType": "resource",
+  "context": [
+    "Basic"
+  ],
+  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "snapshot": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Extension",
+        "definition": "Related resources such as additional documentation, supporting evidence, or bibliographic references.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": true,
+          "rules": "openAtEnd"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "type",
+        "short": "Extension",
+        "definition": "The type of related resource.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "type",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueCode",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The type of related resource for the module",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/knowledge-module-resource-type"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "uri",
+        "short": "Extension",
+        "definition": "The uri of the related resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "uri",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueUri",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "description",
+        "short": "Extension",
+        "definition": "A brief description of the related resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "description",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueString",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "document",
+        "short": "Extension",
+        "definition": "The document being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "document",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueReference",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/basic-cqif-relatedResource",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "*"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "definition": "Related resources such as additional documentation, supporting evidence, or bibliographic references.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "type",
+        "definition": "The type of related resource.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The type of related resource for the module",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/knowledge-module-resource-type"
+          }
+        }
+      },
+      {
+        "path": "Extension.extension",
+        "name": "uri",
+        "definition": "The uri of the related resource.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "uri"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "description",
+        "definition": "A brief description of the related resource.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "document",
+        "definition": "The document being referenced.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "document"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/basic-cqif-relatedResource"
+      },
+      {
+        "path": "Extension.value[x]",
+        "min": 0,
+        "max": "0"
+      }
+    ]
+  }
+}

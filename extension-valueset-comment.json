@@ -1,0 +1,487 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "valueset-comment",
+  "url": "http://hl7.org/fhir/StructureDefinition/valueset-comment",
+  "name": "Human-specified notes and other documentation",
+  "publisher": "HL7",
+  "description": "Each comment is a time-stamped entry of arbitrary length that is not editable except by anyone in the author group.",
+  "status": "draft",
+  "date": "2015-07-26T15:54:10-04:00",
+  "kind": "datatype",
+  "constrainedType": "Extension",
+  "abstract": false,
+  "contextType": "resource",
+  "context": [
+    "ValueSet"
+  ],
+  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "snapshot": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Human-specified notes and other documentation",
+        "definition": "Each comment is a time-stamped entry of arbitrary length that is not editable except by anyone in the author group.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": true,
+          "rules": "openAtEnd"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "content",
+        "short": "Remarks or other text",
+        "definition": "Comments created about the value set.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "content",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueString",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "timestamp",
+        "short": "When the comment was created",
+        "definition": "Time the comment was recorded.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "timestamp",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueInstant",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/valueset-comment",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "*"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Human-specified notes and other documentation",
+        "definition": "Each comment is a time-stamped entry of arbitrary length that is not editable except by anyone in the author group.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension",
+        "name": "content",
+        "short": "Remarks or other text",
+        "definition": "Comments created about the value set.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "content"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "timestamp",
+        "short": "When the comment was created",
+        "definition": "Time the comment was recorded.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "timestamp"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "instant"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/valueset-comment"
+      },
+      {
+        "path": "Extension.value[x]",
+        "min": 0,
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medication-statement-status",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>MedicationStatementStatus</h2><p>A set of codes indicating the current status of a MedicationStatement</p><p>This value set has an inline code system http://hl7.org/fhir/medication-statement-status, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>in-progress<a name=\"in-progress\"> </a></td><td>In Progress</td><td>The medication is still being taken.</td></tr><tr><td>completed<a name=\"completed\"> </a></td><td>Completed</td><td>All actions that are implied by the statement have occurred.</td></tr><tr><td>entered-in-error<a name=\"entered-in-error\"> </a></td><td>Entered in Error</td><td>The statement was entered in error and therefore nullified.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.967"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/medication-statement-status",
+  "version": "0.5.0",
+  "name": "MedicationStatementStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes indicating the current status of a MedicationStatement",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-07-26T15:54:10-04:00",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.967"
+      }
+    ],
+    "system": "http://hl7.org/fhir/medication-statement-status",
+    "version": "0.5.0",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "in-progress",
+        "display": "In Progress",
+        "definition": "The medication is still being taken."
+      },
+      {
+        "code": "completed",
+        "display": "Completed",
+        "definition": "All actions that are implied by the statement have occurred."
+      },
+      {
+        "code": "entered-in-error",
+        "display": "Entered in Error",
+        "definition": "The statement was entered in error and therefore nullified."
+      }
+    ]
+  }
+}

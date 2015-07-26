@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="medicationadministration-immunization-protocol"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/medicationadministration-immunization-protocol"/>
+  <name value="What protocol was followed"/>
+  <publisher value="Health Level Seven International (Public Health Emergency Response)"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="Contains information about the protocol(s) under which the vaccine was administered."/>
+  <status value="draft"/>
+  <date value="2015-03-18"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <kind value="datatype"/>
+  <constrainedType value="Extension"/>
+  <abstract value="false"/>
+  <contextType value="resource"/>
+  <context value="MedicationAdministration"/>
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <snapshot>
+    <element>
+      <path value="Extension"/>
+      <short value="What protocol was followed"/>
+      <definition value="Contains information about the protocol(s) under which the vaccine was administered."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(V2.x doesn&#39;t seem to provide for this)"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM]"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="true"/>
+        <rules value="openAtEnd"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="doseSequence"/>
+      <short value="What dose number within series?"/>
+      <definition value="Nominal position in a series."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].sequenceNumber"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="doseSequence"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueInteger"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="description"/>
+      <short value="Details of vaccine protocol"/>
+      <definition value="Contains the description about the protocol under which the vaccine was administered."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].text"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="description"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="authority"/>
+      <short value="Who is responsible for protocol"/>
+      <definition value="Indicates the authority who published the protocol?  E.g. ACIP."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].participation[typeCode=AUT].COCT_MT090200UV"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="authority"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueReference"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="series"/>
+      <short value="Name of vaccine series"/>
+      <definition value="One possible path to achieve presumed immunity against a disease - within the context of an authority."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM]"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="series"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="seriesDoses"/>
+      <short value="Recommended number of doses for immunity"/>
+      <definition value="The recommended number of doses to achieve immunity."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].text"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="seriesDoses"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueInteger"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="doseTarget"/>
+      <short value="Disease immunized against"/>
+      <definition value="The targeted disease."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship.target[classCode=OBS].code"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="doseTarget"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueCodeableConcept"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <description value="The disease target of the vaccination protocol"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-target"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="doseStatus"/>
+      <short value="Does dose count towards immunity?"/>
+      <definition value="Indicates if the immunization event should &quot;count&quot; against  the protocol."/>
+      <comments value="May need to differentiate between status declarations by a provider vs. a CDS engine."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].playedRole[classCode=INGR].scopedRole.scoper[classCode=MMAT].playedRole[classCode=HLTHCHRT].participation[typeCode=SBJ].observation[classCode=OBS].value"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="doseStatus"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueCodeableConcept"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <description value="The status of the vaccination protocol (i.e. should this count)"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="doseStatusReason"/>
+      <short value="Why does does count/not count?"/>
+      <definition value="Provides an explanation as to why a immunization event should or should not count against the protocol."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].playedRole[classCode=INGR].scopedRole.scoper[classCode=MMAT].playedRole[classCode=HLTHCHRT].participation[typeCode=SBJ].observation[classCode=OBS].reasonCode"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="doseStatusReason"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueCodeableConcept"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <description value="The reason for the determining if a vaccination should count or why vaccination should not count."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status-reason"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/medicationadministration-immunization-protocol"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.value[x]"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="*"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element>
+      <path value="Extension"/>
+      <short value="What protocol was followed"/>
+      <definition value="Contains information about the protocol(s) under which the vaccine was administered."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(V2.x doesn&#39;t seem to provide for this)"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM]"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="doseSequence"/>
+      <short value="What dose number within series?"/>
+      <definition value="Nominal position in a series."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].sequenceNumber"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="doseSequence"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="description"/>
+      <short value="Details of vaccine protocol"/>
+      <definition value="Contains the description about the protocol under which the vaccine was administered."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].text"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="description"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="authority"/>
+      <short value="Who is responsible for protocol"/>
+      <definition value="Indicates the authority who published the protocol?  E.g. ACIP."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].participation[typeCode=AUT].COCT_MT090200UV"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="authority"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="series"/>
+      <short value="Name of vaccine series"/>
+      <definition value="One possible path to achieve presumed immunity against a disease - within the context of an authority."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM]"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="series"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="seriesDoses"/>
+      <short value="Recommended number of doses for immunity"/>
+      <definition value="The recommended number of doses to achieve immunity."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship[typeCode=INST].target[classCode=SBADM].inboundRelationship[typeCode=COMP].source[classCode=SBADM].text"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="seriesDoses"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="doseTarget"/>
+      <short value="Disease immunized against"/>
+      <definition value="The targeted disease."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="outboundRelationship.target[classCode=OBS].code"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="doseTarget"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <description value="The disease target of the vaccination protocol"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-target"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="doseStatus"/>
+      <short value="Does dose count towards immunity?"/>
+      <definition value="Indicates if the immunization event should &quot;count&quot; against  the protocol."/>
+      <comments value="May need to differentiate between status declarations by a provider vs. a CDS engine."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].playedRole[classCode=INGR].scopedRole.scoper[classCode=MMAT].playedRole[classCode=HLTHCHRT].participation[typeCode=SBJ].observation[classCode=OBS].value"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="doseStatus"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <description value="The status of the vaccination protocol (i.e. should this count)"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="doseStatusReason"/>
+      <short value="Why does does count/not count?"/>
+      <definition value="Provides an explanation as to why a immunization event should or should not count against the protocol."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].playedRole[classCode=INGR].scopedRole.scoper[classCode=MMAT].playedRole[classCode=HLTHCHRT].participation[typeCode=SBJ].observation[classCode=OBS].reasonCode"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="doseStatusReason"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <description value="The reason for the determining if a vaccination should count or why vaccination should not count."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status-reason"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element>
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/medicationadministration-immunization-protocol"/>
+    </element>
+    <element>
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

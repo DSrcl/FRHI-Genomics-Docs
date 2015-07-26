@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="daf-encounter-reason"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>DAF Encounter Diagnoses</h2>
+      <p>Encounter Diagnoses: a specific code indicating type of service provided: SNOMED CT, ICD-10-AM, or CPT</p>
+      <p>
+        <b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+      </p>
+      <p>This value set includes codes from the following code systems:</p>
+      <ul>
+        <li>Include all codes defined in http://snomed.info/sct</li>
+        <li>Include all codes defined in 
+          <a href="../valueset-icd-10.html">http://hl7.org/fhir/sid/icd-10</a>
+        </li>
+        <li>Include all codes defined in http://www.ama-assn.org/go/cpt</li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/daf-encounter-reason"/>
+  <version value="0.5.0"/>
+  <name value="DAF Encounter Diagnoses"/>
+  <publisher value="FHIR Project team"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Encounter Diagnoses: a specific code indicating type of service provided: SNOMED CT, ICD-10-AM, or CPT"/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2015-07-26T15:54:10-04:00"/><!--  <requirements value="Google OID 2.16.840.1.113883.3.88.12.80.32, but see http://www.gpo.gov/fdsys/pkg/FR-2012-09-04/pdf/2012-20982.pdf"/>  -->
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+    </include>
+    <include>
+      <system value="http://www.ama-assn.org/go/cpt"/>
+    </include>
+  </compose>
+</ValueSet>

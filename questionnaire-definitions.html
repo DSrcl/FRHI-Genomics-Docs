@@ -1,0 +1,387 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/questionnaire-definitions.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="questionnaire.html">Questionnaire</a></li>        <li><b>Detailed Descriptions</b></li>          <!-- questionnaire.html / res-Detailed Descriptions / Questionnaire -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="questionnaire.html">Content</a></li><li><a href="questionnaire-examples.html">Examples</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="questionnaire-mappings.html">Mappings</a></li><li><a href="questionnaire-profiles.html">Profiles</a></li><li><a href="questionnaire.questionnaire.html">HTML Form</a></li><li><a href="questionnaire-operations.html">Operations</a></li></ul>
+
+<h2><span class="sectioncount">4.26.9<a name="4.26.9"> </a></span> Resource Questionnaire - Detailed Descriptions <a href="questionnaire-definitions.html#4.26.9" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>Detailed Descriptions for the elements in the Questionnaire resource.</p>
+
+<table class="dict">
+  <tr><td colspan="2" class="structure"><a name="Questionnaire"> </a><b>Questionnaire</b></td></tr>
+  <tr><td>Definition</td><td><p>A structured set of questions intended to guide the collection of answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td>Requirements</td><td><p>To support structured, hierarchical registration of data gathered using digital forms and other questionnaires.</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Form; CRF; Survey</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">que-2</b>: The link ids for groups and questions must be unique within the questionnaire (xpath: count(descendant::f:linkId/@value)=count(distinct-values(descendant::f:linkId/@value)))<br/><b title="Formal Invariant Identifier">que-3</b>: If root group must be &quot;required&quot; (xpath: f:group/f:required/@value='true')</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.identifier"> </a><b>Questionnaire.identifier</b></td></tr>
+  <tr><td>Definition</td><td><p>This records identifiers associated with this question set that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).</p>
+</td></tr>
+  <tr><td>Note</td><td>This is a business identifer, not a resource identifier (see <a href="resource.html#identifiers">discussion</a>)</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td>Requirements</td><td><p>Need to allow connection to a wider workflow.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.version"> </a><b>Questionnaire.version</b></td></tr>
+  <tr><td>Definition</td><td><p>The version number assigned by the publisher for business reasons.  It may remain the same when the resource is updated.</p>
+</td></tr>
+  <tr><td>Note</td><td>This is a business versionId, not a resource identifier (see <a href="resource.html#versions">discussion</a>)</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>In some cases, separate resource instances might be created for each version (if an older version can be maintained once a new version exists).</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>N/A - MIF rather than RIM level</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.status"> </a><b>Questionnaire.status</b></td></tr>
+  <tr><td>Definition</td><td><p>The lifecycle status of the questionnaire as a whole.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>QuestionnaireStatus: <a href="valueset-questionnaire-status.html">Lifecycle status of the questionnaire</a> (<a href="terminologies.html#required">Required</a>)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.date"> </a><b>Questionnaire.date</b></td></tr>
+  <tr><td>Definition</td><td><p>The date that this questionnaire was last changed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Date Created; Date published; Date Issued; Date updated</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.publisher"> </a><b>Questionnaire.publisher</b></td></tr>
+  <tr><td>Definition</td><td><p>Organization or person responsible for developing and maintaining the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>Conveys responsibility for the questions and their organization and also helps evaluate the questionnaire's &quot;authority&quot;.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.telecom"> </a><b>Questionnaire.telecom</b></td></tr>
+  <tr><td>Definition</td><td><p>Contact details to assist a user in finding and communicating with the publisher.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#ContactPoint">ContactPoint</a></td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.subjectType"> </a><b>Questionnaire.subjectType</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the types of subjects that can be the subject of the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>ResourceType: <a href="valueset-resource-types.html">Any defined Resource Type name</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>If none are specified, then the subject is unlimited.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group"> </a><b>Questionnaire.group</b></td></tr>
+  <tr><td>Definition</td><td><p>A collection of related questions (or further groupings of questions).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td>Requirements</td><td><p>Need to be able to logically group answers to grouped questions.</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Section</td></tr>
+  <tr><td>Comments</td><td><p>The Questionnaire itself has one &quot;root&quot; group with the actual contents of the Questionnaire.  Information on this root group applies to the questionnaire as a whole.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">que-1</b>: Groups may either contain questions or groups but not both (xpath: not(exists(f:group) and exists(f:question)))<br/><b>Affect this element</b><br/>
+<b>que-3</b>: If root group must be &quot;required&quot; (xpath: f:group/f:required/@value='true')</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.linkId"> </a><b>Questionnaire.group.linkId</b></td></tr>
+  <tr><td>Definition</td><td><p>An identifier that is unique within the questionnaire allowing linkage to the equivalent group in a QuestionnaireAnswers resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p><a href="questionnaireanswers.html">QuestionnaireAnswers</a> does not require omitted groups to be included and may have some groups that repeat, so linkage based on position alone is not sufficient.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>May be omitted if there is no expectation to link answers back to a questionnaire.  This <em>can</em> be a meaningful id (e.g. a LOINC code) but is not intended to have any meaning.  GUIDs or sequential numbers are appropriate here.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.title"> </a><b>Questionnaire.group.title</b></td></tr>
+  <tr><td>Definition</td><td><p>The human-readable name for this section of the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>When including text for the questionnaire with the answers, sections may have a section header.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>The title of the &quot;root&quot; group is the title for the questionnaire.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.concept"> </a><b>Questionnaire.group.concept</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies a how this group of questions is known in a particular terminology such as LOINC.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td><a href="terminologies.html#unbound">QuestionnaireGroupConcept</a>: Codes for questionnaires and groupings of questionnaire questions</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Coding">Coding</a></td></tr>
+  <tr><td>Requirements</td><td><p>Allows linking of groups of questions (and complete questionnaires) to formal terminologies.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>The code(s) for the &quot;root&quot; group apply to the questionnaire as a whole.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.text"> </a><b>Questionnaire.group.text</b></td></tr>
+  <tr><td>Definition</td><td><p>Additional text for the group, used for display purposes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>When including text for the questionnaire, each section may contain additional explanations are background text.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>Common extensions are defined for more specialized types of display text.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.required"> </a><b>Questionnaire.group.required</b></td></tr>
+  <tr><td>Definition</td><td><p>If true, indicates that the group must be present and have required questions within it answered.  If false, the group may be skipped when answering the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td>Default Value</td><td>false</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.repeats"> </a><b>Questionnaire.group.repeats</b></td></tr>
+  <tr><td>Definition</td><td><p>Whether the group may occur multiple times in the instance, containing multiple sets of answers.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td>Default Value</td><td>false</td></tr>
+  <tr><td>Requirements</td><td><p>Groups may be used to create set of (related) questions that can be repeated to give multiple answers to such a set.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.group"> </a><b>Questionnaire.group.group</b></td></tr>
+  <tr><td>Definition</td><td><p>A sub-group within a group. The ordering of groups within this group is relevant.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="#Questionnaire.group">See Questionnaire.group</a></td></tr>
+  <tr><td>Requirements</td><td><p>Reports can consist of complex nested groups.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Affect this element</b><br/>
+<b>que-1</b>: Groups may either contain questions or groups but not both (xpath: not(exists(f:group) and exists(f:question)))</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.question"> </a><b>Questionnaire.group.question</b></td></tr>
+  <tr><td>Definition</td><td><p>Set of questions within this group. The order of questions within the group is relevant.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td>Requirements</td><td><p>Must register answers to questions.</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Responses; Contents</td></tr>
+  <tr><td>Invariants</td><td><b>Affect this element</b><br/>
+<b>que-1</b>: Groups may either contain questions or groups but not both (xpath: not(exists(f:group) and exists(f:question)))</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.question.linkId"> </a><b>Questionnaire.group.question.linkId</b></td></tr>
+  <tr><td>Definition</td><td><p>An identifier that is unique within the questionnaire allowing linkage to the equivalent group in a <a href="questionnaireanswers.html">QuestionnaireAnswers</a> resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p><a href="questionnaireanswers.html">QuestionnaireAnswers</a> does not require omitted groups to be included and may have some groups that repeat, so linkage based on position alone is not sufficient.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>May be omitted if there is no expectation to link answers back to a questionnaire.  This <em>can</em> be a meaningful id (e.g. a LOINC code) but is not intended to have any meaning.  GUIDs or sequential numbers are appropriate here.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.question.concept"> </a><b>Questionnaire.group.question.concept</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies a how this question is known in a particular terminology such as LOINC.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Coding">Coding</a></td></tr>
+  <tr><td>Requirements</td><td><p>Allows linking of questions (and their answers) to formal terminologies.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.question.text"> </a><b>Questionnaire.group.question.text</b></td></tr>
+  <tr><td>Definition</td><td><p>The actual question as shown to the user to prompt them for an answer.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>When including text for the questionnaire, each question may contain its actual question display text.</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Question</td></tr>
+  <tr><td>Comments</td><td><p>Common extensions are defined for more specialized types of display text.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.question.type"> </a><b>Questionnaire.group.question.type</b></td></tr>
+  <tr><td>Definition</td><td><p>The expected format of the answer, e.g. the type of input (string, integer) or whether a (multiple) choice is expected.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>AnswerFormat: <a href="valueset-answer-format.html">The expected format of an answer</a> (<a href="terminologies.html#required">Required</a>)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td>Requirements</td><td><p>Defines the format in which the user is to be prompted for the answer.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>Additional constraints on the type of answer can be conveyed by extensions.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.question.required"> </a><b>Questionnaire.group.question.required</b></td></tr>
+  <tr><td>Definition</td><td><p>If true, indicates that the question must be answered and have required groups within it also present.  If false, the question and any contained groups may be skipped when answering the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td>Default Value</td><td>false</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.question.repeats"> </a><b>Questionnaire.group.question.repeats</b></td></tr>
+  <tr><td>Definition</td><td><p>If true, the question may have more than one answer.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td>Default Value</td><td>false</td></tr>
+  <tr><td>Requirements</td><td><p>Used for &quot;check all that apply&quot; types of questions or &quot;list your top 3&quot;, etc.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>Whether the question itself will be displayed for each answer is a rendering choice typically based on whether there are nested groups.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.question.options"> </a><b>Questionnaire.group.question.options</b></td></tr>
+  <tr><td>Definition</td><td><p>Reference to a valueset containing the a list of codes representing permitted answers for the question.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="valueset.html">ValueSet</a>)</td></tr>
+  <tr><td>Comments</td><td><p>LOINC defines many useful value sets for questionnaire answers. See <a href="loinc.html#alist">LOINC Answer Lists</a>.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Questionnaire.group.question.group"> </a><b>Questionnaire.group.question.group</b></td></tr>
+  <tr><td>Definition</td><td><p>Nested group, containing nested question for this question. The order of groups within the question is relevant.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="#Questionnaire.group">See Questionnaire.group</a></td></tr>
+  <tr><td>Requirements</td><td><p>It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details.</p>
+</td></tr>
+</table>
+
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fquestionnaire-definitions.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fquestionnaire-definitions.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

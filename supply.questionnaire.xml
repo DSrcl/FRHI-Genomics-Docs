@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <name value="Type options for Supply.orderedItem"/>
+      <description value="Type options for Supply.orderedItem"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:2c6c41a0-9286-45de-a58c-86b366e8e00c"/>
+        <timestamp value="2015-07-24T17:34:21-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Medication"/>
+          <display value="Medication"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Substance"/>
+          <display value="Substance"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Device"/>
+          <display value="Device"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs3"/>
+      <name value="Type options for Supply.dispense.suppliedItem"/>
+      <description value="Type options for Supply.dispense.suppliedItem"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:b61da581-4b1a-4ec8-9eec-190f2100f552"/>
+        <timestamp value="2015-07-24T17:34:21-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Medication"/>
+          <display value="Medication"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Substance"/>
+          <display value="Substance"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Device"/>
+          <display value="Device"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-07-24T17:31:16-04:00"/>
+  <publisher value="Health Level Seven International (Orders and Observations)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A supply - a  request for something, and provision of what is supplied."/>
+    </extension>
+    <linkId value="Supply"/>
+    <title value="A supply -  request and provision"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Supply.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Supply.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="Supply.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="Supply.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Supply.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Supply.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Supply.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      </extension>
+      <linkId value="Supply.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      </extension>
+      <linkId value="Supply.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      </extension>
+      <linkId value="Supply.extension"/>
+      <text value="Additional Content defined by implementations"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      </extension>
+      <linkId value="Supply.modifierExtension"/>
+      <text value="Extensions that cannot be ignored"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Category of supply, e.g.  central, non-stock, etc. This is used to support work flows associated with the supply process."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="Supply.kind"/>
+      <text value="The kind of supply (central, non-stock, etc)"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Supply.kind.coding"/>
+        <text value="code:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Supply.kind.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Unique identifier for this supply request."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="Supply.identifier"/>
+      <text value="Unique identifier"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Supply.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Supply.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="Supply.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Status of the supply request."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Supply.status"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Supply.status.value"/>
+        <text value="status"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The item that is requested to be supplied."/>
+      </extension>
+      <linkId value="Supply.orderedItem"/>
+      <text value="Medication, Substance, or Device requested to be supplied"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Supply.orderedItem._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <options>
+          <reference value="#vs2"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Supply.orderedItem._Medication"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Medication?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Supply.orderedItem._Medication.value"/>
+            <text value="Medication"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Supply.orderedItem._Substance"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Substance?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Supply.orderedItem._Substance.value"/>
+            <text value="Substance"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Supply.orderedItem._Device"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Device?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Supply.orderedItem._Device.value"/>
+            <text value="Device"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A link to a resource representing the person whom the ordered item is for."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="Supply.patient"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="Supply.patient.value"/>
+        <text value="Patient for whom the item is supplied"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Indicates the details of the dispense event such as the days supply and quantity of a supply dispensed."/>
+      </extension>
+      <linkId value="Supply.dispense"/>
+      <title value="Supply details"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Supply.dispense.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Supply.dispense.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="Supply.dispense.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="Supply.dispense.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifier assigned by the dispensing facility when the item(s) is dispensed."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Identifier"/>
+        </extension>
+        <linkId value="Supply.dispense.identifier"/>
+        <text value="External identifier"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Supply.dispense.identifier.label"/>
+          <text value="label:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Supply.dispense.identifier.system"/>
+          <text value="system:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Supply.dispense.identifier.value"/>
+          <text value="value:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A code specifying the state of the dispense event."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="Supply.dispense.status"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Supply.dispense.status.value"/>
+          <text value="status"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicates the type of dispensing event that is performed. Examples include: Trial Fill, Completion of Trial, Partial Fill, Emergency Fill, Samples, etc."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="Supply.dispense.type"/>
+        <text value="Category of dispense event"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Supply.dispense.type.coding"/>
+          <text value="code:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Supply.dispense.type.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The amount of supply that has been dispensed. Includes unit of measure."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Quantity"/>
+        </extension>
+        <linkId value="Supply.dispense.quantity"/>
+        <text value="Amount dispensed"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Supply.dispense.quantity.comparator"/>
+          <text value="comp:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Supply.dispense.quantity.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Supply.dispense.quantity.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Supply.dispense.quantity.code"/>
+          <text value="coded units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Supply.dispense.quantity.system"/>
+          <text value="units system:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies the medication or substance or device being dispensed. This is either a link to a resource representing the details of the item or a simple attribute carrying a code that identifies the item from a known list."/>
+        </extension>
+        <linkId value="Supply.dispense.suppliedItem"/>
+        <text value="Medication, Substance, or Device supplied"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Supply.dispense.suppliedItem._type"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <options>
+            <reference value="#vs3"/>
+          </options>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Reference"/>
+            </extension>
+            <linkId value="Supply.dispense.suppliedItem._Medication"/>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Medication?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+              </extension>
+              <linkId value="Supply.dispense.suppliedItem._Medication.value"/>
+              <text value="Medication"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Reference"/>
+            </extension>
+            <linkId value="Supply.dispense.suppliedItem._Substance"/>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Substance?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+              </extension>
+              <linkId value="Supply.dispense.suppliedItem._Substance.value"/>
+              <text value="Substance"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Reference"/>
+            </extension>
+            <linkId value="Supply.dispense.suppliedItem._Device"/>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Device?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+              </extension>
+              <linkId value="Supply.dispense.suppliedItem._Device.value"/>
+              <text value="Device"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The individual responsible for dispensing the medication, supplier or device."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="Supply.dispense.supplier"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="Supply.dispense.supplier.value"/>
+          <text value="Dispenser"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The time the dispense event occurred."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Period"/>
+        </extension>
+        <linkId value="Supply.dispense.whenPrepared"/>
+        <text value="Dispensing time"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Supply.dispense.whenPrepared.low"/>
+          <text value="start:"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Supply.dispense.whenPrepared.end"/>
+          <text value="end:"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The time the dispensed item was sent or handed to the patient (or agent)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="datetime"/>
+        </extension>
+        <linkId value="Supply.dispense.whenHandedOver"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Supply.dispense.whenHandedOver.value"/>
+          <text value="Handover time"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identification of the facility/location where the Supply was shipped to, as part of the dispense event."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="Supply.dispense.destination"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Location?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="Supply.dispense.destination.value"/>
+          <text value="Where the Supply was sent"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies the person who picked up the Supply."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="Supply.dispense.receiver"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="Supply.dispense.receiver.value"/>
+          <text value="Who collected the Supply"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+  </group>
+</Questionnaire>

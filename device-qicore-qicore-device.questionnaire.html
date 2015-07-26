@@ -1,0 +1,3001 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Device-qicore-qicore-device.questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/device-qicore-qicore-device.questionnaire.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <!-- device-qicore-qicore-device.questionnaire.html / profile-questionnaire:device-qicore-qicore-device / Questionnaire-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="device-qicore-qicore-device.html">Content</a></li><li><a href="device-qicore-qicore-device-definitions.html">Detailed Descriptions</a></li><li><a href="device-qicore-qicore-device-mappings.html">Mappings</a></li><li class="active"><a href="#">HTML Form</a></li><li><a href="device-qicore-qicore-device.profile.xml.html">XML</a></li><li><a href="device-qicore-qicore-device.profile.json.html">JSON</a></li></ul>
+
+
+<h2>Device-qicore-qicore-device.questionnaire - Example Form</h2>
+
+<p>
+This is an example form based on a questionnaire generated from the definition, to help visualise the content. See also the <a href="device-qicore-qicore-device.questionnaire.xml.html">XML</a> or <a href="device-qicore-qicore-device.questionnaire.json.html">JSON</a> questionnaire.
+</p>
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<script type="text/javascript"><!--
+var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validateDevice(node) {
+  var groupNodes = findDiv(node, "Device");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_id(divNode, "Device.id")
+         && validateDevice_meta(divNode, "Device.meta")
+         && validateDevice_implicitRules(divNode, "Device.implicitRules")
+         && validateDevice_language(divNode, "Device.language")
+         && validateDevice_text(divNode, "Device.text")
+         && validateDevice_contained(divNode, "Device.contained")
+         && validateDevice_extension(divNode, "Device.extension")
+         && validateDevice_modifierExtension(divNode, "Device.modifierExtension")
+         && validateDevice_identifier(divNode, "Device.identifier")
+         && validateDevice_type(divNode, "Device.type")
+         && validateDevice_note(divNode, "Device.note")
+         && validateDevice_status(divNode, "Device.status")
+         && validateDevice_manufacturer(divNode, "Device.manufacturer")
+         && validateDevice_model(divNode, "Device.model")
+         && validateDevice_version(divNode, "Device.version")
+         && validateDevice_manufactureDate(divNode, "Device.manufactureDate")
+         && validateDevice_expiry(divNode, "Device.expiry")
+         && validateDevice_udi(divNode, "Device.udi")
+         && validateDevice_lotNumber(divNode, "Device.lotNumber")
+         && validateDevice_owner(divNode, "Device.owner")
+         && validateDevice_location(divNode, "Device.location")
+         && validateDevice_patient(divNode, "Device.patient")
+         && validateDevice_contact(divNode, "Device.contact")
+         && validateDevice_url(divNode, "Device.url");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_id(node) {
+  var groupNodes = findDiv(node, "Device.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_id_value(divNode, "Device.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_id_value(node) {
+  var answerNodes = findAnswers(node, "Device.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_meta(node) {
+  var groupNodes = findDiv(node, "Device.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_implicitRules(node) {
+  var groupNodes = findDiv(node, "Device.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_implicitRules_value(divNode, "Device.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "Device.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_language(node) {
+  var groupNodes = findDiv(node, "Device.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_language_value(divNode, "Device.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_language_value(node) {
+  var answerNodes = findAnswers(node, "Device.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_text(node) {
+  var groupNodes = findDiv(node, "Device.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_contained(node) {
+  var groupNodes = findDiv(node, "Device.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_extension(node) {
+  var groupNodes = findDiv(node, "Device.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_modifierExtension(node) {
+  var groupNodes = findDiv(node, "Device.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_identifier(node) {
+  var groupNodes = findDiv(node, "Device.identifier");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_identifier_label(divNode, "Device.identifier.label")
+         && validateDevice_identifier_system(divNode, "Device.identifier.system")
+         && validateDevice_identifier_value(divNode, "Device.identifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_identifier_label(node) {
+  var answerNodes = findAnswers(node, "Device.identifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_identifier_system(node) {
+  var answerNodes = findAnswers(node, "Device.identifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_identifier_value(node) {
+  var answerNodes = findAnswers(node, "Device.identifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_type(node) {
+  var groupNodes = findDiv(node, "Device.type");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "Device.type");
+    node.focus()
+    alert('Must have at least 1 occurrences of: What kind of device this is');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_type_coding(divNode, "Device.type.coding")
+         && validateDevice_type_text(divNode, "Device.type.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_type_coding(node) {
+  var answerNodes = findAnswers(node, "Device.type.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_type_text(node) {
+  var answerNodes = findAnswers(node, "Device.type.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_note(node) {
+  var groupNodes = findDiv(node, "Device.note");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_status(node) {
+  var groupNodes = findDiv(node, "Device.status");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_status_value(divNode, "Device.status.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_status_value(node) {
+  var answerNodes = findAnswers(node, "Device.status.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_manufacturer(node) {
+  var groupNodes = findDiv(node, "Device.manufacturer");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_manufacturer_value(divNode, "Device.manufacturer.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_manufacturer_value(node) {
+  var answerNodes = findAnswers(node, "Device.manufacturer.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_model(node) {
+  var groupNodes = findDiv(node, "Device.model");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_model_value(divNode, "Device.model.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_model_value(node) {
+  var answerNodes = findAnswers(node, "Device.model.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_version(node) {
+  var groupNodes = findDiv(node, "Device.version");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_version_value(divNode, "Device.version.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_version_value(node) {
+  var answerNodes = findAnswers(node, "Device.version.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_manufactureDate(node) {
+  var groupNodes = findDiv(node, "Device.manufactureDate");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_manufactureDate_value(divNode, "Device.manufactureDate.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_manufactureDate_value(node) {
+  var answerNodes = findAnswers(node, "Device.manufactureDate.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_expiry(node) {
+  var groupNodes = findDiv(node, "Device.expiry");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_expiry_value(divNode, "Device.expiry.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_expiry_value(node) {
+  var answerNodes = findAnswers(node, "Device.expiry.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_udi(node) {
+  var groupNodes = findDiv(node, "Device.udi");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_udi_value(divNode, "Device.udi.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_udi_value(node) {
+  var answerNodes = findAnswers(node, "Device.udi.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_lotNumber(node) {
+  var groupNodes = findDiv(node, "Device.lotNumber");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_lotNumber_value(divNode, "Device.lotNumber.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_lotNumber_value(node) {
+  var answerNodes = findAnswers(node, "Device.lotNumber.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_owner(node) {
+  var groupNodes = findDiv(node, "Device.owner");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_owner_value(divNode, "Device.owner.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_owner_value(node) {
+  var answerNodes = findAnswers(node, "Device.owner.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_location(node) {
+  var groupNodes = findDiv(node, "Device.location");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_location_value(divNode, "Device.location.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_location_value(node) {
+  var answerNodes = findAnswers(node, "Device.location.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_patient(node) {
+  var groupNodes = findDiv(node, "Device.patient");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_patient_value(divNode, "Device.patient.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_patient_value(node) {
+  var answerNodes = findAnswers(node, "Device.patient.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_contact(node) {
+  var groupNodes = findDiv(node, "Device.contact");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_contact_system(divNode, "Device.contact.system")
+         && validateDevice_contact_value(divNode, "Device.contact.value")
+         && validateDevice_contact_use(divNode, "Device.contact.use");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_contact_system(node) {
+  var answerNodes = findAnswers(node, "Device.contact.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_contact_value(node) {
+  var answerNodes = findAnswers(node, "Device.contact.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_contact_use(node) {
+  var answerNodes = findAnswers(node, "Device.contact.use");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDevice_url(node) {
+  var groupNodes = findDiv(node, "Device.url");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDevice_url_value(divNode, "Device.url.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDevice_url_value(node) {
+  var answerNodes = findAnswers(node, "Device.url.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function serializeDevice(node, groups) {
+  var groupNodes = findDiv(node, "Device");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device",
+      "title":"An instance of a manufactured thing that is used in the provision of healthcare"
+    }
+    var childGroups = [];    serializeDevice_id(groupNodes[i], childGroups);
+    serializeDevice_meta(groupNodes[i], childGroups);
+    serializeDevice_implicitRules(groupNodes[i], childGroups);
+    serializeDevice_language(groupNodes[i], childGroups);
+    serializeDevice_text(groupNodes[i], childGroups);
+    serializeDevice_contained(groupNodes[i], childGroups);
+    serializeDevice_extension(groupNodes[i], childGroups);
+    serializeDevice_modifierExtension(groupNodes[i], childGroups);
+    serializeDevice_identifier(groupNodes[i], childGroups);
+    serializeDevice_type(groupNodes[i], childGroups);
+    serializeDevice_note(groupNodes[i], childGroups);
+    serializeDevice_status(groupNodes[i], childGroups);
+    serializeDevice_manufacturer(groupNodes[i], childGroups);
+    serializeDevice_model(groupNodes[i], childGroups);
+    serializeDevice_version(groupNodes[i], childGroups);
+    serializeDevice_manufactureDate(groupNodes[i], childGroups);
+    serializeDevice_expiry(groupNodes[i], childGroups);
+    serializeDevice_udi(groupNodes[i], childGroups);
+    serializeDevice_lotNumber(groupNodes[i], childGroups);
+    serializeDevice_owner(groupNodes[i], childGroups);
+    serializeDevice_location(groupNodes[i], childGroups);
+    serializeDevice_patient(groupNodes[i], childGroups);
+    serializeDevice_contact(groupNodes[i], childGroups);
+    serializeDevice_url(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_id(node, groups) {
+  var groupNodes = findDiv(node, "Device.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.id"
+    }
+    var childQuestions = [];    serializeDevice_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_id_value(node, answers) {
+  var question = {
+      "linkId":"Device.id.value",
+      "text":"Logical id of this artifact"
+    }
+  var answerNodes = findAnswers(node, "Device.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_meta(node, groups) {
+  var groupNodes = findDiv(node, "Device.meta");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.meta",
+      "text":"Metadata about the resource"
+    }
+  }
+
+}
+
+
+function serializeDevice_implicitRules(node, groups) {
+  var groupNodes = findDiv(node, "Device.implicitRules");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.implicitRules"
+    }
+    var childQuestions = [];    serializeDevice_implicitRules_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_implicitRules_value(node, answers) {
+  var question = {
+      "linkId":"Device.implicitRules.value",
+      "text":"A set of rules under which this content was created"
+    }
+  var answerNodes = findAnswers(node, "Device.implicitRules.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_language(node, groups) {
+  var groupNodes = findDiv(node, "Device.language");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.language"
+    }
+    var childQuestions = [];    serializeDevice_language_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_language_value(node, answers) {
+  var question = {
+      "linkId":"Device.language.value",
+      "text":"language"
+    }
+  var answerNodes = findAnswers(node, "Device.language.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_text(node, groups) {
+  var groupNodes = findDiv(node, "Device.text");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.text",
+      "text":"Text summary of the resource, for human interpretation"
+    }
+  }
+
+}
+
+
+function serializeDevice_contained(node, groups) {
+  var groupNodes = findDiv(node, "Device.contained");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.contained",
+      "text":"Contained, inline Resources"
+    }
+  }
+
+}
+
+
+function serializeDevice_extension(node, groups) {
+  var groupNodes = findDiv(node, "Device.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeDevice_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "Device.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeDevice_identifier(node, groups) {
+  var groupNodes = findDiv(node, "Device.identifier");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.identifier",
+      "text":"Instance id from manufacturer, owner, and others"
+    }
+    var childQuestions = [];    serializeDevice_identifier_label(groupNodes[i], childQuestions);
+    serializeDevice_identifier_system(groupNodes[i], childQuestions);
+    serializeDevice_identifier_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_identifier_label(node, answers) {
+  var question = {
+      "linkId":"Device.identifier.label",
+      "text":"label:"
+    }
+  var answerNodes = findAnswers(node, "Device.identifier.label");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_identifier_system(node, answers) {
+  var question = {
+      "linkId":"Device.identifier.system",
+      "text":"system:"
+    }
+  var answerNodes = findAnswers(node, "Device.identifier.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_identifier_value(node, answers) {
+  var question = {
+      "linkId":"Device.identifier.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "Device.identifier.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_type(node, groups) {
+  var groupNodes = findDiv(node, "Device.type");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.type",
+      "text":"What kind of device this is"
+    }
+    var childQuestions = [];    serializeDevice_type_coding(groupNodes[i], childQuestions);
+    serializeDevice_type_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_type_coding(node, answers) {
+  var question = {
+      "linkId":"Device.type.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "Device.type.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_type_text(node, answers) {
+  var question = {
+      "linkId":"Device.type.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "Device.type.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_note(node, groups) {
+  var groupNodes = findDiv(node, "Device.note");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.note",
+      "text":"Device notes and comments"
+    }
+  }
+
+}
+
+
+function serializeDevice_status(node, groups) {
+  var groupNodes = findDiv(node, "Device.status");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.status"
+    }
+    var childQuestions = [];    serializeDevice_status_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_status_value(node, answers) {
+  var question = {
+      "linkId":"Device.status.value",
+      "text":"status"
+    }
+  var answerNodes = findAnswers(node, "Device.status.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_manufacturer(node, groups) {
+  var groupNodes = findDiv(node, "Device.manufacturer");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.manufacturer"
+    }
+    var childQuestions = [];    serializeDevice_manufacturer_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_manufacturer_value(node, answers) {
+  var question = {
+      "linkId":"Device.manufacturer.value",
+      "text":"Name of device manufacturer"
+    }
+  var answerNodes = findAnswers(node, "Device.manufacturer.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_model(node, groups) {
+  var groupNodes = findDiv(node, "Device.model");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.model"
+    }
+    var childQuestions = [];    serializeDevice_model_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_model_value(node, answers) {
+  var question = {
+      "linkId":"Device.model.value",
+      "text":"Model id assigned by the manufacturer"
+    }
+  var answerNodes = findAnswers(node, "Device.model.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_version(node, groups) {
+  var groupNodes = findDiv(node, "Device.version");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.version"
+    }
+    var childQuestions = [];    serializeDevice_version_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_version_value(node, answers) {
+  var question = {
+      "linkId":"Device.version.value",
+      "text":"Version number (i.e. software)"
+    }
+  var answerNodes = findAnswers(node, "Device.version.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_manufactureDate(node, groups) {
+  var groupNodes = findDiv(node, "Device.manufactureDate");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.manufactureDate"
+    }
+    var childQuestions = [];    serializeDevice_manufactureDate_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_manufactureDate_value(node, answers) {
+  var question = {
+      "linkId":"Device.manufactureDate.value",
+      "text":"Manufacture date"
+    }
+  var answerNodes = findAnswers(node, "Device.manufactureDate.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_expiry(node, groups) {
+  var groupNodes = findDiv(node, "Device.expiry");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.expiry"
+    }
+    var childQuestions = [];    serializeDevice_expiry_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_expiry_value(node, answers) {
+  var question = {
+      "linkId":"Device.expiry.value",
+      "text":"Date and time of expiry of this device (if applicable)"
+    }
+  var answerNodes = findAnswers(node, "Device.expiry.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_udi(node, groups) {
+  var groupNodes = findDiv(node, "Device.udi");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.udi"
+    }
+    var childQuestions = [];    serializeDevice_udi_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_udi_value(node, answers) {
+  var question = {
+      "linkId":"Device.udi.value",
+      "text":"FDA Mandated Unique Device Identifier"
+    }
+  var answerNodes = findAnswers(node, "Device.udi.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_lotNumber(node, groups) {
+  var groupNodes = findDiv(node, "Device.lotNumber");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.lotNumber"
+    }
+    var childQuestions = [];    serializeDevice_lotNumber_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_lotNumber_value(node, answers) {
+  var question = {
+      "linkId":"Device.lotNumber.value",
+      "text":"Lot number of manufacture"
+    }
+  var answerNodes = findAnswers(node, "Device.lotNumber.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_owner(node, groups) {
+  var groupNodes = findDiv(node, "Device.owner");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.owner"
+    }
+    var childQuestions = [];    serializeDevice_owner_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_owner_value(node, answers) {
+  var question = {
+      "linkId":"Device.owner.value",
+      "text":"Organization responsible for device"
+    }
+  var answerNodes = findAnswers(node, "Device.owner.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_location(node, groups) {
+  var groupNodes = findDiv(node, "Device.location");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.location"
+    }
+    var childQuestions = [];    serializeDevice_location_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_location_value(node, answers) {
+  var question = {
+      "linkId":"Device.location.value",
+      "text":"Where the resource is found"
+    }
+  var answerNodes = findAnswers(node, "Device.location.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_patient(node, groups) {
+  var groupNodes = findDiv(node, "Device.patient");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.patient"
+    }
+    var childQuestions = [];    serializeDevice_patient_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_patient_value(node, answers) {
+  var question = {
+      "linkId":"Device.patient.value",
+      "text":"If the resource is affixed to a person"
+    }
+  var answerNodes = findAnswers(node, "Device.patient.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_contact(node, groups) {
+  var groupNodes = findDiv(node, "Device.contact");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.contact",
+      "text":"Details for human/organization for support"
+    }
+    var childQuestions = [];    serializeDevice_contact_system(groupNodes[i], childQuestions);
+    serializeDevice_contact_value(groupNodes[i], childQuestions);
+    serializeDevice_contact_use(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_contact_system(node, answers) {
+  var question = {
+      "linkId":"Device.contact.system",
+      "text":"type:"
+    }
+  var answerNodes = findAnswers(node, "Device.contact.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_contact_value(node, answers) {
+  var question = {
+      "linkId":"Device.contact.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "Device.contact.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_contact_use(node, answers) {
+  var question = {
+      "linkId":"Device.contact.use",
+      "text":"use:"
+    }
+  var answerNodes = findAnswers(node, "Device.contact.use");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDevice_url(node, groups) {
+  var groupNodes = findDiv(node, "Device.url");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Device.url"
+    }
+    var childQuestions = [];    serializeDevice_url_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDevice_url_value(node, answers) {
+  var question = {
+      "linkId":"Device.url.value",
+      "text":"Network address to contact device"
+    }
+  var answerNodes = findAnswers(node, "Device.url.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+function validateQuestionnaire() {
+  return validateDevice(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function serializeQuestionnaire() {
+  var rootGroup = serializeDevice(document.getElementById("div-cnt"));
+  if (rootGroup.length == 0)
+    delete answers.group
+  else
+    answers.group = rootGroup;
+  return answers;
+}
+
+--></script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/json2.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/statuspage.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jtip.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jcookie.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js"> </script>
+      <script type="text/javascript"><!--
+var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";
+--></script>
+      <script type="text/javascript"><!--
+var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+        && this.style.display != "none";
+  });
+}
+
+function setAddFocus(node, linkId) {
+  $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+  }).last().next(":input").focus();
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  serializeQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    serializeQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+}
+--></script>
+      <script type="text/javascript"><!--
+var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+}
+        --></script>
+      <script type="text/javascript"><!--
+var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+}
+        --></script>
+      <style type="">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript"><!--
+      //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      }
+      --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+<div id="div-cnt">
+         <h3>An instance of a manufactured thing that is used in the provision of healthcare</h3>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+              id="d2e17">
+            <span style="display:none">Device</span>
+            <input type="image" onclick="deleteGroup(this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                   alt="Remove"
+                   style="width:10px;height:10px;"/>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e35.1">
+               <span style="display:none">Device.id</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.id.value</span> Logical id of this artifact</td>
+                        <td>
+                           <input name="Path:Device[1]Device.id[1]Device.id.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e35.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.id</span>
+            <span style="display:none">1</span>
+            <p>Metadata about the resource</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e73.1">
+               <span style="display:none">Device.meta</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e73.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.meta</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e92.1">
+               <span style="display:none">Device.implicitRules</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:Device[1]Device.implicitRules[1]Device.implicitRules.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e92.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.implicitRules</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e130.1">
+               <span style="display:none">Device.language</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e130.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e168.1">
+               <span style="display:none">Device.text</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e168.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e188.1">
+               <span style="display:none">Device.contained</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e188.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.contained</span>
+            <span style="display:none">1</span>
+            <p>Additional Content defined by implementations</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e207.1">
+               <span style="display:none">Device.extension</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e207.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.extension</span>
+            <span style="display:none">1</span>
+            <p>Extensions that cannot be ignored</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e226.1">
+               <span style="display:none">Device.modifierExtension</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e226.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.modifierExtension</span>
+            <span style="display:none">1</span>
+            <p>Instance id from manufacturer, owner, and others</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e245.1">
+               <span style="display:none">Device.identifier</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.identifier.label</span> label:</td>
+                        <td>
+                           <input name="Path:Device[1]Device.identifier[1]Device.identifier.label[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.identifier.system</span> system:</td>
+                        <td>
+                           <input name="Path:Device[1]Device.identifier[1]Device.identifier.system[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.identifier.value</span> value:</td>
+                        <td>
+                           <input name="Path:Device[1]Device.identifier[1]Device.identifier.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e245.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.identifier</span>
+            <span style="display:none">1</span>
+            <p>What kind of device this is</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e317.1">
+               <span style="display:none">Device.type</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.type.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.type.text</span> text:</td>
+                        <td>
+                           <input name="Path:Device[1]Device.type[1]Device.type.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e317.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.type</span>
+            <span style="display:none">1</span>
+            <p>Device notes and comments</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e373.1">
+               <span style="display:none">Device.note</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e373.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.note</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e398.1">
+               <span style="display:none">Device.status</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.status.value</span> status</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e398.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.status</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e436.1">
+               <span style="display:none">Device.manufacturer</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.manufacturer.value</span> Name of device manufacturer</td>
+                        <td>
+                           <input name="Path:Device[1]Device.manufacturer[1]Device.manufacturer.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e436.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.manufacturer</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e474.1">
+               <span style="display:none">Device.model</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.model.value</span> Model id assigned by the manufacturer</td>
+                        <td>
+                           <input name="Path:Device[1]Device.model[1]Device.model.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e474.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.model</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e512.1">
+               <span style="display:none">Device.version</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.version.value</span> Version number (i.e. software)</td>
+                        <td>
+                           <input name="Path:Device[1]Device.version[1]Device.version.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e512.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.version</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e550.1">
+               <span style="display:none">Device.manufactureDate</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.manufactureDate.value</span> Manufacture date</td>
+                        <td>
+                           <input name="Path:Device[1]Device.manufactureDate[1]Device.manufactureDate.value[1]"
+                                  type="text"
+                                  onblur="checkDateTime(this)"
+                                  maxlength="26"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e550.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.manufactureDate</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e588.1">
+               <span style="display:none">Device.expiry</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.expiry.value</span> Date and time of expiry of this device (if applicable)</td>
+                        <td>
+                           <input name="Path:Device[1]Device.expiry[1]Device.expiry.value[1]" type="text"
+                                  onblur="checkDateTime(this)"
+                                  maxlength="26"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e588.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.expiry</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e627.1">
+               <span style="display:none">Device.udi</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.udi.value</span> FDA Mandated Unique Device Identifier</td>
+                        <td>
+                           <input name="Path:Device[1]Device.udi[1]Device.udi.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e627.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.udi</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e665.1">
+               <span style="display:none">Device.lotNumber</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.lotNumber.value</span> Lot number of manufacture</td>
+                        <td>
+                           <input name="Path:Device[1]Device.lotNumber[1]Device.lotNumber.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e665.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.lotNumber</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e703.1">
+               <span style="display:none">Device.owner</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.owner.value</span> Organization responsible for device</td>
+                        <td>
+                           <input name="Path:Device[1]Device.owner[1]Device.owner.value[1]" tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e703.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.owner</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e746.1">
+               <span style="display:none">Device.location</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.location.value</span> Where the resource is found</td>
+                        <td>
+                           <input name="Path:Device[1]Device.location[1]Device.location.value[1]" tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e746.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.location</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e789.1">
+               <span style="display:none">Device.patient</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.patient.value</span> If the resource is affixed to a person</td>
+                        <td>
+                           <input name="Path:Device[1]Device.patient[1]Device.patient.value[1]" tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e789.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.patient</span>
+            <span style="display:none">1</span>
+            <p>Details for human/organization for support</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e832.1">
+               <span style="display:none">Device.contact</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.contact.system</span> type:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.contact.value</span> value:</td>
+                        <td>
+                           <input name="Path:Device[1]Device.contact[1]Device.contact.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.contact.use</span> use:</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e832.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.contact</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e905.1">
+               <span style="display:none">Device.url</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Device.url.value</span> Network address to contact device</td>
+                        <td>
+                           <input name="Path:Device[1]Device.url[1]Device.url.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e905.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Device.url</span>
+            <span style="display:none">1</span>
+         </div>
+         <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                onclick="addGroup('d2e17', this)"
+                src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                alt="Add section"/>
+         <span style="display:none">Device</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+</body>
+</html>
+
+<p>
+<!-- spacer -->
+&nbsp;
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:36-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fdevice-qicore-qicore-device.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fdevice-qicore-qicore-device.questionnaire.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

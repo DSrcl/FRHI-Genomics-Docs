@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="do-uslab-event"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>USLAB Diagnostic Order Event Codes</h2>
+      <p>US Realm ambulatory care event codes that correspond the Use cases outlined in the USLabOrder Implementation Guide</p>
+      <p>This value set has an inline code system http://hl7.org/fhir/uslab-event, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>new-request
+            <a name="new-request"> </a>
+          </td>
+          <td>new request</td>
+          <td>a Provider (.orderer) orders one or more new laboratory tests or scheduled laboratory tests (including future tests) to be performed by a laboratory. </td>
+        </tr>
+        <tr>
+          <td>add-on-request
+            <a name="add-on-request"> </a>
+          </td>
+          <td>add-on request</td>
+          <td>a Provider (.orderer) adds one or more additional tests to a previously transmitted test requisition.</td>
+        </tr>
+        <tr>
+          <td>orderer-cancel
+            <a name="orderer-cancel"> </a>
+          </td>
+          <td>orderer cancel</td>
+          <td>The Provider (.orderer)  requests cancelation of previously ordered test</td>
+        </tr>
+        <tr>
+          <td>lab-cancel
+            <a name="lab-cancel"> </a>
+          </td>
+          <td>laboratory cancel</td>
+          <td>The laboratory cancels a previously ordered test</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/do-uslab-event"/>
+  <version value="0.5.0"/>
+  <name value="USLAB Diagnostic Order Event Codes"/>
+  <publisher value="Orders and Observations Working Group"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="US Realm ambulatory care event codes that correspond the Use cases outlined in the USLabOrder Implementation Guide"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <system value="http://hl7.org/fhir/uslab-event"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="new-request"/>
+      <display value="new request"/>
+      <definition value="a Provider (.orderer) orders one or more new laboratory tests or scheduled laboratory tests (including future tests) to be performed by a laboratory. "/>
+    </concept>
+    <concept>
+      <code value="add-on-request"/>
+      <display value="add-on request"/>
+      <definition value="a Provider (.orderer) adds one or more additional tests to a previously transmitted test requisition."/>
+    </concept>
+    <concept>
+      <code value="orderer-cancel"/>
+      <display value="orderer cancel"/>
+      <definition value="The Provider (.orderer)  requests cancelation of previously ordered test"/>
+    </concept>
+    <concept>
+      <code value="lab-cancel"/>
+      <display value="laboratory cancel"/>
+      <definition value="The laboratory cancels a previously ordered test"/>
+    </concept>
+  </codeSystem>
+</ValueSet>

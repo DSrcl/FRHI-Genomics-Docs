@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><Observation xmlns="http://hl7.org/fhir">
+  <id value="f202"/>
+ <text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f202</p><p><b>code</b>: Body temperature <span>(Details : {http://acme.lab code &#39;BT&#39; = &#39;BT&#39;, given as &#39;Body temperature&#39;}; {LOINC code &#39;8310-5&#39; = &#39;Body temperature&#39;, given as &#39;Body temperature&#39;})</span></p><p><b>value</b>: 39 degrees C<span> (Details: SNOMED CT code 258710007 = &#39;degrees C&#39;)</span></p><p><b>interpretation</b>: Above high normal <span>(Details : {http://hl7.org/fhir/v2/0078 code &#39;H&#39; = &#39;Above high normal)</span></p><p><b>issued</b>: Apr 4, 2013 1:27:00 PM</p><p><b>status</b>: entered-in-error</p><p><b>reliability</b>: questionable</p><p><b>bodySite</b>: Oral cavity <span>(Details : {SNOMED CT code &#39;74262004&#39; = &#39;Oral cavity&#39;, given as &#39;Oral cavity&#39;})</span></p><p><b>method</b>: Oral temperature taking <span>(Details : {SNOMED CT code &#39;89003005&#39; = &#39;Oral temperature taking&#39;, given as &#39;Oral temperature taking&#39;})</span></p><p><b>subject</b>: <a>Roel</a></p><p><b>performer</b>: <a>Practitioner/f201</a></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td></tr><tr><td>*</td><td>37.5 degrees C</td></tr></table></div></text><code><!--  Kind of observation = Oral Temperature  -->
+    <!--  local code here  -->
+    <coding>
+       <system value="http://acme.lab"/>
+       <code value="BT"/>
+       <display value="Body temperature"/>
+    </coding>
+    <!--  LOINC translation here  -->
+    <coding>
+       <system value="http://loinc.org"/>
+       <code value="8310-5"/>
+       <display value="Body temperature"/>
+    </coding>
+    <text value="Body temperature"/>
+ </code>
+ <valueQuantity><!--  Temperature=39 degrees Celsius  -->
+    <value value="39"/>
+    <units value="degrees C"/>
+    <system value="http://snomed.info/sct"/>
+    <code value="258710007"/>
+ </valueQuantity>
+ <interpretation>
+     <coding>
+         <system value="http://hl7.org/fhir/v2/0078"/>
+         <code value="H"/>
+     </coding>
+ </interpretation>
+ <issued value="2013-04-04T13:27:00+01:00"/><!--  Oral temperature was measured on April fourth  -->
+ <status value="entered-in-error"/><!--  In the meantime a new oral temperature is measured  -->
+ <reliability value="questionable"/><!--  http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3418963/  -->
+ <bodySiteCodeableConcept>
+    <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74262004"/>
+        <display value="Oral cavity"/>
+    </coding>
+ </bodySiteCodeableConcept>
+ <method>
+    <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="89003005"/>
+        <display value="Oral temperature taking"/>
+    </coding>
+ </method>
+ <!--  No identifier could be provided to this observation  -->
+ <subject><!--  It entails Roel's temperature  -->
+     <reference value="Patient/f201"/>
+     <display value="Roel"/>
+ </subject>
+ <performer>
+     <reference value="Practitioner/f201"/>
+ </performer>
+ <referenceRange>  <!--   0..* Provides guide for interpretation   -->
+    <low>
+      <value value="37.5"/>
+      <units value="degrees C"/>
+    </low>
+ </referenceRange>
+</Observation>

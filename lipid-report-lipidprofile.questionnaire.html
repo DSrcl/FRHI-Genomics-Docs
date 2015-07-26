@@ -1,0 +1,3763 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Lipid-report-lipidprofile.questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/lipid-report-lipidprofile.questionnaire.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+          <!-- lipid-report-lipidprofile.questionnaire.html / profile-questionnaire:lipid-report-lipidprofile / Questionnaire -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="lipid-report-lipidprofile.html">Content</a></li><li><a href="lipid-report-lipidprofile-definitions.html">Detailed Descriptions</a></li><li><a href="lipid-report-lipidprofile-mappings.html">Mappings</a></li><li class="active"><a href="#">HTML Form</a></li><li><a href="lipid-report-lipidprofile.profile.xml.html">XML</a></li><li><a href="lipid-report-lipidprofile.profile.json.html">JSON</a></li></ul>
+
+
+<h2><span class="sectioncount">4.21.14<a name="4.21.14"> </a></span> Lipid-report-lipidprofile.questionnaire - Example Form <a href="lipid-report-lipidprofile.questionnaire.html#4.21.14" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>
+This is an example form based on a questionnaire generated from the definition, to help visualise the content. See also the <a href="lipid-report-lipidprofile.questionnaire.xml.html">XML</a> or <a href="lipid-report-lipidprofile.questionnaire.json.html">JSON</a> questionnaire.
+</p>
+
+  <!-- DOCTYPE html --><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<script type="text/javascript">  <!-- var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validateDiagnosticReport(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Lipid Lab Report');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_id(divNode, "DiagnosticReport.id")
+         && validateDiagnosticReport_meta(divNode, "DiagnosticReport.meta")
+         && validateDiagnosticReport_implicitRules(divNode, "DiagnosticReport.implicitRules")
+         && validateDiagnosticReport_language(divNode, "DiagnosticReport.language")
+         && validateDiagnosticReport_text(divNode, "DiagnosticReport.text")
+         && validateDiagnosticReport_contained(divNode, "DiagnosticReport.contained")
+         && validateDiagnosticReport_extension(divNode, "DiagnosticReport.extension")
+         && validateDiagnosticReport_modifierExtension(divNode, "DiagnosticReport.modifierExtension")
+         && validateDiagnosticReport_code(divNode, "DiagnosticReport.code")
+         && validateDiagnosticReport_status(divNode, "DiagnosticReport.status")
+         && validateDiagnosticReport_issued(divNode, "DiagnosticReport.issued")
+         && validateDiagnosticReport_subject(divNode, "DiagnosticReport.subject")
+         && validateDiagnosticReport_performer(divNode, "DiagnosticReport.performer")
+         && validateDiagnosticReport_encounter(divNode, "DiagnosticReport.encounter")
+         && validateDiagnosticReport_identifier(divNode, "DiagnosticReport.identifier")
+         && validateDiagnosticReport_requestDetail(divNode, "DiagnosticReport.requestDetail")
+         && validateDiagnosticReport_serviceCategory(divNode, "DiagnosticReport.serviceCategory")
+         && validateDiagnosticReport_effective_x(divNode, "DiagnosticReport.effective[x]")
+         && validateDiagnosticReport_specimen(divNode, "DiagnosticReport.specimen")
+         && validateDiagnosticReport_result(divNode, "DiagnosticReport.result")
+         && validateDiagnosticReport_result(divNode, "DiagnosticReport.result")
+         && validateDiagnosticReport_result(divNode, "DiagnosticReport.result")
+         && validateDiagnosticReport_result(divNode, "DiagnosticReport.result")
+         && validateDiagnosticReport_result(divNode, "DiagnosticReport.result")
+         && validateDiagnosticReport_imagingStudy(divNode, "DiagnosticReport.imagingStudy")
+         && validateDiagnosticReport_image(divNode, "DiagnosticReport.image")
+         && validateDiagnosticReport_conclusion(divNode, "DiagnosticReport.conclusion")
+         && validateDiagnosticReport_codedDiagnosis(divNode, "DiagnosticReport.codedDiagnosis")
+         && validateDiagnosticReport_presentedForm(divNode, "DiagnosticReport.presentedForm");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_id(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_id_value(divNode, "DiagnosticReport.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_id_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_meta(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_implicitRules(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_implicitRules_value(divNode, "DiagnosticReport.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_language(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_language_value(divNode, "DiagnosticReport.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_language_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_text(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_contained(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_extension(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_modifierExtension(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_code(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.code");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.code");
+    node.focus()
+    alert('Must have at least 1 occurrences of: LOINC Code for Lipid Panel with LDL');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_code_coding(divNode, "DiagnosticReport.code.coding")
+         && validateDiagnosticReport_code_text(divNode, "DiagnosticReport.code.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_code_coding(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.code.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_code_text(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.code.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_status(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.status");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.status");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_status_value(divNode, "DiagnosticReport.status.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_status_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.status.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_issued(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.issued");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.issued");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_issued_value(divNode, "DiagnosticReport.issued.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_issued_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.issued.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_subject(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.subject");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.subject");
+    node.focus()
+    alert('Must have at least 1 occurrences of: The subject of the report, usually, but not always, the patient');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_subject__type(divNode, "DiagnosticReport.subject._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_subject__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "Patient", "display": "Patient"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Group", "display": "Group"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Device", "display": "Device"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Location", "display": "Location"}];
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_subject__Patient_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._Patient[1]DiagnosticReport.subject._Patient.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_subject__Group_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._Group[1]DiagnosticReport.subject._Group.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_subject__Device_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._Device[1]DiagnosticReport.subject._Device.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_subject__Location_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._Location[1]DiagnosticReport.subject._Location.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_performer(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.performer");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.performer");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Responsible Diagnostic Service');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_performer__type(divNode, "DiagnosticReport.performer._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_performer__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "Practitioner", "display": "Practitioner"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Organization", "display": "Organization"}];
+  var answerNodes = findAnswers(node, "DiagnosticReport.performer._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_performer__Practitioner_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.performer._Practitioner[1]DiagnosticReport.performer._Practitioner.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_performer__Organization_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.performer._Organization[1]DiagnosticReport.performer._Organization.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_encounter(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.encounter");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_encounter_value(divNode, "DiagnosticReport.encounter.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_encounter_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.encounter.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_identifier(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.identifier");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_identifier_label(divNode, "DiagnosticReport.identifier.label")
+         && validateDiagnosticReport_identifier_system(divNode, "DiagnosticReport.identifier.system")
+         && validateDiagnosticReport_identifier_value(divNode, "DiagnosticReport.identifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_identifier_label(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.identifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_identifier_system(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.identifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_identifier_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.identifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_requestDetail(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.requestDetail");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_requestDetail_value(divNode, "DiagnosticReport.requestDetail.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_requestDetail_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.requestDetail.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_serviceCategory(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.serviceCategory");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_serviceCategory_coding(divNode, "DiagnosticReport.serviceCategory.coding")
+         && validateDiagnosticReport_serviceCategory_text(divNode, "DiagnosticReport.serviceCategory.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_serviceCategory_coding(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.serviceCategory.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_serviceCategory_text(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.serviceCategory.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_effective_x(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.effective[x]");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.effective[x]");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Clinically Relevant time/time-period for report');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_effective_x__type(divNode, "DiagnosticReport.effective[x]._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_effective_x__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/data-types", "code": "dateTime", "display": "dateTime"},
+                 {"system": "http://hl7.org/fhir/data-types", "code": "Period", "display": "Period"}];
+  var answerNodes = findAnswers(node, "DiagnosticReport.effective[x]._type",codings);
+  if (answerNodes != null) {
+    var groupNodes = findDiv(node, "DiagnosticReport.effective[x]._type");
+    return validateDiagnosticReport_effective_x__dateTime_value(node, "DiagnosticReport.effective[x]._dateTime[1]DiagnosticReport.effective[x]._dateTime.value")
+         && validateDiagnosticReport_effective_x__Period(node, "DiagnosticReport.effective[x]._Period");
+  }
+}
+
+
+function validateDiagnosticReport_effective_x__dateTime_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.effective[x]._dateTime[1]DiagnosticReport.effective[x]._dateTime.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_effective_x__Period(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.effective[x]._Period");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_effective_x__Period_low(divNode, "DiagnosticReport.effective[x]._Period.low")
+         && validateDiagnosticReport_effective_x__Period_end(divNode, "DiagnosticReport.effective[x]._Period.end");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_effective_x__Period_low(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.effective[x]._Period.low");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_effective_x__Period_end(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.effective[x]._Period.end");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_specimen(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.specimen");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_specimen_value(divNode, "DiagnosticReport.specimen.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_specimen_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.specimen.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_result(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_result_value(divNode, "DiagnosticReport.result.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_result_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_result(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.result");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_result_value(divNode, "DiagnosticReport.result.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_result_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_result(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.result");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_result_value(divNode, "DiagnosticReport.result.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_result_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_result(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.result");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_result_value(divNode, "DiagnosticReport.result.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_result_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_result(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_result_value(divNode, "DiagnosticReport.result.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_result_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_imagingStudy(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.imagingStudy");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_imagingStudy__type(divNode, "DiagnosticReport.imagingStudy._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_imagingStudy__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "ImagingStudy", "display": "ImagingStudy"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "ImagingObjectSelection", "display": "ImagingObjectSelection"}];
+  var answerNodes = findAnswers(node, "DiagnosticReport.imagingStudy._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_imagingStudy__ImagingStudy_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.imagingStudy._ImagingStudy[1]DiagnosticReport.imagingStudy._ImagingStudy.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_imagingStudy__ImagingObjectSelection_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.imagingStudy._ImagingObjectSelection[1]DiagnosticReport.imagingStudy._ImagingObjectSelection.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_image(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_image_id(divNode, "DiagnosticReport.image.id")
+         && validateDiagnosticReport_image_extension(divNode, "DiagnosticReport.image.extension")
+         && validateDiagnosticReport_image_modifierExtension(divNode, "DiagnosticReport.image.modifierExtension")
+         && validateDiagnosticReport_image_comment(divNode, "DiagnosticReport.image.comment")
+         && validateDiagnosticReport_image_link(divNode, "DiagnosticReport.image.link");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_image_id(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_image_id_value(divNode, "DiagnosticReport.image.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_image_id_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.image.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_image_extension(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_image_modifierExtension(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_image_comment(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.comment");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_image_comment_value(divNode, "DiagnosticReport.image.comment.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_image_comment_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.image.comment.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_image_link(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.link");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DiagnosticReport.image.link");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_image_link_value(divNode, "DiagnosticReport.image.link.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_image_link_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.image.link.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_conclusion(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.conclusion");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_conclusion_value(divNode, "DiagnosticReport.conclusion.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_conclusion_value(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.conclusion.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_codedDiagnosis(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.codedDiagnosis");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDiagnosticReport_codedDiagnosis_coding(divNode, "DiagnosticReport.codedDiagnosis.coding")
+         && validateDiagnosticReport_codedDiagnosis_text(divNode, "DiagnosticReport.codedDiagnosis.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateDiagnosticReport_codedDiagnosis_coding(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.codedDiagnosis.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_codedDiagnosis_text(node) {
+  var answerNodes = findAnswers(node, "DiagnosticReport.codedDiagnosis.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDiagnosticReport_presentedForm(node) {
+  var groupNodes = findDiv(node, "DiagnosticReport.presentedForm");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function serializeDiagnosticReport(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport",
+      "title":"Lipid Lab Report"
+    }
+    var childGroups = [];    serializeDiagnosticReport_id(groupNodes[i], childGroups);
+    serializeDiagnosticReport_meta(groupNodes[i], childGroups);
+    serializeDiagnosticReport_implicitRules(groupNodes[i], childGroups);
+    serializeDiagnosticReport_language(groupNodes[i], childGroups);
+    serializeDiagnosticReport_text(groupNodes[i], childGroups);
+    serializeDiagnosticReport_contained(groupNodes[i], childGroups);
+    serializeDiagnosticReport_extension(groupNodes[i], childGroups);
+    serializeDiagnosticReport_modifierExtension(groupNodes[i], childGroups);
+    serializeDiagnosticReport_code(groupNodes[i], childGroups);
+    serializeDiagnosticReport_status(groupNodes[i], childGroups);
+    serializeDiagnosticReport_issued(groupNodes[i], childGroups);
+    serializeDiagnosticReport_subject(groupNodes[i], childGroups);
+    serializeDiagnosticReport_performer(groupNodes[i], childGroups);
+    serializeDiagnosticReport_encounter(groupNodes[i], childGroups);
+    serializeDiagnosticReport_identifier(groupNodes[i], childGroups);
+    serializeDiagnosticReport_requestDetail(groupNodes[i], childGroups);
+    serializeDiagnosticReport_serviceCategory(groupNodes[i], childGroups);
+    serializeDiagnosticReport_effective_x(groupNodes[i], childGroups);
+    serializeDiagnosticReport_specimen(groupNodes[i], childGroups);
+    serializeDiagnosticReport_result(groupNodes[i], childGroups);
+    serializeDiagnosticReport_result(groupNodes[i], childGroups);
+    serializeDiagnosticReport_result(groupNodes[i], childGroups);
+    serializeDiagnosticReport_result(groupNodes[i], childGroups);
+    serializeDiagnosticReport_result(groupNodes[i], childGroups);
+    serializeDiagnosticReport_imagingStudy(groupNodes[i], childGroups);
+    serializeDiagnosticReport_image(groupNodes[i], childGroups);
+    serializeDiagnosticReport_conclusion(groupNodes[i], childGroups);
+    serializeDiagnosticReport_codedDiagnosis(groupNodes[i], childGroups);
+    serializeDiagnosticReport_presentedForm(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_id(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.id"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_id_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.id.value",
+      "text":"Logical id of this artifact"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_meta(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.meta");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.meta",
+      "text":"Metadata about the resource"
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_implicitRules(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.implicitRules");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.implicitRules"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_implicitRules_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_implicitRules_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.implicitRules.value",
+      "text":"A set of rules under which this content was created"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.implicitRules.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_language(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.language");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.language"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_language_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_language_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.language.value",
+      "text":"language"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.language.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_text(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.text");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.text",
+      "text":"Text summary of the resource, for human interpretation"
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_contained(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.contained");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.contained",
+      "text":"Contained, inline Resources"
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_extension(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_code(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.code");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.code",
+      "text":"LOINC Code for Lipid Panel with LDL"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_code_coding(groupNodes[i], childQuestions);
+    serializeDiagnosticReport_code_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_code_coding(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.code.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.code.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_code_text(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.code.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.code.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_status(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.status");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.status"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_status_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_status_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.status.value",
+      "text":"status"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.status.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_issued(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.issued");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.issued"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_issued_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_issued_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.issued.value",
+      "text":"DateTime this version was released"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.issued.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_subject(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.subject");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.subject",
+      "text":"The subject of the report, usually, but not always, the patient"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_subject__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_subject__type(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.subject._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_subject__Patient_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.subject._Patient[1]DiagnosticReport.subject._Patient.value",
+      "text":"Patient"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._Patient[1]DiagnosticReport.subject._Patient.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_subject__Group_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.subject._Group[1]DiagnosticReport.subject._Group.value",
+      "text":"Group"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._Group[1]DiagnosticReport.subject._Group.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_subject__Device_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.subject._Device[1]DiagnosticReport.subject._Device.value",
+      "text":"Device"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._Device[1]DiagnosticReport.subject._Device.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_subject__Location_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.subject._Location[1]DiagnosticReport.subject._Location.value",
+      "text":"Location"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.subject._Location[1]DiagnosticReport.subject._Location.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_performer(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.performer");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.performer",
+      "text":"Responsible Diagnostic Service"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_performer__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_performer__type(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.performer._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.performer._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_performer__Practitioner_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.performer._Practitioner[1]DiagnosticReport.performer._Practitioner.value",
+      "text":"Practitioner"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.performer._Practitioner[1]DiagnosticReport.performer._Practitioner.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_performer__Organization_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.performer._Organization[1]DiagnosticReport.performer._Organization.value",
+      "text":"Organization"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.performer._Organization[1]DiagnosticReport.performer._Organization.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_encounter(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.encounter");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.encounter"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_encounter_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_encounter_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.encounter.value",
+      "text":"Health care event when test ordered"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.encounter.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_identifier(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.identifier");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.identifier",
+      "text":"Id for external references to this report"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_identifier_label(groupNodes[i], childQuestions);
+    serializeDiagnosticReport_identifier_system(groupNodes[i], childQuestions);
+    serializeDiagnosticReport_identifier_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_identifier_label(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.identifier.label",
+      "text":"label:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.identifier.label");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_identifier_system(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.identifier.system",
+      "text":"system:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.identifier.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_identifier_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.identifier.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.identifier.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_requestDetail(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.requestDetail");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.requestDetail"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_requestDetail_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_requestDetail_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.requestDetail.value",
+      "text":"What was requested"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.requestDetail.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_serviceCategory(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.serviceCategory");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.serviceCategory",
+      "text":"Biochemistry, Hematology etc."
+    }
+    var childQuestions = [];    serializeDiagnosticReport_serviceCategory_coding(groupNodes[i], childQuestions);
+    serializeDiagnosticReport_serviceCategory_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_serviceCategory_coding(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.serviceCategory.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.serviceCategory.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_serviceCategory_text(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.serviceCategory.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.serviceCategory.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_effective_x(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.effective[x]");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.effective[x]",
+      "text":"Clinically Relevant time/time-period for report"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_effective_x__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_effective_x__type(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.effective[x]._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.effective[x]._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+    var childGroups = [];    serializeDiagnosticReport_effective_x__Period(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+
+}
+
+
+function serializeDiagnosticReport_effective_x__dateTime_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.effective[x]._dateTime[1]DiagnosticReport.effective[x]._dateTime.value",
+      "text":"dateTime"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.effective[x]._dateTime[1]DiagnosticReport.effective[x]._dateTime.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_effective_x__Period(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.effective[x]._Period");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.effective[x]._Period",
+      "text":"Period"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_effective_x__Period_low(groupNodes[i], childQuestions);
+    serializeDiagnosticReport_effective_x__Period_end(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_effective_x__Period_low(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.effective[x]._Period.low",
+      "text":"start:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.effective[x]._Period.low");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_effective_x__Period_end(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.effective[x]._Period.end",
+      "text":"end:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.effective[x]._Period.end");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_specimen(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.specimen");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.specimen"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_specimen_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_specimen_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.specimen.value",
+      "text":"Specimens this report is based on"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.specimen.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.result"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_result_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.result.value",
+      "text":"Observations - simple, or complex nested groups"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.result"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_result_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.result.value",
+      "text":"Cholesterol Result"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.result"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_result_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.result.value",
+      "text":"Triglyceride Result"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.result"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_result_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.result.value",
+      "text":"HDL Cholesterol Result"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.result");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.result"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_result_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_result_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.result.value",
+      "text":"LDL Cholesterol result, if reported"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.result.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_imagingStudy(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.imagingStudy");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.imagingStudy",
+      "text":"Reference to full details of imaging associated with the diagnostic report"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_imagingStudy__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_imagingStudy__type(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.imagingStudy._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.imagingStudy._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_imagingStudy__ImagingStudy_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.imagingStudy._ImagingStudy[1]DiagnosticReport.imagingStudy._ImagingStudy.value",
+      "text":"ImagingStudy"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.imagingStudy._ImagingStudy[1]DiagnosticReport.imagingStudy._ImagingStudy.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_imagingStudy__ImagingObjectSelection_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.imagingStudy._ImagingObjectSelection[1]DiagnosticReport.imagingStudy._ImagingObjectSelection.value",
+      "text":"ImagingObjectSelection"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.imagingStudy._ImagingObjectSelection[1]DiagnosticReport.imagingStudy._ImagingObjectSelection.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_image(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.image",
+      "title":"Key images associated with this report"
+    }
+    var childGroups = [];    serializeDiagnosticReport_image_id(groupNodes[i], childGroups);
+    serializeDiagnosticReport_image_extension(groupNodes[i], childGroups);
+    serializeDiagnosticReport_image_modifierExtension(groupNodes[i], childGroups);
+    serializeDiagnosticReport_image_comment(groupNodes[i], childGroups);
+    serializeDiagnosticReport_image_link(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_image_id(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.image.id"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_image_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_image_id_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.image.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.image.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_image_extension(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.image.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_image_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.image.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_image_comment(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.comment");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.image.comment"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_image_comment_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_image_comment_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.image.comment.value",
+      "text":"Comment about the image (e.g. explanation)"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.image.comment.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_image_link(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.image.link");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.image.link"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_image_link_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_image_link_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.image.link.value",
+      "text":"Reference to the image source"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.image.link.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_conclusion(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.conclusion");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.conclusion"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_conclusion_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_conclusion_value(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.conclusion.value",
+      "text":"Clinical Interpretation of Lipid Panel"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.conclusion.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_codedDiagnosis(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.codedDiagnosis");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.codedDiagnosis",
+      "text":"No codes for a lipid panel"
+    }
+    var childQuestions = [];    serializeDiagnosticReport_codedDiagnosis_coding(groupNodes[i], childQuestions);
+    serializeDiagnosticReport_codedDiagnosis_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_codedDiagnosis_coding(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.codedDiagnosis.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.codedDiagnosis.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_codedDiagnosis_text(node, answers) {
+  var question = {
+      "linkId":"DiagnosticReport.codedDiagnosis.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "DiagnosticReport.codedDiagnosis.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDiagnosticReport_presentedForm(node, groups) {
+  var groupNodes = findDiv(node, "DiagnosticReport.presentedForm");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DiagnosticReport.presentedForm",
+      "text":"Entire Report as issued"
+    }
+  }
+
+}
+
+function validateQuestionnaire() {
+  return validateDiagnosticReport(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function serializeQuestionnaire() {
+  var rootGroup = serializeDiagnosticReport(document.getElementById("div-cnt"));
+  if (rootGroup.length == 0)
+    delete answers.group
+  else
+    answers.group = rootGroup;
+  return answers;
+} --></script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/json2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/statuspage.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jtip.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jcookie.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js" type="text/javascript"> </script>
+      <script type="text/javascript">  <!-- var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>"; --></script>
+      <script type="text/javascript">  <!-- var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+        && this.style.display != "none";
+  });
+}
+
+function setAddFocus(node, linkId) {
+  $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+  }).last().next(":input").focus();
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  serializeQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    serializeQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+} --></script>
+      <script type="text/javascript">  <!-- var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+} --></script>
+      <script type="text/javascript">  <!-- var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+} --></script>
+      <style type="null">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript">  <!-- //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      } --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+<div id="div-cnt">
+         <h3><span class="sectioncount">4.21.14.1<a name="4.21.14.1"> </a></span> Lipid Lab Report <a href="lipid-report-lipidprofile.questionnaire.html#4.21.14.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e192">
+            <span style="display:none">DiagnosticReport</span>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e210.1">
+               <span style="display:none">DiagnosticReport.id</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.id.value</span> Logical id of this artifact</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.id[1]DiagnosticReport.id.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e210.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.id</span>
+            <span style="display:none">1</span>
+            <p>Metadata about the resource</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e248.1">
+               <span style="display:none">DiagnosticReport.meta</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e248.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.meta</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e267.1">
+               <span style="display:none">DiagnosticReport.implicitRules</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.implicitRules[1]DiagnosticReport.implicitRules.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e267.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.implicitRules</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e305.1">
+               <span style="display:none">DiagnosticReport.language</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e305.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e343.1">
+               <span style="display:none">DiagnosticReport.text</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e343.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e363.1">
+               <span style="display:none">DiagnosticReport.contained</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e363.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.contained</span>
+            <span style="display:none">1</span>
+            <p>Additional Content defined by implementations</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e382.1">
+               <span style="display:none">DiagnosticReport.extension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e382.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.extension</span>
+            <span style="display:none">1</span>
+            <p>Extensions that cannot be ignored</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e401.1">
+               <span style="display:none">DiagnosticReport.modifierExtension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e401.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.modifierExtension</span>
+            <span style="display:none">1</span>
+            <p>LOINC Code for Lipid Panel with LDL</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e420.1">
+               <span style="display:none">DiagnosticReport.code</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.code.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.code.text</span> text:</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.code[1]DiagnosticReport.code.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e420.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.code</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e476.1">
+               <span style="display:none">DiagnosticReport.status</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.status.value</span> status</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e476.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.status</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e514.1">
+               <span style="display:none">DiagnosticReport.issued</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.issued.value</span> DateTime this version was released</td>
+                        <td>
+                           <input onblur="checkInstant(this)" maxlength="30" name="Path:DiagnosticReport[1]DiagnosticReport.issued[1]DiagnosticReport.issued.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e514.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.issued</span>
+            <span style="display:none">1</span>
+            <p>The subject of the report, usually, but not always, the patient</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e553.1">
+               <span style="display:none">DiagnosticReport.subject</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.subject._type</span> type</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.subject[1]" type="radio" value="Patient"/>
+                           <span> Patient</span>
+                           <br/>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.subject[1]" type="radio" value="Group"/>
+                           <span> Group</span>
+                           <br/>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.subject[1]" type="radio" value="Device"/>
+                           <span> Device</span>
+                           <br/>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.subject[1]" type="radio" value="Location"/>
+                           <span> Location</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e553.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.subject</span>
+            <span style="display:none">1</span>
+            <p>Responsible Diagnostic Service</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e694.1">
+               <span style="display:none">DiagnosticReport.performer</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.performer._type</span> type</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.performer[1]" type="radio" value="Practitioner"/>
+                           <span> Practitioner</span>
+                           <br/>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.performer[1]" type="radio" value="Organization"/>
+                           <span> Organization</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e694.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.performer</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e784.1">
+               <span style="display:none">DiagnosticReport.encounter</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.encounter.value</span> Health care event when test ordered</td>
+                        <td>
+                           <input tabindex="text" name="Path:DiagnosticReport[1]DiagnosticReport.encounter[1]DiagnosticReport.encounter.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e784.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.encounter</span>
+            <span style="display:none">1</span>
+            <p>Id for external references to this report</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e827.1">
+               <span style="display:none">DiagnosticReport.identifier</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.identifier.label</span> label:</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.identifier[1]DiagnosticReport.identifier.label[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.identifier.system</span> system:</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.identifier[1]DiagnosticReport.identifier.system[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.identifier.value</span> value:</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.identifier[1]DiagnosticReport.identifier.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e827.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.identifier</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e899.1">
+               <span style="display:none">DiagnosticReport.requestDetail</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.requestDetail.value</span> What was requested</td>
+                        <td>
+                           <input tabindex="text" name="Path:DiagnosticReport[1]DiagnosticReport.requestDetail[1]DiagnosticReport.requestDetail.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e899.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.requestDetail</span>
+            <span style="display:none">1</span>
+            <p>Biochemistry, Hematology etc.</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e942.1">
+               <span style="display:none">DiagnosticReport.serviceCategory</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.serviceCategory.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.serviceCategory.text</span> text:</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.serviceCategory[1]DiagnosticReport.serviceCategory.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e942.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.serviceCategory</span>
+            <span style="display:none">1</span>
+            <p>Clinically Relevant time/time-period for report</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e999.1">
+               <span style="display:none">DiagnosticReport.effective[x]</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.effective[x]._type</span> type</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.effective[x][1]" type="radio" value="dateTime"/>
+                           <span> dateTime</span>
+                           <br/>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.effective[x][1]" type="radio" value="Period"/>
+                           <span> Period</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <p>Period</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1061.1.1">
+                  <span style="display:none">DiagnosticReport.effective[x]._Period</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">DiagnosticReport.effective[x]._Period.low</span> start:</td>
+                           <td>
+                              <input onblur="checkDateTime(this)" maxlength="26" name="Path:DiagnosticReport[1]DiagnosticReport.effective[x][1]DiagnosticReport.effective[x]._type[1]DiagnosticReport.effective[x]._Period[1]DiagnosticReport.effective[x]._Period.low[1]" type="text"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">DiagnosticReport.effective[x]._Period.end</span> end:</td>
+                           <td>
+                              <input onblur="checkDateTime(this)" maxlength="26" name="Path:DiagnosticReport[1]DiagnosticReport.effective[x][1]DiagnosticReport.effective[x]._type[1]DiagnosticReport.effective[x]._Period[1]DiagnosticReport.effective[x]._Period.end[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1061.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DiagnosticReport.effective[x]._Period</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e999.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.effective[x]</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1110.1">
+               <span style="display:none">DiagnosticReport.specimen</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.specimen.value</span> Specimens this report is based on</td>
+                        <td>
+                           <input tabindex="text" name="Path:DiagnosticReport[1]DiagnosticReport.specimen[1]DiagnosticReport.specimen.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1110.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.specimen</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1153.1">
+               <span style="display:none">DiagnosticReport.result</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.result.value</span> Observations - simple, or complex nested groups</td>
+                        <td>
+                           <input tabindex="text" name="Path:DiagnosticReport[1]DiagnosticReport.result[1]DiagnosticReport.result.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1153.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.result</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1196.1">
+               <span style="display:none">DiagnosticReport.result</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.result.value</span> Cholesterol Result</td>
+                        <td>
+                           <input tabindex="text" name="Path:DiagnosticReport[1]DiagnosticReport.result[1]DiagnosticReport.result.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1196.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.result</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1239.1">
+               <span style="display:none">DiagnosticReport.result</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.result.value</span> Triglyceride Result</td>
+                        <td>
+                           <input tabindex="text" name="Path:DiagnosticReport[1]DiagnosticReport.result[1]DiagnosticReport.result.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1239.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.result</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1282.1">
+               <span style="display:none">DiagnosticReport.result</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.result.value</span> HDL Cholesterol Result</td>
+                        <td>
+                           <input tabindex="text" name="Path:DiagnosticReport[1]DiagnosticReport.result[1]DiagnosticReport.result.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1282.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.result</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1326.1">
+               <span style="display:none">DiagnosticReport.result</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.result.value</span> LDL Cholesterol result, if reported</td>
+                        <td>
+                           <input tabindex="text" name="Path:DiagnosticReport[1]DiagnosticReport.result[1]DiagnosticReport.result.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1326.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.result</span>
+            <span style="display:none">1</span>
+            <p>Reference to full details of imaging associated with the diagnostic report</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1369.1">
+               <span style="display:none">DiagnosticReport.imagingStudy</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.imagingStudy._type</span> type</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.imagingStudy[1]" type="radio" value="ImagingStudy"/>
+                           <span> ImagingStudy</span>
+                           <br/>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.imagingStudy[1]" type="radio" value="ImagingObjectSelection"/>
+                           <span> ImagingObjectSelection</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1369.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.imagingStudy</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">4.21.14.1.1<a name="4.21.14.1.1"> </a></span> Key images associated with this report <a href="lipid-report-lipidprofile.questionnaire.html#4.21.14.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1459.1">
+               <span style="display:none">DiagnosticReport.image</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1477.1.1">
+                  <span style="display:none">DiagnosticReport.image.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">DiagnosticReport.image.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:DiagnosticReport[1]DiagnosticReport.image[1]DiagnosticReport.image.id[1]DiagnosticReport.image.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1477.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DiagnosticReport.image.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1515.1.1">
+                  <span style="display:none">DiagnosticReport.image.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1515.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DiagnosticReport.image.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1534.1.1">
+                  <span style="display:none">DiagnosticReport.image.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1534.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DiagnosticReport.image.modifierExtension</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1553.1.1">
+                  <span style="display:none">DiagnosticReport.image.comment</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">DiagnosticReport.image.comment.value</span> Comment about the image (e.g. explanation)</td>
+                           <td>
+                              <input name="Path:DiagnosticReport[1]DiagnosticReport.image[1]DiagnosticReport.image.comment[1]DiagnosticReport.image.comment.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1553.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DiagnosticReport.image.comment</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1591.1.1">
+                  <span style="display:none">DiagnosticReport.image.link</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">DiagnosticReport.image.link.value</span> Reference to the image source</td>
+                           <td>
+                              <input tabindex="text" name="Path:DiagnosticReport[1]DiagnosticReport.image[1]DiagnosticReport.image.link[1]DiagnosticReport.image.link.value[1]"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1591.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DiagnosticReport.image.link</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1459.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.image</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1635.1">
+               <span style="display:none">DiagnosticReport.conclusion</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.conclusion.value</span> Clinical Interpretation of Lipid Panel</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.conclusion[1]DiagnosticReport.conclusion.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1635.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.conclusion</span>
+            <span style="display:none">1</span>
+            <p>No codes for a lipid panel</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1673.1">
+               <span style="display:none">DiagnosticReport.codedDiagnosis</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.codedDiagnosis.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DiagnosticReport.codedDiagnosis.text</span> text:</td>
+                        <td>
+                           <input name="Path:DiagnosticReport[1]DiagnosticReport.codedDiagnosis[1]DiagnosticReport.codedDiagnosis.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1673.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.codedDiagnosis</span>
+            <span style="display:none">1</span>
+            <p>Entire Report as issued</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1729.1">
+               <span style="display:none">DiagnosticReport.presentedForm</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1729.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DiagnosticReport.presentedForm</span>
+            <span style="display:none">1</span>
+         </div>
+         <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e192', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+         <span style="display:none">DiagnosticReport</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+</body>
+</html>
+
+<p>
+  <!-- spacer -->
+ 
+</p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:33-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Flipid-report-lipidprofile.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Flipid-report-lipidprofile.questionnaire.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

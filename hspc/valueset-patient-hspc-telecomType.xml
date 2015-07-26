@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="patient-hspc-telecomType"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>HSPC Telecom Type</h2>
+      <p>A set of codes that describe the manner in which an addressed is used.</p>
+      <p>This value set has an inline code system Intermountain Healthcare HDD, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Fax
+            <a name="Fax"> </a>
+          </td>
+          <td>Fax</td>
+          <td>Method of communication which uses telephone lines to send and receive printed documents between facsimile devices.</td>
+        </tr>
+        <tr>
+          <td>NS
+            <a name="NS"> </a>
+          </td>
+          <td>NotSpecified</td>
+          <td>The type of telecom system was not specified for the given number.</td>
+        </tr>
+      </table>
+      <p>In addition, this value set includes codes from other code systems:</p>
+      <ul>
+        <li>Include these codes as defined in 
+          <a href="../v3/AddressUse/index.html">http://hl7.org/fhir/v3/AddressUse</a>
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>AS</td>
+              <td>Answering service</td>
+              <td>Description: An automated answering machine used for less urgent cases and if the main purpose of contact is to leave a message or access an automated announcement.</td>
+            </tr>
+            <tr>
+              <td>EC</td>
+              <td>Emergency contact</td>
+              <td>Description: A contact specifically designated to be used for emergencies. This is the first choice in emergencies, independent of any other use codes.</td>
+            </tr>
+            <tr>
+              <td>MC</td>
+              <td>Mobile contact</td>
+              <td>Description: A telecommunication device that moves and stays with its owner. May have characteristics of all other use codes, suitable for urgent matters, not the first choice for routine business.</td>
+            </tr>
+            <tr>
+              <td>PG</td>
+              <td>Pager</td>
+              <td>Description: A paging device suitable to solicit a callback or to leave a very short message.</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/patient-hspc-telecomType"/>
+  <version value="0.5.0"/>
+  <name value="HSPC Telecom Type"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <description value="A set of codes that describe the manner in which an addressed is used."/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <system value="Intermountain Healthcare HDD"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="Fax"/>
+      <display value="Fax"/>
+      <definition value="Method of communication which uses telephone lines to send and receive printed documents between facsimile devices."/>
+    </concept>
+    <concept>
+      <code value="NS"/>
+      <display value="NotSpecified"/>
+      <definition value="The type of telecom system was not specified for the given number."/>
+    </concept>
+  </codeSystem>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/AddressUse"/>
+      <concept>
+        <code value="AS"/>
+        <display value="Answering service"/>
+      </concept>
+      <concept>
+        <code value="EC"/>
+        <display value="Emergency contact"/>
+      </concept>
+      <concept>
+        <code value="MC"/>
+        <display value="Mobile contact"/>
+      </concept>
+      <concept>
+        <code value="PG"/>
+        <display value="Pager"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

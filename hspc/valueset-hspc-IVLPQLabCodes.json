@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hspc-IVLPQLabCodes",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Interval Physical Quantity Labs</h2><p>Ordinal LOINC codes used in HSPC</p><p><b>Copyright Statement:</b> This content LOINC&reg; is copyright &copy; 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from http://loinc.org where Scale  =  OrdQn</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.0"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/hspc-IVLPQLabCodes",
+  "version": "0.5.0",
+  "name": "HSPC Interval Physical Quantity Labs",
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "Ordinal LOINC codes used in HSPC",
+  "copyright": "This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+  "status": "draft",
+  "experimental": true,
+  "date": "2015-02-20T13:44:49+11:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "Scale",
+            "op": "=",
+            "value": "OrdQn"
+          }
+        ]
+      }
+    ]
+  }
+}

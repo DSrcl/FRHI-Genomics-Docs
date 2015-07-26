@@ -1,0 +1,86 @@
+{
+  "resourceType": "Condition",
+  "id": "f204",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f204</p><p><b>patient</b>: <a>Roel</a></p><p><b>encounter</b>: <a>Roel's encounter on March eleventh</a></p><p><b>asserter</b>: <a>Practitioner/f201</a></p><p><b>dateAsserted</b>: Mar 11, 2013</p><p><b>code</b>: Acute renal insufficiency specified as due to procedure <span>(Details : {SNOMED CT code '36225005' = 'Acute renal failure due to procedure', given as 'Acute renal insufficiency specified as due to procedure'})</span></p><p><b>category</b>: Problem <span>(Details : {SNOMED CT code '55607006' = 'Problem', given as 'Problem'}; {http://hl7.org/fhir/condition-category code 'finding' = 'Finding)</span></p><p><b>clinicalStatus</b>: working</p><p><b>severity</b>: Severe <span>(Details : {SNOMED CT code '24484000' = 'Severe', given as 'Severe'})</span></p><p><b>onset</b>: Mar 11, 2013</p><p><b>abatement</b>: Mar 20, 2013</p><h3>Stages</h3><table><tr><td>-</td><td><b>Summary</b></td></tr><tr><td>*</td><td>Temporary <span>(Details : {SNOMED CT code '14803004' = 'Transient', given as 'Temporary'})</span></td></tr></table><h3>Locations</h3><table><tr><td>-</td><td><b>Site[x]</b></td></tr><tr><td>*</td><td>Kidney <span>(Details : {SNOMED CT code '181414000' = 'Kidney', given as 'Kidney'})</span></td></tr></table><h3>DueTos</h3><table><tr><td>-</td><td><b>Target</b></td></tr><tr><td>*</td><td><a>TPF chemotherapy for the sphenoid bone</a></td></tr></table></div>"
+  },
+  "patient": {
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "encounter": {
+    "reference": "Encounter/f203",
+    "display": "Roel's encounter on March eleventh"
+  },
+  "asserter": {
+    "reference": "Practitioner/f201"
+  },
+  "dateAsserted": "2013-03-11",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "36225005",
+        "display": "Acute renal insufficiency specified as due to procedure"
+      }
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "55607006",
+        "display": "Problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/condition-category",
+        "code": "finding"
+      }
+    ]
+  },
+  "clinicalStatus": "working",
+  "severity": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "24484000",
+        "display": "Severe"
+      }
+    ]
+  },
+  "onsetDateTime": "2013-03-11",
+  "abatementDate": "2013-03-20",
+  "stage": {
+    "summary": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "14803004",
+          "display": "Temporary"
+        }
+      ]
+    }
+  },
+  "location": [
+    {
+      "siteCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "181414000",
+            "display": "Kidney"
+          }
+        ]
+      }
+    }
+  ],
+  "dueTo": [
+    {
+      "target": {
+        "reference": "Procedure/f201",
+        "display": "TPF chemotherapy for the sphenoid bone"
+      }
+    }
+  ]
+}

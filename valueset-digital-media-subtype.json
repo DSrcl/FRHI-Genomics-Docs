@@ -1,0 +1,108 @@
+{
+  "resourceType": "ValueSet",
+  "id": "digital-media-subtype",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Media SubType</h2><p>Detailed information about the type of the image - its kind, purpose, or the kind of equipment used to generate it</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement</p><p>This value set has an inline code system http://hl7.org/fhir/media-subtype, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>diagram<a name=\"diagram\"> </a></td><td>Diagram</td><td>A diagram. Often used in diagnostic reports</td></tr><tr><td>fax<a name=\"fax\"> </a></td><td>Fax</td><td>A digital record of a fax document</td></tr><tr><td>scan<a name=\"scan\"> </a></td><td>Scanned Document</td><td>A digital scan of a document. This is reserved for when there is not enough metadata to create a document reference</td></tr><tr><td>retina<a name=\"retina\"> </a></td><td>Retina scan</td><td>A retinal image used for identification purposes</td></tr><tr><td>fingerprint<a name=\"fingerprint\"> </a></td><td>fingerprint</td><td>A finger print scan used for identification purposes</td></tr><tr><td>iris<a name=\"iris\"> </a></td><td>iris</td><td>An iris scan used for identification purposes</td></tr><tr><td>palm<a name=\"palm\"> </a></td><td>palm</td><td>A palm scan used for identification purposes</td></tr><tr><td>face<a name=\"face\"> </a></td><td>face</td><td>A face scan used for identification purposes</td></tr></table><p>In addition, this value set includes codes from other code systems:</p><ul><li>Import all the codes that are contained in http://hl7.org/fhir/ValueSet/imaging-modality</li><li>Include codes from http://snomed.info/sct where concept  is-a  363679005</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.1624"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/digital-media-subtype",
+  "version": "0.5.0",
+  "name": "Media SubType",
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "Detailed information about the type of the image - its kind, purpose, or the kind of equipment used to generate it",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "status": "draft",
+  "experimental": true,
+  "date": "2015-07-26T15:54:10-04:00",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.1624"
+      }
+    ],
+    "system": "http://hl7.org/fhir/media-subtype",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "diagram",
+        "display": "Diagram",
+        "definition": "A diagram. Often used in diagnostic reports"
+      },
+      {
+        "code": "fax",
+        "display": "Fax",
+        "definition": "A digital record of a fax document"
+      },
+      {
+        "code": "scan",
+        "display": "Scanned Document",
+        "definition": "A digital scan of a document. This is reserved for when there is not enough metadata to create a document reference"
+      },
+      {
+        "code": "retina",
+        "display": "Retina scan",
+        "definition": "A retinal image used for identification purposes"
+      },
+      {
+        "code": "fingerprint",
+        "display": "fingerprint",
+        "definition": "A finger print scan used for identification purposes"
+      },
+      {
+        "code": "iris",
+        "display": "iris",
+        "definition": "An iris scan used for identification purposes"
+      },
+      {
+        "code": "palm",
+        "display": "palm",
+        "definition": "A palm scan used for identification purposes"
+      },
+      {
+        "code": "face",
+        "display": "face",
+        "definition": "A face scan used for identification purposes"
+      }
+    ]
+  },
+  "compose": {
+    "import": [
+      "http://hl7.org/fhir/ValueSet/imaging-modality"
+    ],
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "363679005"
+          }
+        ]
+      }
+    ]
+  }
+}

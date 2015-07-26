@@ -1,0 +1,1457 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ConceptMap",
+  "meta": {
+    "lastUpdated": "2015-07-24T17:31:16.356-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"formats.html#table\" title=\"Legend for this format\"><img src=\"help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJBSURBVDjLhdKxa5NBGMfx713yvkmbJnaoFiSF4mJTh06Kg4OgiyCCRXCof4YIdXdxFhQVHPo3OFSoUx0FySQttaVKYq2NbdO8ed/L3fM4JG3tYPvAcfBw9+HHPWdUlf/V0tLSqKo+EpEHInJFRIohhDUR+RBCeDM7O7ua55QSkRfVanVufHyckZERrLV0Op2Zra2tmXq9fg+YsmcAdyYnJykUCke9OI6ZmJgghHAZ4KwE3ntPs9mkVCohIjQaDWq1GiEEAM5KoHEcY62lVCrRarUoFotUKpUjIL/y/uqXYmV62ph/LSVrr30P4bEFcM4B0Ov1jk547/uAUTs1ceNdZIwB7V/GGHz6+9LXxY96eDiEgHMOY8xJAK8p4grZz5cElwNbwZgyxYu3EFM01lriOCZJEqIoIooiALIsGwA9Y1UcwcWoKNLdpLu9zvbnBWqNBhuvn5EDUmB0EH/1E2TZw5U+YLQovkun+Ytsaw1xCbnCOap334LC7s4Oe/ttvA+ICLmhMXRxDufczUECS37oAuevPwUEVFFp4/eXkXSdYc2IopSepnjtUh5/wg9gfn6+OQBUNaRIUkfDHhraSLoBKqikIF3yHJDLHaAkFOLciVHnyVAVj/S2Ub/XRyQD9aAZKgkaOohvo6ENgykcA07VEFDfQv1uf4W9Y8y30bCPhg4qKZJtMnjTPqBO/vhkZ7h3EJeRslWNQMqgY2jIAIfa/m5sIKSpqpPsGEiz599e3b+GchtD+bSvjQJm2SG6cNj6C+QmaxAek5tyAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"heirarchy\"/> <span title=\"ConceptMap : A statement of relationships from one set of concepts to one or more other concepts - either code systems or data elements, or classes in class models.\">ConceptMap</span><a name=\"ConceptMap\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"domainresource.html\">DomainResource</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">A map from one set of concepts to one or more other concepts</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.url : An absolute URL that is used to identify this concept map when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this concept map is (or will be) published.\">url</span><a name=\"ConceptMap.url\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Globally unique logical id for concept map</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAOZ/APrkusOiYvvfqbiXWaV2G+jGhdq1b8GgYf3v1frw3vTUlsWkZNewbcSjY/DQkad4Hb6dXv3u0f3v1ObEgfPTlerJiP3w1v79+e7OkPrfrfnjuNOtZPrpydaxa+/YrvvdpP779ZxvFPvnwKKBQaFyF/369M2vdaqHRPz58/HNh/vowufFhfroxO3OkPrluv779tK0e6JzGProwvrow9m4eOnIifPTlPDPkP78+Naxaf3v0/zowfXRi+bFhLWUVv379/rnwPvszv3rye3LiPvnv+3MjPDasKiIS/789/3x2f747eXDg+7Mifvu0tu7f+/QkfDTnPXWmPrjsvrjtPbPgrqZW+/QlPz48K2EMv36866OUPvowat8Ivvgq/Pbrvzgq/PguvrgrqN0Gda2evfYm9+7d/rpw9q6e/LSku/Rl/XVl/LSlfrkt+zVqe7Wqv3x1/bNffbOf59wFdS6if3u0vrqyP3owPvepfXQivDQkO/PkKh9K7STVf779P///////yH5BAEAAH8ALAAAAAAQABAAAAfNgH+Cg36FfoOIhH4JBxBghYl/hQkNAV0IVT5GkJKLCwtQaSsSdx9aR26Gcwt2IkQaNRI6dBERIzCFDSgWSW8WCDkbBnoOQ3uFARc/JQJfCAZlT0x4ZFyFBxdNQT9ZCBNWKQoKUQ+FEDgcdTIAV14YDmg2CgSFA0hmQC5TLE4VRTdrKJAoxOeFCzZSwsw4U6BCizwUQhQyEaAPiAwCVNCY0FCNnA6GPAwYoETIFgY9loiRA4dToTYnsOxg8CBGHE6ICvEYQ4AKzkidfgoKBAA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.identifier : Formal identifier that is used to identify this concept map when it is represented in other formats, or referenced in a specification, model, design or an instance.\">identifier</span><a name=\"ConceptMap.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Additional identifier for the concept map</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.version : The identifier that is used to identify this version of the concept map when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the profile author manually and the value should be a timestamp.\">version</span><a name=\"ConceptMap.version\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Logical id for this version of the concept map</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.name : A free text natural language name describing the concept map.\">name</span><a name=\"ConceptMap.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Informal name for this concept map</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAOZ/APrkusOiYvvfqbiXWaV2G+jGhdq1b8GgYf3v1frw3vTUlsWkZNewbcSjY/DQkad4Hb6dXv3u0f3v1ObEgfPTlerJiP3w1v79+e7OkPrfrfnjuNOtZPrpydaxa+/YrvvdpP779ZxvFPvnwKKBQaFyF/369M2vdaqHRPz58/HNh/vowufFhfroxO3OkPrluv779tK0e6JzGProwvrow9m4eOnIifPTlPDPkP78+Naxaf3v0/zowfXRi+bFhLWUVv379/rnwPvszv3rye3LiPvnv+3MjPDasKiIS/789/3x2f747eXDg+7Mifvu0tu7f+/QkfDTnPXWmPrjsvrjtPbPgrqZW+/QlPz48K2EMv36866OUPvowat8Ivvgq/Pbrvzgq/PguvrgrqN0Gda2evfYm9+7d/rpw9q6e/LSku/Rl/XVl/LSlfrkt+zVqe7Wqv3x1/bNffbOf59wFdS6if3u0vrqyP3owPvepfXQivDQkO/PkKh9K7STVf779P///////yH5BAEAAH8ALAAAAAAQABAAAAfNgH+Cg36FfoOIhH4JBxBghYl/hQkNAV0IVT5GkJKLCwtQaSsSdx9aR26Gcwt2IkQaNRI6dBERIzCFDSgWSW8WCDkbBnoOQ3uFARc/JQJfCAZlT0x4ZFyFBxdNQT9ZCBNWKQoKUQ+FEDgcdTIAV14YDmg2CgSFA0hmQC5TLE4VRTdrKJAoxOeFCzZSwsw4U6BCizwUQhQyEaAPiAwCVNCY0FCNnA6GPAwYoETIFgY9loiRA4dToTYnsOxg8CBGHE6ICvEYQ4AKzkidfgoKBAA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.useContext : The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of concept maps.\">useContext</span><a name=\"ConceptMap.useContext\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Content intends to support these contexts<br/><a href=\"valueset-use-context.html\" title=\"Indicates the countries, regions, disciplines and other aspects of use this artifact is targeted for use within\">Context of Use ValueSet</a> (<a href=\"terminologies.html#extensible\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the valueset does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">Extensible</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.publisher : The name of the individual or organization that published the concept map.\">publisher</span><a name=\"ConceptMap.publisher\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Name of the publisher (Organization or individual)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ConceptMap.contact : Contacts to assist a user in finding and communicating with the publisher.\">contact</span><a name=\"ConceptMap.contact\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Contact details of the publisher</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3QwQkAMAwDsezq/WdoskKgFAoy6HkfV5LamJ1tc7MHAAD+5QQAAOCZBkurQFbnaRSlAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.contact.name : The name of an individual to contact regarding the concept map.\">name</span><a name=\"ConceptMap.contact.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Name of a individual to contact</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAOZ/APrkusOiYvvfqbiXWaV2G+jGhdq1b8GgYf3v1frw3vTUlsWkZNewbcSjY/DQkad4Hb6dXv3u0f3v1ObEgfPTlerJiP3w1v79+e7OkPrfrfnjuNOtZPrpydaxa+/YrvvdpP779ZxvFPvnwKKBQaFyF/369M2vdaqHRPz58/HNh/vowufFhfroxO3OkPrluv779tK0e6JzGProwvrow9m4eOnIifPTlPDPkP78+Naxaf3v0/zowfXRi+bFhLWUVv379/rnwPvszv3rye3LiPvnv+3MjPDasKiIS/789/3x2f747eXDg+7Mifvu0tu7f+/QkfDTnPXWmPrjsvrjtPbPgrqZW+/QlPz48K2EMv36866OUPvowat8Ivvgq/Pbrvzgq/PguvrgrqN0Gda2evfYm9+7d/rpw9q6e/LSku/Rl/XVl/LSlfrkt+zVqe7Wqv3x1/bNffbOf59wFdS6if3u0vrqyP3owPvepfXQivDQkO/PkKh9K7STVf779P///////yH5BAEAAH8ALAAAAAAQABAAAAfNgH+Cg36FfoOIhH4JBxBghYl/hQkNAV0IVT5GkJKLCwtQaSsSdx9aR26Gcwt2IkQaNRI6dBERIzCFDSgWSW8WCDkbBnoOQ3uFARc/JQJfCAZlT0x4ZFyFBxdNQT9ZCBNWKQoKUQ+FEDgcdTIAV14YDmg2CgSFA0hmQC5TLE4VRTdrKJAoxOeFCzZSwsw4U6BCizwUQhQyEaAPiAwCVNCY0FCNnA6GPAwYoETIFgY9loiRA4dToTYnsOxg8CBGHE6ICvEYQ4AKzkidfgoKBAA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.contact.telecom : Contact details for individual (if a name was provided) or the publisher.\">telecom</span><a name=\"ConceptMap.contact.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#ContactPoint\">ContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Contact details for individual or publisher</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.description : A free text natural language description of the use of the concept map - reason for definition, conditions of use, etc.\">description</span><a name=\"ConceptMap.description\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Human language description of the concept map</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.requirements : Explains why this concept map is needed and why it's been constrained as it has.\">requirements</span><a name=\"ConceptMap.requirements\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Why is this needed?</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.copyright : A copyright statement relating to the concept map and/or its contents.\">copyright</span><a name=\"ConceptMap.copyright\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Use and/or Publishing restrictions</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.status : The status of the concept map.\">status</span><a name=\"ConceptMap.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is a modifier element\">?! </span><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">draft | active | retired<br/><a href=\"valueset-conformance-resource-status.html\" title=\"The lifecycle status of a Value Set or Concept Map\">ConformanceResourceStatus</a> (<a href=\"terminologies.html#required\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set\">Required</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.experimental : This ConceptMap was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.\">experimental</span><a name=\"ConceptMap.experimental\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">If for testing purposes, not real usage</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.date : The date that the concept map status was last changed.\">date</span><a name=\"ConceptMap.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Date for given status</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAGm6/idTd4yTmF+v8Xa37KvW+lyh3KHJ62aq41ee2bXZ98nm/2mt5W2Ck5XN/C1chEZieho8WXXA/2Gn4P39/W+y6V+l3qjP8Njt/lx2izxPYGyv51Oa1EJWZ////////yH5BAEAAB8ALAAAAAAQABAAAAWH4Cd+Xml6Y0pCQts0EKp6GbYshaM/skhjhCChUmFIeL4OsHIxXRAISQTl6SgIG8+FgfBMoh2qtbLZQr0TQJhk3TC4pYPBApiyFVDEwSOf18UFXxMWBoUJBn9sDgmDewcJCRyJJBoEkRyYmAABPZQEAAOhA5seFDMaDw8BAQ9TpiokJyWwtLUhADs=\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Choice of Types\" class=\"heirarchy\"/> <span title=\"ConceptMap.source[x] : The source value set that specifies the concepts that are being mapped.\">source[x]</span><a name=\"ConceptMap.source_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Identifies the source of the concepts which are being mapped</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3QwQkAMAwDsezq/WdoskKgFAoy6HkfV5LamJ1tc7MHAAD+5QQAAOCZBkurQFbnaRSlAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"String of characters used to identify a name or a resource\">sourceUri</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAFxJREFUOE/NjEEOACEIA/0o/38GGw+agoXYeNnDJDCUDnd/gkoFKhWozJiZI3gLwY6rAgxhsPKTPUzycTl8lAryMyMsVQG6TFi6cHULyz8KOjC7OIQKlQpU3uPjAwhX2CCcGsgOAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"heirarchy\"/> sourceReference</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"valueset.html\">ValueSet</a> | <a href=\"structuredefinition.html\">StructureDefinition</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAGm6/idTd4yTmF+v8Xa37KvW+lyh3KHJ62aq41ee2bXZ98nm/2mt5W2Ck5XN/C1chEZieho8WXXA/2Gn4P39/W+y6V+l3qjP8Njt/lx2izxPYGyv51Oa1EJWZ////////yH5BAEAAB8ALAAAAAAQABAAAAWH4Cd+Xml6Y0pCQts0EKp6GbYshaM/skhjhCChUmFIeL4OsHIxXRAISQTl6SgIG8+FgfBMoh2qtbLZQr0TQJhk3TC4pYPBApiyFVDEwSOf18UFXxMWBoUJBn9sDgmDewcJCRyJJBoEkRyYmAABPZQEAAOhA5seFDMaDw8BAQ9TpiokJyWwtLUhADs=\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Choice of Types\" class=\"heirarchy\"/> <span title=\"ConceptMap.target[x] : The target value set provides context to the mappings. Note that the mapping is made between concepts, not between value sets, but the value set provides important context about how the concept mapping choices are made.\">target[x]</span><a name=\"ConceptMap.target_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Provides context to the mappings</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3QwQkAMAwDsezq/WdoskKgFAoy6HkfV5LamJ1tc7MHAAD+5QQAAOCZBkurQFbnaRSlAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"String of characters used to identify a name or a resource\">targetUri</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAFxJREFUOE/NjEEOACEIA/0o/38GGw+agoXYeNnDJDCUDnd/gkoFKhWozJiZI3gLwY6rAgxhsPKTPUzycTl8lAryMyMsVQG6TFi6cHULyz8KOjC7OIQKlQpU3uPjAwhX2CCcGsgOAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"heirarchy\"/> targetReference</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"valueset.html\">ValueSet</a> | <a href=\"structuredefinition.html\">StructureDefinition</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ConceptMap.element : Mappings for an individual concept in the source to one or more concepts in the target.\">element</span><a name=\"ConceptMap.element\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Mappings for a concept from the source set</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR42u3QwQkAMAwDsezq/WdIO4XJQwa9DTdJpulv258AAMANIgAAADUPYAVAgAJ//usAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.codeSystem : An absolute URI that identifies the Code System (if the source is a value set that crosses more than one code system).\">codeSystem</span><a name=\"ConceptMap.element.codeSystem\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Code System (if value set crosses code systems)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR42u3QwQkAMAwDsezq/WdIO4XJQwa9DTdJpulv258AAMANIgAAADUPYAVAgAJ//usAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.code : Identity (code or path) or the element/item being mapped.\">code</span><a name=\"ConceptMap.element.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Identifies element being mapped</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target : A concept from the target value set that this concept maps to.\">target</span><a name=\"ConceptMap.element.target\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element has or is affected by some invariants\">I</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Concept in target system for element<br/><span style=\"font-style: italic\" title=\"cmd-1\">If the map is narrower or inexact, there SHALL be some comments</span></td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3WsQkAQAgDQHfN/jO8Fs7wIFzg+pAqlaQumbxrnQEAgP3zRgAAAH5paoVAgEFM+GgAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target.codeSystem : An absolute URI that identifies the code system of the target code (if the target is a value set that cross code systems).\">codeSystem</span><a name=\"ConceptMap.element.target.codeSystem\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">System of the target (if necessary)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3WsQkAQAgDQHfN/jO8Fs7wIFzg+pAqlaQumbxrnQEAgP3zRgAAAH5paoVAgEFM+GgAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target.code : Identity (code or path) or the element/item that the map refers to.\">code</span><a name=\"ConceptMap.element.target.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Code that identifies the target element</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3WsQkAQAgDQHfN/jO8Fs7wIFzg+pAqlaQumbxrnQEAgP3zRgAAAH5paoVAgEFM+GgAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target.equivalence : The equivalence between the source and target concepts (counting for the dependencies and products). The equivalence is read from target to source (e.g. the target is 'wider' than the source).\">equivalence</span><a name=\"ConceptMap.element.target.equivalence\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is a modifier element\">?!</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">equivalent | equal | wider | subsumes | narrower | specializes | inexact | unmatched | disjoint<br/><a href=\"valueset-concept-map-equivalence.html\" title=\"The degree of equivalence between concepts\">ConceptMapEquivalence</a> (<a href=\"terminologies.html#required\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set\">Required</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3WsQkAQAgDQHfN/jO8Fs7wIFzg+pAqlaQumbxrnQEAgP3zRgAAAH5paoVAgEFM+GgAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target.comments : A description of status/issues in mapping that conveys additional information not represented in  the structured data.\">comments</span><a name=\"ConceptMap.element.target.comments\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element has or is affected by some invariants\">I</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Description of status/issues in mapping</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3WsQkAQAgDQHfN/jO8Fs7wIFzg+pAqlaQumbxrnQEAgP3zRgAAAH5paoVAgEFM+GgAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target.dependsOn : A set of additional dependencies for this mapping to hold. This mapping is only applicable if the specified element can be resolved, and it has the specified value.\">dependsOn</span><a name=\"ConceptMap.element.target.dependsOn\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Other elements required for this mapping (from context)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3WsQkAMAwDsPzq/29o+0OgISCDRi+eXElqk5cz2QcAABp/3AgAAMAvF3WrQFbYK0tDAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target.dependsOn.element : A reference to a specific concept that holds a coded value. This can be an element in a FHIR resource, or a specific reference to a data element in a different specification (e.g. v2) or a general reference to a kind of data field, or a reference to a value set with an appropriately narrow definition.\">element</span><a name=\"ConceptMap.element.target.dependsOn.element\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Reference to element/field/valueset mapping depends on</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3WsQkAMAwDsPzq/29o+0OgISCDRi+eXElqk5cz2QcAABp/3AgAAMAvF3WrQFbYK0tDAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target.dependsOn.codeSystem : An absolute URI that identifies the code system of the dependency code (if the source/dependency is a value set that crosses code systems).\">codeSystem</span><a name=\"ConceptMap.element.target.dependsOn.codeSystem\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Code System (if necessary)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3WsQkAQAgDQHfN/jO8Fs7wIFzg+pAqlaQumbxrnQEAgP3zRgAAAH5paoVAgEFM+GgAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target.dependsOn.code : Identity (code or path) or the element/item that the map depends on / refers to.\">code</span><a name=\"ConceptMap.element.target.dependsOn.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Value of the referenced element</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKjSURBVDjLrZLdT1JhHMfd6q6L7voT3NrEuQq6aTircWFQ04u4MetCZ4UXGY2J1UoMdCoWxMZWDWtrrqHgylZ54RbkZtkiJ5aAku8MXXqQl3PgAOfb8xwq5LrOzmfnd34vn+d5tqcMQNm/UPZfBMHXx2ZWvI386odLe7jIL7w5EQ68qjhEOFjCmMj+v4LQmCwtCHkSCuSlFOIst4X1KU1mbUqT/kPki57bmL6xEnx55HxRMCqNCTkO6fUBpH5YkFoeBLsyAiHLEFcSQi5B2C38Z3eAPJ8JjcrmigKnLJ7nd8mwDcnFh4h/68T29FVsfW4F4zeCmb0LZqYDO191hOtkZ5sIuY8lioJhKZ9lo2DmbNjx9WDTowW7+YmsGv+9Ov3GijsgxwsNy7iiYOg4L54/nyawQC4lDubYANIRG7g1I9glHVILl5EMNCCXnEfouXSP4JksI+RY5OIfkWXGwf8cQSb6hAz2gV2+BXaxFangBSS/n0PCfxq5xAxCg3sFj2TpPB8Hvz2G3dWneOvqhLnPCIfDgd5uPebfNyAyrUR/t1bMmft7MdR1NiuXyw8UBDYpJ/AMkhsOPLa2wmKxIBqNIhwOw+Px4EG/Hvb7GoSCc2JucnJS7FEqlb2FizRwNMLHFmPvXnQJN/U6+Px+3LvdApVKiebmZlitVuj1ejFWqc7AZNCJEq1WGxMFAVPFtUCPZKhDXZUyGu6IAr+pklOclGNiYgI+nw9erxculws0N2uqjFOBwWDgSu61RCK50tLSwlBBfX39eE1NDa9QKFBXVydCY5qjNSqgvSWCw+RRqVTzZrOZcTqd2263G3a7HW1tbWhvbxdjmqM12kN7SwTl5eX7qqurq2pra5eampqSGo2GI2TUanUj4RSJ4zRHa7SH9v4C8Nrl+GFh7LoAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Element\" class=\"heirarchy\"/> <span title=\"ConceptMap.element.target.product : A set of additional outcomes from this mapping to other elements. To properly execute this mapping, the specified element must be mapped to some data element or source that is in context. The mapping may still be useful without a place for the additional data elements, but the equivalence cannot be relied on.\">product</span><a name=\"ConceptMap.element.target.product\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">see <a href=\"#ConceptMap.element.target.dependsOn\" title=\"ConceptMap.element.target.dependsOn\">dependsOn</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Other concepts that this mapping also produces</td></tr>\r\n</table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "url": "http://hl7.org/fhir/StructureDefinition/ConceptMap",
+  "name": "ConceptMap",
+  "publisher": "Health Level Seven International (Vocabulary)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/Special/committees/Vocab/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Base StructureDefinition for ConceptMap Resource",
+  "status": "draft",
+  "date": "2015-07-24T17:31:16-04:00",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "snapshot": {
+    "element": [
+      {
+        "path": "ConceptMap",
+        "short": "A map from one set of concepts to one or more other concepts",
+        "definition": "A statement of relationships from one set of concepts to one or more other concepts - either code systems or data elements, or classes in class models.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DomainResource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.id",
+        "short": "Logical id of this artifact",
+        "definition": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.meta",
+        "short": "Metadata about the resource",
+        "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.implicitRules",
+        "short": "A set of rules under which this content was created",
+        "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isModifier": true
+      },
+      {
+        "path": "ConceptMap.language",
+        "short": "Language of the resource content",
+        "definition": "The base language in which the resource is written.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language",
+          "valueSetUri": "http://tools.ietf.org/html/bcp47"
+        }
+      },
+      {
+        "path": "ConceptMap.text",
+        "short": "Text summary of the resource, for human interpretation",
+        "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+        "alias": [
+          "narrative",
+          "html",
+          "xhtml",
+          "display"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Narrative"
+          }
+        ],
+        "condition": [
+          "dom-1"
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Act.text?"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.contained",
+        "short": "Contained, inline Resources",
+        "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+        "alias": [
+          "inline resources",
+          "anonymous resources",
+          "contained resources"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.url",
+        "short": "Globally unique logical id for concept map",
+        "definition": "An absolute URL that is used to identify this concept map when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this concept map is (or will be) published.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.identifier",
+        "short": "Additional identifier for the concept map",
+        "definition": "Formal identifier that is used to identify this concept map when it is represented in other formats, or referenced in a specification, model, design or an instance.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.version",
+        "short": "Logical id for this version of the concept map",
+        "definition": "The identifier that is used to identify this version of the concept map when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the profile author manually and the value should be a timestamp.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.name",
+        "short": "Informal name for this concept map",
+        "definition": "A free text natural language name describing the concept map.",
+        "requirements": "Support human navigation.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.useContext",
+        "short": "Content intends to support these contexts",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of concept maps.",
+        "requirements": "Assist in searching for appropriate concept maps.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "extensible",
+          "description": "Indicates the countries, regions, disciplines and other aspects of use this artifact is targeted for use within",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/use-context"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.publisher",
+        "short": "Name of the publisher (Organization or individual)",
+        "definition": "The name of the individual or organization that published the concept map.",
+        "requirements": "Helps establish the \"authority/credibility\" of the concept map.  May also allow for contact.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.contact",
+        "short": "Contact details of the publisher",
+        "definition": "Contacts to assist a user in finding and communicating with the publisher.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.contact.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.contact.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.contact.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.contact.name",
+        "short": "Name of a individual to contact",
+        "definition": "The name of an individual to contact regarding the concept map.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.contact.telecom",
+        "short": "Contact details for individual or publisher",
+        "definition": "Contact details for individual (if a name was provided) or the publisher.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.description",
+        "short": "Human language description of the concept map",
+        "definition": "A free text natural language description of the use of the concept map - reason for definition, conditions of use, etc.",
+        "requirements": "Human understandability.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.requirements",
+        "short": "Why is this needed?",
+        "definition": "Explains why this concept map is needed and why it's been constrained as it has.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.copyright",
+        "short": "Use and/or Publishing restrictions",
+        "definition": "A copyright statement relating to the concept map and/or its contents.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.status",
+        "short": "draft | active | retired",
+        "definition": "The status of the concept map.",
+        "requirements": "Identify when/if the concept map should be used.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of a Value Set or Concept Map",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/conformance-resource-status"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.experimental",
+        "short": "If for testing purposes, not real usage",
+        "definition": "This ConceptMap was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.date",
+        "short": "Date for given status",
+        "definition": "The date that the concept map status was last changed.",
+        "requirements": "Need to know when a concept map was first legal for use or became withdrawn or replaced.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.source[x]",
+        "short": "Identifies the source of the concepts which are being mapped",
+        "definition": "The source value set that specifies the concepts that are being mapped.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ValueSet"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
+            ]
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.target[x]",
+        "short": "Provides context to the mappings",
+        "definition": "The target value set provides context to the mappings. Note that the mapping is made between concepts, not between value sets, but the value set provides important context about how the concept mapping choices are made.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ValueSet"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
+            ]
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.element",
+        "short": "Mappings for a concept from the source set",
+        "definition": "Mappings for an individual concept in the source to one or more concepts in the target.",
+        "alias": [
+          "code",
+          "concept",
+          "item"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.codeSystem",
+        "short": "Code System (if value set crosses code systems)",
+        "definition": "An absolute URI that identifies the Code System (if the source is a value set that crosses more than one code system).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.code",
+        "short": "Identifies element being mapped",
+        "definition": "Identity (code or path) or the element/item being mapped.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target",
+        "short": "Concept in target system for element",
+        "definition": "A concept from the target value set that this concept maps to.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "cmd-1",
+            "severity": "error",
+            "human": "If the map is narrower or inexact, there SHALL be some comments",
+            "xpath": "exists(f:comments) or ((f:equivalence/@value != 'narrower') and (f:equivalence/@value != 'inexact'))"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.codeSystem",
+        "short": "System of the target (if necessary)",
+        "definition": "An absolute URI that identifies the code system of the target code (if the target is a value set that cross code systems).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.code",
+        "short": "Code that identifies the target element",
+        "definition": "Identity (code or path) or the element/item that the map refers to.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.equivalence",
+        "short": "equivalent | equal | wider | subsumes | narrower | specializes | inexact | unmatched | disjoint",
+        "definition": "The equivalence between the source and target concepts (counting for the dependencies and products). The equivalence is read from target to source (e.g. the target is 'wider' than the source).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "binding": {
+          "strength": "required",
+          "description": "The degree of equivalence between concepts",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/concept-map-equivalence"
+          }
+        }
+      },
+      {
+        "path": "ConceptMap.element.target.comments",
+        "short": "Description of status/issues in mapping",
+        "definition": "A description of status/issues in mapping that conveys additional information not represented in  the structured data.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "cmd-1"
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn",
+        "name": "dependsOn",
+        "short": "Other elements required for this mapping (from context)",
+        "definition": "A set of additional dependencies for this mapping to hold. This mapping is only applicable if the specified element can be resolved, and it has the specified value.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn.element",
+        "short": "Reference to element/field/valueset mapping depends on",
+        "definition": "A reference to a specific concept that holds a coded value. This can be an element in a FHIR resource, or a specific reference to a data element in a different specification (e.g. v2) or a general reference to a kind of data field, or a reference to a value set with an appropriately narrow definition.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn.codeSystem",
+        "short": "Code System (if necessary)",
+        "definition": "An absolute URI that identifies the code system of the dependency code (if the source/dependency is a value set that crosses code systems).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn.code",
+        "short": "Value of the referenced element",
+        "definition": "Identity (code or path) or the element/item that the map depends on / refers to.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.product",
+        "short": "Other concepts that this mapping also produces",
+        "definition": "A set of additional outcomes from this mapping to other elements. To properly execute this mapping, the specified element must be mapped to some data element or source that is in context. The mapping may still be useful without a place for the additional data elements, but the equivalence cannot be relied on.",
+        "min": 0,
+        "max": "*",
+        "nameReference": "dependsOn"
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "ConceptMap",
+        "short": "A map from one set of concepts to one or more other concepts",
+        "definition": "A statement of relationships from one set of concepts to one or more other concepts - either code systems or data elements, or classes in class models.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DomainResource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.url",
+        "short": "Globally unique logical id for concept map",
+        "definition": "An absolute URL that is used to identify this concept map when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this concept map is (or will be) published.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.identifier",
+        "short": "Additional identifier for the concept map",
+        "definition": "Formal identifier that is used to identify this concept map when it is represented in other formats, or referenced in a specification, model, design or an instance.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.version",
+        "short": "Logical id for this version of the concept map",
+        "definition": "The identifier that is used to identify this version of the concept map when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the profile author manually and the value should be a timestamp.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.name",
+        "short": "Informal name for this concept map",
+        "definition": "A free text natural language name describing the concept map.",
+        "requirements": "Support human navigation.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.useContext",
+        "short": "Content intends to support these contexts",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of concept maps.",
+        "requirements": "Assist in searching for appropriate concept maps.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "extensible",
+          "description": "Indicates the countries, regions, disciplines and other aspects of use this artifact is targeted for use within",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/use-context"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.publisher",
+        "short": "Name of the publisher (Organization or individual)",
+        "definition": "The name of the individual or organization that published the concept map.",
+        "requirements": "Helps establish the \"authority/credibility\" of the concept map.  May also allow for contact.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.contact",
+        "short": "Contact details of the publisher",
+        "definition": "Contacts to assist a user in finding and communicating with the publisher.",
+        "min": 0,
+        "max": "*",
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.contact.name",
+        "short": "Name of a individual to contact",
+        "definition": "The name of an individual to contact regarding the concept map.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.contact.telecom",
+        "short": "Contact details for individual or publisher",
+        "definition": "Contact details for individual (if a name was provided) or the publisher.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.description",
+        "short": "Human language description of the concept map",
+        "definition": "A free text natural language description of the use of the concept map - reason for definition, conditions of use, etc.",
+        "requirements": "Human understandability.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.requirements",
+        "short": "Why is this needed?",
+        "definition": "Explains why this concept map is needed and why it's been constrained as it has.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.copyright",
+        "short": "Use and/or Publishing restrictions",
+        "definition": "A copyright statement relating to the concept map and/or its contents.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.status",
+        "short": "draft | active | retired",
+        "definition": "The status of the concept map.",
+        "requirements": "Identify when/if the concept map should be used.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of a Value Set or Concept Map",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/conformance-resource-status"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.experimental",
+        "short": "If for testing purposes, not real usage",
+        "definition": "This ConceptMap was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.date",
+        "short": "Date for given status",
+        "definition": "The date that the concept map status was last changed.",
+        "requirements": "Need to know when a concept map was first legal for use or became withdrawn or replaced.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.source[x]",
+        "short": "Identifies the source of the concepts which are being mapped",
+        "definition": "The source value set that specifies the concepts that are being mapped.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ValueSet"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
+            ]
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.target[x]",
+        "short": "Provides context to the mappings",
+        "definition": "The target value set provides context to the mappings. Note that the mapping is made between concepts, not between value sets, but the value set provides important context about how the concept mapping choices are made.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ValueSet"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
+            ]
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ConceptMap.element",
+        "short": "Mappings for a concept from the source set",
+        "definition": "Mappings for an individual concept in the source to one or more concepts in the target.",
+        "alias": [
+          "code",
+          "concept",
+          "item"
+        ],
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "path": "ConceptMap.element.codeSystem",
+        "short": "Code System (if value set crosses code systems)",
+        "definition": "An absolute URI that identifies the Code System (if the source is a value set that crosses more than one code system).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.code",
+        "short": "Identifies element being mapped",
+        "definition": "Identity (code or path) or the element/item being mapped.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target",
+        "short": "Concept in target system for element",
+        "definition": "A concept from the target value set that this concept maps to.",
+        "min": 0,
+        "max": "*",
+        "constraint": [
+          {
+            "key": "cmd-1",
+            "severity": "error",
+            "human": "If the map is narrower or inexact, there SHALL be some comments",
+            "xpath": "exists(f:comments) or ((f:equivalence/@value != 'narrower') and (f:equivalence/@value != 'inexact'))"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.codeSystem",
+        "short": "System of the target (if necessary)",
+        "definition": "An absolute URI that identifies the code system of the target code (if the target is a value set that cross code systems).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.code",
+        "short": "Code that identifies the target element",
+        "definition": "Identity (code or path) or the element/item that the map refers to.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.equivalence",
+        "short": "equivalent | equal | wider | subsumes | narrower | specializes | inexact | unmatched | disjoint",
+        "definition": "The equivalence between the source and target concepts (counting for the dependencies and products). The equivalence is read from target to source (e.g. the target is 'wider' than the source).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "binding": {
+          "strength": "required",
+          "description": "The degree of equivalence between concepts",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/concept-map-equivalence"
+          }
+        }
+      },
+      {
+        "path": "ConceptMap.element.target.comments",
+        "short": "Description of status/issues in mapping",
+        "definition": "A description of status/issues in mapping that conveys additional information not represented in  the structured data.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "cmd-1"
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn",
+        "name": "dependsOn",
+        "short": "Other elements required for this mapping (from context)",
+        "definition": "A set of additional dependencies for this mapping to hold. This mapping is only applicable if the specified element can be resolved, and it has the specified value.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn.element",
+        "short": "Reference to element/field/valueset mapping depends on",
+        "definition": "A reference to a specific concept that holds a coded value. This can be an element in a FHIR resource, or a specific reference to a data element in a different specification (e.g. v2) or a general reference to a kind of data field, or a reference to a value set with an appropriately narrow definition.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn.codeSystem",
+        "short": "Code System (if necessary)",
+        "definition": "An absolute URI that identifies the code system of the dependency code (if the source/dependency is a value set that crosses code systems).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.dependsOn.code",
+        "short": "Value of the referenced element",
+        "definition": "Identity (code or path) or the element/item that the map depends on / refers to.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ConceptMap.element.target.product",
+        "short": "Other concepts that this mapping also produces",
+        "definition": "A set of additional outcomes from this mapping to other elements. To properly execute this mapping, the specified element must be mapped to some data element or source that is in context. The mapping may still be useful without a place for the additional data elements, but the equivalence cannot be relied on.",
+        "min": 0,
+        "max": "*",
+        "nameReference": "dependsOn"
+      }
+    ]
+  }
+}

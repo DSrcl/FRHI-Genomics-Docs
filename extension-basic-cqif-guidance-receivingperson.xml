@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="basic-cqif-guidance-receivingPerson"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-receivingPerson"/>
+  <name value="receivingPerson"/>
+  <display value="receivingPerson"/>
+  <publisher value="Health Level Seven, Inc. - CDS WG"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/special/committees/dss"/>
+    </telecom>
+  </contact>
+  <description value="The person in the receiving organization that will receive the response."/>
+  <status value="draft"/>
+  <date value="2015-05-30"/>
+  <kind value="datatype"/>
+  <constrainedType value="Extension"/>
+  <abstract value="false"/>
+  <contextType value="resource"/>
+  <context value="Basic"/>
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <snapshot>
+    <element>
+      <path value="Extension"/>
+      <short value="Extension"/>
+      <definition value="The person in the receiving organization that will receive the response."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-receivingPerson"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.value[x]"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Person"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element>
+      <path value="Extension"/>
+      <definition value="The person in the receiving organization that will receive the response."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-receivingPerson"/>
+    </element>
+    <element>
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Person"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

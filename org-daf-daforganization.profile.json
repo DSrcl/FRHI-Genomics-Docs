@@ -1,0 +1,1358 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "org-daf-daforganization",
+  "text": {
+    "status": "generated",
+    "div": "<div>to do</div>"
+  },
+  "url": "http://hl7.org/fhir/StructureDefinition/org-daf-daforganization",
+  "name": "U.S. DAF Organization Profile",
+  "publisher": "Health Level Seven International (Infrastructure and Messaging - Data Access Framework)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.healthit.gov"
+        }
+      ]
+    }
+  ],
+  "description": "Defines basic constraints and extensions on the Organization resource for use with other DAF resources",
+  "status": "draft",
+  "date": "2015-03-03",
+  "kind": "resource",
+  "constrainedType": "Organization",
+  "abstract": false,
+  "base": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "snapshot": {
+    "element": [
+      {
+        "path": "Organization",
+        "name": "DAFOrganization",
+        "short": "A grouping of people or organizations with a common purpose",
+        "definition": "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Organization",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Organization"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "org-1",
+            "severity": "error",
+            "human": "The organization SHALL at least have a name or an id, and possibly more than one",
+            "xpath": "count(f:identifier | f:name) > 0"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "(also see master files messages)"
+          },
+          {
+            "identity": "rim",
+            "map": "Organization(classCode=ORG, determinerCode=INST)"
+          },
+          {
+            "identity": "servd",
+            "map": "Organization"
+          }
+        ]
+      },
+      {
+        "path": "Organization.id",
+        "short": "Logical id of this artifact",
+        "definition": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "path": "Organization.meta",
+        "short": "Metadata about the resource",
+        "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.meta",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "path": "Organization.implicitRules",
+        "short": "A set of rules under which this content was created",
+        "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.implicitRules",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isModifier": true
+      },
+      {
+        "path": "Organization.language",
+        "short": "Language of the resource content",
+        "definition": "The base language in which the resource is written.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.language",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language",
+          "valueSetUri": "http://tools.ietf.org/html/bcp47"
+        }
+      },
+      {
+        "path": "Organization.text",
+        "short": "Text summary of the resource, for human interpretation",
+        "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+        "alias": [
+          "narrative",
+          "html",
+          "xhtml",
+          "display"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Narrative"
+          }
+        ],
+        "condition": [
+          "dom-1"
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Act.text?"
+          }
+        ]
+      },
+      {
+        "path": "Organization.contained",
+        "short": "Contained, inline Resources",
+        "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+        "alias": [
+          "inline resources",
+          "anonymous resources",
+          "contained resources"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Organization.contained",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Organization.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Organization.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Organization.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Organization.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Organization.identifier",
+        "short": "Identifies this organization  across multiple systems",
+        "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
+        "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Organization.identifier",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "condition": [
+          "org-1"
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.10 Organization Identifier / XON.3 ID Number"
+          },
+          {
+            "identity": "rim",
+            "map": ".scopes[Role](classCode=IDENT)"
+          },
+          {
+            "identity": "servd",
+            "map": "./Identifiers"
+          }
+        ]
+      },
+      {
+        "path": "Organization.name",
+        "short": "Name used for the organization",
+        "definition": "A name associated with the organization.",
+        "requirements": "Need to use the name as the label of the organization.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Organization.name",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "org-1"
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.1 Organization Name"
+          },
+          {
+            "identity": "rim",
+            "map": ".name"
+          },
+          {
+            "identity": "servd",
+            "map": ".PreferredName/Name"
+          }
+        ]
+      },
+      {
+        "path": "Organization.type",
+        "short": "Kind of organization",
+        "definition": "The kind of organization that this is.",
+        "requirements": "Need to be able to track the kind of organization that this is - different organization types have different uses.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "example",
+          "description": "Used to categorize the organization",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/organization-type"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "No equivalent in v2"
+          },
+          {
+            "identity": "rim",
+            "map": ".code"
+          },
+          {
+            "identity": "servd",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Organization.telecom",
+        "short": "A contact detail for the organization",
+        "definition": "A contact detail for the organization.",
+        "requirements": "Human contact for the organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.telecom",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ],
+        "condition": [
+          "org-3"
+        ],
+        "constraint": [
+          {
+            "key": "org-3",
+            "severity": "error",
+            "human": "The telecom of an organization can never be of use 'home'",
+            "xpath": "count(f:use[@value='home']) = 0"
+          }
+        ],
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "No authoritative equivalent in V2.x"
+          },
+          {
+            "identity": "rim",
+            "map": ".telecom"
+          },
+          {
+            "identity": "servd",
+            "map": "./ContactPoints"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address",
+        "short": "An address for the organization",
+        "definition": "An address for the organization.",
+        "requirements": "May need to keep track of the organization's addresses for contacting, billing or reporting requirements.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Organization.address",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Address"
+          }
+        ],
+        "condition": [
+          "org-2"
+        ],
+        "constraint": [
+          {
+            "key": "org-2",
+            "severity": "error",
+            "human": "An address of an organization can never be of use 'home'",
+            "xpath": "count(f:use[@value='home']) = 0"
+          }
+        ],
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "No authoritative equivalent in V2.x; some V2.x segments such as OBX might provide a serialized instance value"
+          },
+          {
+            "identity": "rim",
+            "map": ".address"
+          },
+          {
+            "identity": "servd",
+            "map": "./PrimaryAddress and ./OtherAddresses"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Address.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.extension",
+        "name": "DAFCountry",
+        "short": "County/Parish FIPS codes",
+        "definition": "County/Parish FIPS codes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/us-core-county"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "Organization.address.use",
+        "short": "home | work | temp | old - purpose of this address",
+        "definition": "The purpose of this address.",
+        "requirements": "Allows an appropriate address to be chosen from a list of many.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "exampleCode": "home",
+        "isModifier": true,
+        "binding": {
+          "strength": "required",
+          "description": "The use of an address",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/address-use"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.7"
+          },
+          {
+            "identity": "rim",
+            "map": "unique(./use)"
+          },
+          {
+            "identity": "servd",
+            "map": "./AddressPurpose"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.type",
+        "short": "postal | physical | both",
+        "definition": "Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "exampleCode": "both",
+        "binding": {
+          "strength": "required",
+          "description": "The type of an address (physical / postal)",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/address-type"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.18"
+          },
+          {
+            "identity": "rim",
+            "map": "unique(./use)"
+          },
+          {
+            "identity": "vcard",
+            "map": "address type parameter"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.text",
+        "short": "Text representation of the address",
+        "definition": "A full text representation of the address.",
+        "requirements": "A renderable, unencoded form.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "exampleString": "137 Nowhere Street, Erewhon 9132",
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6"
+          },
+          {
+            "identity": "rim",
+            "map": "./formatted"
+          },
+          {
+            "identity": "vcard",
+            "map": "address label parameter"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.line",
+        "short": "Street name, number, direction & P.O. Box etc",
+        "definition": "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.",
+        "requirements": "home | work | temp | old - purpose of this address.",
+        "min": 0,
+        "max": "2",
+        "base": {
+          "path": "Address.line",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "exampleString": "137 Nowhere Street",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = AL]"
+          },
+          {
+            "identity": "vcard",
+            "map": "street"
+          },
+          {
+            "identity": "servd",
+            "map": "./StreetAddress (newline delimitted)"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.city",
+        "short": "Name of city, town etc.",
+        "definition": "The name of the city, town, village or other community or delivery center.",
+        "alias": [
+          "Muncipality"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.city",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "exampleString": "Erewhon",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.3"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = CTY]"
+          },
+          {
+            "identity": "vcard",
+            "map": "locality"
+          },
+          {
+            "identity": "servd",
+            "map": "./Jurisdiction"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.district",
+        "short": "District name (aka county)",
+        "definition": "The name of the administrative area (county).",
+        "alias": [
+          "County"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.district",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "exampleString": "Madison",
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.9"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = CNT | CPA]"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.state",
+        "short": "Sub-unit of country (abreviations ok)",
+        "definition": "Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes).",
+        "alias": [
+          "Province",
+          "Territory"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.state",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "description": "Two letter USPS alphabetic codes.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/usps-state"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.4"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = STA]"
+          },
+          {
+            "identity": "vcard",
+            "map": "region"
+          },
+          {
+            "identity": "servd",
+            "map": "./Region"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.postalCode",
+        "short": "US Zip Codes",
+        "definition": "US Zip Codes.",
+        "alias": [
+          "Zip"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.postalCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "exampleString": "9132",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.5"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = ZIP]"
+          },
+          {
+            "identity": "vcard",
+            "map": "code"
+          },
+          {
+            "identity": "servd",
+            "map": "./PostalIdentificationCode"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.country",
+        "short": "Country (can be ISO 3166 3 letter code)",
+        "definition": "Country - a nation as commonly understood or generally accepted.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.country",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.6"
+          },
+          {
+            "identity": "rim",
+            "map": "AD.part[parttype = CNT]"
+          },
+          {
+            "identity": "vcard",
+            "map": "country"
+          },
+          {
+            "identity": "servd",
+            "map": "./Country"
+          }
+        ]
+      },
+      {
+        "path": "Organization.address.period",
+        "short": "Time period when address was/is in use",
+        "definition": "Time period when address was/is in use.",
+        "requirements": "Allows addresses to be placed in historical context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Address.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "examplePeriod": {
+          "start": "2010-03-23",
+          "end": "2010-07-01"
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.12 / XAD.13 + XAD.14"
+          },
+          {
+            "identity": "rim",
+            "map": "./usablePeriod[type=\"IVL<TS>\"]"
+          },
+          {
+            "identity": "servd",
+            "map": "./StartDate and ./EndDate"
+          }
+        ]
+      },
+      {
+        "path": "Organization.partOf",
+        "short": "The organization of which this organization forms a part",
+        "definition": "The organization of which this organization forms a part.",
+        "requirements": "Need to be able to track the hierarchy of organizations within an organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.partOf",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "No equivalent in V2.x"
+          },
+          {
+            "identity": "rim",
+            "map": ".playedBy[classCode=Part].scoper"
+          },
+          {
+            "identity": "servd",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Organization.contact",
+        "short": "Contact for the organization for a certain purpose",
+        "definition": "Contact for the organization for a certain purpose.",
+        "requirements": "Need to keep track of assigned contact points within bigger organization.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Organization.contact",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".contactParty"
+          }
+        ]
+      },
+      {
+        "path": "Organization.contact.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.contact.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Organization.contact.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Organization.contact.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Organization.contact.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Organization.contact.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Organization.contact.purpose",
+        "short": "The type of contact",
+        "definition": "Indicates a purpose for which the contact can be reached.",
+        "requirements": "Need to distinguish between multiple contact persons.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.contact.purpose",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The purpose for which you would contact a contact party",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/contactentity-type"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./type"
+          }
+        ]
+      },
+      {
+        "path": "Organization.contact.name",
+        "short": "A name associated with the contact",
+        "definition": "A name associated with the contact.",
+        "requirements": "Need to be able to track the person by name.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.contact.name",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID-5, PID-9"
+          },
+          {
+            "identity": "rim",
+            "map": "./name"
+          }
+        ]
+      },
+      {
+        "path": "Organization.contact.telecom",
+        "short": "Contact details (telephone, email, etc)  for a contact",
+        "definition": "A contact detail (e.g. a telephone number or an email address) by which the party may be contacted.",
+        "requirements": "People have (primary) ways to contact them in some way such as phone, email.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Organization.contact.telecom",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID-13, PID-14"
+          },
+          {
+            "identity": "rim",
+            "map": "./telecom"
+          }
+        ]
+      },
+      {
+        "path": "Organization.contact.address",
+        "short": "Visiting or postal addresses for the contact",
+        "definition": "Visiting or postal addresses for the contact.",
+        "requirements": "May need to keep track of a contact party's address for contacting, billing or reporting requirements.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.contact.address",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Address"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID-11"
+          },
+          {
+            "identity": "rim",
+            "map": "./addr"
+          }
+        ]
+      },
+      {
+        "path": "Organization.active",
+        "short": "Whether the organization's record is still in active use",
+        "definition": "Whether the organization's record is still in active use.",
+        "requirements": "Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Organization.active",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "defaultValueBoolean": true,
+        "mustSupport": true,
+        "isModifier": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "No equivalent in V2.x"
+          },
+          {
+            "identity": "rim",
+            "map": ".status"
+          },
+          {
+            "identity": "servd",
+            "map": "./Status (however this concept in ServD more covers why the organization is active or not, could be delisted, deregistered, not operational yet) this could alternatively be derived from ./StartDate and ./EndDate and given a context date."
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Organization",
+        "name": "DAFOrganization",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Organization"
+          }
+        ]
+      },
+      {
+        "path": "Organization.identifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "Organization.name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "Organization.telecom",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "Organization.address",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Address"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "Organization.address.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "path": "Organization.address.extension",
+        "name": "DAFCountry",
+        "short": "County/Parish FIPS codes",
+        "definition": "County/Parish FIPS codes.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/us-core-county"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "Organization.address.line",
+        "min": 0,
+        "max": "2",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "Organization.address.city",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "Organization.address.state",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "description": "Two letter USPS alphabetic codes.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/usps-state"
+          }
+        }
+      },
+      {
+        "path": "Organization.address.postalCode",
+        "short": "US Zip Codes",
+        "definition": "US Zip Codes.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "Organization.active",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

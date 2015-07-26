@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="location-hspc-serviceDeliveryLocationNameUse"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>ServiceDeliveryLocation name use value set</h2>
+      <p>The set of values that describe how usage of the service delivery location name.</p>
+      <p>This value set has an inline code system Intermountain Healthcare HDD, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>ABR
+            <a name="ABR"> </a>
+          </td>
+          <td>Abbreviation</td>
+          <td>A name or word display that has had a number of letters removed in order to fit into limited fields or spaces</td>
+        </tr>
+      </table>
+      <p>In addition, this value set includes codes from other code systems:</p>
+      <ul>
+        <li>Include these codes as defined in http://hl7.org/fhir/ValueSet/v3-EntityNameUse
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>Legal Name</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>ASGN</td>
+              <td>Assigned (alias)</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/location-hspc-serviceDeliveryLocationNameUse"/>
+  <version value="0.5.0"/>
+  <name value="ServiceDeliveryLocation name use value set"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <description value="The set of values that describe how usage of the service delivery location name."/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <system value="Intermountain Healthcare HDD"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ABR"/>
+      <display value="Abbreviation"/>
+      <definition value="A name or word display that has had a number of letters removed in order to fit into limited fields or spaces"/>
+    </concept>
+  </codeSystem>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/v3-EntityNameUse"/>
+      <concept>
+        <code value="L"/>
+        <display value="Legal Name"/>
+      </concept>
+      <concept>
+        <code value="ASGN"/>
+        <display value="Assigned (alias)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

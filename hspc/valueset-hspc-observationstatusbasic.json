@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hspc-observationstatusbasic",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Observation Status, basic</h2><p>A set of codes that describe the state of the observation.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"../valueset-observation-status.html\">http://hl7.org/fhir/observation-status</a><table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>final</td><td>Final</td><td>The observation is complete and verified by an authorized person</td></tr><tr><td>entered-in-error</td><td>Entered in Error</td><td>The observation has been withdrawn following previous Final release</td></tr><tr><td>unknown</td><td>Unknown Status</td><td>The observation status is unknown.  Note that &quot;unknown&quot; is a value of last resort and every attempt should be made to provide a meaningful value other than &quot;unknown&quot;</td></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.0"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/hspc-observationstatusbasic",
+  "version": "0.01",
+  "name": "HSPC Observation Status, basic",
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes that describe the state of the observation.",
+  "status": "draft",
+  "experimental": true,
+  "extensible": true,
+  "date": "2015-06-09",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/observation-status",
+        "concept": [
+          {
+            "code": "final"
+          },
+          {
+            "code": "entered-in-error"
+          },
+          {
+            "code": "unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

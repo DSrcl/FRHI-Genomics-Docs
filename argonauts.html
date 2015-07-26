@@ -1,0 +1,374 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Argonauts - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/argonauts.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="implementation.html">Implementation</a></li>
+        <li><a href="iglist.html">Implementation Guides</a></li>
+        <li><b>Argonaut Project</b></li>          <!-- argonauts.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<a name="DAF"> </a> 
+<h2><span class="sectioncount">2.15.1<a name="2.15.1"> </a></span> The Argonaut Project <a href="argonauts.html#2.15.1" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+<table class="cols"><tr><td id="wg"><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm" _target="blank">FHIR Infrastructure</a> Work Group</td><td id="fmm"><a href="resource.html#maturity">Maturity Level</a>: 1</td><td id="ballot"><a href="help.html#status">Ballot Status</a>: <a href="history.html#pubs">None</a></td></tr></table>
+<p>
+The Argonaut Project addresses the recommendations of the JASON Task Force, a joint task force of the HIT Standards and Policy Committees
+and is a joint project between HL7 and the following organizations:
+</p>
+<ul>
+ <li><a href="http://www.athenahealth.com/">athenahealth</a></li>
+ <li><a href="http://www.bidmc.org/">Beth Israel Deaconess Medical Center</a></li>
+ <li><a href="http://www.cerner.com/">Cerner</a></li>
+ <li><a href="http://www.epic.com/">Epic</a></li>
+ <li><a href="http://intermountainhealthcare.org">Intermountain Healthcare</a></li>
+ <li><a href="http://www.mayoclinic.org/">Mayo Clinic</a></li>
+ <li><a href="http://home.meditech.com">MEDITECH</a></li>
+ <li><a href="http://www.mckesson.com/">McKesson</a></li>
+ <li><a href="http://www.partners.org/">Partners HealthCare System</a></li>
+ <li><a href="http://smartplatforms.org/">SMART at the Boston Children's Hospital Informatics Program</a></li>
+ <li><a href="http://www.advisory.com">The Advisory Board Company</a></li>
+</ul>
+<p>
+The purpose of the Argonaut Project is to develop a first-generation API and Core Data Services specification 
+to enable expanded information sharing for electronic health records, documents, and other health information  
+based on the FHIR specification.
+</p>
+<h3><span class="sectioncount">2.15.1.1<a name="2.15.1.1"> </a></span> First Draft <a href="argonauts.html#2.15.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+<p>
+This is the first draft; the scope of this draft is to present a simple API that provides 
+patient access to Meaningful Use based data sets. This simple API is the basis for consultation
+and testing through the FHIR connectathon process with the intent of developing a solid basis
+for Meaningful Use based access to data in the forthcoming DSTU2 ballot of FHIR.
+</p>
+<p>
+For the purpose of the HL7 connectathon, server (patient portal) implementations
+should implement the <a href="patient-operations.html">Fetch Patient Record</a> operation, and return 
+the following Meaningful Use based Data:
+</p>
+<ol>
+ <li>Patient name / Sex / Date of birth / Race / Ethnicity / Preferred language</li>
+ <li>Smoking status</li>
+ <li>Problems</li>
+ <li>Medications</li>
+ <li>Medication allergies</li>
+ <li>Laboratory test(s)</li>
+ <li>Laboratory value(s)/result(s)</li>
+ <li>Vital signs – height, weight, blood pressure, BMI</li>
+ <li>Care plan field(s), including goals and instructions</li>
+ <li>Procedures</li>
+ <li>Care team member(s)</li>
+ <li>Documents relating to a patient</li>
+</ol>
+<p>
+The connectathon will be open for both client and server (e.g. patient portal 
+and patient data access tools). For further information about the connectathon,
+including event details, security arrangements, and test/development tools support,
+see <a href="http://wiki.hl7.org/index.php?title=FHIR_Connectathon_8">FHIR Connectathon 8</a>.
+</p>
+<p>
+The Meaningful Use profiles for the connectathon are mostly those defined for the <a href="daf.html">DAF Implementation Guide</a>.
+Specifically, this is the map between the MU data list above, and their corresponding FHIR resources and DAF profiles:
+</p>
+<table class="grid">
+ <tr>
+   <td>MU Data Item</td>
+   <td>FHIR Resource</td>
+   <td>DAF Profile</td>
+ </tr>
+ <tr>
+   <td>Patient Details</td>
+   <td><a href="patient.html">Patient</a><br/>+ <a href="encounter.html">Encounter</a> in support</td>
+   <td><a href="patient-daf.html">DAF Patient</a><br/><a href="encounter-daf.html">DAF Encounter</a></td>
+ </tr>
+ <tr>
+   <td>Smoking status</td>
+   <td><a href="observation.html">Observation</a></td>
+   <td><a href="observation-daf-smokingstatus.html">DAF Smoking Status</a></td>
+ </tr>
+ <tr>
+   <td>Problems</td>
+   <td><a href="condition.html">Condition</a></td>
+   <td><a href="condition-daf.html">DAF Condition (a.k.a. Problem)</a></td>
+ </tr>
+ <tr>
+   <td>Medications</td>
+   <td>A combination of<ul>
+     <li><a href="medicationprescription.html">MedicationPrescription</a></li>
+     <li><a href="medicationdispense.html">MedicationDispense</a></li>
+     <li><a href="medicationadministration.html">MedicationAdministration</a></li>
+     <li><a href="medicationstatement.html">MedicationStatement</a></li>
+     <li><a href="immunization.html">Immunization</a></li>
+    </ul> 
+   </td>
+   <td>DAF:<ul>
+     <li><i><a href="medicationprescription-daf.html">DAF Medication Prescription</a></i></li>
+     <li><i><a href="medicationdispense-daf.html">DAF Medication Dispense</a></i></li>
+     <li><a href="medicationadministration-daf.html">DAF Medication Administration</a></li>
+     <li><a href="medicationstatement-daf.html">DAF MedicationStatement</a></li>
+     <li><a href="immunization-daf.html">DAF Immunization</a> (note: it is expected that this be replaced by use of MedicationAdministration)</li>
+    </ul> 
+   </td>
+ </tr>
+ <tr>
+   <td>Medication allergies</td>
+   <td><a href="allergyintolerance.html">AllergyIntolerance</a></td>
+   <td><a href="allergyintolerance-daf.html">DAF AllergyIntolerance</a></td>
+ </tr>
+ <tr>
+   <td>Laboratory test(s)</td>
+   <td><a href="diagnosticorder.html">DiagnosticOrder</a></td>
+   <td><a href="diagnosticorder-daf.html">DAF DiagnosticOrder</a></td>
+ </tr>
+ <tr>
+   <td>Laboratory value(s)/result(s)</td>
+   <td><a href="diagnosticreport.html">DiagnosticReport</a> &amp; <a href="observation.html">Observation</a> </td>
+   <td><a href="diagnosticreport-daf.html">DAF Diagnostic Report</a> / <a href="observation-daf-results.html">DAF Results</a></td>
+ </tr>
+ <tr>
+   <td>Vital signs</td>
+   <td><a href="observation.html">Observation</a></td>
+   <td><a href="observation-daf-vitalsigns.html">DAF Vital Signs</a></td>
+ </tr>
+ <tr>
+   <td>Care Plan</td>
+   <td><a href="careplan.html">CarePlan</a></td>
+   <td>For Care plan, there is no DAF profile. Argonaut participants have <a href="careplan-argonaut.html">agreed to use just a narrative with no structured data</a></td>
+ </tr>
+ <tr>
+   <td>Procedures</td>
+   <td><a href="procedure.html">Procedure</a></td>
+   <td><a href="procedure-daf.html">DAF Procedure</a></td>
+ </tr>
+ <tr>
+   <td>Care team</td>
+   <td><a href="practitioner.html">Practitioner</a></td>
+   <td><a href="pract-daf.html">DAF Practitioner</a></td>
+ </tr>
+ <tr>
+   <td>Patient Documents</td>
+   <td><a href="documentreference.html">DocumentReference</a></td>
+   <td><i>Not done yet</i> (will be consistent with IHE use in the <a href="ftp://ftp.ihe.net/IT_Infrastructure/iheitiyr13-2015-2016/Technical_Cmte/Workitems/MHD2/IHE_ITI_Suppl_MHD_20141205.docx">MHD profile</a>)</td>
+ </tr>
+</table>
+
+<p>
+Note that the DAF profiles identify specific conformance requirements 
+around search parameters. For the purposes of the connectathon, 
+implementers are not required to implement search for the individual
+resource types - only the &quot;Fetch Patient Record&quot; operation is required. 
+As a result, the DAF rules about search do not apply. 
+</p>
+<p>
+However implementers should note that the DAF and JASON taskforce
+work in this space is closely related and the DAF rules should be 
+understood as candidates for the JASON taskforce deliberations in
+this space. For this reason, implementers are encouraged to implement
+these for the connectathon and/or to comment on them in depth.
+</p>
+<p>
+Where no particular profile is nominated (<i>not done yet</i>), implementers 
+are free to experiment and make recommendations for the next phase 
+of development, which is expected to refine this list and the details
+of the profiles based on implementation experience.
+</p>
+
+
+<h3><span class="sectioncount">2.15.1.2<a name="2.15.1.2"> </a></span> Lists, and &quot;No Known [X]&quot; <a href="argonauts.html#2.15.1.2" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>
+In the FHIR specification, a patient's problem list, etc. consists of 0 or more 
+instances of the <a href="condition.html">Condition</a> resource. These are
+found in the <a href="bundle.html">Bundle</a> that is returned from the 
+&quot;Fetch Patient Record&quot; operation.
+</p>
+<p>
+FHIR also includes a <a href="list.html">List</a> resource that represents
+a logical list of items, such as a problem list. As well as providing
+list status tracking information, the list carries an important data 
+element. If the list is empty, it can indicate a reason why. For consistency in the 
+returned data, all responses to the Fetch Patient Operation SHALL 
+return the following lists:
+</p>
+<ul>
+ <li>Problems - a list with the LOINC code &quot;11450-4&quot;</li>
+ <li>Medication Allergies - a list with the LOINC code &quot;48765-2&quot;</li>
+ <li>Medications - a list with the LOINC code &quot;10160-0&quot;</li>
+</ul>
+<p>
+If these lists are empty, they SHALL contain a reason why (which may 
+be &quot;not supported in this source&quot; or equivalent). If they are not 
+empty, all the relevant resources for the list SHALL be explicitly 
+referenced in the list items. 
+</p>
+<p>
+Clients that request a patient record should only treat problems, medication-type
+and allergy/intolerance resources that appear in the patient record as 
+part of the history if they are listed in the relevant list resources. Otherwise,
+they may have been provided as supporting data for other resources, but are 
+not included in the patient summary.
+</p>
+
+<h3><span class="sectioncount">2.15.1.3<a name="2.15.1.3"> </a></span> Conformance Rules <a href="argonauts.html#2.15.1.3" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+<p>
+The &quot;Fetch Patient Record&quot; SHALL always return a patient record that conforms 
+to the profile identified above, and SHALL include a list for Problems,
+Medications, and Medication Allergies. The allergies list may include 
+non-medication allergies.
+</p>
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fargonauts.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fargonauts.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+</body>
+</html>

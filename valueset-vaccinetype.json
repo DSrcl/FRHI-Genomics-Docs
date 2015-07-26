@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vaccinetype",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div>\n      <p>Around the world, various different coding systems are used for immunizations:</p>\n      <ul> \n        <li>USA: CVX (<a href=\"http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx\">http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx</a>)</li>\n        <li>Australia: ACIR (<a href=\"http://www.medicareaustralia.gov.au/provider/vendors/files/9560-1301-acir-idi-vaccine-codes.pdf\">urn:oid:1.2.36.1.2001.1005.17</a>)</li>\n      </ul>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.3.88.12.80.22"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.77"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/vaccinetype",
+  "version": "0.5.0",
+  "name": "Vaccine Administered Value Set",
+  "publisher": "HL7 FHIR",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This identifies the vaccine substance administered - CVX codes",
+  "status": "active",
+  "experimental": true,
+  "date": "2015-07-26T15:54:10-04:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx"
+      },
+      {
+        "system": "urn:oid:1.2.36.1.2001.1005.17"
+      }
+    ]
+  }
+}

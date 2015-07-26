@@ -1,0 +1,1046 @@
+﻿<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Implementationguide.questionnaire.xml - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/implementationguide.questionnaire.xml.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="implementationguide.html">ImplementationGuide</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- implementationguide.questionnaire.xml.html / resource-questionnaire:ImplementationGuide / Questionnaire-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Implementationguide.questionnaire.xml</h1>
+
+<p>
+<a href="implementationguide.questionnaire.xml">Raw XML</a> (<a href="implementationguide.questionnaire.canonical.xml">canonical form</a>)
+</p>
+
+
+<div class="example">
+<p>Generated Questionnaire for ImplementationGuide</p>
+<pre class="json">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;Questionnaire xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;id value=&quot;qs1&quot;/&gt;
+  &lt;identifier&gt;
+    &lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;status value=&quot;draft&quot;/&gt;
+  &lt;date value=&quot;2015-07-24T17:31:16-04:00&quot;/&gt;
+  &lt;publisher value=&quot;Health Level Seven International (FHIR Infrastructure)&quot;/&gt;
+  &lt;group&gt;
+    &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+      &lt;valueString value=&quot;A set of rules or how FHIR is used to solve a particular problem. This resource is used to gather all the parts of an implementation guide into a logical whole, and to publish a computable definition of all the parts.&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;linkId value=&quot;ImplementationGuide&quot;/&gt;
+    &lt;title value=&quot;A set of rules about how FHIR is used&quot;/&gt;
+    &lt;required value=&quot;true&quot;/&gt;
+    &lt;repeats value=&quot;false&quot;/&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.id&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.id.value&quot;/&gt;
+        &lt;text value=&quot;Logical id of this artifact&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.meta&quot;/&gt;
+      &lt;text value=&quot;Metadata about the resource&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;uri&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.implicitRules&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.implicitRules.value&quot;/&gt;
+        &lt;text value=&quot;A set of rules under which this content was created&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The base language in which the resource is written.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.language&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.language.value&quot;/&gt;
+        &lt;text value=&quot;language&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &amp;quot;clinically safe&amp;quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.text&quot;/&gt;
+      &lt;text value=&quot;Text summary of the resource, for human interpretation&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.contained&quot;/&gt;
+      &lt;text value=&quot;Contained, inline Resources&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.extension&quot;/&gt;
+      &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.modifierExtension&quot;/&gt;
+      &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;An absolute URL that is used to identify this implementation guide when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this implementation guide is (or will be) published.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;uri&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.url&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.url.value&quot;/&gt;
+        &lt;text value=&quot;Literal URL used to reference this Implementation Guide&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The identifier that is used to identify this version of the Implementation Guide when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Implementation Guide author manually.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.version&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.version.value&quot;/&gt;
+        &lt;text value=&quot;Logical id for this version of the Implementation Guide&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A free text natural language name identifying the Implementation Guide.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.name&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.name.value&quot;/&gt;
+        &lt;text value=&quot;Informal name for this Implementation Guide&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of implementation guides. The most common use of this element is to represent the country / jurisdication for which this implementation guide was defined.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;CodeableConcept&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.useContext&quot;/&gt;
+      &lt;text value=&quot;The implementation guide is intended to support these contexts&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.useContext.coding&quot;/&gt;
+        &lt;text value=&quot;code:&quot;/&gt;
+        &lt;type value=&quot;open-choice&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.useContext.text&quot;/&gt;
+        &lt;text value=&quot;text:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The name of the individual or organization that published the implementation guide.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.publisher&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.publisher.value&quot;/&gt;
+        &lt;text value=&quot;Name of the publisher (Organization or individual)&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Contacts to assist a user in finding and communicating with the publisher.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.contact&quot;/&gt;
+      &lt;title value=&quot;Contact details of the publisher&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.contact.id&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.contact.id.value&quot;/&gt;
+          &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.contact.extension&quot;/&gt;
+        &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.contact.modifierExtension&quot;/&gt;
+        &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;The name of an individual to contact regarding the implementation guide.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.contact.name&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.contact.name.value&quot;/&gt;
+          &lt;text value=&quot;Name of a individual to contact&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Contact details for individual (if a name was provided) or the publisher.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;ContactPoint&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.contact.telecom&quot;/&gt;
+        &lt;text value=&quot;Contact details for individual or publisher&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.contact.telecom.system&quot;/&gt;
+          &lt;text value=&quot;type:&quot;/&gt;
+          &lt;type value=&quot;choice&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.contact.telecom.value&quot;/&gt;
+          &lt;text value=&quot;value:&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.contact.telecom.use&quot;/&gt;
+          &lt;text value=&quot;use:&quot;/&gt;
+          &lt;type value=&quot;choice&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A free text natural language description of the Implementation Guide and its use.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.description&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.description.value&quot;/&gt;
+        &lt;text value=&quot;Natural language description of the Implementation Guide&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A copyright statement relating to the implementation guide and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the details of the constraints and mappings.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.copyright&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.copyright.value&quot;/&gt;
+        &lt;text value=&quot;Use and/or Publishing restrictions&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A set of terms from external terminologies that may be used to assist with indexing and searching of templates.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Coding&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.code&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.code.value&quot;/&gt;
+        &lt;text value=&quot;Assist with indexing and finding&quot;/&gt;
+        &lt;type value=&quot;open-choice&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The status of the Implementation Guide.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.status&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.status.value&quot;/&gt;
+        &lt;text value=&quot;status&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;This Implementation Guide was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;boolean&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.experimental&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.experimental.value&quot;/&gt;
+        &lt;text value=&quot;If for testing purposes, not real usage&quot;/&gt;
+        &lt;type value=&quot;boolean&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The date that this version of the Implementation Guide was published.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;datetime&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.date&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.date.value&quot;/&gt;
+        &lt;text value=&quot;Date for this version of the Implementation Guide&quot;/&gt;
+        &lt;type value=&quot;dateTime&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The version of the FHIR specification on which this ImplementationGuide is based - this is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 0.5.0 for this version.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.fhirVersion&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImplementationGuide.fhirVersion.value&quot;/&gt;
+        &lt;text value=&quot;FHIR Version this Implementation Guide targets&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;An html page that is published with the Implementation Guide.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.page&quot;/&gt;
+      &lt;title value=&quot;Page in the Implementation Guide&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.page.id&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.page.id.value&quot;/&gt;
+          &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.page.extension&quot;/&gt;
+        &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.page.modifierExtension&quot;/&gt;
+        &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;A URL that identifies the html page.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;uri&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.page.source&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.page.source.value&quot;/&gt;
+          &lt;text value=&quot;Source for the page&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;A code that specifies how the page is used in the IG.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;code&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.page.purpose&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.page.purpose.value&quot;/&gt;
+          &lt;text value=&quot;purpose&quot;/&gt;
+          &lt;type value=&quot;choice&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A logical set of resources that is a section in the implementation Guide.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.package&quot;/&gt;
+      &lt;title value=&quot;A section in the IG&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.package.id&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.package.id.value&quot;/&gt;
+          &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.package.extension&quot;/&gt;
+        &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.package.modifierExtension&quot;/&gt;
+        &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;A human readable name that introduces the item.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.package.name&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.package.name.value&quot;/&gt;
+          &lt;text value=&quot;Title of the item&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;An item in the set of resources that is a section in the implementation Guide.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.package.item&quot;/&gt;
+        &lt;title value=&quot;An item in the section / package&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;string&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImplementationGuide.package.item.id&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;ImplementationGuide.package.item.id.value&quot;/&gt;
+            &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+            &lt;type value=&quot;string&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImplementationGuide.package.item.extension&quot;/&gt;
+          &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImplementationGuide.package.item.modifierExtension&quot;/&gt;
+          &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;A human readable name that introduces the package.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;string&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImplementationGuide.package.item.name&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;ImplementationGuide.package.item.name.value&quot;/&gt;
+            &lt;text value=&quot;Title of the package&quot;/&gt;
+            &lt;type value=&quot;string&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;A reference to a conformance resource that is part of the implementation Guide.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;Reference&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImplementationGuide.package.item.content&quot;/&gt;
+          &lt;required value=&quot;true&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+              &lt;valueString value=&quot;/Resource?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;ImplementationGuide.package.item.content.value&quot;/&gt;
+            &lt;text value=&quot;StructureDefinition, ConformanceStatement, ValueSet, DataElement etc&quot;/&gt;
+            &lt;type value=&quot;reference&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;If the item is a structure definition, an example that conforms to the structure definition.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImplementationGuide.package.item.example&quot;/&gt;
+          &lt;title value=&quot;An example (If Item is StructureDefinition)&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+              &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;string&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;ImplementationGuide.package.item.example.id&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;true&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;ImplementationGuide.package.item.example.id.value&quot;/&gt;
+              &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+              &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;ImplementationGuide.package.item.example.extension&quot;/&gt;
+            &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+              &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;ImplementationGuide.package.item.example.modifierExtension&quot;/&gt;
+            &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+              &lt;valueString value=&quot;A human readable name that introduces the example.&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;string&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;ImplementationGuide.package.item.example.name&quot;/&gt;
+            &lt;required value=&quot;true&quot;/&gt;
+            &lt;repeats value=&quot;true&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;ImplementationGuide.package.item.example.name.value&quot;/&gt;
+              &lt;text value=&quot;Title of the example&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+              &lt;valueString value=&quot;A reference to a resource that is an example for a structure definition.&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Reference&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;ImplementationGuide.package.item.example.target&quot;/&gt;
+            &lt;required value=&quot;true&quot;/&gt;
+            &lt;repeats value=&quot;true&quot;/&gt;
+            &lt;question&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+                &lt;valueString value=&quot;/Resource?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;ImplementationGuide.package.item.example.target.value&quot;/&gt;
+              &lt;text value=&quot;Example for a StructureDefinition&quot;/&gt;
+              &lt;type value=&quot;reference&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+              &lt;valueString value=&quot;Additional text that explains why the example was provided (e.g. what to look for in it).&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;string&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;ImplementationGuide.package.item.example.description&quot;/&gt;
+            &lt;required value=&quot;true&quot;/&gt;
+            &lt;repeats value=&quot;true&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;ImplementationGuide.package.item.example.description.value&quot;/&gt;
+              &lt;text value=&quot;Explanatory Text&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+        &lt;/group&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;An html page that is published with the Implementation Guide, as part of the package.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.package.page&quot;/&gt;
+        &lt;title value=&quot;Page in the Implementation Guide&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A default profile that applies to a particular resource type. Whenever a resource type is referenced in any structure definition (explicitly, or by inheritance from the base specification), and no explicit profile is applied, then this default profile applies.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImplementationGuide.default&quot;/&gt;
+      &lt;title value=&quot;Applies when no explicit profile applied&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.default.id&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.default.id.value&quot;/&gt;
+          &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.default.extension&quot;/&gt;
+        &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.default.modifierExtension&quot;/&gt;
+        &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;The type of resource that this default applies to.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;code&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.default.type&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImplementationGuide.default.type.value&quot;/&gt;
+          &lt;text value=&quot;type&quot;/&gt;
+          &lt;type value=&quot;choice&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;The profile (StructureDefinition resource) that applies by default.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;Reference&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImplementationGuide.default.profile&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+            &lt;valueString value=&quot;/StructureDefinition?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImplementationGuide.default.profile.value&quot;/&gt;
+          &lt;text value=&quot;StructureDefinition that applies by default&quot;/&gt;
+          &lt;type value=&quot;reference&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+    &lt;/group&gt;
+  &lt;/group&gt;
+&lt;/Questionnaire&gt;
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fimplementationguide.questionnaire.xml.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fimplementationguide.questionnaire.xml.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

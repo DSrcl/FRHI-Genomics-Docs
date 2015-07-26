@@ -1,0 +1,893 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "qs1",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs2",
+      "name": "Type options for Supply.orderedItem",
+      "description": "Type options for Supply.orderedItem",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:2c6c41a0-9286-45de-a58c-86b366e8e00c",
+        "timestamp": "2015-07-24T17:34:21-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Medication",
+            "display": "Medication"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Substance",
+            "display": "Substance"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Device",
+            "display": "Device"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs3",
+      "name": "Type options for Supply.dispense.suppliedItem",
+      "description": "Type options for Supply.dispense.suppliedItem",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:b61da581-4b1a-4ec8-9eec-190f2100f552",
+        "timestamp": "2015-07-24T17:34:21-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Medication",
+            "display": "Medication"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Substance",
+            "display": "Substance"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Device",
+            "display": "Device"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "draft",
+  "date": "2015-07-24T17:31:16-04:00",
+  "publisher": "Health Level Seven International (Orders and Observations)",
+  "group": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+        "valueString": "A supply - a  request for something, and provision of what is supplied."
+      }
+    ],
+    "linkId": "Supply",
+    "title": "A supply -  request and provision",
+    "required": false,
+    "repeats": true,
+    "group": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "Supply.id",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Supply.id.value",
+            "text": "Logical id of this artifact",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."
+          }
+        ],
+        "linkId": "Supply.meta",
+        "text": "Metadata about the resource",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "uri"
+          }
+        ],
+        "linkId": "Supply.implicitRules",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Supply.implicitRules.value",
+            "text": "A set of rules under which this content was created",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The base language in which the resource is written."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "Supply.language",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Supply.language.value",
+            "text": "language",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."
+          }
+        ],
+        "linkId": "Supply.text",
+        "text": "Text summary of the resource, for human interpretation",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."
+          }
+        ],
+        "linkId": "Supply.contained",
+        "text": "Contained, inline Resources",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+          }
+        ],
+        "linkId": "Supply.extension",
+        "text": "Additional Content defined by implementations",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+          }
+        ],
+        "linkId": "Supply.modifierExtension",
+        "text": "Extensions that cannot be ignored",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Category of supply, e.g.  central, non-stock, etc. This is used to support work flows associated with the supply process."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "Supply.kind",
+        "text": "The kind of supply (central, non-stock, etc)",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Supply.kind.coding",
+            "text": "code:",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "Supply.kind.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Unique identifier for this supply request."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Identifier"
+          }
+        ],
+        "linkId": "Supply.identifier",
+        "text": "Unique identifier",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Supply.identifier.label",
+            "text": "label:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "Supply.identifier.system",
+            "text": "system:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "Supply.identifier.value",
+            "text": "value:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Status of the supply request."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "Supply.status",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Supply.status.value",
+            "text": "status",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The item that is requested to be supplied."
+          }
+        ],
+        "linkId": "Supply.orderedItem",
+        "text": "Medication, Substance, or Device requested to be supplied",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "Supply.orderedItem._type",
+            "text": "type",
+            "type": "choice",
+            "required": false,
+            "repeats": false,
+            "options": {
+              "reference": "#vs2"
+            },
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Supply.orderedItem._Medication",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Medication?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Supply.orderedItem._Medication.value",
+                    "text": "Medication",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Supply.orderedItem._Substance",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Substance?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Supply.orderedItem._Substance.value",
+                    "text": "Substance",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "Supply.orderedItem._Device",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Device?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "Supply.orderedItem._Device.value",
+                    "text": "Device",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A link to a resource representing the person whom the ordered item is for."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "Supply.patient",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Patient?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "Supply.patient.value",
+            "text": "Patient for whom the item is supplied",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Indicates the details of the dispense event such as the days supply and quantity of a supply dispensed."
+          }
+        ],
+        "linkId": "Supply.dispense",
+        "title": "Supply details",
+        "required": false,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "Supply.dispense.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Supply.dispense.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+              }
+            ],
+            "linkId": "Supply.dispense.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+              }
+            ],
+            "linkId": "Supply.dispense.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Identifier assigned by the dispensing facility when the item(s) is dispensed."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "Identifier"
+              }
+            ],
+            "linkId": "Supply.dispense.identifier",
+            "text": "External identifier",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Supply.dispense.identifier.label",
+                "text": "label:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "Supply.dispense.identifier.system",
+                "text": "system:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "Supply.dispense.identifier.value",
+                "text": "value:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "A code specifying the state of the dispense event."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "code"
+              }
+            ],
+            "linkId": "Supply.dispense.status",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Supply.dispense.status.value",
+                "text": "status",
+                "type": "choice",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Indicates the type of dispensing event that is performed. Examples include: Trial Fill, Completion of Trial, Partial Fill, Emergency Fill, Samples, etc."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "CodeableConcept"
+              }
+            ],
+            "linkId": "Supply.dispense.type",
+            "text": "Category of dispense event",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Supply.dispense.type.coding",
+                "text": "code:",
+                "type": "choice",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "Supply.dispense.type.text",
+                "text": "text:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The amount of supply that has been dispensed. Includes unit of measure."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "Quantity"
+              }
+            ],
+            "linkId": "Supply.dispense.quantity",
+            "text": "Amount dispensed",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Supply.dispense.quantity.comparator",
+                "text": "comp:",
+                "type": "choice",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "Supply.dispense.quantity.value",
+                "text": "value:",
+                "type": "decimal",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "Supply.dispense.quantity.units",
+                "text": "units:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "Supply.dispense.quantity.code",
+                "text": "coded units:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "Supply.dispense.quantity.system",
+                "text": "units system:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Identifies the medication or substance or device being dispensed. This is either a link to a resource representing the details of the item or a simple attribute carrying a code that identifies the item from a known list."
+              }
+            ],
+            "linkId": "Supply.dispense.suppliedItem",
+            "text": "Medication, Substance, or Device supplied",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Supply.dispense.suppliedItem._type",
+                "text": "type",
+                "type": "choice",
+                "required": false,
+                "repeats": false,
+                "options": {
+                  "reference": "#vs3"
+                },
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "Supply.dispense.suppliedItem._Medication",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Medication?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "Supply.dispense.suppliedItem._Medication.value",
+                        "text": "Medication",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "Supply.dispense.suppliedItem._Substance",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Substance?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "Supply.dispense.suppliedItem._Substance.value",
+                        "text": "Substance",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "Supply.dispense.suppliedItem._Device",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Device?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "Supply.dispense.suppliedItem._Device.value",
+                        "text": "Device",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The individual responsible for dispensing the medication, supplier or device."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "Reference"
+              }
+            ],
+            "linkId": "Supply.dispense.supplier",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                    "valueString": "/Practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                  }
+                ],
+                "linkId": "Supply.dispense.supplier.value",
+                "text": "Dispenser",
+                "type": "reference",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The time the dispense event occurred."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "Period"
+              }
+            ],
+            "linkId": "Supply.dispense.whenPrepared",
+            "text": "Dispensing time",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Supply.dispense.whenPrepared.low",
+                "text": "start:",
+                "type": "dateTime",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "Supply.dispense.whenPrepared.end",
+                "text": "end:",
+                "type": "dateTime",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The time the dispensed item was sent or handed to the patient (or agent)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "datetime"
+              }
+            ],
+            "linkId": "Supply.dispense.whenHandedOver",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "Supply.dispense.whenHandedOver.value",
+                "text": "Handover time",
+                "type": "dateTime",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Identification of the facility/location where the Supply was shipped to, as part of the dispense event."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "Reference"
+              }
+            ],
+            "linkId": "Supply.dispense.destination",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                    "valueString": "/Location?subject=$subj&patient=$subj&encounter=$encounter"
+                  }
+                ],
+                "linkId": "Supply.dispense.destination.value",
+                "text": "Where the Supply was sent",
+                "type": "reference",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Identifies the person who picked up the Supply."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "Reference"
+              }
+            ],
+            "linkId": "Supply.dispense.receiver",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                    "valueString": "/Practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                  }
+                ],
+                "linkId": "Supply.dispense.receiver.value",
+                "text": "Who collected the Supply",
+                "type": "reference",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

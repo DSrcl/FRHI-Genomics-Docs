@@ -1,0 +1,57 @@
+{
+  "resourceType": "DataElement",
+  "id": "dataelement-sdc-profile-example",
+  "text": {
+    "status": "generated",
+    "div": "<div>TODO</div>"
+  },
+  "identifier": {
+    "system": "http://nlm.nih.gov/some_other_text/data_element_identifier",
+    "value": "DE42AHRQ"
+  },
+  "name": "Patient Gender",
+  "status": "draft",
+  "date": "2015-02-04",
+  "publisher": "Health Level Seven, International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "mapping": [
+    {
+      "identity": "ccda",
+      "uri": "http://hl7.org/CCDA-not-a-real-url",
+      "name": "Consolidated CDA R2"
+    }
+  ],
+  "element": [
+    {
+      "path": "administrativeGender",
+      "definition": "The gender (i.e., the behavioral, cultural, or psychological traits typically associated with one sex) of a living subject as defined for administrative purposes.",
+      "type": [
+        {
+          "code": "CodeableConcept"
+        }
+      ],
+      "binding": {
+        "strength": "required",
+        "valueSetReference": {
+          "reference": "http://hl7.org/fhir/ValueSet/AdministrativeGender"
+        }
+      },
+      "mapping": [
+        {
+          "identity": "ccda",
+          "language": "xpath",
+          "map": "/ClinicalDocument/recordTarget/patientRole/patient/administrativeGender"
+        }
+      ]
+    }
+  ]
+}

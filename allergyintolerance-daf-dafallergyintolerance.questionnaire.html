@@ -1,0 +1,3834 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Allergyintolerance-daf-dafallergyintolerance.questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/allergyintolerance-daf-dafallergyintolerance.questionnaire.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <!-- allergyintolerance-daf-dafallergyintolerance.questionnaire.html / profile-questionnaire:allergyintolerance-daf-dafallergyintolerance / Questionnaire-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="allergyintolerance-daf-dafallergyintolerance.html">Content</a></li><li><a href="allergyintolerance-daf-dafallergyintolerance-definitions.html">Detailed Descriptions</a></li><li><a href="allergyintolerance-daf-dafallergyintolerance-mappings.html">Mappings</a></li><li class="active"><a href="#">HTML Form</a></li><li><a href="allergyintolerance-daf-dafallergyintolerance.profile.xml.html">XML</a></li><li><a href="allergyintolerance-daf-dafallergyintolerance.profile.json.html">JSON</a></li></ul>
+
+
+<h2>Allergyintolerance-daf-dafallergyintolerance.questionnaire - Example Form</h2>
+
+<p>
+This is an example form based on a questionnaire generated from the definition, to help visualise the content. See also the <a href="allergyintolerance-daf-dafallergyintolerance.questionnaire.xml.html">XML</a> or <a href="allergyintolerance-daf-dafallergyintolerance.questionnaire.json.html">JSON</a> questionnaire.
+</p>
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<script type="text/javascript"><!--
+var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validateAllergyIntolerance(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_id(divNode, "AllergyIntolerance.id")
+         && validateAllergyIntolerance_meta(divNode, "AllergyIntolerance.meta")
+         && validateAllergyIntolerance_implicitRules(divNode, "AllergyIntolerance.implicitRules")
+         && validateAllergyIntolerance_language(divNode, "AllergyIntolerance.language")
+         && validateAllergyIntolerance_text(divNode, "AllergyIntolerance.text")
+         && validateAllergyIntolerance_contained(divNode, "AllergyIntolerance.contained")
+         && validateAllergyIntolerance_extension(divNode, "AllergyIntolerance.extension")
+         && validateAllergyIntolerance_modifierExtension(divNode, "AllergyIntolerance.modifierExtension")
+         && validateAllergyIntolerance_identifier(divNode, "AllergyIntolerance.identifier")
+         && validateAllergyIntolerance_recordedDate(divNode, "AllergyIntolerance.recordedDate")
+         && validateAllergyIntolerance_recorder(divNode, "AllergyIntolerance.recorder")
+         && validateAllergyIntolerance_patient(divNode, "AllergyIntolerance.patient")
+         && validateAllergyIntolerance_reporter(divNode, "AllergyIntolerance.reporter")
+         && validateAllergyIntolerance_substance(divNode, "AllergyIntolerance.substance")
+         && validateAllergyIntolerance_status(divNode, "AllergyIntolerance.status")
+         && validateAllergyIntolerance_criticality(divNode, "AllergyIntolerance.criticality")
+         && validateAllergyIntolerance_type(divNode, "AllergyIntolerance.type")
+         && validateAllergyIntolerance_category(divNode, "AllergyIntolerance.category")
+         && validateAllergyIntolerance_lastOccurence(divNode, "AllergyIntolerance.lastOccurence")
+         && validateAllergyIntolerance_comment(divNode, "AllergyIntolerance.comment")
+         && validateAllergyIntolerance_event(divNode, "AllergyIntolerance.event");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_id(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_id_value(divNode, "AllergyIntolerance.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_id_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_meta(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_implicitRules(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_implicitRules_value(divNode, "AllergyIntolerance.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_language(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_language_value(divNode, "AllergyIntolerance.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_language_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_text(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_contained(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_extension(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_modifierExtension(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_identifier(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.identifier");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "AllergyIntolerance.identifier");
+    node.focus()
+    alert('Must have at least 1 occurrences of: External Ids for this item');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_identifier_label(divNode, "AllergyIntolerance.identifier.label")
+         && validateAllergyIntolerance_identifier_system(divNode, "AllergyIntolerance.identifier.system")
+         && validateAllergyIntolerance_identifier_value(divNode, "AllergyIntolerance.identifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_identifier_label(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.identifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_identifier_system(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.identifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_identifier_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.identifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_recordedDate(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.recordedDate");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_recordedDate_value(divNode, "AllergyIntolerance.recordedDate.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_recordedDate_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.recordedDate.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_recorder(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.recorder");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_recorder__type(divNode, "AllergyIntolerance.recorder._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_recorder__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "pract-daf-dafpract", "display": "pract-daf-dafpract"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "patient-daf-dafpatient", "display": "patient-daf-dafpatient"}];
+  var answerNodes = findAnswers(node, "AllergyIntolerance.recorder._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_recorder__pract-daf-dafpract_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.recorder._pract-daf-dafpract[1]AllergyIntolerance.recorder._pract-daf-dafpract.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_recorder__patient-daf-dafpatient_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.recorder._patient-daf-dafpatient[1]AllergyIntolerance.recorder._patient-daf-dafpatient.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_patient(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.patient");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "AllergyIntolerance.patient");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_patient_value(divNode, "AllergyIntolerance.patient.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_patient_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.patient.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_reporter(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.reporter");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_reporter__type(divNode, "AllergyIntolerance.reporter._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_reporter__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "pract-daf-dafpract", "display": "pract-daf-dafpract"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "patient-daf-dafpatient", "display": "patient-daf-dafpatient"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "relatedperson-daf-dafrelatedperson", "display": "relatedperson-daf-dafrelatedperson"}];
+  var answerNodes = findAnswers(node, "AllergyIntolerance.reporter._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_reporter__pract-daf-dafpract_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.reporter._pract-daf-dafpract[1]AllergyIntolerance.reporter._pract-daf-dafpract.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_reporter__patient-daf-dafpatient_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.reporter._patient-daf-dafpatient[1]AllergyIntolerance.reporter._patient-daf-dafpatient.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_reporter__relatedperson-daf-dafrelatedperson_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.reporter._relatedperson-daf-dafrelatedperson[1]AllergyIntolerance.reporter._relatedperson-daf-dafrelatedperson.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_substance(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.substance");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "AllergyIntolerance.substance");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Substance, (or class) considered to be responsible for risk');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_substance_coding(divNode, "AllergyIntolerance.substance.coding")
+         && validateAllergyIntolerance_substance_text(divNode, "AllergyIntolerance.substance.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_substance_coding(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.substance.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_substance_text(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.substance.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_status(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.status");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_status_value(divNode, "AllergyIntolerance.status.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_status_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.status.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_criticality(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.criticality");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_criticality_value(divNode, "AllergyIntolerance.criticality.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_criticality_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.criticality.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_type(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.type");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_type_value(divNode, "AllergyIntolerance.type.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_type_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.type.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_category(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.category");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_category_value(divNode, "AllergyIntolerance.category.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_category_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.category.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_lastOccurence(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.lastOccurence");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_lastOccurence_value(divNode, "AllergyIntolerance.lastOccurence.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_lastOccurence_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.lastOccurence.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_comment(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.comment");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_comment_value(divNode, "AllergyIntolerance.comment.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_comment_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.comment.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_id(divNode, "AllergyIntolerance.event.id")
+         && validateAllergyIntolerance_event_extension(divNode, "AllergyIntolerance.event.extension")
+         && validateAllergyIntolerance_event_modifierExtension(divNode, "AllergyIntolerance.event.modifierExtension")
+         && validateAllergyIntolerance_event_substance(divNode, "AllergyIntolerance.event.substance")
+         && validateAllergyIntolerance_event_certainty(divNode, "AllergyIntolerance.event.certainty")
+         && validateAllergyIntolerance_event_manifestation(divNode, "AllergyIntolerance.event.manifestation")
+         && validateAllergyIntolerance_event_description(divNode, "AllergyIntolerance.event.description")
+         && validateAllergyIntolerance_event_onset(divNode, "AllergyIntolerance.event.onset")
+         && validateAllergyIntolerance_event_duration(divNode, "AllergyIntolerance.event.duration")
+         && validateAllergyIntolerance_event_severity(divNode, "AllergyIntolerance.event.severity")
+         && validateAllergyIntolerance_event_exposureRoute(divNode, "AllergyIntolerance.event.exposureRoute")
+         && validateAllergyIntolerance_event_comment(divNode, "AllergyIntolerance.event.comment");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_id(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_id_value(divNode, "AllergyIntolerance.event.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_id_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_extension(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_modifierExtension(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_substance(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.substance");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_substance_coding(divNode, "AllergyIntolerance.event.substance.coding")
+         && validateAllergyIntolerance_event_substance_text(divNode, "AllergyIntolerance.event.substance.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_substance_coding(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.substance.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_substance_text(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.substance.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_certainty(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.certainty");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_certainty_value(divNode, "AllergyIntolerance.event.certainty.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_certainty_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.certainty.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_manifestation(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.manifestation");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "AllergyIntolerance.event.manifestation");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Clinical symptoms/signs associated with the Event');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_manifestation_coding(divNode, "AllergyIntolerance.event.manifestation.coding")
+         && validateAllergyIntolerance_event_manifestation_text(divNode, "AllergyIntolerance.event.manifestation.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_manifestation_coding(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.manifestation.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_manifestation_text(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.manifestation.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_description(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.description");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_description_value(divNode, "AllergyIntolerance.event.description.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_description_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.description.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_onset(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.onset");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_onset_value(divNode, "AllergyIntolerance.event.onset.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_onset_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.onset.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_duration(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.duration");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_duration_value(divNode, "AllergyIntolerance.event.duration.value")
+         && validateAllergyIntolerance_event_duration_units(divNode, "AllergyIntolerance.event.duration.units");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_duration_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.duration.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_duration_units(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.duration.units");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_severity(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.severity");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_severity_value(divNode, "AllergyIntolerance.event.severity.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_severity_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.severity.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_exposureRoute(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.exposureRoute");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_exposureRoute_coding(divNode, "AllergyIntolerance.event.exposureRoute.coding")
+         && validateAllergyIntolerance_event_exposureRoute_text(divNode, "AllergyIntolerance.event.exposureRoute.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_exposureRoute_coding(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.exposureRoute.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_exposureRoute_text(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.exposureRoute.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateAllergyIntolerance_event_comment(node) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.comment");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateAllergyIntolerance_event_comment_value(divNode, "AllergyIntolerance.event.comment.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateAllergyIntolerance_event_comment_value(node) {
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.comment.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function serializeAllergyIntolerance(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance",
+      "title":"Allergy or Intolerance (generally: Risk Of Adverse reaction to a substance)"
+    }
+    var childGroups = [];    serializeAllergyIntolerance_id(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_meta(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_implicitRules(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_language(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_text(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_contained(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_extension(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_modifierExtension(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_identifier(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_recordedDate(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_recorder(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_patient(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_reporter(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_substance(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_status(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_criticality(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_type(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_category(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_lastOccurence(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_comment(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_id(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.id"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_id_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.id.value",
+      "text":"Logical id of this artifact"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_meta(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.meta");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.meta",
+      "text":"Metadata about the resource"
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_implicitRules(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.implicitRules");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.implicitRules"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_implicitRules_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_implicitRules_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.implicitRules.value",
+      "text":"A set of rules under which this content was created"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.implicitRules.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_language(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.language");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.language"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_language_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_language_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.language.value",
+      "text":"language"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.language.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_text(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.text");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.text",
+      "text":"Text summary of the resource, for human interpretation"
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_contained(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.contained");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.contained",
+      "text":"Contained, inline Resources"
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_extension(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_identifier(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.identifier");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.identifier",
+      "text":"External Ids for this item"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_identifier_label(groupNodes[i], childQuestions);
+    serializeAllergyIntolerance_identifier_system(groupNodes[i], childQuestions);
+    serializeAllergyIntolerance_identifier_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_identifier_label(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.identifier.label",
+      "text":"label:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.identifier.label");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_identifier_system(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.identifier.system",
+      "text":"system:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.identifier.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_identifier_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.identifier.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.identifier.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_recordedDate(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.recordedDate");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.recordedDate"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_recordedDate_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_recordedDate_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.recordedDate.value",
+      "text":"When recorded"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.recordedDate.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_recorder(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.recorder");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.recorder",
+      "text":"Who recorded the sensitivity"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_recorder__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_recorder__type(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.recorder._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.recorder._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_recorder__pract-daf-dafpract_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.recorder._pract-daf-dafpract[1]AllergyIntolerance.recorder._pract-daf-dafpract.value",
+      "text":"pract-daf-dafpract"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.recorder._pract-daf-dafpract[1]AllergyIntolerance.recorder._pract-daf-dafpract.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_recorder__patient-daf-dafpatient_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.recorder._patient-daf-dafpatient[1]AllergyIntolerance.recorder._patient-daf-dafpatient.value",
+      "text":"patient-daf-dafpatient"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.recorder._patient-daf-dafpatient[1]AllergyIntolerance.recorder._patient-daf-dafpatient.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_patient(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.patient");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.patient"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_patient_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_patient_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.patient.value",
+      "text":"Who the sensitivity is for"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.patient.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_reporter(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.reporter");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.reporter",
+      "text":"Source of the information about the allergy"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_reporter__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_reporter__type(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.reporter._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.reporter._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_reporter__pract-daf-dafpract_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.reporter._pract-daf-dafpract[1]AllergyIntolerance.reporter._pract-daf-dafpract.value",
+      "text":"pract-daf-dafpract"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.reporter._pract-daf-dafpract[1]AllergyIntolerance.reporter._pract-daf-dafpract.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_reporter__patient-daf-dafpatient_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.reporter._patient-daf-dafpatient[1]AllergyIntolerance.reporter._patient-daf-dafpatient.value",
+      "text":"patient-daf-dafpatient"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.reporter._patient-daf-dafpatient[1]AllergyIntolerance.reporter._patient-daf-dafpatient.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_reporter__relatedperson-daf-dafrelatedperson_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.reporter._relatedperson-daf-dafrelatedperson[1]AllergyIntolerance.reporter._relatedperson-daf-dafrelatedperson.value",
+      "text":"relatedperson-daf-dafrelatedperson"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.reporter._relatedperson-daf-dafrelatedperson[1]AllergyIntolerance.reporter._relatedperson-daf-dafrelatedperson.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_substance(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.substance");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.substance",
+      "text":"Substance, (or class) considered to be responsible for risk"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_substance_coding(groupNodes[i], childQuestions);
+    serializeAllergyIntolerance_substance_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_substance_coding(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.substance.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.substance.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_substance_text(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.substance.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.substance.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_status(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.status");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.status"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_status_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_status_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.status.value",
+      "text":"status"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.status.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_criticality(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.criticality");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.criticality"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_criticality_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_criticality_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.criticality.value",
+      "text":"criticality"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.criticality.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_type(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.type");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.type"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_type_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_type_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.type.value",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.type.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_category(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.category");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.category"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_category_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_category_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.category.value",
+      "text":"category"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.category.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_lastOccurence(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.lastOccurence");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.lastOccurence"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_lastOccurence_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_lastOccurence_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.lastOccurence.value",
+      "text":"Date(/time) of last known occurence of a reaction"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.lastOccurence.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_comment(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.comment");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.comment"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_comment_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_comment_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.comment.value",
+      "text":"Additional text not captured in other fields"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.comment.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event",
+      "title":"Adverse Reaction Events linked to exposure to substance"
+    }
+    var childGroups = [];    serializeAllergyIntolerance_event_id(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_extension(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_modifierExtension(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_substance(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_certainty(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_manifestation(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_description(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_onset(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_duration(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_severity(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_exposureRoute(groupNodes[i], childGroups);
+    serializeAllergyIntolerance_event_comment(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_id(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.id"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_id_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_extension(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_substance(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.substance");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.substance",
+      "text":"Specific substance considered to be responsible for event"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_substance_coding(groupNodes[i], childQuestions);
+    serializeAllergyIntolerance_event_substance_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_substance_coding(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.substance.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.substance.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_substance_text(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.substance.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.substance.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_certainty(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.certainty");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.certainty"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_certainty_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_certainty_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.certainty.value",
+      "text":"certainty"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.certainty.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_manifestation(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.manifestation");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.manifestation",
+      "text":"Clinical symptoms/signs associated with the Event"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_manifestation_coding(groupNodes[i], childQuestions);
+    serializeAllergyIntolerance_event_manifestation_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_manifestation_coding(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.manifestation.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.manifestation.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_manifestation_text(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.manifestation.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.manifestation.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_description(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.description");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.description"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_description_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_description_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.description.value",
+      "text":"Description of the event as a whole"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.description.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_onset(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.onset");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.onset"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_onset_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_onset_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.onset.value",
+      "text":"Date(/time) when manifestations showed"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.onset.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_duration(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.duration");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.duration",
+      "text":"How long Manifestations persisted"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_duration_value(groupNodes[i], childQuestions);
+    serializeAllergyIntolerance_event_duration_units(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_duration_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.duration.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.duration.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_duration_units(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.duration.units",
+      "text":"units:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.duration.units");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_severity(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.severity");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.severity"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_severity_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_severity_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.severity.value",
+      "text":"severity"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.severity.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_exposureRoute(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.exposureRoute");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.exposureRoute",
+      "text":"How the subject was exposed to the substance"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_exposureRoute_coding(groupNodes[i], childQuestions);
+    serializeAllergyIntolerance_event_exposureRoute_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_exposureRoute_coding(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.exposureRoute.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.exposureRoute.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_exposureRoute_text(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.exposureRoute.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.exposureRoute.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_comment(node, groups) {
+  var groupNodes = findDiv(node, "AllergyIntolerance.event.comment");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"AllergyIntolerance.event.comment"
+    }
+    var childQuestions = [];    serializeAllergyIntolerance_event_comment_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeAllergyIntolerance_event_comment_value(node, answers) {
+  var question = {
+      "linkId":"AllergyIntolerance.event.comment.value",
+      "text":"Text about event not captured in other fields"
+    }
+  var answerNodes = findAnswers(node, "AllergyIntolerance.event.comment.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+function validateQuestionnaire() {
+  return validateAllergyIntolerance(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function serializeQuestionnaire() {
+  var rootGroup = serializeAllergyIntolerance(document.getElementById("div-cnt"));
+  if (rootGroup.length == 0)
+    delete answers.group
+  else
+    answers.group = rootGroup;
+  return answers;
+}
+
+--></script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/json2.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/statuspage.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jtip.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jcookie.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js"> </script>
+      <script type="text/javascript"><!--
+var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";
+--></script>
+      <script type="text/javascript"><!--
+var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+        && this.style.display != "none";
+  });
+}
+
+function setAddFocus(node, linkId) {
+  $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+  }).last().next(":input").focus();
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  serializeQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    serializeQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+}
+--></script>
+      <script type="text/javascript"><!--
+var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+}
+        --></script>
+      <script type="text/javascript"><!--
+var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+}
+        --></script>
+      <style type="">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript"><!--
+      //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      }
+      --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+<div id="div-cnt">
+         <h3>Allergy or Intolerance (generally: Risk Of Adverse reaction to a substance)</h3>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+              id="d2e104">
+            <span style="display:none">AllergyIntolerance</span>
+            <input type="image" onclick="deleteGroup(this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                   alt="Remove"
+                   style="width:10px;height:10px;"/>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e122.1">
+               <span style="display:none">AllergyIntolerance.id</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.id.value</span> Logical id of this artifact</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.id[1]AllergyIntolerance.id.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e122.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.id</span>
+            <span style="display:none">1</span>
+            <p>Metadata about the resource</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e160.1">
+               <span style="display:none">AllergyIntolerance.meta</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e160.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.meta</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e179.1">
+               <span style="display:none">AllergyIntolerance.implicitRules</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.implicitRules[1]AllergyIntolerance.implicitRules.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e179.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.implicitRules</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e217.1">
+               <span style="display:none">AllergyIntolerance.language</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e217.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e255.1">
+               <span style="display:none">AllergyIntolerance.text</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e255.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e275.1">
+               <span style="display:none">AllergyIntolerance.contained</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e275.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.contained</span>
+            <span style="display:none">1</span>
+            <p>Additional Content defined by implementations</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e294.1">
+               <span style="display:none">AllergyIntolerance.extension</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e294.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.extension</span>
+            <span style="display:none">1</span>
+            <p>Extensions that cannot be ignored</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e313.1">
+               <span style="display:none">AllergyIntolerance.modifierExtension</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e313.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.modifierExtension</span>
+            <span style="display:none">1</span>
+            <p>External Ids for this item</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e332.1">
+               <span style="display:none">AllergyIntolerance.identifier</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.identifier.label</span> label:</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.identifier[1]AllergyIntolerance.identifier.label[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.identifier.system</span> system:</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.identifier[1]AllergyIntolerance.identifier.system[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.identifier.value</span> value:</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.identifier[1]AllergyIntolerance.identifier.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e332.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.identifier</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e404.1">
+               <span style="display:none">AllergyIntolerance.recordedDate</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.recordedDate.value</span> When recorded</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.recordedDate[1]AllergyIntolerance.recordedDate.value[1]"
+                                  type="text"
+                                  onblur="checkDateTime(this)"
+                                  maxlength="26"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e404.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.recordedDate</span>
+            <span style="display:none">1</span>
+            <p>Who recorded the sensitivity</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e442.1">
+               <span style="display:none">AllergyIntolerance.recorder</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.recorder._type</span> type</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.recorder[1]" type="radio"
+                                  value="pract-daf-dafpract"/>
+                           <span> pract-daf-dafpract</span>
+                           <br/>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.recorder[1]" type="radio"
+                                  value="patient-daf-dafpatient"/>
+                           <span> patient-daf-dafpatient</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e442.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.recorder</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e533.1">
+               <span style="display:none">AllergyIntolerance.patient</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.patient.value</span> Who the sensitivity is for</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.patient[1]AllergyIntolerance.patient.value[1]"
+                                  tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e533.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.patient</span>
+            <span style="display:none">1</span>
+            <p>Source of the information about the allergy</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e576.1">
+               <span style="display:none">AllergyIntolerance.reporter</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.reporter._type</span> type</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.reporter[1]" type="radio"
+                                  value="pract-daf-dafpract"/>
+                           <span> pract-daf-dafpract</span>
+                           <br/>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.reporter[1]" type="radio"
+                                  value="patient-daf-dafpatient"/>
+                           <span> patient-daf-dafpatient</span>
+                           <br/>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.reporter[1]" type="radio"
+                                  value="relatedperson-daf-dafrelatedperson"/>
+                           <span> relatedperson-daf-dafrelatedperson</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e576.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.reporter</span>
+            <span style="display:none">1</span>
+            <p>Substance, (or class) considered to be responsible for risk</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e691.1">
+               <span style="display:none">AllergyIntolerance.substance</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.substance.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.substance.text</span> text:</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.substance[1]AllergyIntolerance.substance.text[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e691.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.substance</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e747.1">
+               <span style="display:none">AllergyIntolerance.status</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.status.value</span> status</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e747.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.status</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e785.1">
+               <span style="display:none">AllergyIntolerance.criticality</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.criticality.value</span> criticality</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e785.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.criticality</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e823.1">
+               <span style="display:none">AllergyIntolerance.type</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.type.value</span> type</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e823.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.type</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e862.1">
+               <span style="display:none">AllergyIntolerance.category</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.category.value</span> category</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e862.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.category</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e900.1">
+               <span style="display:none">AllergyIntolerance.lastOccurence</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.lastOccurence.value</span> Date(/time) of last known occurence of a reaction</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.lastOccurence[1]AllergyIntolerance.lastOccurence.value[1]"
+                                  type="text"
+                                  onblur="checkDateTime(this)"
+                                  maxlength="26"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e900.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.lastOccurence</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e938.1">
+               <span style="display:none">AllergyIntolerance.comment</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">AllergyIntolerance.comment.value</span> Additional text not captured in other fields</td>
+                        <td>
+                           <input name="Path:AllergyIntolerance[1]AllergyIntolerance.comment[1]AllergyIntolerance.comment.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e938.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.comment</span>
+            <span style="display:none">1</span>
+            <h4>Adverse Reaction Events linked to exposure to substance</h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e976.1">
+               <span style="display:none">AllergyIntolerance.event</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e994.1.1">
+                  <span style="display:none">AllergyIntolerance.event.id</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:AllergyIntolerance[1]AllergyIntolerance.event[1]AllergyIntolerance.event.id[1]AllergyIntolerance.event.id.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e994.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1032.1.1">
+                  <span style="display:none">AllergyIntolerance.event.extension</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1032.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1051.1.1">
+                  <span style="display:none">AllergyIntolerance.event.modifierExtension</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1051.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.modifierExtension</span>
+               <span style="display:none">1</span>
+               <p>Specific substance considered to be responsible for event</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1070.1.1">
+                  <span style="display:none">AllergyIntolerance.event.substance</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.substance.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.substance.text</span> text:</td>
+                           <td>
+                              <input name="Path:AllergyIntolerance[1]AllergyIntolerance.event[1]AllergyIntolerance.event.substance[1]AllergyIntolerance.event.substance.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1070.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.substance</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1126.1.1">
+                  <span style="display:none">AllergyIntolerance.event.certainty</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.certainty.value</span> certainty</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1126.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.certainty</span>
+               <span style="display:none">1</span>
+               <p>Clinical symptoms/signs associated with the Event</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1165.1.1">
+                  <span style="display:none">AllergyIntolerance.event.manifestation</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.manifestation.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.manifestation.text</span> text:</td>
+                           <td>
+                              <input name="Path:AllergyIntolerance[1]AllergyIntolerance.event[1]AllergyIntolerance.event.manifestation[1]AllergyIntolerance.event.manifestation.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1165.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.manifestation</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1221.1.1">
+                  <span style="display:none">AllergyIntolerance.event.description</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.description.value</span> Description of the event as a whole</td>
+                           <td>
+                              <input name="Path:AllergyIntolerance[1]AllergyIntolerance.event[1]AllergyIntolerance.event.description[1]AllergyIntolerance.event.description.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1221.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.description</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1259.1.1">
+                  <span style="display:none">AllergyIntolerance.event.onset</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.onset.value</span> Date(/time) when manifestations showed</td>
+                           <td>
+                              <input name="Path:AllergyIntolerance[1]AllergyIntolerance.event[1]AllergyIntolerance.event.onset[1]AllergyIntolerance.event.onset.value[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1259.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.onset</span>
+               <span style="display:none">1</span>
+               <p>How long Manifestations persisted</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1297.1.1">
+                  <span style="display:none">AllergyIntolerance.event.duration</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.duration.value</span> value:</td>
+                           <td>
+                              <input name="Path:AllergyIntolerance[1]AllergyIntolerance.event[1]AllergyIntolerance.event.duration[1]AllergyIntolerance.event.duration.value[1]"
+                                     type="text"
+                                     onblur="checkDecimal(this)"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.duration.units</span> units:</td>
+                           <td>
+                              <input name="Path:AllergyIntolerance[1]AllergyIntolerance.event[1]AllergyIntolerance.event.duration[1]AllergyIntolerance.event.duration.units[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1297.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.duration</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1353.1.1">
+                  <span style="display:none">AllergyIntolerance.event.severity</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.severity.value</span> severity</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1353.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.severity</span>
+               <span style="display:none">1</span>
+               <p>How the subject was exposed to the substance</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1391.1.1">
+                  <span style="display:none">AllergyIntolerance.event.exposureRoute</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.exposureRoute.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.exposureRoute.text</span> text:</td>
+                           <td>
+                              <input name="Path:AllergyIntolerance[1]AllergyIntolerance.event[1]AllergyIntolerance.event.exposureRoute[1]AllergyIntolerance.event.exposureRoute.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1391.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.exposureRoute</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1448.1.1">
+                  <span style="display:none">AllergyIntolerance.event.comment</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">AllergyIntolerance.event.comment.value</span> Text about event not captured in other fields</td>
+                           <td>
+                              <input name="Path:AllergyIntolerance[1]AllergyIntolerance.event[1]AllergyIntolerance.event.comment[1]AllergyIntolerance.event.comment.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1448.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">AllergyIntolerance.event.comment</span>
+               <span style="display:none">1</span>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e976.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">AllergyIntolerance.event</span>
+            <span style="display:none">1</span>
+         </div>
+         <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                onclick="addGroup('d2e104', this)"
+                src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                alt="Add section"/>
+         <span style="display:none">AllergyIntolerance</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+</body>
+</html>
+
+<p>
+<!-- spacer -->
+&nbsp;
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:36-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fallergyintolerance-daf-dafallergyintolerance.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fallergyintolerance-daf-dafallergyintolerance.questionnaire.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "guidancerequest-cqif-guidance-requirements",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>guidanceRequirements</h2><p>OPERATION: guidanceRequirements</p><div><p>The guidance requirements operation determines the data requirements for a given module or set of modules</p>\n</div><p>URL: [base]/$guidance-requirements</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>moduleIdentifier</td><td>0..*</td><td>Identifier</td><td/><td><div><p>The identifiers of the modules for which data requirements should be retrieved</p>\n</div></td></tr><tr><td>OUT</td><td>result</td><td>1..1</td><td>Basic</td><td/><td><div><p>The aggregated data requirements for the requested modules</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/guidancerequest-cqif-guidance-requirements",
+  "name": "guidanceRequirements",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The guidance requirements operation determines the data requirements for a given module or set of modules",
+  "status": "draft",
+  "date": "2015-07-26T15:54:10-04:00",
+  "kind": "operation",
+  "code": "guidance-requirements",
+  "system": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "moduleIdentifier",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "The identifiers of the modules for which data requirements should be retrieved",
+      "type": "Identifier"
+    },
+    {
+      "name": "result",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "The aggregated data requirements for the requested modules",
+      "type": "Basic",
+      "profile": {
+        "reference": "http://hl7.org/fhir/StructureDefinition/knowledgemodule-cqif-cqif-knowledgemodule"
+      }
+    }
+  ]
+}

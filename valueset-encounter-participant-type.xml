@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="encounter-participant-type"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>ParticipantType</h2>
+      <p>This value set defines a set of codes that can be used to indicate how an individual participates in an encounter</p>
+      <p>This value set has an inline code system http://hl7.org/fhir/participant-type, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>translator
+            <a name="translator"> </a>
+          </td>
+          <td>Translator</td>
+          <td>A translator who is facilitating communication with the patient during the encounter</td>
+        </tr>
+        <tr>
+          <td>emergency
+            <a name="emergency"> </a>
+          </td>
+          <td>Emergency</td>
+          <td>A person to be contacted in case of an emergency during the encounter</td>
+        </tr>
+      </table>
+      <p>In addition, this value set includes codes from other code systems:</p>
+      <ul>
+        <li>Include codes from 
+          <a href="v3/ParticipationType/index.html">http://hl7.org/fhir/v3/ParticipationType</a> where concept  is-a  
+          <a href="v3/ParticipationType/index.html#_ParticipationAncillary">_ParticipationAncillary</a>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.183"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/>
+  <version value="0.5.0"/>
+  <name value="ParticipantType"/>
+  <publisher value="FHIR Project team"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes that can be used to indicate how an individual participates in an encounter"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.183"/>
+    </extension>
+    <system value="http://hl7.org/fhir/participant-type"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="translator"/>
+      <display value="Translator"/>
+      <definition value="A translator who is facilitating communication with the patient during the encounter"/>
+    </concept>
+    <concept>
+      <code value="emergency"/>
+      <display value="Emergency"/>
+      <definition value="A person to be contacted in case of an emergency during the encounter"/>
+    </concept>
+  </codeSystem>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ParticipationType"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="_ParticipationAncillary"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

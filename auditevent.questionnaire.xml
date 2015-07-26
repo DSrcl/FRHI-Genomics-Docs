@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <name value="Type options for AuditEvent.participant.reference"/>
+      <description value="Type options for AuditEvent.participant.reference"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:7fb45a5b-9eb1-4a83-83e6-1f9325fcefeb"/>
+        <timestamp value="2015-07-24T17:33:35-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Device"/>
+          <display value="Device"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-07-24T17:31:16-04:00"/>
+  <publisher value="Health Level Seven International (Security)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A record of an event made for purposes of maintaining a security log. Typical uses include detection of intrusion attempts and monitoring for inappropriate usage."/>
+    </extension>
+    <linkId value="AuditEvent"/>
+    <title value="Event record kept for security purposes"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="AuditEvent.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="AuditEvent.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="AuditEvent.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="AuditEvent.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="AuditEvent.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="AuditEvent.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="AuditEvent.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      </extension>
+      <linkId value="AuditEvent.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      </extension>
+      <linkId value="AuditEvent.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      </extension>
+      <linkId value="AuditEvent.extension"/>
+      <text value="Additional Content defined by implementations"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      </extension>
+      <linkId value="AuditEvent.modifierExtension"/>
+      <text value="Extensions that cannot be ignored"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Identifies the name, action type, time, and disposition of the audited event."/>
+      </extension>
+      <linkId value="AuditEvent.event"/>
+      <title value="What was done"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.event.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.event.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="AuditEvent.event.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="AuditEvent.event.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifier for a family of the event."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="AuditEvent.event.type"/>
+        <text value="Type/identifier of event"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.event.type.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="AuditEvent.event.type.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifier for the category of event."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="AuditEvent.event.subtype"/>
+        <text value="More specific type/id for the event"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.event.subtype.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="AuditEvent.event.subtype.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicator for type of action performed during the event that generated the audit."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="AuditEvent.event.action"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.event.action.value"/>
+          <text value="action"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The time when the event occurred on the source."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="instant"/>
+        </extension>
+        <linkId value="AuditEvent.event.dateTime"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.event.dateTime.value"/>
+          <text value="Time when the event occurred on source"/>
+          <type value="instant"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicates whether the event succeeded or failed."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="AuditEvent.event.outcome"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.event.outcome.value"/>
+          <text value="outcome"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A free text description of the outcome of the event."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.event.outcomeDesc"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.event.outcomeDesc.value"/>
+          <text value="Description of the event outcome"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The purposeOfUse (reason) that was used during the event being recorded."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="AuditEvent.event.purposeOfEvent"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.event.purposeOfEvent.value"/>
+          <text value="The purposeOfUse of the event"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A person, a hardware device or software process."/>
+      </extension>
+      <linkId value="AuditEvent.participant"/>
+      <title value="A person, a hardware device or software process"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.participant.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="AuditEvent.participant.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="AuditEvent.participant.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Specification of the role(s) the user plays when performing the event. Usually the codes used in this element are local codes defined by the role-based access control security system used in the local context."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="AuditEvent.participant.role"/>
+        <text value="User roles (e.g. local RBAC codes)"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.role.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="AuditEvent.participant.role.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Direct reference to a resource that identifies the participant."/>
+        </extension>
+        <linkId value="AuditEvent.participant.reference"/>
+        <text value="Direct reference to resource"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.reference._type"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <options>
+            <reference value="#vs2"/>
+          </options>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Reference"/>
+            </extension>
+            <linkId value="AuditEvent.participant.reference._Practitioner"/>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+              </extension>
+              <linkId value="AuditEvent.participant.reference._Practitioner.value"/>
+              <text value="Practitioner"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Reference"/>
+            </extension>
+            <linkId value="AuditEvent.participant.reference._Organization"/>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+              </extension>
+              <linkId value="AuditEvent.participant.reference._Organization.value"/>
+              <text value="Organization"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Reference"/>
+            </extension>
+            <linkId value="AuditEvent.participant.reference._Device"/>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Device?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+              </extension>
+              <linkId value="AuditEvent.participant.reference._Device.value"/>
+              <text value="Device"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Reference"/>
+            </extension>
+            <linkId value="AuditEvent.participant.reference._Patient"/>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+              </extension>
+              <linkId value="AuditEvent.participant.reference._Patient.value"/>
+              <text value="Patient"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Reference"/>
+            </extension>
+            <linkId value="AuditEvent.participant.reference._RelatedPerson"/>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+              </extension>
+              <linkId value="AuditEvent.participant.reference._RelatedPerson.value"/>
+              <text value="RelatedPerson"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Unique identifier for the user actively participating in the event."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.participant.userId"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.userId.value"/>
+          <text value="Unique identifier for the user"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Alternative Participant Identifier. For a human, this should be a user identifier text string from authentication system. This identifier would be one known to a common authentication system (e.g., single sign-on), if available."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.participant.altId"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.altId.value"/>
+          <text value="Alternative User id e.g. authentication"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Human-meaningful name for the user."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.participant.name"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.name.value"/>
+          <text value="Human-meaningful name for the user"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicator that the user is or is not the requestor, or initiator, for the event being audited."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="boolean"/>
+        </extension>
+        <linkId value="AuditEvent.participant.requestor"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.requestor.value"/>
+          <text value="Whether user is initiator"/>
+          <type value="boolean"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Where the event occurred."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="AuditEvent.participant.location"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Location?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="AuditEvent.participant.location.value"/>
+          <text value="Where"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The policy or plan that authorized the activity being recorded. Typically, a single activity may have multiple applicable policies, such as patient consent, guarantor funding, etc. The policy would also indicate the security token used."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="AuditEvent.participant.policy"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.policy.value"/>
+          <text value="Policy that authorized event"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Type of media involved. Used when the event is about exporting/importing onto media."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="AuditEvent.participant.media"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.media.value"/>
+          <text value="Type of media"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Logical network location for application activity, if the activity has a network location."/>
+        </extension>
+        <linkId value="AuditEvent.participant.network"/>
+        <title value="Logical network location for application activity"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="AuditEvent.participant.network.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="AuditEvent.participant.network.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="AuditEvent.participant.network.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="AuditEvent.participant.network.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="An identifier for the network access point of the user device for the audit event."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="AuditEvent.participant.network.identifier"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="AuditEvent.participant.network.identifier.value"/>
+            <text value="Identifier for the network access point of the user device"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="An identifier for the type of network access point that originated the audit event."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="AuditEvent.participant.network.type"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="AuditEvent.participant.network.type.value"/>
+            <text value="type"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The purposeOfUse (reason) specific to this participant that was used during the event being recorded."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="AuditEvent.participant.purposeOfUse"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.participant.purposeOfUse.value"/>
+          <text value="Participant purposeOfUse"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Application systems and processes."/>
+      </extension>
+      <linkId value="AuditEvent.source"/>
+      <title value="Application systems and processes"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.source.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.source.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="AuditEvent.source.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="AuditEvent.source.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Logical source location within the healthcare enterprise network."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.source.site"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.source.site.value"/>
+          <text value="Logical source location within the enterprise"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifier of the source where the event originated."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.source.identifier"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.source.identifier.value"/>
+          <text value="The id of source where event originated"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Code specifying the type of source where event originated."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="AuditEvent.source.type"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.source.type.value"/>
+          <text value="The type of source where event originated"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Specific instances of data or objects that have been accessed."/>
+      </extension>
+      <linkId value="AuditEvent.object"/>
+      <title value="Specific instances of data or objects that have been accessed"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.object.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.object.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="AuditEvent.object.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="AuditEvent.object.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies a specific instance of the participant object. The reference should always be version specific."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Identifier"/>
+        </extension>
+        <linkId value="AuditEvent.object.identifier"/>
+        <text value="Specific instance of object (e.g. versioned)"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.object.identifier.label"/>
+          <text value="label:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="AuditEvent.object.identifier.system"/>
+          <text value="system:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="AuditEvent.object.identifier.value"/>
+          <text value="value:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies a specific instance of the participant object. The reference should always be version specific."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="AuditEvent.object.reference"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Resource?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="AuditEvent.object.reference.value"/>
+          <text value="Specific instance of resource (e.g. versioned)"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The type of the object that was involved in this audit event."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="AuditEvent.object.type"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.object.type.value"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Code representing the functional application role of Participant Object being audited."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="AuditEvent.object.role"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.object.role.value"/>
+          <text value="role"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifier for the data life-cycle stage for the participant object."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="AuditEvent.object.lifecycle"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.object.lifecycle.value"/>
+          <text value="lifecycle"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Denotes policy-defined sensitivity for the Participant Object ID such as VIP, HIV status, mental health status or similar topics."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="AuditEvent.object.sensitivity"/>
+        <text value="Policy-defined sensitivity for the object"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.object.sensitivity.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="AuditEvent.object.sensitivity.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="An instance-specific descriptor of the Participant Object ID audited, such as a person&#39;s name."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.object.name"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.object.name.value"/>
+          <text value="Instance-specific descriptor for Object"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Text that describes the object in more detail."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="AuditEvent.object.description"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="AuditEvent.object.description.value"/>
+          <text value="Descriptive text"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The actual query for a query-type participant object."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="binary"/>
+        </extension>
+        <linkId value="AuditEvent.object.query"/>
+        <text value="Actual query for object"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Additional Information about the Object."/>
+        </extension>
+        <linkId value="AuditEvent.object.detail"/>
+        <title value="Additional Information about the Object"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="AuditEvent.object.detail.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="AuditEvent.object.detail.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="AuditEvent.object.detail.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="AuditEvent.object.detail.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Name of the property."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="AuditEvent.object.detail.type"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="AuditEvent.object.detail.type.value"/>
+            <text value="Name of the property"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Property value."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="binary"/>
+          </extension>
+          <linkId value="AuditEvent.object.detail.value"/>
+          <text value="Property value"/>
+          <required value="true"/>
+          <repeats value="true"/>
+        </group>
+      </group>
+    </group>
+  </group>
+</Questionnaire>

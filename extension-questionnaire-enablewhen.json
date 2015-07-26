@@ -1,0 +1,495 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "questionnaire-enableWhen",
+  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen",
+  "name": "Only allow data when:",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "If present, indicates that the group or question containing the extension should only be enabled (allow an answer to be present and, in most circumstances, even be visible to the user) when the specified condition is true.",
+  "status": "draft",
+  "date": "2013-07-04",
+  "kind": "datatype",
+  "constrainedType": "Extension",
+  "abstract": false,
+  "contextType": "resource",
+  "context": [
+    "Questionnaire.group",
+    "Questionnaire.group.group",
+    "Questionnaire.group.question"
+  ],
+  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "snapshot": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Only allow data when:",
+        "definition": "If present, indicates that the group or question containing the extension should only be enabled (allow an answer to be present and, in most circumstances, even be visible to the user) when the specified condition is true.",
+        "comments": "Allows questionnaires to adapt based on answers to prior questions.  E.g. If physical gender is specified as a male, no need to capture pregnancy history.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": true,
+          "rules": "openAtEnd"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "question",
+        "short": "Question that must be answered",
+        "definition": "The linkId for the question whose answer must be present in order for the \"enable\" to be triggered.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "question",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.valueString",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "answer",
+        "short": "Value question must have",
+        "definition": "If present, then the specified question must match the specified answer for all components present in the enableWhen.answer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "answer",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "*"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "*"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Only allow data when:",
+        "definition": "If present, indicates that the group or question containing the extension should only be enabled (allow an answer to be present and, in most circumstances, even be visible to the user) when the specified condition is true.",
+        "comments": "Allows questionnaires to adapt based on answers to prior questions.  E.g. If physical gender is specified as a male, no need to capture pregnancy history.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "question",
+        "short": "Question that must be answered",
+        "definition": "The linkId for the question whose answer must be present in order for the \"enable\" to be triggered.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "question"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "answer",
+        "short": "Value question must have",
+        "definition": "If present, then the specified question must match the specified answer for all components present in the enableWhen.answer.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "answer"
+      },
+      {
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "*"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen"
+      },
+      {
+        "path": "Extension.value[x]",
+        "min": 0,
+        "max": "0"
+      }
+    ]
+  }
+}

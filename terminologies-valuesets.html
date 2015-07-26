@@ -1,0 +1,554 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Terminologies-valuesets - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/terminologies-valuesets.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="terminologies.html">Using Codes</a></li>
+        <li><b>Value Sets</b></li>          <!-- terminologies-valuesets.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="terminologies.html">Using Codes</a></li><li><a href="terminologies-systems.html">Code Systems</a></li><li class="active"><a href="#">Value Sets</a></li><li><a href="terminologies-v2.html">v2 Tables</a></li><li><a href="terminologies-v3.html">v3 Namespaces</a></li><li><a href="terminologies-conceptmaps.html">Concept Maps</a></li><li><a href="identifier-registry.html">Identifier Systems</a></li></ul>
+
+
+<h2><span class="sectioncount">1.25.2.0<a name="1.25.2.0"> </a></span> Value Sets Defined in FHIR <a href="terminologies-valuesets.html#1.25.2.0" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+<table class="cols"><tr><td id="wg"><a href="http://www.hl7.org/special/committees/xml/index.cfm" _target="blank">Implementable Technology Specifications</a> Work Group</td><td id="fmm"><a href="resource.html#maturity">Maturity Level</a>: 4</td><td id="ballot"><a href="help.html#status">Ballot Status</a>: <a href="history.html#pubs">DSTU 2</a></td></tr></table>
+
+<p>
+This table contains a list of all the value sets defined as part of the FHIR specification. Some of these 
+value sets include codes defined elsewhere, some contain their own inline code system definitions, and some do both. 
+Any implicit code systems are case sensitive, though FHIR will never define codes that only differ by case.
+</p>
+
+<p>
+Several of the implementation guides published as part of FHIR define value sets:
+</p>
+<ul>
+ <li><a href="sdc/terminologies-valuesets.html">Structured Data Capture - Forms</a></li>
+ <li><a href="sdc-de/terminologies-valuesets.html">Structured Data Capture - Data Element Management</a></li>
+ <li><a href="uslab/terminologies-valuesets.html">US Lab Profile</a></li>
+ <li><a href="daf/terminologies-valuesets.html">Data Access Framework</a></li>
+ <li><a href="cqf/terminologies-valuesets.html">Quality Improvement Core</a></li>
+ <li><a href="cqif/terminologies-valuesets.html">Clinical Quality Improvement Framework</a></li>
+ <li><a href="hspc/terminologies-valuesets.html">Healthcare Services Platform Consortium</a></li>
+ <li><a href="nehta/terminologies-valuesets.html">NEHTA Tooling/Method Evaluation</a></li>
+
+</ul>
+
+
+<table class="codes">
+ <tr><td><b>Name</b></td><td><b>Definition</b></td><td><b>Source</b></td><td><b>Id</b></td><td><b>Usage</b></td></tr>
+ <tr><td colspan="5" style="background: #DFDFDF"><b>Namespace: </b>http://hl7.org/fhir/ValueSet</td></tr>
+ <tr><td><a href="valueset-account-status.html">account-status</a></td><td>Indicates whether the account is available to be used</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-actionlist.html">actionlist</a></td><td>List of allowable action which this resource can request</td><td>Internal</td><td>1676</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-additionalmaterials.html">additionalmaterials</a></td><td>This value set includes sample additional material type codes.</td><td>Internal</td><td>447</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-address-type.html">address-type</a></td><td>The type of an address (physical / postal)</td><td>Internal</td><td>2168</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-address-use.html">address-use</a></td><td>The use of an address</td><td>Internal</td><td>16</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-adjudication.html">adjudication</a></td><td>This value set includes a smattering of Adjudication codes</td><td>Internal</td><td>468</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-adjudication-error.html">adjudication-error</a></td><td>This value set includes a smattering of adjudication codes</td><td>Internal</td><td>471</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-adjustment-reason.html">adjustment-reason</a></td><td>This value set includes smattering of a Adjustment Reason codes</td><td>Internal</td><td>469</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-administration-method-codes.html">administration-method-codes</a></td><td>Value Set Contents (Expansion) for SNOMED CT Introduction (procedure) for Administration Method Codes at Fri, Jul 24, 2015 17:32-0400</td><td/><td>94</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-administrative-gender.html">administrative-gender</a></td><td>The gender of a person used for administrative purposes</td><td>Internal</td><td>24</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-age-units.html">age-units</a></td><td>A valueSet of UCUM codes for representing age value units</td><td>FHIR</td><td>2151</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-allergy-intolerance-category.html">allergy-intolerance-category</a></td><td>Category of an identified Substance</td><td>Internal</td><td>481</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-allergy-intolerance-criticality.html">allergy-intolerance-criticality</a></td><td>Estimate of the potential clinical harm, or seriousness, of a reaction to an identified Substance</td><td>Internal</td><td>479</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-allergy-intolerance-status.html">allergy-intolerance-status</a></td><td>Assertion about certainty associated with a propensity, or potential risk, of a reaction to the identified Substance</td><td>Internal</td><td>478</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-allergy-intolerance-type.html">allergy-intolerance-type</a></td><td>Identification of the underlying physiological mechanism for a Reaction Risk</td><td>Internal</td><td>480</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-animal-breeds.html">animal-breeds</a></td><td>This example value set defines a set of codes that can be used to indicate breeds of species.</td><td>Internal</td><td>134</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-animal-genderstatus.html">animal-genderstatus</a></td><td> This example value set defines a set of codes that can be used to indicate the current state of the      animal's reproductive organs.</td><td>Internal</td><td>131</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-animal-species.html">animal-species</a></td><td>This example value set defines a set of codes that can be used to indicate species of animal patients.</td><td>Internal</td><td>133</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-answer-format.html">answer-format</a></td><td>The expected format of an answer</td><td>Internal</td><td>254</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-anzsco-occupations.html">anzsco-occupations</a></td><td>Developed for use in the collection, analysis and dissemination of occupation statistics in Australia and New Zealand</td><td>External</td><td>156</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-appointmentstatus.html">appointmentstatus</a></td><td>The free/busy status of an appointment</td><td>Internal</td><td>360</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-approach-site-codes.html">approach-site-codes</a></td><td>This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar</td><td>SNOMED CT</td><td>95</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-assert-direction-codes.html">assert-direction-codes</a></td><td>The type of direction to use for assertion.
+
+The direction to use for assertions.</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-assert-operator-codes.html">assert-operator-codes</a></td><td>The type of operator to use for assertion.
+
+The type of operator to use for assertions.</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-assert-response-code-types.html">assert-response-code-types</a></td><td>The type of response code to use for assertion.
+
+The response code to expect in the response.</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-audit-event-action.html">audit-event-action</a></td><td>Indicator for type of action performed during the event that generated the audit.</td><td>Internal</td><td>1476</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-audit-event-outcome.html">audit-event-outcome</a></td><td>Indicates whether the event succeeded or failed</td><td>Internal</td><td>1477</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-audit-event-sensitivity.html">audit-event-sensitivity</a></td><td>Value Set Contents (Expansion) for Audit Event Object Sensitivity at Fri, Jul 24, 2015 17:32-0400</td><td/><td>1485</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-audit-event-sub-type.html">audit-event-sub-type</a></td><td>More detailed code concerning the type of the audit event - defined by DICOM with some FHIR specific additions</td><td>DICOM, FHIR</td><td>1483</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-audit-event-type.html">audit-event-type</a></td><td>Event Types for Audit Events - defined by DICOM with some FHIR specific additions</td><td>Internal, DICOM</td><td>1482</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-audit-source-type.html">audit-source-type</a></td><td>The type of process where the audit event originated from</td><td>Internal</td><td>1484</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-basic-resource-type.html">basic-resource-type</a></td><td>This value set defines codes for resources not yet supported by (or which will never be supported by) FHIR.  Many of the codes listed here will eventually be turned into official resources.  However, there is no guarantee that any particular resource will be created nor that the scope will be exactly as defined by the codes presented here.  Codes in this set will be deprecated if/when formal resources are defined that encompass these concepts.</td><td>Internal</td><td>439</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-binding-strength.html">binding-strength</a></td><td>Indication of the degree of conformance expectations associated with a binding</td><td>Internal</td><td>1552</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-body-site.html">body-site</a></td><td>This value set includes all the &quot;Anatomical Structure&quot; SNOMED CT codes (i.e. codes with an is-a relationship with 91723000: Anatomical structure)</td><td>SNOMED CT</td><td>62</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-bodysite-relative-location.html">bodysite-relative-location</a></td><td>SNOMED-CT concepts modifying the anatomic location</td><td>SNOMED CT</td><td>1917</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-bundle-type.html">bundle-type</a></td><td>Indicates the purpose of a bundle- how it was intended to be used</td><td>Internal</td><td>493</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-c80-doc-classcodes.html">c80-doc-classcodes</a></td><td>This is the code specifying the high-level kind of document (e.g., Prescription, Discharge Summary, Report, etc.). The Document Class value set is reproduced from HITSP C80 Table 2-144 Document Class Value Set Definition. Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.</td><td>LOINC</td><td>46</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-c80-doc-typecodes.html">c80-doc-typecodes</a></td><td>This is the code specifying the precise type of document (e.g., Pulmonary History and  Physical, Discharge Summary, Ultrasound Report, etc.). The Document Type value set includes all LOINC  values listed in HITSP C80 Table 2-144 Document Class Value Set Definition above used for Document Class,  and all LOINC values whose SCALE is DOC in the LOINC database.</td><td>LOINC</td><td>47</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-c80-facilitycodes.html">c80-facilitycodes</a></td><td>This is the code representing the type of organizational setting where the clinical encounter, service, interaction, or treatment occurred. The value set used for Healthcare Facility Type has been defined by HITSP to be the value set reproduced from HITSP C80 Table 2-147.</td><td>SNOMED CT</td><td>67</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-c80-practice-codes.html">c80-practice-codes</a></td><td>This is the code representing the clinical specialty of the clinician or provider who     interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty     has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.</td><td>SNOMED CT</td><td>72</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-care-plan-activity-category.html">care-plan-activity-category</a></td><td>High-level categorization of the type of activity in a care plan.</td><td>Internal</td><td>39</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-care-plan-activity-status.html">care-plan-activity-status</a></td><td>Indicates where the activity is at in its overall life cycle</td><td>Internal</td><td>41</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-care-plan-goal-status.html">care-plan-goal-status</a></td><td>Indicates whether the goal has been met and is still being targeted</td><td>Internal</td><td>38</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-care-plan-status.html">care-plan-status</a></td><td>Indicates whether the plan is currently being acted upon, represents future intentions or is now just historical record.</td><td>Internal</td><td>36</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-claim-exception.html">claim-exception</a></td><td>This value set includes sample Exception codes.</td><td>Internal</td><td>448</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-claim-modifiers.html">claim-modifiers</a></td><td>This value set includes sample Modifier type codes.</td><td>Internal</td><td>453</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-claim-type-link.html">claim-type-link</a></td><td>The type or discipline-style of the claim</td><td>Internal</td><td>1730</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-claim-use-link.html">claim-use-link</a></td><td>Complete, proposed, exploratory, other</td><td>Internal</td><td>460</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-classification-or-context.html">classification-or-context</a></td><td>Identifies whether a useContext represents a context or classification for the element</td><td>Internal</td><td>2143</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-clinical-findings.html">clinical-findings</a></td><td>This value set includes all the &quot;Clinical finding&quot; SNOMED CT codes (i.e. codes with an is-a relationship with 404684003: Clinical finding)</td><td>SNOMED CT</td><td>316</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-clinical-impression-status.html">clinical-impression-status</a></td><td>The workflow state of a clinical impression</td><td>Internal</td><td>2023</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-communication-request-status.html">communication-request-status</a></td><td>The status of the communication</td><td>Internal</td><td>495</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-communication-status.html">communication-status</a></td><td>The status of the communication</td><td>Internal</td><td>539</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-composition-attestation-mode.html">composition-attestation-mode</a></td><td>The way in which a person authenticated a composition</td><td>Internal</td><td>331</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-composition-status.html">composition-status</a></td><td>The workflow/clinical status of the composition</td><td>Internal</td><td>334</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-concept-map-equivalence.html">concept-map-equivalence</a></td><td>The degree of equivalence between concepts</td><td>Internal</td><td>306</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-condition-category.html">condition-category</a></td><td>Example value set for Condition (Problem/Diagnosis) Categories</td><td>Internal</td><td>224</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-condition-cause.html">condition-cause</a></td><td>Example value set for Cause of Condition codes</td><td>SNOMED CT</td><td>2025</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-condition-code.html">condition-code</a></td><td>Example value set for Condition/Problem/Diagnosis codes</td><td>SNOMED CT</td><td>313</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-condition-predecessor.html">condition-predecessor</a></td><td>Example value set for Condition Predecessor codes</td><td>SNOMED CT</td><td>2026</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-condition-severity.html">condition-severity</a></td><td>Example value set for Condition/Diagnosis severity grading</td><td>SNOMED CT</td><td>227</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-condition-state.html">condition-state</a></td><td>Enumeration indicating whether the condition is currently active, inactive, or has resolved
+
+active| inactive| resolved</td><td>Internal</td><td>1469</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-condition-status.html">condition-status</a></td><td>The clinical status of the Condition or diagnosis</td><td>Internal</td><td>1848</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-conditional-delete-status.html">conditional-delete-status</a></td><td>A code that indicates how the server supports conditional delete</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-conformance-expectation.html">conformance-expectation</a></td><td>Indicates the degree of adherence to a specified behavior or capability expected in order for a system to be deemed conformant with a specification</td><td>Internal</td><td>550</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-conformance-resource-status.html">conformance-resource-status</a></td><td>The lifecycle status of a Value Set or Concept Map</td><td>Internal</td><td>1549</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-consistency-type.html">consistency-type</a></td><td>FluidConsistencyType :  Codes used to represent the consistency of fluids and liquids provided to the patient. This value set includes all the children of  SNOMED CT Concepts from SCTID(US Extension): 435681000124103  Dietary liquid consistency diet (regime/therapy) and is provided as a suggestive example</td><td>SNOMED CT</td><td>421</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-constraint-severity.html">constraint-severity</a></td><td>SHALL applications comply with this constraint?</td><td>Internal</td><td>146</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contact-point-system.html">contact-point-system</a></td><td>Telecommunications form for contact point</td><td>Internal</td><td>425</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contact-point-use.html">contact-point-use</a></td><td>Use of contact point</td><td>Internal</td><td>426</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contactentity-type.html">contactentity-type</a></td><td>This example value set defines a set of codes that can be used to indicate      the purpose for which you would contact a contact party.</td><td>Internal</td><td>127</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-content-type.html">content-type</a></td><td>The content or mime type.
+
+The content type or mime type to be specified in Accept or Content-Type header.</td><td>Internal</td><td>2153</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contract-action.html">contract-action</a></td><td>This value set includes sample Contract Action codes.</td><td>External</td><td>1553</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contract-actorrole.html">contract-actorrole</a></td><td>This value set includes sample Contract Actor Role codes.</td><td>External</td><td>1555</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contract-signer-type.html">contract-signer-type</a></td><td>The Digital Signature Purposes, an indication of the reason an entity signs a document. This is included in the signed information and can be used when determining accountability for various actions concerning the document. Examples include: author, transcriptionist/recorder, and witness.</td><td>Internal</td><td>513</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contract-subtype.html">contract-subtype</a></td><td>This value set includes sample Contract Subtype codes.</td><td>Internal</td><td>441</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contract-term-subtype.html">contract-term-subtype</a></td><td>This value set includes sample Contract Term SubType codes.</td><td>Internal</td><td>443</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contract-term-type.html">contract-term-type</a></td><td>This value set includes sample Contract Term Type codes.</td><td>Internal</td><td>442</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contract-type.html">contract-type</a></td><td>This value set includes sample Contract Type codes.</td><td>Internal</td><td>440</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contraindication-category.html">contraindication-category</a></td><td>Value Set Contents (Expansion) for contraindication-category at Fri, Jul 24, 2015 17:32-0400</td><td/><td>401</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contraindication-mitigation-action.html">contraindication-mitigation-action</a></td><td>Value Set Contents (Expansion) for contraindication-mitigation-action at Fri, Jul 24, 2015 17:33-0400</td><td/><td>402</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-contraindication-severity.html">contraindication-severity</a></td><td>Indicates the potential degree of impact of the identified issue on the patient</td><td>Internal</td><td>413</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-cpt-all.html">cpt-all</a></td><td>A value set that includes all CPT codes</td><td>Other</td><td>null</td><td>??</td></tr>
+ <tr><td><a href="valueset-data-absent-reason.html">data-absent-reason</a></td><td>Used to specify why the normally expected content of the data element is missing</td><td>Internal</td><td>2</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-data-types.html">data-types</a></td><td>The type of an element - one of the FHIR data types</td><td>Internal</td><td>3</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-dataelement-sdcobjectclass.html">dataelement-sdcobjectclass</a></td><td>The allowed codes for identifying the ISO 11179 ObjectClass for a particular data element if intended for registration/use within the U.S. Structured Data Capture (SDC) project.</td><td>SNOMED CT, LOINC, Other</td><td>396</td><td>elementdefinition-11179</td></tr>
+ <tr><td><a href="valueset-dataelement-sdcobjectclassproperty.html">dataelement-sdcobjectclassproperty</a></td><td>The allowed codes for identifying the ISO 11179 ObjectClass Property for a particular data element if intended for registration/use within the U.S. Structured Data Capture (SDC) project.</td><td>SNOMED CT, LOINC, Other</td><td>397</td><td>elementdefinition-11179</td></tr>
+ <tr><td><a href="valueset-dataelement-specificity.html">dataelement-specificity</a></td><td>Indicates the degree of precision of the data element definition</td><td>Internal</td><td>1559</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-days-of-week.html">days-of-week</a></td><td>The days of the week</td><td>Internal</td><td>1928</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-defined-types.html">defined-types</a></td><td>Value Set Contents (Expansion) for FHIRDefinedType at Fri, Jul 24, 2015 17:32-0400</td><td/><td>5</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-designation-use.html">designation-use</a></td><td>Value Set Contents (Expansion) for Designation Use at Fri, Jul 24, 2015 17:33-0400</td><td/><td>430</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-device-action.html">device-action</a></td><td>Example value set for Procedure Device Action code (what happened to a device during a procedure</td><td>Internal</td><td>1866</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-device-use-request-priority.html">device-use-request-priority</a></td><td>Codes representing the priority of the request</td><td>Internal</td><td>499</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-device-use-request-status.html">device-use-request-status</a></td><td>Codes representing the status of the request</td><td>Internal</td><td>497</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-devicestatus.html">devicestatus</a></td><td>The availability status of the device</td><td>Internal</td><td>1916</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-diagnostic-order-event.html">diagnostic-order-event</a></td><td>Additional information about an event that occurred to a diagnostic order</td><td>SNOMED CT</td><td>2139</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-diagnostic-order-priority.html">diagnostic-order-priority</a></td><td>The clinical priority of a diagnostic order</td><td>Internal</td><td>271</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-diagnostic-order-status.html">diagnostic-order-status</a></td><td>The status of a diagnostic order</td><td>Internal</td><td>207</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-diagnostic-report-status.html">diagnostic-report-status</a></td><td>The status of the diagnostic report as a whole</td><td>Internal</td><td>341</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-diagnostic-requests.html">diagnostic-requests</a></td><td>This value set includes all the LOINC Order codes</td><td>LOINC</td><td>59</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-diagnostic-service-sections.html">diagnostic-service-sections</a></td><td>Value Set Contents (Expansion) for Diagnostic Service Section Codes at Fri, Jul 24, 2015 17:33-0400</td><td/><td>61</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-dicm-402-roleid.html">dicm-402-roleid</a></td><td>Audit Active Participant Role ID Code</td><td>DICOM</td><td>366</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-dicom-cid29.html">dicom-cid29</a></td><td>This Value Set includes codes that may be used to identify an image or waveform acquisition modality, as used in the ImagingStudy resource, Dicom  Attribute Modality (0008,0060) or HL7 v2 Table 0259 (see HL7 v2.6 Chapter 8 Section 8.8.8.47). It generally corresponds to a class of diagnostic equipment, or to a specific acquisition function or technique in a device</td><td>DICOM</td><td>234</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-dicom-dcim.html">dicom-dcim</a></td><td>DICOM Code Definitions (Coding Scheme Designator &quot;DCM&quot; Coding Scheme Version &quot;01&quot;)</td><td>DICOM</td><td>null</td><td>??</td></tr>
+ <tr><td><a href="valueset-diet-type.html">diet-type</a></td><td>Value Set Contents (Expansion) for Diet Codes at Fri, Jul 24, 2015 17:32-0400</td><td/><td>417</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-digital-media-subtype.html">digital-media-subtype</a></td><td>Detailed information about the type of the image - its kind, purpose, or the kind of equipment used to generate it</td><td>Internal, SNOMED CT</td><td>1624</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-digital-media-type.html">digital-media-type</a></td><td>Whether the Media is a photo, video, or audio</td><td>Internal</td><td>1623</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-doc-classcodes.html">doc-classcodes</a></td><td>LOINC codes for Document Kind, taken from the LOINC document ontology</td><td>LOINC</td><td>329</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-doc-section-codes.html">doc-section-codes</a></td><td>Document section codes (LOINC codes used in CCDA sections)</td><td>LOINC</td><td>330</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-doc-typecodes.html">doc-typecodes</a></td><td>Value Set Contents (Expansion) for FHIR Document Type Codes at Fri, Jul 24, 2015 17:33-0400</td><td/><td>65</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-document-mode.html">document-mode</a></td><td>Whether the application produces or consumes documents</td><td>Internal</td><td>47</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-document-reference-status.html">document-reference-status</a></td><td>The status of the document reference</td><td>Internal</td><td>67</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-document-relationship-type.html">document-relationship-type</a></td><td>The type of relationship between documents</td><td>Internal</td><td>328</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-admit-source.html">encounter-admit-source</a></td><td>This value set defines a set of codes that can be used to indicate from where the patient came in.</td><td>Internal</td><td>189</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-class.html">encounter-class</a></td><td>Classification of the encounter</td><td>Internal</td><td>182</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-diet.html">encounter-diet</a></td><td>This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.</td><td>Internal</td><td>186</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-discharge-disposition.html">encounter-discharge-disposition</a></td><td>This value set defines a set of codes that can be used to where the patient left the hospital</td><td>Internal</td><td>190</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-location-status.html">encounter-location-status</a></td><td>The status of the location</td><td>Internal</td><td>564</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-participant-type.html">encounter-participant-type</a></td><td>This value set defines a set of codes that can be used to indicate how an individual participates in an encounter</td><td>Internal, V3</td><td>183</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-priority.html">encounter-priority</a></td><td>This is an example value set defined by the FHIR project, that could be used in Emergency to indicate the encounter priority as determined by triage.</td><td>Internal</td><td>187</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-reason.html">encounter-reason</a></td><td>This examples value set defines the set of codes that can be used to indicate reasons for an encounter</td><td>SNOMED CT</td><td>188</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-special-arrangements.html">encounter-special-arrangements</a></td><td>This value set defines a set of codes that can be used to indicate the kinds     of special arrangements in place for a patients visit</td><td>Internal</td><td>185</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-special-courtesy.html">encounter-special-courtesy</a></td><td>This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.</td><td>V3</td><td>184</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-state.html">encounter-state</a></td><td>Current state of the encounter</td><td>Internal</td><td>180</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-encounter-type.html">encounter-type</a></td><td>This example value set defines a set of codes that can be used to indicate the type     of encounter: a specific code indicating type of service provided .</td><td>Internal</td><td>181</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-enteral-route.html">enteral-route</a></td><td>EnteralRouteOfAdministration: Codes specifying the route of administration of enteral formula.  This value set is composed of HL7 V3 codes and is provided as a suggestive example </td><td>V3</td><td>531</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-entformula-additive.html">entformula-additive</a></td><td>EnteralFormulaAdditiveType :  Codes for the type of modular component such as protein, carbohydrate or fiber to be provided in addition to or mixed with the base formula. This value set is provided as a suggestive example</td><td>Internal</td><td>424</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-entformula-type.html">entformula-type</a></td><td>EnteralFormulaType : Codes for type of enteral formula to be administered to patient.  This value set is is composed of SNOMED CT (US Extension) Concepts from SCTID 470581016 Enteral+supplement feeds heirarchy and is provided as a suggestive example</td><td>SNOMED CT</td><td>423</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-episode-of-care-status.html">episode-of-care-status</a></td><td>The status of the encounter</td><td>Internal</td><td>582</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-event-timing.html">event-timing</a></td><td>Real world event that the schedule relates to</td><td>V3</td><td>19</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-example-expansion.html">example-expansion</a></td><td>This is an example value set that includes all the LOINC codes for serum/plasma cholesterol from v2.36</td><td>LOINC</td><td>null</td><td>??</td></tr>
+ <tr><td><a href="valueset-example-extensional.html">example-extensional</a></td><td>This is an example value set that includes all the LOINC codes for serum/plasma cholesterol from v2.36</td><td>LOINC</td><td>null</td><td>??</td></tr>
+ <tr><td><a href="valueset-example-inline.html">example-inline</a></td><td>This is an example value set that includes all the ACME codes for serum/plasma cholesterol from v2.36</td><td>External</td><td>null</td><td>??</td></tr>
+ <tr><td><a href="valueset-example.html">example-intensional</a></td><td>This is an example value set that includes all the LOINC codes for serum/plasma cholesterol from v2.36</td><td>LOINC</td><td>null</td><td>??</td></tr>
+ <tr><td><a href="valueset-extension-context.html">extension-context</a></td><td>How an extension context is interpreted</td><td>Internal</td><td>145</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-filter-operator.html">filter-operator</a></td><td>The kind of operation to perform as a part of a property based filter</td><td>Internal</td><td>177</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-fips-county.html">fips-county</a></td><td>This value set defines FIPS codes for US counties and county equivalent entities.</td><td>Other</td><td>518</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-flag-status.html">flag-status</a></td><td>Indicates whether this flag is active and needs to be displayed to a user, or whether it is no longer needed or entered in error</td><td>Internal</td><td>2001</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-fm-conditions.html">fm-conditions</a></td><td>This value set includes sample Conditions codes.</td><td>Internal</td><td>466</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-food-type.html">food-type</a></td><td>Value Set Contents (Expansion) for Food Type Codes at Fri, Jul 24, 2015 17:33-0400</td><td/><td>420</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-formatcodes.html">formatcodes</a></td><td>The value set is defined to be the set of format codes defined by    the IHE Technical Framework, and also including additional format codes defined by the    HL7. The value set is listed in HITSP C80 Table 2-153 Format Code Value Set Definition,    with additions published later by IHE as published    at http://wiki.ihe.net/index.php?title=IHE_Format_Codes   and with additions published later by HL7 as published at http://wiki.hl7.org/index.php?title=CDA_Format_Codes_for_IHE_XDS.   This is the code specifying the technical format of the document. Along with the typeCode,    it should provide sufficient information to allow any potential document consumer to know    if it will be able to process the document. The code shall be sufficiently specific to    ensure processing/display by identifying a document encoding, structure and template.</td><td>Other</td><td>3</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-forms.html">forms</a></td><td>This value set includes a sample set of Forms codes</td><td>Internal</td><td>470</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-fundsreserve.html">fundsreserve</a></td><td>This value set includes sample funds reservation type codes.</td><td>Internal</td><td>449</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-goal-priority.html">goal-priority</a></td><td>goal priority - indicates the level of importance associated with reaching or sustaining a goal</td><td>Internal</td><td>2005</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-goal-relationship-type.html">goal-relationship-type</a></td><td>Types of relationships between two goals</td><td>Internal</td><td>2014</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-goal-status.html">goal-status</a></td><td>Indicates whether the goal has been met and is still being targeted</td><td>Internal</td><td>547</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-group-type.html">group-type</a></td><td>Types of resources that are part of group</td><td>Internal</td><td>74</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-http-verb.html">http-verb</a></td><td>HTTP verbs (in the HTTP command line)</td><td>Internal</td><td>2141</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-icd-10.html">icd-10</a></td><td>This value set includes sample ICD-10 codes.</td><td>Internal</td><td>450</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-identifier-type.html">identifier-type</a></td><td>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose</td><td>Internal, V2</td><td>2114</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-identifier-use.html">identifier-use</a></td><td>Identifies the purpose for this identifier, if known</td><td>Internal</td><td>13</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-identity-assuranceLevel.html">identity-assuranceLevel</a></td><td>The level of confidence that this link represents the same actual person, based on NIST Authentication Levels</td><td>Internal</td><td>555</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-ig-code.html">ig-code</a></td><td>Codes for the meaning of the defined structure</td><td>SNOMED CT, LOINC</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-immunization-reason.html">immunization-reason</a></td><td>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example</td><td>SNOMED CT</td><td>353</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-immunization-recommendation-date-criterion.html">immunization-recommendation-date-criterion</a></td><td>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example</td><td>Internal</td><td>356</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-immunization-recommendation-status.html">immunization-recommendation-status</a></td><td>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example</td><td>Internal</td><td>355</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-immunization-route.html">immunization-route</a></td><td>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example</td><td>V3</td><td>79</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-immunization-site.html">immunization-site</a></td><td>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example</td><td>V3</td><td>78</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-instance-availability.html">instance-availability</a></td><td>Availability of the resource</td><td>DICOM</td><td>76</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-intervention.html">intervention</a></td><td>This value set includes sample Intervention codes.</td><td>Internal</td><td>451</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-investigation-sets.html">investigation-sets</a></td><td>Example value set for Condition/Problem/Diagnosis certainty</td><td>SNOMED CT</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-issue-severity.html">issue-severity</a></td><td>How the issue affects the success of the action</td><td>Internal</td><td>120</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-issue-type.html">issue-type</a></td><td>A coded expression of the type of issue</td><td>Internal</td><td>121</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-kos-title.html">kos-title</a></td><td>The document title code of key object selection</td><td>DICOM</td><td>526</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-ldlcholesterol-codes.html">ldlcholesterol-codes</a></td><td>LDL Cholesterol codes - measured or calculated</td><td>LOINC</td><td>444</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-link-type.html">link-type</a></td><td>The type of link between this patient resource and another patient resource.</td><td>Internal</td><td>324</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-list-empty-reason.html">list-empty-reason</a></td><td>General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list)</td><td>Internal</td><td>90</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-list-example-codes.html">list-example-codes</a></td><td>Example use codes for the List resource - typical kinds of use. TODO: Does LOINC define useful codes?</td><td>Internal</td><td>320</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-list-item-flag.html">list-item-flag</a></td><td>Example Item Flags for the List Resource. In this case, these are the kind of flags that would be used on a medication list at the end of a consultation</td><td>Internal</td><td>89</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-list-mode.html">list-mode</a></td><td>The processing mode that applies to this list</td><td>Internal</td><td>88</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-list-order.html">list-order</a></td><td>Base values for the order of the items in a list resource</td><td>Internal</td><td>1886</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-list-status.html">list-status</a></td><td>The current state of the list</td><td>Internal</td><td>2007</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-location-mode.html">location-mode</a></td><td>Indicates whether a resource instance represents a specific location or a class of locations</td><td>Internal</td><td>337</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-location-physical-type.html">location-physical-type</a></td><td>This example value set defines a set of codes that can be used to indicate the physical form of the Location.</td><td>Internal</td><td>336</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-location-status.html">location-status</a></td><td>Indicates whether the location is still in use</td><td>Internal</td><td>343</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-manifestation-codes.html">manifestation-codes</a></td><td>This value set includes all SNOMED CT Clinical Findings</td><td>SNOMED CT</td><td>437</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-manifestation-or-symptom.html">manifestation-or-symptom</a></td><td>Example value set for Manifestion and Symptom codes</td><td>SNOMED CT</td><td>2024</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-marital-status.html">marital-status</a></td><td>This value set defines the set of codes that can be used to indicate the marital status of a person</td><td>Internal, V3</td><td>25</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-measurement-principle.html">measurement-principle</a></td><td>Different measurement principle supported by the device</td><td>Internal</td><td>512</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-media-view.html">media-view</a></td><td>Value Set Contents (Expansion) for Media Collection View/Projection at Fri, Jul 24, 2015 17:32-0400</td><td/><td>237</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-medication-admin-status.html">medication-admin-status</a></td><td>A set of codes indicating the current status of a MedicationAdministration</td><td>Internal</td><td>92</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-medication-codes.html">medication-codes</a></td><td>Value Set Contents (Expansion) for Snomed Medication Codes at Fri, Jul 24, 2015 17:32-0400</td><td/><td>321</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-medication-dispense-status.html">medication-dispense-status</a></td><td>A code specifying the state of the dispense event.
+
+Describes the lifecycle of the dispense.</td><td>Internal</td><td>101</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-medication-form-codes.html">medication-form-codes</a></td><td>Value Set Contents (Expansion) for SNOMED CT Form Codes at Fri, Jul 24, 2015 17:33-0400</td><td/><td>108</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-medication-kind.html">medication-kind</a></td><td>Whether the medication is a product or a package</td><td>Internal</td><td>110</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-medication-package-form-codes.html">medication-package-form-codes</a></td><td>Value Set Contents (Expansion) for SNOMED CT Form Codes at Fri, Jul 24, 2015 17:33-0400</td><td/><td>111</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-medication-prescription-status.html">medication-prescription-status</a></td><td>A code specifying the state of the prescribing event. Describes the lifecycle of the prescription.</td><td>Internal</td><td>107</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-medication-statement-status.html">medication-statement-status</a></td><td>A set of codes indicating the current status of a MedicationStatement</td><td>Internal</td><td>967</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-message-conformance-event-mode.html">message-conformance-event-mode</a></td><td>The mode of a message conformance statement</td><td>Internal</td><td>45</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-message-events.html">message-events</a></td><td>One of the message events defined as part of FHIR</td><td>Internal</td><td>6</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-message-reason-encounter.html">message-reason-encounter</a></td><td>Example Message Reasons. These are the set of codes that might be used an updating an encounter using admin-update</td><td>Internal</td><td>112</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-message-significance-category.html">message-significance-category</a></td><td>The impact of the content of a message</td><td>Internal</td><td>342</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-message-transport.html">message-transport</a></td><td>The protocol used for message transport</td><td>Internal</td><td>46</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-metric-calibration-state.html">metric-calibration-state</a></td><td>Describes the state of a metric calibration</td><td>Internal</td><td>537</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-metric-calibration-type.html">metric-calibration-type</a></td><td>Describes the type of a metric calibration</td><td>Internal</td><td>536</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-metric-category.html">metric-category</a></td><td>Describes the category of the metric</td><td>Internal</td><td>535</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-metric-color.html">metric-color</a></td><td>Describes the typical color of representation</td><td>Internal</td><td>1491</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-metric-operational-status.html">metric-operational-status</a></td><td>Describes the operational status of the DeviceMetric</td><td>Internal</td><td>1417</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-missing-tooth-reason.html">missing-tooth-reason</a></td><td>This value set includes sample Missing Tooth Reason codes.</td><td>Internal</td><td>452</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-modified-foodtype.html">modified-foodtype</a></td><td>TextureModifiedFoodType: Codes for types of foods that are texture modified. This value set is composed SNOMED CT Concepts from SCTID 255620007 Foods (substance) and is provided as a suggestive example</td><td>SNOMED CT</td><td>1556</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-name-part-qualifier.html">name-part-qualifier</a></td><td>A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type</td><td>V3</td><td>192</td><td>iso-21090</td></tr>
+ <tr><td><a href="valueset-name-use.html">name-use</a></td><td>The use of a human name</td><td>Internal</td><td>15</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-namingsystem-identifier-type.html">namingsystem-identifier-type</a></td><td>Identifies the style of unique identifier used to identify a namepace</td><td>Internal</td><td>477</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-namingsystem-type.html">namingsystem-type</a></td><td>Identifies the purpose of the namingsystem</td><td>Internal</td><td>474</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-narrative-status.html">narrative-status</a></td><td>The status of a resource narrative</td><td>Internal</td><td>28</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-network-type.html">network-type</a></td><td>The type of network access point of this participant in the audit event</td><td>Internal</td><td>1478</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-nhin-purposeofuse.html">nhin-purposeofuse</a></td><td>This value set is suitable for use with the provenance resource. It is derived from, but not compatible with, the V3 Purpose of use Code system</td><td>External</td><td>null</td><td>??</td></tr>
+ <tr><td><a href="valueset-no-immunization-reason.html">no-immunization-reason</a></td><td>Value Set Contents (Expansion) for Immunization Reasons for Not Immunizing Codes at Fri, Jul 24, 2015 17:33-0400</td><td/><td>354</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-note-type.html">note-type</a></td><td>The presentation types of notes</td><td>Internal</td><td>472</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-nutrient-code.html">nutrient-code</a></td><td>Value Set Contents (Expansion) for Nutrient Modifier Codes at Fri, Jul 24, 2015 17:33-0400</td><td/><td>418</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-nutrition-order-status.html">nutrition-order-status</a></td><td>Codes specifying the state of the request. Describes the lifecycle of the nutrition order.</td><td>Internal</td><td>415</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-object-lifecycle.html">object-lifecycle</a></td><td>Identifier for the data life-cycle stage for the object</td><td>Internal</td><td>1481</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-object-role.html">object-role</a></td><td>Code representing the role the Object played in the event</td><td>Internal</td><td>1480</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-object-type.html">object-type</a></td><td>Code for the object type involved audited</td><td>Internal</td><td>1479</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-observation-codes.html">observation-codes</a></td><td>This value set includes all LOINC codes</td><td>LOINC</td><td>115</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-observation-genomicpanel.html">observation-genomicpanel</a></td><td>This value set defines the set ofLOINcs for genomic panels </td><td>LOINC</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-observation-interpretation.html">observation-interpretation</a></td><td>Value Set Contents (Expansion) for Observation Interpretation Codes at Fri, Jul 24, 2015 17:32-0400</td><td/><td>117</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-observation-methods.html">observation-methods</a></td><td>Value Set Contents (Expansion) for Observation Methods at Fri, Jul 24, 2015 17:32-0400</td><td/><td>114</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-observation-relationshiptypes.html">observation-relationshiptypes</a></td><td>Codes specifying how two observations are related</td><td>Internal</td><td>371</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-observation-reliability.html">observation-reliability</a></td><td>Codes that provide an estimate of the degree to which quality issues have impacted on the value of an observation</td><td>Internal</td><td>118</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-observation-status.html">observation-status</a></td><td>Codes providing the status of an observation</td><td>Internal</td><td>7</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-observation-valueabsentreason.html">observation-valueabsentreason</a></td><td>This value set defines the set of code for identifying the reason why the expected result in Observation.value[x] is missing. </td><td>Internal</td><td>1557</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-observation-values.html">observation-values</a></td><td>Codes identifying atomic results of observations when value is type codeableConcept. This value set includes all the children of SNOMED CT Concepts from SCTIDs 404684003 Clinical finding (finding), 410607006 Organism (organism),362981000 Qualifier value (qualifier value), 105590001 Substance (substance), and 123037004 Body structure (body structure).  It is provided as a suggestive example</td><td>SNOMED CT</td><td>1800</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-operation-kind.html">operation-kind</a></td><td>Whether an operation is a normal operation or a query</td><td>Internal</td><td>408</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-operation-parameter-type.html">operation-parameter-type</a></td><td>Value Set Contents (Expansion) for Parameter Types used in Operation Definitions at Fri, Jul 24, 2015 17:32-0400</td><td/><td>410</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-operation-parameter-use.html">operation-parameter-use</a></td><td>Whether an operation parameter is an input or an output parameter</td><td>Internal</td><td>409</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-oral-prosthodontic-material.html">oral-prosthodontic-material</a></td><td>This value set includes sample Oral Prosthodontic Material type codes.</td><td>Internal</td><td>454</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-order-status.html">order-status</a></td><td>The status of the response to an order</td><td>Internal</td><td>1558</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-organization-type.html">organization-type</a></td><td>This example value set defines a set of codes that can be used to indicate a type of organization.</td><td>Internal</td><td>125</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-page-purpose.html">page-purpose</a></td><td>Codes that specifies how the page is used in the IG</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-parent-relationship-codes.html">parent-relationship-codes</a></td><td>Value Set Contents (Expansion) for Parent Relationship Codes at Fri, Jul 24, 2015 17:32-0400</td><td/><td>311</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-participantrequired.html">participantrequired</a></td><td>Is the Participant required to attend the appointment</td><td>Internal</td><td>362</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-participantstatus.html">participantstatus</a></td><td>The Participation status of an appointment</td><td>Internal</td><td>364</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-participationstatus.html">participationstatus</a></td><td>The Participation status of an appointment</td><td>Internal</td><td>361</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-patient-contact-relationship.html">patient-contact-relationship</a></td><td>This value set defines a set of codes that are used to indicate the nature of the relationship between      a patient and a contactperson for that patient</td><td>Internal</td><td>135</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-payeetype.html">payeetype</a></td><td>This value set includes sample Payee type codes.</td><td>Internal</td><td>456</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-payment-status.html">payment-status</a></td><td>This value set includes a Form codes</td><td>Internal</td><td>528</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-payment-type.html">payment-type</a></td><td>This value set includes sample Contract Type codes.</td><td>Internal</td><td>527</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-postal-address-use.html">postal-address-use</a></td><td>Uses of an address not included in Address.use</td><td>V3</td><td>326</td><td>iso-21090</td></tr>
+ <tr><td><a href="valueset-practitioner-role.html">practitioner-role</a></td><td>This example value set defines a set of codes that can be used to indicate the role of a Practitioner.</td><td>Internal</td><td>154</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-practitioner-specialty.html">practitioner-specialty</a></td><td>This example value set defines a set of codes that can be used to indicate the specialty of a Practitioner</td><td>Internal</td><td>155</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-probability-distribution-type.html">probability-distribution-type</a></td><td>Codes specifying the type of probability distribution</td><td>V3</td><td>325</td><td>iso-21090</td></tr>
+ <tr><td><a href="valueset-procedure-category.html">procedure-category</a></td><td>Procedure Category code: A selection of relevant SNOMED CT codes</td><td>SNOMED CT</td><td>1894</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-procedure-followup.html">procedure-followup</a></td><td>Procedure follow up codes: a selection of snomed codes relevant to procedure follow up</td><td>SNOMED CT</td><td>1890</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-procedure-outcome.html">procedure-outcome</a></td><td>Procedure Outcome code: A selection of relevant SNOMED CT codes</td><td>SNOMED CT</td><td>1889</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-procedure-relationship-type.html">procedure-relationship-type</a></td><td>The nature of the relationship with this procedure</td><td>Internal</td><td>136</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-procedure-request-priority.html">procedure-request-priority</a></td><td>The priority of the request</td><td>Internal</td><td>502</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-procedure-request-status.html">procedure-request-status</a></td><td>The status of the request</td><td>Internal</td><td>500</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-procedure-status.html">procedure-status</a></td><td>A code specifying the state of the procedure record</td><td>Internal</td><td>1470</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-procedure-type.html">procedure-type</a></td><td>Procedure Type code: All SNOMED CT procedure codes</td><td>SNOMED CT</td><td>1877</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-process-outcome.html">process-outcome</a></td><td>This value set includes sample Process Outcome codes.</td><td>Internal</td><td>514</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-process-priority.html">process-priority</a></td><td>This value set includes the financial processing priority codes</td><td>Internal</td><td>464</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-profile-code.html">profile-code</a></td><td>Codes for the meaning of the defined structure</td><td>SNOMED CT, LOINC</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-property-representation.html">property-representation</a></td><td>How a property is represented on the wire</td><td>Internal</td><td>339</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-provenance-agent-role.html">provenance-agent-role</a></td><td>The role that a provenance participant played</td><td>Internal</td><td>269</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-provenance-agent-type.html">provenance-agent-type</a></td><td>The type of a provenance participant. Use either a defined FHIR resource type, or, if the reference is not to a resource, one of the defined codes, or some other code if none of the defined codes are appropriate</td><td>Internal</td><td>270</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-provenance-entity-role.html">provenance-entity-role</a></td><td>How an entity was used in an activity</td><td>Internal</td><td>267</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-quantity-comparator.html">quantity-comparator</a></td><td>How the Quantity should be understood and represented</td><td>Internal</td><td>445</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-question-max-occurs.html">question-max-occurs</a></td><td>Flags an element as having unlimited repetitions</td><td>Internal</td><td>389</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-questionnaire-answers-status.html">questionnaire-answers-status</a></td><td>Lifecycle status of the questionnaire answers</td><td>Internal</td><td>387</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-questionnaire-status.html">questionnaire-status</a></td><td>Lifecycle status of the questionnaire</td><td>Internal</td><td>338</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-reaction-event-certainty.html">reaction-event-certainty</a></td><td>Statement about the degree of clinical certainty that a Specific Substance was the cause of the Manifestation in an reaction event</td><td>Internal</td><td>482</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-reaction-event-severity.html">reaction-event-severity</a></td><td>Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations</td><td>Internal</td><td>483</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-reason-medication-given-codes.html">reason-medication-given-codes</a></td><td>This value set is provided as an exemplar. The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support the medication process</td><td>Internal</td><td>966</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-reason-medication-not-given-codes.html">reason-medication-not-given-codes</a></td><td>This value set is provided as an exemplar. The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support the medication process</td><td>Internal</td><td>93</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-referencerange-meaning.html">referencerange-meaning</a></td><td>This value set defines a set of codes that can be used to indicate the meaning/use of a reference range</td><td>Internal, SNOMED CT</td><td>119</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-referralstatus.html">referralstatus</a></td><td>The status of the referral</td><td>Internal</td><td>412</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-relatedperson-relationshiptype.html">relatedperson-relationshiptype</a></td><td>A set of codes that can be used to indicate the relationship between a Patient and a RelatedPerson.</td><td>V3</td><td>251</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-relationship.html">relationship</a></td><td>This value set includes the Patient to subscriber relationship codes.</td><td>Internal</td><td>457</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-remittance-outcome.html">remittance-outcome</a></td><td>The outcome of the processing.</td><td>Internal</td><td>467</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-report-codes.html">report-codes</a></td><td>This value set includes all the LOINC codes which relate to Diagnostic Observations</td><td>LOINC</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-resource-aggregation-mode.html">resource-aggregation-mode</a></td><td>How resource references can be aggregated</td><td>Internal</td><td>310</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-resource-slicing-rules.html">resource-slicing-rules</a></td><td>How slices are interpreted when evaluating an instance</td><td>Internal</td><td>265</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-resource-types.html">resource-types</a></td><td>One of the resource types defined as part of FHIR</td><td>Internal</td><td>4</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-resource-validation-mode.html">resource-validation-mode</a></td><td>Codes indicating the type of validation to perform</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-response-code.html">response-code</a></td><td>The kind of response to a message</td><td>Internal</td><td>322</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-restful-conformance-mode.html">restful-conformance-mode</a></td><td>The mode of a RESTful conformance statement</td><td>Internal</td><td>42</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-restful-interaction.html">restful-interaction</a></td><td>The set of interactions defined by the RESTful part of the FHIR specification</td><td>Internal</td><td>null</td><td>??</td></tr>
+ <tr><td><a href="valueset-restful-security-service.html">restful-security-service</a></td><td>Types of security services used with FHIR</td><td>Internal</td><td>43</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-risk-probability.html">risk-probability</a></td><td>Codes representing the likelihood of a particular outcome in a risk assessment</td><td>Internal</td><td>405</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-route-codes.html">route-codes</a></td><td>Value Set Contents (Expansion) for SNOMED CT Route Codes at Fri, Jul 24, 2015 17:33-0400</td><td/><td>96</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-ruleset.html">ruleset</a></td><td>This value set includes sample ruleset codes.</td><td>Internal</td><td>458</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-sample-type.html">sample-type</a></td><td>Type of the sample used to determine a seauence</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-search-entry-mode.html">search-entry-mode</a></td><td>Why an entry is in the result set - whether it's included as a match or because of an _include requirement</td><td>Internal</td><td>906</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-search-modifier-code.html">search-modifier-code</a></td><td>A supported modifier for a search parameter</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-search-param-type.html">search-param-type</a></td><td>Data types allowed to be used for search parameters</td><td>Internal</td><td>9</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-search-xpath-usage.html">search-xpath-usage</a></td><td>How a search parameter relates to the set of elements returned by evaluating the it's xpath query</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-security-labels.html">security-labels</a></td><td>A single value set for all security labels defined by FHIR</td><td/><td>1770</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-sequence-type.html">sequence-type</a></td><td>Type of a sequence</td><td>Internal</td><td>291</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-service-pharmacy.html">service-pharmacy</a></td><td>This value set includes a smattering of Pharmacy Service codes</td><td>Internal</td><td>553</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-service-product.html">service-product</a></td><td>This value set includes a smattering of Service/Product codes</td><td>Internal</td><td>554</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-service-provision-conditions.html">service-provision-conditions</a></td><td>The code(s) that detail the conditions under which the healthcare service is available/offered</td><td>Internal</td><td>1963</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-service-referral-method.html">service-referral-method</a></td><td>The methods of referral can be used when referring to a specific HealthCareService resource</td><td>Internal</td><td>1927</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-service-uscls.html">service-uscls</a></td><td>This value set includes a smattering of  USCLS codes</td><td>Internal</td><td>459</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-signature-type.html">signature-type</a></td><td>The Digital Signature Purposes, an indication of the reason an entity signs a document. This is included in the signed information and can be used when determining accountability for various actions concerning the document. Examples include: author, transcriptionist/recorder, and witness.</td><td>Internal</td><td>1551</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-slotstatus.html">slotstatus</a></td><td>The free/busy status of a slot</td><td>Internal</td><td>365</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-special-values.html">special-values</a></td><td>A set of generally useful codes defined so they can be included in value sets</td><td>Internal</td><td>10</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-specimen-collection-method.html">specimen-collection-method</a></td><td>Value Set Contents (Expansion) for SpecimenCollectionMethod at Fri, Jul 24, 2015 17:33-0400</td><td/><td>256</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-specimen-collection-priority.html">specimen-collection-priority</a></td><td> This example value set defines a set of codes that can be used to indicate the priority of collection of a specimen.</td><td>Other</td><td>1492</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-specimen-container-type.html">specimen-container-type</a></td><td>Value Set Contents (Expansion) for SpecimenContainer at Fri, Jul 24, 2015 17:32-0400</td><td/><td>264</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-specimen-treatment-procedure.html">specimen-treatment-procedure</a></td><td>Value Set Contents (Expansion) for SpecimenTreatmentProcedure at Fri, Jul 24, 2015 17:32-0400</td><td/><td>263</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-strand-direction.html">strand-direction</a></td><td>Direction of a sequence</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-structure-definition-kind.html">structure-definition-kind</a></td><td>Defines the type of structure that a definition is describing</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-subscription-channel-type.html">subscription-channel-type</a></td><td>The type of method used to execute a subscription</td><td>Internal</td><td>379</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-subscription-status.html">subscription-status</a></td><td>The status of a subscription</td><td>Internal</td><td>381</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-subscription-tag.html">subscription-tag</a></td><td>Tags to put on a resource after subscriptions sent</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-substance-type.html">substance-type</a></td><td>This value sets refers to a substance type</td><td>SNOMED CT</td><td>257</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-supplement-type.html">supplement-type</a></td><td>SupplementType :  Codes for nutritional supplements to be provided to the patient. This value set is is composed of SNOMED CT (US Extension) Concepts from SCTID 470581016 Enteral+supplement feeds heirarchy and is provided as a suggestive example</td><td>SNOMED CT</td><td>422</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-supply-dispense-status.html">supply-dispense-status</a></td><td>Status of the dispense</td><td>Internal</td><td>357</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-supply-item.html">supply-item</a></td><td>This value sets refers to a specific supply item</td><td>Internal</td><td>262</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-supply-kind.html">supply-kind</a></td><td>This value sets refers to a Category of supply</td><td>Internal</td><td>505</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-supply-status.html">supply-status</a></td><td>Status of the supply</td><td>Internal</td><td>260</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-supplydelivery-status.html">supplydelivery-status</a></td><td>Status of the Supply delivery</td><td>Internal</td><td>2147</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-supplydelivery-type.html">supplydelivery-type</a></td><td>This value sets refers to a specific supply item</td><td>Internal</td><td>2148</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-supplyrequest-kind.html">supplyrequest-kind</a></td><td>This value sets refers to a Category of supply</td><td>Internal</td><td>2145</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-supplyrequest-status.html">supplyrequest-status</a></td><td>Status of the supply request</td><td>Internal</td><td>2146</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-surface.html">surface</a></td><td>This value set includes a smattering of FDI tooth surface codes.</td><td>Internal</td><td>461</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-system-restful-interaction.html">system-restful-interaction</a></td><td>Operations supported by REST at the system level</td><td>FHIR</td><td>407</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-teeth.html">teeth</a></td><td>This value set includes the FDI Teeth codes.</td><td>Internal</td><td>463</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-template-status-code.html">template-status-code</a></td><td>The status indicates the level of maturity of the design and may be used to manage the use of the design</td><td>Other</td><td>509</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-testscript-operation-codes.html">testscript-operation-codes</a></td><td>This value set defines a set of codes that are used to indicate the supported operations of a testing engine or tool.</td><td>Internal</td><td>2152</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-texture-code.html">texture-code</a></td><td>TextureModifier: Codes for food consistency types or texture modifications to apply to foods. This value set is composed of SNOMED CT (US Extension and Core) Concepts from SCTID 229961002 Food consistency types (substance) heirarchy and is provided as a suggestive example</td><td>SNOMED CT</td><td>419</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-timing-abbreviation.html">timing-abbreviation</a></td><td>Code for a known / defined timing pattern</td><td>Other</td><td>2112</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-tooth.html">tooth</a></td><td>This value set includes a smattering of FDI tooth surface codes.</td><td>Internal</td><td>455</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-transaction-mode.html">transaction-mode</a></td><td>A code that indicates how transactions are supported</td><td>Internal</td><td>0</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-transaction-operation.html">transaction-operation</a></td><td>The operation associated with an entry in either a update history, or a transaction/ transaction response</td><td>Internal, FHIR</td><td>2140</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-transaction-processing-mode.html">transaction-processing-mode</a></td><td>Defines how a match URL should be used when processing a transaction</td><td>Internal</td><td>904</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-type-restful-interaction.html">type-restful-interaction</a></td><td>Operations supported by REST at the type or instance level</td><td>FHIR</td><td>406</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-ucum-common.html">ucum-common</a></td><td>Commonly encountered UCUM units (for purposes of helping populate look ups</td><td>FHIR</td><td>null</td><td>??</td></tr>
+ <tr><td><a href="valueset-udi.html">udi</a></td><td>This value set includes sample UDI codes.</td><td>Internal</td><td>465</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-units-of-time.html">units-of-time</a></td><td>A unit of time (units from UCUM)</td><td>FHIR</td><td>20</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-use-context.html">use-context</a></td><td>This value set defines a base set of codes that can be used to indicate that the content in a resource was developed with a focus and intent of supporting use within particular contexts</td><td>Other</td><td>1550</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-usps-state.html">usps-state</a></td><td>This value set defines two letter USPS alphabetic codes.</td><td>Other</td><td>517</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-vaccination-protocol-dose-status.html">vaccination-protocol-dose-status</a></td><td>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example</td><td>Internal</td><td>82</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-vaccination-protocol-dose-status-reason.html">vaccination-protocol-dose-status-reason</a></td><td>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example</td><td>Internal</td><td>83</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-vaccination-protocol-dose-target.html">vaccination-protocol-dose-target</a></td><td>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example</td><td>Internal</td><td>81</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-vaccinetype.html">vaccinetype</a></td><td>This identifies the vaccine substance administered - CVX codes</td><td>Other</td><td>22</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-versioning-policy.html">versioning-policy</a></td><td>How the system supports versioning for a resource</td><td>Internal</td><td>473</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-vision-base-codes.html">vision-base-codes</a></td><td>A coded concept listing the base codes.</td><td>Internal</td><td>558</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-vision-eye-codes.html">vision-eye-codes</a></td><td>A coded concept listing the eye codes.</td><td>Internal</td><td>557</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-vision-product.html">vision-product</a></td><td>This value set includes a smattering of Prescription Product codes</td><td>Internal</td><td>556</td><td><span title="core/FHIR Specification Core">core</span></td></tr>
+ <tr><td><a href="valueset-xds-relationship-type.html">xds-relationship-type</a></td><td>The kind of relationship between two XDS documents</td><td>Internal</td><td>242</td><td><span title="ihe/IHE Profiles">ihe</span></td></tr>
+ <tr><td><a href="valueset-example-yesnodontknow.html">yesnodontknow</a></td><td>For Capturing simple yes-no-don't know answers</td><td>Other</td><td>null</td><td>??</td></tr>
+</table>
+ 
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fterminologies-valuesets.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fterminologies-valuesets.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

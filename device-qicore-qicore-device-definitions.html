@@ -1,0 +1,316 @@
+﻿<!DOCTYPE HTML>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>StructureDefinition: QICore-Device - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/device-qicore-qicore-device"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="administration.html">Administrative</a></li>        <li><a href="device.html">Device</a></li>        <li><a href="device-qicore.html">Profile</a></li>        <li><b>QICore-Device</b></li>        <!-- device-qicore-qicore-device.html / profile:Device/device-qicore/device-qicore-qicore-device / QICore-Device-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="device-qicore-qicore-device.html">Content</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="device-qicore-qicore-device-mappings.html">Mappings</a></li><li><a href="device-qicore-qicore-device.questionnaire.html">HTML Form</a></li><li><a href="device-qicore-qicore-device.profile.xml.html">XML</a></li><li><a href="device-qicore-qicore-device.profile.json.html">JSON</a></li></ul>
+
+<h4>StructureDefinition: QICore-Device - Detailed Descriptions</h4>
+
+<p>Definitions for the device-qicore-qicore-device Profile.</p>
+
+<table class="dict">
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.QICore-Device"> </a><b>Device(QICore-Device)</b></td></tr>
+  <tr><td>Definition</td><td><p>This resource identifies an instance of a manufactured thing that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.  Medical devices includes durable (reusable) medical equipment, implantable devices, as well as disposable equipment used for diagnostic, treatment, and research for healthcare and public health.  Non medical devices may includes things such as a machine, a cellphone, a computer, an application, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="device.html#Device">Device</a></td></tr>
+  <tr><td>Requirements</td><td><p>Allows institutions to track their devices.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.id"> </a><b>Device.id</b></td></tr>
+  <tr><td>Definition</td><td><p>The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.meta"> </a><b>Device.meta</b></td></tr>
+  <tr><td>Definition</td><td><p>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="resource.html#Meta">Meta</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.implicitRules"> </a><b>Device.implicitRules</b></td></tr>
+  <tr><td>Definition</td><td><p>A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.language"> </a><b>Device.language</b></td></tr>
+  <tr><td>Definition</td><td><p>The base language in which the resource is written.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>A human language<br/>The codes SHALL be taken from  <a href="http://tools.ietf.org/html/bcp47">http://tools.ietf.org/html/bcp47</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.text"> </a><b>Device.text</b></td></tr>
+  <tr><td>Definition</td><td><p>A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: dom-1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="narrative.html#Narrative">Narrative</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>narrative, html, xhtml, display</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.contained"> </a><b>Device.contained</b></td></tr>
+  <tr><td>Definition</td><td><p>These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="resource.html#Resource">Resource</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>inline resources, anonymous resources, contained resources</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.extension"> </a><b>Device.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.modifierExtension"> </a><b>Device.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.identifier"> </a><b>Device.identifier</b></td></tr>
+  <tr><td>Definition</td><td><p>Unique instance identifiers assigned to a device by organizations like manufacturers or owners .   If the identifier identifies the type of device, Device.type should be used.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.type"> </a><b>Device.type</b></td></tr>
+  <tr><td>Definition</td><td><p>Code or identifier to identify a kind of device.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>Defines the nature of the device and the kind of functionality/services/behavior that may be expected from it<br/>The codes SHOULD be taken from  <a href="https://www.gmdnagency.org/Info.aspx?pageid=1091">https://www.gmdnagency.org/Info.aspx?pageid=1091</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.note"> </a><b>Device.note</b></td></tr>
+  <tr><td>Definition</td><td><p>Descriptive information, usage information or implantation information that is not captured in an existing element.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Annotation">Annotation</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.status"> </a><b>Device.status</b></td></tr>
+  <tr><td>Definition</td><td><p>Status of the Device availability.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The availability status of the device<br/>The codes SHALL be taken from <a href="valueset-devicestatus.html">DeviceStatus</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.manufacturer"> </a><b>Device.manufacturer</b></td></tr>
+  <tr><td>Definition</td><td><p>A name of the manufacturer.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.model"> </a><b>Device.model</b></td></tr>
+  <tr><td>Definition</td><td><p>The &quot;model&quot; - an identifier assigned by the manufacturer to identify the product by its type. This number is shared by the all devices sold as the same type.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.version"> </a><b>Device.version</b></td></tr>
+  <tr><td>Definition</td><td><p>The version of the device, if the device has multiple releases under the same model, or if the device is software or carries firmware.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.manufactureDate"> </a><b>Device.manufactureDate</b></td></tr>
+  <tr><td>Definition</td><td><p>The Date and time when the device was manufactured.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.expiry"> </a><b>Device.expiry</b></td></tr>
+  <tr><td>Definition</td><td><p>The date and time beyond which this device is no longer valid or should not be used (if applicable).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.udi"> </a><b>Device.udi</b></td></tr>
+  <tr><td>Definition</td><td><p>United States Food and Drug Administration mandated Unique Device Identifier (UDI). Use the human readable information (the content that the user sees, which is sometimes different to the exact syntax represented in the barcode)  - see http://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/default.htm.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.lotNumber"> </a><b>Device.lotNumber</b></td></tr>
+  <tr><td>Definition</td><td><p>Lot number assigned by the manufacturer.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.owner"> </a><b>Device.owner</b></td></tr>
+  <tr><td>Definition</td><td><p>An organization that is responsible for the provision and ongoing maintenance of the device.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/organization-qicore-qicore-organization]])</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.location"> </a><b>Device.location</b></td></tr>
+  <tr><td>Definition</td><td><p>The resource may be found in a literal location (i.e. GPS coordinates), a logical place (i.e. &quot;in/with the patient&quot;), or a coded location.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/location-qicore-qicore-location]])</td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.patient"> </a><b>Device.patient</b></td></tr>
+  <tr><td>Definition</td><td><p>Patient information, if the resource is affixed to a person.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/patient-qicore-qicore-patient]])</td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.contact"> </a><b>Device.contact</b></td></tr>
+  <tr><td>Definition</td><td><p>Contact details for an organization or a particular human that is responsible for the device.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#ContactPoint">ContactPoint</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="device-qicore-qicore-device.Device.url"> </a><b>Device.url</b></td></tr>
+  <tr><td>Definition</td><td><p>A network address on which the device may be contacted directly.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+</table>
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:36-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fdevice-qicore-qicore-device&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fdevice-qicore-qicore-device">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

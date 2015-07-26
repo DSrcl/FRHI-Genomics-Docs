@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-07-24T17:31:16-04:00"/>
+  <publisher value="Health Level Seven International (FHIR Infrastructure)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A container for a collection of resources."/>
+    </extension>
+    <linkId value="Bundle"/>
+    <title value="Contains a collection of resources"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Bundle.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="Bundle.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="Bundle.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Indicates the purpose of this bundle- how it was intended to be used."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Bundle.type"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.type.value"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="If a set of search matches, this is the total number of matches for the search (as opposed to the number of results in this bundle)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="integer"/>
+      </extension>
+      <linkId value="Bundle.total"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.total.value"/>
+        <text value="If search, the total number of matches"/>
+        <type value="integer"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A series of links that provide context to this bundle."/>
+      </extension>
+      <linkId value="Bundle.link"/>
+      <title value="Links related to this Bundle"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Bundle.link.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.link.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="Bundle.link.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="Bundle.link.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A name which details the functional use for this link - see [[http://www.iana.org/assignments/link-relations/link-relations.xhtml]]."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Bundle.link.relation"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.link.relation.value"/>
+          <text value="http://www.iana.org/assignments/link-relations/link-relations.xhtml"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The reference details for the link."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Bundle.link.url"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.link.url.value"/>
+          <text value="Reference details for the link"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only)."/>
+      </extension>
+      <linkId value="Bundle.entry"/>
+      <title value="Entry in the bundle - will have a resource, or information"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Bundle.entry.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.entry.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="Bundle.entry.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="Bundle.entry.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A series of links that provide context to this entry."/>
+        </extension>
+        <linkId value="Bundle.entry.link"/>
+        <title value="Links related to this entry"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The Absolute URL for the resource. This must be provided for all resources. The fullUrl SHALL not disagree with the id in the resource. The fullUrl is a version independent reference to the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Bundle.entry.fullUrl"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.entry.fullUrl.value"/>
+          <text value="Absolute URL for resource (server address, or UUID/OID)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The Resources for the entry."/>
+        </extension>
+        <linkId value="Bundle.entry.resource"/>
+        <text value="A resource in the bundle"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Information about the search process that lead to the creation of this entry."/>
+        </extension>
+        <linkId value="Bundle.entry.search"/>
+        <title value="Search related information"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.search.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.search.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="Bundle.entry.search.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="Bundle.entry.search.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Why this entry is in the result set - whether it&#39;s included as a match or because of an _include requirement."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="Bundle.entry.search.mode"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.search.mode.value"/>
+            <text value="mode"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="When searching, the server&#39;s search ranking score for the entry."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="decimal"/>
+          </extension>
+          <linkId value="Bundle.entry.search.score"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.search.score.value"/>
+            <text value="Search ranking (between 0 and 1)"/>
+            <type value="decimal"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Additional information about how this entry should be processed as part of a transaction."/>
+        </extension>
+        <linkId value="Bundle.entry.request"/>
+        <title value="Transaction Related Information"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.request.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.request.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="Bundle.entry.request.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="Bundle.entry.request.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The HTTP verb for this entry in either a update history, or a transaction/ transaction response."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="Bundle.entry.request.method"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.request.method.value"/>
+            <text value="method"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The URL for this entry, relative to the root (the address to which the request is posted)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="uri"/>
+          </extension>
+          <linkId value="Bundle.entry.request.url"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.request.url.value"/>
+            <text value="URL for HTTP equivalent of this entry"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="If the ETag values match, return a 304 Not modified status. See the read/vread interaction documentation."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.request.ifNoneMatch"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.request.ifNoneMatch.value"/>
+            <text value="For managing cache currency"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Only perform the operation if the Etag value matches. For more information, see the API section &quot;Managing Resource Contention&quot;."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.request.ifMatch"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.request.ifMatch.value"/>
+            <text value="For managing update contention"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Only perform the operation if the last updated date matches. For more information, see the API section &quot;Managing Resource Contention&quot;."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="instant"/>
+          </extension>
+          <linkId value="Bundle.entry.request.ifModifiedSince"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.request.ifModifiedSince.value"/>
+            <text value="For managing update contention"/>
+            <type value="instant"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Instruct the server not to perform the create if a specified resource already exists. For further information, see &quot;Conditional Create&quot;. This is just the query portion of the URL - what follows the &quot;?&quot; (not including the &quot;?&quot;)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.request.ifNoneExist"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.request.ifNoneExist.value"/>
+            <text value="For conditional creates"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Additional information about how this entry should be processed as part of a transaction."/>
+        </extension>
+        <linkId value="Bundle.entry.response"/>
+        <title value="Transaction Related Information"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.response.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.response.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="Bundle.entry.response.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="Bundle.entry.response.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The status code returned by processing this entry."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.response.status"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.response.status.value"/>
+            <text value="Status return code for entry"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The location header created by processing this operation."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="uri"/>
+          </extension>
+          <linkId value="Bundle.entry.response.location"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.response.location.value"/>
+            <text value="The location, if the operation returns a location"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The etag for the resource, it the operation for the entry produced a versioned resource."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.response.etag"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.response.etag.value"/>
+            <text value="The etag for the resource (if relevant)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The date/time that the resource was modified on the server."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="instant"/>
+          </extension>
+          <linkId value="Bundle.entry.response.lastModified"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.response.lastModified.value"/>
+            <text value="Server&#39;s date time modified"/>
+            <type value="instant"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Digital Signature - base64 encoded. XML DigSIg or a JWT."/>
+      </extension>
+      <linkId value="Bundle.signature"/>
+      <text value="Digital Signature"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+  </group>
+</Questionnaire>

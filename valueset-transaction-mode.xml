@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="transaction-mode"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>TransactionMode</h2>
+      <p>A code that indicates how transactions are supported</p>
+      <p>This value set has an inline code system http://hl7.org/fhir/transaction-mode, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>not-supported
+            <a name="not-supported"> </a>
+          </td>
+          <td>None</td>
+          <td>Neither Batch or Transaction supported</td>
+        </tr>
+        <tr>
+          <td>batch
+            <a name="batch"> </a>
+          </td>
+          <td>Batches supported</td>
+          <td>Batches supported</td>
+        </tr>
+        <tr>
+          <td>transaction
+            <a name="transaction"> </a>
+          </td>
+          <td>Transactions Supported</td>
+          <td>Transactions Supported</td>
+        </tr>
+        <tr>
+          <td>both
+            <a name="both"> </a>
+          </td>
+          <td>Batches &amp; Transactions</td>
+          <td>Both Batches and Transactions Supported</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/transaction-mode"/>
+  <version value="0.5.0"/>
+  <name value="TransactionMode"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="A code that indicates how transactions are supported"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.0"/>
+    </extension>
+    <system value="http://hl7.org/fhir/transaction-mode"/>
+    <version value="0.5.0"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="not-supported"/>
+      <display value="None"/>
+      <definition value="Neither Batch or Transaction supported"/>
+    </concept>
+    <concept>
+      <code value="batch"/>
+      <display value="Batches supported"/>
+      <definition value="Batches supported"/>
+    </concept>
+    <concept>
+      <code value="transaction"/>
+      <display value="Transactions Supported"/>
+      <definition value="Transactions Supported"/>
+    </concept>
+    <concept>
+      <code value="both"/>
+      <display value="Batches &amp; Transactions"/>
+      <definition value="Both Batches and Transactions Supported"/>
+    </concept>
+  </codeSystem>
+</ValueSet>

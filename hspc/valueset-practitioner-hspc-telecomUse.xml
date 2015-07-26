@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="practitioner-hspc-telecomUse"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>HSPC Telecom Use</h2>
+      <p>A set of values that describe the type of system the telecom value belongs to.</p>
+      <p>This value set has an inline code system Intermountain Health Care HDD, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>492
+            <a name="492"> </a>
+          </td>
+          <td>fax</td>
+          <td>Method of communication which uses telephone lines to send and receive printed documents between facsimile devices.</td>
+        </tr>
+        <tr>
+          <td>526850934
+            <a name="526850934"> </a>
+          </td>
+          <td>Uniform Resource Locator</td>
+          <td>A reference that specifies the location of a resource on a computer network.</td>
+        </tr>
+      </table>
+      <p>In addition, this value set includes codes from other code systems:</p>
+      <ul>
+        <li>Include these codes as defined in 
+          <a href="../v3/AddressUse/index.html">http://hl7.org/fhir/v3/AddressUse</a>
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>EC</td>
+              <td>emergency contact</td>
+              <td>Description: A contact specifically designated to be used for emergencies. This is the first choice in emergencies, independent of any other use codes.</td>
+            </tr>
+            <tr>
+              <td>MC</td>
+              <td>mobile contact</td>
+              <td>Description: A telecommunication device that moves and stays with its owner. May have characteristics of all other use codes, suitable for urgent matters, not the first choice for routine business.</td>
+            </tr>
+            <tr>
+              <td>PG</td>
+              <td>pager</td>
+              <td>Description: A paging device suitable to solicit a callback or to leave a very short message.</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/practitioner-hspc-telecomUse"/>
+  <version value="0.5.0"/>
+  <name value="HSPC Telecom Use"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <description value="A set of values that describe the type of system the telecom value belongs to."/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <system value="Intermountain Health Care HDD"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="492"/>
+      <display value="fax"/>
+      <definition value="Method of communication which uses telephone lines to send and receive printed documents between facsimile devices."/>
+    </concept>
+    <concept>
+      <code value="526850934"/>
+      <display value="Uniform Resource Locator"/>
+      <definition value="A reference that specifies the location of a resource on a computer network."/>
+    </concept>
+  </codeSystem>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/AddressUse"/>
+      <concept>
+        <code value="EC"/>
+        <display value="emergency contact"/>
+      </concept>
+      <concept>
+        <code value="MC"/>
+        <display value="mobile contact"/>
+      </concept>
+      <concept>
+        <code value="PG"/>
+        <display value="pager"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

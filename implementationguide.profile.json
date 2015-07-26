@@ -1,0 +1,1511 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ImplementationGuide",
+  "meta": {
+    "lastUpdated": "2015-07-24T17:31:16.356-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"formats.html#table\" title=\"Legend for this format\"><img src=\"help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJBSURBVDjLhdKxa5NBGMfx713yvkmbJnaoFiSF4mJTh06Kg4OgiyCCRXCof4YIdXdxFhQVHPo3OFSoUx0FySQttaVKYq2NbdO8ed/L3fM4JG3tYPvAcfBw9+HHPWdUlf/V0tLSqKo+EpEHInJFRIohhDUR+RBCeDM7O7ua55QSkRfVanVufHyckZERrLV0Op2Zra2tmXq9fg+YsmcAdyYnJykUCke9OI6ZmJgghHAZ4KwE3ntPs9mkVCohIjQaDWq1GiEEAM5KoHEcY62lVCrRarUoFotUKpUjIL/y/uqXYmV62ph/LSVrr30P4bEFcM4B0Ov1jk547/uAUTs1ceNdZIwB7V/GGHz6+9LXxY96eDiEgHMOY8xJAK8p4grZz5cElwNbwZgyxYu3EFM01lriOCZJEqIoIooiALIsGwA9Y1UcwcWoKNLdpLu9zvbnBWqNBhuvn5EDUmB0EH/1E2TZw5U+YLQovkun+Ytsaw1xCbnCOap334LC7s4Oe/ttvA+ICLmhMXRxDufczUECS37oAuevPwUEVFFp4/eXkXSdYc2IopSepnjtUh5/wg9gfn6+OQBUNaRIUkfDHhraSLoBKqikIF3yHJDLHaAkFOLciVHnyVAVj/S2Ub/XRyQD9aAZKgkaOohvo6ENgykcA07VEFDfQv1uf4W9Y8y30bCPhg4qKZJtMnjTPqBO/vhkZ7h3EJeRslWNQMqgY2jIAIfa/m5sIKSpqpPsGEiz599e3b+GchtD+bSvjQJm2SG6cNj6C+QmaxAek5tyAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"heirarchy\"/> <span title=\"ImplementationGuide : A set of rules or how FHIR is used to solve a particular problem. This resource is used to gather all the parts of an implementation guide into a logical whole, and to publish a computable definition of all the parts.\">ImplementationGuide</span><a name=\"ImplementationGuide\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"domainresource.html\">DomainResource</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">A set of rules about how FHIR is used</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.url : An absolute URL that is used to identify this implementation guide when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this implementation guide is (or will be) published.\">url</span><a name=\"ImplementationGuide.url\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Literal URL used to reference this Implementation Guide</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.version : The identifier that is used to identify this version of the Implementation Guide when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Implementation Guide author manually.\">version</span><a name=\"ImplementationGuide.version\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Logical id for this version of the Implementation Guide</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.name : A free text natural language name identifying the Implementation Guide.\">name</span><a name=\"ImplementationGuide.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Informal name for this Implementation Guide</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAOZ/APrkusOiYvvfqbiXWaV2G+jGhdq1b8GgYf3v1frw3vTUlsWkZNewbcSjY/DQkad4Hb6dXv3u0f3v1ObEgfPTlerJiP3w1v79+e7OkPrfrfnjuNOtZPrpydaxa+/YrvvdpP779ZxvFPvnwKKBQaFyF/369M2vdaqHRPz58/HNh/vowufFhfroxO3OkPrluv779tK0e6JzGProwvrow9m4eOnIifPTlPDPkP78+Naxaf3v0/zowfXRi+bFhLWUVv379/rnwPvszv3rye3LiPvnv+3MjPDasKiIS/789/3x2f747eXDg+7Mifvu0tu7f+/QkfDTnPXWmPrjsvrjtPbPgrqZW+/QlPz48K2EMv36866OUPvowat8Ivvgq/Pbrvzgq/PguvrgrqN0Gda2evfYm9+7d/rpw9q6e/LSku/Rl/XVl/LSlfrkt+zVqe7Wqv3x1/bNffbOf59wFdS6if3u0vrqyP3owPvepfXQivDQkO/PkKh9K7STVf779P///////yH5BAEAAH8ALAAAAAAQABAAAAfNgH+Cg36FfoOIhH4JBxBghYl/hQkNAV0IVT5GkJKLCwtQaSsSdx9aR26Gcwt2IkQaNRI6dBERIzCFDSgWSW8WCDkbBnoOQ3uFARc/JQJfCAZlT0x4ZFyFBxdNQT9ZCBNWKQoKUQ+FEDgcdTIAV14YDmg2CgSFA0hmQC5TLE4VRTdrKJAoxOeFCzZSwsw4U6BCizwUQhQyEaAPiAwCVNCY0FCNnA6GPAwYoETIFgY9loiRA4dToTYnsOxg8CBGHE6ICvEYQ4AKzkidfgoKBAA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.useContext : The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of implementation guides. The most common use of this element is to represent the country / jurisdication for which this implementation guide was defined.\">useContext</span><a name=\"ImplementationGuide.useContext\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">The implementation guide is intended to support these contexts<br/><a href=\"valueset-use-context.html\" title=\"Indicates the countries, regions, disciplines and other aspects of use this artifact is targeted for use within\">Context of Use ValueSet</a> (<a href=\"terminologies.html#extensible\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the valueset does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">Extensible</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.publisher : The name of the individual or organization that published the implementation guide.\">publisher</span><a name=\"ImplementationGuide.publisher\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Name of the publisher (Organization or individual)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.contact : Contacts to assist a user in finding and communicating with the publisher.\">contact</span><a name=\"ImplementationGuide.contact\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Contact details of the publisher</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3QwQkAMAwDsezq/WdoskKgFAoy6HkfV5LamJ1tc7MHAAD+5QQAAOCZBkurQFbnaRSlAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.contact.name : The name of an individual to contact regarding the implementation guide.\">name</span><a name=\"ImplementationGuide.contact.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Name of a individual to contact</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAOZ/APrkusOiYvvfqbiXWaV2G+jGhdq1b8GgYf3v1frw3vTUlsWkZNewbcSjY/DQkad4Hb6dXv3u0f3v1ObEgfPTlerJiP3w1v79+e7OkPrfrfnjuNOtZPrpydaxa+/YrvvdpP779ZxvFPvnwKKBQaFyF/369M2vdaqHRPz58/HNh/vowufFhfroxO3OkPrluv779tK0e6JzGProwvrow9m4eOnIifPTlPDPkP78+Naxaf3v0/zowfXRi+bFhLWUVv379/rnwPvszv3rye3LiPvnv+3MjPDasKiIS/789/3x2f747eXDg+7Mifvu0tu7f+/QkfDTnPXWmPrjsvrjtPbPgrqZW+/QlPz48K2EMv36866OUPvowat8Ivvgq/Pbrvzgq/PguvrgrqN0Gda2evfYm9+7d/rpw9q6e/LSku/Rl/XVl/LSlfrkt+zVqe7Wqv3x1/bNffbOf59wFdS6if3u0vrqyP3owPvepfXQivDQkO/PkKh9K7STVf779P///////yH5BAEAAH8ALAAAAAAQABAAAAfNgH+Cg36FfoOIhH4JBxBghYl/hQkNAV0IVT5GkJKLCwtQaSsSdx9aR26Gcwt2IkQaNRI6dBERIzCFDSgWSW8WCDkbBnoOQ3uFARc/JQJfCAZlT0x4ZFyFBxdNQT9ZCBNWKQoKUQ+FEDgcdTIAV14YDmg2CgSFA0hmQC5TLE4VRTdrKJAoxOeFCzZSwsw4U6BCizwUQhQyEaAPiAwCVNCY0FCNnA6GPAwYoETIFgY9loiRA4dToTYnsOxg8CBGHE6ICvEYQ4AKzkidfgoKBAA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.contact.telecom : Contact details for individual (if a name was provided) or the publisher.\">telecom</span><a name=\"ImplementationGuide.contact.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#ContactPoint\">ContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Contact details for individual or publisher</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.description : A free text natural language description of the Implementation Guide and its use.\">description</span><a name=\"ImplementationGuide.description\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Natural language description of the Implementation Guide</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.copyright : A copyright statement relating to the implementation guide and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the details of the constraints and mappings.\">copyright</span><a name=\"ImplementationGuide.copyright\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Use and/or Publishing restrictions</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAOZ/APrkusOiYvvfqbiXWaV2G+jGhdq1b8GgYf3v1frw3vTUlsWkZNewbcSjY/DQkad4Hb6dXv3u0f3v1ObEgfPTlerJiP3w1v79+e7OkPrfrfnjuNOtZPrpydaxa+/YrvvdpP779ZxvFPvnwKKBQaFyF/369M2vdaqHRPz58/HNh/vowufFhfroxO3OkPrluv779tK0e6JzGProwvrow9m4eOnIifPTlPDPkP78+Naxaf3v0/zowfXRi+bFhLWUVv379/rnwPvszv3rye3LiPvnv+3MjPDasKiIS/789/3x2f747eXDg+7Mifvu0tu7f+/QkfDTnPXWmPrjsvrjtPbPgrqZW+/QlPz48K2EMv36866OUPvowat8Ivvgq/Pbrvzgq/PguvrgrqN0Gda2evfYm9+7d/rpw9q6e/LSku/Rl/XVl/LSlfrkt+zVqe7Wqv3x1/bNffbOf59wFdS6if3u0vrqyP3owPvepfXQivDQkO/PkKh9K7STVf779P///////yH5BAEAAH8ALAAAAAAQABAAAAfNgH+Cg36FfoOIhH4JBxBghYl/hQkNAV0IVT5GkJKLCwtQaSsSdx9aR26Gcwt2IkQaNRI6dBERIzCFDSgWSW8WCDkbBnoOQ3uFARc/JQJfCAZlT0x4ZFyFBxdNQT9ZCBNWKQoKUQ+FEDgcdTIAV14YDmg2CgSFA0hmQC5TLE4VRTdrKJAoxOeFCzZSwsw4U6BCizwUQhQyEaAPiAwCVNCY0FCNnA6GPAwYoETIFgY9loiRA4dToTYnsOxg8CBGHE6ICvEYQ4AKzkidfgoKBAA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.code : A set of terms from external terminologies that may be used to assist with indexing and searching of templates.\">code</span><a name=\"ImplementationGuide.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Assist with indexing and finding<br/><a href=\"valueset-ig-code.html\" title=\"Codes for the meaning of the defined structure (SNOMED CT and LOINC codes, as an example)\">Structure Definition Codes</a> (<a href=\"terminologies.html#example\" title=\"Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included\">Example</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.status : The status of the Implementation Guide.\">status</span><a name=\"ImplementationGuide.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is a modifier element\">?! </span><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">draft | active | retired<br/><a href=\"valueset-conformance-resource-status.html\" title=\"The lifecycle status of a Value Set or Concept Map\">ConformanceResourceStatus</a> (<a href=\"terminologies.html#required\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set\">Required</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.experimental : This Implementation Guide was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.\">experimental</span><a name=\"ImplementationGuide.experimental\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">If for testing purposes, not real usage</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.date : The date that this version of the Implementation Guide was published.\">date</span><a name=\"ImplementationGuide.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Date for this version of the Implementation Guide</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.fhirVersion : The version of the FHIR specification on which this ImplementationGuide is based - this is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 0.5.0 for this version.\">fhirVersion</span><a name=\"ImplementationGuide.fhirVersion\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#id\">id</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">FHIR Version this Implementation Guide targets</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.page : An html page that is published with the Implementation Guide.\">page</span><a name=\"ImplementationGuide.page\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Page in the Implementation Guide</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3QwQkAMAwDsezq/WdoskKgFAoy6HkfV5LamJ1tc7MHAAD+5QQAAOCZBkurQFbnaRSlAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.page.source : A URL that identifies the html page.\">source</span><a name=\"ImplementationGuide.page.source\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Source for the page</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.page.purpose : A code that specifies how the page is used in the IG.\">purpose</span><a name=\"ImplementationGuide.page.purpose\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">home | intro | content | security | appendix<br/><a href=\"valueset-page-purpose.html\" title=\"Codes that specifies how the page is used in the IG\">PagePurpose</a> (<a href=\"terminologies.html#required\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set\">Required</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package : A logical set of resources that is a section in the implementation Guide.\">package</span><a name=\"ImplementationGuide.package\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">A section in the IG</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3QwQkAMAwDsezq/WdoskKgFAoy6HkfV5LamJ1tc7MHAAD+5QQAAOCZBkurQFbnaRSlAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package.name : A human readable name that introduces the item.\">name</span><a name=\"ImplementationGuide.package.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Title of the item</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3QwQkAMAwDsezq/WdoskKgFAoy6HkfV5LamJ1tc7MHAAD+5QQAAOCZBkurQFbnaRSlAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package.item : An item in the set of resources that is a section in the implementation Guide.\">item</span><a name=\"ImplementationGuide.package.item\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">An item in the section / package</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3QoREAMAwDsezq/WdoskJIWyDfCT5xJamN2dk2P/UAAMA7TgAAAK5pTFFALJuuCkgAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package.item.name : A human readable name that introduces the package.\">name</span><a name=\"ImplementationGuide.package.item.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Title of the package</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3QoREAMAwDsezq/WdoskJIWyDfCT5xJamN2dk2P/UAAMA7TgAAAK5pTFFALJuuCkgAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAFxJREFUOE/NjEEOACEIA/0o/38GGw+agoXYeNnDJDCUDnd/gkoFKhWozJiZI3gLwY6rAgxhsPKTPUzycTl8lAryMyMsVQG6TFi6cHULyz8KOjC7OIQKlQpU3uPjAwhX2CCcGsgOAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package.item.content : A reference to a conformance resource that is part of the implementation Guide.\">content</span><a name=\"ImplementationGuide.package.item.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"resourcelist.html\">Any</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">StructureDefinition, ConformanceStatement, ValueSet, DataElement etc</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3QwQkAMAwDsezq/WdoskKgFAoy6HkfV5LamJ1tc7MHAAD+5QQAAOCZBkurQFbnaRSlAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package.item.example : If the item is a structure definition, an example that conforms to the structure definition.\">example</span><a name=\"ImplementationGuide.package.item.example\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">An example (If Item is StructureDefinition)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAM0lEQVR42u3QwQkAIAwDwO6a/WdQVyiKPrzAPUMglaQ6Vka3c7K/6/U+AAD8zAkAAMA1E1bRQCwtE1WUAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package.item.example.name : A human readable name that introduces the example.\">name</span><a name=\"ImplementationGuide.package.item.example.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Title of the example</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAM0lEQVR42u3QwQkAIAwDwO6a/WdQVyiKPrzAPUMglaQ6Vka3c7K/6/U+AAD8zAkAAMA1E1bRQCwtE1WUAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAFxJREFUOE/NjEEOACEIA/0o/38GGw+agoXYeNnDJDCUDnd/gkoFKhWozJiZI3gLwY6rAgxhsPKTPUzycTl8lAryMyMsVQG6TFi6cHULyz8KOjC7OIQKlQpU3uPjAwhX2CCcGsgOAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package.item.example.target : A reference to a resource that is an example for a structure definition.\">target</span><a name=\"ImplementationGuide.package.item.example.target\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"resourcelist.html\">Any</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Example for a StructureDefinition</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMElEQVR42u3QwQkAMAwDsezq/WdoskKgFAoy6HkfV5LamJ1tc7MHAAD+5QQAAOCZBkurQFbnaRSlAAAAAElFTkSuQmCC)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package.item.example.description : Additional text that explains why the example was provided (e.g. what to look for in it).\">description</span><a name=\"ImplementationGuide.package.item.example.description\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Explanatory Text</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKjSURBVDjLrZLdT1JhHMfd6q6L7voT3NrEuQq6aTircWFQ04u4MetCZ4UXGY2J1UoMdCoWxMZWDWtrrqHgylZ54RbkZtkiJ5aAku8MXXqQl3PgAOfb8xwq5LrOzmfnd34vn+d5tqcMQNm/UPZfBMHXx2ZWvI386odLe7jIL7w5EQ68qjhEOFjCmMj+v4LQmCwtCHkSCuSlFOIst4X1KU1mbUqT/kPki57bmL6xEnx55HxRMCqNCTkO6fUBpH5YkFoeBLsyAiHLEFcSQi5B2C38Z3eAPJ8JjcrmigKnLJ7nd8mwDcnFh4h/68T29FVsfW4F4zeCmb0LZqYDO191hOtkZ5sIuY8lioJhKZ9lo2DmbNjx9WDTowW7+YmsGv+9Ov3GijsgxwsNy7iiYOg4L54/nyawQC4lDubYANIRG7g1I9glHVILl5EMNCCXnEfouXSP4JksI+RY5OIfkWXGwf8cQSb6hAz2gV2+BXaxFangBSS/n0PCfxq5xAxCg3sFj2TpPB8Hvz2G3dWneOvqhLnPCIfDgd5uPebfNyAyrUR/t1bMmft7MdR1NiuXyw8UBDYpJ/AMkhsOPLa2wmKxIBqNIhwOw+Px4EG/Hvb7GoSCc2JucnJS7FEqlb2FizRwNMLHFmPvXnQJN/U6+Px+3LvdApVKiebmZlitVuj1ejFWqc7AZNCJEq1WGxMFAVPFtUCPZKhDXZUyGu6IAr+pklOclGNiYgI+nw9erxculws0N2uqjFOBwWDgSu61RCK50tLSwlBBfX39eE1NDa9QKFBXVydCY5qjNSqgvSWCw+RRqVTzZrOZcTqd2263G3a7HW1tbWhvbxdjmqM12kN7SwTl5eX7qqurq2pra5eampqSGo2GI2TUanUj4RSJ4zRHa7SH9v4C8Nrl+GFh7LoAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Element\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.package.page : An html page that is published with the Implementation Guide, as part of the package.\">page</span><a name=\"ImplementationGuide.package.page\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">see <a href=\"#ImplementationGuide.page\" title=\"ImplementationGuide.page\">page</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Page in the Implementation Guide</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAMQfAOvGUf7ztuvPMf/78/fkl/Pbg+u8Rvjqteu2Pf3zxPz36Pz0z+vTmPzurPvuw/npofbjquvNefHVduuyN+uuMu3Oafbgjfnqvf/3zv/3xevPi+vRjP/20/bmsP///////yH5BAEAAB8ALAAAAAAQABAAAAV24CeOZGmepqeqqOgxjBZFa+19r4ftWQUAgqDgltthMshMIJAZ4jYDHsBARSAmFOJvq+g6HIdEFgcYmBWNxoNAsDjGHgBnmV5bCoUDHLBIq9sFEhIdcAYJdYASFRUQhQkLCwkOFwcdEBAXhVabE52ecDahKy0oIQA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.default : A default profile that applies to a particular resource type. Whenever a resource type is referenced in any structure definition (explicitly, or by inheritance from the base specification), and no explicit profile is applied, then this default profile applies.\">default</span><a name=\"ImplementationGuide.default\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"element.html\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Applies when no explicit profile applied</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR42u3QwQkAMAwDsezq/WdIO4XJQwa9DTdJpulv258AAMANIgAAADUPYAVAgAJ//usAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.default.type : The type of resource that this default applies to.\">type</span><a name=\"ImplementationGuide.default.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Type of resource default applies to<br/><a href=\"valueset-resource-types.html\" title=\"One of the resource types defined as part of FHIR\">ResourceType</a> (<a href=\"terminologies.html#required\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set\">Required</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAFxJREFUOE/NjEEOACEIA/0o/38GGw+agoXYeNnDJDCUDnd/gkoFKhWozJiZI3gLwY6rAgxhsPKTPUzycTl8lAryMyMsVQG6TFi6cHULyz8KOjC7OIQKlQpU3uPjAwhX2CCcGsgOAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"heirarchy\"/> <span title=\"ImplementationGuide.default.profile : The profile (StructureDefinition resource) that applies by default.\">profile</span><a name=\"ImplementationGuide.default.profile\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"structuredefinition.html\">StructureDefinition</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">StructureDefinition that applies by default</td></tr>\r\n</table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "url": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide",
+  "name": "ImplementationGuide",
+  "publisher": "Health Level Seven International (FHIR Infrastructure)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/Special/committees/fiwg/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Base StructureDefinition for ImplementationGuide Resource",
+  "status": "draft",
+  "date": "2015-07-24T17:31:16-04:00",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "snapshot": {
+    "element": [
+      {
+        "path": "ImplementationGuide",
+        "short": "A set of rules about how FHIR is used",
+        "definition": "A set of rules or how FHIR is used to solve a particular problem. This resource is used to gather all the parts of an implementation guide into a logical whole, and to publish a computable definition of all the parts.",
+        "requirements": "An implementation guide is able to define default profiles that must apply to any use of a resource, so validation services may need to take one or more implementation guide resources when validating.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "DomainResource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.id",
+        "short": "Logical id of this artifact",
+        "definition": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.meta",
+        "short": "Metadata about the resource",
+        "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.implicitRules",
+        "short": "A set of rules under which this content was created",
+        "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isModifier": true
+      },
+      {
+        "path": "ImplementationGuide.language",
+        "short": "Language of the resource content",
+        "definition": "The base language in which the resource is written.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language",
+          "valueSetUri": "http://tools.ietf.org/html/bcp47"
+        }
+      },
+      {
+        "path": "ImplementationGuide.text",
+        "short": "Text summary of the resource, for human interpretation",
+        "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+        "alias": [
+          "narrative",
+          "html",
+          "xhtml",
+          "display"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Narrative"
+          }
+        ],
+        "condition": [
+          "dom-1"
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Act.text?"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.contained",
+        "short": "Contained, inline Resources",
+        "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+        "alias": [
+          "inline resources",
+          "anonymous resources",
+          "contained resources"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.url",
+        "short": "Literal URL used to reference this Implementation Guide",
+        "definition": "An absolute URL that is used to identify this implementation guide when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this implementation guide is (or will be) published.",
+        "requirements": "This is required to allow hosting Implementation Guides on multiple different servers, and to allow for the editorial process.",
+        "alias": [
+          "url",
+          "authoritative-url",
+          "destination",
+          "identity"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.version",
+        "short": "Logical id for this version of the Implementation Guide",
+        "definition": "The identifier that is used to identify this version of the Implementation Guide when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Implementation Guide author manually.",
+        "requirements": "There may be multiple resource versions of the Implementation Guide that have this same identifier. The resource version id will change for technical reasons, whereas the stated version number needs to be under the author's control.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.name",
+        "short": "Informal name for this Implementation Guide",
+        "definition": "A free text natural language name identifying the Implementation Guide.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.useContext",
+        "short": "The implementation guide is intended to support these contexts",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of implementation guides. The most common use of this element is to represent the country / jurisdication for which this implementation guide was defined.",
+        "requirements": "Assist in searching for appropriate implementation guide.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "extensible",
+          "description": "Indicates the countries, regions, disciplines and other aspects of use this artifact is targeted for use within",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/use-context"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.publisher",
+        "short": "Name of the publisher (Organization or individual)",
+        "definition": "The name of the individual or organization that published the implementation guide.",
+        "requirements": "Helps establish the \"authority/credibility\" of the implementation guide.  May also allow for contact.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.contact",
+        "short": "Contact details of the publisher",
+        "definition": "Contacts to assist a user in finding and communicating with the publisher.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.contact.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.contact.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.contact.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.contact.name",
+        "short": "Name of a individual to contact",
+        "definition": "The name of an individual to contact regarding the implementation guide.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.contact.telecom",
+        "short": "Contact details for individual or publisher",
+        "definition": "Contact details for individual (if a name was provided) or the publisher.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.description",
+        "short": "Natural language description of the Implementation Guide",
+        "definition": "A free text natural language description of the Implementation Guide and its use.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.copyright",
+        "short": "Use and/or Publishing restrictions",
+        "definition": "A copyright statement relating to the implementation guide and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the details of the constraints and mappings.",
+        "alias": [
+          "License",
+          "Restrictions"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.code",
+        "short": "Assist with indexing and finding",
+        "definition": "A set of terms from external terminologies that may be used to assist with indexing and searching of templates.",
+        "requirements": "Assist in searching for appropriate ImplementationGuides.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "example",
+          "description": "Codes for the meaning of the defined structure (SNOMED CT and LOINC codes, as an example)",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/ig-code"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.status",
+        "short": "draft | active | retired",
+        "definition": "The status of the Implementation Guide.",
+        "requirements": "Allows filtering of Implementation Guides that are appropriate for use vs. not.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of a Value Set or Concept Map",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/conformance-resource-status"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.experimental",
+        "short": "If for testing purposes, not real usage",
+        "definition": "This Implementation Guide was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.",
+        "requirements": "Allows filtering of Implementation Guides that are appropriate for use vs. not.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.date",
+        "short": "Date for this version of the Implementation Guide",
+        "definition": "The date that this version of the Implementation Guide was published.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.fhirVersion",
+        "short": "FHIR Version this Implementation Guide targets",
+        "definition": "The version of the FHIR specification on which this ImplementationGuide is based - this is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 0.5.0 for this version.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.page",
+        "name": "page",
+        "short": "Page in the Implementation Guide",
+        "definition": "An html page that is published with the Implementation Guide.",
+        "requirements": "Added to support using the ImplementationGuide resource to drive publication of the IG, and so that tools that work with the IG contents are aware of the html pages that are in the guide.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.page.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.page.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.page.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.page.source",
+        "short": "Source for the page",
+        "definition": "A URL that identifies the html page.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.page.purpose",
+        "short": "home | intro | content | security | appendix",
+        "definition": "A code that specifies how the page is used in the IG.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Codes that specifies how the page is used in the IG",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/page-purpose"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.package",
+        "short": "A section in the IG",
+        "definition": "A logical set of resources that is a section in the implementation Guide.",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.name",
+        "short": "Title of the item",
+        "definition": "A human readable name that introduces the item.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item",
+        "short": "An item in the section / package",
+        "definition": "An item in the set of resources that is a section in the implementation Guide.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.name",
+        "short": "Title of the package",
+        "definition": "A human readable name that introduces the package.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.content",
+        "short": "StructureDefinition, ConformanceStatement, ValueSet, DataElement etc",
+        "definition": "A reference to a conformance resource that is part of the implementation Guide.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example",
+        "short": "An example (If Item is StructureDefinition)",
+        "definition": "If the item is a structure definition, an example that conforms to the structure definition.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example.name",
+        "short": "Title of the example",
+        "definition": "A human readable name that introduces the example.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example.target",
+        "short": "Example for a StructureDefinition",
+        "definition": "A reference to a resource that is an example for a structure definition.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example.description",
+        "short": "Explanatory Text",
+        "definition": "Additional text that explains why the example was provided (e.g. what to look for in it).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.page",
+        "short": "Page in the Implementation Guide",
+        "definition": "An html page that is published with the Implementation Guide, as part of the package.",
+        "requirements": "Added to support using the ImplementationGuide resource to drive publication of the IG, and so that tools that work with the IG contents are aware of the html pages that are in the guide.",
+        "min": 0,
+        "max": "*",
+        "nameReference": "page"
+      },
+      {
+        "path": "ImplementationGuide.default",
+        "short": "Applies when no explicit profile applied",
+        "definition": "A default profile that applies to a particular resource type. Whenever a resource type is referenced in any structure definition (explicitly, or by inheritance from the base specification), and no explicit profile is applied, then this default profile applies.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.default.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.default.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.default.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.default.type",
+        "short": "Type of resource default applies to",
+        "definition": "The type of resource that this default applies to.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "One of the resource types defined as part of FHIR",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/resource-types"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.default.profile",
+        "short": "StructureDefinition that applies by default",
+        "definition": "The profile (StructureDefinition resource) that applies by default.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "ImplementationGuide",
+        "short": "A set of rules about how FHIR is used",
+        "definition": "A set of rules or how FHIR is used to solve a particular problem. This resource is used to gather all the parts of an implementation guide into a logical whole, and to publish a computable definition of all the parts.",
+        "requirements": "An implementation guide is able to define default profiles that must apply to any use of a resource, so validation services may need to take one or more implementation guide resources when validating.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "DomainResource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.url",
+        "short": "Literal URL used to reference this Implementation Guide",
+        "definition": "An absolute URL that is used to identify this implementation guide when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this implementation guide is (or will be) published.",
+        "requirements": "This is required to allow hosting Implementation Guides on multiple different servers, and to allow for the editorial process.",
+        "alias": [
+          "url",
+          "authoritative-url",
+          "destination",
+          "identity"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.version",
+        "short": "Logical id for this version of the Implementation Guide",
+        "definition": "The identifier that is used to identify this version of the Implementation Guide when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Implementation Guide author manually.",
+        "requirements": "There may be multiple resource versions of the Implementation Guide that have this same identifier. The resource version id will change for technical reasons, whereas the stated version number needs to be under the author's control.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.name",
+        "short": "Informal name for this Implementation Guide",
+        "definition": "A free text natural language name identifying the Implementation Guide.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.useContext",
+        "short": "The implementation guide is intended to support these contexts",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of implementation guides. The most common use of this element is to represent the country / jurisdication for which this implementation guide was defined.",
+        "requirements": "Assist in searching for appropriate implementation guide.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "extensible",
+          "description": "Indicates the countries, regions, disciplines and other aspects of use this artifact is targeted for use within",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/use-context"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.publisher",
+        "short": "Name of the publisher (Organization or individual)",
+        "definition": "The name of the individual or organization that published the implementation guide.",
+        "requirements": "Helps establish the \"authority/credibility\" of the implementation guide.  May also allow for contact.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.contact",
+        "short": "Contact details of the publisher",
+        "definition": "Contacts to assist a user in finding and communicating with the publisher.",
+        "min": 0,
+        "max": "*",
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.contact.name",
+        "short": "Name of a individual to contact",
+        "definition": "The name of an individual to contact regarding the implementation guide.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.contact.telecom",
+        "short": "Contact details for individual or publisher",
+        "definition": "Contact details for individual (if a name was provided) or the publisher.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.description",
+        "short": "Natural language description of the Implementation Guide",
+        "definition": "A free text natural language description of the Implementation Guide and its use.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.copyright",
+        "short": "Use and/or Publishing restrictions",
+        "definition": "A copyright statement relating to the implementation guide and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the details of the constraints and mappings.",
+        "alias": [
+          "License",
+          "Restrictions"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.code",
+        "short": "Assist with indexing and finding",
+        "definition": "A set of terms from external terminologies that may be used to assist with indexing and searching of templates.",
+        "requirements": "Assist in searching for appropriate ImplementationGuides.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "example",
+          "description": "Codes for the meaning of the defined structure (SNOMED CT and LOINC codes, as an example)",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/ig-code"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.status",
+        "short": "draft | active | retired",
+        "definition": "The status of the Implementation Guide.",
+        "requirements": "Allows filtering of Implementation Guides that are appropriate for use vs. not.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of a Value Set or Concept Map",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/conformance-resource-status"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.experimental",
+        "short": "If for testing purposes, not real usage",
+        "definition": "This Implementation Guide was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.",
+        "requirements": "Allows filtering of Implementation Guides that are appropriate for use vs. not.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.date",
+        "short": "Date for this version of the Implementation Guide",
+        "definition": "The date that this version of the Implementation Guide was published.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.fhirVersion",
+        "short": "FHIR Version this Implementation Guide targets",
+        "definition": "The version of the FHIR specification on which this ImplementationGuide is based - this is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 0.5.0 for this version.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ImplementationGuide.page",
+        "name": "page",
+        "short": "Page in the Implementation Guide",
+        "definition": "An html page that is published with the Implementation Guide.",
+        "requirements": "Added to support using the ImplementationGuide resource to drive publication of the IG, and so that tools that work with the IG contents are aware of the html pages that are in the guide.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "path": "ImplementationGuide.page.source",
+        "short": "Source for the page",
+        "definition": "A URL that identifies the html page.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.page.purpose",
+        "short": "home | intro | content | security | appendix",
+        "definition": "A code that specifies how the page is used in the IG.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Codes that specifies how the page is used in the IG",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/page-purpose"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.package",
+        "short": "A section in the IG",
+        "definition": "A logical set of resources that is a section in the implementation Guide.",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "path": "ImplementationGuide.package.name",
+        "short": "Title of the item",
+        "definition": "A human readable name that introduces the item.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item",
+        "short": "An item in the section / package",
+        "definition": "An item in the set of resources that is a section in the implementation Guide.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "path": "ImplementationGuide.package.item.name",
+        "short": "Title of the package",
+        "definition": "A human readable name that introduces the package.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.content",
+        "short": "StructureDefinition, ConformanceStatement, ValueSet, DataElement etc",
+        "definition": "A reference to a conformance resource that is part of the implementation Guide.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example",
+        "short": "An example (If Item is StructureDefinition)",
+        "definition": "If the item is a structure definition, an example that conforms to the structure definition.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "path": "ImplementationGuide.package.item.example.name",
+        "short": "Title of the example",
+        "definition": "A human readable name that introduces the example.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example.target",
+        "short": "Example for a StructureDefinition",
+        "definition": "A reference to a resource that is an example for a structure definition.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.item.example.description",
+        "short": "Explanatory Text",
+        "definition": "Additional text that explains why the example was provided (e.g. what to look for in it).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ImplementationGuide.package.page",
+        "short": "Page in the Implementation Guide",
+        "definition": "An html page that is published with the Implementation Guide, as part of the package.",
+        "requirements": "Added to support using the ImplementationGuide resource to drive publication of the IG, and so that tools that work with the IG contents are aware of the html pages that are in the guide.",
+        "min": 0,
+        "max": "*",
+        "nameReference": "page"
+      },
+      {
+        "path": "ImplementationGuide.default",
+        "short": "Applies when no explicit profile applied",
+        "definition": "A default profile that applies to a particular resource type. Whenever a resource type is referenced in any structure definition (explicitly, or by inheritance from the base specification), and no explicit profile is applied, then this default profile applies.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "path": "ImplementationGuide.default.type",
+        "short": "Type of resource default applies to",
+        "definition": "The type of resource that this default applies to.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "One of the resource types defined as part of FHIR",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/resource-types"
+          }
+        }
+      },
+      {
+        "path": "ImplementationGuide.default.profile",
+        "short": "StructureDefinition that applies by default",
+        "definition": "The profile (StructureDefinition resource) that applies by default.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

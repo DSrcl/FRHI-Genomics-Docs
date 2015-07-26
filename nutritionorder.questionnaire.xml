@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <name value="Type options for NutritionOrder.enteralFormula.administration.rate[x]"/>
+      <description value="Type options for NutritionOrder.enteralFormula.administration.rate[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:c8be78fb-30a5-4bac-9e8a-3298bb3a5dd5"/>
+        <timestamp value="2015-07-24T17:34:10-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Quantity"/>
+          <display value="Quantity"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Ratio"/>
+          <display value="Ratio"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-07-24T17:31:16-04:00"/>
+  <publisher value="Health Level Seven International (Orders and Observations)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A request to supply a diet, formula feeding (enteral) or oral nutritional supplement to a patient/resident."/>
+    </extension>
+    <linkId value="NutritionOrder"/>
+    <title value="A request for a diet, formula or nutritional supplement"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="NutritionOrder.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="NutritionOrder.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="NutritionOrder.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="NutritionOrder.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="NutritionOrder.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="NutritionOrder.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="NutritionOrder.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      </extension>
+      <linkId value="NutritionOrder.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      </extension>
+      <linkId value="NutritionOrder.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      </extension>
+      <linkId value="NutritionOrder.extension"/>
+      <text value="Additional Content defined by implementations"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      </extension>
+      <linkId value="NutritionOrder.modifierExtension"/>
+      <text value="Extensions that cannot be ignored"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The person (patient) who needs the nutrition order for an oral diet, nutritional supplement and/or enteral or formula feeding."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="NutritionOrder.patient"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="NutritionOrder.patient.value"/>
+        <text value="The person who requires the diet, formula or nutritional supplement"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The practitioner that holds legal responsibility for ordering the diet, nutritional supplement, or formula feedings."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="NutritionOrder.orderer"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="NutritionOrder.orderer.value"/>
+        <text value="Who ordered the diet, formula or nutritional supplement"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Identifiers assigned to this order by the order sender or by the order receiver."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="NutritionOrder.identifier"/>
+      <text value="Identifiers assigned to this order"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="NutritionOrder.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="NutritionOrder.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="NutritionOrder.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="An encounter that provides additional information about the healthcare context in which this request is made."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="NutritionOrder.encounter"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Encounter?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="NutritionOrder.encounter.value"/>
+        <text value="The encounter associated with that this nutrition order"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The date and time that this nutrition order was requested."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="NutritionOrder.dateTime"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="NutritionOrder.dateTime.value"/>
+        <text value="Date and time the nutrition order was requested"/>
+        <type value="dateTime"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The workflow status of the nutrition order/request."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="NutritionOrder.status"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="NutritionOrder.status.value"/>
+        <text value="status"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A link to a record of allergies or Intolerances  which should be included in the nutrition order."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="NutritionOrder.allergyIntolerance"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/AllergyIntolerance?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="NutritionOrder.allergyIntolerance.value"/>
+        <text value="List of the patient&#39;s food and nutrition-related allergies and intolerances"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="This modifier is used to convey order-specific modifiers about the type of food that should be given. These can be derived from patient allergies, intolerances, or preferences such as Halal, Vegan or Kosher. This modifier applies to the entire nutrition order inclusive of the oral diet, nutritional supplements and enteral formula feedings."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="NutritionOrder.foodPreferenceModifier"/>
+      <text value="Order-specific modifier about the type of food that should be given"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="NutritionOrder.foodPreferenceModifier.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="NutritionOrder.foodPreferenceModifier.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="This modifier is used to convey order-specific modifiers about the type of food that should NOT be given. These can be derived from patient allergies, intolerances, or preferences such as No Red Meat, No Soy or No Wheat or  Gluten-Free. This modifier applies to the entire nutrition order inclusive of the oral diet, nutritional supplements and enteral formula feedings."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="NutritionOrder.excludeFoodModifier"/>
+      <text value="Order-specific modifier about the type of food that should not be given"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="NutritionOrder.excludeFoodModifier.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="NutritionOrder.excludeFoodModifier.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Diet given orally in contrast to enteral (tube) feeding."/>
+      </extension>
+      <linkId value="NutritionOrder.oralDiet"/>
+      <title value="Oral diet components"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="NutritionOrder.oralDiet.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.oralDiet.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="NutritionOrder.oralDiet.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="NutritionOrder.oralDiet.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The kind of diet or dietary restriction such as fiber restricted diet or diabetic diet."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="NutritionOrder.oralDiet.type"/>
+        <text value="Type of oral diet or diet restrictions that describe what can be consumed orally"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.oralDiet.type.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.oralDiet.type.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The time period and frequency at which the diet should be given."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Schedule"/>
+        </extension>
+        <linkId value="NutritionOrder.oralDiet.schedule"/>
+        <text value="Scheduled frequency of diet"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.oralDiet.schedule.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.oralDiet.schedule.date"/>
+          <text value="date:"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Patient?"/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Practitioner?"/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/RelatedPerson?"/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.schedule.author"/>
+          <text value="author:"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Class that defines the quantity and type of nutrient modifications required for the oral diet."/>
+        </extension>
+        <linkId value="NutritionOrder.oralDiet.nutrient"/>
+        <title value="Required  nutrient modifications"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.nutrient.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.nutrient.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.nutrient.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.nutrient.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The nutrient that is being modified such as carbohydrate or sodium."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="CodeableConcept"/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.nutrient.modifier"/>
+          <text value="Type of nutrient that is being modified"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.nutrient.modifier.coding"/>
+            <text value="code:"/>
+            <type value="open-choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.nutrient.modifier.text"/>
+            <text value="text:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The quantity of the specified nutrient to include in diet."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Quantity"/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.nutrient.amount"/>
+          <text value="Quantity of the specified nutrient"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.nutrient.amount.comparator"/>
+            <text value="comp:"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.nutrient.amount.value"/>
+            <text value="value:"/>
+            <type value="decimal"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.nutrient.amount.units"/>
+            <text value="units:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.nutrient.amount.code"/>
+            <text value="coded units:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.nutrient.amount.system"/>
+            <text value="units system:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Class that describes any texture modifications required for the patient to safely consume various types of solid foods."/>
+        </extension>
+        <linkId value="NutritionOrder.oralDiet.texture"/>
+        <title value="Required  texture modifications"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.texture.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.texture.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.texture.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.texture.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Any texture modifications (for solid foods) that should be made, e.g. easy to chew, chopped, ground, and pureed."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="CodeableConcept"/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.texture.modifier"/>
+          <text value="Code to indicate how to alter the texture of the foods, e.g., pureed"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.texture.modifier.coding"/>
+            <text value="code:"/>
+            <type value="open-choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.texture.modifier.text"/>
+            <text value="text:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The food type(s) (e.g., meats, all foods)  that the texture modification applies to.  This could be all foods types."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="CodeableConcept"/>
+          </extension>
+          <linkId value="NutritionOrder.oralDiet.texture.foodType"/>
+          <text value="Concepts that are used to identify an entity that is ingested for nutritional purposes"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.texture.foodType.coding"/>
+            <text value="code:"/>
+            <type value="open-choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.oralDiet.texture.foodType.text"/>
+            <text value="text:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The required consistency (e.g., honey-thick, nectar-thick, thin, thickened.) of liquids or fluids served to the patient."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="NutritionOrder.oralDiet.fluidConsistencyType"/>
+        <text value="The required consistency of fluids and liquids provided to the patient"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.oralDiet.fluidConsistencyType.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.oralDiet.fluidConsistencyType.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Free text or additional instructions or information pertaining to the oral diet."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="NutritionOrder.oralDiet.instruction"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.oralDiet.instruction.value"/>
+          <text value="Instructions or additional information about the oral diet"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Oral nutritional products given in order to add further nutritional value to the patient&#39;s diet."/>
+      </extension>
+      <linkId value="NutritionOrder.supplement"/>
+      <title value="Supplement components"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="NutritionOrder.supplement.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.supplement.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="NutritionOrder.supplement.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="NutritionOrder.supplement.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The kind of nutritional supplement product required such as a high protein or pediatric clear liquid supplement."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="NutritionOrder.supplement.type"/>
+        <text value="Type of supplement product requested"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.supplement.type.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.supplement.type.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The product or brand name of the nutritional supplement such as &quot;Acme Protein Shake&quot;."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="NutritionOrder.supplement.productName"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.supplement.productName.value"/>
+          <text value="Product or brand name of the nutritional supplement"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The time period and frequency at which the supplement(s) should be given."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Schedule"/>
+        </extension>
+        <linkId value="NutritionOrder.supplement.schedule"/>
+        <text value="Scheduled frequency of supplement"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.supplement.schedule.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.supplement.schedule.date"/>
+          <text value="date:"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Patient?"/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Practitioner?"/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/RelatedPerson?"/>
+          </extension>
+          <linkId value="NutritionOrder.supplement.schedule.author"/>
+          <text value="author:"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The amount of the nutritional supplement to be given."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Quantity"/>
+        </extension>
+        <linkId value="NutritionOrder.supplement.quantity"/>
+        <text value="Amount of the nutritional supplement"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.supplement.quantity.comparator"/>
+          <text value="comp:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.supplement.quantity.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.supplement.quantity.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.supplement.quantity.code"/>
+          <text value="coded units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.supplement.quantity.system"/>
+          <text value="units system:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Free text or additional instructions or information pertaining to the oral supplement."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="NutritionOrder.supplement.instruction"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.supplement.instruction.value"/>
+          <text value="Instructions or additional information about the oral supplement"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Feeding provided through the gastrointestinal tract via a tube, catheter, or stoma that delivers nutrition distal to the oral cavity."/>
+      </extension>
+      <linkId value="NutritionOrder.enteralFormula"/>
+      <title value="Enteral formula components"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The type of enteral or infant formula such as an adult standard formula with fiber or a soy-based infant formula."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.baseFormulaType"/>
+        <text value="Type of enteral or infant formula"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.baseFormulaType.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.baseFormulaType.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The product or brand name of the enteral or infant formula product such as &quot;ACME Adult Standard Formula&quot;."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.baseFormulaProductName"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.baseFormulaProductName.value"/>
+          <text value="Product or brand name of the enteral or infant formula"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicates the type of modular component such as protein, carbohydrate, fat or fiber to be provided in addition to or mixed with the base formula."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.additiveType"/>
+        <text value="Type of modular component to add to the feeding"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.additiveType.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.additiveType.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The product or brand name of the type of modular component to be added to the formula."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.additiveProductName"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.additiveProductName.value"/>
+          <text value="Product or brand name of the modular additive"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The amount of energy (Calories) that the formula should provide per specified volume, typically per mL or fluid oz.  For example, an infant may require a formula the provides 24 Calories per fluid ounce or an adult may require an enteral formula that provides 1.5 Calorie/mL."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Quantity"/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.caloricDensity"/>
+        <text value="Amount of energy per specified volume that is required"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.caloricDensity.comparator"/>
+          <text value="comp:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.caloricDensity.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.caloricDensity.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.caloricDensity.code"/>
+          <text value="coded units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.caloricDensity.system"/>
+          <text value="units system:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The route or physiological path of administration into the patient &#39;s gastrointestinal  tract for purposes of providing the formula feeding, e.g., nasogastric tube."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.routeofAdministration"/>
+        <text value="How the formula should enter the patient&#39;s gastrointestinal tract"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.routeofAdministration.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.routeofAdministration.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Formula administration instructions as structured data.  This repeating structure allows for changing the administration rate or volume over time for both bolus and continuous feeding.  An example of this would be an instruction to increase the rate of continuous feeding every 2 hours."/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.administration"/>
+        <title value="Formula feeding instruction as structured data"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="NutritionOrder.enteralFormula.administration.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.enteralFormula.administration.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="NutritionOrder.enteralFormula.administration.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="NutritionOrder.enteralFormula.administration.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The time period and frequency at which the enteral formula should be delivered to the patient."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Schedule"/>
+          </extension>
+          <linkId value="NutritionOrder.enteralFormula.administration.schedule"/>
+          <text value="Scheduled frequency of enteral feeding"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.enteralFormula.administration.schedule.text"/>
+            <text value="text:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.enteralFormula.administration.schedule.date"/>
+            <text value="date:"/>
+            <type value="dateTime"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?"/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?"/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?"/>
+            </extension>
+            <linkId value="NutritionOrder.enteralFormula.administration.schedule.author"/>
+            <text value="author:"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The volume of formula to provide to the patient per the specified administration schedule."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Quantity"/>
+          </extension>
+          <linkId value="NutritionOrder.enteralFormula.administration.quantity"/>
+          <text value="The volume of formula to provide"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.enteralFormula.administration.quantity.comparator"/>
+            <text value="comp:"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.enteralFormula.administration.quantity.value"/>
+            <text value="value:"/>
+            <type value="decimal"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.enteralFormula.administration.quantity.units"/>
+            <text value="units:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.enteralFormula.administration.quantity.code"/>
+            <text value="coded units:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="NutritionOrder.enteralFormula.administration.quantity.system"/>
+            <text value="units system:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The rate of administration of formula via a feeding pump, e.g., 60 mL per hour, according to the specified schedule."/>
+          </extension>
+          <linkId value="NutritionOrder.enteralFormula.administration.rate[x]"/>
+          <text value="Speed with which the formula is provided per period of time"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._type"/>
+            <text value="type"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+            <options>
+              <reference value="#vs2"/>
+            </options>
+            <group>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="Quantity"/>
+              </extension>
+              <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Quantity"/>
+              <text value="Quantity"/>
+              <question>
+                <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Quantity.comparator"/>
+                <text value="comp:"/>
+                <type value="choice"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+              <question>
+                <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Quantity.value"/>
+                <text value="value:"/>
+                <type value="decimal"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+              <question>
+                <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Quantity.units"/>
+                <text value="units:"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+              <question>
+                <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Quantity.code"/>
+                <text value="coded units:"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+              <question>
+                <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Quantity.system"/>
+                <text value="units system:"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+            <group>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="Ratio"/>
+              </extension>
+              <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Ratio"/>
+              <text value="Ratio"/>
+              <question>
+                <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Ratio.numerator"/>
+                <text value="numerator:"/>
+                <type value="decimal"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+              <question>
+                <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Ratio.denominator"/>
+                <text value="denominator:"/>
+                <type value="decimal"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+              <question>
+                <linkId value="NutritionOrder.enteralFormula.administration.rate[x]._Ratio.units"/>
+                <text value="units:"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The maximum total quantity of formula that may be administered to a subject over the period of time, e.g., 1440 mL over 24 hours."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Quantity"/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.maxVolumeToDeliver"/>
+        <text value="Upper limit on formula volume per unit of time"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.maxVolumeToDeliver.comparator"/>
+          <text value="comp:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.maxVolumeToDeliver.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.maxVolumeToDeliver.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.maxVolumeToDeliver.code"/>
+          <text value="coded units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.maxVolumeToDeliver.system"/>
+          <text value="units system:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Free text formula administration, feeding instructions or additional instructions or information."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="NutritionOrder.enteralFormula.administrationInstruction"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="NutritionOrder.enteralFormula.administrationInstruction.value"/>
+          <text value="Formula feeding instructions expressed as text"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+  </group>
+</Questionnaire>

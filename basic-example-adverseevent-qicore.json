@@ -1,0 +1,70 @@
+{
+  "resourceType": "Basic",
+  "id": "basic-example-adverseevent-qicore",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: basic-example-adverseevent-qicore</p><p><b>code</b>: ADVEVENT <span>(Details : {http://hl7.org/fhir/other-resource-type code 'ADVEVENT' = 'ADVEVENT)</span></p><p><b>subject</b>: <a>Peter Patient</a></p></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-cause#item",
+          "valueReference": {
+            "reference": "Medication/example"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-cause#certainty",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "415684004",
+                "display": "Suspected (qualifier)"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-cause"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "28926001",
+            "display": "Eruption due to drug (disorder)"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-period",
+      "valuePeriod": {
+        "start": "2014-01-14",
+        "end": "2014-01-15"
+      }
+    }
+  ],
+  "modifierExtension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-didNotOccur",
+      "valueBoolean": false
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/other-resource-type",
+        "code": "ADVEVENT"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Peter Patient"
+  }
+}

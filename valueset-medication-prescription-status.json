@@ -1,0 +1,90 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medication-prescription-status",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>MedicationPrescriptionStatus</h2><p>A code specifying the state of the prescribing event. Describes the lifecycle of the prescription.</p><p>This value set has an inline code system http://hl7.org/fhir/medication-prescription-status, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>active<a name=\"active\"> </a></td><td>Active</td><td>The prescription is 'actionable', but not all actions that are implied by it have occurred yet.</td></tr><tr><td>on-hold<a name=\"on-hold\"> </a></td><td>On Hold</td><td>Actions implied by the prescription have been temporarily halted, but are expected to continue later.  May also be called &quot;suspended&quot;.</td></tr><tr><td>completed<a name=\"completed\"> </a></td><td>Completed</td><td>All actions that are implied by the prescription have occurred (this will rarely be made explicit).</td></tr><tr><td>entered-in-error<a name=\"entered-in-error\"> </a></td><td>Entered In Error</td><td>The prescription was entered in error and therefore nullified.</td></tr><tr><td>stopped<a name=\"stopped\"> </a></td><td>Stopped</td><td>Actions implied by the prescription have been permanently halted, before all of them occurred.</td></tr><tr><td>superseded<a name=\"superseded\"> </a></td><td>Superseded</td><td>The prescription was replaced by a newer one, which encompasses all the information in the previous one.</td></tr><tr><td>draft<a name=\"draft\"> </a></td><td>Draft</td><td>The prescription is not yet 'actionable', i.e. it is a work in progress, required sign-off, need to be run through decision support.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.107"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/medication-prescription-status",
+  "version": "0.5.0",
+  "name": "MedicationPrescriptionStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "A code specifying the state of the prescribing event. Describes the lifecycle of the prescription.",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-07-26T15:54:10-04:00",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.107"
+      }
+    ],
+    "system": "http://hl7.org/fhir/medication-prescription-status",
+    "version": "0.5.0",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "active",
+        "display": "Active",
+        "definition": "The prescription is 'actionable', but not all actions that are implied by it have occurred yet."
+      },
+      {
+        "code": "on-hold",
+        "display": "On Hold",
+        "definition": "Actions implied by the prescription have been temporarily halted, but are expected to continue later.  May also be called \"suspended\"."
+      },
+      {
+        "code": "completed",
+        "display": "Completed",
+        "definition": "All actions that are implied by the prescription have occurred (this will rarely be made explicit)."
+      },
+      {
+        "code": "entered-in-error",
+        "display": "Entered In Error",
+        "definition": "The prescription was entered in error and therefore nullified."
+      },
+      {
+        "code": "stopped",
+        "display": "Stopped",
+        "definition": "Actions implied by the prescription have been permanently halted, before all of them occurred."
+      },
+      {
+        "code": "superseded",
+        "display": "Superseded",
+        "definition": "The prescription was replaced by a newer one, which encompasses all the information in the previous one."
+      },
+      {
+        "code": "draft",
+        "display": "Draft",
+        "definition": "The prescription is not yet 'actionable', i.e. it is a work in progress, required sign-off, need to be run through decision support."
+      }
+    ]
+  }
+}

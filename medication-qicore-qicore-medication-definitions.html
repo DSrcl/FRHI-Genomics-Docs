@@ -1,0 +1,422 @@
+﻿<!DOCTYPE HTML>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>StructureDefinition: QICore-Medication - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/medication-qicore-qicore-medication"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="medication.html">Medication</a></li>        <li><a href="medication-qicore.html">Profile</a></li>        <li><b>QICore-Medication</b></li>        <!-- medication-qicore-qicore-medication.html / profile:Medication/medication-qicore/medication-qicore-qicore-medication / QICore-Medication-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="medication-qicore-qicore-medication.html">Content</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="medication-qicore-qicore-medication-mappings.html">Mappings</a></li><li><a href="medication-qicore-qicore-medication.questionnaire.html">HTML Form</a></li><li><a href="medication-qicore-qicore-medication.profile.xml.html">XML</a></li><li><a href="medication-qicore-qicore-medication.profile.json.html">JSON</a></li></ul>
+
+<h4>StructureDefinition: QICore-Medication - Detailed Descriptions</h4>
+
+<p>Definitions for the medication-qicore-qicore-medication Profile.</p>
+
+<table class="dict">
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.QICore-Medication"> </a><b>Medication(QICore-Medication)</b></td></tr>
+  <tr><td>Definition</td><td><p>Primarily used for identification and definition of Medication, but also covers ingredients and packaging.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="medication.html#Medication">Medication</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.id"> </a><b>Medication.id</b></td></tr>
+  <tr><td>Definition</td><td><p>The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.meta"> </a><b>Medication.meta</b></td></tr>
+  <tr><td>Definition</td><td><p>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="resource.html#Meta">Meta</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.implicitRules"> </a><b>Medication.implicitRules</b></td></tr>
+  <tr><td>Definition</td><td><p>A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.language"> </a><b>Medication.language</b></td></tr>
+  <tr><td>Definition</td><td><p>The base language in which the resource is written.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>A human language<br/>The codes SHALL be taken from  <a href="http://tools.ietf.org/html/bcp47">http://tools.ietf.org/html/bcp47</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.text"> </a><b>Medication.text</b></td></tr>
+  <tr><td>Definition</td><td><p>A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: dom-1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="narrative.html#Narrative">Narrative</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>narrative, html, xhtml, display</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.contained"> </a><b>Medication.contained</b></td></tr>
+  <tr><td>Definition</td><td><p>These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="resource.html#Resource">Resource</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>inline resources, anonymous resources, contained resources</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.extension"> </a><b>Medication.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.modifierExtension"> </a><b>Medication.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.name"> </a><b>Medication.name</b></td></tr>
+  <tr><td>Definition</td><td><p>The common/commercial name of the medication absent information such as strength, form, etc.  E.g. Acetaminophen, Tylenol 3, etc.  The fully coordinated name is communicated as the display of Medication.code.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.code"> </a><b>Medication.code</b></td></tr>
+  <tr><td>Definition</td><td><p>A code (or set of codes) that identify this medication.   Usage note: This could be a standard drug code such as a drug regulator code, RxNorm code, SNOMED CT code, etc. It could also be a local formulary code, optionally with translations to the standard drug codes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The set of RxNorm codes to represent medications<br/>The codes SHOULD be taken from <a href="cqf/valueset-qicore-medication-codes.html">Medication Clinical Drug (RxNorm)</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.isBrand"> </a><b>Medication.isBrand</b></td></tr>
+  <tr><td>Definition</td><td><p>Set to true if the item is attributable to a specific manufacturer (even if we don't know who that is).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.manufacturer"> </a><b>Medication.manufacturer</b></td></tr>
+  <tr><td>Definition</td><td><p>Describes the details of the manufacturer.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/organization-qicore-qicore-organization]])</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.kind"> </a><b>Medication.kind</b></td></tr>
+  <tr><td>Definition</td><td><p>Medications are either a single administrable product or a package that contains one or more products.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>Whether the medication is a product or a package<br/>The codes SHALL be taken from <a href="valueset-medication-kind.html">MedicationKind</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product"> </a><b>Medication.product</b></td></tr>
+  <tr><td>Definition</td><td><p>Information that only applies to products (not packages).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.id"> </a><b>Medication.product.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.extension"> </a><b>Medication.product.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.Medication.product.usualRoute"> </a><b>Medication.product.extension (<a href="extension-medication-usualroute.html">[UriType[http://hl7.org/fhir/StructureDefinition/medication-usualRoute]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The typical route into the body for this medication.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.modifierExtension"> </a><b>Medication.product.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.form"> </a><b>Medication.product.form</b></td></tr>
+  <tr><td>Definition</td><td><p>Describes the form of the item.  Powder; tables; carton.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The form of a medication<br/>For example codes, see <a href="valueset-medication-form-codes.html">SNOMED CT Form Codes</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.ingredient"> </a><b>Medication.product.ingredient</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies a particular constituent of interest in the product.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.ingredient.id"> </a><b>Medication.product.ingredient.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.ingredient.extension"> </a><b>Medication.product.ingredient.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.ingredient.Medication.product.ingredient.isActiveIngredient"> </a><b>Medication.product.ingredient.extension (<a href="extension-medication-isactiveingredient.html">[UriType[http://hl7.org/fhir/StructureDefinition/medication-isActiveIngredient]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Flag indicating whether the ingredient is active or inactive.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.ingredient.modifierExtension"> </a><b>Medication.product.ingredient.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.ingredient.item"> </a><b>Medication.product.ingredient.item</b></td></tr>
+  <tr><td>Definition</td><td><p>The actual ingredient - either a substance (simple ingredient) or another medication.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td>Choice of: <a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/substance-qicore-qicore-substance]]), <a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/medication-qicore-qicore-medication]])</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.ingredient.amount"> </a><b>Medication.product.ingredient.amount</b></td></tr>
+  <tr><td>Definition</td><td><p>Specifies how many (or how much) of the items there are in this Medication.  E.g. 250 mg per tablet.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Ratio">Ratio</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.batch"> </a><b>Medication.product.batch</b></td></tr>
+  <tr><td>Definition</td><td><p>Information about a group of medication produced or packaged from one production run.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.batch.id"> </a><b>Medication.product.batch.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.batch.extension"> </a><b>Medication.product.batch.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.batch.modifierExtension"> </a><b>Medication.product.batch.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.batch.lotNumber"> </a><b>Medication.product.batch.lotNumber</b></td></tr>
+  <tr><td>Definition</td><td><p>The assigned lot number of a batch of the specified product.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.product.batch.expirationDate"> </a><b>Medication.product.batch.expirationDate</b></td></tr>
+  <tr><td>Definition</td><td><p>When this specific batch of product will expire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package"> </a><b>Medication.package</b></td></tr>
+  <tr><td>Definition</td><td><p>Information that only applies to packages (not products).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.id"> </a><b>Medication.package.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.extension"> </a><b>Medication.package.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.modifierExtension"> </a><b>Medication.package.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.container"> </a><b>Medication.package.container</b></td></tr>
+  <tr><td>Definition</td><td><p>The kind of container that this package comes as.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>Kind of container a medication package is packaged in<br/>For example codes, see <a href="valueset-medication-package-form-codes.html">SNOMED CT Form Codes</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.content"> </a><b>Medication.package.content</b></td></tr>
+  <tr><td>Definition</td><td><p>A set of components that go to make up the described item.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.content.id"> </a><b>Medication.package.content.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.content.extension"> </a><b>Medication.package.content.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.content.modifierExtension"> </a><b>Medication.package.content.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.content.item"> </a><b>Medication.package.content.item</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies one of the items in the package.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/medication-qicore-qicore-medication]])</td></tr>
+  <tr><td colspan="2" class="structure"><a name="medication-qicore-qicore-medication.Medication.package.content.amount"> </a><b>Medication.package.content.amount</b></td></tr>
+  <tr><td>Definition</td><td><p>The amount of the product that is in the package.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Quantity">Quantity</a></td></tr>
+</table>
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:36-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fmedication-qicore-qicore-medication&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fmedication-qicore-qicore-medication">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

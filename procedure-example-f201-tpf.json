@@ -1,0 +1,66 @@
+{
+  "resourceType": "Procedure",
+  "id": "f201",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f201</p><p><b>patient</b>: <a>Roel</a></p><p><b>status</b>: completed</p><p><b>type</b>: Chemotherapy <span>(Details : {SNOMED CT code '367336001' = 'Chemotherapy', given as 'Chemotherapy'})</span></p><h3>BodySites</h3><table><tr><td>-</td><td><b>Site[x]</b></td></tr><tr><td>*</td><td>Sphenoid bone <span>(Details : {SNOMED CT code '272676008' = 'Sphenoid bone', given as 'Sphenoid bone'})</span></td></tr></table><p><b>indication</b>: DiagnosticReport/f201 <span>(Details )</span></p><h3>Performers</h3><table><tr><td>-</td><td><b>Person</b></td><td><b>Role</b></td></tr><tr><td>*</td><td><a>Dokter Bronsig</a></td><td>Medical oncologist <span>(Details : {SNOMED CT code '310512001' = 'Medical oncologist', given as 'Medical oncologist'})</span></td></tr></table><p><b>performed</b>: Jan 28, 2013 1:31:00 PM --&gt; Jan 28, 2013 2:27:00 PM</p><p><b>encounter</b>: <a>Roel's encounter on January 28th, 2013</a></p><p><b>notes</b>: Eerste neo-adjuvante TPF-kuur bij groot proces in sphenoid met intracraniale uitbreiding.</p></div>"
+  },
+  "patient": {
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "status": "completed",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "367336001",
+        "display": "Chemotherapy"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "siteCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "272676008",
+            "display": "Sphenoid bone"
+          }
+        ]
+      }
+    }
+  ],
+  "indication": [
+    {
+      "text": "DiagnosticReport/f201"
+    }
+  ],
+  "performer": [
+    {
+      "person": {
+        "reference": "Practitioner/f201",
+        "display": "Dokter Bronsig"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "310512001",
+            "display": "Medical oncologist"
+          }
+        ]
+      }
+    }
+  ],
+  "performedPeriod": {
+    "start": "2013-01-28T13:31:00+01:00",
+    "end": "2013-01-28T14:27:00+01:00"
+  },
+  "encounter": {
+    "reference": "Encounter/f202",
+    "display": "Roel's encounter on January 28th, 2013"
+  },
+  "notes": "Eerste neo-adjuvante TPF-kuur bij groot proces in sphenoid met intracraniale uitbreiding."
+}

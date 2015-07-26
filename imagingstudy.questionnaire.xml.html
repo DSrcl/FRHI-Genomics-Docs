@@ -1,0 +1,1009 @@
+﻿<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Imagingstudy.questionnaire.xml - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/imagingstudy.questionnaire.xml.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="imagingstudy.html">ImagingStudy</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- imagingstudy.questionnaire.xml.html / resource-questionnaire:ImagingStudy / Questionnaire-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Imagingstudy.questionnaire.xml</h1>
+
+<p>
+<a href="imagingstudy.questionnaire.xml">Raw XML</a> (<a href="imagingstudy.questionnaire.canonical.xml">canonical form</a>)
+</p>
+
+
+<div class="example">
+<p>Generated Questionnaire for ImagingStudy</p>
+<pre class="json">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;Questionnaire xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;id value=&quot;qs1&quot;/&gt;
+  &lt;identifier&gt;
+    &lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;status value=&quot;draft&quot;/&gt;
+  &lt;date value=&quot;2015-07-24T17:31:16-04:00&quot;/&gt;
+  &lt;publisher value=&quot;Health Level Seven International (Imaging Integration)&quot;/&gt;
+  &lt;group&gt;
+    &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+      &lt;valueString value=&quot;Representation of the content produced in a DICOM imaging study. A study comprises a set of Series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context.  A Series is of only one modality (e.g., X-ray, CT, MR, ultrasound), but a Study may have multiple Series of different modalities.&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;linkId value=&quot;ImagingStudy&quot;/&gt;
+    &lt;title value=&quot;A set of images produced in single study (one or more series of references images)&quot;/&gt;
+    &lt;required value=&quot;false&quot;/&gt;
+    &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.id&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.id.value&quot;/&gt;
+        &lt;text value=&quot;Logical id of this artifact&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.meta&quot;/&gt;
+      &lt;text value=&quot;Metadata about the resource&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;uri&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.implicitRules&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.implicitRules.value&quot;/&gt;
+        &lt;text value=&quot;A set of rules under which this content was created&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The base language in which the resource is written.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.language&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.language.value&quot;/&gt;
+        &lt;text value=&quot;language&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &amp;quot;clinically safe&amp;quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.text&quot;/&gt;
+      &lt;text value=&quot;Text summary of the resource, for human interpretation&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.contained&quot;/&gt;
+      &lt;text value=&quot;Contained, inline Resources&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.extension&quot;/&gt;
+      &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.modifierExtension&quot;/&gt;
+      &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Date and Time the study started. Timezone Offset From UTC.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;datetime&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.started&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.started.value&quot;/&gt;
+        &lt;text value=&quot;When the study was started (0008,0020)+(0008,0030)&quot;/&gt;
+        &lt;type value=&quot;dateTime&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The patient imaged in the study.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Reference&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.patient&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+          &lt;valueString value=&quot;/Patient?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.patient.value&quot;/&gt;
+        &lt;text value=&quot;Who the images are of (0010/*)&quot;/&gt;
+        &lt;type value=&quot;reference&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Formal identifier for the study.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.uid&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.uid.value&quot;/&gt;
+        &lt;text value=&quot;Formal identifier for the study (0020,000D)&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Accession Number is an identifier related to some aspect of imaging workflow and data management, and usage may vary across different institutions. 
+See for instance [IHE Radiology Technical Framework Volume 1 Appendix A](http://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Rev13.0_Vol1_FT_2014-07-30.pdf).&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Identifier&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.accession&quot;/&gt;
+      &lt;text value=&quot;Related workflow identifier (&amp;quot;Accession Number&amp;quot;) (0008,0050)&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.accession.label&quot;/&gt;
+        &lt;text value=&quot;label:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.accession.system&quot;/&gt;
+        &lt;text value=&quot;system:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.accession.value&quot;/&gt;
+        &lt;text value=&quot;value:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Other identifiers for the study.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Identifier&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.identifier&quot;/&gt;
+      &lt;text value=&quot;Other identifiers for the study (0020,0010)&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.identifier.label&quot;/&gt;
+        &lt;text value=&quot;label:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.identifier.system&quot;/&gt;
+        &lt;text value=&quot;system:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.identifier.value&quot;/&gt;
+        &lt;text value=&quot;value:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A list of the diagnostic orders that resulted in this imaging study being performed.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Reference&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.order&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+          &lt;valueString value=&quot;/DiagnosticOrder?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.order.value&quot;/&gt;
+        &lt;text value=&quot;Order(s) that caused this study to be performed&quot;/&gt;
+        &lt;type value=&quot;reference&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A list of all the Series.ImageModality values that are actual acquisition modalities, i.e. those in the DICOM Context Group 29 (value set OID 1.2.840.10008.6.1.19).&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Coding&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.modalityList&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.modalityList.value&quot;/&gt;
+        &lt;text value=&quot;All series.modality if actual acquisition modalities&quot;/&gt;
+        &lt;type value=&quot;open-choice&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The requesting/referring physician.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Reference&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.referrer&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+          &lt;valueString value=&quot;/Practitioner?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.referrer.value&quot;/&gt;
+        &lt;text value=&quot;Referring physician (0008,0090)&quot;/&gt;
+        &lt;type value=&quot;reference&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Availability of study (online, offline or nearline).&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.availability&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.availability.value&quot;/&gt;
+        &lt;text value=&quot;availability&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;WADO-RS resource where Study is available.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;uri&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.url&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.url.value&quot;/&gt;
+        &lt;text value=&quot;Retrieve URI (0008,1190)&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Number of Series in Study.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;integer&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.numberOfSeries&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.numberOfSeries.value&quot;/&gt;
+        &lt;text value=&quot;Number of Study Related Series (0020,1206)&quot;/&gt;
+        &lt;type value=&quot;integer&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Number of SOP Instances in Study.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;integer&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.numberOfInstances&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.numberOfInstances.value&quot;/&gt;
+        &lt;text value=&quot;Number of Study Related Instances (0020,1208)&quot;/&gt;
+        &lt;type value=&quot;integer&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Diagnoses etc provided with request.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.clinicalInformation&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.clinicalInformation.value&quot;/&gt;
+        &lt;text value=&quot;Diagnoses etc with request (0040,1002)&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Type of procedure performed.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Reference&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.procedure&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+          &lt;valueString value=&quot;/Procedure?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.procedure.value&quot;/&gt;
+        &lt;text value=&quot;Type of procedure performed (0008,1032)&quot;/&gt;
+        &lt;type value=&quot;reference&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Who read study and interpreted the images.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Reference&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.interpreter&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+          &lt;valueString value=&quot;/Practitioner?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.interpreter.value&quot;/&gt;
+        &lt;text value=&quot;Who interpreted images (0008,1060)&quot;/&gt;
+        &lt;type value=&quot;reference&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Institution-generated description or classification of the Study performed.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.description&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;ImagingStudy.description.value&quot;/&gt;
+        &lt;text value=&quot;Institution-generated description (0008,1030)&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Each study has one or more series of image instances.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;ImagingStudy.series&quot;/&gt;
+      &lt;title value=&quot;Each study has one or more series of instances&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.id&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.id.value&quot;/&gt;
+          &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.extension&quot;/&gt;
+        &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.modifierExtension&quot;/&gt;
+        &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;The Numeric identifier of this series in the study.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;integer&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.number&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.number.value&quot;/&gt;
+          &lt;text value=&quot;Numeric identifier of this series (0020,0011)&quot;/&gt;
+          &lt;type value=&quot;integer&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;The modality of this series sequence.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;Coding&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.modality&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.modality.value&quot;/&gt;
+          &lt;text value=&quot;The modality of the instances in the series (0008,0060)&quot;/&gt;
+          &lt;type value=&quot;open-choice&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Formal identifier for this series.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.uid&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.uid.value&quot;/&gt;
+          &lt;text value=&quot;Formal identifier for this series (0020,000E)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;A description of the series.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.description&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.description.value&quot;/&gt;
+          &lt;text value=&quot;A description of the series (0008,103E)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Number of SOP Instances in Series.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;integer&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.numberOfInstances&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.numberOfInstances.value&quot;/&gt;
+          &lt;text value=&quot;Number of Series Related Instances (0020,1209)&quot;/&gt;
+          &lt;type value=&quot;integer&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Availability of series (online, offline or nearline).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;code&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.availability&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.availability.value&quot;/&gt;
+          &lt;text value=&quot;availability&quot;/&gt;
+          &lt;type value=&quot;choice&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;URI/URL specifying the location of the referenced series using WADO-RS.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;uri&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.url&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.url.value&quot;/&gt;
+          &lt;text value=&quot;Location of the referenced instance(s) (0008,1115 in 0008,1190)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Body part examined. See  DICOM Part 16 Annex L for the mapping from DICOM to Snomed.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;Coding&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.bodySite&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.bodySite.value&quot;/&gt;
+          &lt;text value=&quot;Body part examined (Map from 0018,0015)&quot;/&gt;
+          &lt;type value=&quot;open-choice&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Laterality if bodySite is paired anatomic structure and laterality is not pre-coordinated in bodySite code, map from (0020, 0060).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;Coding&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.laterality&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.laterality.value&quot;/&gt;
+          &lt;text value=&quot;Body part laterality&quot;/&gt;
+          &lt;type value=&quot;open-choice&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;The date and time when the series was started.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;datetime&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.dateTime&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.dateTime.value&quot;/&gt;
+          &lt;text value=&quot;When the series started&quot;/&gt;
+          &lt;type value=&quot;dateTime&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;A single SOP Instance within the series, e.g., an image, or presentation state.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;ImagingStudy.series.instance&quot;/&gt;
+        &lt;title value=&quot;A single instance taken from a patient (image or other)&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;string&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.instance.id&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;ImagingStudy.series.instance.id.value&quot;/&gt;
+            &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+            &lt;type value=&quot;string&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.instance.extension&quot;/&gt;
+          &lt;text value=&quot;Additional Content defined by implementations&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.instance.modifierExtension&quot;/&gt;
+          &lt;text value=&quot;Extensions that cannot be ignored&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;The number of this image in the series.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;integer&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.instance.number&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;ImagingStudy.series.instance.number.value&quot;/&gt;
+            &lt;text value=&quot;The number of this instance in the series (0020,0013)&quot;/&gt;
+            &lt;type value=&quot;integer&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;Formal identifier for this image.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;string&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.instance.uid&quot;/&gt;
+          &lt;required value=&quot;true&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;ImagingStudy.series.instance.uid.value&quot;/&gt;
+            &lt;text value=&quot;Formal identifier for this instance (0008,0018)&quot;/&gt;
+            &lt;type value=&quot;string&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;DICOM Image type.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;string&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.instance.sopclass&quot;/&gt;
+          &lt;required value=&quot;true&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;ImagingStudy.series.instance.sopclass.value&quot;/&gt;
+            &lt;text value=&quot;DICOM class type (0008,0016)&quot;/&gt;
+            &lt;type value=&quot;string&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;A human-friendly SOP Class name.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;string&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.instance.type&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;ImagingStudy.series.instance.type.value&quot;/&gt;
+            &lt;text value=&quot;Type of instance (image etc) (0004,1430)&quot;/&gt;
+            &lt;type value=&quot;string&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;The description of the instance.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;string&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.instance.title&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;ImagingStudy.series.instance.title.value&quot;/&gt;
+            &lt;text value=&quot;Description (0070,0080 | 0040,A043 &amp;gt; 0008,0104 | 0042,0010 | 0008,0008)&quot;/&gt;
+            &lt;type value=&quot;string&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;Content of the instance or a rendering thereof (e.g., a JPEG of an image, or an XML of a structured report). May be represented by inline encoding, or by a URL reference to a WADO-RS service that makes the instance available. Multiple content attachments may be used for alternate representations of the instance.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;Attachment&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;ImagingStudy.series.instance.content&quot;/&gt;
+          &lt;text value=&quot;Content of the instance&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;/group&gt;
+      &lt;/group&gt;
+    &lt;/group&gt;
+  &lt;/group&gt;
+&lt;/Questionnaire&gt;
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fimagingstudy.questionnaire.xml.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fimagingstudy.questionnaire.xml.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

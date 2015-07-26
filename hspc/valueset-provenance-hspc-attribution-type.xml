@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="provenance-hspc-attribution-type"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Attribution Code</h2>
+      <p>Type codes for HSPC Attribution provenance construct</p>
+      <p>This value set includes codes from the following code systems:</p>
+      <ul>
+        <li>Include these codes as defined in http://cimi.org/vs/patient/attribution-type
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Observed</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Updated</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Verified</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:0.00.000.0.000000.0.00.003"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/provenance-hspc-attribution-type"/>
+  <version value="0.5.0"/><!--  
+    To be provided by CIMI. Placeholders for now
+   -->
+  <name value="Attribution Code"/>
+  <publisher value="CIMI"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://cimi.org/valueset/attribution"/>
+    </telecom>
+  </contact>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://www.cimi.org/"/>
+    </telecom>
+  </contact>
+  <description value="Type codes for HSPC Attribution provenance construct"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <compose>
+    <include>
+      <system value="http://cimi.org/vs/patient/attribution-type"/><!--  Made up codes. Need actual ones from: ATTRIBUTION_VALUESET_CODE  -->
+      <concept>
+        <code value="1"/>
+        <display value="Observed"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Updated"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Verified"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

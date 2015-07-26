@@ -1,0 +1,1319 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "diagnosticreport-qicore-qicore-diagnosticreport",
+  "text": {
+    "status": "generated",
+    "div": "<div>to do</div>"
+  },
+  "url": "http://hl7.org/fhir/StructureDefinition/diagnosticreport-qicore-qicore-diagnosticreport",
+  "name": "QICore-DiagnosticReport",
+  "publisher": "Health Level Seven International (Clinical Quality Information - QI-Core)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/special/committees/CQI"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of DiagnosticReport for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
+  "status": "draft",
+  "date": "2015-02-27",
+  "kind": "resource",
+  "constrainedType": "DiagnosticReport",
+  "abstract": false,
+  "base": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "snapshot": {
+    "element": [
+      {
+        "path": "DiagnosticReport",
+        "name": "QICore-DiagnosticReport",
+        "short": "A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports",
+        "definition": "The findings and interpretation of diagnostic  tests performed on patients, groups of patients, devices, and locations, and/or specimens derived from these. The report includes clinical context such as requesting and provider information, and some mix of atomic results, images, textual and coded interpretation, and formatted representation of diagnostic reports.",
+        "requirements": "To support reporting for any diagnostic report into a clinical data repository.",
+        "alias": [
+          "Report",
+          "Test",
+          "Result",
+          "Results",
+          "Labs",
+          "Laboratory"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "DiagnosticReport"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Observation[classCode=OBS, moodCode=EVN]"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.id",
+        "short": "Logical id of this artifact",
+        "definition": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.meta",
+        "short": "Metadata about the resource",
+        "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.meta",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.implicitRules",
+        "short": "A set of rules under which this content was created",
+        "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.implicitRules",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isModifier": true
+      },
+      {
+        "path": "DiagnosticReport.language",
+        "short": "Language of the resource content",
+        "definition": "The base language in which the resource is written.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.language",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language",
+          "valueSetUri": "http://tools.ietf.org/html/bcp47"
+        }
+      },
+      {
+        "path": "DiagnosticReport.text",
+        "short": "Text summary of the resource, for human interpretation",
+        "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+        "alias": [
+          "narrative",
+          "html",
+          "xhtml",
+          "display"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Narrative"
+          }
+        ],
+        "condition": [
+          "dom-1"
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Act.text?"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.contained",
+        "short": "Contained, inline Resources",
+        "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+        "alias": [
+          "inline resources",
+          "anonymous resources",
+          "contained resources"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.contained",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.extension",
+        "name": "DiagnosticReport.locationPerformed",
+        "short": "Location Performed",
+        "definition": "Facility location where this report was prepared.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/diagnosticReport-locationPerformed"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.extension.valueReference",
+        "name": "DiagnosticReport.locationPerformed.valueReference",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/location-qicore-qicore-location"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.code",
+        "short": "Name/Code for this diagnostic report",
+        "definition": "A code or name that describes this diagnostic report.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.code",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "binding": {
+          "strength": "preferred",
+          "description": "LOINC codes that describe Diagnostic Reports",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/obs-uslab-codes"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR-4-Universal Service ID (V2 doesn't provide an easy way to indicate both the ordered test and the performed panel)"
+          },
+          {
+            "identity": "rim",
+            "map": "code"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.status",
+        "short": "registered | partial | final | corrected | appended | cancelled | entered-in-error",
+        "definition": "The status of the diagnostic report as a whole.",
+        "requirements": "Diagnostic services routinely issue provisional/incomplete reports, and sometimes withdraw previously released reports.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.status",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": true,
+        "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "description": "The status of the diagnostic report as a whole",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/diagnostic-report-status"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR-25-Result Status (not 1:1 mapping)"
+          },
+          {
+            "identity": "rim",
+            "map": "statusCode  Note: final and amended are distinguished by whether observation is the subject of a ControlAct event of type \"revise\""
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.issued",
+        "short": "DateTime this version was released",
+        "definition": "The date and time that this version of the report was released from the source diagnostic service.",
+        "requirements": "Clinicians need to be able to check the date that the report was released.",
+        "alias": [
+          "Date Created",
+          "Date published",
+          "Date Issued"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.issued",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR-22-Results Rpt/Status Chng - Date/Time"
+          },
+          {
+            "identity": "rim",
+            "map": "participation[typeCode=VRF or AUT].time"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.subject",
+        "short": "The subject of the report, usually, but not always, the patient",
+        "definition": "The subject of the report. Usually, but not always, this is a patient. However diagnostic services also perform analyses on specimens collected from a variety of other sources.",
+        "requirements": "SHALL know the subject context.",
+        "alias": [
+          "Patient"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.subject",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-qicore-qicore-patient"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/device-qicore-qicore-device"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/location-qicore-qicore-location"
+            ]
+          }
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID-3-Patient ID List (no V2 mapping for Group or Device)"
+          },
+          {
+            "identity": "rim",
+            "map": "participation[typeCode=SBJ]"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.performer",
+        "short": "Responsible Diagnostic Service",
+        "definition": "The diagnostic service that is responsible for issuing the report.",
+        "requirements": "Need to know whom to contact if there are queries about the results. Also may need to track the source of reports for secondary data analysis.",
+        "alias": [
+          "Laboratory",
+          "Service",
+          "Practitioner",
+          "Department",
+          "Company"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.performer",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/practitioner-qicore-qicore-practitioner"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/organization-qicore-qicore-organization"
+            ]
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRT-8-Participation Organization (where this PRT-4-Participation = \"PO\")"
+          },
+          {
+            "identity": "rim",
+            "map": "participation[typeCode=AUT].role[classCode=ASSIGN].scoper"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.encounter",
+        "short": "Health care event when test ordered",
+        "definition": "The link to the health care event (encounter) when the order was made.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/encounter-qicore-qicore-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.identifier",
+        "short": "Id for external references to this report",
+        "definition": "The local ID assigned to the report by the order filler, usually by the Information System of the diagnostic service provider.",
+        "requirements": "Need to know what identifier to use when making queries about this report from the source laboratory, and for linking to the report outside FHIR context.",
+        "alias": [
+          "ReportID"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.identifier",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR-51-Observation Group ID (todo: check semantic intent of OBR-51 with OOWG)"
+          },
+          {
+            "identity": "rim",
+            "map": "id"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.requestDetail",
+        "short": "What was requested",
+        "definition": "Details concerning a test requested.",
+        "requirements": "Need to be able to track completion of requests based on reports issued and also to report what diagnostic tests were requested (not always the same as what is delivered).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.requestDetail",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/diagnosticorder-qicore-qicore-diagnosticorder"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=FLFS].target"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.serviceCategory",
+        "short": "Biochemistry, Hematology etc.",
+        "definition": "The section of the diagnostic service that performs the examination e.g. biochemistry, hematology, MRI.",
+        "requirements": "Help clinicians filter/find the reports they are looking for.",
+        "alias": [
+          "Department",
+          "Sub-department",
+          "service",
+          "discipline"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.serviceCategory",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "preferred",
+          "description": "HL7 v2 Value Set of codes for diagnostic service sections",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR-24-Diagnostic Service Section ID"
+          },
+          {
+            "identity": "rim",
+            "map": "inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code < LabService].code"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.effective[x]",
+        "short": "Clinically Relevant time/time-period for report",
+        "definition": "The time or time-period the observed values are related to. When the subject of the report is a patient, this is usually either the time of the procedure or of specimen collection(s), but very often the source of the date/time is not known, only the date/time itself.",
+        "requirements": "Need to know where in the patient history to file/present this report.",
+        "alias": [
+          "Observation time",
+          "Effective Time"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.effective[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR-7-Observation Date/Time"
+          },
+          {
+            "identity": "rim",
+            "map": "effectiveTime"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.specimen",
+        "short": "Specimens this report is based on",
+        "definition": "Details about the specimens on which this diagnostic report is based.",
+        "requirements": "Need to be able to report information about the collected specimens on which the report is based.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.specimen",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/specimen-qicore-qicore-specimen"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM"
+          },
+          {
+            "identity": "rim",
+            "map": "participation[typeCode=SBJ]"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.result",
+        "short": "Observations - simple, or complex nested groups",
+        "definition": "Observations that are part of this diagnostic report. Observations can be simple name/value pairs (e.g. \"atomic\" results), or they can be grouping observations that include references to other members of the group (e.g. \"panels\").",
+        "requirements": "Need to be able to individual results, or report groups of results, where the result grouping is arbitrary, but meaningful. This structure is recursive - observations can contain observations.",
+        "alias": [
+          "Data",
+          "Atomic Value",
+          "Result",
+          "Atomic result",
+          "Data",
+          "Test",
+          "Analyte",
+          "Battery",
+          "Organiser"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.result",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/observation-qicore-qicore-observation"
+            ]
+          }
+        ],
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=COMP].target"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.imagingStudy",
+        "short": "Reference to full details of imaging associated with the diagnostic report",
+        "definition": "One or more links to full details of any imaging performed during the diagnostic investigation. Typically, this is imaging performed by DICOM enabled modalities, but this is not required. A fully enabled PACS viewer can use this information to provide views of the source images.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.imagingStudy",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/imagingstudy-qicore-qicore-imagingstudy"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ImagingObjectSelection"
+            ]
+          }
+        ],
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=COMP].target[classsCode=DGIMG, moodCode=EVN]"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.image",
+        "short": "Key images associated with this report",
+        "definition": "A list of key images associated with this report. The images are generally created during the diagnostic process, and may be directly of the patient, or of treated specimens (i.e. slides of interest).",
+        "requirements": "Many diagnostic services include images in the report as part of their service.",
+        "alias": [
+          "DICOM",
+          "Slides",
+          "Scans"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.image",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX?"
+          },
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=COMP].target"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.image.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.image.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.image.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.image.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.image.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.image.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.image.comment",
+        "short": "Comment about the image (e.g. explanation)",
+        "definition": "A comment about the image. Typically, this is used to provide an explanation for why the image is included, or to draw the viewer's attention to important features.",
+        "requirements": "The provider of the report should make a comment about each image included in the report.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.image.comment",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=\"annotation\"].value"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.image.link",
+        "short": "Reference to the image source",
+        "definition": "Reference to the image source.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.image.link",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Media"
+            ]
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".value.reference"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.conclusion",
+        "short": "Clinical Interpretation of test results",
+        "definition": "Concise and clinically contextualized narrative interpretation of the diagnostic report.",
+        "requirements": "Need to be able to provide a conclusion that is not lost amongst the basic result data.",
+        "alias": [
+          "Report"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DiagnosticReport.conclusion",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          },
+          {
+            "identity": "rim",
+            "map": "inboundRelationship[typeCode=\"SPRT\"].source[classCode=OBS, moodCode=EVN, code=LOINC:48767-8].value (type=ST)"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.codedDiagnosis",
+        "short": "Codes for the conclusion",
+        "definition": "Codes for the conclusion.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.codedDiagnosis",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "description": "SNOMED CT findings codes provided as adjunct diagnosis to the report",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/uslab-clinical-findings"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          },
+          {
+            "identity": "rim",
+            "map": "inboundRelationship[typeCode=SPRT].source[classCode=OBS, moodCode=EVN, code=LOINC:54531-9].value (type=CD)"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.presentedForm",
+        "short": "Entire Report as issued",
+        "definition": "Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.",
+        "requirements": "Gives Laboratory the ability to provide its own fully formatted report for clinical fidelity.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DiagnosticReport.presentedForm",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          },
+          {
+            "identity": "rim",
+            "map": "text (type=ED)"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "DiagnosticReport",
+        "name": "QICore-DiagnosticReport",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DiagnosticReport"
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "path": "DiagnosticReport.extension",
+        "name": "DiagnosticReport.locationPerformed",
+        "short": "Location Performed",
+        "definition": "Facility location where this report was prepared.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/diagnosticReport-locationPerformed"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.extension.valueReference",
+        "name": "DiagnosticReport.locationPerformed.valueReference",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/location-qicore-qicore-location"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "description": "LOINC codes that describe Diagnostic Reports",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/obs-uslab-codes"
+          }
+        }
+      },
+      {
+        "path": "DiagnosticReport.status",
+        "mustSupport": true
+      },
+      {
+        "path": "DiagnosticReport.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-qicore-qicore-patient"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/device-qicore-qicore-device"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/location-qicore-qicore-location"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "DiagnosticReport.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/practitioner-qicore-qicore-practitioner"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/organization-qicore-qicore-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/encounter-qicore-qicore-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "DiagnosticReport.requestDetail",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/diagnosticorder-qicore-qicore-diagnosticorder"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.serviceCategory",
+        "binding": {
+          "strength": "preferred",
+          "description": "HL7 v2 Value Set of codes for diagnostic service sections",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections"
+          }
+        }
+      },
+      {
+        "path": "DiagnosticReport.effective[x]",
+        "mustSupport": true
+      },
+      {
+        "path": "DiagnosticReport.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/specimen-qicore-qicore-specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "DiagnosticReport.result",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/observation-qicore-qicore-observation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "DiagnosticReport.imagingStudy",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/imagingstudy-qicore-qicore-imagingstudy"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ImagingObjectSelection"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "path": "DiagnosticReport.codedDiagnosis",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "description": "SNOMED CT findings codes provided as adjunct diagnosis to the report",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/uslab-clinical-findings"
+          }
+        }
+      }
+    ]
+  }
+}

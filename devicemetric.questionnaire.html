@@ -1,0 +1,2755 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Devicemetric.questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/devicemetric.questionnaire.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="administration.html">Administrative</a></li>        <li><a href="devicemetric.html">DeviceMetric</a></li>        <li><b>Generated Questionnaire</b></li>          <!-- devicemetric.questionnaire.html / resource-questionnaire:DeviceMetric / Questionnaire -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="devicemetric.html">Content</a></li><li><a href="devicemetric-examples.html">Examples</a></li><li><a href="devicemetric-definitions.html">Detailed Descriptions</a></li><li><a href="devicemetric-mappings.html">Mappings</a></li><li><a href="devicemetric-profiles.html">Profiles</a></li><li class="active"><a href="#">HTML Form</a></li></ul>
+
+
+<h2><span class="sectioncount">5.13.6<a name="5.13.6"> </a></span> Devicemetric.questionnaire - Example Form <a href="devicemetric.questionnaire.html#5.13.6" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>
+This is an example form based on a questionnaire generated from the definition, to help visualise the content. See also the <a href="devicemetric.questionnaire.xml.html">XML</a> or <a href="devicemetric.questionnaire.json.html">JSON</a> questionnaire.
+</p>
+
+  <!-- DOCTYPE html --><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<script type="text/javascript">  <!-- var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validateDeviceMetric(node) {
+  var groupNodes = findDiv(node, "DeviceMetric");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_id(divNode, "DeviceMetric.id")
+         && validateDeviceMetric_meta(divNode, "DeviceMetric.meta")
+         && validateDeviceMetric_implicitRules(divNode, "DeviceMetric.implicitRules")
+         && validateDeviceMetric_language(divNode, "DeviceMetric.language")
+         && validateDeviceMetric_text(divNode, "DeviceMetric.text")
+         && validateDeviceMetric_contained(divNode, "DeviceMetric.contained")
+         && validateDeviceMetric_extension(divNode, "DeviceMetric.extension")
+         && validateDeviceMetric_modifierExtension(divNode, "DeviceMetric.modifierExtension")
+         && validateDeviceMetric_type(divNode, "DeviceMetric.type")
+         && validateDeviceMetric_identifier(divNode, "DeviceMetric.identifier")
+         && validateDeviceMetric_unit(divNode, "DeviceMetric.unit")
+         && validateDeviceMetric_source(divNode, "DeviceMetric.source")
+         && validateDeviceMetric_parent(divNode, "DeviceMetric.parent")
+         && validateDeviceMetric_operationalStatus(divNode, "DeviceMetric.operationalStatus")
+         && validateDeviceMetric_color(divNode, "DeviceMetric.color")
+         && validateDeviceMetric_category(divNode, "DeviceMetric.category")
+         && validateDeviceMetric_measurementPeriod(divNode, "DeviceMetric.measurementPeriod")
+         && validateDeviceMetric_calibration(divNode, "DeviceMetric.calibration");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_id(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_id_value(divNode, "DeviceMetric.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_id_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_meta(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_implicitRules(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_implicitRules_value(divNode, "DeviceMetric.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_language(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_language_value(divNode, "DeviceMetric.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_language_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_text(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_contained(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_extension(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_modifierExtension(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_type(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.type");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DeviceMetric.type");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Type of metric');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_type_coding(divNode, "DeviceMetric.type.coding")
+         && validateDeviceMetric_type_text(divNode, "DeviceMetric.type.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_type_coding(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.type.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_type_text(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.type.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_identifier(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.identifier");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DeviceMetric.identifier");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Unique identifier of this DeviceMetric');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_identifier_label(divNode, "DeviceMetric.identifier.label")
+         && validateDeviceMetric_identifier_system(divNode, "DeviceMetric.identifier.system")
+         && validateDeviceMetric_identifier_value(divNode, "DeviceMetric.identifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_identifier_label(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.identifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_identifier_system(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.identifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_identifier_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.identifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_unit(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.unit");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_unit_coding(divNode, "DeviceMetric.unit.coding")
+         && validateDeviceMetric_unit_text(divNode, "DeviceMetric.unit.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_unit_coding(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.unit.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_unit_text(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.unit.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_source(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.source");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_source_value(divNode, "DeviceMetric.source.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_source_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.source.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_parent(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.parent");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_parent_value(divNode, "DeviceMetric.parent.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_parent_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.parent.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_operationalStatus(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.operationalStatus");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_operationalStatus_value(divNode, "DeviceMetric.operationalStatus.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_operationalStatus_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.operationalStatus.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_color(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.color");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_color_value(divNode, "DeviceMetric.color.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_color_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.color.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_category(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.category");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "DeviceMetric.category");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_category_value(divNode, "DeviceMetric.category.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_category_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.category.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_measurementPeriod(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.measurementPeriod");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_measurementPeriod_text(divNode, "DeviceMetric.measurementPeriod.text")
+         && validateDeviceMetric_measurementPeriod_date(divNode, "DeviceMetric.measurementPeriod.date")
+         && validateDeviceMetric_measurementPeriod_author(divNode, "DeviceMetric.measurementPeriod.author");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_measurementPeriod_text(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.measurementPeriod.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_measurementPeriod_date(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.measurementPeriod.date");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_measurementPeriod_author(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.measurementPeriod.author");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_calibration(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_calibration_id(divNode, "DeviceMetric.calibration.id")
+         && validateDeviceMetric_calibration_extension(divNode, "DeviceMetric.calibration.extension")
+         && validateDeviceMetric_calibration_modifierExtension(divNode, "DeviceMetric.calibration.modifierExtension")
+         && validateDeviceMetric_calibration_type(divNode, "DeviceMetric.calibration.type")
+         && validateDeviceMetric_calibration_state(divNode, "DeviceMetric.calibration.state")
+         && validateDeviceMetric_calibration_time(divNode, "DeviceMetric.calibration.time");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_calibration_id(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_calibration_id_value(divNode, "DeviceMetric.calibration.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_calibration_id_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.calibration.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_calibration_extension(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_calibration_modifierExtension(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_calibration_type(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.type");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_calibration_type_value(divNode, "DeviceMetric.calibration.type.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_calibration_type_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.calibration.type.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_calibration_state(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.state");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_calibration_state_value(divNode, "DeviceMetric.calibration.state.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_calibration_state_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.calibration.state.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateDeviceMetric_calibration_time(node) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.time");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateDeviceMetric_calibration_time_value(divNode, "DeviceMetric.calibration.time.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateDeviceMetric_calibration_time_value(node) {
+  var answerNodes = findAnswers(node, "DeviceMetric.calibration.time.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function serializeDeviceMetric(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric",
+      "title":"Measurement, calculation or setting capability of a medical device"
+    }
+    var childGroups = [];    serializeDeviceMetric_id(groupNodes[i], childGroups);
+    serializeDeviceMetric_meta(groupNodes[i], childGroups);
+    serializeDeviceMetric_implicitRules(groupNodes[i], childGroups);
+    serializeDeviceMetric_language(groupNodes[i], childGroups);
+    serializeDeviceMetric_text(groupNodes[i], childGroups);
+    serializeDeviceMetric_contained(groupNodes[i], childGroups);
+    serializeDeviceMetric_extension(groupNodes[i], childGroups);
+    serializeDeviceMetric_modifierExtension(groupNodes[i], childGroups);
+    serializeDeviceMetric_type(groupNodes[i], childGroups);
+    serializeDeviceMetric_identifier(groupNodes[i], childGroups);
+    serializeDeviceMetric_unit(groupNodes[i], childGroups);
+    serializeDeviceMetric_source(groupNodes[i], childGroups);
+    serializeDeviceMetric_parent(groupNodes[i], childGroups);
+    serializeDeviceMetric_operationalStatus(groupNodes[i], childGroups);
+    serializeDeviceMetric_color(groupNodes[i], childGroups);
+    serializeDeviceMetric_category(groupNodes[i], childGroups);
+    serializeDeviceMetric_measurementPeriod(groupNodes[i], childGroups);
+    serializeDeviceMetric_calibration(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_id(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.id"
+    }
+    var childQuestions = [];    serializeDeviceMetric_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_id_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.id.value",
+      "text":"Logical id of this artifact"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_meta(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.meta");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.meta",
+      "text":"Metadata about the resource"
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_implicitRules(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.implicitRules");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.implicitRules"
+    }
+    var childQuestions = [];    serializeDeviceMetric_implicitRules_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_implicitRules_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.implicitRules.value",
+      "text":"A set of rules under which this content was created"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.implicitRules.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_language(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.language");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.language"
+    }
+    var childQuestions = [];    serializeDeviceMetric_language_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_language_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.language.value",
+      "text":"language"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.language.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_text(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.text");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.text",
+      "text":"Text summary of the resource, for human interpretation"
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_contained(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.contained");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.contained",
+      "text":"Contained, inline Resources"
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_extension(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_type(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.type");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.type",
+      "text":"Type of metric"
+    }
+    var childQuestions = [];    serializeDeviceMetric_type_coding(groupNodes[i], childQuestions);
+    serializeDeviceMetric_type_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_type_coding(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.type.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.type.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_type_text(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.type.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.type.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_identifier(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.identifier");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.identifier",
+      "text":"Unique identifier of this DeviceMetric"
+    }
+    var childQuestions = [];    serializeDeviceMetric_identifier_label(groupNodes[i], childQuestions);
+    serializeDeviceMetric_identifier_system(groupNodes[i], childQuestions);
+    serializeDeviceMetric_identifier_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_identifier_label(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.identifier.label",
+      "text":"label:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.identifier.label");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_identifier_system(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.identifier.system",
+      "text":"system:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.identifier.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_identifier_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.identifier.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.identifier.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_unit(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.unit");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.unit",
+      "text":"Unit of metric"
+    }
+    var childQuestions = [];    serializeDeviceMetric_unit_coding(groupNodes[i], childQuestions);
+    serializeDeviceMetric_unit_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_unit_coding(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.unit.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.unit.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_unit_text(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.unit.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.unit.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_source(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.source");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.source"
+    }
+    var childQuestions = [];    serializeDeviceMetric_source_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_source_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.source.value",
+      "text":"Describes the link to the source Device"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.source.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_parent(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.parent");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.parent"
+    }
+    var childQuestions = [];    serializeDeviceMetric_parent_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_parent_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.parent.value",
+      "text":"Describes the link to the parent DeviceComponent"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.parent.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_operationalStatus(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.operationalStatus");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.operationalStatus"
+    }
+    var childQuestions = [];    serializeDeviceMetric_operationalStatus_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_operationalStatus_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.operationalStatus.value",
+      "text":"operational status"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.operationalStatus.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_color(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.color");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.color"
+    }
+    var childQuestions = [];    serializeDeviceMetric_color_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_color_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.color.value",
+      "text":"color"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.color.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_category(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.category");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.category"
+    }
+    var childQuestions = [];    serializeDeviceMetric_category_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_category_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.category.value",
+      "text":"category"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.category.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_measurementPeriod(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.measurementPeriod");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.measurementPeriod",
+      "text":"Describes the measurement repetition time"
+    }
+    var childQuestions = [];    serializeDeviceMetric_measurementPeriod_text(groupNodes[i], childQuestions);
+    serializeDeviceMetric_measurementPeriod_date(groupNodes[i], childQuestions);
+    serializeDeviceMetric_measurementPeriod_author(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_measurementPeriod_text(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.measurementPeriod.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.measurementPeriod.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_measurementPeriod_date(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.measurementPeriod.date",
+      "text":"date:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.measurementPeriod.date");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_measurementPeriod_author(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.measurementPeriod.author",
+      "text":"author:"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.measurementPeriod.author");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.calibration",
+      "title":"Describes the calibrations that have been performed or that are required to be performed"
+    }
+    var childGroups = [];    serializeDeviceMetric_calibration_id(groupNodes[i], childGroups);
+    serializeDeviceMetric_calibration_extension(groupNodes[i], childGroups);
+    serializeDeviceMetric_calibration_modifierExtension(groupNodes[i], childGroups);
+    serializeDeviceMetric_calibration_type(groupNodes[i], childGroups);
+    serializeDeviceMetric_calibration_state(groupNodes[i], childGroups);
+    serializeDeviceMetric_calibration_time(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_id(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.calibration.id"
+    }
+    var childQuestions = [];    serializeDeviceMetric_calibration_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_id_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.calibration.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.calibration.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_extension(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.calibration.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.calibration.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_type(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.type");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.calibration.type"
+    }
+    var childQuestions = [];    serializeDeviceMetric_calibration_type_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_type_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.calibration.type.value",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.calibration.type.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_state(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.state");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.calibration.state"
+    }
+    var childQuestions = [];    serializeDeviceMetric_calibration_state_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_state_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.calibration.state.value",
+      "text":"state"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.calibration.state.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_time(node, groups) {
+  var groupNodes = findDiv(node, "DeviceMetric.calibration.time");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"DeviceMetric.calibration.time"
+    }
+    var childQuestions = [];    serializeDeviceMetric_calibration_time_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeDeviceMetric_calibration_time_value(node, answers) {
+  var question = {
+      "linkId":"DeviceMetric.calibration.time.value",
+      "text":"Describes the time last calibration has been performed"
+    }
+  var answerNodes = findAnswers(node, "DeviceMetric.calibration.time.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+function validateQuestionnaire() {
+  return validateDeviceMetric(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function serializeQuestionnaire() {
+  var rootGroup = serializeDeviceMetric(document.getElementById("div-cnt"));
+  if (rootGroup.length == 0)
+    delete answers.group
+  else
+    answers.group = rootGroup;
+  return answers;
+} --></script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/json2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/statuspage.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jtip.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jcookie.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js" type="text/javascript"> </script>
+      <script type="text/javascript">  <!-- var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>"; --></script>
+      <script type="text/javascript">  <!-- var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+        && this.style.display != "none";
+  });
+}
+
+function setAddFocus(node, linkId) {
+  $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+  }).last().next(":input").focus();
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  serializeQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    serializeQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+} --></script>
+      <script type="text/javascript">  <!-- var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+} --></script>
+      <script type="text/javascript">  <!-- var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+} --></script>
+      <style type="null">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript">  <!-- //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      } --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+<div id="div-cnt">
+         <h3><span class="sectioncount">5.13.6.1<a name="5.13.6.1"> </a></span> Measurement, calculation or setting capability of a medical device <a href="devicemetric.questionnaire.html#5.13.6.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e17">
+            <span style="display:none">DeviceMetric</span>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e35.1">
+               <span style="display:none">DeviceMetric.id</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.id.value</span> Logical id of this artifact</td>
+                        <td>
+                           <input name="Path:DeviceMetric[1]DeviceMetric.id[1]DeviceMetric.id.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e35.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.id</span>
+            <span style="display:none">1</span>
+            <p>Metadata about the resource</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e73.1">
+               <span style="display:none">DeviceMetric.meta</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e73.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.meta</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e92.1">
+               <span style="display:none">DeviceMetric.implicitRules</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:DeviceMetric[1]DeviceMetric.implicitRules[1]DeviceMetric.implicitRules.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e92.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.implicitRules</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e130.1">
+               <span style="display:none">DeviceMetric.language</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e130.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e168.1">
+               <span style="display:none">DeviceMetric.text</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e168.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e188.1">
+               <span style="display:none">DeviceMetric.contained</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e188.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.contained</span>
+            <span style="display:none">1</span>
+            <p>Additional Content defined by implementations</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e207.1">
+               <span style="display:none">DeviceMetric.extension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e207.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.extension</span>
+            <span style="display:none">1</span>
+            <p>Extensions that cannot be ignored</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e226.1">
+               <span style="display:none">DeviceMetric.modifierExtension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e226.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.modifierExtension</span>
+            <span style="display:none">1</span>
+            <p>Type of metric</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e245.1">
+               <span style="display:none">DeviceMetric.type</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.type.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.type.text</span> text:</td>
+                        <td>
+                           <input name="Path:DeviceMetric[1]DeviceMetric.type[1]DeviceMetric.type.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e245.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.type</span>
+            <span style="display:none">1</span>
+            <p>Unique identifier of this DeviceMetric</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e301.1">
+               <span style="display:none">DeviceMetric.identifier</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.identifier.label</span> label:</td>
+                        <td>
+                           <input name="Path:DeviceMetric[1]DeviceMetric.identifier[1]DeviceMetric.identifier.label[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.identifier.system</span> system:</td>
+                        <td>
+                           <input name="Path:DeviceMetric[1]DeviceMetric.identifier[1]DeviceMetric.identifier.system[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.identifier.value</span> value:</td>
+                        <td>
+                           <input name="Path:DeviceMetric[1]DeviceMetric.identifier[1]DeviceMetric.identifier.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e301.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.identifier</span>
+            <span style="display:none">1</span>
+            <p>Unit of metric</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e373.1">
+               <span style="display:none">DeviceMetric.unit</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.unit.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.unit.text</span> text:</td>
+                        <td>
+                           <input name="Path:DeviceMetric[1]DeviceMetric.unit[1]DeviceMetric.unit.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e373.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.unit</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e430.1">
+               <span style="display:none">DeviceMetric.source</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.source.value</span> Describes the link to the source Device</td>
+                        <td>
+                           <input tabindex="text" name="Path:DeviceMetric[1]DeviceMetric.source[1]DeviceMetric.source.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e430.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.source</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e473.1">
+               <span style="display:none">DeviceMetric.parent</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.parent.value</span> Describes the link to the parent DeviceComponent</td>
+                        <td>
+                           <input tabindex="text" name="Path:DeviceMetric[1]DeviceMetric.parent[1]DeviceMetric.parent.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e473.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.parent</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e516.1">
+               <span style="display:none">DeviceMetric.operationalStatus</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.operationalStatus.value</span> operational status</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e516.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.operationalStatus</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e554.1">
+               <span style="display:none">DeviceMetric.color</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.color.value</span> color</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e554.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.color</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e592.1">
+               <span style="display:none">DeviceMetric.category</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.category.value</span> category</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e592.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.category</span>
+            <span style="display:none">1</span>
+            <p>Describes the measurement repetition time</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e630.1">
+               <span style="display:none">DeviceMetric.measurementPeriod</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.measurementPeriod.text</span> text:</td>
+                        <td>
+                           <input name="Path:DeviceMetric[1]DeviceMetric.measurementPeriod[1]DeviceMetric.measurementPeriod.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.measurementPeriod.date</span> date:</td>
+                        <td>
+                           <input onblur="checkDateTime(this)" maxlength="26" name="Path:DeviceMetric[1]DeviceMetric.measurementPeriod[1]DeviceMetric.measurementPeriod.date[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">DeviceMetric.measurementPeriod.author</span> author:</td>
+                        <td>
+                           <input tabindex="text" name="Path:DeviceMetric[1]DeviceMetric.measurementPeriod[1]DeviceMetric.measurementPeriod.author[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e630.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.measurementPeriod</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">5.13.6.1.1<a name="5.13.6.1.1"> </a></span> Describes the calibrations that have been performed or that are required to be performed <a href="devicemetric.questionnaire.html#5.13.6.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e718.1">
+               <span style="display:none">DeviceMetric.calibration</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e736.1.1">
+                  <span style="display:none">DeviceMetric.calibration.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">DeviceMetric.calibration.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:DeviceMetric[1]DeviceMetric.calibration[1]DeviceMetric.calibration.id[1]DeviceMetric.calibration.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e736.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DeviceMetric.calibration.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e774.1.1">
+                  <span style="display:none">DeviceMetric.calibration.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e774.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DeviceMetric.calibration.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e793.1.1">
+                  <span style="display:none">DeviceMetric.calibration.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e793.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DeviceMetric.calibration.modifierExtension</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e812.1.1">
+                  <span style="display:none">DeviceMetric.calibration.type</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">DeviceMetric.calibration.type.value</span> type</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e812.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DeviceMetric.calibration.type</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e850.1.1">
+                  <span style="display:none">DeviceMetric.calibration.state</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">DeviceMetric.calibration.state.value</span> state</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e850.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DeviceMetric.calibration.state</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e889.1.1">
+                  <span style="display:none">DeviceMetric.calibration.time</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">DeviceMetric.calibration.time.value</span> Describes the time last calibration has been performed</td>
+                           <td>
+                              <input onblur="checkInstant(this)" maxlength="30" name="Path:DeviceMetric[1]DeviceMetric.calibration[1]DeviceMetric.calibration.time[1]DeviceMetric.calibration.time.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e889.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">DeviceMetric.calibration.time</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e718.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">DeviceMetric.calibration</span>
+            <span style="display:none">1</span>
+         </div>
+         <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e17', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+         <span style="display:none">DeviceMetric</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+</body>
+</html>
+
+<p>
+  <!-- spacer -->
+ 
+</p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:33-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fdevicemetric.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fdevicemetric.questionnaire.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

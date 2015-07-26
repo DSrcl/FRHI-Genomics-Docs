@@ -1,0 +1,1228 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "qs1",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs2",
+      "name": "Type options for DiagnosticOrder.supportingInformation",
+      "description": "Type options for DiagnosticOrder.supportingInformation",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:0dbea3a1-7c9b-4acb-bdf8-2220d0a84f3b",
+        "timestamp": "2015-07-24T17:36:07-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Observation",
+            "display": "Observation"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Condition",
+            "display": "Condition"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "DocumentReference",
+            "display": "DocumentReference"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs3",
+      "name": "Type options for DiagnosticOrder.supportingInformation",
+      "description": "Type options for DiagnosticOrder.supportingInformation",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:24b4f716-ccd6-4922-9896-0e25eaaa0a48",
+        "timestamp": "2015-07-24T17:36:07-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "observation-daf-results-dafresultobscode",
+            "display": "observation-daf-results-dafresultobscode"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "observation-daf-results-dafresultobsquantity",
+            "display": "observation-daf-results-dafresultobsquantity"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "observation-daf-results-dafresultobsratio",
+            "display": "observation-daf-results-dafresultobsratio"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "observation-daf-results-dafresultobsother",
+            "display": "observation-daf-results-dafresultobsother"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "observation-daf-results-dafresultobspanel",
+            "display": "observation-daf-results-dafresultobspanel"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "condition-daf-dafcondition",
+            "display": "condition-daf-dafcondition"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs4",
+      "name": "Type options for DiagnosticOrder.event.actor",
+      "description": "Type options for DiagnosticOrder.event.actor",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:b65121f0-f709-4ebd-87d9-f88c3ca901ff",
+        "timestamp": "2015-07-24T17:36:07-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Practitioner",
+            "display": "Practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Device",
+            "display": "Device"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs5",
+      "name": "Type options for DiagnosticOrder.item.bodySite[x]",
+      "description": "Type options for DiagnosticOrder.item.bodySite[x]",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:1b02238c-252a-484f-a0d3-fbe82873c656",
+        "timestamp": "2015-07-24T17:36:07-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "CodeableConcept",
+            "display": "CodeableConcept"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "BodySite",
+            "display": "BodySite"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "draft",
+  "date": "2014-08-21T00:00:00-04:00",
+  "publisher": "Health Level Seven International (Infrastructure and Messaging - Data Access Framework)",
+  "group": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+        "valueString": "A record of a request for a diagnostic investigation service to be performed."
+      }
+    ],
+    "linkId": "DiagnosticOrder",
+    "title": "A request for a diagnostic service",
+    "required": false,
+    "repeats": true,
+    "group": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "DiagnosticOrder.id",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "DiagnosticOrder.id.value",
+            "text": "Logical id of this artifact",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."
+          }
+        ],
+        "linkId": "DiagnosticOrder.meta",
+        "text": "Metadata about the resource",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "uri"
+          }
+        ],
+        "linkId": "DiagnosticOrder.implicitRules",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "DiagnosticOrder.implicitRules.value",
+            "text": "A set of rules under which this content was created",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The base language in which the resource is written."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "DiagnosticOrder.language",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "DiagnosticOrder.language.value",
+            "text": "language",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."
+          }
+        ],
+        "linkId": "DiagnosticOrder.text",
+        "text": "Text summary of the resource, for human interpretation",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."
+          }
+        ],
+        "linkId": "DiagnosticOrder.contained",
+        "text": "Contained, inline Resources",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+          }
+        ],
+        "linkId": "DiagnosticOrder.extension",
+        "text": "Additional Content defined by implementations",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+          }
+        ],
+        "linkId": "DiagnosticOrder.modifierExtension",
+        "text": "Extensions that cannot be ignored",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Who or what the investigation is to be performed on. This is usually a human patient, but diagnostic tests can also be requested on animals, groups of humans or animals, devices such as dialysis machines, or even locations (typically for environmental scans)."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "DiagnosticOrder.subject",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/patient-daf-dafpatient?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "DiagnosticOrder.subject.value",
+            "text": "Who and/or what test is about",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The practitioner that holds legal responsibility for ordering the investigation."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "DiagnosticOrder.orderer",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/pract-daf-dafpract?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "DiagnosticOrder.orderer.value",
+            "text": "Who ordered the test",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifiers assigned to this order by the orderer and/or  the receiver and/or order fulfiller."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Identifier"
+          }
+        ],
+        "linkId": "DiagnosticOrder.identifier",
+        "text": "Identifiers assigned to this order",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "DiagnosticOrder.identifier.label",
+            "text": "label:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "DiagnosticOrder.identifier.system",
+            "text": "system:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "DiagnosticOrder.identifier.value",
+            "text": "value:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "An encounter that provides additional information about the healthcare context in which this request is made."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "DiagnosticOrder.encounter",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/encounter-daf-dafencounter?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "DiagnosticOrder.encounter.value",
+            "text": "The encounter that this diagnostic order is associated with",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "An explanation or justification for why this diagnostic investigation is being requested."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "DiagnosticOrder.clinicalNotes",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "DiagnosticOrder.clinicalNotes.value",
+            "text": "Explanation/Justification for test",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Additional clinical information about the patient or specimen that may influence test interpretations."
+          }
+        ],
+        "linkId": "DiagnosticOrder.supportingInformation",
+        "text": "Additional clinical information",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "DiagnosticOrder.supportingInformation._type",
+            "text": "type",
+            "type": "choice",
+            "required": false,
+            "repeats": false,
+            "options": {
+              "reference": "#vs2"
+            },
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.supportingInformation._Observation",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Observation?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.supportingInformation._Observation.value",
+                    "text": "Observation",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.supportingInformation._Condition",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Condition?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.supportingInformation._Condition.value",
+                    "text": "Condition",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.supportingInformation._DocumentReference",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/DocumentReference?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.supportingInformation._DocumentReference.value",
+                    "text": "DocumentReference",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Additional clinical information about the patient or specimen that may influence test interpretations."
+          }
+        ],
+        "linkId": "DiagnosticOrder.supportingInformation",
+        "text": "Additional clinical information",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "DiagnosticOrder.supportingInformation._type",
+            "text": "type",
+            "type": "choice",
+            "required": false,
+            "repeats": false,
+            "options": {
+              "reference": "#vs3"
+            },
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobscode",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/observation-daf-results-dafresultobscode?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobscode.value",
+                    "text": "observation-daf-results-dafresultobscode",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobsquantity",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/observation-daf-results-dafresultobsquantity?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobsquantity.value",
+                    "text": "observation-daf-results-dafresultobsquantity",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobsratio",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/observation-daf-results-dafresultobsratio?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobsratio.value",
+                    "text": "observation-daf-results-dafresultobsratio",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobsother",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/observation-daf-results-dafresultobsother?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobsother.value",
+                    "text": "observation-daf-results-dafresultobsother",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobspanel",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/observation-daf-results-dafresultobspanel?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.supportingInformation._observation-daf-results-dafresultobspanel.value",
+                    "text": "observation-daf-results-dafresultobspanel",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.supportingInformation._condition-daf-dafcondition",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/condition-daf-dafcondition?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.supportingInformation._condition-daf-dafcondition.value",
+                    "text": "condition-daf-dafcondition",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "One or more specimens that the diagnostic investigation is about."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "DiagnosticOrder.specimen",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Specimen?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "DiagnosticOrder.specimen.value",
+            "text": "If the whole order relates to specific specimens",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The status of the order."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "DiagnosticOrder.status",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "DiagnosticOrder.status.value",
+            "text": "status",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The clinical priority associated with this order."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "DiagnosticOrder.priority",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "DiagnosticOrder.priority.value",
+            "text": "priority",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A summary of the events of interest that have occurred as the request is processed. E.g. when the order was made, various processing steps (specimens received), when it was completed."
+          }
+        ],
+        "linkId": "DiagnosticOrder.event",
+        "title": "A list of events of interest in the lifecycle",
+        "required": true,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "DiagnosticOrder.event.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "DiagnosticOrder.event.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+              }
+            ],
+            "linkId": "DiagnosticOrder.event.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+              }
+            ],
+            "linkId": "DiagnosticOrder.event.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The status for the event."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "code"
+              }
+            ],
+            "linkId": "DiagnosticOrder.event.status",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "DiagnosticOrder.event.status.value",
+                "text": "status",
+                "type": "choice",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Additional information about the event that occurred - e.g. if the status remained unchanged."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "CodeableConcept"
+              }
+            ],
+            "linkId": "DiagnosticOrder.event.description",
+            "text": "More information about the event and its context",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "DiagnosticOrder.event.description.coding",
+                "text": "code:",
+                "type": "open-choice",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "DiagnosticOrder.event.description.text",
+                "text": "text:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The date/time at which the event occurred."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "datetime"
+              }
+            ],
+            "linkId": "DiagnosticOrder.event.dateTime",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "DiagnosticOrder.event.dateTime.value",
+                "text": "The date at which the event happened",
+                "type": "dateTime",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The person who was responsible for performing or recording the action."
+              }
+            ],
+            "linkId": "DiagnosticOrder.event.actor",
+            "text": "Who recorded or did this",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "DiagnosticOrder.event.actor._type",
+                "text": "type",
+                "type": "choice",
+                "required": false,
+                "repeats": false,
+                "options": {
+                  "reference": "#vs4"
+                },
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.event.actor._Practitioner",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "DiagnosticOrder.event.actor._Practitioner.value",
+                        "text": "Practitioner",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.event.actor._Device",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Device?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "DiagnosticOrder.event.actor._Device.value",
+                        "text": "Device",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The specific diagnostic investigations that are requested as part of this request. Sometimes, there can only be one item per request, but in most contexts, more than one investigation can be requested."
+          }
+        ],
+        "linkId": "DiagnosticOrder.item",
+        "title": "The items the orderer requested",
+        "required": true,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "DiagnosticOrder.item.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "DiagnosticOrder.item.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+              }
+            ],
+            "linkId": "DiagnosticOrder.item.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+              }
+            ],
+            "linkId": "DiagnosticOrder.item.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The laboratory test, panel or battery that was ordered."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "CodeableConcept"
+              }
+            ],
+            "linkId": "DiagnosticOrder.item.code",
+            "text": "US Realm Laboratory Report Order Code",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "DiagnosticOrder.item.code.coding",
+                "text": "code:",
+                "type": "open-choice",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "DiagnosticOrder.item.code.text",
+                "text": "text:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "If the item is related to a specific specimen."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "Reference"
+              }
+            ],
+            "linkId": "DiagnosticOrder.item.specimen",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                    "valueString": "/Specimen?subject=$subj&patient=$subj&encounter=$encounter"
+                  }
+                ],
+                "linkId": "DiagnosticOrder.item.specimen.value",
+                "text": "If this item relates to specific specimens",
+                "type": "reference",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Anatomical location where the request test should be performed.  This is the target site."
+              }
+            ],
+            "linkId": "DiagnosticOrder.item.bodySite[x]",
+            "text": "Location of requested test (if applicable)",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "DiagnosticOrder.item.bodySite[x]._type",
+                "text": "type",
+                "type": "choice",
+                "required": false,
+                "repeats": false,
+                "options": {
+                  "reference": "#vs5"
+                },
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "CodeableConcept"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.item.bodySite[x]._CodeableConcept",
+                    "text": "CodeableConcept",
+                    "question": [
+                      {
+                        "linkId": "DiagnosticOrder.item.bodySite[x]._CodeableConcept.coding",
+                        "text": "code:",
+                        "type": "open-choice",
+                        "required": false,
+                        "repeats": false
+                      },
+                      {
+                        "linkId": "DiagnosticOrder.item.bodySite[x]._CodeableConcept.text",
+                        "text": "text:",
+                        "type": "string",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "DiagnosticOrder.item.bodySite[x]._BodySite",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/BodySite?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "DiagnosticOrder.item.bodySite[x]._BodySite.value",
+                        "text": "BodySite",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The status of this individual item within the order."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "code"
+              }
+            ],
+            "linkId": "DiagnosticOrder.item.status",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "DiagnosticOrder.item.status.value",
+                "text": "status",
+                "type": "choice",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "A summary of the events of interest that have occurred as this item of the request is processed."
+              }
+            ],
+            "linkId": "DiagnosticOrder.item.event",
+            "title": "Events specific to this item",
+            "required": false,
+            "repeats": true
+          }
+        ]
+      }
+    ]
+  }
+}

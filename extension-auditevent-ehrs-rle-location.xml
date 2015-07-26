@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="auditevent-ehrs-rle-location"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/auditevent-ehrs-rle-location"/>
+  <name value="Where the activity occurred, if relevant"/>
+  <publisher value="Health Level Seven International (Electronic Health Record)"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/special/committees/ehr.html"/>
+    </telecom>
+  </contact>
+  <description value="The phyiscal location of the event (e.g. Building, room, etc.)."/>
+  <status value="draft"/>
+  <date value="2014-12-04"/>
+  <kind value="datatype"/>
+  <constrainedType value="Extension"/>
+  <abstract value="false"/>
+  <contextType value="resource"/>
+  <context value="AuditEvent.event"/>
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <snapshot>
+    <element>
+      <path value="Extension"/>
+      <short value="Where the activity occurred, if relevant"/>
+      <definition value="The phyiscal location of the event (e.g. Building, room, etc.)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/auditevent-ehrs-rle-location"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.valueResource"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element>
+      <path value="Extension"/>
+      <short value="Where the activity occurred, if relevant"/>
+      <definition value="The phyiscal location of the event (e.g. Building, room, etc.)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/auditevent-ehrs-rle-location"/>
+    </element>
+    <element>
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

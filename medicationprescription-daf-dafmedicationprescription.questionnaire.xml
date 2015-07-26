@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <name value="Type options for MedicationPrescription.reason[x]"/>
+      <description value="Type options for MedicationPrescription.reason[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:847effab-0ac2-46b6-b986-49f6ca6536b0"/>
+        <timestamp value="2015-07-24T17:36:10-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="CodeableConcept"/>
+          <display value="CodeableConcept"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Condition"/>
+          <display value="Condition"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs3"/>
+      <name value="Type options for MedicationPrescription.medication[x]"/>
+      <description value="Type options for MedicationPrescription.medication[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:ee4de312-e06b-4dea-b7ac-0f4a11444b61"/>
+        <timestamp value="2015-07-24T17:36:10-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="CodeableConcept"/>
+          <display value="CodeableConcept"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Medication"/>
+          <display value="Medication"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs4"/>
+      <name value="Type options for MedicationPrescription.dosageInstruction.scheduled[x]"/>
+      <description value="Type options for MedicationPrescription.dosageInstruction.scheduled[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:9e138f0e-75b0-4a32-8683-dd0661be1c8c"/>
+        <timestamp value="2015-07-24T17:36:10-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="dateTime"/>
+          <display value="dateTime"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Period"/>
+          <display value="Period"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Timing"/>
+          <display value="Timing"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs5"/>
+      <name value="Type options for MedicationPrescription.dosageInstruction.asNeeded[x]"/>
+      <description value="Type options for MedicationPrescription.dosageInstruction.asNeeded[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:eddea101-f86e-42e9-9fd0-57126438fe3b"/>
+        <timestamp value="2015-07-24T17:36:10-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="boolean"/>
+          <display value="boolean"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="CodeableConcept"/>
+          <display value="CodeableConcept"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs6"/>
+      <name value="Type options for MedicationPrescription.dosageInstruction.dose[x]"/>
+      <description value="Type options for MedicationPrescription.dosageInstruction.dose[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:d1e77f7a-b01e-4d36-8dfc-bcf31d795b1e"/>
+        <timestamp value="2015-07-24T17:36:10-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Range"/>
+          <display value="Range"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Quantity"/>
+          <display value="Quantity"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs7"/>
+      <name value="Type options for MedicationPrescription.dispense.medication[x]"/>
+      <description value="Type options for MedicationPrescription.dispense.medication[x]"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:f0b43a8c-03be-430d-8725-7addaf68e690"/>
+        <timestamp value="2015-07-24T17:36:10-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="CodeableConcept"/>
+          <display value="CodeableConcept"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Medication"/>
+          <display value="Medication"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-03-20T00:00:00-04:00"/>
+  <publisher value="Health Level Seven International (Infrastructure and Messaging - Data Access Framework)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="An order for both supply of the medication and the instructions for administration of the medicine to a patient."/>
+    </extension>
+    <linkId value="MedicationPrescription"/>
+    <title value="Prescription of medication to for patient"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="MedicationPrescription.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="MedicationPrescription.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="MedicationPrescription.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="MedicationPrescription.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="MedicationPrescription.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="MedicationPrescription.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="MedicationPrescription.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      </extension>
+      <linkId value="MedicationPrescription.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      </extension>
+      <linkId value="MedicationPrescription.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      </extension>
+      <linkId value="MedicationPrescription.extension"/>
+      <text value="Additional Content defined by implementations"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      </extension>
+      <linkId value="MedicationPrescription.modifierExtension"/>
+      <text value="Extensions that cannot be ignored"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="External identifier - one that would be used by another non-FHIR system - for example a re-imbursement system might issue its own id for each prescription that is created.  This is particularly important where FHIR only provides part of an erntire workflow process where records have to be tracked through an entire system."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="MedicationPrescription.identifier"/>
+      <text value="External identifier"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="MedicationPrescription.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="MedicationPrescription.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="MedicationPrescription.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The date (and perhaps time) when the prescription was written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="MedicationPrescription.dateWritten"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="MedicationPrescription.dateWritten.value"/>
+        <text value="When prescription was authorized"/>
+        <type value="dateTime"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A code specifying the state of the order.  Generally this will be active or completed state."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="MedicationPrescription.status"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="MedicationPrescription.status.value"/>
+        <text value="status"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A link to a resource representing the person to whom the medication will be given."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="MedicationPrescription.patient"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/patient-daf-dafpatient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="MedicationPrescription.patient.value"/>
+        <text value="Who prescription is for"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The healthcare professional responsible for authorizing the prescription."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="MedicationPrescription.prescriber"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/pract-daf-dafpract?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="MedicationPrescription.prescriber.value"/>
+        <text value="Who ordered the medication(s)"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A link to a resource that identifies the particular occurrence of contact between patient and health care provider."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="MedicationPrescription.encounter"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/encounter-daf-dafencounter?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="MedicationPrescription.encounter.value"/>
+        <text value="Created during encounter / admission / stay"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Can be the reason or the indication for writing the prescription."/>
+      </extension>
+      <linkId value="MedicationPrescription.reason[x]"/>
+      <text value="Reason or indication for writing the prescription"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="MedicationPrescription.reason[x]._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <options>
+          <reference value="#vs2"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="CodeableConcept"/>
+          </extension>
+          <linkId value="MedicationPrescription.reason[x]._CodeableConcept"/>
+          <text value="CodeableConcept"/>
+          <question>
+            <linkId value="MedicationPrescription.reason[x]._CodeableConcept.coding"/>
+            <text value="code:"/>
+            <type value="open-choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="MedicationPrescription.reason[x]._CodeableConcept.text"/>
+            <text value="text:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="MedicationPrescription.reason[x]._Condition"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Condition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="MedicationPrescription.reason[x]._Condition.value"/>
+            <text value="Condition"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Extra information about the prescription that could not be conveyed by the other attributes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="MedicationPrescription.note"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="MedicationPrescription.note.value"/>
+        <text value="Information about the prescription"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Identifies the medication being administered. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications."/>
+      </extension>
+      <linkId value="MedicationPrescription.medication[x]"/>
+      <text value="Medication to be taken"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="MedicationPrescription.medication[x]._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <options>
+          <reference value="#vs3"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="CodeableConcept"/>
+          </extension>
+          <linkId value="MedicationPrescription.medication[x]._CodeableConcept"/>
+          <text value="CodeableConcept"/>
+          <question>
+            <linkId value="MedicationPrescription.medication[x]._CodeableConcept.coding"/>
+            <text value="code:"/>
+            <type value="open-choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="MedicationPrescription.medication[x]._CodeableConcept.text"/>
+            <text value="text:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="MedicationPrescription.medication[x]._Medication"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Medication?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="MedicationPrescription.medication[x]._Medication.value"/>
+            <text value="Medication"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Indicates how the medication is to be used by the patient."/>
+      </extension>
+      <linkId value="MedicationPrescription.dosageInstruction"/>
+      <title value="How medication should be taken"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Free text dosage instructions can be used for cases where the instructions are too complex to code. When coded instructions are present, the free text instructions may still be present for display to humans taking or administering the medication."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.text"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.text.value"/>
+          <text value="Dosage instructions expressed as text"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Additional instructions such as &quot;Swallow with plenty of water&quot; which may or may not be coded."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.additionalInstructions"/>
+        <text value="Supplemental instructions - e.g. &quot;with meals&quot;"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.additionalInstructions.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.additionalInstructions.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The timing schedule for giving the medication to the patient.  The Schedule data type allows many different expressions, for example.  &quot;Every  8 hours&quot;; &quot;Three times a day&quot;; &quot;1/2 an hour before breakfast for 10 days from 23-Dec 2011:&quot;;  &quot;15 Oct 2013, 17 Oct 2013 and 1 Nov 2013&quot;."/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]"/>
+        <text value="When medication should be administered"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._type"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <options>
+            <reference value="#vs4"/>
+          </options>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="datetime"/>
+            </extension>
+            <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._dateTime"/>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._dateTime.value"/>
+              <text value="dateTime"/>
+              <type value="dateTime"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Period"/>
+            </extension>
+            <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._Period"/>
+            <text value="Period"/>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._Period.low"/>
+              <text value="start:"/>
+              <type value="dateTime"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._Period.end"/>
+              <text value="end:"/>
+              <type value="dateTime"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Schedule"/>
+            </extension>
+            <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._Timing"/>
+            <text value="Timing"/>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._Timing.text"/>
+              <text value="text:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._Timing.date"/>
+              <text value="date:"/>
+              <type value="dateTime"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Patient?"/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Practitioner?"/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/RelatedPerson?"/>
+              </extension>
+              <linkId value="MedicationPrescription.dosageInstruction.scheduled[x]._Timing.author"/>
+              <text value="author:"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="If set to true or if specified as a CodeableConcept, indicates that the medication is only taken when needed within the specified schedule rather than at every scheduled dose.  If a CodeableConcept is present, it indicates the pre-condition for taking the Medication."/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.asNeeded[x]"/>
+        <text value="Take &quot;as needed&quot; f(or x)"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.asNeeded[x]._type"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <options>
+            <reference value="#vs5"/>
+          </options>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="boolean"/>
+            </extension>
+            <linkId value="MedicationPrescription.dosageInstruction.asNeeded[x]._boolean"/>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.asNeeded[x]._boolean.value"/>
+              <text value="boolean"/>
+              <type value="boolean"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="CodeableConcept"/>
+            </extension>
+            <linkId value="MedicationPrescription.dosageInstruction.asNeeded[x]._CodeableConcept"/>
+            <text value="CodeableConcept"/>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.asNeeded[x]._CodeableConcept.coding"/>
+              <text value="code:"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.asNeeded[x]._CodeableConcept.text"/>
+              <text value="text:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A coded specification of the anatomic site where the medication first enters the body."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.site"/>
+        <text value="Body site to administer to"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.site.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.site.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A code specifying the route or physiological path of administration of a therapeutic agent into or onto a patient."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.route"/>
+        <text value="How drug should enter body"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.route.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.route.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A coded value indicating the method by which the medication is introduced into or onto the body. Most commonly used for injections.  Examples:  Slow Push; Deep IV.
+
+Terminologies used often pre-coordinate this term with the route and or form of administration."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.method"/>
+        <text value="Technique for administering medication"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.method.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.method.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The amount of therapeutic or other substance given at one administration event."/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.dose[x]"/>
+        <text value="Amount of medication per dose"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.dose[x]._type"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <options>
+            <reference value="#vs6"/>
+          </options>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Range"/>
+            </extension>
+            <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Range"/>
+            <text value="Range"/>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Range.low"/>
+              <text value="low:"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Range.high"/>
+              <text value="high:"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Range.units"/>
+              <text value="units:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Quantity"/>
+            </extension>
+            <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Quantity"/>
+            <text value="Quantity"/>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Quantity.comparator"/>
+              <text value="comp:"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Quantity.value"/>
+              <text value="value:"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Quantity.units"/>
+              <text value="units:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Quantity.code"/>
+              <text value="coded units:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dosageInstruction.dose[x]._Quantity.system"/>
+              <text value="units system:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies the speed with which the substance is introduced into the subject. Typically the rate for an infusion. 200ml in 2 hours."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Ratio"/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.rate"/>
+        <text value="Amount of medication per unit of time"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.rate.numerator"/>
+          <text value="numerator:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.rate.denominator"/>
+          <text value="denominator:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.rate.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The maximum total quantity of a therapeutic substance that may be administered to a subject over the period of time. E.g. 1000mg in 24 hours."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Ratio"/>
+        </extension>
+        <linkId value="MedicationPrescription.dosageInstruction.maxDosePerPeriod"/>
+        <text value="Upper limit on medication per unit of time"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.maxDosePerPeriod.numerator"/>
+          <text value="numerator:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.maxDosePerPeriod.denominator"/>
+          <text value="denominator:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dosageInstruction.maxDosePerPeriod.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Deals with details of the dispense part of the order."/>
+      </extension>
+      <linkId value="MedicationPrescription.dispense"/>
+      <title value="Medication supply authorization"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="MedicationPrescription.dispense.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dispense.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="MedicationPrescription.dispense.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="MedicationPrescription.dispense.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies the medication being administered. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications."/>
+        </extension>
+        <linkId value="MedicationPrescription.dispense.medication[x]"/>
+        <text value="Product to be supplied"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dispense.medication[x]._type"/>
+          <text value="type"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <options>
+            <reference value="#vs7"/>
+          </options>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="CodeableConcept"/>
+            </extension>
+            <linkId value="MedicationPrescription.dispense.medication[x]._CodeableConcept"/>
+            <text value="CodeableConcept"/>
+            <question>
+              <linkId value="MedicationPrescription.dispense.medication[x]._CodeableConcept.coding"/>
+              <text value="code:"/>
+              <type value="open-choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="MedicationPrescription.dispense.medication[x]._CodeableConcept.text"/>
+              <text value="text:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Reference"/>
+            </extension>
+            <linkId value="MedicationPrescription.dispense.medication[x]._Medication"/>
+            <question>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+                <valueString value="/Medication?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+              </extension>
+              <linkId value="MedicationPrescription.dispense.medication[x]._Medication.value"/>
+              <text value="Medication"/>
+              <type value="reference"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Design Comments: This indicates the validity period of a prescription (stale dating the Prescription) 
+It reflects the prescriber perspective for the validity of the prescription. Dispenses must not be made against the prescription outside of this period. The lower-bound of the Dispensing Window signifies the earliest date that the prescription can be filled for the first time. If an upper-bound is not specified then the Prescription is open-ended or will default to a stale-date based on regulations. 
+Rationale: Indicates when the Prescription becomes valid, and when it ceases to be a dispensable Prescription."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Period"/>
+        </extension>
+        <linkId value="MedicationPrescription.dispense.validityPeriod"/>
+        <text value="Time period supply is authorized for"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dispense.validityPeriod.low"/>
+          <text value="start:"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dispense.validityPeriod.end"/>
+          <text value="end:"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="An integer indicating the number of repeats of the Dispense. 
+UsageNotes: For example, the number of times the prescribed quantity is to be supplied including the initial standard fill."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="MedicationPrescription.dispense.numberOfRepeatsAllowed"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dispense.numberOfRepeatsAllowed.value"/>
+          <text value="# of refills authorized"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The amount that is to be dispensed for one fill."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Quantity"/>
+        </extension>
+        <linkId value="MedicationPrescription.dispense.quantity"/>
+        <text value="Amount of medication to supply per dispense"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dispense.quantity.comparator"/>
+          <text value="comp:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dispense.quantity.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dispense.quantity.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dispense.quantity.code"/>
+          <text value="coded units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dispense.quantity.system"/>
+          <text value="units system:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies the period time over which the supplied product is expected to be used, or the length of time the dispense is expected to last. 
+In some situations, this attribute may be used instead of quantity to identify the amount supplied by how long it is expected to last, rather than the physical quantity issued, e.g. 90 days supply of medication (based on an ordered dosage) When possible, it is always better to specify quantity, as this tends to be more precise. expectedSupplyDuration will always be an estimate that can be influenced by external factors."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Duration"/>
+        </extension>
+        <linkId value="MedicationPrescription.dispense.expectedSupplyDuration"/>
+        <text value="Days supply per dispense"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.dispense.expectedSupplyDuration.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.dispense.expectedSupplyDuration.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Indicates whether or not substitution can or should be part of the dispense. In some cases substitution must happen, in other cases substitution must not happen, and in others it does not matter. This block explains the prescriber&#39;s intent. If nothing is specified substitution may be done."/>
+      </extension>
+      <linkId value="MedicationPrescription.substitution"/>
+      <title value="Any restrictions on medication substitution?"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="MedicationPrescription.substitution.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.substitution.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="MedicationPrescription.substitution.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="MedicationPrescription.substitution.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A code signifying whether a different drug should be dispensed from what was prescribed."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="MedicationPrescription.substitution.type"/>
+        <text value="generic | formulary +"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.substitution.type.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.substitution.type.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Indicates the reason for the substitution, or why substitution must or must not be performed."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="MedicationPrescription.substitution.reason"/>
+        <text value="Why should substitution (not) be made"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="MedicationPrescription.substitution.reason.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="MedicationPrescription.substitution.reason.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+  </group>
+</Questionnaire>

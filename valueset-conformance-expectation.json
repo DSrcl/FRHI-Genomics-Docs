@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "id": "conformance-expectation",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ConformanceExpectation</h2><p>Indicates the degree of adherence to a specified behavior or capability expected in order for a system to be deemed conformant with a specification</p><p>This value set has an inline code system http://hl7.org/fhir/conformance-expectation, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>SHALL<a name=\"SHALL\"> </a></td><td>S H A L L</td><td>Support for the specified capability is required to be considered conformant</td></tr><tr><td>SHOULD<a name=\"SHOULD\"> </a></td><td>S H O U L D</td><td>Support for the specified capability is strongly encouraged and failure to support it should only occur after careful consideration</td></tr><tr><td>MAY<a name=\"MAY\"> </a></td><td>M A Y</td><td>Support for the specified capability is not necessary to be considered conformant and the requirement should be considered strictly optional</td></tr><tr><td>SHOULD-NOT<a name=\"SHOULD-NOT\"> </a></td><td>S H O U L D N O T</td><td>Support for the specified capability is strongly discouraged and should occur only after careful consideration</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.550"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/conformance-expectation",
+  "version": "0.5.0",
+  "name": "ConformanceExpectation",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the degree of adherence to a specified behavior or capability expected in order for a system to be deemed conformant with a specification",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-07-26T15:54:10-04:00",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.550"
+      }
+    ],
+    "system": "http://hl7.org/fhir/conformance-expectation",
+    "version": "0.5.0",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "SHALL",
+        "display": "S H A L L",
+        "definition": "Support for the specified capability is required to be considered conformant"
+      },
+      {
+        "code": "SHOULD",
+        "display": "S H O U L D",
+        "definition": "Support for the specified capability is strongly encouraged and failure to support it should only occur after careful consideration"
+      },
+      {
+        "code": "MAY",
+        "display": "M A Y",
+        "definition": "Support for the specified capability is not necessary to be considered conformant and the requirement should be considered strictly optional"
+      },
+      {
+        "code": "SHOULD-NOT",
+        "display": "S H O U L D N O T",
+        "definition": "Support for the specified capability is strongly discouraged and should occur only after careful consideration"
+      }
+    ]
+  }
+}

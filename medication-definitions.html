@@ -1,0 +1,277 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Medication - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/medication-definitions.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="medication.html">Medication</a></li>        <li><b>Detailed Descriptions</b></li>          <!-- medication.html / res-Detailed Descriptions / Medication -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="medication.html">Content</a></li><li><a href="medication-examples.html">Examples</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="medication-mappings.html">Mappings</a></li><li><a href="medication-profiles.html">Profiles</a></li><li><a href="medication.questionnaire.html">HTML Form</a></li></ul>
+
+<h2><span class="sectioncount">4.12.6<a name="4.12.6"> </a></span> Resource Medication - Detailed Descriptions <a href="medication-definitions.html#4.12.6" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>Detailed Descriptions for the elements in the Medication resource.</p>
+
+<table class="dict">
+  <tr><td colspan="2" class="structure"><a name="Medication"> </a><b>Medication</b></td></tr>
+  <tr><td>Definition</td><td><p>Primarily used for identification and definition of Medication, but also covers ingredients and packaging.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.name"> </a><b>Medication.name</b></td></tr>
+  <tr><td>Definition</td><td><p>The common/commercial name of the medication absent information such as strength, form, etc.  E.g. Acetaminophen, Tylenol 3, etc.  The fully coordinated name is communicated as the display of Medication.code.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.code"> </a><b>Medication.code</b></td></tr>
+  <tr><td>Definition</td><td><p>A code (or set of codes) that identify this medication.   Usage note: This could be a standard drug code such as a drug regulator code, RxNorm code, SNOMED CT code, etc. It could also be a local formulary code, optionally with translations to the standard drug codes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>Snomed Medication Codes: <a href="valueset-medication-codes.html">A code that defines the type of a medication</a> (<a href="terminologies.html#example">Example</a>)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>When defining a medication, the code is the &quot;identifying&quot; code for the medication. All the codings provided should be at the same level in the hierarchy (generic, formulation, generic strength, etc.). Codes that relate the medication across the hierarchy should be conveyed using the relationships inherent in Medication.package and Medication.product.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.isBrand"> </a><b>Medication.isBrand</b></td></tr>
+  <tr><td>Definition</td><td><p>Set to true if the item is attributable to a specific manufacturer (even if we don't know who that is).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.manufacturer"> </a><b>Medication.manufacturer</b></td></tr>
+  <tr><td>Definition</td><td><p>Describes the details of the manufacturer.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="organization.html">Organization</a>)</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.kind"> </a><b>Medication.kind</b></td></tr>
+  <tr><td>Definition</td><td><p>Medications are either a single administrable product or a package that contains one or more products.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>MedicationKind: <a href="valueset-medication-kind.html">Whether the medication is a product or a package</a> (<a href="terminologies.html#required">Required</a>)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.product"> </a><b>Medication.product</b></td></tr>
+  <tr><td>Definition</td><td><p>Information that only applies to products (not packages).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.product.form"> </a><b>Medication.product.form</b></td></tr>
+  <tr><td>Definition</td><td><p>Describes the form of the item.  Powder; tables; carton.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>SNOMED CT Form Codes: <a href="valueset-medication-form-codes.html">The form of a medication</a> (<a href="terminologies.html#example">Example</a>)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.product.ingredient"> </a><b>Medication.product.ingredient</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies a particular constituent of interest in the product.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td>Comments</td><td><p>The ingredients need not be a complete list; usually only active ingredients are listed.</p>
+</td></tr>
+  <tr><td>To Do</td><td>Should have an indicator distinguishing active &amp; inactive.</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.product.ingredient.item"> </a><b>Medication.product.ingredient.item</b></td></tr>
+  <tr><td>Definition</td><td><p>The actual ingredient - either a substance (simple ingredient) or another medication.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="substance.html">Substance</a> | <a href="medication.html">Medication</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.product.ingredient.amount"> </a><b>Medication.product.ingredient.amount</b></td></tr>
+  <tr><td>Definition</td><td><p>Specifies how many (or how much) of the items there are in this Medication.  E.g. 250 mg per tablet.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Ratio">Ratio</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.product.batch"> </a><b>Medication.product.batch</b></td></tr>
+  <tr><td>Definition</td><td><p>Information about a group of medication produced or packaged from one production run.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.product.batch.lotNumber"> </a><b>Medication.product.batch.lotNumber</b></td></tr>
+  <tr><td>Definition</td><td><p>The assigned lot number of a batch of the specified product.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.product.batch.expirationDate"> </a><b>Medication.product.batch.expirationDate</b></td></tr>
+  <tr><td>Definition</td><td><p>When this specific batch of product will expire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.package"> </a><b>Medication.package</b></td></tr>
+  <tr><td>Definition</td><td><p>Information that only applies to packages (not products).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.package.container"> </a><b>Medication.package.container</b></td></tr>
+  <tr><td>Definition</td><td><p>The kind of container that this package comes as.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>SNOMED CT Form Codes: <a href="valueset-medication-package-form-codes.html">Kind of container a medication package is packaged in</a> (<a href="terminologies.html#example">Example</a>)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.package.content"> </a><b>Medication.package.content</b></td></tr>
+  <tr><td>Definition</td><td><p>A set of components that go to make up the described item.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.package.content.item"> </a><b>Medication.package.content.item</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies one of the items in the package.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="medication.html">Medication</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Medication.package.content.amount"> </a><b>Medication.package.content.amount</b></td></tr>
+  <tr><td>Definition</td><td><p>The amount of the product that is in the package.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Quantity">Quantity</a></td></tr>
+</table>
+
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fmedication-definitions.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fmedication-definitions.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

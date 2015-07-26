@@ -1,0 +1,90 @@
+{
+  "resourceType": "ValueSet",
+  "id": "observation-valueabsentreason",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Observation Value Absent Reason</h2><p>This value set defines the set of code for identifying the reason why the expected result in Observation.value[x] is missing. </p><p>This value set has an inline code system http://hl7.org/fhir/data-absent-reason, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>unknown<a name=\"unknown\"> </a></td><td>Unknown</td><td>The value is not known</td></tr><tr><td>asked<a name=\"asked\"> </a></td><td>Asked</td><td>The source human does not know the value</td></tr><tr><td>temp<a name=\"temp\"> </a></td><td>Temp</td><td>There is reason to expect (from the workflow) that the value may become known</td></tr><tr><td>notasked<a name=\"notasked\"> </a></td><td>Not Asked</td><td>The workflow didn't lead to this value being known</td></tr><tr><td>masked<a name=\"masked\"> </a></td><td>Masked</td><td>The information is not available due to security, privacy or related reasons</td></tr><tr><td>unsupported<a name=\"unsupported\"> </a></td><td>Unsupported</td><td>The source system wasn't capable of supporting this element</td></tr><tr><td>astext<a name=\"astext\"> </a></td><td>As Text</td><td>The content of the data is represented in the resource narrative</td></tr><tr><td>error<a name=\"error\"> </a></td><td>Error</td><td>Some system or workflow process error means that the information is not available</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.1557"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/observation-valueabsentreason",
+  "version": "0.5.0",
+  "name": "Observation Value Absent Reason",
+  "publisher": "HL7 International - Orders and Observations WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set defines the set of code for identifying the reason why the expected result in Observation.value[x] is missing. ",
+  "status": "draft",
+  "experimental": true,
+  "date": "2015-07-26T15:54:10-04:00",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.1557"
+      }
+    ],
+    "system": "http://hl7.org/fhir/data-absent-reason",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "unknown",
+        "display": "Unknown",
+        "definition": "The value is not known"
+      },
+      {
+        "code": "asked",
+        "display": "Asked",
+        "definition": "The source human does not know the value"
+      },
+      {
+        "code": "temp",
+        "display": "Temp",
+        "definition": "There is reason to expect (from the workflow) that the value may become known"
+      },
+      {
+        "code": "notasked",
+        "display": "Not Asked",
+        "definition": "The workflow didn't lead to this value being known"
+      },
+      {
+        "code": "masked",
+        "display": "Masked",
+        "definition": "The information is not available due to security, privacy or related reasons"
+      },
+      {
+        "code": "unsupported",
+        "display": "Unsupported",
+        "definition": "The source system wasn't capable of supporting this element"
+      },
+      {
+        "code": "astext",
+        "display": "As Text",
+        "definition": "The content of the data is represented in the resource narrative"
+      },
+      {
+        "code": "error",
+        "display": "Error",
+        "definition": "Some system or workflow process error means that the information is not available"
+      }
+    ]
+  }
+}

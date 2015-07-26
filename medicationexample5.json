@@ -1,0 +1,76 @@
+{
+  "resourceType": "Medication",
+  "id": "medexample005",
+  "text": {
+    "status": "generated",
+    "div": "<div>Didrocal</div>"
+  },
+  "name": "Didrocal",
+  "code": {
+    "coding": [
+      {
+        "system": "http://hc-sc.gc.ca",
+        "code": "02176017",
+        "display": "Didrocal"
+      }
+    ]
+  },
+  "isBrand": true,
+  "manufacturer": {
+    "reference": "http://http://www.actavis.ca/default.htm/fhirresource/1"
+  },
+  "kind": "package",
+  "product": {
+    "form": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "385055001",
+          "display": "Tablet"
+        }
+      ]
+    },
+    "ingredient": [
+      {
+        "item": {
+          "display": "Etidronate Sodium"
+        },
+        "amount": {
+          "numerator": {
+            "value": 400,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          },
+          "denominator": {
+            "value": 1,
+            "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+            "code": "TAB"
+          }
+        }
+      },
+      {
+        "item": {
+          "display": "Calcium Carbonate"
+        },
+        "amount": {
+          "numerator": {
+            "value": 500,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          },
+          "denominator": {
+            "value": 1,
+            "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+            "code": "TAB"
+          }
+        }
+      }
+    ],
+    "batch": [
+      {
+        "lotNumber": "9494949",
+        "expirationDate": "2017-02-22"
+      }
+    ]
+  }
+}

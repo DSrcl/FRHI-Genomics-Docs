@@ -1,0 +1,91 @@
+{
+  "resourceType": "MedicationDispense",
+  "id": "meddisp002",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: meddisp002</p><p><b>status</b>: completed</p><p><b>patient</b>: <a>Patient/example</a></p><p><b>dispenser</b>: <a>Practitioner/example</a></p><p><b>authorizingPrescription</b>: <a>MedicationPrescription/medicationprescriptionexample1</a></p><p><b>type</b>: First Fill <span>(Details : {http:hl7.org/fhir code 'FF' = 'FF', given as 'First Fill'})</span></p><p><b>quantity</b>: 100 mL<span> (Details: http://unitsofmeasure.org code mL = 'mL')</span></p><p><b>daysSupply</b>: 10 Day<span> (Details: http://unitsofmeasure.org code D = 'D')</span></p><p><b>medication</b>: <a>prescribed medication</a></p><p><b>whenPrepared</b>: Jan 15, 2015 11:20:00 AM</p><p><b>whenHandedOver</b>: Jan 16, 2015 5:20:00 AM</p><h3>DosageInstructions</h3><table><tr><td>-</td><td><b>AdditionalInstructions</b></td><td><b>Schedule[x]</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose[x]</b></td></tr><tr><td>*</td><td>With or after food <span>(Details : {SNOMED CT code '311504000' = 'With or after food (qualifier value)', given as 'With or after food'})</span></td><td>Do 3 per 1 days</td><td>Entire oral cavity <span>(Details : {SNOMED CT code '181220002' = 'Mouth', given as 'Entire oral cavity'})</span></td><td>Oral Route <span>(Details : {SNOMED CT code '26643006' = 'Oral route (qualifier value)', given as 'Oral Route'})</span></td><td>5 mL<span> (Details: http://unitsofmeasure.org code mL = 'mL')</span></td></tr></table></div>"
+  },
+  "status": "completed",
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "dispenser": {
+    "reference": "Practitioner/example"
+  },
+  "authorizingPrescription": [
+    {
+      "reference": "MedicationPrescription/medicationprescriptionexample1"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http:hl7.org/fhir",
+        "code": "FF",
+        "display": "First Fill"
+      }
+    ]
+  },
+  "quantity": {
+    "value": 100,
+    "units": "mL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mL"
+  },
+  "daysSupply": {
+    "value": 10,
+    "units": "Day",
+    "system": "http://unitsofmeasure.org",
+    "code": "D"
+  },
+  "medicationReference": {
+    "reference": "Medication/MedicationExample3",
+    "display": "prescribed medication"
+  },
+  "whenPrepared": "2015-01-15T16:20:00Z",
+  "whenHandedOver": "2015-01-16T10:20:00Z",
+  "dosageInstruction": [
+    {
+      "additionalInstructions": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "311504000",
+            "display": "With or after food"
+          }
+        ]
+      },
+      "scheduleTiming": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnits": "d"
+        }
+      },
+      "site": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "181220002",
+            "display": "Entire oral cavity"
+          }
+        ]
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oral Route"
+          }
+        ]
+      },
+      "doseQuantity": {
+        "value": 5,
+        "units": "mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL"
+      }
+    }
+  ]
+}

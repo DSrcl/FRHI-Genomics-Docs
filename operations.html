@@ -1,0 +1,354 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Operations - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/operations.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="implementation.html">Implementation</a></li>
+        <li><b>Operations</b></li>          <!-- operations.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<a name="base"> </a>
+<h2><span class="sectioncount">2.2.0<a name="2.2.0"> </a></span> Extended Operations on the RESTful API <a href="operations.html#2.2.0" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+<table class="cols"><tr><td id="wg"><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm" _target="blank">FHIR Infrastructure</a> Work Group</td><td id="fmm"><a href="resource.html#maturity">Maturity Level</a>: N/A</td><td id="ballot"><a href="help.html#status">Ballot Status</a>: <a href="history.html#pubs">DSTU 2</a></td></tr></table>
+
+<p>
+The <a href="http.html">RESTful API</a> defines a set of common interactions performed on
+a repository of typed resources (read, update, search, etc). These interactions follow
+the RESTful paradigm of managing state by Create/Read/Update/Delete actions on a set of identified
+resources. While this approach solves many use cases, there is some specific
+functionality that can be met more efficiently using an RPC-like paradigm,
+where named operations are performed with inputs and outputs. This specification
+describes a light operation framework that seamlessly extends the RESTful API.
+</p>
+<p>
+Operations have the following general properties:
+</p> 
+<ul>
+ <li>Each operation has a name</li>
+ <li>Each operation has a list of 'in' and 'out' parameters</li>
+ <li>The parameters are either resources, data types or search parameters</li>
+ <li>The operations are subject to the same security arrangements as the RESTful API</li>
+ <li>The URIs for the operation end points are based on the existing RESTful API address scheme</li>
+ <li>The operations may make use of the existing repository of resources in their definitions</li>
+ <li>Operations are performed against a specific resource, a resource type, or the whole system</li>
+</ul>
+
+<a name="defined"> </a>
+<h3><span class="sectioncount">2.2.0.1<a name="2.2.0.1"> </a></span> FHIR defined Operations <a href="operations.html#2.2.0.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+<p>
+This specification defines several operations:
+</p>
+<table class="grid"> <tr><td colspan="2"><b>Base Operations (All resource types)</b></td></tr>
+<tr><td><a href="resource-operations.html#validate">Validate a resource</a></td><td>[base]/[Resource]/$validate | [base]/[Resource]/[id]/$validate</td></tr><tr><td><a href="resource-operations.html#meta">Access a list of profiles, tags, and security labels</a></td><td>[base]/$meta | [base]/[Resource]/$meta | [base]/[Resource]/[id]/$meta</td></tr><tr><td><a href="resource-operations.html#meta-add">Add profiles, tags, and security labels to a resource</a></td><td>[base]/[Resource]/[id]/$meta-add</td></tr><tr><td><a href="resource-operations.html#meta-delete">Delete profiles, tags, and security labels for a resource</a></td><td>[base]/[Resource]/[id]/$meta-delete</td></tr> <tr><td colspan="2"><b>Operations Defined by Resource Types</b></td></tr>
+<tr><td><a href="composition-operations.html#document">Generate a Document</a></td><td>[base]/Composition/$document</td></tr><tr><td><a href="conceptmap-operations.html#translate">Concept Translation</a></td><td>[base]/ConceptMap/$translate | [base]/ConceptMap/[id]/$translate</td></tr><tr><td><a href="conceptmap-operations.html#batch-translate">Batch Mode Translation</a></td><td>[base]/ConceptMap/$batch-translate</td></tr><tr><td><a href="conceptmap-operations.html#closure">Closure Table Maintenance</a></td><td>[base]/$closure</td></tr><tr><td><a href="encounter-operations.html#everything">Fetch Encounter Record</a></td><td>[base]/Encounter/[id]/$everything</td></tr><tr><td><a href="list-operations.html#find">Find a functional list</a></td><td>[base]/List/$find</td></tr><tr><td><a href="messageheader-operations.html#process-message">Process Message</a></td><td>[base]/$process-message</td></tr><tr><td><a href="patient-operations.html#everything">Fetch Patient Record</a></td><td>[base]/Patient/$everything | [base]/Patient/[id]/$everything</td></tr><tr><td><a href="questionnaire-operations.html#populate">Populate Questionnaire</a></td><td>[base]/Questionnaire/$populate | [base]/Questionnaire/[id]/$populate</td></tr><tr><td><a href="structuredefinition-operations.html#questionnaire">Build Questionnaire</a></td><td>[base]/StructureDefinition/$questionnaire | [base]/StructureDefinition/[id]/$questionnaire</td></tr><tr><td><a href="valueset-operations.html#expand">Value Set Expansion</a></td><td>[base]/ValueSet/$expand | [base]/ValueSet/[id]/$expand</td></tr><tr><td><a href="valueset-operations.html#lookup">Concept Look Up</a></td><td>[base]/ValueSet/$lookup</td></tr><tr><td><a href="valueset-operations.html#validate-code">Value Set based Validation</a></td><td>[base]/ValueSet/$validate-code | [base]/ValueSet/[id]/$validate-code</td></tr><tr><td><a href="valueset-operations.html#batch-validate">Batch Mode Validation</a></td><td>[base]/ValueSet/$batch-validate</td></tr> <tr><td colspan="2"><b>Operations Defined by Implementation Guides</b></td></tr>
+<tr><td><a href="cqif/guidancerequest-cqif-operations.html#guidance">guidance</a></td><td>[base]/$guidance</td></tr><tr><td><a href="cqif/guidancerequest-cqif-operations.html#guidance-requirements">guidanceRequirements</a></td><td>[base]/$guidance-requirements</td></tr></table>
+<p>
+Notes:
+</p>
+<ul>
+ <li>The special operations on the <code>meta</code> element also operate on previous version (/_history/) - they are the only ones</li>
+</ul>
+
+<a name="extensibility"> </a>
+<h3><span class="sectioncount">2.2.0.2<a name="2.2.0.2"> </a></span> Implementations Defined Operations <a href="operations.html#2.2.0.2" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+<p>
+Implementations are able to define their own operations in addition to
+those defined here. Name clashes between operations defined
+by different implementers can be resolved by use of the
+<a href="conformance.html">conformance statement</a>.
+</p>
+<p>
+In addition, the definition of these operations  or additional run time operations does not 
+prevent the use of other kinds of operations that are not dependent on and/or not integrated 
+with the RESTful API, as long as their addressing scheme does not clash with the scheme 
+defined herein.
+</p>
+
+<a name="defining"> </a>
+<h3><span class="sectioncount">2.2.0.3<a name="2.2.0.3"> </a></span> Defining an Operation <a href="operations.html#2.2.0.3" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>
+Each Operation is defined by:
+</p>
+<ul>
+ <li>A context for the operation - system, resource type, or resource instance</li>
+ <li>A name for the operation</li>
+ <li>A list of parameters, with their definitions</li>
+</ul>
+
+<p>
+For each parameter, the following information is needed:
+</p>
+<ul>
+ <li>Name - the name of the operation. For implementer convenience, the name should be a valid token (see below)</li>
+ <li>Use - In | Out | Both</li>
+ <li>Type - a data type or a resource type</li>
+ <li>Profile - a profile that applies additional restrictions about the resource</li>
+ <li>Documentation - describes its use</li>
+</ul>
+<p>
+There is a special parameter type called &quot;Tuple&quot; which is a parameter type that has additional
+parts. Each part has the same information as a parameter, except for use, which is taken from
+the parameter it is part of.
+</p>
+
+<p>
+The resource <a href="operationdefinition.html">Operation Definition</a> is used to provide a computable definition
+of the operation.
+</p>
+
+<a name="extending"> </a>
+<h3><span class="sectioncount">2.2.0.4<a name="2.2.0.4"> </a></span> Extending an Operation <a href="operations.html#2.2.0.4" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+<p>
+Implementations are able to extend operations by defining new named parameters.
+Implementations can publish their own extended definitions using the
+ <a href="operationdefinition.html">Operation Definition</a> resource, and
+this variant definition can use OperationDefinition.base to refer to the
+underlying definition.
+</p>
+<p>
+Note that the FHIR specification will never define any parameter names starting with &quot;x-&quot;.
+</p>
+
+<a name="executing"> </a>
+<a name="synchronous"> </a>
+
+<h3><span class="sectioncount">2.2.0.5<a name="2.2.0.5"> </a></span> Executing an Operation Synchronously <a href="operations.html#2.2.0.5" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>
+Most commonly, operations are executed synchronously - the client sends a request
+to the server with the operation in parameters, and the server replies with the
+operation out parameters.
+</p>
+
+<p>
+The URL for an operation end-point depends on its context:
+</p>
+<ul>
+ <li>system: the url is [base]/$[name]</li>
+ <li>resource type: the url is [base]/[type]/$[name]</li>
+ <li>resource instance: the url is [base]/[type]/[id]/$[name]</li>
+</ul>
+
+<a name="request"> </a>
+<h4><span class="sectioncount">2.2.0.5.1<a name="2.2.0.5.1"> </a></span> Operation Request <a href="operations.html#2.2.0.5.1" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+
+<p>
+In the general case, an operation is invoked by performing an HTTP POST to the operation end-point.
+The format of the submitted content is the special <a href="parameters.html">Parameters</a> format - a list
+of named parameters (the &quot;in&quot; parameters). For an example, see <a href="op-example-request.html">the value set expansion request example</a>.
+</p>
+<p>
+Note that the same arrangement as the RESTful interface applies
+in regard to <a href="http.html#mime-type">content types</a>.
+</p>
+<p>
+If there are no parameters with complex types (including resources) to the operation, and the operation
+is idempotent (see <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">HTTP specification
+definition of idempotent</a>), the operation may be invoked by performing an HTTP GET operation where
+all the parameters are appended to the URL in the search portion of the URL (e.g. after the &quot;?&quot;).
+Servers SHALL support this method of invocation.
+</p>
+<p>
+Servers MAY choose to support submission of the parameters multi-part form method as well,
+which can be useful for allowing testing of an operation using HTML forms.
+</p>
+
+<a name="response"> </a>
+
+<h4><span class="sectioncount">2.2.0.5.2<a name="2.2.0.5.2"> </a></span> Operation Response <a href="operations.html#2.2.0.5.2" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+
+<p>
+If the operation succeeds, the HTTP Status code is 200 OK. An
+HTTP status code if 4xx or 5xx indicates an error, and an
+<a href="operationoutcome.html">OperationOutcome</a> may be returned.
+User agents should note that servers may issue redirects etc to
+authenticate the client in response to an operation request.
+</p>
+
+<p>
+In the general case, an operation response uses the same
+<a href="parameters.html">Parameters</a> format one or more
+named parameters (the &quot;out&quot; parameters).
+</p>
+<p>
+If there is only one out parameter, which is a resource,
+and it has the name &quot;return&quot; then the parameter format is
+not used, and the response is simply the resource itself.
+</p>
+<p>
+The resources that are returned by the operation may be
+retained and made available in the resource repository
+on the operation server. In that case, the server will
+provide the identity of the resource in the returned resources. When
+resources that are not persisted are returned in the response,
+they will have no id property.
+</p>
+
+<a name="asynchronous"> </a>
+
+<h3><span class="sectioncount">2.2.0.6<a name="2.2.0.6"> </a></span> Executing an Operation Asynchronously <a href="operations.html#2.2.0.6" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>
+DSTU NOTE: there is no defined correct way to execute 
+operations asynchronously. See here for ongoing 
+<a href="http://wiki.hl7.org/index.php?title=FHIR_Asynchronous_Exchange">Discussion</a>
+of the options. The <a href="messaging.html#operations">messaging page</a>
+describes a way to execute operations asynchronously using messages.
+</p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Foperations.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Foperations.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+</body>
+</html>

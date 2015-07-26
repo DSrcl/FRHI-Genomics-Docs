@@ -1,0 +1,239 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Cqif - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/cqif.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body> 
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+          <!-- cqif.html / page / cqif -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<a name="CQIF"> </a> 
+
+<h2><span class="sectioncount">?.?<a name="?.?"> </a></span> Clinical Quality Improvement Framework (CQIF) Implementation Guide <a href="cqif.html#?.?" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p><i>In September 2015, this FHIR Implementation Guide will undergo a comment-only ballot. The focus of the ballot is limited in scope to the IG, the profiles, operations, value sets, and conformance statements it defines. This implementation Guide will be balloted separately from the FHIR specification itself.</i></p>
+
+<h3><span class="sectioncount">?.?.1<a name="?.?.1"> </a></span> Summary <a href="cqif.html#?.?.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>This Implementation Guide is prepared as a Universal Realm Specification with support from the <a href="http://cqframework.info">Clinical Quality Framework (CQF) initiative</a>, which is a public-private partnership sponsored by the Centers for Medicare &amp; Medicaid Services (CMS) and the U.S. Office of the National Coordinator (ONC) to harmonize standards for clinical decision support and electronic clinical quality measurement.</p>
+
+<p>The CQIF Implementation Guide provides profiles and operation definitions to enable multiple quality-related use cases, including decision support request/response, quality measurement evaluation, as well as knowledge artifact representation and sharing.</p>
+
+<h3><span class="sectioncount">?.?.2<a name="?.?.2"> </a></span> Background <a href="cqif.html#?.?.2" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>The QIF Implementation Guide is built by the Clinical Decision Support (CDS) and Clinical Quality Information (CQI) HL7 Work Groups, with input and coordination from the FHIR Infrastructure, Service Oriented Architecture (pending approval) and Healthcare Standards Integration (pending approval) HL7 Work Groups. The CQF initiative has focused on harmonizing the historically disjoint specifications used by the Clinical Quality Measurement and Clinical Decision Support communities. </p>
+
+<p>This implementation guide focuses on several primary use cases:</p>
+
+<ul>
+	<li>Sharing - The representation of computable, shareable knowledge artifacts</li>
+	<li>Evaluation - The evaluation of knowledge artifacts with respect to a particular patient or population</li>
+	<li>Distribution - Functionality required to enable a searchable artifact repository</li>
+</ul>
+
+<p>Specifically, the initiative has focused on the specifications used to represent knowledge artifacts within the two communities. The strategy employed has been to break the conceptual content of knowledge artifacts into three core components:</p>
+
+<ul>
+	<li>Metadata - Descriptive information about the artifact and its content</li>
+	<li>Clinical Information - The representation used to carry clinical information about the patient or population of concern within a given artifact</li>
+	<li>Logic - The representation used to convey the logic involved in the artifact</li>
+</ul>
+
+<p>The first component has resulted in the Clinical Quality Common Metadata Conceptual Model, an informative document harmonizing metadata requirements between Quality Measurement and Decision Support artifacts.</p>
+
+<p>The second component has resulted in the QUICK Conceptual and Logical Models, a harmonization of the Virtual Medical Record (vMR) used in Decision Support and the Quality Data Model (QDM) used in Quality Measurement, and realized in FHIR as the QI-Core profiles.</p>
+
+<p>And finally, the third component has resulted in the Clinical Quality Language Specification, a harmonization of the expressive capabilities of the Clinical Decision Support Knowledge Artifact Specification (CDS KAS) (produced by the Health eDecisions (HeD) S&amp;I Framework Initiative), and the Health Quality Measures Format (HQMF).</p>
+
+<h3><span class="sectioncount">?.?.3<a name="?.?.3"> </a></span> Scope <a href="cqif.html#?.?.3" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>The CQIF Implementation Guide currently focuses on the Decision Support aspects of the Clinical Quality domain. However, note that the CQIF Implementation Guide has been developed in coordination with the Clinical Quality Information Work Group sponsored project to build FHIR representations for Clinical Quality Measures. As a result of that coordination, many of the profiles defined in this implementation guide are shared by that effort. For this comment-only ballot, the shared material is reproduced in both ballots to facilitate review during the balloting process. Prior to DSTU balloting, the CQIF and CQMF Implementation Guides will be merged into a single Clinical Quality Framework Implementation Guide.</p>
+
+<p>The scope of this implementation guide therefore broadly falls into two categories:</p>
+
+<ul>
+	<li><a href="cqif-common.html">Common aspects of clinical quality</a></li>
+	<li><a href="cqif-cds-on-fhir.html">Decision Support-specific aspects of clinical quality</a></li>
+</ul>
+
+<p>The common aspects include profiles for defining quality evaluation request/response protocols, as well as representation of knowledge modules generally. The Decision Support-specific aspects then build on those profiles to define guidance request/response protocols, and representation of Decision Support-specific artifacts including rules, order sets, and documentation templates.</p>
+
+<a name="authors"/>
+<h3><span class="sectioncount">?.?.4<a name="?.?.4"> </a></span> Author Information <a href="cqif.html#?.?.4" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<table class="grid">
+	<thead>
+		<tr>
+			<th>Author Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Bryn Rhodes</td>
+		</tr>
+		<tr>
+			<td>Jason Walonoski</td>
+		</tr>
+		<tr>
+			<td>Marc Hadley</td>
+		</tr>
+		<tr>
+			<td>Lloyd McKenzie (Supporting)</td>
+		</tr>
+		<tr>
+			<td>Chris Moesel (Supporting)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Sun, Jul 26, 2015 15:55-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fcqif.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fcqif.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+</body>
+</html>

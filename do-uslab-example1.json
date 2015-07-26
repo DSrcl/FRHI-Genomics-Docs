@@ -1,0 +1,75 @@
+{
+  "resourceType": "DiagnosticOrder",
+  "id": "do-uslab-example1",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: do-uslab-example1</p><p><b>subject</b>: <a>Todd Lerr</a></p><p><b>orderer</b>: <a>Dr Leonard T Bloodraw Jr</a></p><p><b>identifier</b>: ORD000123A (OFFICIAL)</p><p><b>clinicalNotes</b>: Screening for blood lead</p><p><b>supportingInformation</b>: <a>Prior Results Observation</a>, <a>Lead Exposure</a></p><p><b>status</b>: requested</p><p><b>priority</b>: routine</p><h3>Events</h3><table><tr><td>-</td><td><b>Status</b></td><td><b>Description</b></td><td><b>DateTime</b></td></tr><tr><td>*</td><td>requested</td><td>new-request <span>(Details : {[not stated] code 'new-request' = 'new-request)</span></td><td>Dec 4, 2014 3:42:15 PM</td></tr></table><h3>Items</h3><table><tr><td>-</td><td><b>Code</b></td><td><b>Specimen</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Blood Lead <span>(Details : {LOINC code '5671-3' = 'Lead [Mass/volume] in Blood', given as 'Lead [Mass/volume] in Blood'}; {urn:oid:2.16.840.1.113883.3.72.5.24 code 'BLDLD' = 'BLDLD', given as 'Blood Lead'})</span></td><td><a>Whole blood</a></td><td>requested</td></tr></table></div>"
+  },
+  "subject": {
+    "reference": "Patient/uslab-example1",
+    "display": "Todd Lerr"
+  },
+  "orderer": {
+    "reference": "Practitioner/uslab-example1",
+    "display": "Dr Leonard T Bloodraw Jr"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:oid:2.16.840.1.113883.3.72.5.24",
+      "value": "ORD000123A"
+    }
+  ],
+  "clinicalNotes": "Screening for blood lead",
+  "supportingInformation": [
+    {
+      "reference": "Observation/uslab-example1",
+      "display": "Prior Results Observation"
+    },
+    {
+      "reference": "Condition/uslab-example1",
+      "display": "Lead Exposure"
+    }
+  ],
+  "status": "requested",
+  "priority": "routine",
+  "event": [
+    {
+      "status": "requested",
+      "description": {
+        "coding": [
+          {
+            "code": "new-request"
+          }
+        ]
+      },
+      "dateTime": "2014-12-04T15:42:15-08:00"
+    }
+  ],
+  "item": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "5671-3",
+            "display": "Lead [Mass/volume] in Blood"
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.3.72.5.24",
+            "code": "BLDLD",
+            "display": "Blood Lead"
+          }
+        ],
+        "text": "Blood Lead"
+      },
+      "specimen": [
+        {
+          "reference": "Specimen/uslab-example1",
+          "display": "Whole blood"
+        }
+      ],
+      "status": "requested"
+    }
+  ]
+}

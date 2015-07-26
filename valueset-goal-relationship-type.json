@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "id": "goal-relationship-type",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>GoalRelationshipType</h2><p>Types of relationships between two goals</p><p>This value set has an inline code system http://hl7.org/fhir/goal-relationship-type, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>predecessor<a name=\"predecessor\"> </a></td><td>Predecessor</td><td>Indicates that the target goal is one which must be met before striving for the current goal</td></tr><tr><td>successor<a name=\"successor\"> </a></td><td>Successor</td><td>Indicates that the target goal is a desired objective once the current goal is met</td></tr><tr><td>replacement<a name=\"replacement\"> </a></td><td>Replacement</td><td>Indicates that this goal has been replaced by the target goal</td></tr><tr><td>other<a name=\"other\"> </a></td><td>Other</td><td>Indicates that the relationship is not covered by one of the pre-defined codes.  (An extension may convey more information about the meaning of the relationship.)</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.2014"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/goal-relationship-type",
+  "version": "0.5.0",
+  "name": "GoalRelationshipType",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Types of relationships between two goals",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-07-26T15:54:10-04:00",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.2014"
+      }
+    ],
+    "system": "http://hl7.org/fhir/goal-relationship-type",
+    "version": "0.5.0",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "predecessor",
+        "display": "Predecessor",
+        "definition": "Indicates that the target goal is one which must be met before striving for the current goal"
+      },
+      {
+        "code": "successor",
+        "display": "Successor",
+        "definition": "Indicates that the target goal is a desired objective once the current goal is met"
+      },
+      {
+        "code": "replacement",
+        "display": "Replacement",
+        "definition": "Indicates that this goal has been replaced by the target goal"
+      },
+      {
+        "code": "other",
+        "display": "Other",
+        "definition": "Indicates that the relationship is not covered by one of the pre-defined codes.  (An extension may convey more information about the meaning of the relationship.)"
+      }
+    ]
+  }
+}

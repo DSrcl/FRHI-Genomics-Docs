@@ -1,0 +1,108 @@
+{
+  "resourceType": "Patient",
+  "id": "patient-qicore-example",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <table>\n        <tbody>\n          <tr>\n            <td>Name</td>\n            <td>Todd G. <b>Lerr</b>, Jr.</td>\n          </tr>\n          <tr>\n            <td>Address</td>\n            <td>123 North 102nd Street, Apt 4d, Harrisburg, PA 17102</td>\n          </tr>\n          <tr>\n            <td>Contacts</td>\n            <td>Home: unknown. Work: (555) 555 1212</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/us-core-race",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/Race",
+            "code": "2106-3"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/us-core-ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/Ethnicity",
+            "code": "2135-2"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/patient-clinicalTrialNCT",
+          "valueString": "NCT01647425"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/patient-clinicalTrialPeriod",
+          "valuePeriod": {
+            "start": "2012-04-01",
+            "end": "2013-09-30"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/patient-clinicalTrialReason",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "254637007",
+                "display": "NSCLC - Non-small cell lung cancer"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+      "valueDateTime": "2012-06-07T06:12:45-05:00"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": [
+        "Lerr"
+      ],
+      "given": [
+        "Todd",
+        "G."
+      ],
+      "suffix": [
+        "Jr"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(555) 555 1212",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "person@example.org",
+      "use": "work"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2012-06-07",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "123 North 102nd Street",
+        "Apt 4d"
+      ],
+      "city": "Harrisburg",
+      "state": "PA",
+      "postalCode": "17102",
+      "country": "USA"
+    }
+  ],
+  "active": true
+}

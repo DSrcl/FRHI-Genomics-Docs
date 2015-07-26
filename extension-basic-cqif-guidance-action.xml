@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="basic-cqif-guidance-action"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-action"/>
+  <name value="action"/>
+  <display value="action"/>
+  <publisher value="Health Level Seven, Inc. - CDS WG"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/special/committees/dss"/>
+    </telecom>
+  </contact>
+  <description value="Detailed actions resulting from the evaluation, if any."/>
+  <status value="draft"/>
+  <date value="2015-05-30"/>
+  <kind value="datatype"/>
+  <constrainedType value="Extension"/>
+  <abstract value="false"/>
+  <contextType value="resource"/>
+  <context value="Basic"/>
+  <base value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <snapshot>
+    <element>
+      <path value="Extension"/>
+      <short value="Extension"/>
+      <definition value="Detailed actions resulting from the evaluation, if any."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <slicing>
+        <discriminator value="url"/>
+        <ordered value="true"/>
+        <rules value="openAtEnd"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="actionIdentifier"/>
+      <short value="Extension"/>
+      <definition value="A unique identifier for the action."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="actionIdentifier"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueIdentifier"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="number"/>
+      <short value="Extension"/>
+      <definition value="A user-visible number for the action."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="number"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="supportingEvidence"/>
+      <short value="Extension"/>
+      <definition value="Supporting evidence for the action."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="supportingEvidence"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueReference"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/evidence-cqif-cqif-evidence"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="documentation"/>
+      <short value="Extension"/>
+      <definition value="Supporting documentation for the action."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="documentation"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueReference"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="participant"/>
+      <short value="Extension"/>
+      <definition value="Participants in the action."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="participant"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Person"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="title"/>
+      <short value="Extension"/>
+      <definition value="The title of the action."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="title"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="description"/>
+      <short value="Extension"/>
+      <definition value="A short description of the action."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="description"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="textEquivalent"/>
+      <short value="Extension"/>
+      <definition value="A text equivalent of the action to be performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="textEquivalent"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="concept"/>
+      <short value="Extension"/>
+      <definition value="Concepts associated with the action."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="concept"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueCodeableConcept"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="type"/>
+      <short value="Extension"/>
+      <definition value="The type of action to perform (create, update, remove)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="type"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueCode"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="resource"/>
+      <short value="Extension"/>
+      <definition value="The resource that is the target of the action (e.g. CommunicationRequest)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="resource"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension.valueResource"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Resource"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-action"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.value[x]"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="*"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element>
+      <path value="Extension"/>
+      <definition value="Detailed actions resulting from the evaluation, if any."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="actionIdentifier"/>
+      <definition value="A unique identifier for the action."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="actionIdentifier"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="number"/>
+      <definition value="A user-visible number for the action."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="number"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="supportingEvidence"/>
+      <definition value="Supporting evidence for the action."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="supportingEvidence"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/evidence-cqif-cqif-evidence"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="documentation"/>
+      <definition value="Supporting documentation for the action."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="documentation"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="participant"/>
+      <definition value="Participants in the action."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="participant"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Person"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="title"/>
+      <definition value="The title of the action."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="title"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="description"/>
+      <definition value="A short description of the action."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="description"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="textEquivalent"/>
+      <definition value="A text equivalent of the action to be performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="textEquivalent"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="concept"/>
+      <definition value="Concepts associated with the action."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="concept"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="type"/>
+      <definition value="The type of action to perform (create, update, remove)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="type"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension"/>
+      <name value="resource"/>
+      <definition value="The resource that is the target of the action (e.g. CommunicationRequest)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="resource"/>
+    </element>
+    <element>
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="Resource"/>
+      </type>
+    </element>
+    <element>
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-action"/>
+    </element>
+    <element>
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,805 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "guidancerequest-cqif-cqif-guidancerequest",
+  "text": {
+    "status": "generated",
+    "div": "<div>to do</div>"
+  },
+  "url": "http://hl7.org/fhir/StructureDefinition/guidancerequest-cqif-cqif-guidancerequest",
+  "name": "CQIF-GuidanceRequest",
+  "publisher": "Health Level Seven, Inc. - CDS WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "description": "A request for decision support guidance",
+  "status": "draft",
+  "date": "2014-01-31",
+  "kind": "resource",
+  "constrainedType": "Basic",
+  "abstract": false,
+  "base": "http://hl7.org/fhir/StructureDefinition/Basic",
+  "snapshot": {
+    "element": [
+      {
+        "path": "Basic",
+        "name": "CQIF-GuidanceRequest",
+        "short": "A request for decision support guidance",
+        "definition": "A guidance request is a derivative of a knowledge request specifically focused on the decision support use case, providing information relevant to decision support such as workflow and user context.",
+        "requirements": "Need some way to safely (without breaking interoperability) allow implementers to exchange content not supported by the initial set of declared resources.",
+        "alias": [
+          "Z-resource",
+          "Extension-resource",
+          "Custom-resource"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Basic",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Basic"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Act, Entity or Role"
+          }
+        ]
+      },
+      {
+        "path": "Basic.id",
+        "short": "Logical id of this artifact",
+        "definition": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "path": "Basic.meta",
+        "short": "Metadata about the resource",
+        "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.meta",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "path": "Basic.implicitRules",
+        "short": "A set of rules under which this content was created",
+        "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.implicitRules",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isModifier": true
+      },
+      {
+        "path": "Basic.language",
+        "short": "Language of the resource content",
+        "definition": "The base language in which the resource is written.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.language",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language",
+          "valueSetUri": "http://tools.ietf.org/html/bcp47"
+        }
+      },
+      {
+        "path": "Basic.text",
+        "short": "Text summary of the resource, for human interpretation",
+        "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+        "alias": [
+          "narrative",
+          "html",
+          "xhtml",
+          "display"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Narrative"
+          }
+        ],
+        "condition": [
+          "dom-1"
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Act.text?"
+          }
+        ]
+      },
+      {
+        "path": "Basic.contained",
+        "short": "Contained, inline Resources",
+        "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+        "alias": [
+          "inline resources",
+          "anonymous resources",
+          "contained resources"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Basic.contained",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "initiatingOrganization",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-initiatingOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "initiatingPerson",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-initiatingPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "systemUserType",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-systemUserType"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "systemUserLanguage",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-systemUserLanguage"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "systemUserTaskContext",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-systemUserTaskContext"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "receivingOrganization",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-receivingOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "receivingPerson",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-receivingPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "recipientType",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-recipientType"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "recipientLanguage",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-recipientLanguage"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "encounterClass",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-encounterClass"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "encounterType",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-encounterType"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Basic.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Basic.identifier",
+        "short": "Business identifier",
+        "definition": "Identifier assigned to the resource for business purposes, outside the context of FHIR.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Basic.identifier",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./identifier"
+          }
+        ]
+      },
+      {
+        "path": "Basic.code",
+        "short": "Kind of Resource",
+        "definition": "Identifies the 'type' of resource - equivalent to the resource name for other resources.",
+        "requirements": "Must be able to distinguish different types of \"basic\" resources.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Basic.code",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isModifier": true,
+        "binding": {
+          "strength": "example",
+          "description": "Codes for identifying types of resources not yet defined by FHIR",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/basic-resource-type"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./code"
+          }
+        ]
+      },
+      {
+        "path": "Basic.subject",
+        "short": "Identifies the focus of this resource",
+        "definition": "Identifies the patient, practitioner, device or any other resource that is the \"focus\" of this resoruce.",
+        "requirements": "Needed for partitioning the resource by Patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.subject",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./participation[typeCode='SBJ'] (possibly through a ControlAct and Role)"
+          }
+        ]
+      },
+      {
+        "path": "Basic.author",
+        "short": "Who created",
+        "definition": "Indicates who was responsible for creating the resource instance.",
+        "requirements": "Needed for partitioning the resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.author",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./participation[typeCode='SUB'] (possibly through a ControlAct and Role)"
+          }
+        ]
+      },
+      {
+        "path": "Basic.created",
+        "short": "When created",
+        "definition": "Identifies when the resource was first created.",
+        "requirements": "Allows ordering resource instances by time.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Basic.created",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./participation[typeCode='AUT']/time (possibly through a ControlAct and Role)"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Basic",
+        "name": "CQIF-GuidanceRequest",
+        "short": "A request for decision support guidance",
+        "definition": "A guidance request is a derivative of a knowledge request specifically focused on the decision support use case, providing information relevant to decision support such as workflow and user context.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Basic"
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "slicing": {
+          "discriminator": [
+            "url"
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "path": "Basic.extension",
+        "name": "initiatingOrganization",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-initiatingOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "initiatingPerson",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-initiatingPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "systemUserType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-systemUserType"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "systemUserLanguage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-systemUserLanguage"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "systemUserTaskContext",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-systemUserTaskContext"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "receivingOrganization",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-receivingOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "receivingPerson",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-receivingPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "recipientType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-recipientType"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "recipientLanguage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-recipientLanguage"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "encounterClass",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-encounterClass"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Basic.extension",
+        "name": "encounterType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/basic-cqif-guidance-encounterType"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

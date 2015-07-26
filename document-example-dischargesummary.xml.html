@@ -1,0 +1,639 @@
+﻿<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Document-example-dischargesummary.xml - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/document-example-dischargesummary.xml.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="composition.html">Composition</a></li>        <li><b>Example Instance</b></li>        <!-- document-example-dischargesummary.xml.html / resource-instance:Composition / Example-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Document-example-dischargesummary.xml</h1>
+
+<p>
+<a href="document-example-dischargesummary.xml">Raw XML</a> (<a href="document-example-dischargesummary.canonical.xml">canonical form</a>)
+</p>
+
+
+<div class="example">
+<p>Example of a discharge summary (id = &quot;father&quot;)</p>
+<p><a href="document-example-dischargesummary.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;<a href="bundle-definitions.html" class="xmltag">Bundle</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="resource-definitions.html#Resource.id" class="xmltag">id</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">father</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="resource-definitions.html#Resource.meta" class="xmltag">meta</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="resource-definitions.html#Meta.lastUpdated" class="xmltag">lastUpdated</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-28T22:12:21Z</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="resource-definitions.html#Resource.meta" class="xmltag">meta</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.type" class="xmltag">type</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">document</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--    The Composition resource    --&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Composition/180f219f-97a8-486d-99d9-ed631fe4fc57</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;Composition</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;id</span><span class="xmlattr"> value="<span class="xmlattrvalue">180f219f-97a8-486d-99d9-ed631fe4fc57</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;meta</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-28T22:12:21Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/meta&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><span class="xmltag">&lt;/text&gt;</span><span class="xmltagred">&lt;date</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-02-01T12:30:02Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;type</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://loinc.org</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">28655-9</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/coding&gt;</span><b>
+          </b><span class="xmltagred">&lt;text</span><span class="xmlattr"> value="<span class="xmlattrvalue">Discharge Summary from Responsible Clinician</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/type&gt;</span><b>
+        </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">final</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;confidentiality</span><span class="xmlattr"> value="<span class="xmlattrvalue">N</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;subject</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Patient/d1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Eve Everywoman</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/subject&gt;</span><b>
+        </b><span class="xmltagred">&lt;author</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">Practitioner/example</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Doctor Dave</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/author&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    The Encounter resource. Points directly to an Encounter resource. Contains the dates
+         of admission, specialtyu etc.    --&gt;</span><b>
+        </b><span class="xmltagred">&lt;encounter</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Encounter/doc-example</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/encounter&gt;</span><b>
+        </b><span class="xmltagred">&lt;section</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;title</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reason for admission</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;content</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:d0dd51d3-3ab2-4c84-b697-a630c3e40e7a</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/content&gt;</span><b>
+        </b><span class="xmltag">&lt;/section&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    Points to the list that groups the medications on discharge    --&gt;</span><b>
+        </b><span class="xmltagred">&lt;section</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;title</span><span class="xmlattr"> value="<span class="xmlattrvalue">Medications on Discharge</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;content</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:673f8db5-0ffd-4395-9657-6da00420bbc1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/content&gt;</span><b>
+        </b><span class="xmltag">&lt;/section&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    Points to the list that groups the allergies    --&gt;</span><b>
+        </b><span class="xmltagred">&lt;section</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;title</span><span class="xmlattr"> value="<span class="xmlattrvalue">Known allergies</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;content</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:68f86194-e6e1-4f65-b64a-5314256f8d7b</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/content&gt;</span><b>
+        </b><span class="xmltag">&lt;/section&gt;</span><b>
+      </b><span class="xmltag">&lt;/Composition&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--    The Practitioner Resource. In this document they are the author of the document
+    (There is a reference from the document resource). Note that, strictly, it doesn&apos;t
+   need to be within the document as the
+    recipient knows where to go and get it if they need it - assuming it is available
+   on-line of course.   --&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Practitioner/example</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;Practitioner</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;id</span><span class="xmlattr"> value="<span class="xmlattrvalue">example</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;meta</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-05T16:13:03Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/meta&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><b>
+        </b><span class="xmltag">&lt;/text&gt;</span><b>
+        </b><span class="xmltagred">&lt;identifier</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://www.acme.org/practitioners</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">23</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/identifier&gt;</span><b>
+        </b><span class="xmltagred">&lt;name</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;family</span><span class="xmlattr"> value="<span class="xmlattrvalue">Careful</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;given</span><span class="xmlattr"> value="<span class="xmlattrvalue">Adam</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;prefix</span><span class="xmlattr"> value="<span class="xmlattrvalue">Dr</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/name&gt;</span><b>
+        </b><span class="xmltagred">&lt;practitionerRole</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;managingOrganization</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">Organization/1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/managingOrganization&gt;</span><span class="xmlcomment">&lt;!--      Referring Practitioner for the first 3 months of 2012      --&gt;</span><b>
+          </b><span class="xmltagred">&lt;role</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/v2/0286</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">RP</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;/coding&gt;</span><b>
+          </b><span class="xmltag">&lt;/role&gt;</span><b>
+          </b><span class="xmltagred">&lt;period</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;start</span><span class="xmlattr"> value="<span class="xmlattrvalue">2012-01-01</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;end</span><span class="xmlattr"> value="<span class="xmlattrvalue">2012-03-31</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/period&gt;</span><b>
+        </b><span class="xmltag">&lt;/practitionerRole&gt;</span><b>
+      </b><span class="xmltag">&lt;/Practitioner&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--    The Patient who is the subject of the document. Same coments as practitioner.    --&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Patient/d1</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;Patient</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;id</span><span class="xmlattr"> value="<span class="xmlattrvalue">d1</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><b>
+        </b><span class="xmltag">&lt;/text&gt;</span><b>
+        </b><span class="xmltagred">&lt;name</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;text</span><span class="xmlattr"> value="<span class="xmlattrvalue">Eve Everywoman</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;family</span><span class="xmlattr"> value="<span class="xmlattrvalue">Everywoman1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;given</span><span class="xmlattr"> value="<span class="xmlattrvalue">Eve</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/name&gt;</span><b>
+        </b><span class="xmltagred">&lt;telecom</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">phone</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">555-555-2003</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;use</span><span class="xmlattr"> value="<span class="xmlattrvalue">work</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/telecom&gt;</span><b>
+        </b><span class="xmltagred">&lt;gender</span><span class="xmlattr"> value="<span class="xmlattrvalue">female</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;birthDate</span><span class="xmlattr"> value="<span class="xmlattrvalue">1955-01-06</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;address</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;use</span><span class="xmlattr"> value="<span class="xmlattrvalue">home</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;line</span><span class="xmlattr"> value="<span class="xmlattrvalue">2222 Home Street</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/address&gt;</span><b>
+        </b><span class="xmltagred">&lt;active</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/Patient&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--    The encounter that is being documented.   --&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Encounter/doc-example</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;Encounter</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;id</span><span class="xmlattr"> value="<span class="xmlattrvalue">doc-example</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;meta</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-05T16:13:03Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/meta&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><b>
+        </b><span class="xmltag">&lt;/text&gt;</span><b>
+        </b><span class="xmltagred">&lt;identifier</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">S100</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/identifier&gt;</span><b>
+        </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">finished</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;class</span><span class="xmlattr"> value="<span class="xmlattrvalue">inpatient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;type</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;text</span><span class="xmlattr"> value="<span class="xmlattrvalue">Orthopedic Admission</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/type&gt;</span><b>
+        </b><span class="xmltagred">&lt;patient</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">Patient/d1</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/patient&gt;</span><b>
+        </b><span class="xmltagred">&lt;period</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;start</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-01-20T12:30:02Z</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;end</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-02-01T12:30:02Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/period&gt;</span><b>
+        </b><span class="xmltagred">&lt;hospitalization</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;dischargeDisposition</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;text</span><span class="xmlattr"> value="<span class="xmlattrvalue">Discharged to care of GP</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/dischargeDisposition&gt;</span><b>
+        </b><span class="xmltag">&lt;/hospitalization&gt;</span><b>
+      </b><span class="xmltag">&lt;/Encounter&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--    Reasons for admission.   --&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:d0dd51d3-3ab2-4c84-b697-a630c3e40e7a</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;List</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;meta</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-05T16:13:03Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/meta&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">additional</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><b>
+        </b><span class="xmltag">&lt;/text&gt;</span><b>
+        </b><span class="xmltagred">&lt;code</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://loinc.org</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">8646-2</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Hospital admission diagnosis</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/coding&gt;</span><b>
+        </b><span class="xmltag">&lt;/code&gt;</span><b>
+        </b><span class="xmltagred">&lt;subject</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Patient/d1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Peter Patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/subject&gt;</span><b>
+        </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">current</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;mode</span><span class="xmlattr"> value="<span class="xmlattrvalue">working</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    This is an entry that refers to an Observation resource in this document.    --&gt;</span><b>
+        </b><span class="xmltagred">&lt;entry</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;item</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/item&gt;</span><b>
+        </b><span class="xmltag">&lt;/entry&gt;</span><b>
+      </b><span class="xmltag">&lt;/List&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;Observation</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;meta</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-05T16:13:03Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/meta&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">additional</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><b>
+        </b><span class="xmltag">&lt;/text&gt;</span><b>
+        </b><span class="xmltagred">&lt;code</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://loinc.org</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">46241-6</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/coding&gt;</span><b>
+          </b><span class="xmltagred">&lt;text</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reason for admission</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/code&gt;</span><b>
+        </b><span class="xmltagred">&lt;valueString</span><span class="xmlattr"> value="<span class="xmlattrvalue">Acute Asthmatic attack. Was wheezing for days prior to admission.</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">final</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;reliability</span><span class="xmlattr"> value="<span class="xmlattrvalue">ok</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/Observation&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--    The list of medications on discharge   --&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:673f8db5-0ffd-4395-9657-6da00420bbc1</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;List</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;meta</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-05T16:13:03Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/meta&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">additional</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><b>
+        </b><span class="xmltag">&lt;/text&gt;</span><b>
+        </b><span class="xmltagred">&lt;code</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://loinc.org</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">10183-2</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Hospital discharge medications</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/coding&gt;</span><b>
+        </b><span class="xmltag">&lt;/code&gt;</span><b>
+        </b><span class="xmltagred">&lt;subject</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Patient/d1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Peter Patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/subject&gt;</span><b>
+        </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">current</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;mode</span><span class="xmlattr"> value="<span class="xmlattrvalue">working</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    This is an entry that refers to a MedicationPrescription resource in this document.
+                It is a new medication (as indicated by the flag)   --&gt;</span><b>
+        </b><span class="xmltagred">&lt;entry</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;flag</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmlcomment">&lt;!--    The flag refers to the valueset containing permissable codes for changes
+                            to medication status that occurred during this encounter.
+               Possible values are started,
+                            continued, stopped, changed   --&gt;</span><b>
+              </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://www.ithealthboard.health.nz/fhir/ValueSet/medicationStatus</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">started</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;/coding&gt;</span><b>
+          </b><span class="xmltag">&lt;/flag&gt;</span><b>
+          </b><span class="xmltagred">&lt;item</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/item&gt;</span><b>
+        </b><span class="xmltag">&lt;/entry&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    This is an entry that refers to a medicationPrescription that is available on an external
+         server.
+                In practice, you may still want an entry in the document as well, but
+         it&apos;s not necessary. The medication
+                was stopped on this admission. Note that the deleted element is also true.
+         Because the resource is
+                no longer active, we assume that it was deleted on the server, so following
+         the link would result
+                in an http status code of 410 (Though you can always use the history to
+         get previous versions)   --&gt;</span><b>
+        </b><span class="xmltagred">&lt;entry</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;flag</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://www.ithealthboard.health.nz/fhir/ValueSet/medicationStatus</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">stopped</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;/coding&gt;</span><b>
+          </b><span class="xmltag">&lt;/flag&gt;</span><b>
+          </b><span class="xmltagred">&lt;deleted</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;item</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">MedicationPrescription/1</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">use of Ventolin Inhaler was discontinued</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/item&gt;</span><b>
+        </b><span class="xmltag">&lt;/entry&gt;</span><b>
+      </b><span class="xmltag">&lt;/List&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--    The first medication in the medications list    --&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;MedicationPrescription</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;meta</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-05T16:13:03Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/meta&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    The Human readible version of the script    --&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmlcomment">&lt;!--    This text section can be exctly the same as CDA    --&gt;</span><b>
+          </b><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><b>
+        </b><span class="xmltag">&lt;/text&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    The medication. This is currently modelled as a contained resource within the prescription,
+         but could also be a separate
+                    resource either within the document bundle, or a reference to the
+         medication on a server. The latter
+                    (i.e. where the medication terminology is hosted on a publically available
+         server and simply referenced from the
+                MedicationPrescription resource is particularly attractive...    --&gt;</span><b>
+        </b><span class="xmltagred">&lt;contained</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;Medication</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;id</span><span class="xmlattr"> value="<span class="xmlattrvalue">med1</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Theophylline 200mg</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;code</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+                </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://snomed.info/sct</span>"</span><span class="xmltag">/&gt;</span><b>
+                </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">66493003</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltag">&lt;/coding&gt;</span><b>
+            </b><span class="xmltag">&lt;/code&gt;</span><b>
+          </b><span class="xmltag">&lt;/Medication&gt;</span><b>
+        </b><span class="xmltag">&lt;/contained&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    The patient details will generally be in the Document resource in the Document bundle,
+         but could just as easily
+        point to a patient resource on a server   --&gt;</span><b>
+        </b><span class="xmltagred">&lt;patient</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Patient/d1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Peter Patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/patient&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    The prescriber details could also be within the bundle, but has the same options as
+         patient   --&gt;</span><b>
+        </b><span class="xmltagred">&lt;prescriber</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">Practitioner/example</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Peter Practitioner</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/prescriber&gt;</span><b>
+        </b><span class="xmltagred">&lt;reasonCodeableConcept</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;text</span><span class="xmlattr"> value="<span class="xmlattrvalue">Management of Asthma</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/reasonCodeableConcept&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    a reference to the medication being prescribed. As described earlier, this could be
+         contained (as is the example here), separately
+        within the document bundle or simply a reference to a remote server. See comment
+         in the contained resource   --&gt;</span><b>
+        </b><span class="xmltagred">&lt;medicationReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">#med1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Theophylline 200mg BD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/medicationReference&gt;</span><b>
+        </b><span class="xmltagred">&lt;dosageInstruction</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;additionalInstructions</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;text</span><span class="xmlattr"> value="<span class="xmlattrvalue">Take with Food</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/additionalInstructions&gt;</span><b>
+          </b><span class="xmlcomment">&lt;!--    twice a day    --&gt;</span><b>
+          </b><span class="xmltagred">&lt;scheduledTiming</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;repeat</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmltagred">&lt;frequency</span><span class="xmlattr"> value="<span class="xmlattrvalue">2</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltagred">&lt;period</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltagred">&lt;periodUnits</span><span class="xmlattr"> value="<span class="xmlattrvalue">d</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;/repeat&gt;</span><b>
+          </b><span class="xmltag">&lt;/scheduledTiming&gt;</span><b>
+          </b><span class="xmlcomment">&lt;!--    Orally    --&gt;</span><b>
+          </b><span class="xmltagred">&lt;route</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://snomed.info/sct</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">394899003</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">oral administration of treatment</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;/coding&gt;</span><b>
+          </b><span class="xmltag">&lt;/route&gt;</span><b>
+          </b><span class="xmltagred">&lt;doseQuantity</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;units</span><span class="xmlattr"> value="<span class="xmlattrvalue">tablet</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://unitsofmeasure.org</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">tbl</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/doseQuantity&gt;</span><b>
+        </b><span class="xmltag">&lt;/dosageInstruction&gt;</span><b>
+      </b><span class="xmltag">&lt;/MedicationPrescription&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--    The list of known allergies   --&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:68f86194-e6e1-4f65-b64a-5314256f8d7b</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;List</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;meta</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-05T16:13:03Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/meta&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">additional</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><b>
+        </b><span class="xmltag">&lt;/text&gt;</span><b>
+        </b><span class="xmltagred">&lt;code</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://loinc.org</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">48765-2</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allergies and adverse reactions Document</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/coding&gt;</span><b>
+        </b><span class="xmltag">&lt;/code&gt;</span><b>
+        </b><span class="xmltagred">&lt;subject</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Patient/d1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Peter Patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/subject&gt;</span><b>
+        </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">current</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;mode</span><span class="xmlattr"> value="<span class="xmlattrvalue">working</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmlcomment">&lt;!--    This is an entry that refers to an allergy resource in this document.    --&gt;</span><b>
+        </b><span class="xmltagred">&lt;entry</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;item</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/item&gt;</span><b>
+        </b><span class="xmltag">&lt;/entry&gt;</span><b>
+      </b><span class="xmltag">&lt;/List&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+  </b><span class="xmlcomment">&lt;!--    The Allergy.   --&gt;</span><b>
+  </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a></span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.fullUrl" class="xmltag">fullUrl</a></span><span class="xmlattr"> value="<span class="xmlattrvalue">urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a></span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltagred">&lt;AllergyIntolerance</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltagred">&lt;meta</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2013-05-05T16:13:03Z</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/meta&gt;</span><b>
+        </b><span class="xmltagred">&lt;text</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;<a href="narrative.html" class="xmltag">div</a></span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/<a href="narrative.html" class="xmltag">div</a>&gt;</span><b>
+        </b><span class="xmltag">&lt;/text&gt;</span><b>
+        </b><span class="xmltagred">&lt;recordedDate</span><span class="xmlattr"> value="<span class="xmlattrvalue">2012-09-17</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;patient</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://fhir.healthintersections.com.au/open/Patient/d1</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Eve Everywoman</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/patient&gt;</span><b>
+        </b><span class="xmltagred">&lt;substance</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;text</span><span class="xmlattr"> value="<span class="xmlattrvalue">Doxycycline</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/substance&gt;</span><b>
+        </b><span class="xmltagred">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">confirmed</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;criticality</span><span class="xmlattr"> value="<span class="xmlattrvalue">high</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">immune</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltagred">&lt;event</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltagred">&lt;manifestation</span><span class="xmltag">&gt;</span><b>
+            </b><span class="xmltagred">&lt;coding</span><span class="xmltag">&gt;</span><b>
+              </b><span class="xmltagred">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://example.org/system</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltagred">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">xxx</span>"</span><span class="xmltag">/&gt;</span><b>
+              </b><span class="xmltagred">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Hives</span>"</span><span class="xmltag">/&gt;</span><b>
+            </b><span class="xmltag">&lt;/coding&gt;</span><b>
+            </b><span class="xmltagred">&lt;text</span><span class="xmlattr"> value="<span class="xmlattrvalue">Hives</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;/manifestation&gt;</span><b>
+        </b><span class="xmltag">&lt;/event&gt;</span><b>
+      </b><span class="xmltag">&lt;/AllergyIntolerance&gt;</span><b>
+    </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry.resource" class="xmltag">resource</a>&gt;</span><b>
+  </b><span class="xmltag">&lt;/<a href="bundle-definitions.html#Bundle.entry" class="xmltag">entry</a>&gt;</span><b>
+</b><span class="xmltag">&lt;/<a href="bundle-definitions.html" class="xmltag">Bundle</a>&gt;</span></pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:33-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fdocument-example-dischargesummary.xml.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fdocument-example-dischargesummary.xml.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

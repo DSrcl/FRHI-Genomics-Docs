@@ -1,0 +1,248 @@
+﻿<!DOCTYPE HTML>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Dataelement-sdc - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/dataelement-sdc"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="dataelement.html">DataElement</a></li>        <li><a href="dataelement-sdc.html">Profile</a></li>        <li><b>Structured Data Capture Data Element</b></li>        <!-- dataelement-sdc.html / profile:DataElement/dataelement-sdc / Structured Data Capture Data Element-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h2>Structured Data Capture Data Element</h2>
+
+
+<div>
+<a name="scope"/>
+<h3>Scope and Usage</h3>
+<p>
+This profile sets expectations for use of the <a href="dataelement.html">DataElement</a> resource within the 
+<a href="sdc.html">Structured Data Capture</a> implementation guide.  This includes
+identifying which core elements and extensions must be supported.
+</p>
+<p>
+The focus of this profile is on those characteristics of Data Elements which are necessary to support the
+definition of forms (questionnaires) that can support auto-population or pre-population of content on the basis
+of referenced data elements.
+</p>
+<p>
+For the purposes of this profile, <i>Supported</i> means that clients SHALL be capable of processing the element/extension and use the information to control the display
+and information capture associated with the <a href="dataelement.html">DataElement</a>.  It means that servers SHALL be capable of persisting those elements and returning them in response
+to requests.
+</p>
+</div>
+
+<div>
+<a name="boundaries"/>
+<h3>Boundaries and Relationships</h3>
+<p>
+This profile relies on the use of a number of other profiles, some required, others available for use "when necessary":
+</p>
+<ul>
+  <li><a href="dataelement-11179.html">datalement-11179</a> which defines extensions for ISO-11179-specific concepts, such as ObjectClass and Property</li>
+  <li><a href="element-extensions.html">element-extensions</a> which defines extensions describing constraints on the values for data elements.  There are used here to constrain the allowed values for questions.</li>
+  <li><a href="iso-21090.html">iso-21090</a> provides extensions for strings allowing the conveying of language and translation extensions which may be relevant in some environment</li>
+</ul>
+</div>
+
+
+
+<a name="content"> </a>
+<h3>Content</h3>
+
+<table class="lines"><tr><td colspan="2"><b>Profiles</b>: </td></tr><tr><td><a href="dataelement-sdc-sdcelement.html">SDCElement</a></td><td>Sets expectations for data elements registered or used as part of the structured data capture project</td></tr><tr><td colspan="2"><b>Examples</b>: </td></tr><tr><td><a href="dataelement-sdc-profile-example.html">CCDA-Gender</a></td><td><p>CCDA-Gender</p>
+</td></tr></table>
+
+  <a name="language"/>
+  <h3>Language and translations</h3>
+  <p>
+In some environments, it may be necessary for a questionnaire to support multiple languages.  The rendering tool would select the appropriate
+language based on a configuration setting, or perhaps would display all available languages and the user would read the one they are familiar with.
+Systems MAY choose to provide support for identifying language and translations.  If they do, they SHALL do so using the generic language and
+translation extensions FHIR defines based on the ISO21090 data type specification:
+</p>
+  <ul>
+    <li>
+      <a href="http://hl7.org/fhir/StructureDefinition/iso21090-language">http://hl7.org/fhir/StructureDefinition/iso21090-ST-language</a> allows the language of a particular (or any other data type) to be identified</li>
+    <li>
+      <a href="http://hl7.org/fhir/StructureDefinition/iso21090-ST-translation">http://hl7.org/fhir/StructureDefinition/iso21090-ST-translation</a> allows additional repetitions in alternate languages to be communicated.  
+  (The language for each translation would be communicated using the above #language extension)</li>
+  </ul>
+  <p>
+These extensions can be used on absolutely any string element on <a href="questionnaire.html">Questionnaire</a>, <a href="valueset.html">ValueSet</a>, one of 
+the data types or any other resource.  The base string should be the primary language of the questionnaire.  It is what will be rendered by systems that do
+not support the translation extension or by systems whose language preference is other than one of the languages provided.
+</p>
+  <p>
+The ISO 19763 specification permits declaring language on questionnaire titles, descriptions, display names for codes and many other strings.  It also supports
+capturing multiple variants of these strings with distinct languages.  These capabilities can be mirrored using the above extensions.
+</p>
+  <a name="issues"/>
+  <h3>Open Issues</h3>
+  <p>
+While DataElement.specificity has been introduced, a formal set of rules defining exactly what level of "tightness" must exist for a specificity code, and
+in particular, what the rules are for data elements intended for use in auto-population/pre-population has not yet been defined.  For example, if a data element
+supports a subset of the answer codes that the question does, is that acceptable?  Must the question text be word-for-word identical?  Is it acceptable if the
+data element length is shorter than the permitted length for the question?  Is it acceptable if units of measure are not an exact match so long as conversion
+factors are known?
+</p>
+  <p>
+Opinions on these and related questions of stringency are welcome.
+</p>
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:35-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fdataelement-sdc&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fdataelement-sdc">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

@@ -1,0 +1,944 @@
+﻿<!DOCTYPE HTML>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>StructureDefinition: QICore-Patient - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/patient-qicore-qicore-patient"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="administration.html">Administrative</a></li>        <li><a href="patient.html">Patient</a></li>        <li><a href="patient-qicore.html">Profile</a></li>        <li><b>QICore-Patient</b></li>        <!-- patient-qicore-qicore-patient.html / profile:Patient/patient-qicore/patient-qicore-qicore-patient / QICore-Patient-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="patient-qicore-qicore-patient.html">Content</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="patient-qicore-qicore-patient-mappings.html">Mappings</a></li><li><a href="patient-qicore-qicore-patient.questionnaire.html">HTML Form</a></li><li><a href="patient-qicore-qicore-patient.profile.xml.html">XML</a></li><li><a href="patient-qicore-qicore-patient.profile.json.html">JSON</a></li></ul>
+
+<h4>StructureDefinition: QICore-Patient - Detailed Descriptions</h4>
+
+<p>Definitions for the patient-qicore-qicore-patient Profile.</p>
+
+<table class="dict">
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.QICore-Patient"> </a><b>Patient(QICore-Patient)</b></td></tr>
+  <tr><td>Definition</td><td><p>Demographics and other administrative information about an individual or animal receiving care or other health-related services.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="patient.html#Patient">Patient</a></td></tr>
+  <tr><td>Requirements</td><td><p>Tracking patient is the center of the healthcare process.</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>SubjectOfCare Client Resident</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.id"> </a><b>Patient.id</b></td></tr>
+  <tr><td>Definition</td><td><p>The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.meta"> </a><b>Patient.meta</b></td></tr>
+  <tr><td>Definition</td><td><p>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="resource.html#Meta">Meta</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.implicitRules"> </a><b>Patient.implicitRules</b></td></tr>
+  <tr><td>Definition</td><td><p>A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.language"> </a><b>Patient.language</b></td></tr>
+  <tr><td>Definition</td><td><p>The base language in which the resource is written.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>A human language<br/>The codes SHALL be taken from  <a href="http://tools.ietf.org/html/bcp47">http://tools.ietf.org/html/bcp47</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.text"> </a><b>Patient.text</b></td></tr>
+  <tr><td>Definition</td><td><p>A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: dom-1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="narrative.html#Narrative">Narrative</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>narrative, html, xhtml, display</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contained"> </a><b>Patient.contained</b></td></tr>
+  <tr><td>Definition</td><td><p>These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="resource.html#Resource">Resource</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>inline resources, anonymous resources, contained resources</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension"> </a><b>Patient.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.race"> </a><b>Patient.extension (<a href="extension-us-core-race.html">[UriType[http://hl7.org/fhir/StructureDefinition/us-core-race]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A code classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.ethnicity"> </a><b>Patient.extension (<a href="extension-us-core-ethnicity.html">[UriType[http://hl7.org/fhir/StructureDefinition/us-core-ethnicity]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A code classifying the person into a named category of humans sharing a common real or presumed heritage.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.religion"> </a><b>Patient.extension (<a href="extension-us-core-religion.html">[UriType[http://hl7.org/fhir/StructureDefinition/us-core-religion]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A code classifying a person's professed religion.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.birthPlace"> </a><b>Patient.extension (<a href="extension-birthplace.html">[UriType[http://hl7.org/fhir/StructureDefinition/birthPlace]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#Address">Address</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.disability"> </a><b>Patient.extension (<a href="extension-patient-disability.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-disability]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Value(s) identifying physical or mental condition(s) that limits a person's movements, senses, or activities.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.importance"> </a><b>Patient.extension (<a href="extension-patient-importance.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-importance]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The importance of the patient (e.g., VIP).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.nationality"> </a><b>Patient.extension (<a href="extension-patient-nationality.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-nationality]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The nationality of the subject.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#open">*</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.id"> </a><b>Patient.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.extension"> </a><b>Patient.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.nationality.code"> </a><b>Patient.extension.extension (<a href="extension-patient-nationality-code.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-nationality-code]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Code representing nationality of patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.nationality.period"> </a><b>Patient.extension.extension (<a href="extension-patient-nationality-period.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-nationality-period]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Period when nationality was effective.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#Period">Period</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.url"> </a><b>Patient.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.value[x]"> </a><b>Patient.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.citizenship"> </a><b>Patient.extension (<a href="extension-patient-citizenship.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-citizenship]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The patient's legal status as citizen of a country.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#open">*</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.id"> </a><b>Patient.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.extension"> </a><b>Patient.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.citizenship.code"> </a><b>Patient.extension.extension (<a href="extension-patient-citizenship-code.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-citizenship-code]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Nation code representing the citizenship of patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.citizenship.period"> </a><b>Patient.extension.extension (<a href="extension-patient-citizenship-period.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-citizenship-period]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Period when citizenship was effective.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#Period">Period</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.url"> </a><b>Patient.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.value[x]"> </a><b>Patient.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.cadavericDonor"> </a><b>Patient.extension (<a href="extension-patient-cadavericdonor.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Flag indicating whether the patient authorized the donation of body parts after death.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.militaryService"> </a><b>Patient.extension (<a href="extension-patient-qicore-militaryservice.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-qicore-militaryService]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Status indicating the current or former military service of the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.clinicalTrial"> </a><b>Patient.extension (<a href="extension-patient-clinicaltrial.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The clinical trials this patient has or is participating in.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#open">*</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.id"> </a><b>Patient.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.extension"> </a><b>Patient.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.clinicalTrial.NCT"> </a><b>Patient.extension.extension (<a href="extension-patient-clinicaltrial-nct.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial-NCT]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The National Clinical Trial number. The format for the ClinicalTrials.gov registry number is “NCT” followed by an 8-digit number, e.g.: NCT00000419.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.clinicalTrial.period"> </a><b>Patient.extension.extension (<a href="extension-patient-clinicaltrial-period.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial-period]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The start and end times of the participation of this patient in the clinical strial.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#Period">Period</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.clinicalTrial.reason"> </a><b>Patient.extension.extension (<a href="extension-patient-clinicaltrial-reason.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial-reason]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The indication or reason the patient is part of this trial.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.url"> </a><b>Patient.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.extension.value[x]"> </a><b>Patient.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.birthTime"> </a><b>Patient.extension (<a href="extension-patient-birthtime.html">[UriType[http://hl7.org/fhir/StructureDefinition/patient-birthTime]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#dateTime">dateTime</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.modifierExtension"> </a><b>Patient.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.identifier"> </a><b>Patient.identifier</b></td></tr>
+  <tr><td>Definition</td><td><p>An identifier for this patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td>Requirements</td><td><p>Patients are almost always assigned specific numerical identifiers.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.name"> </a><b>Patient.name</b></td></tr>
+  <tr><td>Definition</td><td><p>A name associated with the individual.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#HumanName">HumanName</a></td></tr>
+  <tr><td>Requirements</td><td><p>Need to be able to track the patient by multiple names. Examples are your official name and a partner name.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.telecom"> </a><b>Patient.telecom</b></td></tr>
+  <tr><td>Definition</td><td><p>A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#ContactPoint">ContactPoint</a></td></tr>
+  <tr><td>Requirements</td><td><p>People have (primary) ways to contact them in some way such as phone, email.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.telecom.id"> </a><b>Patient.telecom.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.telecom.extension"> </a><b>Patient.telecom.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.telecom.telecom.preferred"> </a><b>Patient.telecom.extension (<a href="extension-iso21090-preferred.html">[UriType[http://hl7.org/fhir/StructureDefinition/iso21090-preferred]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Flag denoting whether parent item is preferred - e.g., a preferred address or telephone number.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.telecom.system"> </a><b>Patient.telecom.system</b></td></tr>
+  <tr><td>Definition</td><td><p>Telecommunications form for contact point - what communications system is required to make use of the contact.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: cpt-2</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>Telecommunications form for contact point<br/>The codes SHALL be taken from <a href="valueset-contact-point-system.html">ContactPointSystem</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.telecom.value"> </a><b>Patient.telecom.value</b></td></tr>
+  <tr><td>Definition</td><td><p>The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>Need to support legacy numbers that are not in a tightly controlled format.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.telecom.use"> </a><b>Patient.telecom.use</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the purpose for the contact point.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>Use of contact point<br/>The codes SHALL be taken from <a href="valueset-contact-point-use.html">ContactPointUse</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.telecom.rank"> </a><b>Patient.telecom.rank</b></td></tr>
+  <tr><td>Definition</td><td><p>Specifies a preferred order in which to use a set of contacts. Contacts are ranked with lower values coming before higher values.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#positiveInt">positiveInt</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.telecom.period"> </a><b>Patient.telecom.period</b></td></tr>
+  <tr><td>Definition</td><td><p>Time period when the contact point was/is in use.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Period">Period</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.gender"> </a><b>Patient.gender</b></td></tr>
+  <tr><td>Definition</td><td><p>Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The gender of a person used for administrative purposes<br/>The codes SHALL be taken from <a href="valueset-administrative-gender.html">AdministrativeGender</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Needed for identification of the individual, in combination with (at least) name and birth date. Gender of individual drives many clinical processes.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.birthDate"> </a><b>Patient.birthDate</b></td></tr>
+  <tr><td>Definition</td><td><p>The date of birth for the individual.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#date">date</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Age of the individual drives many clinical processes.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.birthDate.id"> </a><b>Patient.birthDate.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references)</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.birthDate.extension"> </a><b>Patient.birthDate.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.birthDate.birthDate.verification"> </a><b>Patient.birthDate.extension (<a href="extension-iso21090-verification.html">[UriType[http://hl7.org/fhir/StructureDefinition/iso21090-verification]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Method value was verified.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.birthDate.value"> </a><b>Patient.birthDate.value</b></td></tr>
+  <tr><td>Definition</td><td><p>The actual value</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td>xs:gYear, xs:gYearMonth, xs:date</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.deceased[x]"> </a><b>Patient.deceased[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates if the individual is deceased or not.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td>Choice of: <a href="datatypes.html#boolean">boolean</a>, <a href="datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address"> </a><b>Patient.address</b></td></tr>
+  <tr><td>Definition</td><td><p>Addresses for the individual.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Address">Address</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.id"> </a><b>Patient.address.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.extension"> </a><b>Patient.address.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.address.preferred"> </a><b>Patient.address.extension (<a href="extension-iso21090-preferred.html">[UriType[http://hl7.org/fhir/StructureDefinition/iso21090-preferred]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Flag denoting whether parent item is preferred - e.g., a preferred address or telephone number.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.use"> </a><b>Patient.address.use</b></td></tr>
+  <tr><td>Definition</td><td><p>The purpose of this address.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The use of an address<br/>The codes SHALL be taken from <a href="valueset-address-use.html">AddressUse</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Allows an appropriate address to be chosen from a list of many.</p>
+</td></tr>
+  <tr><td>Example</td><td>home</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.type"> </a><b>Patient.address.type</b></td></tr>
+  <tr><td>Definition</td><td><p>Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The type of an address (physical / postal)<br/>The codes SHALL be taken from <a href="valueset-address-type.html">AddressType</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td>Example</td><td>both</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.text"> </a><b>Patient.address.text</b></td></tr>
+  <tr><td>Definition</td><td><p>A full text representation of the address.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>A renderable, unencoded form.</p>
+</td></tr>
+  <tr><td>Example</td><td>137 Nowhere Street, Erewhon 9132</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.line"> </a><b>Patient.address.line</b></td></tr>
+  <tr><td>Definition</td><td><p>This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>home | work | temp | old - purpose of this address.</p>
+</td></tr>
+  <tr><td>Example</td><td>137 Nowhere Street</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.city"> </a><b>Patient.address.city</b></td></tr>
+  <tr><td>Definition</td><td><p>The name of the city, town, village or other community or delivery center.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Muncipality</td></tr>
+  <tr><td>Example</td><td>Erewhon</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.district"> </a><b>Patient.address.district</b></td></tr>
+  <tr><td>Definition</td><td><p>The name of the administrative area (county).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>County</td></tr>
+  <tr><td>Example</td><td>Madison</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.state"> </a><b>Patient.address.state</b></td></tr>
+  <tr><td>Definition</td><td><p>Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The state or region designation in an address<br/>The codes SHOULD be taken from <a href="valueset-usps-state.html">USPS Two Letter Alphabetic Codes</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Province, Territory</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.postalCode"> </a><b>Patient.address.postalCode</b></td></tr>
+  <tr><td>Definition</td><td><p>A postal code designating a region defined by the postal service.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Zip</td></tr>
+  <tr><td>Example</td><td>9132</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.country"> </a><b>Patient.address.country</b></td></tr>
+  <tr><td>Definition</td><td><p>Country - a nation as commonly understood or generally accepted.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>ISO 2 letter Country Codes<br/>The codes SHALL be taken from  <a href="http://www.iso.org/iso/country_codes.htm">http://www.iso.org/iso/country_codes.htm</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.address.period"> </a><b>Patient.address.period</b></td></tr>
+  <tr><td>Definition</td><td><p>Time period when address was/is in use.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Period">Period</a></td></tr>
+  <tr><td>Requirements</td><td><p>Allows addresses to be placed in historical context.</p>
+</td></tr>
+  <tr><td>Example</td><td>&amp;lt;valuePeriod&amp;nbsp;xmlns=&amp;quot;http://hl7.org/fhir&amp;quot;&amp;gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;lt;start&amp;nbsp;value=&amp;quot;2010-03-23&amp;quot;/&amp;gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;lt;end&amp;nbsp;value=&amp;quot;2010-07-01&amp;quot;/&amp;gt;&lt;br/&gt;&amp;lt;/valuePeriod&amp;gt;&lt;br/&gt;</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.maritalStatus"> </a><b>Patient.maritalStatus</b></td></tr>
+  <tr><td>Definition</td><td><p>This field contains a patient's most recent marital (civil) status.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The domestic partnership status of a person<br/>The codes SHALL be taken from <a href="valueset-marital-status.html">Marital Status Codes</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>Most, if not all systems capture it.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.multipleBirth[x]"> </a><b>Patient.multipleBirth[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates whether the patient is part of a multiple or indicates the actual birth order.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td>Choice of: <a href="datatypes.html#boolean">boolean</a>, <a href="datatypes.html#integer">integer</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td>Requirements</td><td><p>For disambiguation of multiple-birth children, especially relevant where the care provider doesn't meet the patient, such as labs.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.photo"> </a><b>Patient.photo</b></td></tr>
+  <tr><td>Definition</td><td><p>Image of the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Attachment">Attachment</a></td></tr>
+  <tr><td>Requirements</td><td><p>Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact"> </a><b>Patient.contact</b></td></tr>
+  <tr><td>Definition</td><td><p>A contact party (e.g. guardian, partner, friend) for the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td>Requirements</td><td><p>Need to track people you can contact about the patient.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">pat-1</b>: SHALL at least contain a contact's details or a reference to an organization (xpath: f:name or f:telecom or f:address or f:organization)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.id"> </a><b>Patient.contact.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.extension"> </a><b>Patient.contact.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.modifierExtension"> </a><b>Patient.contact.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.relationship"> </a><b>Patient.contact.relationship</b></td></tr>
+  <tr><td>Definition</td><td><p>The nature of the relationship between the patient and the contact person.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The nature of the relationship between a patient and a contact person for that patient<br/>The codes SHALL be taken from <a href="valueset-patient-contact-relationship.html">PatientContactRelationship</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>Used to determine which contact person is the most relevant to approach, depending on circumstances.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.name"> </a><b>Patient.contact.name</b></td></tr>
+  <tr><td>Definition</td><td><p>A name associated with the contact person.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#HumanName">HumanName</a></td></tr>
+  <tr><td>Requirements</td><td><p>Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.telecom"> </a><b>Patient.contact.telecom</b></td></tr>
+  <tr><td>Definition</td><td><p>A contact detail for the person, e.g. a telephone number or an email address.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#ContactPoint">ContactPoint</a></td></tr>
+  <tr><td>Requirements</td><td><p>People have (primary) ways to contact them in some way such as phone, email.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address"> </a><b>Patient.contact.address</b></td></tr>
+  <tr><td>Definition</td><td><p>Address for the contact person.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Address">Address</a></td></tr>
+  <tr><td>Requirements</td><td><p>Need to keep track where the contact person can be contacted per postal mail or visited.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.id"> </a><b>Patient.contact.address.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.extension"> </a><b>Patient.contact.address.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.use"> </a><b>Patient.contact.address.use</b></td></tr>
+  <tr><td>Definition</td><td><p>The purpose of this address.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The use of an address<br/>The codes SHALL be taken from <a href="valueset-address-use.html">AddressUse</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Allows an appropriate address to be chosen from a list of many.</p>
+</td></tr>
+  <tr><td>Example</td><td>home</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.type"> </a><b>Patient.contact.address.type</b></td></tr>
+  <tr><td>Definition</td><td><p>Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The type of an address (physical / postal)<br/>The codes SHALL be taken from <a href="valueset-address-type.html">AddressType</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td>Example</td><td>both</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.text"> </a><b>Patient.contact.address.text</b></td></tr>
+  <tr><td>Definition</td><td><p>A full text representation of the address.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>A renderable, unencoded form.</p>
+</td></tr>
+  <tr><td>Example</td><td>137 Nowhere Street, Erewhon 9132</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.line"> </a><b>Patient.contact.address.line</b></td></tr>
+  <tr><td>Definition</td><td><p>This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>home | work | temp | old - purpose of this address.</p>
+</td></tr>
+  <tr><td>Example</td><td>137 Nowhere Street</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.city"> </a><b>Patient.contact.address.city</b></td></tr>
+  <tr><td>Definition</td><td><p>The name of the city, town, village or other community or delivery center.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Muncipality</td></tr>
+  <tr><td>Example</td><td>Erewhon</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.district"> </a><b>Patient.contact.address.district</b></td></tr>
+  <tr><td>Definition</td><td><p>The name of the administrative area (county).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>County</td></tr>
+  <tr><td>Example</td><td>Madison</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.state"> </a><b>Patient.contact.address.state</b></td></tr>
+  <tr><td>Definition</td><td><p>Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The state or region designation in an address<br/>The codes SHOULD be taken from <a href="valueset-usps-state.html">USPS Two Letter Alphabetic Codes</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Province, Territory</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.postalCode"> </a><b>Patient.contact.address.postalCode</b></td></tr>
+  <tr><td>Definition</td><td><p>A postal code designating a region defined by the postal service.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Zip</td></tr>
+  <tr><td>Example</td><td>9132</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.country"> </a><b>Patient.contact.address.country</b></td></tr>
+  <tr><td>Definition</td><td><p>Country - a nation as commonly understood or generally accepted.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>ISO 2 letter Country Codes<br/>The codes SHALL be taken from  <a href="http://www.iso.org/iso/country_codes.htm">http://www.iso.org/iso/country_codes.htm</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.address.period"> </a><b>Patient.contact.address.period</b></td></tr>
+  <tr><td>Definition</td><td><p>Time period when address was/is in use.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Period">Period</a></td></tr>
+  <tr><td>Requirements</td><td><p>Allows addresses to be placed in historical context.</p>
+</td></tr>
+  <tr><td>Example</td><td>&amp;lt;valuePeriod&amp;nbsp;xmlns=&amp;quot;http://hl7.org/fhir&amp;quot;&amp;gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;lt;start&amp;nbsp;value=&amp;quot;2010-03-23&amp;quot;/&amp;gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;lt;end&amp;nbsp;value=&amp;quot;2010-07-01&amp;quot;/&amp;gt;&lt;br/&gt;&amp;lt;/valuePeriod&amp;gt;&lt;br/&gt;</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.gender"> </a><b>Patient.contact.gender</b></td></tr>
+  <tr><td>Definition</td><td><p>Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The gender of a person used for administrative purposes<br/>The codes SHALL be taken from <a href="valueset-administrative-gender.html">AdministrativeGender</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td>Requirements</td><td><p>Needed to address the person correctly.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.organization"> </a><b>Patient.contact.organization</b></td></tr>
+  <tr><td>Definition</td><td><p>Organization on behalf of which the contact is acting or for which the contact is working.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: pat-1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/organization-qicore-qicore-organization]])</td></tr>
+  <tr><td>Requirements</td><td><p>For guardians or business related contacts, the organization is relevant.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.contact.period"> </a><b>Patient.contact.period</b></td></tr>
+  <tr><td>Definition</td><td><p>The period during which this contact person or organization is valid to be contacted relating to this patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Period">Period</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.animal"> </a><b>Patient.animal</b></td></tr>
+  <tr><td>Definition</td><td><p>This patient is known to be an animal.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Many clinical systems are extended to care for animal patients as well as human.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.animal.id"> </a><b>Patient.animal.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.animal.extension"> </a><b>Patient.animal.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.animal.modifierExtension"> </a><b>Patient.animal.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.animal.species"> </a><b>Patient.animal.species</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the high level taxonomic categorization of the kind of animal.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The species of an animal<br/>For example codes, see <a href="valueset-animal-species.html">AnimalSpecies</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>Need to know what kind of animal.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.animal.breed"> </a><b>Patient.animal.breed</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the detailed categorization of the kind of animal.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The breed of an animal<br/>For example codes, see <a href="valueset-animal-breeds.html">AnimalBreeds</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>May need to know the specific kind within the species.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.animal.genderStatus"> </a><b>Patient.animal.genderStatus</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates the current state of the animal's reproductive organs.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The state of the animal's reproductive organs<br/>For example codes, see <a href="valueset-animal-genderstatus.html">GenderStatus</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>Gender status can affect housing and animal behavior.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.communication"> </a><b>Patient.communication</b></td></tr>
+  <tr><td>Definition</td><td><p>Languages which may be used to communicate with the patient about his or her health.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>If a patient does not speak the local language, interpreters may be required, so languages spoken and proficiency is an important things to keep track of both for patient and other persons of interest.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.communication.id"> </a><b>Patient.communication.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.communication.extension"> </a><b>Patient.communication.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.communication.modifierExtension"> </a><b>Patient.communication.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.communication.language"> </a><b>Patient.communication.language</b></td></tr>
+  <tr><td>Definition</td><td><p>The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case. E.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>A human language<br/>The codes SHALL be taken from  <a href="http://tools.ietf.org/html/bcp47">http://tools.ietf.org/html/bcp47</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>Most systems in multilingual countries will want to convey language. Not all systems actually need the regional dialect.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.communication.preferred"> </a><b>Patient.communication.preferred</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates whether or not the Patient prefers this language (over other languages he masters up a certain level).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td>Requirements</td><td><p>People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.careProvider"> </a><b>Patient.careProvider</b></td></tr>
+  <tr><td>Definition</td><td><p>Patient's nominated care provider.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td>Choice of: <a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/organization-qicore-qicore-organization]]), <a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/practitioner-qicore-qicore-practitioner]])</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.managingOrganization"> </a><b>Patient.managingOrganization</b></td></tr>
+  <tr><td>Definition</td><td><p>Organization that is the custodian of the patient record.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/organization-qicore-qicore-organization]])</td></tr>
+  <tr><td>Requirements</td><td><p>Need to know who recognizes this patient record, manages and updates it.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.link"> </a><b>Patient.link</b></td></tr>
+  <tr><td>Definition</td><td><p>Link to another patient resource that concerns the same actual patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>There are multiple usecases: * Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and * Distribution of patient information across multiple servers.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.link.id"> </a><b>Patient.link.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.link.extension"> </a><b>Patient.link.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.link.modifierExtension"> </a><b>Patient.link.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.link.other"> </a><b>Patient.link.other</b></td></tr>
+  <tr><td>Definition</td><td><p>The other patient resource that the link refers to.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/patient-qicore-qicore-patient]])</td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.link.type"> </a><b>Patient.link.type</b></td></tr>
+  <tr><td>Definition</td><td><p>The type of link between this patient resource and another patient resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The type of link between this patient resource and another patient resource.<br/>The codes SHALL be taken from <a href="valueset-link-type.html">LinkType</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="patient-qicore-qicore-patient.Patient.active"> </a><b>Patient.active</b></td></tr>
+  <tr><td>Definition</td><td><p>Whether this patient record is in active use.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Need to be able to mark a patient record as not to be used because it was created in error.</p>
+</td></tr>
+  <tr><td>Default Value</td><td>true</td></tr>
+</table>
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:36-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fpatient-qicore-qicore-patient&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fpatient-qicore-qicore-patient">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

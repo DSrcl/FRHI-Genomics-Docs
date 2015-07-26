@@ -1,0 +1,340 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Cqif-common - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/cqif-common.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body> 
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+          <!-- cqif-common.html / page / cqif-common -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<a name="overview"/>
+<h2><span class="sectioncount">?.?<a name="?.?"> </a></span> Overview <a href="cqif-common.html#?.?" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+<p>This implementation guide focuses on three main use cases within the clinical quality domain:</p>
+
+<ol>
+	<li>Sharing � The representation of computable knowledge artifacts</li>
+	<li>Evaluation � The evaluation of knowledge artifacts</li>
+	<li>Distribution � The exposure of a searchable repository of knowledge artifacts</li>
+</ol>
+
+<p>The specific domains of quality measurement and decision support each make use of the functionality defined by these use cases. As such, the objective of this section of the guide is to establish the common aspects by defining base structures that can then be extended and utilized by each specific domain.</p>
+
+<a name="sharing"/>
+<h2><span class="sectioncount">?.?<a name="?.?"> </a></span> Sharing <a href="cqif-common.html#?.?" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+<p>The sharing use case is considered first, because it establishes structures that are then utilized by the other two use cases. Broadly, this use case involves enabling a Healthcare Delivery System such as an Electronic Health Record System or a Clinical Decision Support Service, to obtain a computable definition of a knowledge artifact, such as a quality measure, or a decision support rule. This section of the implementation guide defines the <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure, which establishes the elements common to knowledge artifacts from both domains.</p>
+
+<p>The <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure is then extended by the quality measurement and decision support domains to support the representation of domain specific modules and artifacts.</p>
+
+<p>At the common level, the <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure contains the following general categories of elements:</p>
+<ul>
+	<li>Module identity and versioning</li>
+	<li>Description and documentation</li>
+	<li>Publication and stewardship information</li>
+	<li>Data Requirements representation</li>
+	<li>Repository metadata</li>
+	<li>Content</li>
+</ul>
+
+<h3><span class="sectioncount">?.?.1<a name="?.?.1"> </a></span> Module Identity <a href="cqif-common.html#?.?.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>As with any FHIR resource, the instance identity is specified by the <a href="resource-definitions.html#Resource.id">id</a> element. In addition, modules may have logical identifiers based on the content or behavior they provide. For example, the CMS or NQF identifiers for measure content. These identifiers can be provided in the <a href="basic-definitions.html#Basic.identifier">identifier</a> element.</p>
+
+<p>In addition to identity, the <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure allows, but does not require, a <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.version">version</a> to be specified.</p>
+
+<p>When using the <a href="basic-definitions.html#Basic.identifier">identifier</a> element to provide the Entity Identifier for a module consistent with the Decision Support Service (DSS) specification, the following mappings apply:</p>
+
+<table class="list">
+	<thead>
+		<tr><th><b>DSS Model Element</b></th><th><b>FHIR Element</b></th><th><b>Example</b></th></tr>
+	</thead>
+	<tbody>
+		<tr><td>businessId</td><td>Identifier.value</td><td>hemoglobin-control-rule</td></tr>
+		<tr><td>scopingEntityId</td><td>Identifier.system</td><td>com.clinica</td></tr>
+		<tr><td>version</td><td>KnowledgeModule.version</td><td>1.0.0</td></tr>
+	</tbody>
+</table>
+
+<a name="documentation"/>
+<h3><span class="sectioncount">?.?.2<a name="?.?.2"> </a></span> Documentation <a href="cqif-common.html#?.?.2" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>The <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure provides several elements related to documentation of the module, including <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.title">title</a>, <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.description">description</a>, <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.purpose">purpose</a>, and <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.usage">usage</a>. In addition to these elements, additional supporting documentation, citations, and evidence can be provided via the <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.relatedresource">relatedResource</a> element.</p>
+
+<a name="publication-information&quot;"/>
+<h3><span class="sectioncount">?.?.3<a name="?.?.3"> </a></span> Publication Information <a href="cqif-common.html#?.?.3" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+The <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.status">status</a> element of the <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure describes the lifecycle status of the module, indicating whether the module is a <i>draft</i>, <i>test</i>, <i>active</i>, or <i>retired</i> artifact. This representation is consistent with the states described by the Quality Metadata Conceptual Model. The following table provides a mapping from the states defined here, to the states as defined in the Clinical Decision Support Knowledge Artifact Specification (CDS KAS), as well as the Decision Support Services (DSS) standard:
+
+<table class="list">
+	<thead>
+		<tr><th><b>Status</b></th><th><b>CDS KAS Mapping</b></th><th><b>DSS Mapping</b></th></tr>
+	</thead>
+	<tbody>
+		<tr><td><b>draft</b></td><td>Draft</td><td>DRAFT</td></tr>
+		<tr><td><b>test</b></td><td>InTest</td><td>DEFINED</td></tr>
+		<tr><td><b>active</b></td><td>Active</td><td>APPROVED, PROMOTED</td></tr>
+		<tr><td><b>inactive</b></td><td>Inactive</td><td>REJECTED, RETIRED</td></tr>
+	</tbody>
+</table>
+
+<p>In addition, the <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure provides elements for tracking publication information including <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.contributor">contributor</a>, <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.publisher">publisher</a>, <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.steward">steward</a>, and <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.rightsdeclaration">rightsDeclaration</a>.</p>
+
+<a name="data-requirements"/>
+<h3><span class="sectioncount">?.?.4<a name="?.?.4"> </a></span> Data Requirements <a href="cqif-common.html#?.?.4" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>The data requirements for a knowledge module describe the minimum data required in order to achieve a successful evaluation of the module. More data may in general be provided, but not less. For example, a given module may state that the lab results for A1C tests over the past two years are required. If a system provides data for the last three years, the module can still be successfully evaluated, but if a system provides data for only the last year, the module may produce incorrect results based on the absence of the expected data.</p>
+
+<p>In the scenario that an evaluation service is not colocated with the clinical information, the service has no general way of knowing whether or not a request has fulfilled the stated data requirements for a module. As such, this is a critical aspect of implementation, the service assumes the stated data requirements will be provided as part of a request, and requesters shall provide at least the data specified by the data requirements when requesting evaluation for a module.</p>
+
+<p>The <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure provides for the definition of two types of data requirements:</p>
+
+<ol>
+	<li>Patient-independent information - Specified as named parameters</li>
+	<li>Patient-dependent information - Specified as types of information</li>
+</ol>
+
+<h4><span class="sectioncount">?.?.4.1<a name="?.?.4.1"> </a></span> Parameters <a href="cqif-common.html#?.?.4.1" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+
+<p>Patient-independent information consists of data that is not known based on the patient or population under evaluation. For example, an A1C control artifact may have as a parameter the threshold A1C level that is considered &quot;poorly controlled.&quot; </p>
+
+<p>Within the <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure, patient-independent data requirements are modeled using the <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.parameters">parameters</a> element. These elements are defined in the same way that parameters are defined for operation definitions within the FHIR infrastructure.</p>
+
+<h4><span class="sectioncount">?.?.4.2<a name="?.?.4.2"> </a></span> Data <a href="cqif-common.html#?.?.4.2" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+
+<p>Patient-dependent information consists of data that is related to the patient or population under evaluation, and is specified by the <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.data">data</a> element. The set of data of interest for a particular evaluation is specified by identifying the type of data, such as MedicationStatement or Encounter, an optional profile or profiles to which the data must conform, and optional filters for code- and/or date-valued attributes.</p>
+
+<p>Note that because this data is dynamically filtered, it cannot be completely described with profiles. In addition, the data requirements as specified here map directly to the way that patient-specific information is accessed within retrieve expressions in Clinical Quality Language (CQL), and are therefore not named the way that parameters are in order to be accessed.</p>
+
+<a name="repository-metadata"/>
+<h3><span class="sectioncount">?.?.5<a name="?.?.5"> </a></span> Repository Metadata <a href="cqif-common.html#?.?.5" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>To support the ability of a repository to allow searching for knowledge modules and artifacts, the <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure defines the <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.topic">topic</a> and <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.keyword">keyword</a> elements. For more information on these elements, refer to the <a name="#distribution">Distribution</a> section.</p>
+
+<a name="content"/>
+<h3><span class="sectioncount">?.?.6<a name="?.?.6"> </a></span> Content <a href="cqif-common.html#?.?.6" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+
+<p>In addition to being a description of the behavior of a quality service, the <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure can be used to represent a knowledge artifact, which is defined as a shareable, computable definition of the behavior of a quality service. Most of the content actually contained within an artifact is defined by derived structures such as MeasureArtifact and GuidanceArtifact that define the content specific to the domain. However, some of the content definitions are common between both measurement and decision support, and are therefore modeled in the KnowledgeModule structure itself. Specifically, the <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.model">model</a> and <a href="knowledgemodule-cqif-cqif-knowledgemodule-definitions.html#knowledgemodule-cqif-cqif-knowledgemodule.library">library</a> elements define the data models and libraries used within the content.</p>
+
+<a name="evaluation"/>
+<h2><span class="sectioncount">?.?<a name="?.?"> </a></span> Evaluation <a href="cqif-common.html#?.?" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>The evaluation use case enables the user of a system (such as a clinical workflow system) to receive clinical guidance for a particular patient. In addition, this use enables the ability of a health care system to automatically determine the need for clinical guidance based on clinical observations. In general, the use case involves a service requestor, and a service supplier. The Decision Support Service specification defines interfaces to enable this use case; this implementation guide provides a realization of that interface using FHIR as the service.</p>
+
+<p>Only the common aspects of an artifact evaluation request and response are considered here, measure- and decision-support-specific evaluation operations are defined in their respective sections.</p>
+
+<p>Note that this implementation guide does not assume that the data required for an evaluation is available on the same FHIR service as the quality service. In some scenarios, a quality service vendor may be exposing a FHIR service that only supports evaluation, and requires that patient information be supplied as part of the evaluation request. In other scenarios, the patient data may be co-located with the quality evaluation service.</p>
+
+<p>To support the evaluation use case, this implementation guide defines structures to capture the relevant information for a request and response. These structures are then used by the quality measurement and decision support domains to define operations appropriate to their specific use cases.</p>
+
+<p>The <a href="knowledgerequest-cqif-cqif-knowledgerequest.html">KnowledgeRequest</a> structure captures the information required to request evaluation of a particular module, and the <a href="knowledgeresponse-cqif-cqif-knowledgeresponse.html">KnowledgeResponse</a> structure describes the information returned by an evaluation.</p>
+
+<p>Each request instance specifies a single module to be evaluated, and results in a single response to describe the result of the evaluation. Note that the <a href="knowledgerequest-cqif-cqif-knowledgerequest-definitions.html#knowledgerequest-cqif-cqif-knowledgerequest.inputparameters">inputParameters</a> provided as part of the KnowledgeRequest are intended to provide patient-independent information to the evaluation. Patient-specific information, if required, is provided as part of the operation interaction.</p>
+
+<a name="distribution"/>
+<h2><span class="sectioncount">?.?<a name="?.?"> </a></span> Distribution <a href="cqif-common.html#?.?" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>The distribution use case involves enabling knowledge artifacts to be distributed as documents via a FHIR server. The search and read interactions defined by the FHIR infrastructure can be used for this purpose. The <a href="knowledgemodule-cqif-cqif-knowledgemodule.html">KnowledgeModule</a> structure defines several search parameters to enable searching based on the various attributes of a knowledge module. The FHIR search interaction specifies that search results are returned in a Bundle, and the entries in that bundle allow a score to be specified, consistent with the Decision Support Service (DSS) relevance result. Note that the DSS score range is 1 to 100, while the FHIR score range is 0..1.</p>
+
+<p>The following table lists the search criteria elements defined by the Decision Support Service (DSS) standard along with their appropriate representation in FHIR:</p>
+
+<table class="grid">
+	<thead>
+		<tr><th>DSS Search Criteria</th><th>FHIR Equivalent</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Maximum Results</td><td>_count global search parameter</td></tr>
+		<tr><td>Minimum Score</td><td>KnowledgeModule.minScore search parameter</td></tr>
+		<tr><td>Knowledge Module Trait</td><td>Knowledge search parameters (identifier, keyword, topic, title, description, version)</td></tr>
+		<tr><td>Knowledge Module Status</td><td>KnowledgeModule.status search parameter</td></tr>
+		<tr><td>Evaluation Result Semantics</td><td>Not Implemented</td></tr>
+		<tr><td>Data Requirements</td><td>Not Implemented</td></tr>
+		<tr><td>Relationships to specific Knowledge Modules</td><td>Not Implemented</td></tr>
+	</tbody>
+</table>
+
+<p>Support for exclusion criteria as described in the DSS is provided by the :not search parameter modifier of FHIR.</p>
+
+<p>NOTE: Providing the ability to search on Evaluation Result Semantics, Data Requirements, and Relationships to specific Knowledge Modules was deferred. We seek comment on whether these requirements are seen as vital to a quality service implementation.</p>
+
+<a name="contents"/>
+<h2><span class="sectioncount">?.?<a name="?.?"> </a></span> Contents <a href="cqif-common.html#?.?" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>The following table lists the CQIF profiles that are part of the IG, and the underlying FHIR resources:</p>
+
+<table class="list">
+	<thead>
+		<tr>
+			<th><b>CQIF FHIR Profile</b></th>
+			<th><b>Base FHIR Resource</b></th>
+		</tr>
+	</thead>
+	<tbody>
+        <tr>
+			<td><a href="knowledgerequest-cqif-cqif-knowledgerequest.html">CQIF-KnowledgeRequest</a></td>
+			<td><a href="basic.html">Basic</a></td>
+		</tr>
+		<tr>
+			<td><a href="knowledgeresponse-cqif-cqif-knowledgeresponse.html">CQIF-KnowledgeResponse</a></td>
+			<td><a href="basic.html">Basic</a></td>
+		</tr>
+		<tr>
+			<td><a href="knowledgemodule-cqif-cqif-knowledgemodule.html">CQIF-KnowledgeModule</a></td>
+			<td><a href="basic.html">Basic</a></td>
+		</tr>
+		<tr>
+			<td><a href="evidence-cqif-cqif-evidence.html">CQIF-Evidence</a></td>
+			<td><a href="documentreference.html">DocumentReference</a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Sun, Jul 26, 2015 15:55-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fcqif-common.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fcqif-common.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+</body>
+</html>

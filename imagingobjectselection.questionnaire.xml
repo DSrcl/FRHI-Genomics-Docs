@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <name value="Type options for ImagingObjectSelection.author"/>
+      <description value="Type options for ImagingObjectSelection.author"/>
+      <status value="active"/>
+      <expansion>
+        <identifier value="urn:uuid:7d06e7fd-d91a-44ef-b886-ba5322a03412"/>
+        <timestamp value="2015-07-24T17:34:01-04:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Device"/>
+          <display value="Device"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-07-24T17:31:16-04:00"/>
+  <publisher value="Health Level Seven International (Imaging Integration)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A set of DICOM SOP Instances of a patient, selected for some application purpose, e.g., quality assurance, teaching, conference, consulting, etc.  Objects selected can be from different studies, but must be of the same patient."/>
+    </extension>
+    <linkId value="ImagingObjectSelection"/>
+    <title value="Key Object Selection"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="ImagingObjectSelection.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ImagingObjectSelection.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="ImagingObjectSelection.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="ImagingObjectSelection.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ImagingObjectSelection.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="ImagingObjectSelection.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ImagingObjectSelection.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      </extension>
+      <linkId value="ImagingObjectSelection.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      </extension>
+      <linkId value="ImagingObjectSelection.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      </extension>
+      <linkId value="ImagingObjectSelection.extension"/>
+      <text value="Additional Content defined by implementations"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      </extension>
+      <linkId value="ImagingObjectSelection.modifierExtension"/>
+      <text value="Extensions that cannot be ignored"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Instance UID of the DICOM KOS SOP Instances represenetd in this resource."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="ImagingObjectSelection.uid"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ImagingObjectSelection.uid.value"/>
+        <text value="Instance UID"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A patient resource reference which is the patient subject of all DICOM SOP Instances in this key object selection."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="ImagingObjectSelection.patient"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="ImagingObjectSelection.patient.value"/>
+        <text value="Patient of the selected objects"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The reason for, or significance of, the selection of objects referenced in the resource."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="ImagingObjectSelection.title"/>
+      <text value="Reason for selection"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ImagingObjectSelection.title.coding"/>
+        <text value="code:"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ImagingObjectSelection.title.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Text description of the DICOM SOP instances selected in the key object selection. This should be aligned with the content of the title element, and can provide further explanation of the SOP instances in the selection."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="ImagingObjectSelection.description"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ImagingObjectSelection.description.value"/>
+        <text value="Description text"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Author of key object selection. It can be a human authtor or a device which made the decision of the SOP instances selected. For example, a radiologist selected a set of imaging SOP instances to attached in a diagnostic report, and a CAD application may author a selection to describe SOP instances it used to generate a detection conclusion."/>
+      </extension>
+      <linkId value="ImagingObjectSelection.author"/>
+      <text value="Author (human or machine)"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ImagingObjectSelection.author._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <options>
+          <reference value="#vs2"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ImagingObjectSelection.author._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ImagingObjectSelection.author._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ImagingObjectSelection.author._Device"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Device?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ImagingObjectSelection.author._Device.value"/>
+            <text value="Device"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ImagingObjectSelection.author._Organization"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ImagingObjectSelection.author._Organization.value"/>
+            <text value="Organization"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ImagingObjectSelection.author._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ImagingObjectSelection.author._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ImagingObjectSelection.author._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ImagingObjectSelection.author._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Date and time when the key object selection was authored. Note that this is the date and time the DICOM SOP instances in the selection were selected (selection decision making). It is different from the creation date and time of the selection resource."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="ImagingObjectSelection.authoringTime"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ImagingObjectSelection.authoringTime.value"/>
+        <text value="Authoring time of the selection"/>
+        <type value="dateTime"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Study identity and locating information of the DICOM SOP instances in the selection."/>
+      </extension>
+      <linkId value="ImagingObjectSelection.study"/>
+      <title value="Study identity of the selected instances"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ImagingObjectSelection.study.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ImagingObjectSelection.study.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="ImagingObjectSelection.study.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="ImagingObjectSelection.study.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Study instance uid of the SOP instances in the selection."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ImagingObjectSelection.study.uid"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ImagingObjectSelection.study.uid.value"/>
+          <text value="Study instance uid"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="WADO-RS URL to retrieve the study. Note that this URL retrieves all SOP instances of the study, not only those in the selection."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="ImagingObjectSelection.study.url"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ImagingObjectSelection.study.url.value"/>
+          <text value="Retrieve URL"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Series indetity and locating information of the DICOM SOP instances in the selection."/>
+        </extension>
+        <linkId value="ImagingObjectSelection.study.series"/>
+        <title value="Series identity of the selected instances"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="ImagingObjectSelection.study.series.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ImagingObjectSelection.study.series.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="ImagingObjectSelection.study.series.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="ImagingObjectSelection.study.series.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Series instance uid of the SOP instances in the selection."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="ImagingObjectSelection.study.series.uid"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ImagingObjectSelection.study.series.uid.value"/>
+            <text value="Series instance uid"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="WADO-RS URL to retrieve the series Note that this URL retrieves all SOP instances of the series not only those in the selection."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="uri"/>
+          </extension>
+          <linkId value="ImagingObjectSelection.study.series.url"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ImagingObjectSelection.study.series.url.value"/>
+            <text value="Retrieve URL"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Identity and locating information of the selected DICOM SOP instances."/>
+          </extension>
+          <linkId value="ImagingObjectSelection.study.series.instance"/>
+          <title value="The selected instance"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="ImagingObjectSelection.study.series.instance.id"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ImagingObjectSelection.study.series.instance.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+            </extension>
+            <linkId value="ImagingObjectSelection.study.series.instance.extension"/>
+            <text value="Additional Content defined by implementations"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+            </extension>
+            <linkId value="ImagingObjectSelection.study.series.instance.modifierExtension"/>
+            <text value="Extensions that cannot be ignored"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="SOP class uid of the selected instance."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="ImagingObjectSelection.study.series.instance.sopClass"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ImagingObjectSelection.study.series.instance.sopClass.value"/>
+              <text value="SOP class uid of instance"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="SOP Instance uid of the selected instance."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="ImagingObjectSelection.study.series.instance.uid"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ImagingObjectSelection.study.series.instance.uid.value"/>
+              <text value="Uid of the selected instance"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="WADO-RS URL to retrieve the DICOM SOP Instance."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="uri"/>
+            </extension>
+            <linkId value="ImagingObjectSelection.study.series.instance.url"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ImagingObjectSelection.study.series.instance.url.value"/>
+              <text value="Retrieve URL"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Identity and location information of the frames in the selected instance."/>
+            </extension>
+            <linkId value="ImagingObjectSelection.study.series.instance.frames"/>
+            <title value="The frame set"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="unique id for the element within a resource (for internal references)."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="string"/>
+              </extension>
+              <linkId value="ImagingObjectSelection.study.series.instance.frames.id"/>
+              <required value="false"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="ImagingObjectSelection.study.series.instance.frames.id.value"/>
+                <text value="xml:id (or equivalent in JSON)"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+              </extension>
+              <linkId value="ImagingObjectSelection.study.series.instance.frames.extension"/>
+              <text value="Additional Content defined by implementations"/>
+              <required value="false"/>
+              <repeats value="true"/>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+              </extension>
+              <linkId value="ImagingObjectSelection.study.series.instance.frames.modifierExtension"/>
+              <text value="Extensions that cannot be ignored"/>
+              <required value="false"/>
+              <repeats value="true"/>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="The frame numbers in the frame set."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="integer"/>
+              </extension>
+              <linkId value="ImagingObjectSelection.study.series.instance.frames.frameNumbers"/>
+              <required value="true"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="ImagingObjectSelection.study.series.instance.frames.frameNumbers.value"/>
+                <text value="Frame numbers"/>
+                <type value="integer"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="WADO-RS URL to retrieve the DICOM frames."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="uri"/>
+              </extension>
+              <linkId value="ImagingObjectSelection.study.series.instance.frames.url"/>
+              <required value="true"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="ImagingObjectSelection.study.series.instance.frames.url.value"/>
+                <text value="Retrieve URL"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+  </group>
+</Questionnaire>

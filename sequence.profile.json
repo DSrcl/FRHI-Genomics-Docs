@@ -1,0 +1,684 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Sequence",
+  "text": {
+    "status": "generated",
+    "div": "<div><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"formats.html#table\" title=\"Legend for this format\"><img src=\"help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJBSURBVDjLhdKxa5NBGMfx713yvkmbJnaoFiSF4mJTh06Kg4OgiyCCRXCof4YIdXdxFhQVHPo3OFSoUx0FySQttaVKYq2NbdO8ed/L3fM4JG3tYPvAcfBw9+HHPWdUlf/V0tLSqKo+EpEHInJFRIohhDUR+RBCeDM7O7ua55QSkRfVanVufHyckZERrLV0Op2Zra2tmXq9fg+YsmcAdyYnJykUCke9OI6ZmJgghHAZ4KwE3ntPs9mkVCohIjQaDWq1GiEEAM5KoHEcY62lVCrRarUoFotUKpUjIL/y/uqXYmV62ph/LSVrr30P4bEFcM4B0Ov1jk547/uAUTs1ceNdZIwB7V/GGHz6+9LXxY96eDiEgHMOY8xJAK8p4grZz5cElwNbwZgyxYu3EFM01lriOCZJEqIoIooiALIsGwA9Y1UcwcWoKNLdpLu9zvbnBWqNBhuvn5EDUmB0EH/1E2TZw5U+YLQovkun+Ytsaw1xCbnCOap334LC7s4Oe/ttvA+ICLmhMXRxDufczUECS37oAuevPwUEVFFp4/eXkXSdYc2IopSepnjtUh5/wg9gfn6+OQBUNaRIUkfDHhraSLoBKqikIF3yHJDLHaAkFOLciVHnyVAVj/S2Ub/XRyQD9aAZKgkaOohvo6ENgykcA07VEFDfQv1uf4W9Y8y30bCPhg4qKZJtMnjTPqBO/vhkZ7h3EJeRslWNQMqgY2jIAIfa/m5sIKSpqpPsGEiz599e3b+GchtD+bSvjQJm2SG6cNj6C+QmaxAek5tyAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"heirarchy\"/> <span title=\"Sequence : This resource records information about sequence of a moleculde. E.g. a DNA sequence.\">Sequence</span><a name=\"Sequence\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><span title=\"This element has or is affected by some invariants\">I</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"domainresource.html\">DomainResource</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Sequence of a macromolecule<br/><span style=\"font-style: italic\" title=\"tla-1\">Start and end position should be non-negative, and end position must be larger than start position.</span><br/><span style=\"font-style: italic\" title=\"tla-2\">CIGAR string should conform with extended-cigar's syntax.</span></td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.chromosome : Chromosome of the sequence. E.g. &quot;1&quot; for chromosome 1. Note that value of `chromosome` is not limited to a human's chromosomes, as the sequence can be from other species such as Tuberculosis.\">chromosome</span><a name=\"Sequence.chromosome\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Chromosome of the sequence</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.startPosition : 0-based location start position of the sequence.\">startPosition</span><a name=\"Sequence.startPosition\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Start position of the sequence</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.endPosition : 0-based end location (exclusive) of the sequence.\">endPosition</span><a name=\"Sequence.endPosition\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">End position of the sequence</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.direction : Direction of the strand.  Forward means the sequence is in 5'-3' direction, reverse otherwise.\">direction</span><a name=\"Sequence.direction\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">forward | reverse<br/><a href=\"valueset-strand-direction.html\" title=\"Direction of a sequence\">StrandDirection</a> (<a href=\"terminologies.html#required\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set\">Required</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.cigar : Extended CIGAR string for aligning the sequence with reference bases. See detailed documentation [here](http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm).\">cigar</span><a name=\"Sequence.cigar\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">CIGAR string for the sequence</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.sample : Tissue sample from which molecules encoded by the sequence are extracted.\">sample</span><a name=\"Sequence.sample\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">germline | somatic | prenatal<br/><a href=\"valueset-sample-type.html\" title=\"Type of the sample used to determine a seauence\">SampleType</a> (<a href=\"terminologies.html#required\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set\">Required</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAFxJREFUOE/NjEEOACEIA/0o/38GGw+agoXYeNnDJDCUDnd/gkoFKhWozJiZI3gLwY6rAgxhsPKTPUzycTl8lAryMyMsVQG6TFi6cHULyz8KOjC7OIQKlQpU3uPjAwhX2CCcGsgOAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"heirarchy\"/> <span title=\"Sequence.lab : Lab where the sequence is determined.\">lab</span><a name=\"Sequence.lab\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"procedure.html\">Procedure</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Lab where the sequence is determined</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAFxJREFUOE/NjEEOACEIA/0o/38GGw+agoXYeNnDJDCUDnd/gkoFKhWozJiZI3gLwY6rAgxhsPKTPUzycTl8lAryMyMsVQG6TFi6cHULyz8KOjC7OIQKlQpU3uPjAwhX2CCcGsgOAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"heirarchy\"/> <span title=\"Sequence.patient : Whom the sequence is determined for. In a prenatal sequencing test, the patient being referenced is the birthgiver.\">patient</span><a name=\"Sequence.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"patient.html\">Patient</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Whom the sequence is determined for</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAOZ/APrkusOiYvvfqbiXWaV2G+jGhdq1b8GgYf3v1frw3vTUlsWkZNewbcSjY/DQkad4Hb6dXv3u0f3v1ObEgfPTlerJiP3w1v79+e7OkPrfrfnjuNOtZPrpydaxa+/YrvvdpP779ZxvFPvnwKKBQaFyF/369M2vdaqHRPz58/HNh/vowufFhfroxO3OkPrluv779tK0e6JzGProwvrow9m4eOnIifPTlPDPkP78+Naxaf3v0/zowfXRi+bFhLWUVv379/rnwPvszv3rye3LiPvnv+3MjPDasKiIS/789/3x2f747eXDg+7Mifvu0tu7f+/QkfDTnPXWmPrjsvrjtPbPgrqZW+/QlPz48K2EMv36866OUPvowat8Ivvgq/Pbrvzgq/PguvrgrqN0Gda2evfYm9+7d/rpw9q6e/LSku/Rl/XVl/LSlfrkt+zVqe7Wqv3x1/bNffbOf59wFdS6if3u0vrqyP3owPvepfXQivDQkO/PkKh9K7STVf779P///////yH5BAEAAH8ALAAAAAAQABAAAAfNgH+Cg36FfoOIhH4JBxBghYl/hQkNAV0IVT5GkJKLCwtQaSsSdx9aR26Gcwt2IkQaNRI6dBERIzCFDSgWSW8WCDkbBnoOQ3uFARc/JQJfCAZlT0x4ZFyFBxdNQT9ZCBNWKQoKUQ+FEDgcdTIAV14YDmg2CgSFA0hmQC5TLE4VRTdrKJAoxOeFCzZSwsw4U6BCizwUQhQyEaAPiAwCVNCY0FCNnA6GPAwYoETIFgY9loiRA4dToTYnsOxg8CBGHE6ICvEYQ4AKzkidfgoKBAA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.species : Species of the organism whom the sequence belongs to. The species is not limited to Homo sapiens. E.g. the sequence can be a DNA sequence of a bacteria.\">species</span><a name=\"Sequence.species\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Species of the organism whom the sequence belongs to<br/><a href=\"valueset-sequence-species.html\" title=\"Species of the organism to whom the sequence belongs to\">SNOMED CT Codes for species</a> (<a href=\"terminologies.html#required\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set\">Required</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,R0lGODlhEAAQAOZ/APrkusOiYvvfqbiXWaV2G+jGhdq1b8GgYf3v1frw3vTUlsWkZNewbcSjY/DQkad4Hb6dXv3u0f3v1ObEgfPTlerJiP3w1v79+e7OkPrfrfnjuNOtZPrpydaxa+/YrvvdpP779ZxvFPvnwKKBQaFyF/369M2vdaqHRPz58/HNh/vowufFhfroxO3OkPrluv779tK0e6JzGProwvrow9m4eOnIifPTlPDPkP78+Naxaf3v0/zowfXRi+bFhLWUVv379/rnwPvszv3rye3LiPvnv+3MjPDasKiIS/789/3x2f747eXDg+7Mifvu0tu7f+/QkfDTnPXWmPrjsvrjtPbPgrqZW+/QlPz48K2EMv36866OUPvowat8Ivvgq/Pbrvzgq/PguvrgrqN0Gda2evfYm9+7d/rpw9q6e/LSku/Rl/XVl/LSlfrkt+zVqe7Wqv3x1/bNffbOf59wFdS6if3u0vrqyP3owPvepfXQivDQkO/PkKh9K7STVf779P///////yH5BAEAAH8ALAAAAAAQABAAAAfNgH+Cg36FfoOIhH4JBxBghYl/hQkNAV0IVT5GkJKLCwtQaSsSdx9aR26Gcwt2IkQaNRI6dBERIzCFDSgWSW8WCDkbBnoOQ3uFARc/JQJfCAZlT0x4ZFyFBxdNQT9ZCBNWKQoKUQ+FEDgcdTIAV14YDmg2CgSFA0hmQC5TLE4VRTdrKJAoxOeFCzZSwsw4U6BCizwUQhQyEaAPiAwCVNCY0FCNnA6GPAwYoETIFgY9loiRA4dToTYnsOxg8CBGHE6ICvEYQ4AKzkidfgoKBAA7\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.quantity : Quantity of molecule encoded by the sequence presenting in the sample.\">quantity</span><a name=\"Sequence.quantity\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#Quantity\">Quantity</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Quantity of molecule encoded by the sequence presenting in the sample</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.genomeBuild : Genome assembly used to align the sequence.\">genomeBuild</span><a name=\"Sequence.genomeBuild\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Genome assembly</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.type : Type of the sequence. E.g. DNA.\">type</span><a name=\"Sequence.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">dna | rna | aa<br/><a href=\"valueset-sequence-type.html\" title=\"Type of a sequence\">SequenceType</a> (<a href=\"terminologies.html#required\" title=\"To be conformant, instances of this element SHALL include a code from the specified value set\">Required</a>)</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.referenceBases : Reference bases of the sequence.\">referenceBases</span><a name=\"Sequence.referenceBases\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Reference bases of the sequence</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.observedBases : Observed bases of the sequence.\">observedBases</span><a name=\"Sequence.observedBases\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Observed bases of the sequence</td></tr>\r\n<tr style=\"border: 0px; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)\" class=\"heirarchy\"><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: inherit\" class=\"heirarchy\"/><img src=\"data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"heirarchy\"/> <span title=\"Sequence.name : Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text.\">name</span><a name=\"Sequence.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\"><a href=\"datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px\" class=\"heirarchy\">Name of the sequence. i.e.  Rs6313</td></tr>\r\n</table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "url": "http://hl7.org/fhir/StructureDefinition/Sequence",
+  "name": "Sequence",
+  "publisher": "Health Level Seven International (Clinical Genomics)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/Special/committees/clingenomics/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Base StructureDefinition for Sequence Resource",
+  "status": "draft",
+  "date": "2015-07-26T15:54:10-04:00",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "snapshot": {
+    "element": [
+      {
+        "path": "Sequence",
+        "short": "Sequence of a macromolecule",
+        "definition": "This resource records information about sequence of a moleculde. E.g. a DNA sequence.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DomainResource"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "tla-1",
+            "severity": "error",
+            "human": "Start and end position should be non-negative, and end position must be larger than start position.",
+            "xpath": "boolean(f:start/@value >= 0) and boolean(f:start/@value >=0) and boolean(f:end/@value > f:start/@value)"
+          },
+          {
+            "key": "tla-2",
+            "severity": "error",
+            "human": "CIGAR string should conform with extended-cigar's syntax.",
+            "xpath": "matches(f:cigar/@value, '\\*|([0-9]+[MIDNSHPX=])+')"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.id",
+        "short": "Logical id of this artifact",
+        "definition": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.meta",
+        "short": "Metadata about the resource",
+        "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.implicitRules",
+        "short": "A set of rules under which this content was created",
+        "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "isModifier": true
+      },
+      {
+        "path": "Sequence.language",
+        "short": "Language of the resource content",
+        "definition": "The base language in which the resource is written.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language",
+          "valueSetUri": "http://tools.ietf.org/html/bcp47"
+        }
+      },
+      {
+        "path": "Sequence.text",
+        "short": "Text summary of the resource, for human interpretation",
+        "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+        "alias": [
+          "narrative",
+          "html",
+          "xhtml",
+          "display"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Narrative"
+          }
+        ],
+        "condition": [
+          "dom-1"
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Act.text?"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.contained",
+        "short": "Contained, inline Resources",
+        "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+        "alias": [
+          "inline resources",
+          "anonymous resources",
+          "contained resources"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Resource"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.chromosome",
+        "short": "Chromosome of the sequence",
+        "definition": "Chromosome of the sequence. E.g. \"1\" for chromosome 1. Note that value of `chromosome` is not limited to a human's chromosomes, as the sequence can be from other species such as Tuberculosis.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.startPosition",
+        "short": "Start position of the sequence",
+        "definition": "0-based location start position of the sequence.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.endPosition",
+        "short": "End position of the sequence",
+        "definition": "0-based end location (exclusive) of the sequence.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.direction",
+        "short": "forward | reverse",
+        "definition": "Direction of the strand.  Forward means the sequence is in 5'-3' direction, reverse otherwise.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Direction of a sequence",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/strand-direction"
+          }
+        }
+      },
+      {
+        "path": "Sequence.cigar",
+        "short": "CIGAR string for the sequence",
+        "definition": "Extended CIGAR string for aligning the sequence with reference bases. See detailed documentation [here](http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.sample",
+        "short": "germline | somatic | prenatal",
+        "definition": "Tissue sample from which molecules encoded by the sequence are extracted.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type of the sample used to determine a seauence",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/sample-type"
+          }
+        }
+      },
+      {
+        "path": "Sequence.lab",
+        "short": "Lab where the sequence is determined",
+        "definition": "Lab where the sequence is determined.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Sequence.patient",
+        "short": "Whom the sequence is determined for",
+        "definition": "Whom the sequence is determined for. In a prenatal sequencing test, the patient being referenced is the birthgiver.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Sequence.species",
+        "short": "Species of the organism whom the sequence belongs to",
+        "definition": "Species of the organism whom the sequence belongs to. The species is not limited to Homo sapiens. E.g. the sequence can be a DNA sequence of a bacteria.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Species of the organism to whom the sequence belongs to",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/sequence-species"
+          }
+        }
+      },
+      {
+        "path": "Sequence.quantity",
+        "short": "Quantity of molecule encoded by the sequence presenting in the sample",
+        "definition": "Quantity of molecule encoded by the sequence presenting in the sample.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.genomeBuild",
+        "short": "Genome assembly",
+        "definition": "Genome assembly used to align the sequence.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.type",
+        "short": "dna | rna | aa",
+        "definition": "Type of the sequence. E.g. DNA.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type of a sequence",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/sequence-type"
+          }
+        }
+      },
+      {
+        "path": "Sequence.referenceBases",
+        "short": "Reference bases of the sequence",
+        "definition": "Reference bases of the sequence.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.observedBases",
+        "short": "Observed bases of the sequence",
+        "definition": "Observed bases of the sequence.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.name",
+        "short": "Name of the sequence. i.e.  Rs6313",
+        "definition": "Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Sequence",
+        "short": "Sequence of a macromolecule",
+        "definition": "This resource records information about sequence of a moleculde. E.g. a DNA sequence.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DomainResource"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "tla-1",
+            "severity": "error",
+            "human": "Start and end position should be non-negative, and end position must be larger than start position.",
+            "xpath": "boolean(f:start/@value >= 0) and boolean(f:start/@value >=0) and boolean(f:end/@value > f:start/@value)"
+          },
+          {
+            "key": "tla-2",
+            "severity": "error",
+            "human": "CIGAR string should conform with extended-cigar's syntax.",
+            "xpath": "matches(f:cigar/@value, '\\*|([0-9]+[MIDNSHPX=])+')"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.chromosome",
+        "short": "Chromosome of the sequence",
+        "definition": "Chromosome of the sequence. E.g. \"1\" for chromosome 1. Note that value of `chromosome` is not limited to a human's chromosomes, as the sequence can be from other species such as Tuberculosis.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.startPosition",
+        "short": "Start position of the sequence",
+        "definition": "0-based location start position of the sequence.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.endPosition",
+        "short": "End position of the sequence",
+        "definition": "0-based end location (exclusive) of the sequence.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.direction",
+        "short": "forward | reverse",
+        "definition": "Direction of the strand.  Forward means the sequence is in 5'-3' direction, reverse otherwise.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Direction of a sequence",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/strand-direction"
+          }
+        }
+      },
+      {
+        "path": "Sequence.cigar",
+        "short": "CIGAR string for the sequence",
+        "definition": "Extended CIGAR string for aligning the sequence with reference bases. See detailed documentation [here](http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.sample",
+        "short": "germline | somatic | prenatal",
+        "definition": "Tissue sample from which molecules encoded by the sequence are extracted.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type of the sample used to determine a seauence",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/sample-type"
+          }
+        }
+      },
+      {
+        "path": "Sequence.lab",
+        "short": "Lab where the sequence is determined",
+        "definition": "Lab where the sequence is determined.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Sequence.patient",
+        "short": "Whom the sequence is determined for",
+        "definition": "Whom the sequence is determined for. In a prenatal sequencing test, the patient being referenced is the birthgiver.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Sequence.species",
+        "short": "Species of the organism whom the sequence belongs to",
+        "definition": "Species of the organism whom the sequence belongs to. The species is not limited to Homo sapiens. E.g. the sequence can be a DNA sequence of a bacteria.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Species of the organism to whom the sequence belongs to",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/sequence-species"
+          }
+        }
+      },
+      {
+        "path": "Sequence.quantity",
+        "short": "Quantity of molecule encoded by the sequence presenting in the sample",
+        "definition": "Quantity of molecule encoded by the sequence presenting in the sample.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.genomeBuild",
+        "short": "Genome assembly",
+        "definition": "Genome assembly used to align the sequence.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.type",
+        "short": "dna | rna | aa",
+        "definition": "Type of the sequence. E.g. DNA.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type of a sequence",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/sequence-type"
+          }
+        }
+      },
+      {
+        "path": "Sequence.referenceBases",
+        "short": "Reference bases of the sequence",
+        "definition": "Reference bases of the sequence.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.observedBases",
+        "short": "Observed bases of the sequence",
+        "definition": "Observed bases of the sequence.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Sequence.name",
+        "short": "Name of the sequence. i.e.  Rs6313",
+        "definition": "Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

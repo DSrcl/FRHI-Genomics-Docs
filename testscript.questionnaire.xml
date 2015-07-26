@@ -1,0 +1,1775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-07-24T17:31:16-04:00"/>
+  <publisher value="Health Level Seven International (FHIR Infrastructure)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="TestScript is a resource that specifies a suite of tests against a FHIR server implementation to determine compliance against the FHIR specification."/>
+    </extension>
+    <linkId value="TestScript"/>
+    <title value="Describes a set of tests"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="TestScript.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="TestScript.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="TestScript.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="TestScript.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="TestScript.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="TestScript.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="TestScript.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      </extension>
+      <linkId value="TestScript.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      </extension>
+      <linkId value="TestScript.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      </extension>
+      <linkId value="TestScript.extension"/>
+      <text value="Additional Content defined by implementations"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      </extension>
+      <linkId value="TestScript.modifierExtension"/>
+      <text value="Extensions that cannot be ignored"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Name of the Test Script."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="TestScript.name"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="TestScript.name.value"/>
+        <text value="Name"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Description of the Test Script."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="TestScript.description"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="TestScript.description.value"/>
+        <text value="Short description"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The required capability must exist and is assumed to function correctly on the FHIR server being tested."/>
+      </extension>
+      <linkId value="TestScript.metadata"/>
+      <title value="Required capability that is assumed to function correctly on the FHIR server being tested"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.metadata.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.metadata.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="TestScript.metadata.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="TestScript.metadata.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A link to the FHIR specification that this test is covering."/>
+        </extension>
+        <linkId value="TestScript.metadata.link"/>
+        <title value="Links to the FHIR specification"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="TestScript.metadata.link.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.metadata.link.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="TestScript.metadata.link.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="TestScript.metadata.link.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="URL to a particular requirement or feature within the FHIR specification."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="uri"/>
+          </extension>
+          <linkId value="TestScript.metadata.link.url"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.metadata.link.url.value"/>
+            <text value="URL to the specification"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Short description of the link."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="TestScript.metadata.link.description"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.metadata.link.description.value"/>
+            <text value="Short description"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Capabilties that must exist and is assumed to function correctly on the FHIR server being tested."/>
+        </extension>
+        <linkId value="TestScript.metadata.capabilities"/>
+        <title value="Capabiltities that are assumed to function correctly on the FHIR server being tested"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="TestScript.metadata.capabilities.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.metadata.capabilities.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="TestScript.metadata.capabilities.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="TestScript.metadata.capabilities.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The capabilities required of the server in order for this test script to execute."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="TestScript.metadata.capabilities.required"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.metadata.capabilities.required.value"/>
+            <text value="Required capabilities"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Whether or not the capabilities are primarily getting validated by this test script."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="TestScript.metadata.capabilities.validated"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.metadata.capabilities.validated.value"/>
+            <text value="Validated capabilities"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Description of the capabilities that this test script is requiring the server to support."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="TestScript.metadata.capabilities.description"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.metadata.capabilities.description.value"/>
+            <text value="The description of the capabilities"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Which server these requirements apply to."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="integer"/>
+          </extension>
+          <linkId value="TestScript.metadata.capabilities.destination"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.metadata.capabilities.destination.value"/>
+            <text value="Which server these requirements apply to"/>
+            <type value="integer"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Links to the FHIR specification that describes this interaction and the resources involved in more detail."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="uri"/>
+          </extension>
+          <linkId value="TestScript.metadata.capabilities.link"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.metadata.capabilities.link.value"/>
+            <text value="Links to the FHIR specification"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Minimum conformance required of server for test script to execute successfully.   If server does not meet at a minimum the reference conformance definition, then all tests in this script are skipped."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="TestScript.metadata.capabilities.conformance"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Conformance?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="TestScript.metadata.capabilities.conformance.value"/>
+            <text value="Required Conformance"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="If the tests apply to more than one FHIR server (e.g. cross-server interoperability tests) then multiserver=true. Defaults to false if value is unspecified."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="boolean"/>
+      </extension>
+      <linkId value="TestScript.multiserver"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="TestScript.multiserver.value"/>
+        <text value="Whether or not the tests apply to more than one FHIR server"/>
+        <type value="boolean"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Fixture in the test script - by reference (uri). All fixtures are required for the test script to execute."/>
+      </extension>
+      <linkId value="TestScript.fixture"/>
+      <title value="Fixture in the test script - by reference (uri)"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.fixture.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.fixture.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="TestScript.fixture.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="TestScript.fixture.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Whether or not to implicitly create the fixture during setup. If true, the fixture is automatically created on each server being tested during setup, therefore no create operation is required for this fixture in the TestScript.setup section."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="boolean"/>
+        </extension>
+        <linkId value="TestScript.fixture.autocreate"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.fixture.autocreate.value"/>
+          <text value="Whether or not to implicitly create the fixture during setup"/>
+          <type value="boolean"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Whether or not to implicitly delete the fixture during teardown If true, the fixture is automatically deleted on each server being tested during teardown, therefore no delete operation is required for this fixture in the TestScript.teardown section."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="boolean"/>
+        </extension>
+        <linkId value="TestScript.fixture.autodelete"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.fixture.autodelete.value"/>
+          <text value="Whether or not to implicitly delete the fixture during teardown"/>
+          <type value="boolean"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Reference to the resource (containing the contents of the resource needed for operations)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="TestScript.fixture.resource"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/_search?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="TestScript.fixture.resource.value"/>
+          <text value="Reference of the resource"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Reference to the profile to be used for validation."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="TestScript.profile"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/_search?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="TestScript.profile.value"/>
+        <text value="Reference of the validation profile"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Variable is set based either on element value in response body or on header field value in the response headers."/>
+      </extension>
+      <linkId value="TestScript.variable"/>
+      <title value="Variable"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.variable.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.variable.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="TestScript.variable.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="TestScript.variable.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Variable name."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.variable.name"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.variable.name.value"/>
+          <text value="Variable name"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Will be used to grab the header field value from the headers that sourceId is pointing to."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.variable.headerField"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.variable.headerField.value"/>
+          <text value="Header field name"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="XPath or JSONPath against the fixture body.  When variables are defined, either headerField must be specified or path, but not both."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.variable.path"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.variable.path.value"/>
+          <text value="XPath or JSONPath against the fixture body"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Fixture to evaluate the XPath/JSONPath expression or the headerField  against."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.variable.sourceId"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.variable.sourceId.value"/>
+          <text value="Fixture Id"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A series of required setup operations before tests are executed."/>
+      </extension>
+      <linkId value="TestScript.setup"/>
+      <title value="A series of required setup operations before tests are executed"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.setup.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.setup.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="TestScript.setup.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="TestScript.setup.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Capabilties that must exist and is assumed to function correctly on the FHIR server being tested."/>
+        </extension>
+        <linkId value="TestScript.setup.metadata"/>
+        <title value="Capabiltities that are assumed to function correctly on the FHIR server being tested"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Action would contain either an operation or an assertion."/>
+        </extension>
+        <linkId value="TestScript.setup.action"/>
+        <title value="Action"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="TestScript.setup.action.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.setup.action.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="TestScript.setup.action.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="TestScript.setup.action.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="An operation."/>
+          </extension>
+          <linkId value="TestScript.setup.action.operation"/>
+          <title value="An operation"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.id"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.extension"/>
+            <text value="Additional Content defined by implementations"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.modifierExtension"/>
+            <text value="Extensions that cannot be ignored"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Server interaction or operation type."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Coding"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.type"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.type.value"/>
+              <text value="The operation type that will be executed"/>
+              <type value="open-choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The type of the resource.  See http://hl7-fhir.github.io/resourcelist.html."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.resource"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.resource.value"/>
+              <text value="resource"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The label would be used for tracking/logging purposes by test engines."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.label"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.label.value"/>
+              <text value="Operation label"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The description would be used by test engines for tracking and reporting purposes."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.description"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.description.value"/>
+              <text value="Operation description"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The content-type or mime-type to use for RESTful operation in the &#39;Accept&#39; header."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.accept"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.accept.value"/>
+              <text value="accept"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The content-type or mime-type to use for RESTful operation in the &#39;Content-Type&#39; header."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.contentType"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.contentType.value"/>
+              <text value="content type"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Which server to perform the operation on."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="integer"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.destination"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.destination.value"/>
+              <text value="Which server to perform the operation on"/>
+              <type value="integer"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Whether or not to implicitly send the request url in encoded format. The default is true to match the standard RESTful client behavior. Set to false when communicating with a server that does not support encoded url paths."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="boolean"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.encodeRequestUrl"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.encodeRequestUrl.value"/>
+              <text value="Whether or not to send the request url in encoded format"/>
+              <type value="boolean"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Path plus parameters after [type].  Used to set parts of the request URL explicitly."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.params"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.params.value"/>
+              <text value="Params"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Header elements would be used to set HTTP headers."/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.requestHeader"/>
+            <title value="Each operation can have one ore more header elements"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="unique id for the element within a resource (for internal references)."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="string"/>
+              </extension>
+              <linkId value="TestScript.setup.action.operation.requestHeader.id"/>
+              <required value="false"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="TestScript.setup.action.operation.requestHeader.id.value"/>
+                <text value="xml:id (or equivalent in JSON)"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+              </extension>
+              <linkId value="TestScript.setup.action.operation.requestHeader.extension"/>
+              <text value="Additional Content defined by implementations"/>
+              <required value="false"/>
+              <repeats value="true"/>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+              </extension>
+              <linkId value="TestScript.setup.action.operation.requestHeader.modifierExtension"/>
+              <text value="Extensions that cannot be ignored"/>
+              <required value="false"/>
+              <repeats value="true"/>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="The HTTP header field e.g. &quot;Accept&quot;."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="string"/>
+              </extension>
+              <linkId value="TestScript.setup.action.operation.requestHeader.field"/>
+              <required value="true"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="TestScript.setup.action.operation.requestHeader.field.value"/>
+                <text value="Header field name"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="The value of the header e.g. &quot;application/xml&quot;."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="string"/>
+              </extension>
+              <linkId value="TestScript.setup.action.operation.requestHeader.value"/>
+              <required value="true"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="TestScript.setup.action.operation.requestHeader.value.value"/>
+                <text value="Header value"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The fixture id (maybe new) to map to the response."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.responseId"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.responseId.value"/>
+              <text value="Response Id"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The id of the fixture used as the body of a PUT or POST request."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.sourceId"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.sourceId.value"/>
+              <text value="Fixture Id of body for PUT and POST requests"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Id of fixture used for extracting the [id],  [type], and [vid] for GET requests."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.targetId"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.targetId.value"/>
+              <text value="Id of fixture used for extracting the [id],  [type], and [vid] for GET requests"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Complete request URL."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.operation.url"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.operation.url.value"/>
+              <text value="Request URL"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Evaluates the results of previous operations to determine if the server under test behaves appropriately."/>
+          </extension>
+          <linkId value="TestScript.setup.action.assert"/>
+          <title value="Assertion"/>
+          <required value="false"/>
+          <repeats value="false"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.id"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.extension"/>
+            <text value="Additional Content defined by implementations"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.modifierExtension"/>
+            <text value="Extensions that cannot be ignored"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The label would be used for tracking/logging purposes by test engines."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.label"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.label.value"/>
+              <text value="Assertion label"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The description would be used by test engines for tracking and reporting purposes."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.description"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.description.value"/>
+              <text value="Assertion description"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The direction to use for the assertion."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.direction"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.direction.value"/>
+              <text value="direction"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Id of fixture used to compare the &quot;sourceId/path&quot; evaluations to."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.compareToSourceId"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.compareToSourceId.value"/>
+              <text value="Id of fixture used to compare the &quot;sourceId/path&quot; evaluations to"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="XPath or JSONPath expression against fixture used to compare the &quot;sourceId/path&quot; evaluations to."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.compareToSourcePath"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.compareToSourcePath.value"/>
+              <text value="XPath or JSONPath expression against fixture used to compare the &quot;sourceId/path&quot; evaluations to"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The content-type or mime-type to use for RESTful operation in the &#39;Content-Type&#39; header."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.contentType"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.contentType.value"/>
+              <text value="content type"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The header field e.g. &#39;Content-Location&#39;."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.headerField"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.headerField.value"/>
+              <text value="The header field"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The ID of a fixture.  Asserts that the response contains at a minimumId the fixture specified by minimumId."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.minimumId"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.minimumId.value"/>
+              <text value="MinimumId"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Navigation Links."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="boolean"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.navigationLinks"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.navigationLinks.value"/>
+              <text value="Navigation Links"/>
+              <type value="boolean"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The operator type."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.operator"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.operator.value"/>
+              <text value="operator"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The XPath or JSONPath expression to be evaluated against the fixture representing the response received from server."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.path"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.path.value"/>
+              <text value="XPath or JSONPath expression"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The type of the resource.  See http://hl7-fhir.github.io/resourcelist.html."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.resource"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.resource.value"/>
+              <text value="resource"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="okay | created | noContent | notModified | bad | forbidden | notFound | methodNotAllowed | conflict | gone | preconditionFailed | unprocessable."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.response"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.response.value"/>
+              <text value="response"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="HTTP Response Code."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.responseCode"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.responseCode.value"/>
+              <text value="Response Code"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Fixture to evaluate the XPath/JSONPath expression or the headerField  against."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.sourceId"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.sourceId.value"/>
+              <text value="Fixture Id"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The ID of the Profile to validate against."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.validateProfileId"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.validateProfileId.value"/>
+              <text value="Validate Profile Id"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The value to compare to."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.value"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.value.value"/>
+              <text value="The value to compare to"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Warning Only."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="boolean"/>
+            </extension>
+            <linkId value="TestScript.setup.action.assert.warningOnly"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="TestScript.setup.action.assert.warningOnly.value"/>
+              <text value="Warning Only"/>
+              <type value="boolean"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A test in this script."/>
+      </extension>
+      <linkId value="TestScript.test"/>
+      <title value="A test in this script"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.test.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.test.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="TestScript.test.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="TestScript.test.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The name of this test."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.test.name"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.test.name.value"/>
+          <text value="The name of this test"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A short description of the test."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.test.description"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.test.description.value"/>
+          <text value="Short description of the test"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Capabilties that must exist and is assumed to function correctly on the FHIR server being tested."/>
+        </extension>
+        <linkId value="TestScript.test.metadata"/>
+        <title value="Capabiltities that are assumed to function correctly on the FHIR server being tested"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Action would contain either an operation or an assertion."/>
+        </extension>
+        <linkId value="TestScript.test.action"/>
+        <title value="Action"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="TestScript.test.action.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.test.action.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="TestScript.test.action.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="TestScript.test.action.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="An operation would involve a REST request to a server."/>
+          </extension>
+          <linkId value="TestScript.test.action.operation"/>
+          <title value="Operation"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Evaluates the results of previous operations to determine if the server under test behaves appropriately."/>
+          </extension>
+          <linkId value="TestScript.test.action.assert"/>
+          <title value="Assertion"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </group>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A series of operations required to clean up after the all the tests are executed (successfully or otherwise)."/>
+      </extension>
+      <linkId value="TestScript.teardown"/>
+      <title value="A series of required clean up steps"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="TestScript.teardown.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="TestScript.teardown.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="TestScript.teardown.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="TestScript.teardown.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Action would contain either an operation or an assertion."/>
+        </extension>
+        <linkId value="TestScript.teardown.action"/>
+        <title value="Action"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="TestScript.teardown.action.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="TestScript.teardown.action.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="TestScript.teardown.action.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="TestScript.teardown.action.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="An operation would involve a REST request to a server."/>
+          </extension>
+          <linkId value="TestScript.teardown.action.operation"/>
+          <title value="Operation"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </group>
+      </group>
+    </group>
+  </group>
+</Questionnaire>

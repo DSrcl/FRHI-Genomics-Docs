@@ -1,0 +1,195 @@
+﻿<!DOCTYPE HTML>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Implementationguide-example - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/implementationguide-example.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="implementationguide.html">ImplementationGuide</a></li>        <li><b>Example Instance</b></li>        <!-- implementationguide-example.html / resource-instance:ImplementationGuide / Example-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Implementationguide-example</h1>
+
+<p>
+
+This is the narrative for the resource. See also the <a href="implementationguide-example.xml.html">XML</a> or <a href="implementationguide-example.json.html">JSON</a> format. 
+</p>
+
+<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>url</b>: <a href="http://hl7.org/fhir/daf">http://hl7.org/fhir/daf</a></p><p><b>version</b>: 0</p><p><b>name</b>: Data Access Framework (DAF)</p><p><b>useContext</b>: US <span style="background: LightGoldenRodYellow ">(Details : {urn:iso:std:iso:3166 code 'US' = 'US)</span></p><p><b>publisher</b>: ONC / HL7 Joint project</p><blockquote><p><b>contact</b></p><p><b>name</b>: ONC</p><p><b>telecom</b>: http://www.healthit.gov</p></blockquote><blockquote><p><b>contact</b></p><p><b>name</b>: HL7</p><p><b>telecom</b>: http://hl7.org/fhir</p></blockquote><p><b>description</b>: The Data Access Framework (DAF) Initiative leverages the HL7 FHIR standards to standardize access to Meaningful Use Stage 2 structured information both within the organization and from external organizations</p><p><b>copyright</b>: Published by ONC under the standard FHIR license (CC0)</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Jan 1, 2015</p><p><b>fhirVersion</b>: 0.5.0</p><blockquote><p><b>page</b></p><p><b>source</b>: <a href="pages\daf.html">pages\daf.html</a></p><p><b>purpose</b>: home</p></blockquote><blockquote><p><b>page</b></p><p><b>source</b>: <a href="pages\daf-intro.html">pages\daf-intro.html</a></p><p><b>purpose</b>: intro</p></blockquote><blockquote><p><b>page</b></p><p><b>source</b>: <a href="pages\daf-medicationusage.html">pages\daf-medicationusage.html</a></p><p><b>purpose</b>: content</p></blockquote><blockquote><p><b>page</b></p><p><b>source</b>: <a href="pages\daf-outstandingissues.html">pages\daf-outstandingissues.html</a></p><p><b>purpose</b>: content</p></blockquote><blockquote><p><b>page</b></p><p><b>source</b>: <a href="pages\daf-security.html">pages\daf-security.html</a></p><p><b>purpose</b>: security</p></blockquote><blockquote><p><b>package</b></p><p><b>name</b>: DAF Contents</p><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\valueset-daf-substance-ndfrt.xml">profiles\valueset-daf-substance-ndfrt.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\valueset-daf-substance-rxnorm.xml">profiles\valueset-daf-substance-rxnorm.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\valueset-daf-substance-sct.xml">profiles\valueset-daf-substance-sct.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\valueset-daf-substance-unii.xml">profiles\valueset-daf-substance-unii.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\allergyintolerance-daf-profile.xml">profiles\allergyintolerance-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\condition-daf-profile.xml">profiles\condition-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\diagnosticorder-daf-profile.xml">profiles\diagnosticorder-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\diagnosticreport-daf-profile.xml">profiles\diagnosticreport-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\encounter-daf-profile.xml">profiles\encounter-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\familymemberhistory-daf-profile.xml">profiles\familymemberhistory-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\immunization-daf-profile.xml">profiles\immunization-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\list-daf-profile.xml">profiles\list-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\location-daf-profile.xml">profiles\location-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\medication-daf-profile.xml">profiles\medication-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\medicationadministration-daf-profile.xml">profiles\medicationadministration-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\medicationdispense-daf-profile.xml">profiles\medicationdispense-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\medicationprescription-daf-profile.xml">profiles\medicationprescription-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\medicationstatement-daf-profile.xml">profiles\medicationstatement-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\observation-daf-vitalsigns-profile.xml">profiles\observation-daf-vitalsigns-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\observation-daf-results-profile.xml">profiles\observation-daf-results-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\observation-daf-smokingstatus-profile.xml">profiles\observation-daf-smokingstatus-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\observation-daf-resultsv2-profile.xml">profiles\observation-daf-resultsv2-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\organization-daf-profile.xml">profiles\organization-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\patient-daf-profile.xml">profiles\patient-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\practitioner-daf-profile.xml">profiles\practitioner-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\procedure-daf-profile.xml">profiles\procedure-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\relatedperson-daf-profile.xml">profiles\relatedperson-daf-profile.xml</a></p></blockquote><blockquote><p><b>item</b></p><p><b>content</b>: <a href="profiles\substance-daf-profile.xml">profiles\substance-daf-profile.xml</a></p></blockquote></blockquote></div>
+
+<p>
+<!-- spacer -->
+&nbsp;
+</p>
+
+
+
+<p>
+<!-- spacer -->
+&nbsp;
+</p>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fimplementationguide-example.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fimplementationguide-example.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

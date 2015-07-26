@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="patient-hspc-PersonNameUse"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>HSPC Person Name Use value set</h2>
+      <p>The set of values that describe the manner an individual uses a name.</p>
+      <p>This value set has an inline code system Intermountain Health Care HDD, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>188
+            <a name="188"> </a>
+          </td>
+          <td>Previous Name</td>
+          <td>A name by which an individual previously identified by.</td>
+        </tr>
+        <tr>
+          <td>191
+            <a name="191"> </a>
+          </td>
+          <td>Preferred Name</td>
+          <td>The name by which an individual prefers to be known by.</td>
+        </tr>
+        <tr>
+          <td>812
+            <a name="812"> </a>
+          </td>
+          <td>Professional Name</td>
+          <td>The name by which an individual in known by professionally.</td>
+        </tr>
+      </table>
+      <p>In addition, this value set includes codes from other code systems:</p>
+      <ul>
+        <li>Include these codes as defined in http://hl7.org/fhir/ValueSet/v3-EntityNameUse
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>Legal Name</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>ASGN</td>
+              <td>Assigned (alias)</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+        <li>Include these codes as defined in http://hl7.org/fhir/ValueSet/v3-EntityNameuseR2
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>maiden name</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/patient-hspc-PersonNameUse"/>
+  <version value="0.5.0"/>
+  <name value="HSPC Person Name Use value set"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <description value="The set of values that describe the manner an individual uses a name."/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <system value="Intermountain Health Care HDD"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="188"/>
+      <display value="Previous Name"/>
+      <definition value="A name by which an individual previously identified by."/>
+    </concept>
+    <concept>
+      <code value="191"/>
+      <display value="Preferred Name"/>
+      <definition value="The name by which an individual prefers to be known by."/>
+    </concept>
+    <concept>
+      <code value="812"/>
+      <display value="Professional Name"/>
+      <definition value="The name by which an individual in known by professionally."/>
+    </concept>
+  </codeSystem>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/v3-EntityNameUse"/>
+      <concept>
+        <code value="L"/>
+        <display value="Legal Name"/>
+      </concept>
+      <concept>
+        <code value="ASGN"/>
+        <display value="Assigned (alias)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/v3-EntityNameuseR2"/>
+      <concept>
+        <code value="M"/>
+        <display value="maiden name"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

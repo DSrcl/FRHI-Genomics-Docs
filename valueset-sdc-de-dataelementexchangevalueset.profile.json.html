@@ -1,0 +1,3512 @@
+﻿<!DOCTYPE HTML>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>StructureDefinition: DataElementExchangeValueSet - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/valueset-sdc-de-dataelementexchangevalueset.profile.json.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="valueset.html">ValueSet</a></li>        <li><a href="valueset-sdc-de.html">Profile</a></li>        <li><b>Structured Data Capture Data Element Exchange Value Set</b></li>        <!-- valueset-sdc-de-dataelementexchangevalueset.profile.json.html / profile:ValueSet/valueset-sdc-de/valueset-sdc-de-dataelementexchangevalueset / Structured Data Capture Data Element Exchange Value Set-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="valueset-sdc-de-dataelementexchangevalueset.html">Content</a></li><li><a href="valueset-sdc-de-dataelementexchangevalueset-definitions.html">Detailed Descriptions</a></li><li><a href="valueset-sdc-de-dataelementexchangevalueset-mappings.html">Mappings</a></li><li><a href="valueset-sdc-de-dataelementexchangevalueset.questionnaire.html">HTML Form</a></li><li><a href="valueset-sdc-de-dataelementexchangevalueset.profile.xml.html">XML</a></li><li class="active"><a href="#">JSON</a></li></ul>
+
+<h1>StructureDefinition: DataElementExchangeValueSet - JSON</h1>
+
+<div class="example">
+<p>StructureDefinition for Defines how ValueSet is used to reflect code lists found in data element defintions for exchange and maintenance between data element registries according to requirements established by the ONC's Structured Data Capture standard.</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;StructureDefinition&quot;,
+  &quot;id&quot;: &quot;valueset-sdc-de-dataelementexchangevalueset&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;!-- Snipped for Brevity --&gt;&lt;/div&gt;&quot;
+  },
+  &quot;url&quot;: &quot;http://hl7.org/fhir/StructureDefinition/valueset-sdc-de-dataelementexchangevalueset&quot;,
+  &quot;name&quot;: &quot;Structured Data Capture Data Element Exchange Value Set&quot;,
+  &quot;publisher&quot;: &quot;Health Level Seven International (Orders and Observations - Structured Data Capture)&quot;,
+  &quot;contact&quot;: [
+    {
+      &quot;telecom&quot;: [
+        {
+          &quot;system&quot;: &quot;other&quot;,
+          &quot;value&quot;: &quot;http://wiki.siframework.org/Structured+Data+Capture+Initiative&quot;
+        }
+      ]
+    }
+  ],
+  &quot;description&quot;: &quot;Defines how ValueSet is used to reflect code lists found in data element defintions for exchange and maintenance between data element registries according to requirements established by the ONC's Structured Data Capture standard.&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-07-06&quot;,
+  &quot;kind&quot;: &quot;resource&quot;,
+  &quot;constrainedType&quot;: &quot;ValueSet&quot;,
+  &quot;abstract&quot;: false,
+  &quot;base&quot;: &quot;http://hl7.org/fhir/StructureDefinition/ValueSet&quot;,
+  &quot;snapshot&quot;: {
+    &quot;element&quot;: [
+      {
+        &quot;path&quot;: &quot;ValueSet&quot;,
+        &quot;name&quot;: &quot;DataElementExchangeValueSet&quot;,
+        &quot;short&quot;: &quot;A set of codes drawn from one or more code systems&quot;,
+        &quot;definition&quot;: &quot;A value set specifies a set of codes drawn from one or more code systems.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;ValueSet&quot;
+          }
+        ],
+        &quot;constraint&quot;: [
+          {
+            &quot;key&quot;: &quot;vsd-7&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;A defined code system (if present) SHALL have a different identifier to the value set itself&quot;,
+            &quot;xpath&quot;: &quot;not(f:define/f:system/@value = f:identifier/@value)&quot;
+          },
+          {
+            &quot;key&quot;: &quot;vsd-2&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;A value set with only one import SHALL also have an include and/or an exclude unless the value set defines its own codes&quot;,
+            &quot;xpath&quot;: &quot;not(exists(f:compose)) or (count(f:compose/f:import)!=1 or exists(f:compose/f:include) or exists(f:compose/f:exclude) or exists(f:define))&quot;
+          },
+          {
+            &quot;key&quot;: &quot;vsd-5&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Value set SHALL contain either a define, a compose, or an expansion element&quot;,
+            &quot;xpath&quot;: &quot;exists(f:define) or exists(f:compose) or exists(f:expansion)&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.id&quot;,
+        &quot;short&quot;: &quot;Logical id of this artifact&quot;,
+        &quot;definition&quot;: &quot;The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.meta&quot;,
+        &quot;short&quot;: &quot;Metadata about the resource&quot;,
+        &quot;definition&quot;: &quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.meta&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Meta&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.implicitRules&quot;,
+        &quot;short&quot;: &quot;A set of rules under which this content was created&quot;,
+        &quot;definition&quot;: &quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.implicitRules&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.language&quot;,
+        &quot;short&quot;: &quot;Language of the resource content&quot;,
+        &quot;definition&quot;: &quot;The base language in which the resource is written.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.language&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;binding&quot;: {
+          &quot;strength&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;A human language&quot;,
+          &quot;valueSetUri&quot;: &quot;http://tools.ietf.org/html/bcp47&quot;
+        }
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.text&quot;,
+        &quot;short&quot;: &quot;Text summary of the resource, for human interpretation&quot;,
+        &quot;definition&quot;: &quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \&quot;clinically safe\&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.&quot;,
+        &quot;alias&quot;: [
+          &quot;narrative&quot;,
+          &quot;html&quot;,
+          &quot;xhtml&quot;,
+          &quot;display&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.text&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Narrative&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;dom-1&quot;
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;Act.text?&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.contained&quot;,
+        &quot;short&quot;: &quot;Contained, inline Resources&quot;,
+        &quot;definition&quot;: &quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.&quot;,
+        &quot;alias&quot;: [
+          &quot;inline resources&quot;,
+          &quot;anonymous resources&quot;,
+          &quot;contained resources&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.contained&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Resource&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;slicing&quot;: {
+          &quot;discriminator&quot;: [
+            &quot;url&quot;
+          ],
+          &quot;ordered&quot;: false,
+          &quot;rules&quot;: &quot;open&quot;
+        },
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;name&quot;: &quot;category&quot;,
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-category&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;name&quot;: &quot;trustedExpansion&quot;,
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-trusted-expansion&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;name&quot;: &quot;effectiveDate&quot;,
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;name&quot;: &quot;expirationDate&quot;,
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-expirationDate&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.url&quot;,
+        &quot;short&quot;: &quot;Globally unique logical id for  value set&quot;,
+        &quot;definition&quot;: &quot;An absolute URL that is used to identify this value set when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this value set is (or will be) published.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.url&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.identifier&quot;,
+        &quot;short&quot;: &quot;Additional identifier for the value set (v2 / CDA)&quot;,
+        &quot;definition&quot;: &quot;Formal identifier that is used to identify this value set when it is represented in other formats, or referenced in a specification, model, design or an instance.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.identifier&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Identifier&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;define.xml2.0&quot;,
+            &quot;map&quot;: &quot;Identifier part&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.version&quot;,
+        &quot;short&quot;: &quot;Logical id for this version of the value set&quot;,
+        &quot;definition&quot;: &quot;Used to identify this version of the value set when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the profile author manually and the value should be a timestamp.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.version&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.name&quot;,
+        &quot;short&quot;: &quot;Informal name for this value set&quot;,
+        &quot;definition&quot;: &quot;A free text natural language name describing the value set.&quot;,
+        &quot;requirements&quot;: &quot;Support human navigation.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.name&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.useContext&quot;,
+        &quot;short&quot;: &quot;Content intends to support these contexts&quot;,
+        &quot;definition&quot;: &quot;The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of value set definitions.&quot;,
+        &quot;requirements&quot;: &quot;Assist in searching for appropriate content.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.useContext&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;CodeableConcept&quot;
+          }
+        ],
+        &quot;isSummary&quot;: true,
+        &quot;binding&quot;: {
+          &quot;strength&quot;: &quot;extensible&quot;,
+          &quot;description&quot;: &quot;Indicates the countries, regions, disciplines and other aspects of use this artifact is targeted for use within&quot;,
+          &quot;valueSetReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/ValueSet/use-context&quot;
+          }
+        },
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;define.xml2.0&quot;,
+            &quot;map&quot;: &quot;COMPONENT, PROPERTY, TIME_ASPCT, SYSTEM, SCALE_TYP, METHOD_TYP, CLASS, CLASSTYPE, ORDER_OBS, DOCUMENT_SECTION, HL7_ATTACHMENT_STRUCTURE&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.immutable&quot;,
+        &quot;short&quot;: &quot;Indicates whether or not any change to the content logical definition may occur&quot;,
+        &quot;definition&quot;: &quot;If this is set to 'true', then no new versions of the content logical definition can be created.  Note: Other metadata might still change.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.immutable&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.publisher&quot;,
+        &quot;short&quot;: &quot;Name of the publisher (Organization or individual)&quot;,
+        &quot;definition&quot;: &quot;The name of the individual or organization that published the value set.&quot;,
+        &quot;requirements&quot;: &quot;Helps establish the \&quot;authority/credibility\&quot; of the value set.  May also allow for contact.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.publisher&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.contact&quot;,
+        &quot;short&quot;: &quot;Contact details of the publisher&quot;,
+        &quot;definition&quot;: &quot;Contacts to assist a user in finding and communicating with the publisher.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.contact&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ],
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.contact.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.contact.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.contact.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.contact.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.contact.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.contact.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.contact.name&quot;,
+        &quot;short&quot;: &quot;Name of a individual to contact&quot;,
+        &quot;definition&quot;: &quot;The name of an individual to contact regarding the value set.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.contact.name&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.contact.telecom&quot;,
+        &quot;short&quot;: &quot;Contact details for individual or publisher&quot;,
+        &quot;definition&quot;: &quot;Contact details for individual (if a name was provided) or the publisher.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.contact.telecom&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;ContactPoint&quot;
+          }
+        ],
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.description&quot;,
+        &quot;short&quot;: &quot;Human language description of the value set&quot;,
+        &quot;definition&quot;: &quot;A free text natural language description of the use of the value set - reason for definition, \&quot;the semantic space\&quot; to be included in the value set, conditions of use, etc. The description may include a list of expected usages for the value set and can also describe the approach taken to build the value set.&quot;,
+        &quot;requirements&quot;: &quot;Human understandability.&quot;,
+        &quot;alias&quot;: [
+          &quot;Scope&quot;,
+          &quot;Purpose&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.description&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.requirements&quot;,
+        &quot;short&quot;: &quot;Why is this needed?&quot;,
+        &quot;definition&quot;: &quot;Explains why this value set is needed and why it's been constrained as it has.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.requirements&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.copyright&quot;,
+        &quot;short&quot;: &quot;Use and/or Publishing restrictions&quot;,
+        &quot;definition&quot;: &quot;A copyright statement relating to the value set and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the value set.&quot;,
+        &quot;alias&quot;: [
+          &quot;License&quot;,
+          &quot;Restrictions&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.copyright&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.status&quot;,
+        &quot;short&quot;: &quot;draft | active | retired&quot;,
+        &quot;definition&quot;: &quot;The status of the value set.&quot;,
+        &quot;requirements&quot;: &quot;Identify when/if the value set should be used.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.status&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isModifier&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;binding&quot;: {
+          &quot;strength&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;The lifecycle status of a Value Set or Concept Map&quot;,
+          &quot;valueSetReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/ValueSet/conformance-resource-status&quot;
+          }
+        },
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.experimental&quot;,
+        &quot;short&quot;: &quot;If for testing purposes, not real usage&quot;,
+        &quot;definition&quot;: &quot;This valueset was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.experimental&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extensible&quot;,
+        &quot;short&quot;: &quot;Whether this is intended to be used with an extensible binding&quot;,
+        &quot;definition&quot;: &quot;Whether this is intended to be used with an extensible binding or not.&quot;,
+        &quot;requirements&quot;: &quot;It is not required to say whether this intent applies.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.extensible&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.date&quot;,
+        &quot;short&quot;: &quot;Date for given status&quot;,
+        &quot;definition&quot;: &quot;The date that the value set status was last changed.&quot;,
+        &quot;requirements&quot;: &quot;Need to know when a value set was first legal for use or became withdrawn or replaced.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.date&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;dateTime&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.lockedDate&quot;,
+        &quot;short&quot;: &quot;Fixed date for all referenced code systems and value sets&quot;,
+        &quot;definition&quot;: &quot;If a Locked Date is defined, then the Content Logical Definition must be evaluated using the current version of all referenced code system(s) and value sets as of the Locked Date.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.lockedDate&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;date&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem&quot;,
+        &quot;short&quot;: &quot;An inline code system - part of this value set&quot;,
+        &quot;definition&quot;: &quot;A definition of an code system, inlined into the value set (as a packaging convenience). Note that the inline code system may be used from other value sets by referring to it's (codeSystem.system) directly.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;vsd-5&quot;
+        ],
+        &quot;constraint&quot;: [
+          {
+            &quot;key&quot;: &quot;vsd-8&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Codes must be unique&quot;,
+            &quot;xpath&quot;: &quot;count(descendant::f:concept)=count(distinct-values(descendant::f:concept/f:code/@value))&quot;
+          },
+          {
+            &quot;key&quot;: &quot;vsd-3&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Within a code system definition, all the codes SHALL be unique&quot;,
+            &quot;xpath&quot;: &quot;count(distinct-values(descendant::f:concept/f:code/@value))=count(descendant::f:concept)&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.system&quot;,
+        &quot;short&quot;: &quot;URI to identify the code system (e.g. in Coding.system)&quot;,
+        &quot;definition&quot;: &quot;An absolute URI that is used to reference this code system, including in [Coding]{datatypes.html#Coding}.system.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.system&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.version&quot;,
+        &quot;short&quot;: &quot;Version (for use in Coding.version)&quot;,
+        &quot;definition&quot;: &quot;The version of this code system that defines the codes. Note that the version is optional because a well maintained code system does not suffer from versioning, and therefore the version does not need to be maintained. However many code systems are not well maintained, and the version needs to be defined and tracked.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.version&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.caseSensitive&quot;,
+        &quot;short&quot;: &quot;If code comparison is case sensitive&quot;,
+        &quot;definition&quot;: &quot;If code comparison is case sensitive when codes within this system are compared to each other.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.caseSensitive&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept&quot;,
+        &quot;name&quot;: &quot;concept&quot;,
+        &quot;short&quot;: &quot;Concepts in the code system&quot;,
+        &quot;definition&quot;: &quot;Concepts that are in the code system. The concept definitions are inherently heirarchical, but the definitions must be consulted to determine what the meaning of the heirachical relationships are.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.extension&quot;,
+        &quot;slicing&quot;: {
+          &quot;discriminator&quot;: [
+            &quot;url&quot;
+          ],
+          &quot;ordered&quot;: false,
+          &quot;rules&quot;: &quot;open&quot;
+        },
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.extension&quot;,
+        &quot;name&quot;: &quot;conceptConceptOrder&quot;,
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.code&quot;,
+        &quot;short&quot;: &quot;Code that identifies concept&quot;,
+        &quot;definition&quot;: &quot;A code - a text symbol - that uniquely identifies the concept within the code system.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.code&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.abstract&quot;,
+        &quot;short&quot;: &quot;If this code is not for use as a real concept&quot;,
+        &quot;definition&quot;: &quot;If this code is not for use as a real concept.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.abstract&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;defaultValueBoolean&quot;: false,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.display&quot;,
+        &quot;short&quot;: &quot;Text to Display to the user&quot;,
+        &quot;definition&quot;: &quot;A human readable string that is the recommended default way to present this concept to a user.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.display&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.definition&quot;,
+        &quot;short&quot;: &quot;Formal Definition&quot;,
+        &quot;definition&quot;: &quot;The formal definition of the concept. The value set resource does not make formal definitions required, because of the prevalence of legacy systems. However, but they are highly recommended, as without them there is no formal meaning associated with the concept.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.definition&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation&quot;,
+        &quot;name&quot;: &quot;designation&quot;,
+        &quot;short&quot;: &quot;Additional representations for the concept&quot;,
+        &quot;definition&quot;: &quot;Additional representations for the concept - other languages, aliases, specialized purposes, used for particular purposes, etc.&quot;,
+        &quot;requirements&quot;: &quot;many concept definition systems support mltiple representations, in multiple languages, and for mltiple purposes.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.language&quot;,
+        &quot;short&quot;: &quot;Human language of the designation&quot;,
+        &quot;definition&quot;: &quot;The language this designation is defined for.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.language&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;binding&quot;: {
+          &quot;strength&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;A human language&quot;,
+          &quot;valueSetUri&quot;: &quot;http://tools.ietf.org/html/bcp47&quot;
+        }
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.use&quot;,
+        &quot;short&quot;: &quot;Details how this designation would be used&quot;,
+        &quot;definition&quot;: &quot;A code that details how this designation would be used.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.use&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Coding&quot;
+          }
+        ],
+        &quot;binding&quot;: {
+          &quot;strength&quot;: &quot;extensible&quot;,
+          &quot;description&quot;: &quot;Details of how a designation would be used&quot;,
+          &quot;valueSetReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/ValueSet/designation-use&quot;
+          }
+        }
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.value&quot;,
+        &quot;short&quot;: &quot;The text value for this designation&quot;,
+        &quot;definition&quot;: &quot;The text value for this designation.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.designation.value&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.concept&quot;,
+        &quot;short&quot;: &quot;Child Concepts (is-a / contains / categorises)&quot;,
+        &quot;definition&quot;: &quot;Child Concepts - a heirarchy of concepts. The nature of the relationships is variable (is-a / contains / categorises) and can only be determined by examining the definitions of the concepts.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.codeSystem.concept.concept&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;nameReference&quot;: &quot;concept&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose&quot;,
+        &quot;short&quot;: &quot;When value set includes codes from elsewhere&quot;,
+        &quot;definition&quot;: &quot;A set of criteria that provide the content logical definition of the value set by including or excluding codes from outside this value set.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;vsd-5&quot;
+        ],
+        &quot;constraint&quot;: [
+          {
+            &quot;key&quot;: &quot;vsd-1&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;A value set composition SHALL have an include or an import&quot;,
+            &quot;xpath&quot;: &quot;exists(f:include) or exists(f:import)&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.import&quot;,
+        &quot;short&quot;: &quot;Import the contents of another value set&quot;,
+        &quot;definition&quot;: &quot;Includes the contents of the referenced value set as a part of the contents of this value set. This is an absolute URI that is a reference to ValueSet.uri.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.import&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;vsd-1&quot;
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include&quot;,
+        &quot;name&quot;: &quot;include&quot;,
+        &quot;short&quot;: &quot;Include one or more codes from a code system&quot;,
+        &quot;definition&quot;: &quot;Include one or more codes from a code system.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;vsd-1&quot;
+        ],
+        &quot;constraint&quot;: [
+          {
+            &quot;key&quot;: &quot;vsd-11&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Cannot have both concept and filter&quot;,
+            &quot;xpath&quot;: &quot;not(exists(f:concept)) or not(exists(f:filter))&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.system&quot;,
+        &quot;short&quot;: &quot;The system the codes come from&quot;,
+        &quot;definition&quot;: &quot;An absolute URI which is the code system from which the selected codes come from.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.system&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;define.xml2.0&quot;,
+            &quot;map&quot;: &quot;ODM/Study/MetaDataVersion/CodeList/ExternalCodeList/Href&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.version&quot;,
+        &quot;short&quot;: &quot;Specific version of the code system referred to&quot;,
+        &quot;definition&quot;: &quot;The version of the code system that the codes are selected from.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.version&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;isSummary&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;define.xml2.0&quot;,
+            &quot;map&quot;: &quot;ODM/Study/MetaDataVersion/CodeList/ExternalCodeList/Version&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept&quot;,
+        &quot;short&quot;: &quot;A concept defined in the system&quot;,
+        &quot;definition&quot;: &quot;Specifies a concept to be included or excluded.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.concept&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;vsd-11&quot;
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.concept.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.extension&quot;,
+        &quot;slicing&quot;: {
+          &quot;discriminator&quot;: [
+            &quot;url&quot;
+          ],
+          &quot;ordered&quot;: false,
+          &quot;rules&quot;: &quot;open&quot;
+        },
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.concept.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.extension&quot;,
+        &quot;name&quot;: &quot;conceptConceptOrder&quot;,
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.concept.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.concept.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.code&quot;,
+        &quot;short&quot;: &quot;Code or expression from system&quot;,
+        &quot;definition&quot;: &quot;Specifies a code for the concept to be included or excluded.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.concept.code&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.display&quot;,
+        &quot;short&quot;: &quot;Test to display for this code for this value set&quot;,
+        &quot;definition&quot;: &quot;The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.concept.display&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.designation&quot;,
+        &quot;short&quot;: &quot;Additional representations for this valueset&quot;,
+        &quot;definition&quot;: &quot;Additional representations for this concept when used in this value set - other languages, aliases, specialized purposes, used for particular purposes, etc.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.concept.designation&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;nameReference&quot;: &quot;designation&quot;
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter&quot;,
+        &quot;short&quot;: &quot;Select codes/concepts by their properties (including relationships)&quot;,
+        &quot;definition&quot;: &quot;Select concepts by specify a matching criteria based on the properties (including relationships) defined by the system. If multiple filters are specified, they SHALL all be true.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.filter&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;vsd-11&quot;
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.filter.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.filter.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.filter.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter.property&quot;,
+        &quot;short&quot;: &quot;A property defined by the code system&quot;,
+        &quot;definition&quot;: &quot;A code that identifies a property defined in the code system.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.filter.property&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter.op&quot;,
+        &quot;short&quot;: &quot;= | is-a | is-not-a | regex | in | not-in&quot;,
+        &quot;definition&quot;: &quot;The kind of operation to perform as a part of the filter criteria.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.filter.op&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;binding&quot;: {
+          &quot;strength&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;The kind of operation to perform as a part of a property based filter&quot;,
+          &quot;valueSetReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/ValueSet/filter-operator&quot;
+          }
+        },
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter.value&quot;,
+        &quot;short&quot;: &quot;Code from the system, or regex criteria&quot;,
+        &quot;definition&quot;: &quot;The match value may be either a code defined by the system, or a string value which is used a regex match on the literal string of the property value.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.include.filter.value&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.exclude&quot;,
+        &quot;short&quot;: &quot;Explicitly exclude codes&quot;,
+        &quot;definition&quot;: &quot;Exclude one or more codes from the value set.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.compose.exclude&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;nameReference&quot;: &quot;include&quot;,
+        &quot;condition&quot;: [
+          &quot;vsd-2&quot;
+        ],
+        &quot;mustSupport&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion&quot;,
+        &quot;short&quot;: &quot;Used when the value set is \&quot;expanded\&quot;&quot;,
+        &quot;definition&quot;: &quot;A value set can also be \&quot;expanded\&quot;, where the value set is turned into a simple collection of enumerated codes. This element holds the expansion, if it has been performed.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;vsd-5&quot;
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.identifier&quot;,
+        &quot;short&quot;: &quot;Uniquely identifies this expansion&quot;,
+        &quot;definition&quot;: &quot;An identifier that uniquely identifies this expansion of the valueset. Systems may re-use the same identifier as long as the expansion and the definition remain the same, but are not required to do so.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.identifier&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.timestamp&quot;,
+        &quot;short&quot;: &quot;Time valueset expansion happened&quot;,
+        &quot;definition&quot;: &quot;The time at which the expansion was produced by the expanding system.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.timestamp&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;dateTime&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.total&quot;,
+        &quot;short&quot;: &quot;Total number of codes in the expansion&quot;,
+        &quot;definition&quot;: &quot;The total nober of concepts in the expansion. If the number of concept nodes in this resource is less than the stated number, then the server can return more using the offset parameter.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.total&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.offset&quot;,
+        &quot;short&quot;: &quot;Offset at which this resource starts&quot;,
+        &quot;definition&quot;: &quot;If paging is being used, the offset at which this resource starts - e.g. this resource is a partial view into the expansion. If paging is not being used, this element SHALL not be present.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.offset&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;meaningWhenMissing&quot;: &quot;Paging is not being used&quot;
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.parameter&quot;,
+        &quot;short&quot;: &quot;Parameter that controlled the expansion process&quot;,
+        &quot;definition&quot;: &quot;A Parameter that controlled the expansion process. These parameters may be used by users of expanded value sets to check whether the expansion is suitable for a particular purpose, or to pick the correct expansion.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.parameter&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.parameter.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.parameter.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.parameter.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.parameter.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.parameter.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.parameter.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.parameter.name&quot;,
+        &quot;short&quot;: &quot;Name as assigned by server&quot;,
+        &quot;definition&quot;: &quot;The name of the parameter.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.parameter.name&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.parameter.value[x]&quot;,
+        &quot;short&quot;: &quot;Value of the named parameter&quot;,
+        &quot;definition&quot;: &quot;The value of the parameter.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.parameter.value[x]&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          },
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          },
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          },
+          {
+            &quot;code&quot;: &quot;decimal&quot;
+          },
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          },
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains&quot;,
+        &quot;name&quot;: &quot;contains&quot;,
+        &quot;short&quot;: &quot;Codes in the value set&quot;,
+        &quot;definition&quot;: &quot;The codes that are contained in the value set expansion.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;BackboneElement&quot;
+          }
+        ],
+        &quot;constraint&quot;: [
+          {
+            &quot;key&quot;: &quot;vsd-6&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;SHALL have a code or a display&quot;,
+            &quot;xpath&quot;: &quot;exists(f:code) or exists(f:display)&quot;
+          },
+          {
+            &quot;key&quot;: &quot;vsd-9&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Must have a code if not abstract&quot;,
+            &quot;xpath&quot;: &quot;exists(f:code) or (f:abstract/@value = 'true')&quot;
+          },
+          {
+            &quot;key&quot;: &quot;vsd-10&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Must have a system if a code is present&quot;,
+            &quot;xpath&quot;: &quot;exists(f:system) or not(exists(f:code))&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;definition&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.id&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+        &quot;slicing&quot;: {
+          &quot;discriminator&quot;: [
+            &quot;url&quot;
+          ],
+          &quot;ordered&quot;: false,
+          &quot;rules&quot;: &quot;open&quot;
+        },
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+        &quot;name&quot;: &quot;conceptConceptOrder&quot;,
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+        &quot;name&quot;: &quot;definition&quot;,
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-definition&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+        &quot;name&quot;: &quot;systemName&quot;,
+        &quot;short&quot;: &quot;Extension&quot;,
+        &quot;definition&quot;: &quot;An Extension&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-systemName&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;definition&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;alias&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.modifierExtension&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.system&quot;,
+        &quot;short&quot;: &quot;System value for the code&quot;,
+        &quot;definition&quot;: &quot;An absolute URI which is the code system in which the code for this item in the expansion is defined.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.system&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.abstract&quot;,
+        &quot;short&quot;: &quot;If user cannot select this entry&quot;,
+        &quot;definition&quot;: &quot;If true, this entry is included in the expansion for navigational purposes, and the user cannot select the code directly as a proper value.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.abstract&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.version&quot;,
+        &quot;short&quot;: &quot;Version in which this code / display is defined&quot;,
+        &quot;definition&quot;: &quot;The version of this code system that defined this code and/or display. This should only be used with code systems that do not enforce concept permanence.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.version&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.code&quot;,
+        &quot;short&quot;: &quot;Code - if blank, this is not a choosable code&quot;,
+        &quot;definition&quot;: &quot;The code for this item in the expansion heirarchy. If this code is missing the entry in the heirarchy is a place holder (abstract) and doesn't represent a valid code in the value set.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.code&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;vsd-6&quot;
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.display&quot;,
+        &quot;short&quot;: &quot;User display for the concept&quot;,
+        &quot;definition&quot;: &quot;The recommended display for this item in the expansion.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.display&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;1&quot;
+        },
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;condition&quot;: [
+          &quot;vsd-6&quot;
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.contains&quot;,
+        &quot;short&quot;: &quot;Codes contained under this entry&quot;,
+        &quot;definition&quot;: &quot;Other codes and entries contained under this entry in the heirarchy.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;base&quot;: {
+          &quot;path&quot;: &quot;ValueSet.expansion.contains.contains&quot;,
+          &quot;min&quot;: 0,
+          &quot;max&quot;: &quot;*&quot;
+        },
+        &quot;nameReference&quot;: &quot;contains&quot;,
+        &quot;mustSupport&quot;: true
+      }
+    ]
+  },
+  &quot;differential&quot;: {
+    &quot;element&quot;: [
+      {
+        &quot;path&quot;: &quot;ValueSet&quot;,
+        &quot;name&quot;: &quot;DataElementExchangeValueSet&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;ValueSet&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;slicing&quot;: {
+          &quot;discriminator&quot;: [
+            &quot;url&quot;
+          ],
+          &quot;ordered&quot;: false,
+          &quot;rules&quot;: &quot;open&quot;
+        }
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;name&quot;: &quot;category&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-category&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;name&quot;: &quot;trustedExpansion&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-trusted-expansion&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;name&quot;: &quot;effectiveDate&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extension&quot;,
+        &quot;name&quot;: &quot;expirationDate&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-expirationDate&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.url&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.identifier&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Identifier&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.version&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.name&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.immutable&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.publisher&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.status&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.experimental&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.extensible&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.date&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;dateTime&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.lockedDate&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;date&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.system&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.version&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.caseSensitive&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept&quot;,
+        &quot;name&quot;: &quot;concept&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.extension&quot;,
+        &quot;slicing&quot;: {
+          &quot;discriminator&quot;: [
+            &quot;url&quot;
+          ],
+          &quot;ordered&quot;: false,
+          &quot;rules&quot;: &quot;open&quot;
+        }
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.extension&quot;,
+        &quot;name&quot;: &quot;conceptConceptOrder&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.code&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.abstract&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.display&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.definition&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.codeSystem.concept.concept&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;nameReference&quot;: &quot;concept&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.import&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include&quot;,
+        &quot;name&quot;: &quot;include&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.system&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.version&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.extension&quot;,
+        &quot;slicing&quot;: {
+          &quot;discriminator&quot;: [
+            &quot;url&quot;
+          ],
+          &quot;ordered&quot;: false,
+          &quot;rules&quot;: &quot;open&quot;
+        }
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.extension&quot;,
+        &quot;name&quot;: &quot;conceptConceptOrder&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.code&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.concept.display&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter.property&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter.op&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.include.filter.value&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.compose.exclude&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;nameReference&quot;: &quot;include&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.timestamp&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;dateTime&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains&quot;,
+        &quot;name&quot;: &quot;contains&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+        &quot;slicing&quot;: {
+          &quot;discriminator&quot;: [
+            &quot;url&quot;
+          ],
+          &quot;ordered&quot;: false,
+          &quot;rules&quot;: &quot;open&quot;
+        }
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+        &quot;name&quot;: &quot;conceptConceptOrder&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+        &quot;name&quot;: &quot;definition&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-definition&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.extension&quot;,
+        &quot;name&quot;: &quot;systemName&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;,
+            &quot;profile&quot;: [
+              &quot;http://hl7.org/fhir/StructureDefinition/valueset-systemName&quot;
+            ]
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.system&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.abstract&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;boolean&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.version&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.code&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.display&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: true
+      },
+      {
+        &quot;path&quot;: &quot;ValueSet.expansion.contains.contains&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;nameReference&quot;: &quot;contains&quot;,
+        &quot;mustSupport&quot;: true
+      }
+    ]
+  }
+}
+</pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:36-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fvalueset-sdc-de-dataelementexchangevalueset.profile.json.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fvalueset-sdc-de-dataelementexchangevalueset.profile.json.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

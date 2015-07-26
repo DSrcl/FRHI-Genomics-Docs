@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="transaction-processing-mode"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>TransactionProcessingMode</h2>
+      <p>Defines how a match URL should be used when processing a transaction</p>
+      <p>This value set has an inline code system http://hl7.org/fhir/transaction-processing-mode, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>ignore
+            <a name="ignore"> </a>
+          </td>
+          <td>Ignore</td>
+          <td>If a matching resource is found, then ignore the resource and do not process it as part of the transaction (and return the matching resource information in the transaction response)</td>
+        </tr>
+        <tr>
+          <td>update
+            <a name="update"> </a>
+          </td>
+          <td>Update</td>
+          <td>If a matching resource is found, then update it with this resource, otherwise create a new one</td>
+        </tr>
+        <tr>
+          <td>delete
+            <a name="delete"> </a>
+          </td>
+          <td>Delete</td>
+          <td>If a resource matching the information provided is found, delete it. If no matching resource is found, the transaction fails</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.904"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/transaction-processing-mode"/>
+  <version value="0.5.0"/>
+  <name value="TransactionProcessingMode"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="Defines how a match URL should be used when processing a transaction"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.904"/>
+    </extension>
+    <system value="http://hl7.org/fhir/transaction-processing-mode"/>
+    <version value="0.5.0"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ignore"/>
+      <display value="Ignore"/>
+      <definition value="If a matching resource is found, then ignore the resource and do not process it as part of the transaction (and return the matching resource information in the transaction response)"/>
+    </concept>
+    <concept>
+      <code value="update"/>
+      <display value="Update"/>
+      <definition value="If a matching resource is found, then update it with this resource, otherwise create a new one"/>
+    </concept>
+    <concept>
+      <code value="delete"/>
+      <display value="Delete"/>
+      <definition value="If a resource matching the information provided is found, delete it. If no matching resource is found, the transaction fails"/>
+    </concept>
+  </codeSystem>
+</ValueSet>

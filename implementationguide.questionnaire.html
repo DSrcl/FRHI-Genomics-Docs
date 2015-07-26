@@ -1,0 +1,4489 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Implementationguide.questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/implementationguide.questionnaire.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="implementationguide.html">ImplementationGuide</a></li>        <li><b>Generated Questionnaire</b></li>          <!-- implementationguide.questionnaire.html / resource-questionnaire:ImplementationGuide / Questionnaire -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="implementationguide.html">Content</a></li><li><a href="implementationguide-examples.html">Examples</a></li><li><a href="implementationguide-definitions.html">Detailed Descriptions</a></li><li><a href="implementationguide-mappings.html">Mappings</a></li><li><a href="implementationguide-profiles.html">Profiles</a></li><li class="active"><a href="#">HTML Form</a></li></ul>
+
+
+<h2><span class="sectioncount">6.16.6<a name="6.16.6"> </a></span> Implementationguide.questionnaire - Example Form <a href="implementationguide.questionnaire.html#6.16.6" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>
+This is an example form based on a questionnaire generated from the definition, to help visualise the content. See also the <a href="implementationguide.questionnaire.xml.html">XML</a> or <a href="implementationguide.questionnaire.json.html">JSON</a> questionnaire.
+</p>
+
+  <!-- DOCTYPE html --><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<script type="text/javascript">  <!-- var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validateImplementationGuide(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide");
+    node.focus()
+    alert('Must have at least 1 occurrences of: A set of rules about how FHIR is used');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_id(divNode, "ImplementationGuide.id")
+         && validateImplementationGuide_meta(divNode, "ImplementationGuide.meta")
+         && validateImplementationGuide_implicitRules(divNode, "ImplementationGuide.implicitRules")
+         && validateImplementationGuide_language(divNode, "ImplementationGuide.language")
+         && validateImplementationGuide_text(divNode, "ImplementationGuide.text")
+         && validateImplementationGuide_contained(divNode, "ImplementationGuide.contained")
+         && validateImplementationGuide_extension(divNode, "ImplementationGuide.extension")
+         && validateImplementationGuide_modifierExtension(divNode, "ImplementationGuide.modifierExtension")
+         && validateImplementationGuide_url(divNode, "ImplementationGuide.url")
+         && validateImplementationGuide_version(divNode, "ImplementationGuide.version")
+         && validateImplementationGuide_name(divNode, "ImplementationGuide.name")
+         && validateImplementationGuide_useContext(divNode, "ImplementationGuide.useContext")
+         && validateImplementationGuide_publisher(divNode, "ImplementationGuide.publisher")
+         && validateImplementationGuide_contact(divNode, "ImplementationGuide.contact")
+         && validateImplementationGuide_description(divNode, "ImplementationGuide.description")
+         && validateImplementationGuide_copyright(divNode, "ImplementationGuide.copyright")
+         && validateImplementationGuide_code(divNode, "ImplementationGuide.code")
+         && validateImplementationGuide_status(divNode, "ImplementationGuide.status")
+         && validateImplementationGuide_experimental(divNode, "ImplementationGuide.experimental")
+         && validateImplementationGuide_date(divNode, "ImplementationGuide.date")
+         && validateImplementationGuide_fhirVersion(divNode, "ImplementationGuide.fhirVersion")
+         && validateImplementationGuide_page(divNode, "ImplementationGuide.page")
+         && validateImplementationGuide_package(divNode, "ImplementationGuide.package")
+         && validateImplementationGuide_default(divNode, "ImplementationGuide.default");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_id(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_id_value(divNode, "ImplementationGuide.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_id_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_meta(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_implicitRules(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_implicitRules_value(divNode, "ImplementationGuide.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_language(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_language_value(divNode, "ImplementationGuide.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_language_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_text(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_contained(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_extension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_url(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.url");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.url");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_url_value(divNode, "ImplementationGuide.url.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_url_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.url.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_version(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.version");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_version_value(divNode, "ImplementationGuide.version.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_version_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.version.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_name(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.name");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.name");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_name_value(divNode, "ImplementationGuide.name.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_name_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.name.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_useContext(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.useContext");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_useContext_coding(divNode, "ImplementationGuide.useContext.coding")
+         && validateImplementationGuide_useContext_text(divNode, "ImplementationGuide.useContext.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_useContext_coding(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.useContext.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_useContext_text(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.useContext.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_publisher(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.publisher");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_publisher_value(divNode, "ImplementationGuide.publisher.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_publisher_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.publisher.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_contact(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_contact_id(divNode, "ImplementationGuide.contact.id")
+         && validateImplementationGuide_contact_extension(divNode, "ImplementationGuide.contact.extension")
+         && validateImplementationGuide_contact_modifierExtension(divNode, "ImplementationGuide.contact.modifierExtension")
+         && validateImplementationGuide_contact_name(divNode, "ImplementationGuide.contact.name")
+         && validateImplementationGuide_contact_telecom(divNode, "ImplementationGuide.contact.telecom");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_contact_id(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_contact_id_value(divNode, "ImplementationGuide.contact.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_contact_id_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_contact_extension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_contact_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_contact_name(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.name");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_contact_name_value(divNode, "ImplementationGuide.contact.name.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_contact_name_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.name.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_contact_telecom(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.telecom");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_contact_telecom_system(divNode, "ImplementationGuide.contact.telecom.system")
+         && validateImplementationGuide_contact_telecom_value(divNode, "ImplementationGuide.contact.telecom.value")
+         && validateImplementationGuide_contact_telecom_use(divNode, "ImplementationGuide.contact.telecom.use");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_contact_telecom_system(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.telecom.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_contact_telecom_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.telecom.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_contact_telecom_use(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.telecom.use");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_description(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.description");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_description_value(divNode, "ImplementationGuide.description.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_description_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.description.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_copyright(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.copyright");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_copyright_value(divNode, "ImplementationGuide.copyright.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_copyright_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.copyright.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_code(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.code");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_code_value(divNode, "ImplementationGuide.code.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_code_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.code.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_status(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.status");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.status");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_status_value(divNode, "ImplementationGuide.status.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_status_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.status.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_experimental(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.experimental");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_experimental_value(divNode, "ImplementationGuide.experimental.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_experimental_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.experimental.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_date(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.date");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_date_value(divNode, "ImplementationGuide.date.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_date_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.date.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_fhirVersion(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.fhirVersion");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_fhirVersion_value(divNode, "ImplementationGuide.fhirVersion.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_fhirVersion_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.fhirVersion.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_page(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_page_id(divNode, "ImplementationGuide.page.id")
+         && validateImplementationGuide_page_extension(divNode, "ImplementationGuide.page.extension")
+         && validateImplementationGuide_page_modifierExtension(divNode, "ImplementationGuide.page.modifierExtension")
+         && validateImplementationGuide_page_source(divNode, "ImplementationGuide.page.source")
+         && validateImplementationGuide_page_purpose(divNode, "ImplementationGuide.page.purpose");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_page_id(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_page_id_value(divNode, "ImplementationGuide.page.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_page_id_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.page.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_page_extension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_page_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_page_source(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.source");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.page.source");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_page_source_value(divNode, "ImplementationGuide.page.source.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_page_source_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.page.source.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_page_purpose(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.purpose");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.page.purpose");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_page_purpose_value(divNode, "ImplementationGuide.page.purpose.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_page_purpose_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.page.purpose.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.package");
+    node.focus()
+    alert('Must have at least 1 occurrences of: A section in the IG');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_id(divNode, "ImplementationGuide.package.id")
+         && validateImplementationGuide_package_extension(divNode, "ImplementationGuide.package.extension")
+         && validateImplementationGuide_package_modifierExtension(divNode, "ImplementationGuide.package.modifierExtension")
+         && validateImplementationGuide_package_name(divNode, "ImplementationGuide.package.name")
+         && validateImplementationGuide_package_item(divNode, "ImplementationGuide.package.item")
+         && validateImplementationGuide_package_page(divNode, "ImplementationGuide.package.page");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_id(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_id_value(divNode, "ImplementationGuide.package.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_id_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package_extension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_name(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.name");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.package.name");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_name_value(divNode, "ImplementationGuide.package.name.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_name_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.name.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package_item(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_item_id(divNode, "ImplementationGuide.package.item.id")
+         && validateImplementationGuide_package_item_extension(divNode, "ImplementationGuide.package.item.extension")
+         && validateImplementationGuide_package_item_modifierExtension(divNode, "ImplementationGuide.package.item.modifierExtension")
+         && validateImplementationGuide_package_item_name(divNode, "ImplementationGuide.package.item.name")
+         && validateImplementationGuide_package_item_content(divNode, "ImplementationGuide.package.item.content")
+         && validateImplementationGuide_package_item_example(divNode, "ImplementationGuide.package.item.example");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_id(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_item_id_value(divNode, "ImplementationGuide.package.item.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_id_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package_item_extension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_name(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.name");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_item_name_value(divNode, "ImplementationGuide.package.item.name.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_name_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.name.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package_item_content(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.content");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.package.item.content");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_item_content_value(divNode, "ImplementationGuide.package.item.content.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_content_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.content.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package_item_example(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_item_example_id(divNode, "ImplementationGuide.package.item.example.id")
+         && validateImplementationGuide_package_item_example_extension(divNode, "ImplementationGuide.package.item.example.extension")
+         && validateImplementationGuide_package_item_example_modifierExtension(divNode, "ImplementationGuide.package.item.example.modifierExtension")
+         && validateImplementationGuide_package_item_example_name(divNode, "ImplementationGuide.package.item.example.name")
+         && validateImplementationGuide_package_item_example_target(divNode, "ImplementationGuide.package.item.example.target")
+         && validateImplementationGuide_package_item_example_description(divNode, "ImplementationGuide.package.item.example.description");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_example_id(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_item_example_id_value(divNode, "ImplementationGuide.package.item.example.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_example_id_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.example.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package_item_example_extension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_example_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_example_name(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.name");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.package.item.example.name");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_item_example_name_value(divNode, "ImplementationGuide.package.item.example.name.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_example_name_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.example.name.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package_item_example_target(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.target");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.package.item.example.target");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_item_example_target_value(divNode, "ImplementationGuide.package.item.example.target.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_example_target_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.example.target.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package_item_example_description(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.description");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.package.item.example.description");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_package_item_example_description_value(divNode, "ImplementationGuide.package.item.example.description.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_package_item_example_description_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.example.description.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_package_page(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.page");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_default(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_default_id(divNode, "ImplementationGuide.default.id")
+         && validateImplementationGuide_default_extension(divNode, "ImplementationGuide.default.extension")
+         && validateImplementationGuide_default_modifierExtension(divNode, "ImplementationGuide.default.modifierExtension")
+         && validateImplementationGuide_default_type(divNode, "ImplementationGuide.default.type")
+         && validateImplementationGuide_default_profile(divNode, "ImplementationGuide.default.profile");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_default_id(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_default_id_value(divNode, "ImplementationGuide.default.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_default_id_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.default.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_default_extension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_default_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_default_type(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.type");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.default.type");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_default_type_value(divNode, "ImplementationGuide.default.type.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_default_type_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.default.type.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateImplementationGuide_default_profile(node) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.profile");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ImplementationGuide.default.profile");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateImplementationGuide_default_profile_value(divNode, "ImplementationGuide.default.profile.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateImplementationGuide_default_profile_value(node) {
+  var answerNodes = findAnswers(node, "ImplementationGuide.default.profile.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function serializeImplementationGuide(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide",
+      "title":"A set of rules about how FHIR is used"
+    }
+    var childGroups = [];    serializeImplementationGuide_id(groupNodes[i], childGroups);
+    serializeImplementationGuide_meta(groupNodes[i], childGroups);
+    serializeImplementationGuide_implicitRules(groupNodes[i], childGroups);
+    serializeImplementationGuide_language(groupNodes[i], childGroups);
+    serializeImplementationGuide_text(groupNodes[i], childGroups);
+    serializeImplementationGuide_contained(groupNodes[i], childGroups);
+    serializeImplementationGuide_extension(groupNodes[i], childGroups);
+    serializeImplementationGuide_modifierExtension(groupNodes[i], childGroups);
+    serializeImplementationGuide_url(groupNodes[i], childGroups);
+    serializeImplementationGuide_version(groupNodes[i], childGroups);
+    serializeImplementationGuide_name(groupNodes[i], childGroups);
+    serializeImplementationGuide_useContext(groupNodes[i], childGroups);
+    serializeImplementationGuide_publisher(groupNodes[i], childGroups);
+    serializeImplementationGuide_contact(groupNodes[i], childGroups);
+    serializeImplementationGuide_description(groupNodes[i], childGroups);
+    serializeImplementationGuide_copyright(groupNodes[i], childGroups);
+    serializeImplementationGuide_code(groupNodes[i], childGroups);
+    serializeImplementationGuide_status(groupNodes[i], childGroups);
+    serializeImplementationGuide_experimental(groupNodes[i], childGroups);
+    serializeImplementationGuide_date(groupNodes[i], childGroups);
+    serializeImplementationGuide_fhirVersion(groupNodes[i], childGroups);
+    serializeImplementationGuide_page(groupNodes[i], childGroups);
+    serializeImplementationGuide_package(groupNodes[i], childGroups);
+    serializeImplementationGuide_default(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_id(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.id"
+    }
+    var childQuestions = [];    serializeImplementationGuide_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_id_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.id.value",
+      "text":"Logical id of this artifact"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_meta(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.meta");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.meta",
+      "text":"Metadata about the resource"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_implicitRules(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.implicitRules");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.implicitRules"
+    }
+    var childQuestions = [];    serializeImplementationGuide_implicitRules_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_implicitRules_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.implicitRules.value",
+      "text":"A set of rules under which this content was created"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.implicitRules.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_language(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.language");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.language"
+    }
+    var childQuestions = [];    serializeImplementationGuide_language_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_language_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.language.value",
+      "text":"language"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.language.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_text(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.text");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.text",
+      "text":"Text summary of the resource, for human interpretation"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contained(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contained");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.contained",
+      "text":"Contained, inline Resources"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_extension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_url(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.url");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.url"
+    }
+    var childQuestions = [];    serializeImplementationGuide_url_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_url_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.url.value",
+      "text":"Literal URL used to reference this Implementation Guide"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.url.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_version(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.version");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.version"
+    }
+    var childQuestions = [];    serializeImplementationGuide_version_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_version_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.version.value",
+      "text":"Logical id for this version of the Implementation Guide"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.version.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_name(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.name");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.name"
+    }
+    var childQuestions = [];    serializeImplementationGuide_name_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_name_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.name.value",
+      "text":"Informal name for this Implementation Guide"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.name.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_useContext(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.useContext");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.useContext",
+      "text":"The implementation guide is intended to support these contexts"
+    }
+    var childQuestions = [];    serializeImplementationGuide_useContext_coding(groupNodes[i], childQuestions);
+    serializeImplementationGuide_useContext_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_useContext_coding(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.useContext.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.useContext.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_useContext_text(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.useContext.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.useContext.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_publisher(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.publisher");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.publisher"
+    }
+    var childQuestions = [];    serializeImplementationGuide_publisher_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_publisher_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.publisher.value",
+      "text":"Name of the publisher (Organization or individual)"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.publisher.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.contact",
+      "title":"Contact details of the publisher"
+    }
+    var childGroups = [];    serializeImplementationGuide_contact_id(groupNodes[i], childGroups);
+    serializeImplementationGuide_contact_extension(groupNodes[i], childGroups);
+    serializeImplementationGuide_contact_modifierExtension(groupNodes[i], childGroups);
+    serializeImplementationGuide_contact_name(groupNodes[i], childGroups);
+    serializeImplementationGuide_contact_telecom(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_id(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.contact.id"
+    }
+    var childQuestions = [];    serializeImplementationGuide_contact_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_id_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.contact.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_extension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.contact.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.contact.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_name(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.name");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.contact.name"
+    }
+    var childQuestions = [];    serializeImplementationGuide_contact_name_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_name_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.contact.name.value",
+      "text":"Name of a individual to contact"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.name.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_telecom(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.contact.telecom");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.contact.telecom",
+      "text":"Contact details for individual or publisher"
+    }
+    var childQuestions = [];    serializeImplementationGuide_contact_telecom_system(groupNodes[i], childQuestions);
+    serializeImplementationGuide_contact_telecom_value(groupNodes[i], childQuestions);
+    serializeImplementationGuide_contact_telecom_use(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_telecom_system(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.contact.telecom.system",
+      "text":"type:"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.telecom.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_telecom_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.contact.telecom.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.telecom.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_contact_telecom_use(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.contact.telecom.use",
+      "text":"use:"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.contact.telecom.use");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_description(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.description");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.description"
+    }
+    var childQuestions = [];    serializeImplementationGuide_description_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_description_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.description.value",
+      "text":"Natural language description of the Implementation Guide"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.description.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_copyright(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.copyright");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.copyright"
+    }
+    var childQuestions = [];    serializeImplementationGuide_copyright_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_copyright_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.copyright.value",
+      "text":"Use and/or Publishing restrictions"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.copyright.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_code(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.code");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.code"
+    }
+    var childQuestions = [];    serializeImplementationGuide_code_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_code_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.code.value",
+      "text":"Assist with indexing and finding"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.code.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_status(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.status");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.status"
+    }
+    var childQuestions = [];    serializeImplementationGuide_status_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_status_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.status.value",
+      "text":"status"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.status.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_experimental(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.experimental");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.experimental"
+    }
+    var childQuestions = [];    serializeImplementationGuide_experimental_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_experimental_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.experimental.value",
+      "text":"If for testing purposes, not real usage"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.experimental.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_date(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.date");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.date"
+    }
+    var childQuestions = [];    serializeImplementationGuide_date_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_date_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.date.value",
+      "text":"Date for this version of the Implementation Guide"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.date.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_fhirVersion(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.fhirVersion");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.fhirVersion"
+    }
+    var childQuestions = [];    serializeImplementationGuide_fhirVersion_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_fhirVersion_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.fhirVersion.value",
+      "text":"FHIR Version this Implementation Guide targets"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.fhirVersion.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_page(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.page",
+      "title":"Page in the Implementation Guide"
+    }
+    var childGroups = [];    serializeImplementationGuide_page_id(groupNodes[i], childGroups);
+    serializeImplementationGuide_page_extension(groupNodes[i], childGroups);
+    serializeImplementationGuide_page_modifierExtension(groupNodes[i], childGroups);
+    serializeImplementationGuide_page_source(groupNodes[i], childGroups);
+    serializeImplementationGuide_page_purpose(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_page_id(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.page.id"
+    }
+    var childQuestions = [];    serializeImplementationGuide_page_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_page_id_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.page.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.page.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_page_extension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.page.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_page_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.page.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_page_source(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.source");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.page.source"
+    }
+    var childQuestions = [];    serializeImplementationGuide_page_source_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_page_source_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.page.source.value",
+      "text":"Source for the page"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.page.source.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_page_purpose(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.page.purpose");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.page.purpose"
+    }
+    var childQuestions = [];    serializeImplementationGuide_page_purpose_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_page_purpose_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.page.purpose.value",
+      "text":"purpose"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.page.purpose.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package",
+      "title":"A section in the IG"
+    }
+    var childGroups = [];    serializeImplementationGuide_package_id(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_extension(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_modifierExtension(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_name(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_page(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_id(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.id"
+    }
+    var childQuestions = [];    serializeImplementationGuide_package_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_id_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.package.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_extension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_name(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.name");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.name"
+    }
+    var childQuestions = [];    serializeImplementationGuide_package_name_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_name_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.package.name.value",
+      "text":"Title of the item"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.name.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item",
+      "title":"An item in the section / package"
+    }
+    var childGroups = [];    serializeImplementationGuide_package_item_id(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_extension(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_modifierExtension(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_name(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_content(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_example(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_id(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.id"
+    }
+    var childQuestions = [];    serializeImplementationGuide_package_item_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_id_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.package.item.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_extension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_name(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.name");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.name"
+    }
+    var childQuestions = [];    serializeImplementationGuide_package_item_name_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_name_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.package.item.name.value",
+      "text":"Title of the package"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.name.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_content(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.content");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.content"
+    }
+    var childQuestions = [];    serializeImplementationGuide_package_item_content_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_content_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.package.item.content.value",
+      "text":"StructureDefinition, ConformanceStatement, ValueSet, DataElement etc"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.content.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.example",
+      "title":"An example (If Item is StructureDefinition)"
+    }
+    var childGroups = [];    serializeImplementationGuide_package_item_example_id(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_example_extension(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_example_modifierExtension(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_example_name(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_example_target(groupNodes[i], childGroups);
+    serializeImplementationGuide_package_item_example_description(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_id(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.example.id"
+    }
+    var childQuestions = [];    serializeImplementationGuide_package_item_example_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_id_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.package.item.example.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.example.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_extension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.example.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.example.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_name(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.name");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.example.name"
+    }
+    var childQuestions = [];    serializeImplementationGuide_package_item_example_name_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_name_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.package.item.example.name.value",
+      "text":"Title of the example"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.example.name.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_target(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.target");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.example.target"
+    }
+    var childQuestions = [];    serializeImplementationGuide_package_item_example_target_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_target_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.package.item.example.target.value",
+      "text":"Example for a StructureDefinition"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.example.target.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_description(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.item.example.description");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.item.example.description"
+    }
+    var childQuestions = [];    serializeImplementationGuide_package_item_example_description_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_item_example_description_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.package.item.example.description.value",
+      "text":"Explanatory Text"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.package.item.example.description.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_package_page(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.package.page");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.package.page",
+      "title":"Page in the Implementation Guide"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_default(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.default",
+      "title":"Applies when no explicit profile applied"
+    }
+    var childGroups = [];    serializeImplementationGuide_default_id(groupNodes[i], childGroups);
+    serializeImplementationGuide_default_extension(groupNodes[i], childGroups);
+    serializeImplementationGuide_default_modifierExtension(groupNodes[i], childGroups);
+    serializeImplementationGuide_default_type(groupNodes[i], childGroups);
+    serializeImplementationGuide_default_profile(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_default_id(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.default.id"
+    }
+    var childQuestions = [];    serializeImplementationGuide_default_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_default_id_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.default.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.default.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_default_extension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.default.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_default_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.default.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_default_type(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.type");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.default.type"
+    }
+    var childQuestions = [];    serializeImplementationGuide_default_type_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_default_type_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.default.type.value",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.default.type.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeImplementationGuide_default_profile(node, groups) {
+  var groupNodes = findDiv(node, "ImplementationGuide.default.profile");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ImplementationGuide.default.profile"
+    }
+    var childQuestions = [];    serializeImplementationGuide_default_profile_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeImplementationGuide_default_profile_value(node, answers) {
+  var question = {
+      "linkId":"ImplementationGuide.default.profile.value",
+      "text":"StructureDefinition that applies by default"
+    }
+  var answerNodes = findAnswers(node, "ImplementationGuide.default.profile.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+function validateQuestionnaire() {
+  return validateImplementationGuide(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function serializeQuestionnaire() {
+  var rootGroup = serializeImplementationGuide(document.getElementById("div-cnt"));
+  if (rootGroup.length == 0)
+    delete answers.group
+  else
+    answers.group = rootGroup;
+  return answers;
+} --></script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/json2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/statuspage.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jtip.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jcookie.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js" type="text/javascript"> </script>
+      <script type="text/javascript">  <!-- var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>"; --></script>
+      <script type="text/javascript">  <!-- var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+        && this.style.display != "none";
+  });
+}
+
+function setAddFocus(node, linkId) {
+  $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+  }).last().next(":input").focus();
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  serializeQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    serializeQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+} --></script>
+      <script type="text/javascript">  <!-- var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+} --></script>
+      <script type="text/javascript">  <!-- var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+} --></script>
+      <style type="null">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript">  <!-- //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      } --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+<div id="div-cnt">
+         <h3><span class="sectioncount">6.16.6.1<a name="6.16.6.1"> </a></span> A set of rules about how FHIR is used <a href="implementationguide.questionnaire.html#6.16.6.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e17">
+            <span style="display:none">ImplementationGuide</span>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e35.1">
+               <span style="display:none">ImplementationGuide.id</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.id.value</span> Logical id of this artifact</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.id[1]ImplementationGuide.id.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e35.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.id</span>
+            <span style="display:none">1</span>
+            <p>Metadata about the resource</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e73.1">
+               <span style="display:none">ImplementationGuide.meta</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e73.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.meta</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e92.1">
+               <span style="display:none">ImplementationGuide.implicitRules</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.implicitRules[1]ImplementationGuide.implicitRules.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e92.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.implicitRules</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e130.1">
+               <span style="display:none">ImplementationGuide.language</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e130.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e168.1">
+               <span style="display:none">ImplementationGuide.text</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e168.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e188.1">
+               <span style="display:none">ImplementationGuide.contained</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e188.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.contained</span>
+            <span style="display:none">1</span>
+            <p>Additional Content defined by implementations</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e207.1">
+               <span style="display:none">ImplementationGuide.extension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e207.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.extension</span>
+            <span style="display:none">1</span>
+            <p>Extensions that cannot be ignored</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e226.1">
+               <span style="display:none">ImplementationGuide.modifierExtension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e226.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.modifierExtension</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e245.1">
+               <span style="display:none">ImplementationGuide.url</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.url.value</span> Literal URL used to reference this Implementation Guide</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.url[1]ImplementationGuide.url.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e245.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.url</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e283.1">
+               <span style="display:none">ImplementationGuide.version</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.version.value</span> Logical id for this version of the Implementation Guide</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.version[1]ImplementationGuide.version.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e283.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.version</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e321.1">
+               <span style="display:none">ImplementationGuide.name</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.name.value</span> Informal name for this Implementation Guide</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.name[1]ImplementationGuide.name.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e321.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.name</span>
+            <span style="display:none">1</span>
+            <p>The implementation guide is intended to support these contexts</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e360.1">
+               <span style="display:none">ImplementationGuide.useContext</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.useContext.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.useContext.text</span> text:</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.useContext[1]ImplementationGuide.useContext.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e360.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.useContext</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e416.1">
+               <span style="display:none">ImplementationGuide.publisher</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.publisher.value</span> Name of the publisher (Organization or individual)</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.publisher[1]ImplementationGuide.publisher.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e416.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.publisher</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">6.16.6.1.1<a name="6.16.6.1.1"> </a></span> Contact details of the publisher <a href="implementationguide.questionnaire.html#6.16.6.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e454.1">
+               <span style="display:none">ImplementationGuide.contact</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e472.1.1">
+                  <span style="display:none">ImplementationGuide.contact.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.contact.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:ImplementationGuide[1]ImplementationGuide.contact[1]ImplementationGuide.contact.id[1]ImplementationGuide.contact.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e472.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.contact.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e510.1.1">
+                  <span style="display:none">ImplementationGuide.contact.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e510.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.contact.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e529.1.1">
+                  <span style="display:none">ImplementationGuide.contact.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e529.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.contact.modifierExtension</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e548.1.1">
+                  <span style="display:none">ImplementationGuide.contact.name</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.contact.name.value</span> Name of a individual to contact</td>
+                           <td>
+                              <input name="Path:ImplementationGuide[1]ImplementationGuide.contact[1]ImplementationGuide.contact.name[1]ImplementationGuide.contact.name.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e548.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.contact.name</span>
+               <span style="display:none">1</span>
+               <p>Contact details for individual or publisher</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e586.1.1">
+                  <span style="display:none">ImplementationGuide.contact.telecom</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.contact.telecom.system</span> type:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.contact.telecom.value</span> value:</td>
+                           <td>
+                              <input name="Path:ImplementationGuide[1]ImplementationGuide.contact[1]ImplementationGuide.contact.telecom[1]ImplementationGuide.contact.telecom.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.contact.telecom.use</span> use:</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e586.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.contact.telecom</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e454.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.contact</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e659.1">
+               <span style="display:none">ImplementationGuide.description</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.description.value</span> Natural language description of the Implementation Guide</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.description[1]ImplementationGuide.description.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e659.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.description</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e697.1">
+               <span style="display:none">ImplementationGuide.copyright</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.copyright.value</span> Use and/or Publishing restrictions</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.copyright[1]ImplementationGuide.copyright.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e697.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.copyright</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e735.1">
+               <span style="display:none">ImplementationGuide.code</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.code.value</span> Assist with indexing and finding</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e735.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.code</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e774.1">
+               <span style="display:none">ImplementationGuide.status</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.status.value</span> status</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e774.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.status</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e812.1">
+               <span style="display:none">ImplementationGuide.experimental</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.experimental.value</span> If for testing purposes, not real usage</td>
+                        <td>
+                           <select name="Path:ImplementationGuide[1]ImplementationGuide.experimental[1]">
+                              <option value="true">Yes</option>
+                              <option value="false">No</option>
+                           </select>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e812.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.experimental</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e850.1">
+               <span style="display:none">ImplementationGuide.date</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.date.value</span> Date for this version of the Implementation Guide</td>
+                        <td>
+                           <input onblur="checkDateTime(this)" maxlength="26" name="Path:ImplementationGuide[1]ImplementationGuide.date[1]ImplementationGuide.date.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e850.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.date</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e888.1">
+               <span style="display:none">ImplementationGuide.fhirVersion</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ImplementationGuide.fhirVersion.value</span> FHIR Version this Implementation Guide targets</td>
+                        <td>
+                           <input name="Path:ImplementationGuide[1]ImplementationGuide.fhirVersion[1]ImplementationGuide.fhirVersion.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e888.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.fhirVersion</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">6.16.6.1.2<a name="6.16.6.1.2"> </a></span> Page in the Implementation Guide <a href="implementationguide.questionnaire.html#6.16.6.1.2" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e926.1">
+               <span style="display:none">ImplementationGuide.page</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e944.1.1">
+                  <span style="display:none">ImplementationGuide.page.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.page.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:ImplementationGuide[1]ImplementationGuide.page[1]ImplementationGuide.page.id[1]ImplementationGuide.page.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e944.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.page.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e982.1.1">
+                  <span style="display:none">ImplementationGuide.page.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e982.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.page.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1001.1.1">
+                  <span style="display:none">ImplementationGuide.page.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1001.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.page.modifierExtension</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1020.1.1">
+                  <span style="display:none">ImplementationGuide.page.source</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.page.source.value</span> Source for the page</td>
+                           <td>
+                              <input name="Path:ImplementationGuide[1]ImplementationGuide.page[1]ImplementationGuide.page.source[1]ImplementationGuide.page.source.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1020.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.page.source</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1058.1.1">
+                  <span style="display:none">ImplementationGuide.page.purpose</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.page.purpose.value</span> purpose</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1058.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.page.purpose</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e926.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.page</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">6.16.6.1.3<a name="6.16.6.1.3"> </a></span> A section in the IG <a href="implementationguide.questionnaire.html#6.16.6.1.3" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1097.1">
+               <span style="display:none">ImplementationGuide.package</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1115.1.1">
+                  <span style="display:none">ImplementationGuide.package.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.package.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:ImplementationGuide[1]ImplementationGuide.package[1]ImplementationGuide.package.id[1]ImplementationGuide.package.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1115.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.package.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1153.1.1">
+                  <span style="display:none">ImplementationGuide.package.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1153.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.package.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1172.1.1">
+                  <span style="display:none">ImplementationGuide.package.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1172.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.package.modifierExtension</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1191.1.1">
+                  <span style="display:none">ImplementationGuide.package.name</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.package.name.value</span> Title of the item</td>
+                           <td>
+                              <input name="Path:ImplementationGuide[1]ImplementationGuide.package[1]ImplementationGuide.package.name[1]ImplementationGuide.package.name.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1191.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.package.name</span>
+               <span style="display:none">1</span>
+               <h5><span class="sectioncount">6.16.6.1.3.1<a name="6.16.6.1.3.1"> </a></span> An item in the section / package <a href="implementationguide.questionnaire.html#6.16.6.1.3.1" title="link to here" class="self-link"><img src="target.png"/></a></h5>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1229.1.1">
+                  <span style="display:none">ImplementationGuide.package.item</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <br/>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1247.1.1.1">
+                     <span style="display:none">ImplementationGuide.package.item.id</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">ImplementationGuide.package.item.id.value</span> xml:id (or equivalent in JSON)</td>
+                              <td>
+                                 <input name="Path:ImplementationGuide[1]ImplementationGuide.package[1]ImplementationGuide.package.item[1]ImplementationGuide.package.item.id[1]ImplementationGuide.package.item.id.value[1]" type="text"/>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1247.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ImplementationGuide.package.item.id</span>
+                  <span style="display:none">1</span>
+                  <p>Additional Content defined by implementations</p>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1285.1.1.1">
+                     <span style="display:none">ImplementationGuide.package.item.extension</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1285.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ImplementationGuide.package.item.extension</span>
+                  <span style="display:none">1</span>
+                  <p>Extensions that cannot be ignored</p>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1304.1.1.1">
+                     <span style="display:none">ImplementationGuide.package.item.modifierExtension</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1304.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ImplementationGuide.package.item.modifierExtension</span>
+                  <span style="display:none">1</span>
+                  <br/>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1323.1.1.1">
+                     <span style="display:none">ImplementationGuide.package.item.name</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">ImplementationGuide.package.item.name.value</span> Title of the package</td>
+                              <td>
+                                 <input name="Path:ImplementationGuide[1]ImplementationGuide.package[1]ImplementationGuide.package.item[1]ImplementationGuide.package.item.name[1]ImplementationGuide.package.item.name.value[1]" type="text"/>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1323.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ImplementationGuide.package.item.name</span>
+                  <span style="display:none">1</span>
+                  <br/>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1361.1.1.1">
+                     <span style="display:none">ImplementationGuide.package.item.content</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">ImplementationGuide.package.item.content.value</span> StructureDefinition, ConformanceStatement, ValueSet, DataElement etc</td>
+                              <td>
+                                 <input tabindex="text" name="Path:ImplementationGuide[1]ImplementationGuide.package[1]ImplementationGuide.package.item[1]ImplementationGuide.package.item.content[1]ImplementationGuide.package.item.content.value[1]"/>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1361.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ImplementationGuide.package.item.content</span>
+                  <span style="display:none">1</span>
+                  <h6><span class="sectioncount">6.16.6.1.3.1.1<a name="6.16.6.1.3.1.1"> </a></span> An example (If Item is StructureDefinition) <a href="implementationguide.questionnaire.html#6.16.6.1.3.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h6>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1405.1.1.1">
+                     <span style="display:none">ImplementationGuide.package.item.example</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <br/>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1423.1.1.1.1">
+                        <span style="display:none">ImplementationGuide.package.item.example.id</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align:top;">
+                                    <span style="display:none;">ImplementationGuide.package.item.example.id.value</span> xml:id (or equivalent in JSON)</td>
+                                 <td>
+                                    <input name="Path:ImplementationGuide[1]ImplementationGuide.package[1]ImplementationGuide.package.item[1]ImplementationGuide.package.item.example[1]ImplementationGuide.package.item.example.id[1]ImplementationGuide.package.item.example.id.value[1]" type="text"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1423.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ImplementationGuide.package.item.example.id</span>
+                     <span style="display:none">1</span>
+                     <p>Additional Content defined by implementations</p>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1461.1.1.1.1">
+                        <span style="display:none">ImplementationGuide.package.item.example.extension</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1461.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ImplementationGuide.package.item.example.extension</span>
+                     <span style="display:none">1</span>
+                     <p>Extensions that cannot be ignored</p>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1480.1.1.1.1">
+                        <span style="display:none">ImplementationGuide.package.item.example.modifierExtension</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1480.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ImplementationGuide.package.item.example.modifierExtension</span>
+                     <span style="display:none">1</span>
+                     <br/>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1499.1.1.1.1">
+                        <span style="display:none">ImplementationGuide.package.item.example.name</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align:top;">
+                                    <span style="display:none;">ImplementationGuide.package.item.example.name.value</span> Title of the example</td>
+                                 <td>
+                                    <input name="Path:ImplementationGuide[1]ImplementationGuide.package[1]ImplementationGuide.package.item[1]ImplementationGuide.package.item.example[1]ImplementationGuide.package.item.example.name[1]ImplementationGuide.package.item.example.name.value[1]" type="text"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1499.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ImplementationGuide.package.item.example.name</span>
+                     <span style="display:none">1</span>
+                     <br/>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1537.1.1.1.1">
+                        <span style="display:none">ImplementationGuide.package.item.example.target</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align:top;">
+                                    <span style="display:none;">ImplementationGuide.package.item.example.target.value</span> Example for a StructureDefinition</td>
+                                 <td>
+                                    <input tabindex="text" name="Path:ImplementationGuide[1]ImplementationGuide.package[1]ImplementationGuide.package.item[1]ImplementationGuide.package.item.example[1]ImplementationGuide.package.item.example.target[1]ImplementationGuide.package.item.example.target.value[1]"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1537.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ImplementationGuide.package.item.example.target</span>
+                     <span style="display:none">1</span>
+                     <br/>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1581.1.1.1.1">
+                        <span style="display:none">ImplementationGuide.package.item.example.description</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align:top;">
+                                    <span style="display:none;">ImplementationGuide.package.item.example.description.value</span> Explanatory Text</td>
+                                 <td>
+                                    <input name="Path:ImplementationGuide[1]ImplementationGuide.package[1]ImplementationGuide.package.item[1]ImplementationGuide.package.item.example[1]ImplementationGuide.package.item.example.description[1]ImplementationGuide.package.item.example.description.value[1]" type="text"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1581.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ImplementationGuide.package.item.example.description</span>
+                     <span style="display:none">1</span>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1405.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ImplementationGuide.package.item.example</span>
+                  <span style="display:none">1</span>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1229.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.package.item</span>
+               <span style="display:none">1</span>
+               <h5><span class="sectioncount">6.16.6.1.3.2<a name="6.16.6.1.3.2"> </a></span> Page in the Implementation Guide <a href="implementationguide.questionnaire.html#6.16.6.1.3.2" title="link to here" class="self-link"><img src="target.png"/></a></h5>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1622.1.1">
+                  <span style="display:none">ImplementationGuide.package.page</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1622.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.package.page</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1097.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.package</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">6.16.6.1.4<a name="6.16.6.1.4"> </a></span> Applies when no explicit profile applied <a href="implementationguide.questionnaire.html#6.16.6.1.4" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1643.1">
+               <span style="display:none">ImplementationGuide.default</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1661.1.1">
+                  <span style="display:none">ImplementationGuide.default.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.default.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:ImplementationGuide[1]ImplementationGuide.default[1]ImplementationGuide.default.id[1]ImplementationGuide.default.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1661.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.default.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1699.1.1">
+                  <span style="display:none">ImplementationGuide.default.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1699.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.default.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1718.1.1">
+                  <span style="display:none">ImplementationGuide.default.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1718.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.default.modifierExtension</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1737.1.1">
+                  <span style="display:none">ImplementationGuide.default.type</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.default.type.value</span> type</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1737.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.default.type</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1775.1.1">
+                  <span style="display:none">ImplementationGuide.default.profile</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ImplementationGuide.default.profile.value</span> StructureDefinition that applies by default</td>
+                           <td>
+                              <input tabindex="text" name="Path:ImplementationGuide[1]ImplementationGuide.default[1]ImplementationGuide.default.profile[1]ImplementationGuide.default.profile.value[1]"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1775.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ImplementationGuide.default.profile</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1643.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ImplementationGuide.default</span>
+            <span style="display:none">1</span>
+         </div>
+         <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e17', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+         <span style="display:none">ImplementationGuide</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+</body>
+</html>
+
+<p>
+  <!-- spacer -->
+ 
+</p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fimplementationguide.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fimplementationguide.questionnaire.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

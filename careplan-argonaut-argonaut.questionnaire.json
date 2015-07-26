@@ -1,0 +1,2246 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "qs1",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs2",
+      "name": "Type options for CarePlan.author",
+      "description": "Type options for CarePlan.author",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:7378dcef-d4b1-4438-9790-a91c65b756f9",
+        "timestamp": "2015-07-24T17:33:38-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Patient",
+            "display": "Patient"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Practitioner",
+            "display": "Practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "RelatedPerson",
+            "display": "RelatedPerson"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Organization",
+            "display": "Organization"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs3",
+      "name": "Type options for CarePlan.participant.member",
+      "description": "Type options for CarePlan.participant.member",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:26adbf0f-97ba-4be9-8347-9a6c3e89ef3e",
+        "timestamp": "2015-07-24T17:33:38-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Practitioner",
+            "display": "Practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "RelatedPerson",
+            "display": "RelatedPerson"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Patient",
+            "display": "Patient"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Organization",
+            "display": "Organization"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs4",
+      "name": "Type options for CarePlan.activity.reference",
+      "description": "Type options for CarePlan.activity.reference",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:7067c1f2-18c0-4e77-8a8c-c1c4617d2a98",
+        "timestamp": "2015-07-24T17:33:38-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Appointment",
+            "display": "Appointment"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "CommunicationRequest",
+            "display": "CommunicationRequest"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "DeviceUseRequest",
+            "display": "DeviceUseRequest"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "DiagnosticOrder",
+            "display": "DiagnosticOrder"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "MedicationPrescription",
+            "display": "MedicationPrescription"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "NutritionOrder",
+            "display": "NutritionOrder"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Order",
+            "display": "Order"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "ProcedureRequest",
+            "display": "ProcedureRequest"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "ProcessRequest",
+            "display": "ProcessRequest"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "ReferralRequest",
+            "display": "ReferralRequest"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Supply",
+            "display": "Supply"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "VisionPrescription",
+            "display": "VisionPrescription"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs5",
+      "name": "Type options for CarePlan.activity.detail.reason[x]",
+      "description": "Type options for CarePlan.activity.detail.reason[x]",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:f779c43f-d7b2-47bd-8629-1c49bc11e055",
+        "timestamp": "2015-07-24T17:33:38-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "CodeableConcept",
+            "display": "CodeableConcept"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Condition",
+            "display": "Condition"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs6",
+      "name": "Type options for CarePlan.activity.detail.scheduled[x]",
+      "description": "Type options for CarePlan.activity.detail.scheduled[x]",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:70ee19cb-adb0-42df-99ce-1b9097033c6d",
+        "timestamp": "2015-07-24T17:33:38-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Timing",
+            "display": "Timing"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Period",
+            "display": "Period"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "string",
+            "display": "string"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs7",
+      "name": "Type options for CarePlan.activity.detail.performer",
+      "description": "Type options for CarePlan.activity.detail.performer",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:8e92d2cc-bb40-451d-a5d0-0c9d5c7dfbca",
+        "timestamp": "2015-07-24T17:33:38-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Practitioner",
+            "display": "Practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Organization",
+            "display": "Organization"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "RelatedPerson",
+            "display": "RelatedPerson"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Patient",
+            "display": "Patient"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs8",
+      "name": "Type options for CarePlan.activity.detail.product",
+      "description": "Type options for CarePlan.activity.detail.product",
+      "status": "active",
+      "expansion": {
+        "identifier": "urn:uuid:18dfc29f-44bb-4caa-85aa-3e91a1eb8248",
+        "timestamp": "2015-07-24T17:33:38-04:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Medication",
+            "display": "Medication"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Substance",
+            "display": "Substance"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "draft",
+  "date": "2014-01-31T00:00:00-05:00",
+  "publisher": "Argonaut Project",
+  "group": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+        "valueString": "Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions."
+      }
+    ],
+    "linkId": "CarePlan",
+    "title": "Healthcare plan for patient",
+    "required": false,
+    "repeats": true,
+    "group": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "CarePlan.id",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.id.value",
+            "text": "Logical id of this artifact",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."
+          }
+        ],
+        "linkId": "CarePlan.meta",
+        "text": "Metadata about the resource",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "uri"
+          }
+        ],
+        "linkId": "CarePlan.implicitRules",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.implicitRules.value",
+            "text": "A set of rules under which this content was created",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The base language in which the resource is written."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "CarePlan.language",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.language.value",
+            "text": "language",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."
+          }
+        ],
+        "linkId": "CarePlan.text",
+        "text": "Text summary of the resource, for human interpretation",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."
+          }
+        ],
+        "linkId": "CarePlan.contained",
+        "text": "Contained, inline Resources",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+          }
+        ],
+        "linkId": "CarePlan.extension",
+        "text": "Additional Content defined by implementations",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+          }
+        ],
+        "linkId": "CarePlan.modifierExtension",
+        "text": "Extensions that cannot be ignored",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "This records identifiers associated with this care plan that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Identifier"
+          }
+        ],
+        "linkId": "CarePlan.identifier",
+        "text": "External Ids for this plan",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.identifier.label",
+            "text": "label:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "CarePlan.identifier.system",
+            "text": "system:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "CarePlan.identifier.value",
+            "text": "value:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifies the patient/subject whose intended care is described by the plan."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "CarePlan.patient",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Patient?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "CarePlan.patient.value",
+            "text": "Who care plan is for",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Indicates whether the plan is currently being acted upon, represents future intentions or is now just historical record."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "CarePlan.status",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.status.value",
+            "text": "status",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Indicates when the plan did (or is intended to) come into effect and end."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Period"
+          }
+        ],
+        "linkId": "CarePlan.period",
+        "text": "Time period plan covers",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.period.low",
+            "text": "start:",
+            "type": "dateTime",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "CarePlan.period.end",
+            "text": "end:",
+            "type": "dateTime",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifies the individual(s) or ogranization who is responsible for the content of the care plan."
+          }
+        ],
+        "linkId": "CarePlan.author",
+        "text": "Who is responsible for plan",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.author._type",
+            "text": "type",
+            "type": "choice",
+            "required": false,
+            "repeats": false,
+            "options": {
+              "reference": "#vs2"
+            },
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "CarePlan.author._Patient",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Patient?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "CarePlan.author._Patient.value",
+                    "text": "Patient",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "CarePlan.author._Practitioner",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "CarePlan.author._Practitioner.value",
+                    "text": "Practitioner",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "CarePlan.author._RelatedPerson",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/RelatedPerson?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "CarePlan.author._RelatedPerson.value",
+                    "text": "RelatedPerson",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "CarePlan.author._Organization",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Organization?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "CarePlan.author._Organization.value",
+                    "text": "Organization",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifies the most recent date on which the plan has been revised."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "datetime"
+          }
+        ],
+        "linkId": "CarePlan.modified",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.modified.value",
+            "text": "When last updated",
+            "type": "dateTime",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifies what \"kind\" of plan this is to support differentiation between multiple co-existing plans.  E.g. \"Home health\", \"psychiatric\", \"asthma\", \"disease management\", etc."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "CarePlan.category",
+        "text": "Type of plan",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.category.coding",
+            "text": "code:",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "CarePlan.category.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifies the conditions/problems/concerns/diagnoses/etc. whose management and/or mitigation are handled by this plan."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "CarePlan.concern",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Condition?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "CarePlan.concern.value",
+            "text": "Health issues this plan addresses",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifies portions of the patient's record that specifically influenced the formation of the plan.  These might include co-morbidities, recent procedures, limitations, recent assessments, etc."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "CarePlan.support",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Resource?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "CarePlan.support.value",
+            "text": "Information considered as part of plan",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifies all people and organizations who are expected to be involved in the care envisioned by this plan."
+          }
+        ],
+        "linkId": "CarePlan.participant",
+        "title": "Who's involved in plan?",
+        "required": false,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "CarePlan.participant.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "CarePlan.participant.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+              }
+            ],
+            "linkId": "CarePlan.participant.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+              }
+            ],
+            "linkId": "CarePlan.participant.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Indicates specific responsibility of an individual within the care plan.  E.g. \"Primary physician\", \"Team coordinator\", \"Caregiver\", etc."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "CodeableConcept"
+              }
+            ],
+            "linkId": "CarePlan.participant.role",
+            "text": "Type of involvement",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "CarePlan.participant.role.coding",
+                "text": "code:",
+                "type": "choice",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "CarePlan.participant.role.text",
+                "text": "text:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The specific person or organization who is participating/expected to participate in the care plan."
+              }
+            ],
+            "linkId": "CarePlan.participant.member",
+            "text": "Who is involved",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "CarePlan.participant.member._type",
+                "text": "type",
+                "type": "choice",
+                "required": false,
+                "repeats": false,
+                "options": {
+                  "reference": "#vs3"
+                },
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.participant.member._Practitioner",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.participant.member._Practitioner.value",
+                        "text": "Practitioner",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.participant.member._RelatedPerson",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/RelatedPerson?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.participant.member._RelatedPerson.value",
+                        "text": "RelatedPerson",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.participant.member._Patient",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Patient?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.participant.member._Patient.value",
+                        "text": "Patient",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.participant.member._Organization",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Organization?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.participant.member._Organization.value",
+                        "text": "Organization",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Describes the intended objective(s) of carrying out the Care Plan."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "CarePlan.goal",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Goal?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "CarePlan.goal.value",
+            "text": "Desired outcome of plan",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifies a planned action to occur as part of the plan.  For example, a medication to be used, lab tests to perform, self-monitoring, education, etc."
+          }
+        ],
+        "linkId": "CarePlan.activity",
+        "title": "Action to occur as part of plan",
+        "required": false,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "CarePlan.activity.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "CarePlan.activity.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+              }
+            ],
+            "linkId": "CarePlan.activity.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+              }
+            ],
+            "linkId": "CarePlan.activity.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Resources that describe follow-on actions resulting from the plan, such as drug prescriptions, encounter records, appointments, etc."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "Reference"
+              }
+            ],
+            "linkId": "CarePlan.activity.actionResulting",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                    "valueString": "/Resource?subject=$subj&patient=$subj&encounter=$encounter"
+                  }
+                ],
+                "linkId": "CarePlan.activity.actionResulting.value",
+                "text": "Appointments, orders, etc.",
+                "type": "reference",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Notes about the execution of the activity."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "CarePlan.activity.notes",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "CarePlan.activity.notes.value",
+                "text": "Comments about the activity",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The details of the proposed activity represented in a specific resource."
+              }
+            ],
+            "linkId": "CarePlan.activity.reference",
+            "text": "Activity details defined in specific resource",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "CarePlan.activity.reference._type",
+                "text": "type",
+                "type": "choice",
+                "required": false,
+                "repeats": false,
+                "options": {
+                  "reference": "#vs4"
+                },
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._Appointment",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Appointment?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._Appointment.value",
+                        "text": "Appointment",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._CommunicationRequest",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/CommunicationRequest?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._CommunicationRequest.value",
+                        "text": "CommunicationRequest",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._DeviceUseRequest",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/DeviceUseRequest?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._DeviceUseRequest.value",
+                        "text": "DeviceUseRequest",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._DiagnosticOrder",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/DiagnosticOrder?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._DiagnosticOrder.value",
+                        "text": "DiagnosticOrder",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._MedicationPrescription",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/MedicationPrescription?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._MedicationPrescription.value",
+                        "text": "MedicationPrescription",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._NutritionOrder",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/NutritionOrder?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._NutritionOrder.value",
+                        "text": "NutritionOrder",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._Order",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Order?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._Order.value",
+                        "text": "Order",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._ProcedureRequest",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/ProcedureRequest?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._ProcedureRequest.value",
+                        "text": "ProcedureRequest",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._ProcessRequest",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/ProcessRequest?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._ProcessRequest.value",
+                        "text": "ProcessRequest",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._ReferralRequest",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/ReferralRequest?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._ReferralRequest.value",
+                        "text": "ReferralRequest",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._Supply",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/Supply?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._Supply.value",
+                        "text": "Supply",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Reference"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.reference._VisionPrescription",
+                    "question": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                            "valueString": "/VisionPrescription?subject=$subj&patient=$subj&encounter=$encounter"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.reference._VisionPrescription.value",
+                        "text": "VisionPrescription",
+                        "type": "reference",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "A simple summary of a planned activity suitable for a general care plan system (e.g. form driven) that doesn't know about specific resources such as procedure etc."
+              }
+            ],
+            "linkId": "CarePlan.activity.detail",
+            "title": "In-line definition of activity",
+            "required": false,
+            "repeats": false,
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "unique id for the element within a resource (for internal references)."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.id",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.id.value",
+                    "text": "xml:id (or equivalent in JSON)",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.extension",
+                "text": "Additional Content defined by implementations",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.modifierExtension",
+                "text": "Extensions that cannot be ignored",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "High-level categorization of the type of activity in a care plan."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "code"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.category",
+                "required": true,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.category.value",
+                    "text": "category",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Detailed description of the type of planned activity.  E.g. What lab test, what procedure, what kind of encounter."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "CodeableConcept"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.code",
+                "text": "Detail type of activity",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.code.coding",
+                    "text": "code:",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.code.text",
+                    "text": "text:",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Provides the health condition(s) or other rationale that drove the inclusion of this particular activity as part of the plan."
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.reason[x]",
+                "text": "Why activity should be done",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.reason[x]._type",
+                    "text": "type",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false,
+                    "options": {
+                      "reference": "#vs5"
+                    },
+                    "group": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "CodeableConcept"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.reason[x]._CodeableConcept",
+                        "text": "CodeableConcept",
+                        "question": [
+                          {
+                            "linkId": "CarePlan.activity.detail.reason[x]._CodeableConcept.coding",
+                            "text": "code:",
+                            "type": "choice",
+                            "required": false,
+                            "repeats": false
+                          },
+                          {
+                            "linkId": "CarePlan.activity.detail.reason[x]._CodeableConcept.text",
+                            "text": "text:",
+                            "type": "string",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "Reference"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.reason[x]._Condition",
+                        "question": [
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/Condition?subject=$subj&patient=$subj&encounter=$encounter"
+                              }
+                            ],
+                            "linkId": "CarePlan.activity.detail.reason[x]._Condition.value",
+                            "text": "Condition",
+                            "type": "reference",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Internal reference that identifies the goals that this activity is intended to contribute towards meeting."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.goal",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Goal?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.detail.goal.value",
+                    "text": "Goals this activity relates to",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Identifies what progress is being made for the specific activity."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "code"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.status",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.status.value",
+                    "text": "status",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Provides reason why the activity isn't yet started, is on hold, was cancelled, etc."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "CodeableConcept"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.statusReason",
+                "text": "Reason for current status",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.statusReason.coding",
+                    "text": "code:",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.statusReason.text",
+                    "text": "text:",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "If true, indicates that the described activity is one that must NOT be engaged in when following the plan."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "boolean"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.prohibited",
+                "required": true,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.prohibited.value",
+                    "text": "Do NOT do",
+                    "type": "boolean",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The period, timing or frequency upon which the described activity is to occur."
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.scheduled[x]",
+                "text": "When activity is to occur",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.scheduled[x]._type",
+                    "text": "type",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false,
+                    "options": {
+                      "reference": "#vs6"
+                    },
+                    "group": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "Schedule"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.scheduled[x]._Timing",
+                        "text": "Timing",
+                        "question": [
+                          {
+                            "linkId": "CarePlan.activity.detail.scheduled[x]._Timing.text",
+                            "text": "text:",
+                            "type": "string",
+                            "required": false,
+                            "repeats": false
+                          },
+                          {
+                            "linkId": "CarePlan.activity.detail.scheduled[x]._Timing.date",
+                            "text": "date:",
+                            "type": "dateTime",
+                            "required": false,
+                            "repeats": false
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/Patient?"
+                              },
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/Practitioner?"
+                              },
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/RelatedPerson?"
+                              }
+                            ],
+                            "linkId": "CarePlan.activity.detail.scheduled[x]._Timing.author",
+                            "text": "author:",
+                            "type": "reference",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "Period"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.scheduled[x]._Period",
+                        "text": "Period",
+                        "question": [
+                          {
+                            "linkId": "CarePlan.activity.detail.scheduled[x]._Period.low",
+                            "text": "start:",
+                            "type": "dateTime",
+                            "required": false,
+                            "repeats": false
+                          },
+                          {
+                            "linkId": "CarePlan.activity.detail.scheduled[x]._Period.end",
+                            "text": "end:",
+                            "type": "dateTime",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "string"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.scheduled[x]._string",
+                        "question": [
+                          {
+                            "linkId": "CarePlan.activity.detail.scheduled[x]._string.value",
+                            "text": "string",
+                            "type": "string",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Identifies the facility where the activity will occur.  E.g. home, hospital, specific clinic, etc."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.location",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Location?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "CarePlan.activity.detail.location.value",
+                    "text": "Where it should happen",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Identifies who's expected to be involved in the activity."
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.performer",
+                "text": "Who will be responsible?",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.performer._type",
+                    "text": "type",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false,
+                    "options": {
+                      "reference": "#vs7"
+                    },
+                    "group": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "Reference"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.performer._Practitioner",
+                        "question": [
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/Practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                              }
+                            ],
+                            "linkId": "CarePlan.activity.detail.performer._Practitioner.value",
+                            "text": "Practitioner",
+                            "type": "reference",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "Reference"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.performer._Organization",
+                        "question": [
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/Organization?subject=$subj&patient=$subj&encounter=$encounter"
+                              }
+                            ],
+                            "linkId": "CarePlan.activity.detail.performer._Organization.value",
+                            "text": "Organization",
+                            "type": "reference",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "Reference"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.performer._RelatedPerson",
+                        "question": [
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/RelatedPerson?subject=$subj&patient=$subj&encounter=$encounter"
+                              }
+                            ],
+                            "linkId": "CarePlan.activity.detail.performer._RelatedPerson.value",
+                            "text": "RelatedPerson",
+                            "type": "reference",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "Reference"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.performer._Patient",
+                        "question": [
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/Patient?subject=$subj&patient=$subj&encounter=$encounter"
+                              }
+                            ],
+                            "linkId": "CarePlan.activity.detail.performer._Patient.value",
+                            "text": "Patient",
+                            "type": "reference",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Identifies the food, drug or other product to be consumed or supplied in the activity."
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.product",
+                "text": "What is to be administered/supplied",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.product._type",
+                    "text": "type",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false,
+                    "options": {
+                      "reference": "#vs8"
+                    },
+                    "group": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "Reference"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.product._Medication",
+                        "question": [
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/Medication?subject=$subj&patient=$subj&encounter=$encounter"
+                              }
+                            ],
+                            "linkId": "CarePlan.activity.detail.product._Medication.value",
+                            "text": "Medication",
+                            "type": "reference",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "Reference"
+                          }
+                        ],
+                        "linkId": "CarePlan.activity.detail.product._Substance",
+                        "question": [
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                "valueString": "/Substance?subject=$subj&patient=$subj&encounter=$encounter"
+                              }
+                            ],
+                            "linkId": "CarePlan.activity.detail.product._Substance.value",
+                            "text": "Substance",
+                            "type": "reference",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Identifies the quantity expected to be consumed in a given day."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Quantity"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.dailyAmount",
+                "text": "How to consume/day?",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.dailyAmount.comparator",
+                    "text": "comp:",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.dailyAmount.value",
+                    "text": "value:",
+                    "type": "decimal",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.dailyAmount.units",
+                    "text": "units:",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.dailyAmount.code",
+                    "text": "coded units:",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.dailyAmount.system",
+                    "text": "units system:",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Identifies the quantity expected to be supplied, addministered or consumed by the subject."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Quantity"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.quantity",
+                "text": "How much to administer/supply/consume",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.quantity.comparator",
+                    "text": "comp:",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.quantity.value",
+                    "text": "value:",
+                    "type": "decimal",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.quantity.units",
+                    "text": "units:",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.quantity.code",
+                    "text": "coded units:",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  },
+                  {
+                    "linkId": "CarePlan.activity.detail.quantity.system",
+                    "text": "units system:",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "This provides a textual description of constraints on the intended activity occurrence, including relation to other activities.  It may also include objectives, pre-conditions and end-conditions.  Finally, it may convey specifics about the activity such as body site, method, route, etc."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "CarePlan.activity.detail.note",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "CarePlan.activity.detail.note.value",
+                    "text": "Extra info on activity occurrence",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "General notes about the care plan not covered elsewhere."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "CarePlan.notes",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "CarePlan.notes.value",
+            "text": "Comments about the plan",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      }
+    ]
+  }
+}

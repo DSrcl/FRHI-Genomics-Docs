@@ -1,0 +1,57 @@
+{
+  "resourceType": "Procedure",
+  "id": "example-implant",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example-implant</p><p><b>patient</b>: <a>Patient/example</a></p><p><b>status</b>: completed</p><p><b>type</b>: Implant Pacemaker <span>(Details : {SNOMED CT code '25267002' = 'Insertion of intracardiac pacemaker (procedure)', given as 'Insertion of intracardiac pacemaker (procedure)'})</span></p><p><b>indication</b>: Bradycardia <span>(Details )</span></p><h3>Performers</h3><table><tr><td>-</td><td><b>Person</b></td></tr><tr><td>*</td><td><a>Dr Cecil Surgeon</a></td></tr></table><p><b>performed</b>: Apr 5, 2015</p><p><b>followUp</b>: ROS 5 days  - 2013-04-10 <span>(Details )</span></p><p><b>notes</b>: Routine Appendectomy. Appendix was inflamed and in retro-caecal position</p><h3>Devices</h3><table><tr><td>-</td><td><b>Action</b></td><td><b>Manipulated</b></td></tr><tr><td>*</td><td>Implanted <span>(Details : {http://hl7.org/fhir/device-action code 'implanted' = 'Implanted)</span></td><td><a>Device/example-pacemaker</a></td></tr></table></div>"
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "status": "completed",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "25267002",
+        "display": "Insertion of intracardiac pacemaker (procedure)"
+      }
+    ],
+    "text": "Implant Pacemaker"
+  },
+  "indication": [
+    {
+      "text": "Bradycardia"
+    }
+  ],
+  "performer": [
+    {
+      "person": {
+        "reference": "Practitioner/example",
+        "display": "Dr Cecil Surgeon"
+      }
+    }
+  ],
+  "performedDateTime": "2015-04-05",
+  "followUp": [
+    {
+      "text": "ROS 5 days  - 2013-04-10"
+    }
+  ],
+  "notes": "Routine Appendectomy. Appendix was inflamed and in retro-caecal position",
+  "device": [
+    {
+      "action": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/device-action",
+            "code": "implanted"
+          }
+        ]
+      },
+      "manipulated": {
+        "reference": "Device/example-pacemaker"
+      }
+    }
+  ]
+}

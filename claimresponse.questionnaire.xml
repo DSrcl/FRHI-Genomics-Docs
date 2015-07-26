@@ -1,0 +1,1946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-07-24T17:31:16-04:00"/>
+  <publisher value="Health Level Seven International (Financial Management)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="This resource provides the adjudication details from the processing of a Claim resource."/>
+    </extension>
+    <linkId value="ClaimResponse"/>
+    <title value="Remittance resource"/>
+    <required value="false"/>
+    <repeats value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="ClaimResponse.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.id.value"/>
+        <text value="Logical id of this artifact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="ClaimResponse.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="ClaimResponse.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="ClaimResponse.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      </extension>
+      <linkId value="ClaimResponse.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      </extension>
+      <linkId value="ClaimResponse.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      </extension>
+      <linkId value="ClaimResponse.extension"/>
+      <text value="Additional Content defined by implementations"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      </extension>
+      <linkId value="ClaimResponse.modifierExtension"/>
+      <text value="Extensions that cannot be ignored"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The Response Business Identifier."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="ClaimResponse.identifier"/>
+      <text value="Response  number"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ClaimResponse.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ClaimResponse.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Original request resource referrence."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="ClaimResponse.request"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Claim?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="ClaimResponse.request.value"/>
+        <text value="Id of resource triggering adjudication"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The version of the style of resource contents. This should be mapped to the allowable profiles for this and supporting resources."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="ClaimResponse.ruleset"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.ruleset.value"/>
+        <text value="Resource version"/>
+        <type value="open-choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The style (standard) and version of the original material which was converted into this resource."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="ClaimResponse.originalRuleset"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.originalRuleset.value"/>
+        <text value="Original version"/>
+        <type value="open-choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The date when the enclosed suite of services were performed or completed."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="ClaimResponse.created"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.created.value"/>
+        <text value="Creation date"/>
+        <type value="dateTime"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The Insurer who produced this adjudicated response."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="ClaimResponse.organization"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="ClaimResponse.organization.value"/>
+        <text value="Insurer"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The practitioner who is responsible for the services rendered to the patient."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="ClaimResponse.requestProvider"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="ClaimResponse.requestProvider.value"/>
+        <text value="Responsible practitioner"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The organization which is responsible for the services rendered to the patient."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="ClaimResponse.requestOrganization"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="ClaimResponse.requestOrganization.value"/>
+        <text value="Responsible organization"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Transaction status: error, complete."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="ClaimResponse.outcome"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.outcome.value"/>
+        <text value="outcome"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A description of the status of the adjudication."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="ClaimResponse.disposition"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.disposition.value"/>
+        <text value="Disposition Message"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Party to be reimbursed: Subscriber, provider, other."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="ClaimResponse.payeeType"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.payeeType.value"/>
+        <text value="Party to be paid any benefits payable"/>
+        <type value="open-choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The first tier service adjudications for submitted services."/>
+      </extension>
+      <linkId value="ClaimResponse.item"/>
+      <title value="Line items"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ClaimResponse.item.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.item.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="ClaimResponse.item.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="ClaimResponse.item.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A service line number."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="ClaimResponse.item.sequenceLinkId"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.item.sequenceLinkId.value"/>
+          <text value="Service instance"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of note references to the notes provided below."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="ClaimResponse.item.noteNumber"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.item.noteNumber.value"/>
+          <text value="List of note numbers which apply"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The adjudications results."/>
+        </extension>
+        <linkId value="ClaimResponse.item.adjudication"/>
+        <title value="Adjudication details"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="ClaimResponse.item.adjudication.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.item.adjudication.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="ClaimResponse.item.adjudication.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="ClaimResponse.item.adjudication.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Coding"/>
+          </extension>
+          <linkId value="ClaimResponse.item.adjudication.code"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.item.adjudication.code.value"/>
+            <text value="Adjudication category such as co-pay, eligible, benefit, etc."/>
+            <type value="open-choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Monitory amount associated with the code."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Money"/>
+          </extension>
+          <linkId value="ClaimResponse.item.adjudication.amount"/>
+          <text value="Monetary amount"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.item.adjudication.amount.value"/>
+            <text value="value:"/>
+            <type value="decimal"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="ClaimResponse.item.adjudication.amount.currency"/>
+            <text value="currency:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A non-monetary value for example a percentage. Mutually exclusive to the amount element above."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="decimal"/>
+          </extension>
+          <linkId value="ClaimResponse.item.adjudication.value"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.item.adjudication.value.value"/>
+            <text value="Non-monitory value"/>
+            <type value="decimal"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The second tier service adjudications for submitted services."/>
+        </extension>
+        <linkId value="ClaimResponse.item.detail"/>
+        <title value="Detail line items"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="ClaimResponse.item.detail.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.item.detail.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="ClaimResponse.item.detail.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="ClaimResponse.item.detail.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A service line number."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="integer"/>
+          </extension>
+          <linkId value="ClaimResponse.item.detail.sequenceLinkId"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.item.detail.sequenceLinkId.value"/>
+            <text value="Service instance"/>
+            <type value="integer"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The adjudications results."/>
+          </extension>
+          <linkId value="ClaimResponse.item.detail.adjudication"/>
+          <title value="Detail adjudication"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.adjudication.id"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.item.detail.adjudication.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.adjudication.extension"/>
+            <text value="Additional Content defined by implementations"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.adjudication.modifierExtension"/>
+            <text value="Extensions that cannot be ignored"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Coding"/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.adjudication.code"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.item.detail.adjudication.code.value"/>
+              <text value="Adjudication category such as co-pay, eligible, benefit, etc."/>
+              <type value="open-choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Monitory amount associated with the code."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Money"/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.adjudication.amount"/>
+            <text value="Monetary amount"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.item.detail.adjudication.amount.value"/>
+              <text value="value:"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="ClaimResponse.item.detail.adjudication.amount.currency"/>
+              <text value="currency:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="A non-monetary value for example a percentage. Mutually exclusive to the amount element above."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="decimal"/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.adjudication.value"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.item.detail.adjudication.value.value"/>
+              <text value="Non-monitory value"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The third tier service adjudications for submitted services."/>
+          </extension>
+          <linkId value="ClaimResponse.item.detail.subDetail"/>
+          <title value="Subdetail line items"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.subDetail.id"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.item.detail.subDetail.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.subDetail.extension"/>
+            <text value="Additional Content defined by implementations"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.subDetail.modifierExtension"/>
+            <text value="Extensions that cannot be ignored"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="A service line number."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="integer"/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.subDetail.sequenceLinkId"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.item.detail.subDetail.sequenceLinkId.value"/>
+              <text value="Service instance"/>
+              <type value="integer"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The adjudications results."/>
+            </extension>
+            <linkId value="ClaimResponse.item.detail.subDetail.adjudication"/>
+            <title value="Subdetail adjudication"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="unique id for the element within a resource (for internal references)."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="string"/>
+              </extension>
+              <linkId value="ClaimResponse.item.detail.subDetail.adjudication.id"/>
+              <required value="false"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="ClaimResponse.item.detail.subDetail.adjudication.id.value"/>
+                <text value="xml:id (or equivalent in JSON)"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+              </extension>
+              <linkId value="ClaimResponse.item.detail.subDetail.adjudication.extension"/>
+              <text value="Additional Content defined by implementations"/>
+              <required value="false"/>
+              <repeats value="true"/>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+              </extension>
+              <linkId value="ClaimResponse.item.detail.subDetail.adjudication.modifierExtension"/>
+              <text value="Extensions that cannot be ignored"/>
+              <required value="false"/>
+              <repeats value="true"/>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="Coding"/>
+              </extension>
+              <linkId value="ClaimResponse.item.detail.subDetail.adjudication.code"/>
+              <required value="true"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="ClaimResponse.item.detail.subDetail.adjudication.code.value"/>
+                <text value="Adjudication category such as co-pay, eligible, benefit, etc."/>
+                <type value="open-choice"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="Monitory amount associated with the code."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="Money"/>
+              </extension>
+              <linkId value="ClaimResponse.item.detail.subDetail.adjudication.amount"/>
+              <text value="Monetary amount"/>
+              <required value="false"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="ClaimResponse.item.detail.subDetail.adjudication.amount.value"/>
+                <text value="value:"/>
+                <type value="decimal"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+              <question>
+                <linkId value="ClaimResponse.item.detail.subDetail.adjudication.amount.currency"/>
+                <text value="currency:"/>
+                <type value="string"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+            <group>
+              <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+                <valueString value="A non-monetary value for example a percentage. Mutually exclusive to the amount element above."/>
+              </extension>
+              <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+                <valueString value="decimal"/>
+              </extension>
+              <linkId value="ClaimResponse.item.detail.subDetail.adjudication.value"/>
+              <required value="false"/>
+              <repeats value="true"/>
+              <question>
+                <linkId value="ClaimResponse.item.detail.subDetail.adjudication.value.value"/>
+                <text value="Non-monitory value"/>
+                <type value="decimal"/>
+                <required value="false"/>
+                <repeats value="false"/>
+              </question>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The first tier service adjudications for payor added services."/>
+      </extension>
+      <linkId value="ClaimResponse.addItem"/>
+      <title value="Insurer added line items"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ClaimResponse.addItem.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.addItem.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="ClaimResponse.addItem.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="ClaimResponse.addItem.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="List of input service items which this service line is intended to replace."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="ClaimResponse.addItem.sequenceLinkId"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.addItem.sequenceLinkId.value"/>
+          <text value="Service instances"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A code to indicate the Professional Service or Product supplied."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="ClaimResponse.addItem.service"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.addItem.service.value"/>
+          <text value="Group, Service or Product"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The fee charged for the professional service or product.."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Money"/>
+        </extension>
+        <linkId value="ClaimResponse.addItem.fee"/>
+        <text value="Professional fee or Product charge"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.addItem.fee.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="ClaimResponse.addItem.fee.currency"/>
+          <text value="currency:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of note references to the notes provided below."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="ClaimResponse.addItem.noteNumberLinkId"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.addItem.noteNumberLinkId.value"/>
+          <text value="List of note numbers which apply"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The adjudications results."/>
+        </extension>
+        <linkId value="ClaimResponse.addItem.adjudication"/>
+        <title value="Added items adjudication"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.adjudication.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.addItem.adjudication.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.adjudication.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.adjudication.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Coding"/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.adjudication.code"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.addItem.adjudication.code.value"/>
+            <text value="Adjudication category such as co-pay, eligible, benefit, etc."/>
+            <type value="open-choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Monitory amount associated with the code."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Money"/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.adjudication.amount"/>
+          <text value="Monetary amount"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.addItem.adjudication.amount.value"/>
+            <text value="value:"/>
+            <type value="decimal"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="ClaimResponse.addItem.adjudication.amount.currency"/>
+            <text value="currency:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A non-monetary value for example a percentage. Mutually exclusive to the amount element above."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="decimal"/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.adjudication.value"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.addItem.adjudication.value.value"/>
+            <text value="Non-monitory value"/>
+            <type value="decimal"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The second tier service adjudications for payor added services."/>
+        </extension>
+        <linkId value="ClaimResponse.addItem.detail"/>
+        <title value="Added items details"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.detail.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.addItem.detail.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.detail.extension"/>
+          <text value="Additional Content defined by implementations"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.detail.modifierExtension"/>
+          <text value="Extensions that cannot be ignored"/>
+          <required value="false"/>
+          <repeats value="true"/>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A code to indicate the Professional Service or Product supplied."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Coding"/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.detail.service"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.addItem.detail.service.value"/>
+            <text value="Service or Product"/>
+            <type value="open-choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The fee charged for the professional service or product.."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Money"/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.detail.fee"/>
+          <text value="Professional fee or Product charge"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="ClaimResponse.addItem.detail.fee.value"/>
+            <text value="value:"/>
+            <type value="decimal"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="ClaimResponse.addItem.detail.fee.currency"/>
+            <text value="currency:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The adjudications results."/>
+          </extension>
+          <linkId value="ClaimResponse.addItem.detail.adjudication"/>
+          <title value="Added items detail adjudication"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="ClaimResponse.addItem.detail.adjudication.id"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.addItem.detail.adjudication.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+            </extension>
+            <linkId value="ClaimResponse.addItem.detail.adjudication.extension"/>
+            <text value="Additional Content defined by implementations"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+            </extension>
+            <linkId value="ClaimResponse.addItem.detail.adjudication.modifierExtension"/>
+            <text value="Extensions that cannot be ignored"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Coding"/>
+            </extension>
+            <linkId value="ClaimResponse.addItem.detail.adjudication.code"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.addItem.detail.adjudication.code.value"/>
+              <text value="Adjudication category such as co-pay, eligible, benefit, etc."/>
+              <type value="open-choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Monitory amount associated with the code."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Money"/>
+            </extension>
+            <linkId value="ClaimResponse.addItem.detail.adjudication.amount"/>
+            <text value="Monetary amount"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.addItem.detail.adjudication.amount.value"/>
+              <text value="value:"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+            <question>
+              <linkId value="ClaimResponse.addItem.detail.adjudication.amount.currency"/>
+              <text value="currency:"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="A non-monetary value for example a percentage. Mutually exclusive to the amount element above."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="decimal"/>
+            </extension>
+            <linkId value="ClaimResponse.addItem.detail.adjudication.value"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="ClaimResponse.addItem.detail.adjudication.value.value"/>
+              <text value="Non-monitory value"/>
+              <type value="decimal"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Mutually exclusive with Services Provided (Item)."/>
+      </extension>
+      <linkId value="ClaimResponse.error"/>
+      <title value="Processing errors"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ClaimResponse.error.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.error.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="ClaimResponse.error.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="ClaimResponse.error.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The sequence number of the line item submitted which contains the error. This value is ommitted when the error is elsewhere."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="ClaimResponse.error.sequenceLinkId"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.error.sequenceLinkId.value"/>
+          <text value="Item sequence number"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The sequence number of the addition within the line item submitted which contains the error. This value is ommitted when the error is not related to an Addition."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="ClaimResponse.error.detailSequenceLinkId"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.error.detailSequenceLinkId.value"/>
+          <text value="Detail sequence number"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The sequence number of the addition within the line item submitted which contains the error. This value is ommitted when the error is not related to an Addition."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="ClaimResponse.error.subdetailSequenceLinkId"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.error.subdetailSequenceLinkId.value"/>
+          <text value="Subdetail sequence number"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="An error code,froma specified code system, which details why the claim could not be adjudicated."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="ClaimResponse.error.code"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.error.code.value"/>
+          <text value="Error code detailing processing issues"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The total cost of the services reported."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Money"/>
+      </extension>
+      <linkId value="ClaimResponse.totalCost"/>
+      <text value="Total Cost of service from the Claim"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.totalCost.value"/>
+        <text value="value:"/>
+        <type value="decimal"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ClaimResponse.totalCost.currency"/>
+        <text value="currency:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The amount of deductable applied which was not allocated to any particular service line."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Money"/>
+      </extension>
+      <linkId value="ClaimResponse.unallocDeductable"/>
+      <text value="Unallocated deductable"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.unallocDeductable.value"/>
+        <text value="value:"/>
+        <type value="decimal"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ClaimResponse.unallocDeductable.currency"/>
+        <text value="currency:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Total amount of benefit payable (Equal to sum of the Benefit amounts from all detail lines and additions less the Unallocated Deductable)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Money"/>
+      </extension>
+      <linkId value="ClaimResponse.totalBenefit"/>
+      <text value="Total benefit payable for the Claim"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.totalBenefit.value"/>
+        <text value="value:"/>
+        <type value="decimal"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ClaimResponse.totalBenefit.currency"/>
+        <text value="currency:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Adjustment to the payment of this transaction which is not related to adjudication of this transaction."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Money"/>
+      </extension>
+      <linkId value="ClaimResponse.paymentAdjustment"/>
+      <text value="Payment adjustment for non-Claim issues"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.paymentAdjustment.value"/>
+        <text value="value:"/>
+        <type value="decimal"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ClaimResponse.paymentAdjustment.currency"/>
+        <text value="currency:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Reason for the payment adjustment."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="ClaimResponse.paymentAdjustmentReason"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.paymentAdjustmentReason.value"/>
+        <text value="Reason for Payment adjustment"/>
+        <type value="open-choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Estimated payment data."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="ClaimResponse.paymentDate"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.paymentDate.value"/>
+        <text value="Expected data of Payment"/>
+        <type value="dateTime"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Payable less any payment adjustment."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Money"/>
+      </extension>
+      <linkId value="ClaimResponse.paymentAmount"/>
+      <text value="Payment amount"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.paymentAmount.value"/>
+        <text value="value:"/>
+        <type value="decimal"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ClaimResponse.paymentAmount.currency"/>
+        <text value="currency:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Payment identifer."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="ClaimResponse.paymentRef"/>
+      <text value="Payment identifier"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.paymentRef.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ClaimResponse.paymentRef.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+      <question>
+        <linkId value="ClaimResponse.paymentRef.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Status of funds reservation (For provider, for Patient, None)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="ClaimResponse.reserved"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.reserved.value"/>
+        <text value="Funds reserved status"/>
+        <type value="open-choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The form to be used for printing the content."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="ClaimResponse.form"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ClaimResponse.form.value"/>
+        <text value="Printed Form Identifier"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Note text."/>
+      </extension>
+      <linkId value="ClaimResponse.note"/>
+      <title value="Processing notes"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ClaimResponse.note.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.note.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="ClaimResponse.note.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="ClaimResponse.note.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="An integer associated with each note which may be referred to from each service line item."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="ClaimResponse.note.number"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.note.number.value"/>
+          <text value="Note Number for this note"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The note purpose: Print/Display."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="ClaimResponse.note.type"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.note.type.value"/>
+          <text value="display | print | printoper"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The note text."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ClaimResponse.note.text"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.note.text.value"/>
+          <text value="Note explanitory text"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Financial instrument by which payment information for health care."/>
+      </extension>
+      <linkId value="ClaimResponse.coverage"/>
+      <title value="Insurance or medical plan"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.coverage.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.extension"/>
+        <text value="Additional Content defined by implementations"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.modifierExtension"/>
+        <text value="Extensions that cannot be ignored"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A service line item."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.sequence"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.coverage.sequence.value"/>
+          <text value="Service instance identifier"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The instance number of the Coverage which is the focus for adjudication. The Coverage against which the claim is to be adjudicated."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="boolean"/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.focal"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.coverage.focal.value"/>
+          <text value="Is the focal Coverage"/>
+          <type value="boolean"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Reference to the program or plan identification, underwriter or payor."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.coverage"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Coverage?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="ClaimResponse.coverage.coverage.value"/>
+          <text value="Insurance information"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The contract number of a business agreement which describes the terms and conditions."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.businessArrangement"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.coverage.businessArrangement.value"/>
+          <text value="Business agreement"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The relationship of the patient to the subscriber."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.relationship"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.coverage.relationship.value"/>
+          <text value="Patient relationship to subscriber"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of references from the Insurer to which these services pertain."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.preAuthRef"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.coverage.preAuthRef.value"/>
+          <text value="Pre-Authorization/Determination Reference"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The Coverages adjudication details."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.claimResponse"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/ClaimResponse?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="ClaimResponse.coverage.claimResponse.value"/>
+          <text value="Adjudication results"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The style (standard) and version of the original material which was converted into this resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="ClaimResponse.coverage.originalRuleset"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ClaimResponse.coverage.originalRuleset.value"/>
+          <text value="Original version"/>
+          <type value="open-choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+  </group>
+</Questionnaire>

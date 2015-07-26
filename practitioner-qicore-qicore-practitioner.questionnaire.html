@@ -1,0 +1,4103 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Practitioner-qicore-qicore-practitioner.questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/practitioner-qicore-qicore-practitioner.questionnaire.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <!-- practitioner-qicore-qicore-practitioner.questionnaire.html / profile-questionnaire:practitioner-qicore-qicore-practitioner / Questionnaire-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="practitioner-qicore-qicore-practitioner.html">Content</a></li><li><a href="practitioner-qicore-qicore-practitioner-definitions.html">Detailed Descriptions</a></li><li><a href="practitioner-qicore-qicore-practitioner-mappings.html">Mappings</a></li><li class="active"><a href="#">HTML Form</a></li><li><a href="practitioner-qicore-qicore-practitioner.profile.xml.html">XML</a></li><li><a href="practitioner-qicore-qicore-practitioner.profile.json.html">JSON</a></li></ul>
+
+
+<h2>Practitioner-qicore-qicore-practitioner.questionnaire - Example Form</h2>
+
+<p>
+This is an example form based on a questionnaire generated from the definition, to help visualise the content. See also the <a href="practitioner-qicore-qicore-practitioner.questionnaire.xml.html">XML</a> or <a href="practitioner-qicore-qicore-practitioner.questionnaire.json.html">JSON</a> questionnaire.
+</p>
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<script type="text/javascript"><!--
+var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validatePractitioner(node) {
+  var groupNodes = findDiv(node, "Practitioner");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_id(divNode, "Practitioner.id")
+         && validatePractitioner_meta(divNode, "Practitioner.meta")
+         && validatePractitioner_implicitRules(divNode, "Practitioner.implicitRules")
+         && validatePractitioner_language(divNode, "Practitioner.language")
+         && validatePractitioner_text(divNode, "Practitioner.text")
+         && validatePractitioner_contained(divNode, "Practitioner.contained")
+         && validatePractitioner_extension(divNode, "Practitioner.extension")
+         && validatePractitioner_modifierExtension(divNode, "Practitioner.modifierExtension")
+         && validatePractitioner_identifier(divNode, "Practitioner.identifier")
+         && validatePractitioner_name(divNode, "Practitioner.name")
+         && validatePractitioner_telecom(divNode, "Practitioner.telecom")
+         && validatePractitioner_address(divNode, "Practitioner.address")
+         && validatePractitioner_gender(divNode, "Practitioner.gender")
+         && validatePractitioner_birthDate(divNode, "Practitioner.birthDate")
+         && validatePractitioner_photo(divNode, "Practitioner.photo")
+         && validatePractitioner_practitionerRole(divNode, "Practitioner.practitionerRole")
+         && validatePractitioner_qualification(divNode, "Practitioner.qualification")
+         && validatePractitioner_communication(divNode, "Practitioner.communication");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_id(node) {
+  var groupNodes = findDiv(node, "Practitioner.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_id_value(divNode, "Practitioner.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_id_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_meta(node) {
+  var groupNodes = findDiv(node, "Practitioner.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_implicitRules(node) {
+  var groupNodes = findDiv(node, "Practitioner.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_implicitRules_value(divNode, "Practitioner.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_language(node) {
+  var groupNodes = findDiv(node, "Practitioner.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_language_value(divNode, "Practitioner.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_language_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_text(node) {
+  var groupNodes = findDiv(node, "Practitioner.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_contained(node) {
+  var groupNodes = findDiv(node, "Practitioner.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_extension(node) {
+  var groupNodes = findDiv(node, "Practitioner.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_modifierExtension(node) {
+  var groupNodes = findDiv(node, "Practitioner.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_identifier(node) {
+  var groupNodes = findDiv(node, "Practitioner.identifier");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_identifier_label(divNode, "Practitioner.identifier.label")
+         && validatePractitioner_identifier_system(divNode, "Practitioner.identifier.system")
+         && validatePractitioner_identifier_value(divNode, "Practitioner.identifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_identifier_label(node) {
+  var answerNodes = findAnswers(node, "Practitioner.identifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_identifier_system(node) {
+  var answerNodes = findAnswers(node, "Practitioner.identifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_identifier_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.identifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_name(node) {
+  var groupNodes = findDiv(node, "Practitioner.name");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_name_text(divNode, "Practitioner.name.text")
+         && validatePractitioner_name_family(divNode, "Practitioner.name.family")
+         && validatePractitioner_name_given(divNode, "Practitioner.name.given");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_name_text(node) {
+  var answerNodes = findAnswers(node, "Practitioner.name.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_name_family(node) {
+  var answerNodes = findAnswers(node, "Practitioner.name.family");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_name_given(node) {
+  var answerNodes = findAnswers(node, "Practitioner.name.given");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_telecom(node) {
+  var groupNodes = findDiv(node, "Practitioner.telecom");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_telecom_system(divNode, "Practitioner.telecom.system")
+         && validatePractitioner_telecom_value(divNode, "Practitioner.telecom.value")
+         && validatePractitioner_telecom_use(divNode, "Practitioner.telecom.use");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_telecom_system(node) {
+  var answerNodes = findAnswers(node, "Practitioner.telecom.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_telecom_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.telecom.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_telecom_use(node) {
+  var answerNodes = findAnswers(node, "Practitioner.telecom.use");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_address(node) {
+  var groupNodes = findDiv(node, "Practitioner.address");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_address_text(divNode, "Practitioner.address.text")
+         && validatePractitioner_address_line(divNode, "Practitioner.address.line")
+         && validatePractitioner_address_city(divNode, "Practitioner.address.city")
+         && validatePractitioner_address_state(divNode, "Practitioner.address.state")
+         && validatePractitioner_address_postalCode(divNode, "Practitioner.address.postalCode")
+         && validatePractitioner_address_country(divNode, "Practitioner.address.country")
+         && validatePractitioner_address_use(divNode, "Practitioner.address.use");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_address_text(node) {
+  var answerNodes = findAnswers(node, "Practitioner.address.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_address_line(node) {
+  var answerNodes = findAnswers(node, "Practitioner.address.line");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_address_city(node) {
+  var answerNodes = findAnswers(node, "Practitioner.address.city");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_address_state(node) {
+  var answerNodes = findAnswers(node, "Practitioner.address.state");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_address_postalCode(node) {
+  var answerNodes = findAnswers(node, "Practitioner.address.postalCode");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_address_country(node) {
+  var answerNodes = findAnswers(node, "Practitioner.address.country");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_address_use(node) {
+  var answerNodes = findAnswers(node, "Practitioner.address.use");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_gender(node) {
+  var groupNodes = findDiv(node, "Practitioner.gender");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_gender_value(divNode, "Practitioner.gender.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_gender_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.gender.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_birthDate(node) {
+  var groupNodes = findDiv(node, "Practitioner.birthDate");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_birthDate_value(divNode, "Practitioner.birthDate.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_birthDate_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.birthDate.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_photo(node) {
+  var groupNodes = findDiv(node, "Practitioner.photo");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_practitionerRole_id(divNode, "Practitioner.practitionerRole.id")
+         && validatePractitioner_practitionerRole_extension(divNode, "Practitioner.practitionerRole.extension")
+         && validatePractitioner_practitionerRole_modifierExtension(divNode, "Practitioner.practitionerRole.modifierExtension")
+         && validatePractitioner_practitionerRole_managingOrganization(divNode, "Practitioner.practitionerRole.managingOrganization")
+         && validatePractitioner_practitionerRole_role(divNode, "Practitioner.practitionerRole.role")
+         && validatePractitioner_practitionerRole_specialty(divNode, "Practitioner.practitionerRole.specialty")
+         && validatePractitioner_practitionerRole_period(divNode, "Practitioner.practitionerRole.period")
+         && validatePractitioner_practitionerRole_location(divNode, "Practitioner.practitionerRole.location")
+         && validatePractitioner_practitionerRole_healthcareService(divNode, "Practitioner.practitionerRole.healthcareService");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_id(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_practitionerRole_id_value(divNode, "Practitioner.practitionerRole.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_id_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_practitionerRole_extension(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_modifierExtension(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_managingOrganization(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.managingOrganization");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_practitionerRole_managingOrganization_value(divNode, "Practitioner.practitionerRole.managingOrganization.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_managingOrganization_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.managingOrganization.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_practitionerRole_role(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.role");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_practitionerRole_role_coding(divNode, "Practitioner.practitionerRole.role.coding")
+         && validatePractitioner_practitionerRole_role_text(divNode, "Practitioner.practitionerRole.role.text");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_role_coding(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.role.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_practitionerRole_role_text(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.role.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_practitionerRole_specialty(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.specialty");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_practitionerRole_specialty_coding(divNode, "Practitioner.practitionerRole.specialty.coding")
+         && validatePractitioner_practitionerRole_specialty_text(divNode, "Practitioner.practitionerRole.specialty.text");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_specialty_coding(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.specialty.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_practitionerRole_specialty_text(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.specialty.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_practitionerRole_period(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.period");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_practitionerRole_period_low(divNode, "Practitioner.practitionerRole.period.low")
+         && validatePractitioner_practitionerRole_period_end(divNode, "Practitioner.practitionerRole.period.end");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_period_low(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.period.low");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_practitionerRole_period_end(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.period.end");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_practitionerRole_location(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.location");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_practitionerRole_location_value(divNode, "Practitioner.practitionerRole.location.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_location_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.location.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_practitionerRole_healthcareService(node) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.healthcareService");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_practitionerRole_healthcareService_value(divNode, "Practitioner.practitionerRole.healthcareService.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_practitionerRole_healthcareService_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.healthcareService.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_qualification(node) {
+  var groupNodes = findDiv(node, "Practitioner.qualification");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_qualification_id(divNode, "Practitioner.qualification.id")
+         && validatePractitioner_qualification_extension(divNode, "Practitioner.qualification.extension")
+         && validatePractitioner_qualification_modifierExtension(divNode, "Practitioner.qualification.modifierExtension")
+         && validatePractitioner_qualification_identifier(divNode, "Practitioner.qualification.identifier")
+         && validatePractitioner_qualification_code(divNode, "Practitioner.qualification.code")
+         && validatePractitioner_qualification_period(divNode, "Practitioner.qualification.period")
+         && validatePractitioner_qualification_issuer(divNode, "Practitioner.qualification.issuer");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_qualification_id(node) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_qualification_id_value(divNode, "Practitioner.qualification.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_qualification_id_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.qualification.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_qualification_extension(node) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_qualification_modifierExtension(node) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_qualification_identifier(node) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.identifier");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_qualification_identifier_label(divNode, "Practitioner.qualification.identifier.label")
+         && validatePractitioner_qualification_identifier_system(divNode, "Practitioner.qualification.identifier.system")
+         && validatePractitioner_qualification_identifier_value(divNode, "Practitioner.qualification.identifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_qualification_identifier_label(node) {
+  var answerNodes = findAnswers(node, "Practitioner.qualification.identifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_qualification_identifier_system(node) {
+  var answerNodes = findAnswers(node, "Practitioner.qualification.identifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_qualification_identifier_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.qualification.identifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_qualification_code(node) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.code");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "Practitioner.qualification.code");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Coded representation of the qualification');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_qualification_code_coding(divNode, "Practitioner.qualification.code.coding")
+         && validatePractitioner_qualification_code_text(divNode, "Practitioner.qualification.code.text");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_qualification_code_coding(node) {
+  var answerNodes = findAnswers(node, "Practitioner.qualification.code.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_qualification_code_text(node) {
+  var answerNodes = findAnswers(node, "Practitioner.qualification.code.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_qualification_period(node) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.period");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_qualification_period_low(divNode, "Practitioner.qualification.period.low")
+         && validatePractitioner_qualification_period_end(divNode, "Practitioner.qualification.period.end");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_qualification_period_low(node) {
+  var answerNodes = findAnswers(node, "Practitioner.qualification.period.low");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_qualification_period_end(node) {
+  var answerNodes = findAnswers(node, "Practitioner.qualification.period.end");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_qualification_issuer(node) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.issuer");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_qualification_issuer_value(divNode, "Practitioner.qualification.issuer.value");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_qualification_issuer_value(node) {
+  var answerNodes = findAnswers(node, "Practitioner.qualification.issuer.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_communication(node) {
+  var groupNodes = findDiv(node, "Practitioner.communication");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validatePractitioner_communication_coding(divNode, "Practitioner.communication.coding")
+         && validatePractitioner_communication_text(divNode, "Practitioner.communication.text");
+    }
+    return valid;
+  }
+}
+
+
+function validatePractitioner_communication_coding(node) {
+  var answerNodes = findAnswers(node, "Practitioner.communication.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validatePractitioner_communication_text(node) {
+  var answerNodes = findAnswers(node, "Practitioner.communication.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function serializePractitioner(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner",
+      "title":"A person with a  formal responsibility in the provisioning of healthcare or related services"
+    }
+    var childGroups = [];    serializePractitioner_id(groupNodes[i], childGroups);
+    serializePractitioner_meta(groupNodes[i], childGroups);
+    serializePractitioner_implicitRules(groupNodes[i], childGroups);
+    serializePractitioner_language(groupNodes[i], childGroups);
+    serializePractitioner_text(groupNodes[i], childGroups);
+    serializePractitioner_contained(groupNodes[i], childGroups);
+    serializePractitioner_extension(groupNodes[i], childGroups);
+    serializePractitioner_modifierExtension(groupNodes[i], childGroups);
+    serializePractitioner_identifier(groupNodes[i], childGroups);
+    serializePractitioner_name(groupNodes[i], childGroups);
+    serializePractitioner_telecom(groupNodes[i], childGroups);
+    serializePractitioner_address(groupNodes[i], childGroups);
+    serializePractitioner_gender(groupNodes[i], childGroups);
+    serializePractitioner_birthDate(groupNodes[i], childGroups);
+    serializePractitioner_photo(groupNodes[i], childGroups);
+    serializePractitioner_practitionerRole(groupNodes[i], childGroups);
+    serializePractitioner_qualification(groupNodes[i], childGroups);
+    serializePractitioner_communication(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_id(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.id"
+    }
+    var childQuestions = [];    serializePractitioner_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_id_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.id.value",
+      "text":"Logical id of this artifact"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_meta(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.meta");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.meta",
+      "text":"Metadata about the resource"
+    }
+  }
+
+}
+
+
+function serializePractitioner_implicitRules(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.implicitRules");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.implicitRules"
+    }
+    var childQuestions = [];    serializePractitioner_implicitRules_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_implicitRules_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.implicitRules.value",
+      "text":"A set of rules under which this content was created"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.implicitRules.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_language(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.language");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.language"
+    }
+    var childQuestions = [];    serializePractitioner_language_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_language_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.language.value",
+      "text":"language"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.language.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_text(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.text");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.text",
+      "text":"Text summary of the resource, for human interpretation"
+    }
+  }
+
+}
+
+
+function serializePractitioner_contained(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.contained");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.contained",
+      "text":"Contained, inline Resources"
+    }
+  }
+
+}
+
+
+function serializePractitioner_extension(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.extension",
+      "text":"Extension"
+    }
+  }
+
+}
+
+
+function serializePractitioner_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializePractitioner_identifier(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.identifier");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.identifier",
+      "text":"A identifier for the person as this agent"
+    }
+    var childQuestions = [];    serializePractitioner_identifier_label(groupNodes[i], childQuestions);
+    serializePractitioner_identifier_system(groupNodes[i], childQuestions);
+    serializePractitioner_identifier_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_identifier_label(node, answers) {
+  var question = {
+      "linkId":"Practitioner.identifier.label",
+      "text":"label:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.identifier.label");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_identifier_system(node, answers) {
+  var question = {
+      "linkId":"Practitioner.identifier.system",
+      "text":"system:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.identifier.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_identifier_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.identifier.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.identifier.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_name(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.name");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.name",
+      "text":"A name associated with the person"
+    }
+    var childQuestions = [];    serializePractitioner_name_text(groupNodes[i], childQuestions);
+    serializePractitioner_name_family(groupNodes[i], childQuestions);
+    serializePractitioner_name_given(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_name_text(node, answers) {
+  var question = {
+      "linkId":"Practitioner.name.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.name.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_name_family(node, answers) {
+  var question = {
+      "linkId":"Practitioner.name.family",
+      "text":"family:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.name.family");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_name_given(node, answers) {
+  var question = {
+      "linkId":"Practitioner.name.given",
+      "text":"given:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.name.given");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_telecom(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.telecom");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.telecom",
+      "text":"A contact detail for the practitioner"
+    }
+    var childQuestions = [];    serializePractitioner_telecom_system(groupNodes[i], childQuestions);
+    serializePractitioner_telecom_value(groupNodes[i], childQuestions);
+    serializePractitioner_telecom_use(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_telecom_system(node, answers) {
+  var question = {
+      "linkId":"Practitioner.telecom.system",
+      "text":"type:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.telecom.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_telecom_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.telecom.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.telecom.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_telecom_use(node, answers) {
+  var question = {
+      "linkId":"Practitioner.telecom.use",
+      "text":"use:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.telecom.use");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_address(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.address");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.address",
+      "text":"Where practitioner can be found/visited"
+    }
+    var childQuestions = [];    serializePractitioner_address_text(groupNodes[i], childQuestions);
+    serializePractitioner_address_line(groupNodes[i], childQuestions);
+    serializePractitioner_address_city(groupNodes[i], childQuestions);
+    serializePractitioner_address_state(groupNodes[i], childQuestions);
+    serializePractitioner_address_postalCode(groupNodes[i], childQuestions);
+    serializePractitioner_address_country(groupNodes[i], childQuestions);
+    serializePractitioner_address_use(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_address_text(node, answers) {
+  var question = {
+      "linkId":"Practitioner.address.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.address.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_address_line(node, answers) {
+  var question = {
+      "linkId":"Practitioner.address.line",
+      "text":"line:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.address.line");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_address_city(node, answers) {
+  var question = {
+      "linkId":"Practitioner.address.city",
+      "text":"city:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.address.city");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_address_state(node, answers) {
+  var question = {
+      "linkId":"Practitioner.address.state",
+      "text":"state:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.address.state");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_address_postalCode(node, answers) {
+  var question = {
+      "linkId":"Practitioner.address.postalCode",
+      "text":"post code:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.address.postalCode");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_address_country(node, answers) {
+  var question = {
+      "linkId":"Practitioner.address.country",
+      "text":"country:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.address.country");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_address_use(node, answers) {
+  var question = {
+      "linkId":"Practitioner.address.use",
+      "text":"use:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.address.use");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_gender(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.gender");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.gender"
+    }
+    var childQuestions = [];    serializePractitioner_gender_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_gender_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.gender.value",
+      "text":"gender"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.gender.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_birthDate(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.birthDate");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.birthDate"
+    }
+    var childQuestions = [];    serializePractitioner_birthDate_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_birthDate_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.birthDate.value",
+      "text":"The date  on which the practitioner was born"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.birthDate.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_photo(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.photo");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.photo",
+      "text":"Image of the person"
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole",
+      "title":"The list of Roles/Organizations that the Practitioner is associated with"
+    }
+    var childGroups = [];    serializePractitioner_practitionerRole_id(groupNodes[i], childGroups);
+    serializePractitioner_practitionerRole_extension(groupNodes[i], childGroups);
+    serializePractitioner_practitionerRole_modifierExtension(groupNodes[i], childGroups);
+    serializePractitioner_practitionerRole_managingOrganization(groupNodes[i], childGroups);
+    serializePractitioner_practitionerRole_role(groupNodes[i], childGroups);
+    serializePractitioner_practitionerRole_specialty(groupNodes[i], childGroups);
+    serializePractitioner_practitionerRole_period(groupNodes[i], childGroups);
+    serializePractitioner_practitionerRole_location(groupNodes[i], childGroups);
+    serializePractitioner_practitionerRole_healthcareService(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_id(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole.id"
+    }
+    var childQuestions = [];    serializePractitioner_practitionerRole_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_id_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_extension(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_managingOrganization(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.managingOrganization");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole.managingOrganization"
+    }
+    var childQuestions = [];    serializePractitioner_practitionerRole_managingOrganization_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_managingOrganization_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.managingOrganization.value",
+      "text":"The Organization where the Practitioner performs the roles associated"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.managingOrganization.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_role(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.role");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole.role",
+      "text":"Roles which this practitioner may perform"
+    }
+    var childQuestions = [];    serializePractitioner_practitionerRole_role_coding(groupNodes[i], childQuestions);
+    serializePractitioner_practitionerRole_role_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_role_coding(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.role.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.role.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_role_text(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.role.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.role.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_specialty(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.specialty");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole.specialty",
+      "text":"Specific specialty of the practitioner"
+    }
+    var childQuestions = [];    serializePractitioner_practitionerRole_specialty_coding(groupNodes[i], childQuestions);
+    serializePractitioner_practitionerRole_specialty_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_specialty_coding(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.specialty.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.specialty.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_specialty_text(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.specialty.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.specialty.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_period(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.period");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole.period",
+      "text":"The period during which the practitioner is authorized to perform in these role(s)"
+    }
+    var childQuestions = [];    serializePractitioner_practitionerRole_period_low(groupNodes[i], childQuestions);
+    serializePractitioner_practitionerRole_period_end(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_period_low(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.period.low",
+      "text":"start:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.period.low");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_period_end(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.period.end",
+      "text":"end:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.period.end");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_location(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.location");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole.location"
+    }
+    var childQuestions = [];    serializePractitioner_practitionerRole_location_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_location_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.location.value",
+      "text":"The location(s) at which this practitioner provides care"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.location.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_healthcareService(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.practitionerRole.healthcareService");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.practitionerRole.healthcareService"
+    }
+    var childQuestions = [];    serializePractitioner_practitionerRole_healthcareService_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_practitionerRole_healthcareService_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.practitionerRole.healthcareService.value",
+      "text":"The list of healthcare services that this worker provides for this role\'s Organization/Location(s)"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.practitionerRole.healthcareService.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_qualification(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.qualification");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.qualification",
+      "title":"Qualifications obtained by training and certification"
+    }
+    var childGroups = [];    serializePractitioner_qualification_id(groupNodes[i], childGroups);
+    serializePractitioner_qualification_extension(groupNodes[i], childGroups);
+    serializePractitioner_qualification_modifierExtension(groupNodes[i], childGroups);
+    serializePractitioner_qualification_identifier(groupNodes[i], childGroups);
+    serializePractitioner_qualification_code(groupNodes[i], childGroups);
+    serializePractitioner_qualification_period(groupNodes[i], childGroups);
+    serializePractitioner_qualification_issuer(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_id(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.qualification.id"
+    }
+    var childQuestions = [];    serializePractitioner_qualification_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_id_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.qualification.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.qualification.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_extension(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.qualification.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.qualification.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_identifier(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.identifier");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.qualification.identifier",
+      "text":"An identifier for this qualification for the practitioner"
+    }
+    var childQuestions = [];    serializePractitioner_qualification_identifier_label(groupNodes[i], childQuestions);
+    serializePractitioner_qualification_identifier_system(groupNodes[i], childQuestions);
+    serializePractitioner_qualification_identifier_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_identifier_label(node, answers) {
+  var question = {
+      "linkId":"Practitioner.qualification.identifier.label",
+      "text":"label:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.qualification.identifier.label");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_identifier_system(node, answers) {
+  var question = {
+      "linkId":"Practitioner.qualification.identifier.system",
+      "text":"system:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.qualification.identifier.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_identifier_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.qualification.identifier.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.qualification.identifier.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_code(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.code");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.qualification.code",
+      "text":"Coded representation of the qualification"
+    }
+    var childQuestions = [];    serializePractitioner_qualification_code_coding(groupNodes[i], childQuestions);
+    serializePractitioner_qualification_code_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_code_coding(node, answers) {
+  var question = {
+      "linkId":"Practitioner.qualification.code.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.qualification.code.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_code_text(node, answers) {
+  var question = {
+      "linkId":"Practitioner.qualification.code.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.qualification.code.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_period(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.period");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.qualification.period",
+      "text":"Period during which the qualification is valid"
+    }
+    var childQuestions = [];    serializePractitioner_qualification_period_low(groupNodes[i], childQuestions);
+    serializePractitioner_qualification_period_end(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_period_low(node, answers) {
+  var question = {
+      "linkId":"Practitioner.qualification.period.low",
+      "text":"start:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.qualification.period.low");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_period_end(node, answers) {
+  var question = {
+      "linkId":"Practitioner.qualification.period.end",
+      "text":"end:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.qualification.period.end");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_issuer(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.qualification.issuer");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.qualification.issuer"
+    }
+    var childQuestions = [];    serializePractitioner_qualification_issuer_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_qualification_issuer_value(node, answers) {
+  var question = {
+      "linkId":"Practitioner.qualification.issuer.value",
+      "text":"Organization that regulates and issues the qualification"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.qualification.issuer.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_communication(node, groups) {
+  var groupNodes = findDiv(node, "Practitioner.communication");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"Practitioner.communication",
+      "text":"A language the practitioner is able to use in patient communication"
+    }
+    var childQuestions = [];    serializePractitioner_communication_coding(groupNodes[i], childQuestions);
+    serializePractitioner_communication_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializePractitioner_communication_coding(node, answers) {
+  var question = {
+      "linkId":"Practitioner.communication.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.communication.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializePractitioner_communication_text(node, answers) {
+  var question = {
+      "linkId":"Practitioner.communication.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "Practitioner.communication.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+function validateQuestionnaire() {
+  return validatePractitioner(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function serializeQuestionnaire() {
+  var rootGroup = serializePractitioner(document.getElementById("div-cnt"));
+  if (rootGroup.length == 0)
+    delete answers.group
+  else
+    answers.group = rootGroup;
+  return answers;
+}
+
+--></script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/json2.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/statuspage.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jtip.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jcookie.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js"> </script>
+      <script type="text/javascript"><!--
+var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";
+--></script>
+      <script type="text/javascript"><!--
+var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+        && this.style.display != "none";
+  });
+}
+
+function setAddFocus(node, linkId) {
+  $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+  }).last().next(":input").focus();
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  serializeQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    serializeQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+}
+--></script>
+      <script type="text/javascript"><!--
+var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+}
+        --></script>
+      <script type="text/javascript"><!--
+var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+}
+        --></script>
+      <style type="">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript"><!--
+      //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      }
+      --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+<div id="div-cnt">
+         <h3>A person with a  formal responsibility in the provisioning of healthcare or related services</h3>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+              id="d2e17">
+            <span style="display:none">Practitioner</span>
+            <input type="image" onclick="deleteGroup(this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                   alt="Remove"
+                   style="width:10px;height:10px;"/>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e35.1">
+               <span style="display:none">Practitioner.id</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.id.value</span> Logical id of this artifact</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.id[1]Practitioner.id.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e35.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.id</span>
+            <span style="display:none">1</span>
+            <p>Metadata about the resource</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e73.1">
+               <span style="display:none">Practitioner.meta</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e73.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.meta</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e92.1">
+               <span style="display:none">Practitioner.implicitRules</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.implicitRules[1]Practitioner.implicitRules.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e92.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.implicitRules</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e130.1">
+               <span style="display:none">Practitioner.language</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e130.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e168.1">
+               <span style="display:none">Practitioner.text</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e168.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e188.1">
+               <span style="display:none">Practitioner.contained</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e188.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.contained</span>
+            <span style="display:none">1</span>
+            <p>Extension</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e207.1">
+               <span style="display:none">Practitioner.extension</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e207.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.extension</span>
+            <span style="display:none">1</span>
+            <p>Extensions that cannot be ignored</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e226.1">
+               <span style="display:none">Practitioner.modifierExtension</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e226.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.modifierExtension</span>
+            <span style="display:none">1</span>
+            <p>A identifier for the person as this agent</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e245.1">
+               <span style="display:none">Practitioner.identifier</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.identifier.label</span> label:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.identifier[1]Practitioner.identifier.label[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.identifier.system</span> system:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.identifier[1]Practitioner.identifier.system[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.identifier.value</span> value:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.identifier[1]Practitioner.identifier.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e245.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.identifier</span>
+            <span style="display:none">1</span>
+            <p>A name associated with the person</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e317.1">
+               <span style="display:none">Practitioner.name</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.name.text</span> text:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.name[1]Practitioner.name.text[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.name.family</span> family:</td>
+                        <td>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <input type="image" onclick="deleteInput(this)"
+                                              src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                                              alt="Remove"
+                                              style="width:10px;height:10px;"/>
+                                    </td>
+                                    <td>
+                                       <input name="Path:Practitioner[1]Practitioner.name[1]Practitioner.name.family[1]"
+                                              type="text"/>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                                  onclick="addInput(this)"
+                                  src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                                  alt="Add response"/>
+                           <input type="text" style="display:none;"/>
+                           <span style="display:none">Path:Practitioner[1]Practitioner.name[1]Practitioner.name.family</span>
+                           <span style="display:none">1</span>
+                           <span style="display:none">*</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.name.given</span> given:</td>
+                        <td>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <input type="image" onclick="deleteInput(this)"
+                                              src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                                              alt="Remove"
+                                              style="width:10px;height:10px;"/>
+                                    </td>
+                                    <td>
+                                       <input name="Path:Practitioner[1]Practitioner.name[1]Practitioner.name.given[1]"
+                                              type="text"/>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                                  onclick="addInput(this)"
+                                  src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                                  alt="Add response"/>
+                           <input type="text" style="display:none;"/>
+                           <span style="display:none">Path:Practitioner[1]Practitioner.name[1]Practitioner.name.given</span>
+                           <span style="display:none">1</span>
+                           <span style="display:none">*</span>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e317.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.name</span>
+            <span style="display:none">1</span>
+            <p>A contact detail for the practitioner</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e389.1">
+               <span style="display:none">Practitioner.telecom</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.telecom.system</span> type:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.telecom.value</span> value:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.telecom[1]Practitioner.telecom.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.telecom.use</span> use:</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e389.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.telecom</span>
+            <span style="display:none">1</span>
+            <p>Where practitioner can be found/visited</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e462.1">
+               <span style="display:none">Practitioner.address</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.address.text</span> text:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.address[1]Practitioner.address.text[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.address.line</span> line:</td>
+                        <td>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <input type="image" onclick="deleteInput(this)"
+                                              src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                                              alt="Remove"
+                                              style="width:10px;height:10px;"/>
+                                    </td>
+                                    <td>
+                                       <input name="Path:Practitioner[1]Practitioner.address[1]Practitioner.address.line[1]"
+                                              type="text"/>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                                  onclick="addInput(this)"
+                                  src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                                  alt="Add response"/>
+                           <input type="text" style="display:none;"/>
+                           <span style="display:none">Path:Practitioner[1]Practitioner.address[1]Practitioner.address.line</span>
+                           <span style="display:none">1</span>
+                           <span style="display:none">*</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.address.city</span> city:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.address[1]Practitioner.address.city[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.address.state</span> state:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.address[1]Practitioner.address.state[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.address.postalCode</span> post code:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.address[1]Practitioner.address.postalCode[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.address.country</span> country:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.address[1]Practitioner.address.country[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.address.use</span> use:</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e462.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.address</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e599.1">
+               <span style="display:none">Practitioner.gender</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.gender.value</span> gender</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e599.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.gender</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e637.1">
+               <span style="display:none">Practitioner.birthDate</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.birthDate.value</span> The date  on which the practitioner was born</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.birthDate[1]Practitioner.birthDate.value[1]"
+                                  type="text"
+                                  onblur="checkDateTime(this)"
+                                  maxlength="26"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e637.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.birthDate</span>
+            <span style="display:none">1</span>
+            <p>Image of the person</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e675.1">
+               <span style="display:none">Practitioner.photo</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e675.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.photo</span>
+            <span style="display:none">1</span>
+            <h4>The list of Roles/Organizations that the Practitioner is associated with</h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e699.1">
+               <span style="display:none">Practitioner.practitionerRole</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e717.1.1">
+                  <span style="display:none">Practitioner.practitionerRole.id</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.practitionerRole[1]Practitioner.practitionerRole.id[1]Practitioner.practitionerRole.id.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e717.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.practitionerRole.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e755.1.1">
+                  <span style="display:none">Practitioner.practitionerRole.extension</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e755.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.practitionerRole.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e774.1.1">
+                  <span style="display:none">Practitioner.practitionerRole.modifierExtension</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e774.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.practitionerRole.modifierExtension</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e793.1.1">
+                  <span style="display:none">Practitioner.practitionerRole.managingOrganization</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.managingOrganization.value</span> The Organization where the Practitioner performs the roles associated</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.practitionerRole[1]Practitioner.practitionerRole.managingOrganization[1]Practitioner.practitionerRole.managingOrganization.value[1]"
+                                     tabindex="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e793.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.practitionerRole.managingOrganization</span>
+               <span style="display:none">1</span>
+               <p>Roles which this practitioner may perform</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e836.1.1">
+                  <span style="display:none">Practitioner.practitionerRole.role</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.role.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.role.text</span> text:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.practitionerRole[1]Practitioner.practitionerRole.role[1]Practitioner.practitionerRole.role.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e836.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.practitionerRole.role</span>
+               <span style="display:none">1</span>
+               <p>Specific specialty of the practitioner</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e893.1.1">
+                  <span style="display:none">Practitioner.practitionerRole.specialty</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.specialty.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.specialty.text</span> text:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.practitionerRole[1]Practitioner.practitionerRole.specialty[1]Practitioner.practitionerRole.specialty.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e893.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.practitionerRole.specialty</span>
+               <span style="display:none">1</span>
+               <p>The period during which the practitioner is authorized to perform in these role(s)</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e949.1.1">
+                  <span style="display:none">Practitioner.practitionerRole.period</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.period.low</span> start:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.practitionerRole[1]Practitioner.practitionerRole.period[1]Practitioner.practitionerRole.period.low[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.period.end</span> end:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.practitionerRole[1]Practitioner.practitionerRole.period[1]Practitioner.practitionerRole.period.end[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e949.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.practitionerRole.period</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1005.1.1">
+                  <span style="display:none">Practitioner.practitionerRole.location</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.location.value</span> The location(s) at which this practitioner provides care</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.practitionerRole[1]Practitioner.practitionerRole.location[1]Practitioner.practitionerRole.location.value[1]"
+                                     tabindex="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1005.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.practitionerRole.location</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1048.1.1">
+                  <span style="display:none">Practitioner.practitionerRole.healthcareService</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.practitionerRole.healthcareService.value</span> The list of healthcare services that this worker provides for this role's Organization/Location(s)</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.practitionerRole[1]Practitioner.practitionerRole.healthcareService[1]Practitioner.practitionerRole.healthcareService.value[1]"
+                                     tabindex="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1048.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.practitionerRole.healthcareService</span>
+               <span style="display:none">1</span>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e699.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.practitionerRole</span>
+            <span style="display:none">1</span>
+            <h4>Qualifications obtained by training and certification</h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1092.1">
+               <span style="display:none">Practitioner.qualification</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1110.1.1">
+                  <span style="display:none">Practitioner.qualification.id</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.qualification.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.qualification[1]Practitioner.qualification.id[1]Practitioner.qualification.id.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1110.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.qualification.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1148.1.1">
+                  <span style="display:none">Practitioner.qualification.extension</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1148.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.qualification.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1167.1.1">
+                  <span style="display:none">Practitioner.qualification.modifierExtension</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1167.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.qualification.modifierExtension</span>
+               <span style="display:none">1</span>
+               <p>An identifier for this qualification for the practitioner</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1186.1.1">
+                  <span style="display:none">Practitioner.qualification.identifier</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.qualification.identifier.label</span> label:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.qualification[1]Practitioner.qualification.identifier[1]Practitioner.qualification.identifier.label[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.qualification.identifier.system</span> system:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.qualification[1]Practitioner.qualification.identifier[1]Practitioner.qualification.identifier.system[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.qualification.identifier.value</span> value:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.qualification[1]Practitioner.qualification.identifier[1]Practitioner.qualification.identifier.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1186.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.qualification.identifier</span>
+               <span style="display:none">1</span>
+               <p>Coded representation of the qualification</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1258.1.1">
+                  <span style="display:none">Practitioner.qualification.code</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.qualification.code.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.qualification.code.text</span> text:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.qualification[1]Practitioner.qualification.code[1]Practitioner.qualification.code.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1258.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.qualification.code</span>
+               <span style="display:none">1</span>
+               <p>Period during which the qualification is valid</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1315.1.1">
+                  <span style="display:none">Practitioner.qualification.period</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.qualification.period.low</span> start:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.qualification[1]Practitioner.qualification.period[1]Practitioner.qualification.period.low[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.qualification.period.end</span> end:</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.qualification[1]Practitioner.qualification.period[1]Practitioner.qualification.period.end[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1315.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.qualification.period</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1371.1.1">
+                  <span style="display:none">Practitioner.qualification.issuer</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Practitioner.qualification.issuer.value</span> Organization that regulates and issues the qualification</td>
+                           <td>
+                              <input name="Path:Practitioner[1]Practitioner.qualification[1]Practitioner.qualification.issuer[1]Practitioner.qualification.issuer.value[1]"
+                                     tabindex="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1371.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Practitioner.qualification.issuer</span>
+               <span style="display:none">1</span>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1092.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.qualification</span>
+            <span style="display:none">1</span>
+            <p>A language the practitioner is able to use in patient communication</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1416.1">
+               <span style="display:none">Practitioner.communication</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.communication.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Practitioner.communication.text</span> text:</td>
+                        <td>
+                           <input name="Path:Practitioner[1]Practitioner.communication[1]Practitioner.communication.text[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1416.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Practitioner.communication</span>
+            <span style="display:none">1</span>
+         </div>
+         <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                onclick="addGroup('d2e17', this)"
+                src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                alt="Add section"/>
+         <span style="display:none">Practitioner</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+</body>
+</html>
+
+<p>
+<!-- spacer -->
+&nbsp;
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:36-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fpractitioner-qicore-qicore-practitioner.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fpractitioner-qicore-qicore-practitioner.questionnaire.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

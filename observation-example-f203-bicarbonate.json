@@ -1,0 +1,82 @@
+{
+  "resourceType": "Observation",
+  "id": "f203",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f203</p><p><b>code</b>: Bicarbonate [Moles/?volume] in Serum <span>(Details : {LOINC code '1963-8' = 'Bicarbonate [Moles/volume] in Serum', given as 'Bicarbonate [Moles/?volume] in Serum'}; {SNOMED CT code '365722008' = 'Bicarbonate level', given as 'Bicarbonate level'})</span></p><p><b>value</b>: 28 mmol/L<span> (Details: SNOMED CT code 258813002 = 'millimole/liter')</span></p><p><b>interpretation</b>: Serum bicarbonate level normal <span>(Details : {SNOMED CT code '166698001' = 'Serum bicarbonate level normal', given as 'Serum bicarbonate level normal'}; {http://hl7.org/fhir/v2/0078 code 'N' = 'Normal (applies to non-numeric results))</span></p><p><b>issued</b>: Apr 4, 2013 2:34:00 PM</p><p><b>status</b>: final</p><p><b>reliability</b>: ok</p><p><b>method</b>: enzymatic method <span>(Details )</span></p><p><b>identifier</b>: 1304-03720-Bicarbonate</p><p><b>subject</b>: <a>Roel</a></p><p><b>performer</b>: <a>Luigi Maas</a></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Meaning</b></td></tr><tr><td>*</td><td>22</td><td>29</td><td>Normal Range <span>(Details : {http://hl7.org/fhir/referencerange-meaning code 'normal' = 'Normal Range', given as 'Normal Range'})</span></td></tr></table></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "1963-8",
+        "display": "Bicarbonate [Moles/?volume] in Serum"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "365722008",
+        "display": "Bicarbonate level"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "value": 28,
+    "units": "mmol/L",
+    "system": "http://snomed.info/sct",
+    "code": "258813002"
+  },
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "166698001",
+        "display": "Serum bicarbonate level normal"
+      },
+      {
+        "system": "http://hl7.org/fhir/v2/0078",
+        "code": "N"
+      }
+    ]
+  },
+  "issued": "2013-04-04T14:34:00+01:00",
+  "status": "final",
+  "reliability": "ok",
+  "method": {
+    "text": "enzymatic method"
+  },
+  "identifier": [
+    {
+      "system": "https://intranet.aumc.nl/labvalues",
+      "value": "1304-03720-Bicarbonate"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/f202",
+      "display": "Luigi Maas"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 22
+      },
+      "high": {
+        "value": 29
+      },
+      "meaning": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/referencerange-meaning",
+            "code": "normal",
+            "display": "Normal Range"
+          }
+        ]
+      }
+    }
+  ]
+}

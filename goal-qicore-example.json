@@ -1,0 +1,80 @@
+{
+  "resourceType": "Goal",
+  "id": "goal-qicore-example",
+  "text": {
+    "status": "additional",
+    "div": "<div>\n\t\t\t<p> A simple care goal for a patient to lose weight due to obesity.</p>\n\t\t</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/goal-category",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "289169006",
+            "display": "weight loss"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "measure",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "3141-9",
+                "display": "Weight Measured"
+              }
+            ]
+          }
+        },
+        {
+          "url": "detail",
+          "valueRange": {
+            "low": {
+              "value": 160,
+              "units": "lbs",
+              "system": "http://unitsofmeasure.org",
+              "code": "[lb_av]"
+            },
+            "high": {
+              "value": 180,
+              "units": "lbs",
+              "system": "http://unitsofmeasure.org",
+              "code": "[lb_av]"
+            }
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/goal-target"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/goal-reasonRejected",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/ActReason",
+            "code": "PREFUS",
+            "display": "patient refuse"
+          }
+        ]
+      }
+    }
+  ],
+  "patient": {
+    "reference": "Patient/example",
+    "display": "Peter James Chalmers"
+  },
+  "description": "Target weight is 160 to 180 lbs.",
+  "status": "rejected",
+  "concern": [
+    {
+      "reference": "Condition/12345",
+      "display": "obesity"
+    }
+  ]
+}

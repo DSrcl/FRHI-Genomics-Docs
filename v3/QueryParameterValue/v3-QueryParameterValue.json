@@ -1,0 +1,148 @@
+{
+  "resourceType": "ValueSet",
+  "id": "v3-QueryParameterValue",
+  "meta": {
+    "lastUpdated": "2015-03-23T00:00:00.000-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>Release Date: 2015-03-23</p>\r\n<p>OID for code system: 2.16.840.1.113883.5.1096</p>\r\n<h2>Description</h2>\r\n<p>\n                  The domain of coded values used as parameters within QueryByParameter queries.<br/>\r\n\n               </p>\r\n<hr/>\r\n<table class=\"grid\">\r\n <tr><td><b>Level</b></td><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>\r\n <tr><td>1</td><td><span style=\"color: grey\"><i>(_DispenseQueryFilterCode)</i></span></td><td><a name=\"_DispenseQueryFilterCode\">&nbsp;</a></td><td>\n                        \n                           Description:Filter codes used to manage volume of dispenses returned by  a parameter-based queries.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;ALLDISP<a name=\"ALLDISP\"> </a></td><td>all dispenses</td><td>\n                        \n                           Description:Returns all dispenses to date for a prescription.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;LASTDISP<a name=\"LASTDISP\"> </a></td><td>last dispense</td><td>\n                        \n                           Description:Returns the most recent dispense for a prescription.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;NODISP<a name=\"NODISP\"> </a></td><td>no dispense</td><td>\n                        \n                           Description:Returns no dispense for a prescription.<br/>\r\n\n                     </td></tr>\r\n <tr><td>1</td><td><span style=\"color: grey\"><i>(_OrderFilterCode)</i></span></td><td><a name=\"_OrderFilterCode\">&nbsp;</a></td><td>\n                        Filter codes used to manage types of orders being returned by a parameter-based query.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;AO<a name=\"AO\"> </a></td><td>all orders</td><td>\n                        Return all orders.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;ONR<a name=\"ONR\"> </a></td><td>orders without results</td><td>\n                        Return only those orders that do not have results.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;OWR<a name=\"OWR\"> </a></td><td>orders with results</td><td>\n                        Return only those orders that have results.<br/>\r\n\n                     </td></tr>\r\n <tr><td>1</td><td><span style=\"color: grey\"><i>(_PrescriptionDispenseFilterCode)</i></span></td><td><a name=\"_PrescriptionDispenseFilterCode\">&nbsp;</a></td><td>\n                        A &quot;helper&quot; vocabulary used to construct complex query filters based on how and whether a prescription has been dispensed.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;C<a name=\"C\"> </a></td><td>Completely dispensed</td><td>\n                        Filter to only include SubstanceAdministration orders which have no remaining quantity authorized to be dispensed.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;N<a name=\"N\"> </a></td><td>Never Dispensed</td><td>\n                        Filter to only include SubstanceAdministration orders which have no fulfilling supply events performed.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;R<a name=\"R\"> </a></td><td>Dispensed with remaining fills</td><td>\n                        Filter to only include SubstanceAdministration orders which have had at least one fulfilling supply event, but which still have outstanding quantity remaining to be authorized.<br/>\r\n\n                     </td></tr>\r\n <tr><td>1</td><td><span style=\"color: grey\"><i>(_QueryParameterValue)</i></span></td><td><a name=\"_QueryParameterValue\">&nbsp;</a></td><td>\n                        \n                           Description:Indicates how result sets should be filtered based on whether they have associated issues.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;ISSFA<a name=\"ISSFA\"> </a></td><td>all</td><td>\n                        \n                           Description:Result set should not be filtered based on the presence of issues.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;ISSFI<a name=\"ISSFI\"> </a></td><td>with issues</td><td>\n                        \n                           Description:Result set should be filtered to only include records with associated issues.<br/>\r\n\n                     </td></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;ISSFU<a name=\"ISSFU\"> </a></td><td>with unmanaged issues</td><td>\n                        \n                           Description:Result set should be filtered to only include records with associated unmanaged issues.<br/>\r\n\n                     </td></tr>\r\n</table>\r\n</div>"
+  },
+  "url": "http://hl7.org/fhir/ValueSet/v3-QueryParameterValue",
+  "version": "2015-03-23",
+  "name": "v3 Code System QueryParameterValue",
+  "publisher": "HL7, Inc",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": " The domain of coded values used as parameters within QueryByParameter queries.",
+  "status": "active",
+  "experimental": false,
+  "date": "2015-03-23",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.5.1096"
+      }
+    ],
+    "system": "http://hl7.org/fhir/v3/QueryParameterValue",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "_DispenseQueryFilterCode",
+        "abstract": true,
+        "display": "dispense query filter code",
+        "definition": "Description:Filter codes used to manage volume of dispenses returned by  a parameter-based queries.",
+        "concept": [
+          {
+            "code": "ALLDISP",
+            "abstract": false,
+            "display": "all dispenses",
+            "definition": "Description:Returns all dispenses to date for a prescription."
+          },
+          {
+            "code": "LASTDISP",
+            "abstract": false,
+            "display": "last dispense",
+            "definition": "Description:Returns the most recent dispense for a prescription."
+          },
+          {
+            "code": "NODISP",
+            "abstract": false,
+            "display": "no dispense",
+            "definition": "Description:Returns no dispense for a prescription."
+          }
+        ]
+      },
+      {
+        "code": "_OrderFilterCode",
+        "abstract": true,
+        "display": "_OrderFilterCode",
+        "definition": "Filter codes used to manage types of orders being returned by a parameter-based query.",
+        "concept": [
+          {
+            "code": "AO",
+            "abstract": false,
+            "display": "all orders",
+            "definition": "Return all orders."
+          },
+          {
+            "code": "ONR",
+            "abstract": false,
+            "display": "orders without results",
+            "definition": "Return only those orders that do not have results."
+          },
+          {
+            "code": "OWR",
+            "abstract": false,
+            "display": "orders with results",
+            "definition": "Return only those orders that have results."
+          }
+        ]
+      },
+      {
+        "code": "_PrescriptionDispenseFilterCode",
+        "abstract": true,
+        "display": "Prescription Dispense Filter Code",
+        "definition": "A \"helper\" vocabulary used to construct complex query filters based on how and whether a prescription has been dispensed.",
+        "concept": [
+          {
+            "code": "C",
+            "abstract": false,
+            "display": "Completely dispensed",
+            "definition": "Filter to only include SubstanceAdministration orders which have no remaining quantity authorized to be dispensed."
+          },
+          {
+            "code": "N",
+            "abstract": false,
+            "display": "Never Dispensed",
+            "definition": "Filter to only include SubstanceAdministration orders which have no fulfilling supply events performed."
+          },
+          {
+            "code": "R",
+            "abstract": false,
+            "display": "Dispensed with remaining fills",
+            "definition": "Filter to only include SubstanceAdministration orders which have had at least one fulfilling supply event, but which still have outstanding quantity remaining to be authorized."
+          }
+        ]
+      },
+      {
+        "code": "_QueryParameterValue",
+        "abstract": true,
+        "display": "QueryParameterValue",
+        "definition": "Description:Indicates how result sets should be filtered based on whether they have associated issues.",
+        "concept": [
+          {
+            "code": "ISSFA",
+            "abstract": false,
+            "display": "all",
+            "definition": "Description:Result set should not be filtered based on the presence of issues."
+          },
+          {
+            "code": "ISSFI",
+            "abstract": false,
+            "display": "with issues",
+            "definition": "Description:Result set should be filtered to only include records with associated issues."
+          },
+          {
+            "code": "ISSFU",
+            "abstract": false,
+            "display": "with unmanaged issues",
+            "definition": "Description:Result set should be filtered to only include records with associated unmanaged issues."
+          }
+        ]
+      }
+    ]
+  }
+}

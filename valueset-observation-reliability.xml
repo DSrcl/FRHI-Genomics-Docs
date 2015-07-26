@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="observation-reliability"/>
+  <meta>
+    <lastUpdated value="2015-07-26T15:54:10.186-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>ObservationReliability</h2>
+      <p>Codes that provide an estimate of the degree to which quality issues have impacted on the value of an observation</p>
+      <p>This value set has an inline code system http://hl7.org/fhir/observation-reliability, which defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>ok
+            <a name="ok"> </a>
+          </td>
+          <td>OK</td>
+          <td>The result has no reliability concerns</td>
+        </tr>
+        <tr>
+          <td>ongoing
+            <a name="ongoing"> </a>
+          </td>
+          <td>Measurement Ongoing</td>
+          <td>An early estimate of value; measurement is still occurring</td>
+        </tr>
+        <tr>
+          <td>early
+            <a name="early"> </a>
+          </td>
+          <td>Early</td>
+          <td>An early estimate of value; processing is still occurring</td>
+        </tr>
+        <tr>
+          <td>questionable
+            <a name="questionable"> </a>
+          </td>
+          <td>Questionable</td>
+          <td>The observation value should be treated with care</td>
+        </tr>
+        <tr>
+          <td>calibrating
+            <a name="calibrating"> </a>
+          </td>
+          <td>Calibrating</td>
+          <td>The result has been generated while calibration is occurring</td>
+        </tr>
+        <tr>
+          <td>error
+            <a name="error"> </a>
+          </td>
+          <td>Error Occurred</td>
+          <td>The observation could not be completed because of an error</td>
+        </tr>
+        <tr>
+          <td>unknown
+            <a name="unknown"> </a>
+          </td>
+          <td>Reliability Unknown</td>
+          <td>No observation  reliability value was available</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="2.16.840.1.113883.4.642.2.118"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/observation-reliability"/>
+  <version value="0.5.0"/>
+  <name value="ObservationReliability"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes that provide an estimate of the degree to which quality issues have impacted on the value of an observation"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-07-26T15:54:10-04:00"/>
+  <codeSystem>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.118"/>
+    </extension>
+    <system value="http://hl7.org/fhir/observation-reliability"/>
+    <version value="0.5.0"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="ok"/>
+      <display value="OK"/>
+      <definition value="The result has no reliability concerns"/>
+    </concept>
+    <concept>
+      <code value="ongoing"/>
+      <display value="Measurement Ongoing"/>
+      <definition value="An early estimate of value; measurement is still occurring"/>
+    </concept>
+    <concept>
+      <code value="early"/>
+      <display value="Early"/>
+      <definition value="An early estimate of value; processing is still occurring"/>
+    </concept>
+    <concept>
+      <code value="questionable"/>
+      <display value="Questionable"/>
+      <definition value="The observation value should be treated with care"/>
+    </concept>
+    <concept>
+      <code value="calibrating"/>
+      <display value="Calibrating"/>
+      <definition value="The result has been generated while calibration is occurring"/>
+    </concept>
+    <concept>
+      <code value="error"/>
+      <display value="Error Occurred"/>
+      <definition value="The observation could not be completed because of an error"/>
+    </concept>
+    <concept>
+      <code value="unknown"/>
+      <display value="Reliability Unknown"/>
+      <definition value="No observation  reliability value was available"/>
+    </concept>
+  </codeSystem>
+</ValueSet>

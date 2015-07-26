@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="v3-SecurityIntegrityObservationValue"/>
+  <meta>
+    <lastUpdated value="2015-07-24T17:31:16.356-04:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>SecurityIntegrityObservationValue</h2>
+      <p>?? (OID = 2.16.840.1.113883.1.11.20481)</p>
+      <p>This value set includes codes from the following code systems:</p>
+      <ul>
+        <li>Include codes from 
+          <a href="../../v3/ObservationValue/index.html">http://hl7.org/fhir/v3/ObservationValue</a> where concept  is-a  
+          <a href="../../v3/ObservationValue/index.html#_SECINTOBV">_SECINTOBV</a>
+        </li>
+        <li>Exclude these codes as defined in 
+          <a href="../../v3/ObservationValue/index.html">http://hl7.org/fhir/v3/ObservationValue</a>
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>_SECINTOBV</td>
+              <td>security integrity</td>
+              <td>Abstract security observation values used to indicate security integrity metadata.
+                <br/>
+                        
+                           Examples: Codes conveying integrity status, integrity confidence, and provenance.
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.1.11.20481"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/v3-SecurityIntegrityObservationValue"/>
+  <version value="2014-03-26"/>
+  <name value="SecurityIntegrityObservationValue"/>
+  <publisher value="HL7 v3"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://www.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="?? (OID = 2.16.840.1.113883.1.11.20481)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ObservationValue"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="_SECINTOBV"/>
+      </filter>
+    </include>
+    <exclude>
+      <system value="http://hl7.org/fhir/v3/ObservationValue"/>
+      <concept>
+        <code value="_SECINTOBV"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

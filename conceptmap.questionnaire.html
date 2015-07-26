@@ -1,0 +1,4371 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Conceptmap.questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/conceptmap.questionnaire.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="conceptmap.html">ConceptMap</a></li>        <li><b>Generated Questionnaire</b></li>          <!-- conceptmap.questionnaire.html / resource-questionnaire:ConceptMap / Questionnaire -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="conceptmap.html">Content</a></li><li><a href="conceptmap-examples.html">Examples</a></li><li><a href="conceptmap-definitions.html">Detailed Descriptions</a></li><li><a href="conceptmap-mappings.html">Mappings</a></li><li><a href="conceptmap-profiles.html">Profiles</a></li><li class="active"><a href="#">HTML Form</a></li><li><a href="conceptmap-operations.html">Operations</a></li></ul>
+
+
+<h2><span class="sectioncount">6.24.6<a name="6.24.6"> </a></span> Conceptmap.questionnaire - Example Form <a href="conceptmap.questionnaire.html#6.24.6" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>
+This is an example form based on a questionnaire generated from the definition, to help visualise the content. See also the <a href="conceptmap.questionnaire.xml.html">XML</a> or <a href="conceptmap.questionnaire.json.html">JSON</a> questionnaire.
+</p>
+
+  <!-- DOCTYPE html --><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<script type="text/javascript">  <!-- var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validateConceptMap(node) {
+  var groupNodes = findDiv(node, "ConceptMap");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_id(divNode, "ConceptMap.id")
+         && validateConceptMap_meta(divNode, "ConceptMap.meta")
+         && validateConceptMap_implicitRules(divNode, "ConceptMap.implicitRules")
+         && validateConceptMap_language(divNode, "ConceptMap.language")
+         && validateConceptMap_text(divNode, "ConceptMap.text")
+         && validateConceptMap_contained(divNode, "ConceptMap.contained")
+         && validateConceptMap_extension(divNode, "ConceptMap.extension")
+         && validateConceptMap_modifierExtension(divNode, "ConceptMap.modifierExtension")
+         && validateConceptMap_url(divNode, "ConceptMap.url")
+         && validateConceptMap_identifier(divNode, "ConceptMap.identifier")
+         && validateConceptMap_version(divNode, "ConceptMap.version")
+         && validateConceptMap_name(divNode, "ConceptMap.name")
+         && validateConceptMap_useContext(divNode, "ConceptMap.useContext")
+         && validateConceptMap_publisher(divNode, "ConceptMap.publisher")
+         && validateConceptMap_contact(divNode, "ConceptMap.contact")
+         && validateConceptMap_description(divNode, "ConceptMap.description")
+         && validateConceptMap_requirements(divNode, "ConceptMap.requirements")
+         && validateConceptMap_copyright(divNode, "ConceptMap.copyright")
+         && validateConceptMap_status(divNode, "ConceptMap.status")
+         && validateConceptMap_experimental(divNode, "ConceptMap.experimental")
+         && validateConceptMap_date(divNode, "ConceptMap.date")
+         && validateConceptMap_source_x(divNode, "ConceptMap.source[x]")
+         && validateConceptMap_target_x(divNode, "ConceptMap.target[x]")
+         && validateConceptMap_element(divNode, "ConceptMap.element");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_id(node) {
+  var groupNodes = findDiv(node, "ConceptMap.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_id_value(divNode, "ConceptMap.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_id_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_meta(node) {
+  var groupNodes = findDiv(node, "ConceptMap.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_implicitRules(node) {
+  var groupNodes = findDiv(node, "ConceptMap.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_implicitRules_value(divNode, "ConceptMap.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_language(node) {
+  var groupNodes = findDiv(node, "ConceptMap.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_language_value(divNode, "ConceptMap.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_language_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_text(node) {
+  var groupNodes = findDiv(node, "ConceptMap.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_contained(node) {
+  var groupNodes = findDiv(node, "ConceptMap.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_extension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_url(node) {
+  var groupNodes = findDiv(node, "ConceptMap.url");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_url_value(divNode, "ConceptMap.url.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_url_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.url.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_identifier(node) {
+  var groupNodes = findDiv(node, "ConceptMap.identifier");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_identifier_label(divNode, "ConceptMap.identifier.label")
+         && validateConceptMap_identifier_system(divNode, "ConceptMap.identifier.system")
+         && validateConceptMap_identifier_value(divNode, "ConceptMap.identifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_identifier_label(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.identifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_identifier_system(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.identifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_identifier_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.identifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_version(node) {
+  var groupNodes = findDiv(node, "ConceptMap.version");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_version_value(divNode, "ConceptMap.version.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_version_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.version.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_name(node) {
+  var groupNodes = findDiv(node, "ConceptMap.name");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_name_value(divNode, "ConceptMap.name.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_name_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.name.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_useContext(node) {
+  var groupNodes = findDiv(node, "ConceptMap.useContext");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_useContext_coding(divNode, "ConceptMap.useContext.coding")
+         && validateConceptMap_useContext_text(divNode, "ConceptMap.useContext.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_useContext_coding(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.useContext.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_useContext_text(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.useContext.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_publisher(node) {
+  var groupNodes = findDiv(node, "ConceptMap.publisher");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_publisher_value(divNode, "ConceptMap.publisher.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_publisher_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.publisher.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_contact(node) {
+  var groupNodes = findDiv(node, "ConceptMap.contact");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_contact_id(divNode, "ConceptMap.contact.id")
+         && validateConceptMap_contact_extension(divNode, "ConceptMap.contact.extension")
+         && validateConceptMap_contact_modifierExtension(divNode, "ConceptMap.contact.modifierExtension")
+         && validateConceptMap_contact_name(divNode, "ConceptMap.contact.name")
+         && validateConceptMap_contact_telecom(divNode, "ConceptMap.contact.telecom");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_contact_id(node) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_contact_id_value(divNode, "ConceptMap.contact.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_contact_id_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.contact.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_contact_extension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_contact_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_contact_name(node) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.name");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_contact_name_value(divNode, "ConceptMap.contact.name.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_contact_name_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.contact.name.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_contact_telecom(node) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.telecom");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_contact_telecom_system(divNode, "ConceptMap.contact.telecom.system")
+         && validateConceptMap_contact_telecom_value(divNode, "ConceptMap.contact.telecom.value")
+         && validateConceptMap_contact_telecom_use(divNode, "ConceptMap.contact.telecom.use");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_contact_telecom_system(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.contact.telecom.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_contact_telecom_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.contact.telecom.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_contact_telecom_use(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.contact.telecom.use");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_description(node) {
+  var groupNodes = findDiv(node, "ConceptMap.description");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_description_value(divNode, "ConceptMap.description.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_description_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.description.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_requirements(node) {
+  var groupNodes = findDiv(node, "ConceptMap.requirements");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_requirements_value(divNode, "ConceptMap.requirements.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_requirements_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.requirements.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_copyright(node) {
+  var groupNodes = findDiv(node, "ConceptMap.copyright");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_copyright_value(divNode, "ConceptMap.copyright.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_copyright_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.copyright.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_status(node) {
+  var groupNodes = findDiv(node, "ConceptMap.status");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ConceptMap.status");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_status_value(divNode, "ConceptMap.status.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_status_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.status.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_experimental(node) {
+  var groupNodes = findDiv(node, "ConceptMap.experimental");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_experimental_value(divNode, "ConceptMap.experimental.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_experimental_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.experimental.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_date(node) {
+  var groupNodes = findDiv(node, "ConceptMap.date");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_date_value(divNode, "ConceptMap.date.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_date_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.date.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_source_x(node) {
+  var groupNodes = findDiv(node, "ConceptMap.source[x]");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ConceptMap.source[x]");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Identifies the source of the concepts which are being mapped');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_source_x__type(divNode, "ConceptMap.source[x]._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_source_x__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/data-types", "code": "uri", "display": "uri"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "ValueSet", "display": "ValueSet"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "StructureDefinition", "display": "StructureDefinition"}];
+  var answerNodes = findAnswers(node, "ConceptMap.source[x]._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_source_x__uri_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.source[x]._uri[1]ConceptMap.source[x]._uri.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_source_x__ValueSet_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.source[x]._ValueSet[1]ConceptMap.source[x]._ValueSet.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_source_x__StructureDefinition_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.source[x]._StructureDefinition[1]ConceptMap.source[x]._StructureDefinition.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_target_x(node) {
+  var groupNodes = findDiv(node, "ConceptMap.target[x]");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ConceptMap.target[x]");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Provides context to the mappings');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_target_x__type(divNode, "ConceptMap.target[x]._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_target_x__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/data-types", "code": "uri", "display": "uri"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "ValueSet", "display": "ValueSet"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "StructureDefinition", "display": "StructureDefinition"}];
+  var answerNodes = findAnswers(node, "ConceptMap.target[x]._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_target_x__uri_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.target[x]._uri[1]ConceptMap.target[x]._uri.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_target_x__ValueSet_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.target[x]._ValueSet[1]ConceptMap.target[x]._ValueSet.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_target_x__StructureDefinition_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.target[x]._StructureDefinition[1]ConceptMap.target[x]._StructureDefinition.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_id(divNode, "ConceptMap.element.id")
+         && validateConceptMap_element_extension(divNode, "ConceptMap.element.extension")
+         && validateConceptMap_element_modifierExtension(divNode, "ConceptMap.element.modifierExtension")
+         && validateConceptMap_element_codeSystem(divNode, "ConceptMap.element.codeSystem")
+         && validateConceptMap_element_code(divNode, "ConceptMap.element.code")
+         && validateConceptMap_element_target(divNode, "ConceptMap.element.target");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_id(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_id_value(divNode, "ConceptMap.element.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_id_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_extension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_codeSystem(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.codeSystem");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_codeSystem_value(divNode, "ConceptMap.element.codeSystem.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_codeSystem_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.codeSystem.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_code(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.code");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_code_value(divNode, "ConceptMap.element.code.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_code_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.code.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_id(divNode, "ConceptMap.element.target.id")
+         && validateConceptMap_element_target_extension(divNode, "ConceptMap.element.target.extension")
+         && validateConceptMap_element_target_modifierExtension(divNode, "ConceptMap.element.target.modifierExtension")
+         && validateConceptMap_element_target_codeSystem(divNode, "ConceptMap.element.target.codeSystem")
+         && validateConceptMap_element_target_code(divNode, "ConceptMap.element.target.code")
+         && validateConceptMap_element_target_equivalence(divNode, "ConceptMap.element.target.equivalence")
+         && validateConceptMap_element_target_comments(divNode, "ConceptMap.element.target.comments")
+         && validateConceptMap_element_target_dependsOn(divNode, "ConceptMap.element.target.dependsOn")
+         && validateConceptMap_element_target_product(divNode, "ConceptMap.element.target.product");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_id(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_id_value(divNode, "ConceptMap.element.target.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_id_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target_extension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_codeSystem(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.codeSystem");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_codeSystem_value(divNode, "ConceptMap.element.target.codeSystem.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_codeSystem_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.codeSystem.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target_code(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.code");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_code_value(divNode, "ConceptMap.element.target.code.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_code_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.code.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target_equivalence(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.equivalence");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ConceptMap.element.target.equivalence");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_equivalence_value(divNode, "ConceptMap.element.target.equivalence.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_equivalence_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.equivalence.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target_comments(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.comments");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_comments_value(divNode, "ConceptMap.element.target.comments.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_comments_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.comments.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target_dependsOn(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_dependsOn_id(divNode, "ConceptMap.element.target.dependsOn.id")
+         && validateConceptMap_element_target_dependsOn_extension(divNode, "ConceptMap.element.target.dependsOn.extension")
+         && validateConceptMap_element_target_dependsOn_modifierExtension(divNode, "ConceptMap.element.target.dependsOn.modifierExtension")
+         && validateConceptMap_element_target_dependsOn_element(divNode, "ConceptMap.element.target.dependsOn.element")
+         && validateConceptMap_element_target_dependsOn_codeSystem(divNode, "ConceptMap.element.target.dependsOn.codeSystem")
+         && validateConceptMap_element_target_dependsOn_code(divNode, "ConceptMap.element.target.dependsOn.code");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_dependsOn_id(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_dependsOn_id_value(divNode, "ConceptMap.element.target.dependsOn.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_dependsOn_id_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.dependsOn.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target_dependsOn_extension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_dependsOn_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_dependsOn_element(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.element");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ConceptMap.element.target.dependsOn.element");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_dependsOn_element_value(divNode, "ConceptMap.element.target.dependsOn.element.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_dependsOn_element_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.dependsOn.element.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target_dependsOn_codeSystem(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.codeSystem");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ConceptMap.element.target.dependsOn.codeSystem");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_dependsOn_codeSystem_value(divNode, "ConceptMap.element.target.dependsOn.codeSystem.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_dependsOn_codeSystem_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.dependsOn.codeSystem.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target_dependsOn_code(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.code");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ConceptMap.element.target.dependsOn.code");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateConceptMap_element_target_dependsOn_code_value(divNode, "ConceptMap.element.target.dependsOn.code.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateConceptMap_element_target_dependsOn_code_value(node) {
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.dependsOn.code.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateConceptMap_element_target_product(node) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.product");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function serializeConceptMap(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap",
+      "title":"A map from one set of concepts to one or more other concepts"
+    }
+    var childGroups = [];    serializeConceptMap_id(groupNodes[i], childGroups);
+    serializeConceptMap_meta(groupNodes[i], childGroups);
+    serializeConceptMap_implicitRules(groupNodes[i], childGroups);
+    serializeConceptMap_language(groupNodes[i], childGroups);
+    serializeConceptMap_text(groupNodes[i], childGroups);
+    serializeConceptMap_contained(groupNodes[i], childGroups);
+    serializeConceptMap_extension(groupNodes[i], childGroups);
+    serializeConceptMap_modifierExtension(groupNodes[i], childGroups);
+    serializeConceptMap_url(groupNodes[i], childGroups);
+    serializeConceptMap_identifier(groupNodes[i], childGroups);
+    serializeConceptMap_version(groupNodes[i], childGroups);
+    serializeConceptMap_name(groupNodes[i], childGroups);
+    serializeConceptMap_useContext(groupNodes[i], childGroups);
+    serializeConceptMap_publisher(groupNodes[i], childGroups);
+    serializeConceptMap_contact(groupNodes[i], childGroups);
+    serializeConceptMap_description(groupNodes[i], childGroups);
+    serializeConceptMap_requirements(groupNodes[i], childGroups);
+    serializeConceptMap_copyright(groupNodes[i], childGroups);
+    serializeConceptMap_status(groupNodes[i], childGroups);
+    serializeConceptMap_experimental(groupNodes[i], childGroups);
+    serializeConceptMap_date(groupNodes[i], childGroups);
+    serializeConceptMap_source_x(groupNodes[i], childGroups);
+    serializeConceptMap_target_x(groupNodes[i], childGroups);
+    serializeConceptMap_element(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_id(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.id"
+    }
+    var childQuestions = [];    serializeConceptMap_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_id_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.id.value",
+      "text":"Logical id of this artifact"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_meta(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.meta");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.meta",
+      "text":"Metadata about the resource"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_implicitRules(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.implicitRules");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.implicitRules"
+    }
+    var childQuestions = [];    serializeConceptMap_implicitRules_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_implicitRules_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.implicitRules.value",
+      "text":"A set of rules under which this content was created"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.implicitRules.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_language(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.language");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.language"
+    }
+    var childQuestions = [];    serializeConceptMap_language_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_language_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.language.value",
+      "text":"language"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.language.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_text(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.text");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.text",
+      "text":"Text summary of the resource, for human interpretation"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_contained(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.contained");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.contained",
+      "text":"Contained, inline Resources"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_extension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_url(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.url");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.url"
+    }
+    var childQuestions = [];    serializeConceptMap_url_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_url_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.url.value",
+      "text":"Globally unique logical id for concept map"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.url.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_identifier(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.identifier");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.identifier",
+      "text":"Additional identifier for the concept map"
+    }
+    var childQuestions = [];    serializeConceptMap_identifier_label(groupNodes[i], childQuestions);
+    serializeConceptMap_identifier_system(groupNodes[i], childQuestions);
+    serializeConceptMap_identifier_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_identifier_label(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.identifier.label",
+      "text":"label:"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.identifier.label");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_identifier_system(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.identifier.system",
+      "text":"system:"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.identifier.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_identifier_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.identifier.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.identifier.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_version(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.version");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.version"
+    }
+    var childQuestions = [];    serializeConceptMap_version_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_version_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.version.value",
+      "text":"Logical id for this version of the concept map"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.version.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_name(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.name");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.name"
+    }
+    var childQuestions = [];    serializeConceptMap_name_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_name_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.name.value",
+      "text":"Informal name for this concept map"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.name.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_useContext(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.useContext");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.useContext",
+      "text":"Content intends to support these contexts"
+    }
+    var childQuestions = [];    serializeConceptMap_useContext_coding(groupNodes[i], childQuestions);
+    serializeConceptMap_useContext_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_useContext_coding(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.useContext.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.useContext.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_useContext_text(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.useContext.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.useContext.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_publisher(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.publisher");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.publisher"
+    }
+    var childQuestions = [];    serializeConceptMap_publisher_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_publisher_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.publisher.value",
+      "text":"Name of the publisher (Organization or individual)"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.publisher.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_contact(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.contact");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.contact",
+      "title":"Contact details of the publisher"
+    }
+    var childGroups = [];    serializeConceptMap_contact_id(groupNodes[i], childGroups);
+    serializeConceptMap_contact_extension(groupNodes[i], childGroups);
+    serializeConceptMap_contact_modifierExtension(groupNodes[i], childGroups);
+    serializeConceptMap_contact_name(groupNodes[i], childGroups);
+    serializeConceptMap_contact_telecom(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_id(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.contact.id"
+    }
+    var childQuestions = [];    serializeConceptMap_contact_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_id_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.contact.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.contact.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_extension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.contact.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.contact.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_name(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.name");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.contact.name"
+    }
+    var childQuestions = [];    serializeConceptMap_contact_name_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_name_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.contact.name.value",
+      "text":"Name of a individual to contact"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.contact.name.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_telecom(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.contact.telecom");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.contact.telecom",
+      "text":"Contact details for individual or publisher"
+    }
+    var childQuestions = [];    serializeConceptMap_contact_telecom_system(groupNodes[i], childQuestions);
+    serializeConceptMap_contact_telecom_value(groupNodes[i], childQuestions);
+    serializeConceptMap_contact_telecom_use(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_telecom_system(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.contact.telecom.system",
+      "text":"type:"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.contact.telecom.system");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_telecom_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.contact.telecom.value",
+      "text":"value:"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.contact.telecom.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_contact_telecom_use(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.contact.telecom.use",
+      "text":"use:"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.contact.telecom.use");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_description(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.description");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.description"
+    }
+    var childQuestions = [];    serializeConceptMap_description_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_description_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.description.value",
+      "text":"Human language description of the concept map"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.description.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_requirements(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.requirements");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.requirements"
+    }
+    var childQuestions = [];    serializeConceptMap_requirements_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_requirements_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.requirements.value",
+      "text":"Why is this needed?"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.requirements.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_copyright(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.copyright");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.copyright"
+    }
+    var childQuestions = [];    serializeConceptMap_copyright_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_copyright_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.copyright.value",
+      "text":"Use and/or Publishing restrictions"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.copyright.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_status(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.status");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.status"
+    }
+    var childQuestions = [];    serializeConceptMap_status_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_status_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.status.value",
+      "text":"status"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.status.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_experimental(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.experimental");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.experimental"
+    }
+    var childQuestions = [];    serializeConceptMap_experimental_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_experimental_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.experimental.value",
+      "text":"If for testing purposes, not real usage"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.experimental.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_date(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.date");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.date"
+    }
+    var childQuestions = [];    serializeConceptMap_date_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_date_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.date.value",
+      "text":"Date for given status"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.date.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_source_x(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.source[x]");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.source[x]",
+      "text":"Identifies the source of the concepts which are being mapped"
+    }
+    var childQuestions = [];    serializeConceptMap_source_x__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_source_x__type(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.source[x]._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.source[x]._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_source_x__uri_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.source[x]._uri[1]ConceptMap.source[x]._uri.value",
+      "text":"uri"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.source[x]._uri[1]ConceptMap.source[x]._uri.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_source_x__ValueSet_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.source[x]._ValueSet[1]ConceptMap.source[x]._ValueSet.value",
+      "text":"ValueSet"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.source[x]._ValueSet[1]ConceptMap.source[x]._ValueSet.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_source_x__StructureDefinition_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.source[x]._StructureDefinition[1]ConceptMap.source[x]._StructureDefinition.value",
+      "text":"StructureDefinition"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.source[x]._StructureDefinition[1]ConceptMap.source[x]._StructureDefinition.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_target_x(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.target[x]");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.target[x]",
+      "text":"Provides context to the mappings"
+    }
+    var childQuestions = [];    serializeConceptMap_target_x__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_target_x__type(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.target[x]._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.target[x]._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_target_x__uri_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.target[x]._uri[1]ConceptMap.target[x]._uri.value",
+      "text":"uri"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.target[x]._uri[1]ConceptMap.target[x]._uri.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_target_x__ValueSet_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.target[x]._ValueSet[1]ConceptMap.target[x]._ValueSet.value",
+      "text":"ValueSet"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.target[x]._ValueSet[1]ConceptMap.target[x]._ValueSet.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_target_x__StructureDefinition_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.target[x]._StructureDefinition[1]ConceptMap.target[x]._StructureDefinition.value",
+      "text":"StructureDefinition"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.target[x]._StructureDefinition[1]ConceptMap.target[x]._StructureDefinition.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element",
+      "title":"Mappings for a concept from the source set"
+    }
+    var childGroups = [];    serializeConceptMap_element_id(groupNodes[i], childGroups);
+    serializeConceptMap_element_extension(groupNodes[i], childGroups);
+    serializeConceptMap_element_modifierExtension(groupNodes[i], childGroups);
+    serializeConceptMap_element_codeSystem(groupNodes[i], childGroups);
+    serializeConceptMap_element_code(groupNodes[i], childGroups);
+    serializeConceptMap_element_target(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_id(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.id"
+    }
+    var childQuestions = [];    serializeConceptMap_element_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_id_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_extension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_codeSystem(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.codeSystem");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.codeSystem"
+    }
+    var childQuestions = [];    serializeConceptMap_element_codeSystem_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_codeSystem_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.codeSystem.value",
+      "text":"Code System (if value set crosses code systems)"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.codeSystem.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_code(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.code");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.code"
+    }
+    var childQuestions = [];    serializeConceptMap_element_code_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_code_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.code.value",
+      "text":"code"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.code.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target",
+      "title":"Concept in target system for element"
+    }
+    var childGroups = [];    serializeConceptMap_element_target_id(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_extension(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_modifierExtension(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_codeSystem(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_code(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_equivalence(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_comments(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_dependsOn(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_product(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_id(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.id"
+    }
+    var childQuestions = [];    serializeConceptMap_element_target_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_id_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.target.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_extension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_codeSystem(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.codeSystem");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.codeSystem"
+    }
+    var childQuestions = [];    serializeConceptMap_element_target_codeSystem_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_codeSystem_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.target.codeSystem.value",
+      "text":"System of the target (if necessary)"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.codeSystem.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_code(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.code");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.code"
+    }
+    var childQuestions = [];    serializeConceptMap_element_target_code_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_code_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.target.code.value",
+      "text":"code"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.code.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_equivalence(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.equivalence");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.equivalence"
+    }
+    var childQuestions = [];    serializeConceptMap_element_target_equivalence_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_equivalence_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.target.equivalence.value",
+      "text":"equivalence"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.equivalence.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_comments(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.comments");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.comments"
+    }
+    var childQuestions = [];    serializeConceptMap_element_target_comments_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_comments_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.target.comments.value",
+      "text":"Description of status/issues in mapping"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.comments.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.dependsOn",
+      "title":"Other elements required for this mapping (from context)"
+    }
+    var childGroups = [];    serializeConceptMap_element_target_dependsOn_id(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_dependsOn_extension(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_dependsOn_modifierExtension(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_dependsOn_element(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_dependsOn_codeSystem(groupNodes[i], childGroups);
+    serializeConceptMap_element_target_dependsOn_code(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_id(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.dependsOn.id"
+    }
+    var childQuestions = [];    serializeConceptMap_element_target_dependsOn_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_id_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.target.dependsOn.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.dependsOn.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_extension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.dependsOn.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.dependsOn.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_element(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.element");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.dependsOn.element"
+    }
+    var childQuestions = [];    serializeConceptMap_element_target_dependsOn_element_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_element_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.target.dependsOn.element.value",
+      "text":"Reference to element/field/valueset mapping depends on"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.dependsOn.element.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_codeSystem(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.codeSystem");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.dependsOn.codeSystem"
+    }
+    var childQuestions = [];    serializeConceptMap_element_target_dependsOn_codeSystem_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_codeSystem_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.target.dependsOn.codeSystem.value",
+      "text":"Code System (if necessary)"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.dependsOn.codeSystem.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_code(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.dependsOn.code");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.dependsOn.code"
+    }
+    var childQuestions = [];    serializeConceptMap_element_target_dependsOn_code_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_dependsOn_code_value(node, answers) {
+  var question = {
+      "linkId":"ConceptMap.element.target.dependsOn.code.value",
+      "text":"Value of the referenced element"
+    }
+  var answerNodes = findAnswers(node, "ConceptMap.element.target.dependsOn.code.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeConceptMap_element_target_product(node, groups) {
+  var groupNodes = findDiv(node, "ConceptMap.element.target.product");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ConceptMap.element.target.product",
+      "title":"Other concepts that this mapping also produces"
+    }
+  }
+
+}
+
+function validateQuestionnaire() {
+  return validateConceptMap(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function serializeQuestionnaire() {
+  var rootGroup = serializeConceptMap(document.getElementById("div-cnt"));
+  if (rootGroup.length == 0)
+    delete answers.group
+  else
+    answers.group = rootGroup;
+  return answers;
+} --></script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/json2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/statuspage.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jtip.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jcookie.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js" type="text/javascript"> </script>
+      <script type="text/javascript">  <!-- var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>"; --></script>
+      <script type="text/javascript">  <!-- var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+        && this.style.display != "none";
+  });
+}
+
+function setAddFocus(node, linkId) {
+  $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+  }).last().next(":input").focus();
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  serializeQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    serializeQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+} --></script>
+      <script type="text/javascript">  <!-- var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+} --></script>
+      <script type="text/javascript">  <!-- var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+} --></script>
+      <style type="null">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript">  <!-- //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      } --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+<div id="div-cnt">
+         <h3><span class="sectioncount">6.24.6.1<a name="6.24.6.1"> </a></span> A map from one set of concepts to one or more other concepts <a href="conceptmap.questionnaire.html#6.24.6.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e113">
+            <span style="display:none">ConceptMap</span>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e131.1">
+               <span style="display:none">ConceptMap.id</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.id.value</span> Logical id of this artifact</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.id[1]ConceptMap.id.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e131.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.id</span>
+            <span style="display:none">1</span>
+            <p>Metadata about the resource</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e169.1">
+               <span style="display:none">ConceptMap.meta</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e169.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.meta</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e188.1">
+               <span style="display:none">ConceptMap.implicitRules</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.implicitRules[1]ConceptMap.implicitRules.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e188.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.implicitRules</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e226.1">
+               <span style="display:none">ConceptMap.language</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e226.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e264.1">
+               <span style="display:none">ConceptMap.text</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e264.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e284.1">
+               <span style="display:none">ConceptMap.contained</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e284.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.contained</span>
+            <span style="display:none">1</span>
+            <p>Additional Content defined by implementations</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e303.1">
+               <span style="display:none">ConceptMap.extension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e303.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.extension</span>
+            <span style="display:none">1</span>
+            <p>Extensions that cannot be ignored</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e322.1">
+               <span style="display:none">ConceptMap.modifierExtension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e322.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.modifierExtension</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e341.1">
+               <span style="display:none">ConceptMap.url</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.url.value</span> Globally unique logical id for concept map</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.url[1]ConceptMap.url.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e341.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.url</span>
+            <span style="display:none">1</span>
+            <p>Additional identifier for the concept map</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e379.1">
+               <span style="display:none">ConceptMap.identifier</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.identifier.label</span> label:</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.identifier[1]ConceptMap.identifier.label[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.identifier.system</span> system:</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.identifier[1]ConceptMap.identifier.system[1]" type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.identifier.value</span> value:</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.identifier[1]ConceptMap.identifier.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e379.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.identifier</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e451.1">
+               <span style="display:none">ConceptMap.version</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.version.value</span> Logical id for this version of the concept map</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.version[1]ConceptMap.version.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e451.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.version</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e490.1">
+               <span style="display:none">ConceptMap.name</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.name.value</span> Informal name for this concept map</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.name[1]ConceptMap.name.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e490.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.name</span>
+            <span style="display:none">1</span>
+            <p>Content intends to support these contexts</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e528.1">
+               <span style="display:none">ConceptMap.useContext</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.useContext.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.useContext.text</span> text:</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.useContext[1]ConceptMap.useContext.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e528.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.useContext</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e584.1">
+               <span style="display:none">ConceptMap.publisher</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.publisher.value</span> Name of the publisher (Organization or individual)</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.publisher[1]ConceptMap.publisher.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e584.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.publisher</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">6.24.6.1.1<a name="6.24.6.1.1"> </a></span> Contact details of the publisher <a href="conceptmap.questionnaire.html#6.24.6.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e622.1">
+               <span style="display:none">ConceptMap.contact</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e640.1.1">
+                  <span style="display:none">ConceptMap.contact.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ConceptMap.contact.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:ConceptMap[1]ConceptMap.contact[1]ConceptMap.contact.id[1]ConceptMap.contact.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e640.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.contact.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e678.1.1">
+                  <span style="display:none">ConceptMap.contact.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e678.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.contact.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e697.1.1">
+                  <span style="display:none">ConceptMap.contact.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e697.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.contact.modifierExtension</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e716.1.1">
+                  <span style="display:none">ConceptMap.contact.name</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ConceptMap.contact.name.value</span> Name of a individual to contact</td>
+                           <td>
+                              <input name="Path:ConceptMap[1]ConceptMap.contact[1]ConceptMap.contact.name[1]ConceptMap.contact.name.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e716.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.contact.name</span>
+               <span style="display:none">1</span>
+               <p>Contact details for individual or publisher</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e754.1.1">
+                  <span style="display:none">ConceptMap.contact.telecom</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ConceptMap.contact.telecom.system</span> type:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ConceptMap.contact.telecom.value</span> value:</td>
+                           <td>
+                              <input name="Path:ConceptMap[1]ConceptMap.contact[1]ConceptMap.contact.telecom[1]ConceptMap.contact.telecom.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ConceptMap.contact.telecom.use</span> use:</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e754.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.contact.telecom</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e622.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.contact</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e827.1">
+               <span style="display:none">ConceptMap.description</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.description.value</span> Human language description of the concept map</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.description[1]ConceptMap.description.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e827.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.description</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e865.1">
+               <span style="display:none">ConceptMap.requirements</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.requirements.value</span> Why is this needed?</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.requirements[1]ConceptMap.requirements.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e865.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.requirements</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e904.1">
+               <span style="display:none">ConceptMap.copyright</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.copyright.value</span> Use and/or Publishing restrictions</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.copyright[1]ConceptMap.copyright.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e904.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.copyright</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e942.1">
+               <span style="display:none">ConceptMap.status</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.status.value</span> status</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e942.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.status</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e980.1">
+               <span style="display:none">ConceptMap.experimental</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.experimental.value</span> If for testing purposes, not real usage</td>
+                        <td>
+                           <select name="Path:ConceptMap[1]ConceptMap.experimental[1]">
+                              <option value="true">Yes</option>
+                              <option value="false">No</option>
+                           </select>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e980.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.experimental</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1018.1">
+               <span style="display:none">ConceptMap.date</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.date.value</span> Date for given status</td>
+                        <td>
+                           <input onblur="checkDateTime(this)" maxlength="26" name="Path:ConceptMap[1]ConceptMap.date[1]ConceptMap.date.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1018.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.date</span>
+            <span style="display:none">1</span>
+            <p>Identifies the source of the concepts which are being mapped</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1056.1">
+               <span style="display:none">ConceptMap.source[x]</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.source[x]._type</span> type</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.source[x][1]" type="radio" value="uri"/>
+                           <span> uri</span>
+                           <br/>
+                           <input name="Path:ConceptMap[1]ConceptMap.source[x][1]" type="radio" value="ValueSet"/>
+                           <span> ValueSet</span>
+                           <br/>
+                           <input name="Path:ConceptMap[1]ConceptMap.source[x][1]" type="radio" value="StructureDefinition"/>
+                           <span> StructureDefinition</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1056.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.source[x]</span>
+            <span style="display:none">1</span>
+            <p>Provides context to the mappings</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1166.1">
+               <span style="display:none">ConceptMap.target[x]</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ConceptMap.target[x]._type</span> type</td>
+                        <td>
+                           <input name="Path:ConceptMap[1]ConceptMap.target[x][1]" type="radio" value="uri"/>
+                           <span> uri</span>
+                           <br/>
+                           <input name="Path:ConceptMap[1]ConceptMap.target[x][1]" type="radio" value="ValueSet"/>
+                           <span> ValueSet</span>
+                           <br/>
+                           <input name="Path:ConceptMap[1]ConceptMap.target[x][1]" type="radio" value="StructureDefinition"/>
+                           <span> StructureDefinition</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1166.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.target[x]</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">6.24.6.1.2<a name="6.24.6.1.2"> </a></span> Mappings for a concept from the source set <a href="conceptmap.questionnaire.html#6.24.6.1.2" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1277.1">
+               <span style="display:none">ConceptMap.element</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1295.1.1">
+                  <span style="display:none">ConceptMap.element.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ConceptMap.element.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:ConceptMap[1]ConceptMap.element[1]ConceptMap.element.id[1]ConceptMap.element.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1295.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.element.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1333.1.1">
+                  <span style="display:none">ConceptMap.element.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1333.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.element.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1352.1.1">
+                  <span style="display:none">ConceptMap.element.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1352.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.element.modifierExtension</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1371.1.1">
+                  <span style="display:none">ConceptMap.element.codeSystem</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ConceptMap.element.codeSystem.value</span> Code System (if value set crosses code systems)</td>
+                           <td>
+                              <input name="Path:ConceptMap[1]ConceptMap.element[1]ConceptMap.element.codeSystem[1]ConceptMap.element.codeSystem.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1371.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.element.codeSystem</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1409.1.1">
+                  <span style="display:none">ConceptMap.element.code</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ConceptMap.element.code.value</span> code</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1409.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.element.code</span>
+               <span style="display:none">1</span>
+               <h5><span class="sectioncount">6.24.6.1.2.1<a name="6.24.6.1.2.1"> </a></span> Concept in target system for element <a href="conceptmap.questionnaire.html#6.24.6.1.2.1" title="link to here" class="self-link"><img src="target.png"/></a></h5>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1448.1.1">
+                  <span style="display:none">ConceptMap.element.target</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <br/>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1466.1.1.1">
+                     <span style="display:none">ConceptMap.element.target.id</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">ConceptMap.element.target.id.value</span> xml:id (or equivalent in JSON)</td>
+                              <td>
+                                 <input name="Path:ConceptMap[1]ConceptMap.element[1]ConceptMap.element.target[1]ConceptMap.element.target.id[1]ConceptMap.element.target.id.value[1]" type="text"/>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1466.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ConceptMap.element.target.id</span>
+                  <span style="display:none">1</span>
+                  <p>Additional Content defined by implementations</p>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1504.1.1.1">
+                     <span style="display:none">ConceptMap.element.target.extension</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1504.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ConceptMap.element.target.extension</span>
+                  <span style="display:none">1</span>
+                  <p>Extensions that cannot be ignored</p>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1523.1.1.1">
+                     <span style="display:none">ConceptMap.element.target.modifierExtension</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1523.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ConceptMap.element.target.modifierExtension</span>
+                  <span style="display:none">1</span>
+                  <br/>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1542.1.1.1">
+                     <span style="display:none">ConceptMap.element.target.codeSystem</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">ConceptMap.element.target.codeSystem.value</span> System of the target (if necessary)</td>
+                              <td>
+                                 <input name="Path:ConceptMap[1]ConceptMap.element[1]ConceptMap.element.target[1]ConceptMap.element.target.codeSystem[1]ConceptMap.element.target.codeSystem.value[1]" type="text"/>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1542.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ConceptMap.element.target.codeSystem</span>
+                  <span style="display:none">1</span>
+                  <br/>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1580.1.1.1">
+                     <span style="display:none">ConceptMap.element.target.code</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">ConceptMap.element.target.code.value</span> code</td>
+                              <td/>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1580.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ConceptMap.element.target.code</span>
+                  <span style="display:none">1</span>
+                  <br/>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1619.1.1.1">
+                     <span style="display:none">ConceptMap.element.target.equivalence</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">ConceptMap.element.target.equivalence.value</span> equivalence</td>
+                              <td/>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1619.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ConceptMap.element.target.equivalence</span>
+                  <span style="display:none">1</span>
+                  <br/>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1657.1.1.1">
+                     <span style="display:none">ConceptMap.element.target.comments</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">ConceptMap.element.target.comments.value</span> Description of status/issues in mapping</td>
+                              <td>
+                                 <input name="Path:ConceptMap[1]ConceptMap.element[1]ConceptMap.element.target[1]ConceptMap.element.target.comments[1]ConceptMap.element.target.comments.value[1]" type="text"/>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1657.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ConceptMap.element.target.comments</span>
+                  <span style="display:none">1</span>
+                  <h6><span class="sectioncount">6.24.6.1.2.1.1<a name="6.24.6.1.2.1.1"> </a></span> Other elements required for this mapping (from context) <a href="conceptmap.questionnaire.html#6.24.6.1.2.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h6>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1695.1.1.1">
+                     <span style="display:none">ConceptMap.element.target.dependsOn</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     <br/>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1713.1.1.1.1">
+                        <span style="display:none">ConceptMap.element.target.dependsOn.id</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align:top;">
+                                    <span style="display:none;">ConceptMap.element.target.dependsOn.id.value</span> xml:id (or equivalent in JSON)</td>
+                                 <td>
+                                    <input name="Path:ConceptMap[1]ConceptMap.element[1]ConceptMap.element.target[1]ConceptMap.element.target.dependsOn[1]ConceptMap.element.target.dependsOn.id[1]ConceptMap.element.target.dependsOn.id.value[1]" type="text"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1713.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ConceptMap.element.target.dependsOn.id</span>
+                     <span style="display:none">1</span>
+                     <p>Additional Content defined by implementations</p>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1751.1.1.1.1">
+                        <span style="display:none">ConceptMap.element.target.dependsOn.extension</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1751.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ConceptMap.element.target.dependsOn.extension</span>
+                     <span style="display:none">1</span>
+                     <p>Extensions that cannot be ignored</p>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1770.1.1.1.1">
+                        <span style="display:none">ConceptMap.element.target.dependsOn.modifierExtension</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1770.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ConceptMap.element.target.dependsOn.modifierExtension</span>
+                     <span style="display:none">1</span>
+                     <br/>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1789.1.1.1.1">
+                        <span style="display:none">ConceptMap.element.target.dependsOn.element</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align:top;">
+                                    <span style="display:none;">ConceptMap.element.target.dependsOn.element.value</span> Reference to element/field/valueset mapping depends on</td>
+                                 <td>
+                                    <input name="Path:ConceptMap[1]ConceptMap.element[1]ConceptMap.element.target[1]ConceptMap.element.target.dependsOn[1]ConceptMap.element.target.dependsOn.element[1]ConceptMap.element.target.dependsOn.element.value[1]" type="text"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1789.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ConceptMap.element.target.dependsOn.element</span>
+                     <span style="display:none">1</span>
+                     <br/>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1827.1.1.1.1">
+                        <span style="display:none">ConceptMap.element.target.dependsOn.codeSystem</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align:top;">
+                                    <span style="display:none;">ConceptMap.element.target.dependsOn.codeSystem.value</span> Code System (if necessary)</td>
+                                 <td>
+                                    <input name="Path:ConceptMap[1]ConceptMap.element[1]ConceptMap.element.target[1]ConceptMap.element.target.dependsOn[1]ConceptMap.element.target.dependsOn.codeSystem[1]ConceptMap.element.target.dependsOn.codeSystem.value[1]" type="text"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1827.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ConceptMap.element.target.dependsOn.codeSystem</span>
+                     <span style="display:none">1</span>
+                     <br/>
+                     <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1866.1.1.1.1">
+                        <span style="display:none">ConceptMap.element.target.dependsOn.code</span>
+                        <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align:top;">
+                                    <span style="display:none;">ConceptMap.element.target.dependsOn.code.value</span> Value of the referenced element</td>
+                                 <td>
+                                    <input name="Path:ConceptMap[1]ConceptMap.element[1]ConceptMap.element.target[1]ConceptMap.element.target.dependsOn[1]ConceptMap.element.target.dependsOn.code[1]ConceptMap.element.target.dependsOn.code.value[1]" type="text"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1866.1.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                     <span style="display:none">ConceptMap.element.target.dependsOn.code</span>
+                     <span style="display:none">1</span>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1695.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ConceptMap.element.target.dependsOn</span>
+                  <span style="display:none">1</span>
+                  <h6><span class="sectioncount">6.24.6.1.2.1.2<a name="6.24.6.1.2.1.2"> </a></span> Other concepts that this mapping also produces <a href="conceptmap.questionnaire.html#6.24.6.1.2.1.2" title="link to here" class="self-link"><img src="target.png"/></a></h6>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1905.1.1.1">
+                     <span style="display:none">ConceptMap.element.target.product</span>
+                     <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  </div>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1905.1.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+                  <span style="display:none">ConceptMap.element.target.product</span>
+                  <span style="display:none">1</span>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1448.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ConceptMap.element.target</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1277.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ConceptMap.element</span>
+            <span style="display:none">1</span>
+         </div>
+         <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e113', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+         <span style="display:none">ConceptMap</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+</body>
+</html>
+
+<p>
+  <!-- spacer -->
+ 
+</p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:33-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fconceptmap.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fconceptmap.questionnaire.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

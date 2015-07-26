@@ -1,0 +1,1181 @@
+﻿<!DOCTYPE HTML>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>StructureDefinition: StructuredDataCaptureForm - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/fhir/questionnaire-sdc-structureddatacaptureform"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="questionnaire.html">Questionnaire</a></li>        <li><a href="questionnaire-sdc.html">Profile</a></li>        <li><b>Structured Data Capture Questionnaire Design</b></li>        <!-- questionnaire-sdc-structureddatacaptureform.html / profile:Questionnaire/questionnaire-sdc/questionnaire-sdc-structureddatacaptureform / Structured Data Capture Questionnaire Design-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="questionnaire-sdc-structureddatacaptureform.html">Content</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="questionnaire-sdc-structureddatacaptureform-mappings.html">Mappings</a></li><li><a href="questionnaire-sdc-structureddatacaptureform.questionnaire.html">HTML Form</a></li><li><a href="questionnaire-sdc-structureddatacaptureform.profile.xml.html">XML</a></li><li><a href="questionnaire-sdc-structureddatacaptureform.profile.json.html">JSON</a></li></ul>
+
+<h4>StructureDefinition: StructuredDataCaptureForm - Detailed Descriptions</h4>
+
+<p>Definitions for the questionnaire-sdc-structureddatacaptureform Profile.</p>
+
+<table class="dict">
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.StructuredDataCaptureForm"> </a><b>Questionnaire(StructuredDataCaptureForm)</b></td></tr>
+  <tr><td>Definition</td><td><p>A structured set of questions intended to guide the collection of answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="questionnaire.html#Questionnaire">Questionnaire</a></td></tr>
+  <tr><td>Requirements</td><td><p>To support structured, hierarchical registration of data gathered using digital forms and other questionnaires.</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Form, CRF, Survey</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">que-2</b>: The link ids for groups and questions must be unique within the questionnaire (xpath: count(descendant::f:linkId/@value)=count(distinct-values(descendant::f:linkId/@value)))<br/><b title="Formal Invariant Identifier">que-3</b>: If root group must be &quot;required&quot; (xpath: f:group/f:required/@value='true')</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.id"> </a><b>Questionnaire.id</b></td></tr>
+  <tr><td>Definition</td><td><p>The logical id of the resource, as used in the url for the resource. Once assigned, this value never changes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.meta"> </a><b>Questionnaire.meta</b></td></tr>
+  <tr><td>Definition</td><td><p>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="resource.html#Meta">Meta</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.implicitRules"> </a><b>Questionnaire.implicitRules</b></td></tr>
+  <tr><td>Definition</td><td><p>A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.language"> </a><b>Questionnaire.language</b></td></tr>
+  <tr><td>Definition</td><td><p>The base language in which the resource is written.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>A human language<br/>The codes SHALL be taken from  <a href="http://tools.ietf.org/html/bcp47">http://tools.ietf.org/html/bcp47</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.text"> </a><b>Questionnaire.text</b></td></tr>
+  <tr><td>Definition</td><td><p>A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: dom-1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="narrative.html#Narrative">Narrative</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>narrative, html, xhtml, display</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.contained"> </a><b>Questionnaire.contained</b></td></tr>
+  <tr><td>Definition</td><td><p>These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="resource.html#Resource">Resource</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>inline resources, anonymous resources, contained resources</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.extension"> </a><b>Questionnaire.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.submissionEndpoint"> </a><b>Questionnaire.extension (<a href="extension-questionnaire-sdc-endpoint.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-sdc-endpoint]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The base URL for the server to which questionnaire answers associated with this questionnaire should be submitted.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#uri">uri</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Indicates that the form has been designed with an expectation that it will be submitted to the specified URI.  If multiple endpoints are specified, expectation is that answers are submitted to all endpoints.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.styleSensitive"> </a><b>Questionnaire.extension (<a href="extension-stylesensitive.html">[UriType[http://hl7.org/fhir/StructureDefinition/styleSensitive]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates that the style extensions in this resource are essential to the interpretation of the styled text and that it cannot be rendered without the style without losing essential information.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td>Comments</td><td><p>If set to true, all systems that claim to support this extension and which render elements of the resource containing this extension SHALL either render the content as required by the style extensions defined by this profile that are present in the resource or shall (if safe to do so based on their own rules), omit entirely the styled content they cannot render in accordance with the extensions.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.category"> </a><b>Questionnaire.extension (<a href="extension-questionnaire-category.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-category]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A code that identifies the questionnaire as falling into a particular group of like questionnaires.  E.g. &quot;Pediatric&quot;, &quot;Admissions&quot;, &quot;Research&quot;, &quot;Demographic&quot;, &quot;Opinion Survey&quot;, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.modifierExtension"> </a><b>Questionnaire.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.identifier"> </a><b>Questionnaire.identifier</b></td></tr>
+  <tr><td>Definition</td><td><p>This records identifiers associated with this question set that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Need to allow connection to a wider workflow.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.version"> </a><b>Questionnaire.version</b></td></tr>
+  <tr><td>Definition</td><td><p>The version number assigned by the publisher for business reasons.  It may remain the same when the resource is updated.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>In some cases, separate resource instances might be created for each version (if an older version can be maintained once a new version exists).</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>N/A - MIF rather than RIM level</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.status"> </a><b>Questionnaire.status</b></td></tr>
+  <tr><td>Definition</td><td><p>The lifecycle status of the questionnaire as a whole.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>Lifecycle status of the questionnaire<br/>The codes SHALL be taken from <a href="valueset-questionnaire-status.html">QuestionnaireStatus</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.date"> </a><b>Questionnaire.date</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies when this version of the form was created.  Changes whenever the form is updated.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Date Created, Date published, Date Issued, Date updated</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.publisher"> </a><b>Questionnaire.publisher</b></td></tr>
+  <tr><td>Definition</td><td><p>Organization or person responsible for developing and maintaining the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Conveys responsibility for the questions and their organization and also helps evaluate the questionnaire's &quot;authority&quot;.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.telecom"> </a><b>Questionnaire.telecom</b></td></tr>
+  <tr><td>Definition</td><td><p>Contact details to assist a user in finding and communicating with the publisher.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#ContactPoint">ContactPoint</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.subjectType"> </a><b>Questionnaire.subjectType</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the types of subjects that can be the subject of the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>One of the resource types defined as part of FHIR<br/>The codes SHALL be taken from <a href="valueset-resource-types.html">ResourceType</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group"> </a><b>Questionnaire.group(group)</b></td></tr>
+  <tr><td>Definition</td><td><p>A collection of related questions (or further groupings of questions).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: que-3</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Need to be able to logically group answers to grouped questions.</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Section</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">que-1</b>: Groups may either contain questions or groups but not both (xpath: not(exists(f:group) and exists(f:question)))</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.id"> </a><b>Questionnaire.group.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension"> </a><b>Questionnaire.group.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.groupLabel"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-label.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-label]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A label for a particular group or question within the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>These are generally unique within a questionnaire, though this is not guaranteed. Some questionnaires may have multiple questions with the same label with logic to control which gets exposed.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.id"> </a><b>Questionnaire.group.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.extension"> </a><b>Questionnaire.group.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupLabel.renderingStyle"> </a><b>Questionnaire.group.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupLabel.markup"> </a><b>Questionnaire.group.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.url"> </a><b>Questionnaire.group.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.value[x]"> </a><b>Questionnaire.group.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.groupInstruction"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-instruction.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-instruction]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The text provides instructions intended to be rendered with the element explaining how the content of the element is to be completed.  This should be rendered in-line before the question or group.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.id"> </a><b>Questionnaire.group.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.extension"> </a><b>Questionnaire.group.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupInstruction.renderingStyle"> </a><b>Questionnaire.group.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupInstruction.markup"> </a><b>Questionnaire.group.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.url"> </a><b>Questionnaire.group.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.value[x]"> </a><b>Questionnaire.group.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.groupSecurity"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-security.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-security]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The text describes specific security and/or privacy considerations associated with the element.  E.g. retention rules, data access control expectations, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.id"> </a><b>Questionnaire.group.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.extension"> </a><b>Questionnaire.group.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupSecurity.renderingStyle"> </a><b>Questionnaire.group.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupSecurity.markup"> </a><b>Questionnaire.group.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.url"> </a><b>Questionnaire.group.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.value[x]"> </a><b>Questionnaire.group.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.groupHelp"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-help.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-help]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The content is intended for display if a user selects an icon or performs some other action seeking help about the element.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.id"> </a><b>Questionnaire.group.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.extension"> </a><b>Questionnaire.group.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupHelp.renderingStyle"> </a><b>Questionnaire.group.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupHelp.markup"> </a><b>Questionnaire.group.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.url"> </a><b>Questionnaire.group.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.value[x]"> </a><b>Questionnaire.group.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.groupTooltip"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-tooltip.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-tooltip]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The content is intended for use in a fly-over or similar display mechanism - primarily intended for online form entry.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.id"> </a><b>Questionnaire.group.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.extension"> </a><b>Questionnaire.group.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupTooltip.renderingStyle"> </a><b>Questionnaire.group.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupTooltip.markup"> </a><b>Questionnaire.group.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.url"> </a><b>Questionnaire.group.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.value[x]"> </a><b>Questionnaire.group.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.groupTrailing"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-trailing.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-trailing]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The text should be displayed after all of the other the content of the group or question.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.id"> </a><b>Questionnaire.group.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.extension"> </a><b>Questionnaire.group.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupTrailing.renderingStyle"> </a><b>Questionnaire.group.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupTrailing.markup"> </a><b>Questionnaire.group.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.groupOptionalDisplay"> </a><b>Questionnaire.group.extension.extension (<a href="extension-questionnaire-sdc-optionaldisplay.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-sdc-optionalDisplay]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>If set to true, it means that the system displaying the form (or the individual encoding the form for data capture) can choose to omit the question from display to the user.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td>Comments</td><td><p>If a group or question that contains other groups or questions is marked as &quot;optional&quot;, all of its contents are automatically also treated as optional.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.url"> </a><b>Questionnaire.group.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.extension.value[x]"> </a><b>Questionnaire.group.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.hidden"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-hidden.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-hidden]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>If true, indicates that the containing group or question should not be displayed to the user for data entry.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Some questionnaires may have questions that represent calculated values or internal &quot;fixed&quot; metadata.  These elements need to be included with the answers, but should not be displayed to the user.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.groupMinOccurs"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-minoccurs.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The minimum number of times the group must appear or the minimum number of answers for a question - when greater than 1.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#integer">integer</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Default assumption for &quot;required&quot; elements is minOccurs=1.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.groupMaxOccurs"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-maxoccurs.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The maximum number of times the group must appear or the minimum number of answers for a question - when greater than 1 and not unlimited.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#integer">integer</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Only relevant if the element has repeats=true and there's a need to constrain the number of allowed repetitions.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.specialGroup"> </a><b>Questionnaire.group.extension (<a href="extension-questionnaire-sdc-specialgroup.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-sdc-specialGroup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>If specified, indicates that the group should be rendered as a repeating header or footer on each &quot;page&quot; of the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#code">code</a>)</td></tr>
+  <tr><td>Comments</td><td><p>When omitted, sections are presumed to be &quot;regular&quot; sections.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.modifierExtension"> </a><b>Questionnaire.group.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.linkId"> </a><b>Questionnaire.group.linkId</b></td></tr>
+  <tr><td>Definition</td><td><p>An identifier that is unique within the questionnaire allowing linkage to the equivalent group in a QuestionnaireAnswers resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p><a href="questionnaireanswers.html">QuestionnaireAnswers</a> does not require omitted groups to be included and may have some groups that repeat, so linkage based on position alone is not sufficient.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.title"> </a><b>Questionnaire.group.title</b></td></tr>
+  <tr><td>Definition</td><td><p>The human-readable name for this section of the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>When including text for the questionnaire with the answers, sections may have a section header.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.title.id"> </a><b>Questionnaire.group.title.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references)</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.title.extension"> </a><b>Questionnaire.group.title.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.title.groupTitle.renderingStyle"> </a><b>Questionnaire.group.title.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.title.groupTitle.markup"> </a><b>Questionnaire.group.title.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.title.value"> </a><b>Questionnaire.group.title.value</b></td></tr>
+  <tr><td>Definition</td><td><p>The actual value</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td>xs:string</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.concept"> </a><b>Questionnaire.group.concept</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies a how this group of questions is known in a particular terminology such as LOINC.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>Codes for questionnaires and groupings of questionnaire questions</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Coding">Coding</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Allows linking of groups of questions (and complete questionnaires) to formal terminologies.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.text"> </a><b>Questionnaire.group.text</b></td></tr>
+  <tr><td>Definition</td><td><p>Additional text for the group, used for display purposes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>When including text for the questionnaire, each section may contain additional explanations are background text.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.required"> </a><b>Questionnaire.group.required</b></td></tr>
+  <tr><td>Definition</td><td><p>If true, indicates that the group must be present and have required questions within it answered.  If false, the group may be skipped when answering the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Default Value</td><td>false</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.repeats"> </a><b>Questionnaire.group.repeats</b></td></tr>
+  <tr><td>Definition</td><td><p>Whether the group may occur multiple times in the instance, containing multiple sets of answers.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Groups may be used to create set of (related) questions that can be repeated to give multiple answers to such a set.</p>
+</td></tr>
+  <tr><td>Default Value</td><td>false</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.group"> </a><b>Questionnaire.group.group</b></td></tr>
+  <tr><td>Definition</td><td><p>A sub-group within a group. The ordering of groups within this group is relevant.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: que-1</td></tr>
+  <tr><td>Type</td><td>See group</td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Reports can consist of complex nested groups.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question"> </a><b>Questionnaire.group.question</b></td></tr>
+  <tr><td>Definition</td><td><p>Set of questions within this group. The order of questions within the group is relevant.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: que-1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Must register answers to questions.</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Responses, Contents</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.id"> </a><b>Questionnaire.group.question.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension"> </a><b>Questionnaire.group.question.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionMinOccurs"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-minoccurs.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The minimum number of times the group must appear or the minimum number of answers for a question - when greater than 1.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#integer">integer</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Default assumption for &quot;required&quot; elements is minOccurs=1.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionMaxOccurs"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-maxoccurs.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The maximum number of times the group must appear or the minimum number of answers for a question - when greater than 1 and not unlimited.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#integer">integer</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Only relevant if the element has repeats=true and there's a need to constrain the number of allowed repetitions.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionLabel"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-label.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-label]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A label for a particular group or question within the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>These are generally unique within a questionnaire, though this is not guaranteed. Some questionnaires may have multiple questions with the same label with logic to control which gets exposed.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.id"> </a><b>Questionnaire.group.question.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.extension"> </a><b>Questionnaire.group.question.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionLabel.renderingStyle"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionLabel.markup"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.url"> </a><b>Questionnaire.group.question.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.value[x]"> </a><b>Questionnaire.group.question.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionInstruction"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-instruction.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-instruction]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The text provides instructions intended to be rendered with the element explaining how the content of the element is to be completed.  This should be rendered in-line before the question or group.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.id"> </a><b>Questionnaire.group.question.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.extension"> </a><b>Questionnaire.group.question.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionInstruction.renderingStyle"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionInstruction.markup"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.url"> </a><b>Questionnaire.group.question.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.value[x]"> </a><b>Questionnaire.group.question.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionSecurity"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-security.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-security]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The text describes specific security and/or privacy considerations associated with the element.  E.g. retention rules, data access control expectations, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.id"> </a><b>Questionnaire.group.question.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.extension"> </a><b>Questionnaire.group.question.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionSecurity.renderingStyle"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionSecurity.markup"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.url"> </a><b>Questionnaire.group.question.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.value[x]"> </a><b>Questionnaire.group.question.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionHelp"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-help.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-help]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The content is intended for display if a user selects an icon or performs some other action seeking help about the element.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.id"> </a><b>Questionnaire.group.question.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.extension"> </a><b>Questionnaire.group.question.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionHelp.renderingStyle"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionHelp.markup"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.url"> </a><b>Questionnaire.group.question.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.value[x]"> </a><b>Questionnaire.group.question.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionTooltip"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-tooltip.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-tooltip]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The content is intended for use in a fly-over or similar display mechanism - primarily intended for online form entry.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.id"> </a><b>Questionnaire.group.question.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.extension"> </a><b>Questionnaire.group.question.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionTooltip.renderingStyle"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionTooltip.markup"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.url"> </a><b>Questionnaire.group.question.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.value[x]"> </a><b>Questionnaire.group.question.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionTrailing"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-trailing.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-trailing]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The text should be displayed after all of the other the content of the group or question.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.id"> </a><b>Questionnaire.group.question.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.extension"> </a><b>Questionnaire.group.question.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionTrailing.renderingStyle"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionTrailing.markup"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.url"> </a><b>Questionnaire.group.question.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.value[x]"> </a><b>Questionnaire.group.question.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionUnits"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-units.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-units]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the units in which the question's answer should be captured.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.id"> </a><b>Questionnaire.group.question.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.extension"> </a><b>Questionnaire.group.question.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionUnits.renderingStyle"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionUnits.markup"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.url"> </a><b>Questionnaire.group.question.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.value[x]"> </a><b>Questionnaire.group.question.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionEnableWhen"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-enablewhen.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-enableWhen]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>If present, indicates that the group or question containing the extension should only be enabled (allow an answer to be present and, in most circumstances, even be visible to the user) when the specified condition is true.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#open">*</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Allows questionnaires to adapt based on answers to prior questions.  E.g. If physical gender is specified as a male, no need to capture pregnancy history.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.questionOptionalDisplay"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-sdc-optionaldisplay.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-sdc-optionalDisplay]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>If set to true, it means that the system displaying the form (or the individual encoding the form for data capture) can choose to omit the question from display to the user.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td>Comments</td><td><p>If a group or question that contains other groups or questions is marked as &quot;optional&quot;, all of its contents are automatically also treated as optional.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.hidden"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-hidden.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-hidden]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>If true, indicates that the containing group or question should not be displayed to the user for data entry.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Some questionnaires may have questions that represent calculated values or internal &quot;fixed&quot; metadata.  These elements need to be included with the answers, but should not be displayed to the user.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.defaultValue"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-defaultvalue.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-defaultValue]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is the value that should be pre-populated when rendering the questionnaire for user input.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#open">*</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.defaultAsFixed"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-defaultasfixed.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-defaultAsFixed]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>If true, the default value is set as a fixed &quot;answer&quot; for the question.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.minLength"> </a><b>Questionnaire.group.question.extension (<a href="extension-minlength.html">[UriType[http://hl7.org/fhir/StructureDefinition/minLength]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The minimum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#integer">integer</a>)</td></tr>
+  <tr><td>Comments</td><td><p>For base64binary, reflects the number of characters representing the encoded data, not the number of bytes of the binary data.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.maxLength"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-maxlength.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-maxLength]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The maximum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#integer">integer</a>)</td></tr>
+  <tr><td>Comments</td><td><p>For base64binary, reflects the number of characters representing the encoded data, not the number of bytes of the binary data.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.regex"> </a><b>Questionnaire.group.question.extension (<a href="extension-regex.html">[UriType[http://hl7.org/fhir/StructureDefinition/regex]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A regular expression that defines the syntax for the data element to be considered valid.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.entryFormat"> </a><b>Questionnaire.group.question.extension (<a href="extension-entryformat.html">[UriType[http://hl7.org/fhir/StructureDefinition/entryFormat]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A syntax intended for display to the user to guide their input (i.e. a human readable version of a regular expression).  For example &quot;nnn-nnn-nnn&quot;.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.minValue"> </a><b>Questionnaire.group.question.extension (<a href="extension-minvalue.html">[UriType[http://hl7.org/fhir/StructureDefinition/minValue]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The inclusive lower bound on the range of allowed values for the data element.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: Choice of: <a href="datatypes.html#date">date</a>, <a href="datatypes.html#dateTime">dateTime</a>, <a href="datatypes.html#time">time</a>, <a href="datatypes.html#instant">instant</a>, <a href="datatypes.html#decimal">decimal</a>, <a href="datatypes.html#integer">integer</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Data type specified must be the same as the data type for the data element.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.maxValue"> </a><b>Questionnaire.group.question.extension (<a href="extension-maxvalue.html">[UriType[http://hl7.org/fhir/StructureDefinition/maxValue]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>The inclusive upper bound on the range of allowed values for the data element.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: Choice of: <a href="datatypes.html#date">date</a>, <a href="datatypes.html#dateTime">dateTime</a>, <a href="datatypes.html#time">time</a>, <a href="datatypes.html#instant">instant</a>, <a href="datatypes.html#decimal">decimal</a>, <a href="datatypes.html#integer">integer</a>)</td></tr>
+  <tr><td>Comments</td><td><p>Data type specified must be the same as the data type for the data element.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.maxDecimalPlaces"> </a><b>Questionnaire.group.question.extension (<a href="extension-maxdecimalplaces.html">[UriType[http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the maximum number of decimal places that may be specified for the data element.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#integer">integer</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.deReference"> </a><b>Questionnaire.group.question.extension (<a href="extension-questionnaire-dereference.html">[UriType[http://hl7.org/fhir/StructureDefinition/questionnaire-deReference]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A reference to the Data Element that corresponds to the question text and answer constraints for this question.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/DataElement]]))</td></tr>
+  <tr><td>Comments</td><td><p>If a code applies to a question, that code should still be conveyed on the question, even if the same code is also referenced as a DataElement.code in the referenced data element.  This extension must not be used in place of specifying the Questionnaire.group.question.concept element.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.id"> </a><b>Questionnaire.group.question.extension.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#id">id</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.extension"> </a><b>Questionnaire.group.question.extension.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>An Extension</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices. The slicing rules are: <ul> <li>unordered</li><li>Open</li><li>discriminators: url</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionText.renderingStyle"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-style.html">[UriType[http://hl7.org/fhir/StructureDefinition/style]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies how the specified element should be rendered when displayed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td>Comments</td><td><p>This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.questionText.markup"> </a><b>Questionnaire.group.question.extension.extension (<a href="extension-markup.html">[UriType[http://hl7.org/fhir/StructureDefinition/markup]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a>  (Extension Type: <a href="datatypes.html#string">string</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.url"> </a><b>Questionnaire.group.question.extension.url</b></td></tr>
+  <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#uri">uri</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.extension.value[x]"> </a><b>Questionnaire.group.question.extension.value[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#open">*</a></td></tr>
+  <tr><td>[x] Note</td><td>See <a href="formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.modifierExtension"> </a><b>Questionnaire.group.question.modifierExtension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.linkId"> </a><b>Questionnaire.group.question.linkId</b></td></tr>
+  <tr><td>Definition</td><td><p>An identifier that is unique within the questionnaire allowing linkage to the equivalent group in a <a href="questionnaireanswers.html">QuestionnaireAnswers</a> resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p><a href="questionnaireanswers.html">QuestionnaireAnswers</a> does not require omitted groups to be included and may have some groups that repeat, so linkage based on position alone is not sufficient.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.concept"> </a><b>Questionnaire.group.question.concept</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies a how this question is known in a particular terminology such as LOINC.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Coding">Coding</a></td></tr>
+  <tr><td>Requirements</td><td><p>Allows linking of questions (and their answers) to formal terminologies.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.text"> </a><b>Questionnaire.group.question.text</b></td></tr>
+  <tr><td>Definition</td><td><p>The actual question as shown to the user to prompt them for an answer.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>When including text for the questionnaire, each question may contain its actual question display text.</p>
+</td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Question</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.type"> </a><b>Questionnaire.group.question.type</b></td></tr>
+  <tr><td>Definition</td><td><p>The expected format of the answer, e.g. the type of input (string, integer) or whether a (multiple) choice is expected.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>The expected format of an answer<br/>The codes SHALL be taken from <a href="valueset-answer-format.html">AnswerFormat</a></td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Defines the format in which the user is to be prompted for the answer.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.required"> </a><b>Questionnaire.group.question.required</b></td></tr>
+  <tr><td>Definition</td><td><p>If true, indicates that the question must be answered and have required groups within it also present.  If false, the question and any contained groups may be skipped when answering the questionnaire.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Default Value</td><td>false</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.repeats"> </a><b>Questionnaire.group.question.repeats</b></td></tr>
+  <tr><td>Definition</td><td><p>If true, the question may have more than one answer.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Used for &quot;check all that apply&quot; types of questions or &quot;list your top 3&quot;, etc.</p>
+</td></tr>
+  <tr><td>Default Value</td><td>false</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.options"> </a><b>Questionnaire.group.question.options</b></td></tr>
+  <tr><td>Definition</td><td><p>Reference to a valueset containing the a list of codes representing permitted answers for the question.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a> ([UriType[http://hl7.org/fhir/StructureDefinition/ValueSet]])</td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="questionnaire-sdc-structureddatacaptureform.Questionnaire.group.question.group"> </a><b>Questionnaire.group.question.group</b></td></tr>
+  <tr><td>Definition</td><td><p>Nested group, containing nested question for this question. The order of groups within the question is relevant.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td>Type</td><td>See group</td></tr>
+  <tr><td><a href="conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details.</p>
+</td></tr>
+</table>
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:35-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fquestionnaire-sdc-structureddatacaptureform&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fquestionnaire-sdc-structureddatacaptureform">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

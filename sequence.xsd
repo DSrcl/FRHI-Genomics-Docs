@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Copyright (c) 2011+, HL7, Inc.
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without modification, 
+  are permitted provided that the following conditions are met:
+  
+   * Redistributions of source code must retain the above copyright notice, this 
+     list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above copyright notice, 
+     this list of conditions and the following disclaimer in the documentation 
+     and/or other materials provided with the distribution.
+   * Neither the name of HL7 nor the names of its contributors may be used to 
+     endorse or promote products derived from this software without specific 
+     prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+  IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+  POSSIBILITY OF SUCH DAMAGE.
+  
+
+  Generated on Sun, Jul 26, 2015 15:54-0400 for FHIR v0.5.0 
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="1.0">
+  <xs:include schemaLocation="fhir-base.xsd"/>
+  <xs:element name="Sequence" type="Sequence">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">This resource records information about sequence of a moleculde. E.g. a DNA sequence.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Sequence">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">This resource records information about sequence of a moleculde. E.g. a DNA sequence.</xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DomainResource">
+        <xs:sequence>
+          <xs:element name="chromosome" minOccurs="1" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Chromosome of the sequence. E.g. &quot;1&quot; for chromosome 1. Note that value of `chromosome` is not limited to a human's chromosomes, as the sequence can be from other species such as Tuberculosis.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="startPosition" minOccurs="1" maxOccurs="1" type="integer">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">0-based location start position of the sequence.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="endPosition" minOccurs="1" maxOccurs="1" type="integer">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">0-based end location (exclusive) of the sequence.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="direction" minOccurs="0" maxOccurs="1" type="StrandDirection">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Direction of the strand.  Forward means the sequence is in 5'-3' direction, reverse otherwise.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="cigar" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Extended CIGAR string for aligning the sequence with reference bases. See detailed documentation [here](http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="sample" minOccurs="0" maxOccurs="1" type="SampleType">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Tissue sample from which molecules encoded by the sequence are extracted.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="lab" minOccurs="0" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Lab where the sequence is determined.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="patient" minOccurs="1" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Whom the sequence is determined for. In a prenatal sequencing test, the patient being referenced is the birthgiver.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="species" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Species of the organism whom the sequence belongs to. The species is not limited to Homo sapiens. E.g. the sequence can be a DNA sequence of a bacteria.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="Quantity">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Quantity of molecule encoded by the sequence presenting in the sample.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="genomeBuild" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Genome assembly used to align the sequence.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="SequenceType">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Type of the sequence. E.g. DNA.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="referenceBases" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Reference bases of the sequence.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="observedBases" minOccurs="1" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Observed bases of the sequence.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="StrandDirection-list">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="forward">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A forward strand i.e. a sequence in 5-3 direction</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="reverse">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A reverse strand i.e. a sequence in 3-5 direction</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="StrandDirection">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Direction of a sequence</xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="Element">
+        <xs:attribute name="value" type="StrandDirection-list" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="SequenceType-list">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="dna">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DNA Sequence</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="rna">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RNA Sequence</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="aa">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Amino acid sequence (protein)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="SequenceType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Type of a sequence</xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="Element">
+        <xs:attribute name="value" type="SequenceType-list" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="SampleType-list">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="germline">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Germline</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="somatic">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Somatic</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="prenatal">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Prenatal</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="SampleType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Type of the sample used to determine a seauence</xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="Element">
+        <xs:attribute name="value" type="SampleType-list" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

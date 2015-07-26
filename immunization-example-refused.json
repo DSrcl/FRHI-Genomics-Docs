@@ -1,0 +1,36 @@
+{
+  "resourceType": "Immunization",
+  "id": "notGiven",
+  "text": {
+    "status": "generated",
+    "div": "<div>Refused Immunization Example</div>"
+  },
+  "date": "2013-01-10",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+        "code": "01",
+        "display": "DTP"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "wasNotGiven": true,
+  "reported": false,
+  "explanation": {
+    "reasonNotGiven": [
+      {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/ActReason",
+            "code": "MEDPREC",
+            "display": "medical precaution"
+          }
+        ]
+      }
+    ]
+  }
+}

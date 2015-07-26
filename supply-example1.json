@@ -1,0 +1,80 @@
+{
+  "resourceType": "Supply",
+  "id": "102",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 102</p><p><b>kind</b>: Central Supply <span>(Details : {http://hl7.org/fhir/supply-type code 'central' = 'central', given as 'Central Supply'})</span></p><p><b>identifier</b>: 23455</p><p><b>status</b>: received</p><p><b>orderedItem</b>: <a>Feeding tube</a></p><h3>Dispenses</h3><table><tr><td>-</td><td><b>Identifier</b></td><td><b>Status</b></td><td><b>Type</b></td><td><b>Quantity</b></td><td><b>SuppliedItem</b></td><td><b>Supplier</b></td><td><b>WhenHandedOver</b></td><td><b>Destination</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>12345 (USUAL)</td><td>dispensed</td><td>Device <span>(Details : {http://hl7.org/fhir/supply-item-type code 'device' = 'Device', given as 'Device'})</span></td><td>1 EA<span> (Details: http://unitsofmeasure.org/ code {each} = '{each}')</span></td><td><a>Feeding tube</a></td><td><a>Rob van den Berk </a></td><td>Dec 6, 2014 3:42:15 PM</td><td><a>Neuro Radiology Operation Room </a></td><td><a>Carla Espinosa</a></td></tr></table></div>"
+  },
+  "kind": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/supply-type",
+        "code": "central",
+        "display": "Central Supply",
+        "userSelected": true
+      }
+    ]
+  },
+  "identifier": {
+    "system": "http://example.org/OR-Supply-Application",
+    "value": "23455",
+    "assigner": {
+      "reference": "Organization/2.16.840.1.113883.19.5",
+      "display": "Good Health Clinic"
+    }
+  },
+  "status": "received",
+  "orderedItem": {
+    "reference": "Device/f001",
+    "display": "Feeding tube"
+  },
+  "dispense": [
+    {
+      "identifier": {
+        "use": "usual",
+        "system": "http://example.org/MM-Supply-Application",
+        "value": "12345",
+        "assigner": {
+          "reference": "Organization/2.16.840.1.113883.19.5",
+          "display": "Good Health Clinic"
+        }
+      },
+      "status": "dispensed",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/supply-item-type",
+            "code": "device",
+            "display": "Device",
+            "userSelected": true
+          }
+        ]
+      },
+      "quantity": {
+        "value": 1,
+        "units": "EA",
+        "system": "http://unitsofmeasure.org/",
+        "code": "{each}"
+      },
+      "suppliedItem": {
+        "reference": "Device/f001",
+        "display": "Feeding tube"
+      },
+      "supplier": {
+        "reference": "Practitioner/f006",
+        "display": "Rob van den Berk "
+      },
+      "whenHandedOver": "2014-12-06T15:42:15-08:00",
+      "destination": {
+        "reference": "Location/2",
+        "display": "Neuro Radiology Operation Room "
+      },
+      "receiver": [
+        {
+          "reference": "Practitioner/f204",
+          "display": "Carla Espinosa"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "resourceType": "ValueSet",
+  "id": "xds-relationship-type",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>XDSRelationshipType</h2><p>The kind of relationship between two XDS documents</p><p>This value set has an inline code system http://hl7.org/fhir/xds-relationship-type, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>APND<a name=\"APND\"> </a></td><td>A P N D</td><td>A separate XDS Document that references a prior document, and may extend or \nalter the observations in the prior document</td></tr><tr><td>RPLC<a name=\"RPLC\"> </a></td><td>R P L C</td><td>A new version of an existing document</td></tr><tr><td>XFRM<a name=\"XFRM\"> </a></td><td>X F R M</td><td>A transformed document is derived by a machine translation from some other format</td></tr><tr><td>XFRM_RPLC<a name=\"XFRM_RPLC\"> </a></td><td>X F R M R P L C</td><td>Both a XFRM and a RPLC relationship</td></tr><tr><td>signs<a name=\"signs\"> </a></td><td>Signs</td><td>This document signs the target document</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.242"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/xds-relationship-type",
+  "version": "0.5.0",
+  "name": "XDSRelationshipType",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The kind of relationship between two XDS documents",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-07-26T15:54:10-04:00",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.242"
+      }
+    ],
+    "system": "http://hl7.org/fhir/xds-relationship-type",
+    "version": "0.5.0",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "APND",
+        "display": "A P N D",
+        "definition": "A separate XDS Document that references a prior document, and may extend or \nalter the observations in the prior document"
+      },
+      {
+        "code": "RPLC",
+        "display": "R P L C",
+        "definition": "A new version of an existing document"
+      },
+      {
+        "code": "XFRM",
+        "display": "X F R M",
+        "definition": "A transformed document is derived by a machine translation from some other format"
+      },
+      {
+        "code": "XFRM_RPLC",
+        "display": "X F R M R P L C",
+        "definition": "Both a XFRM and a RPLC relationship"
+      },
+      {
+        "code": "signs",
+        "display": "Signs",
+        "definition": "This document signs the target document"
+      }
+    ]
+  }
+}

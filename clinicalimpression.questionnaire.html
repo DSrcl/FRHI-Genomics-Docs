@@ -1,0 +1,4369 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Clinicalimpression.questionnaire - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/clinicalimpression.questionnaire.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="clinicalimpression.html">ClinicalImpression</a></li>        <li><b>Generated Questionnaire</b></li>          <!-- clinicalimpression.questionnaire.html / resource-questionnaire:ClinicalImpression / Questionnaire -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="clinicalimpression.html">Content</a></li><li><a href="clinicalimpression-examples.html">Examples</a></li><li><a href="clinicalimpression-definitions.html">Detailed Descriptions</a></li><li><a href="clinicalimpression-mappings.html">Mappings</a></li><li><a href="clinicalimpression-profiles.html">Profiles</a></li><li class="active"><a href="#">HTML Form</a></li></ul>
+
+
+<h2><span class="sectioncount">4.6.6<a name="4.6.6"> </a></span> Clinicalimpression.questionnaire - Example Form <a href="clinicalimpression.questionnaire.html#4.6.6" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>
+This is an example form based on a questionnaire generated from the definition, to help visualise the content. See also the <a href="clinicalimpression.questionnaire.xml.html">XML</a> or <a href="clinicalimpression.questionnaire.json.html">JSON</a> questionnaire.
+</p>
+
+  <!-- DOCTYPE html --><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<script type="text/javascript">  <!-- var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validateClinicalImpression(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_id(divNode, "ClinicalImpression.id")
+         && validateClinicalImpression_meta(divNode, "ClinicalImpression.meta")
+         && validateClinicalImpression_implicitRules(divNode, "ClinicalImpression.implicitRules")
+         && validateClinicalImpression_language(divNode, "ClinicalImpression.language")
+         && validateClinicalImpression_text(divNode, "ClinicalImpression.text")
+         && validateClinicalImpression_contained(divNode, "ClinicalImpression.contained")
+         && validateClinicalImpression_extension(divNode, "ClinicalImpression.extension")
+         && validateClinicalImpression_modifierExtension(divNode, "ClinicalImpression.modifierExtension")
+         && validateClinicalImpression_patient(divNode, "ClinicalImpression.patient")
+         && validateClinicalImpression_assessor(divNode, "ClinicalImpression.assessor")
+         && validateClinicalImpression_status(divNode, "ClinicalImpression.status")
+         && validateClinicalImpression_date(divNode, "ClinicalImpression.date")
+         && validateClinicalImpression_description(divNode, "ClinicalImpression.description")
+         && validateClinicalImpression_previous(divNode, "ClinicalImpression.previous")
+         && validateClinicalImpression_problem(divNode, "ClinicalImpression.problem")
+         && validateClinicalImpression_trigger_x(divNode, "ClinicalImpression.trigger[x]")
+         && validateClinicalImpression_investigations(divNode, "ClinicalImpression.investigations")
+         && validateClinicalImpression_protocol(divNode, "ClinicalImpression.protocol")
+         && validateClinicalImpression_summary(divNode, "ClinicalImpression.summary")
+         && validateClinicalImpression_finding(divNode, "ClinicalImpression.finding")
+         && validateClinicalImpression_resolved(divNode, "ClinicalImpression.resolved")
+         && validateClinicalImpression_ruledOut(divNode, "ClinicalImpression.ruledOut")
+         && validateClinicalImpression_prognosis(divNode, "ClinicalImpression.prognosis")
+         && validateClinicalImpression_plan(divNode, "ClinicalImpression.plan")
+         && validateClinicalImpression_action(divNode, "ClinicalImpression.action");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_id(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_id_value(divNode, "ClinicalImpression.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_id_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_meta(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_implicitRules(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_implicitRules_value(divNode, "ClinicalImpression.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_language(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_language_value(divNode, "ClinicalImpression.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_language_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_text(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_contained(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_extension(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_patient(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.patient");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ClinicalImpression.patient");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_patient_value(divNode, "ClinicalImpression.patient.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_patient_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.patient.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_assessor(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.assessor");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_assessor_value(divNode, "ClinicalImpression.assessor.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_assessor_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.assessor.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_status(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.status");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ClinicalImpression.status");
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_status_value(divNode, "ClinicalImpression.status.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_status_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.status.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_date(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.date");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_date_value(divNode, "ClinicalImpression.date.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_date_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.date.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_description(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.description");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_description_value(divNode, "ClinicalImpression.description.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_description_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.description.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_previous(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.previous");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_previous_value(divNode, "ClinicalImpression.previous.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_previous_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.previous.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_problem(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.problem");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_problem__type(divNode, "ClinicalImpression.problem._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_problem__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "Condition", "display": "Condition"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "AllergyIntolerance", "display": "AllergyIntolerance"}];
+  var answerNodes = findAnswers(node, "ClinicalImpression.problem._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_problem__Condition_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.problem._Condition[1]ClinicalImpression.problem._Condition.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_problem__AllergyIntolerance_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.problem._AllergyIntolerance[1]ClinicalImpression.problem._AllergyIntolerance.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_trigger_x(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.trigger[x]");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_trigger_x__type(divNode, "ClinicalImpression.trigger[x]._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_trigger_x__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/data-types", "code": "CodeableConcept", "display": "CodeableConcept"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Resource", "display": "Resource"}];
+  var answerNodes = findAnswers(node, "ClinicalImpression.trigger[x]._type",codings);
+  if (answerNodes != null) {
+    var groupNodes = findDiv(node, "ClinicalImpression.trigger[x]._type");
+    return validateClinicalImpression_trigger_x__CodeableConcept(node, "ClinicalImpression.trigger[x]._CodeableConcept")
+         && validateClinicalImpression_trigger_x__Resource_value(node, "ClinicalImpression.trigger[x]._Resource[1]ClinicalImpression.trigger[x]._Resource.value");
+  }
+}
+
+
+function validateClinicalImpression_trigger_x__CodeableConcept(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.trigger[x]._CodeableConcept");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_trigger_x__CodeableConcept_coding(divNode, "ClinicalImpression.trigger[x]._CodeableConcept.coding")
+         && validateClinicalImpression_trigger_x__CodeableConcept_text(divNode, "ClinicalImpression.trigger[x]._CodeableConcept.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_trigger_x__CodeableConcept_coding(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.trigger[x]._CodeableConcept.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_trigger_x__CodeableConcept_text(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.trigger[x]._CodeableConcept.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_trigger_x__Resource_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.trigger[x]._Resource[1]ClinicalImpression.trigger[x]._Resource.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_investigations(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_investigations_id(divNode, "ClinicalImpression.investigations.id")
+         && validateClinicalImpression_investigations_extension(divNode, "ClinicalImpression.investigations.extension")
+         && validateClinicalImpression_investigations_modifierExtension(divNode, "ClinicalImpression.investigations.modifierExtension")
+         && validateClinicalImpression_investigations_code(divNode, "ClinicalImpression.investigations.code")
+         && validateClinicalImpression_investigations_item(divNode, "ClinicalImpression.investigations.item");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_investigations_id(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_investigations_id_value(divNode, "ClinicalImpression.investigations.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_investigations_id_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_investigations_extension(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_investigations_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_investigations_code(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.code");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ClinicalImpression.investigations.code");
+    node.focus()
+    alert('Must have at least 1 occurrences of: A name/code for the set');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_investigations_code_coding(divNode, "ClinicalImpression.investigations.code.coding")
+         && validateClinicalImpression_investigations_code_text(divNode, "ClinicalImpression.investigations.code.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_investigations_code_coding(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.code.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_investigations_code_text(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.code.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_investigations_item(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.item");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_investigations_item__type(divNode, "ClinicalImpression.investigations.item._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_investigations_item__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "Observation", "display": "Observation"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "QuestionnaireAnswers", "display": "QuestionnaireAnswers"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "FamilyMemberHistory", "display": "FamilyMemberHistory"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "DiagnosticReport", "display": "DiagnosticReport"}];
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_investigations_item__Observation_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._Observation[1]ClinicalImpression.investigations.item._Observation.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_investigations_item__QuestionnaireAnswers_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._QuestionnaireAnswers[1]ClinicalImpression.investigations.item._QuestionnaireAnswers.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_investigations_item__FamilyMemberHistory_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._FamilyMemberHistory[1]ClinicalImpression.investigations.item._FamilyMemberHistory.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_investigations_item__DiagnosticReport_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._DiagnosticReport[1]ClinicalImpression.investigations.item._DiagnosticReport.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_protocol(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.protocol");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_protocol_value(divNode, "ClinicalImpression.protocol.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_protocol_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.protocol.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_summary(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.summary");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_summary_value(divNode, "ClinicalImpression.summary.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_summary_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.summary.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_finding(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_finding_id(divNode, "ClinicalImpression.finding.id")
+         && validateClinicalImpression_finding_extension(divNode, "ClinicalImpression.finding.extension")
+         && validateClinicalImpression_finding_modifierExtension(divNode, "ClinicalImpression.finding.modifierExtension")
+         && validateClinicalImpression_finding_item(divNode, "ClinicalImpression.finding.item")
+         && validateClinicalImpression_finding_cause(divNode, "ClinicalImpression.finding.cause");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_finding_id(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_finding_id_value(divNode, "ClinicalImpression.finding.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_finding_id_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.finding.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_finding_extension(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_finding_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_finding_item(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.item");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ClinicalImpression.finding.item");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Specific text or code for finding');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_finding_item_coding(divNode, "ClinicalImpression.finding.item.coding")
+         && validateClinicalImpression_finding_item_text(divNode, "ClinicalImpression.finding.item.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_finding_item_coding(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.finding.item.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_finding_item_text(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.finding.item.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_finding_cause(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.cause");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_finding_cause_value(divNode, "ClinicalImpression.finding.cause.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_finding_cause_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.finding.cause.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_resolved(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.resolved");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_resolved_coding(divNode, "ClinicalImpression.resolved.coding")
+         && validateClinicalImpression_resolved_text(divNode, "ClinicalImpression.resolved.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_resolved_coding(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.resolved.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_resolved_text(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.resolved.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_ruledOut(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_ruledOut_id(divNode, "ClinicalImpression.ruledOut.id")
+         && validateClinicalImpression_ruledOut_extension(divNode, "ClinicalImpression.ruledOut.extension")
+         && validateClinicalImpression_ruledOut_modifierExtension(divNode, "ClinicalImpression.ruledOut.modifierExtension")
+         && validateClinicalImpression_ruledOut_item(divNode, "ClinicalImpression.ruledOut.item")
+         && validateClinicalImpression_ruledOut_reason(divNode, "ClinicalImpression.ruledOut.reason");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_ruledOut_id(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_ruledOut_id_value(divNode, "ClinicalImpression.ruledOut.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_ruledOut_id_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.ruledOut.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_ruledOut_extension(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.extension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_ruledOut_modifierExtension(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.modifierExtension");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_ruledOut_item(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.item");
+  if (groupNodes.length < 1) {
+    setAddFocus(node, "ClinicalImpression.ruledOut.item");
+    node.focus()
+    alert('Must have at least 1 occurrences of: Specific text of code for diagnosis');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_ruledOut_item_coding(divNode, "ClinicalImpression.ruledOut.item.coding")
+         && validateClinicalImpression_ruledOut_item_text(divNode, "ClinicalImpression.ruledOut.item.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_ruledOut_item_coding(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.ruledOut.item.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_ruledOut_item_text(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.ruledOut.item.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_ruledOut_reason(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.reason");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_ruledOut_reason_value(divNode, "ClinicalImpression.ruledOut.reason.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_ruledOut_reason_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.ruledOut.reason.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_prognosis(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.prognosis");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_prognosis_value(divNode, "ClinicalImpression.prognosis.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_prognosis_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.prognosis.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.plan");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_plan__type(divNode, "ClinicalImpression.plan._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_plan__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "CarePlan", "display": "CarePlan"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Appointment", "display": "Appointment"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "CommunicationRequest", "display": "CommunicationRequest"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "DeviceUseRequest", "display": "DeviceUseRequest"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "DiagnosticOrder", "display": "DiagnosticOrder"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "MedicationPrescription", "display": "MedicationPrescription"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "NutritionOrder", "display": "NutritionOrder"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Order", "display": "Order"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "ProcedureRequest", "display": "ProcedureRequest"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "ProcessRequest", "display": "ProcessRequest"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "ReferralRequest", "display": "ReferralRequest"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Supply", "display": "Supply"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "VisionPrescription", "display": "VisionPrescription"}];
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__CarePlan_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._CarePlan[1]ClinicalImpression.plan._CarePlan.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__Appointment_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._Appointment[1]ClinicalImpression.plan._Appointment.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__CommunicationRequest_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._CommunicationRequest[1]ClinicalImpression.plan._CommunicationRequest.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__DeviceUseRequest_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._DeviceUseRequest[1]ClinicalImpression.plan._DeviceUseRequest.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__DiagnosticOrder_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._DiagnosticOrder[1]ClinicalImpression.plan._DiagnosticOrder.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__MedicationPrescription_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._MedicationPrescription[1]ClinicalImpression.plan._MedicationPrescription.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__NutritionOrder_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._NutritionOrder[1]ClinicalImpression.plan._NutritionOrder.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__Order_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._Order[1]ClinicalImpression.plan._Order.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__ProcedureRequest_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._ProcedureRequest[1]ClinicalImpression.plan._ProcedureRequest.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__ProcessRequest_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._ProcessRequest[1]ClinicalImpression.plan._ProcessRequest.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__ReferralRequest_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._ReferralRequest[1]ClinicalImpression.plan._ReferralRequest.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__Supply_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._Supply[1]ClinicalImpression.plan._Supply.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_plan__VisionPrescription_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._VisionPrescription[1]ClinicalImpression.plan._VisionPrescription.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_action(node) {
+  var groupNodes = findDiv(node, "ClinicalImpression.action");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateClinicalImpression_action__type(divNode, "ClinicalImpression.action._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateClinicalImpression_action__type(node) {
+  var codings = [{"system": "http://hl7.org/fhir/resource-types", "code": "ReferralRequest", "display": "ReferralRequest"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "ProcedureRequest", "display": "ProcedureRequest"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Procedure", "display": "Procedure"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "MedicationPrescription", "display": "MedicationPrescription"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "DiagnosticOrder", "display": "DiagnosticOrder"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "NutritionOrder", "display": "NutritionOrder"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Supply", "display": "Supply"},
+                 {"system": "http://hl7.org/fhir/resource-types", "code": "Appointment", "display": "Appointment"}];
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._type",codings);
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_action__ReferralRequest_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._ReferralRequest[1]ClinicalImpression.action._ReferralRequest.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_action__ProcedureRequest_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._ProcedureRequest[1]ClinicalImpression.action._ProcedureRequest.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_action__Procedure_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._Procedure[1]ClinicalImpression.action._Procedure.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_action__MedicationPrescription_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._MedicationPrescription[1]ClinicalImpression.action._MedicationPrescription.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_action__DiagnosticOrder_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._DiagnosticOrder[1]ClinicalImpression.action._DiagnosticOrder.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_action__NutritionOrder_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._NutritionOrder[1]ClinicalImpression.action._NutritionOrder.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_action__Supply_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._Supply[1]ClinicalImpression.action._Supply.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateClinicalImpression_action__Appointment_value(node) {
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._Appointment[1]ClinicalImpression.action._Appointment.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function serializeClinicalImpression(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression",
+      "title":"A clinical assessment performed when planning treatments and management strategies for a patient"
+    }
+    var childGroups = [];    serializeClinicalImpression_id(groupNodes[i], childGroups);
+    serializeClinicalImpression_meta(groupNodes[i], childGroups);
+    serializeClinicalImpression_implicitRules(groupNodes[i], childGroups);
+    serializeClinicalImpression_language(groupNodes[i], childGroups);
+    serializeClinicalImpression_text(groupNodes[i], childGroups);
+    serializeClinicalImpression_contained(groupNodes[i], childGroups);
+    serializeClinicalImpression_extension(groupNodes[i], childGroups);
+    serializeClinicalImpression_modifierExtension(groupNodes[i], childGroups);
+    serializeClinicalImpression_patient(groupNodes[i], childGroups);
+    serializeClinicalImpression_assessor(groupNodes[i], childGroups);
+    serializeClinicalImpression_status(groupNodes[i], childGroups);
+    serializeClinicalImpression_date(groupNodes[i], childGroups);
+    serializeClinicalImpression_description(groupNodes[i], childGroups);
+    serializeClinicalImpression_previous(groupNodes[i], childGroups);
+    serializeClinicalImpression_problem(groupNodes[i], childGroups);
+    serializeClinicalImpression_trigger_x(groupNodes[i], childGroups);
+    serializeClinicalImpression_investigations(groupNodes[i], childGroups);
+    serializeClinicalImpression_protocol(groupNodes[i], childGroups);
+    serializeClinicalImpression_summary(groupNodes[i], childGroups);
+    serializeClinicalImpression_finding(groupNodes[i], childGroups);
+    serializeClinicalImpression_resolved(groupNodes[i], childGroups);
+    serializeClinicalImpression_ruledOut(groupNodes[i], childGroups);
+    serializeClinicalImpression_prognosis(groupNodes[i], childGroups);
+    serializeClinicalImpression_plan(groupNodes[i], childGroups);
+    serializeClinicalImpression_action(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_id(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.id"
+    }
+    var childQuestions = [];    serializeClinicalImpression_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_id_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.id.value",
+      "text":"Logical id of this artifact"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_meta(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.meta");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.meta",
+      "text":"Metadata about the resource"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_implicitRules(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.implicitRules");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.implicitRules"
+    }
+    var childQuestions = [];    serializeClinicalImpression_implicitRules_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_implicitRules_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.implicitRules.value",
+      "text":"A set of rules under which this content was created"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.implicitRules.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_language(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.language");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.language"
+    }
+    var childQuestions = [];    serializeClinicalImpression_language_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_language_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.language.value",
+      "text":"language"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.language.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_text(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.text");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.text",
+      "text":"Text summary of the resource, for human interpretation"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_contained(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.contained");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.contained",
+      "text":"Contained, inline Resources"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_extension(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_patient(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.patient");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.patient"
+    }
+    var childQuestions = [];    serializeClinicalImpression_patient_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_patient_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.patient.value",
+      "text":"The patient being assessed"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.patient.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_assessor(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.assessor");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.assessor"
+    }
+    var childQuestions = [];    serializeClinicalImpression_assessor_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_assessor_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.assessor.value",
+      "text":"The clinician performing the assessment"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.assessor.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_status(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.status");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.status"
+    }
+    var childQuestions = [];    serializeClinicalImpression_status_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_status_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.status.value",
+      "text":"status"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.status.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_date(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.date");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.date"
+    }
+    var childQuestions = [];    serializeClinicalImpression_date_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_date_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.date.value",
+      "text":"When the assessment occurred"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.date.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_description(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.description");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.description"
+    }
+    var childQuestions = [];    serializeClinicalImpression_description_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_description_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.description.value",
+      "text":"Why/how the assessment was performed"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.description.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_previous(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.previous");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.previous"
+    }
+    var childQuestions = [];    serializeClinicalImpression_previous_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_previous_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.previous.value",
+      "text":"Reference to last assessment"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.previous.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_problem(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.problem");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.problem",
+      "text":"General assessment of patient state"
+    }
+    var childQuestions = [];    serializeClinicalImpression_problem__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_problem__type(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.problem._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.problem._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_problem__Condition_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.problem._Condition[1]ClinicalImpression.problem._Condition.value",
+      "text":"Condition"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.problem._Condition[1]ClinicalImpression.problem._Condition.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_problem__AllergyIntolerance_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.problem._AllergyIntolerance[1]ClinicalImpression.problem._AllergyIntolerance.value",
+      "text":"AllergyIntolerance"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.problem._AllergyIntolerance[1]ClinicalImpression.problem._AllergyIntolerance.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_trigger_x(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.trigger[x]");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.trigger[x]",
+      "text":"Request or event that necessitated this assessment"
+    }
+    var childQuestions = [];    serializeClinicalImpression_trigger_x__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_trigger_x__type(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.trigger[x]._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.trigger[x]._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+    var childGroups = [];    serializeClinicalImpression_trigger_x__CodeableConcept(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+
+}
+
+
+function serializeClinicalImpression_trigger_x__CodeableConcept(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.trigger[x]._CodeableConcept");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.trigger[x]._CodeableConcept",
+      "text":"CodeableConcept"
+    }
+    var childQuestions = [];    serializeClinicalImpression_trigger_x__CodeableConcept_coding(groupNodes[i], childQuestions);
+    serializeClinicalImpression_trigger_x__CodeableConcept_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_trigger_x__CodeableConcept_coding(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.trigger[x]._CodeableConcept.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.trigger[x]._CodeableConcept.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_trigger_x__CodeableConcept_text(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.trigger[x]._CodeableConcept.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.trigger[x]._CodeableConcept.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_trigger_x__Resource_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.trigger[x]._Resource[1]ClinicalImpression.trigger[x]._Resource.value",
+      "text":"Resource"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.trigger[x]._Resource[1]ClinicalImpression.trigger[x]._Resource.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.investigations",
+      "title":"One or more sets of investigations (signs, symptions, etc)"
+    }
+    var childGroups = [];    serializeClinicalImpression_investigations_id(groupNodes[i], childGroups);
+    serializeClinicalImpression_investigations_extension(groupNodes[i], childGroups);
+    serializeClinicalImpression_investigations_modifierExtension(groupNodes[i], childGroups);
+    serializeClinicalImpression_investigations_code(groupNodes[i], childGroups);
+    serializeClinicalImpression_investigations_item(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_id(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.investigations.id"
+    }
+    var childQuestions = [];    serializeClinicalImpression_investigations_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_id_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.investigations.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_extension(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.investigations.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.investigations.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_code(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.code");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.investigations.code",
+      "text":"A name/code for the set"
+    }
+    var childQuestions = [];    serializeClinicalImpression_investigations_code_coding(groupNodes[i], childQuestions);
+    serializeClinicalImpression_investigations_code_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_code_coding(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.investigations.code.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.code.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_code_text(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.investigations.code.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.code.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_item(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.investigations.item");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.investigations.item",
+      "text":"Record of a specific investigation"
+    }
+    var childQuestions = [];    serializeClinicalImpression_investigations_item__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_item__type(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.investigations.item._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_item__Observation_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.investigations.item._Observation[1]ClinicalImpression.investigations.item._Observation.value",
+      "text":"Observation"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._Observation[1]ClinicalImpression.investigations.item._Observation.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_item__QuestionnaireAnswers_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.investigations.item._QuestionnaireAnswers[1]ClinicalImpression.investigations.item._QuestionnaireAnswers.value",
+      "text":"QuestionnaireAnswers"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._QuestionnaireAnswers[1]ClinicalImpression.investigations.item._QuestionnaireAnswers.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_item__FamilyMemberHistory_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.investigations.item._FamilyMemberHistory[1]ClinicalImpression.investigations.item._FamilyMemberHistory.value",
+      "text":"FamilyMemberHistory"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._FamilyMemberHistory[1]ClinicalImpression.investigations.item._FamilyMemberHistory.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_investigations_item__DiagnosticReport_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.investigations.item._DiagnosticReport[1]ClinicalImpression.investigations.item._DiagnosticReport.value",
+      "text":"DiagnosticReport"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.investigations.item._DiagnosticReport[1]ClinicalImpression.investigations.item._DiagnosticReport.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_protocol(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.protocol");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.protocol"
+    }
+    var childQuestions = [];    serializeClinicalImpression_protocol_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_protocol_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.protocol.value",
+      "text":"Clinical Protocol followed"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.protocol.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_summary(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.summary");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.summary"
+    }
+    var childQuestions = [];    serializeClinicalImpression_summary_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_summary_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.summary.value",
+      "text":"Summary of the assessment"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.summary.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.finding",
+      "title":"Possible or likely findings and diagnoses"
+    }
+    var childGroups = [];    serializeClinicalImpression_finding_id(groupNodes[i], childGroups);
+    serializeClinicalImpression_finding_extension(groupNodes[i], childGroups);
+    serializeClinicalImpression_finding_modifierExtension(groupNodes[i], childGroups);
+    serializeClinicalImpression_finding_item(groupNodes[i], childGroups);
+    serializeClinicalImpression_finding_cause(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding_id(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.finding.id"
+    }
+    var childQuestions = [];    serializeClinicalImpression_finding_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding_id_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.finding.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.finding.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding_extension(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.finding.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.finding.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding_item(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.item");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.finding.item",
+      "text":"Specific text or code for finding"
+    }
+    var childQuestions = [];    serializeClinicalImpression_finding_item_coding(groupNodes[i], childQuestions);
+    serializeClinicalImpression_finding_item_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding_item_coding(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.finding.item.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.finding.item.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding_item_text(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.finding.item.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.finding.item.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding_cause(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.finding.cause");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.finding.cause"
+    }
+    var childQuestions = [];    serializeClinicalImpression_finding_cause_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_finding_cause_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.finding.cause.value",
+      "text":"Which investigations support finding"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.finding.cause.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_resolved(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.resolved");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.resolved",
+      "text":"Diagnosies/conditions resolved since previous assessment"
+    }
+    var childQuestions = [];    serializeClinicalImpression_resolved_coding(groupNodes[i], childQuestions);
+    serializeClinicalImpression_resolved_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_resolved_coding(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.resolved.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.resolved.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_resolved_text(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.resolved.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.resolved.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.ruledOut",
+      "title":"Diagnosis considered not possible"
+    }
+    var childGroups = [];    serializeClinicalImpression_ruledOut_id(groupNodes[i], childGroups);
+    serializeClinicalImpression_ruledOut_extension(groupNodes[i], childGroups);
+    serializeClinicalImpression_ruledOut_modifierExtension(groupNodes[i], childGroups);
+    serializeClinicalImpression_ruledOut_item(groupNodes[i], childGroups);
+    serializeClinicalImpression_ruledOut_reason(groupNodes[i], childGroups);
+    if (childGroups.length != 0) {
+      group.group = childGroups;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut_id(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.id");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.ruledOut.id"
+    }
+    var childQuestions = [];    serializeClinicalImpression_ruledOut_id_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut_id_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.ruledOut.id.value",
+      "text":"xml:id (or equivalent in JSON)"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.ruledOut.id.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut_extension(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.extension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.ruledOut.extension",
+      "text":"Additional Content defined by implementations"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut_modifierExtension(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.modifierExtension");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.ruledOut.modifierExtension",
+      "text":"Extensions that cannot be ignored"
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut_item(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.item");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.ruledOut.item",
+      "text":"Specific text of code for diagnosis"
+    }
+    var childQuestions = [];    serializeClinicalImpression_ruledOut_item_coding(groupNodes[i], childQuestions);
+    serializeClinicalImpression_ruledOut_item_text(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut_item_coding(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.ruledOut.item.coding",
+      "text":"code:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.ruledOut.item.coding");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut_item_text(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.ruledOut.item.text",
+      "text":"text:"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.ruledOut.item.text");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut_reason(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.ruledOut.reason");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.ruledOut.reason"
+    }
+    var childQuestions = [];    serializeClinicalImpression_ruledOut_reason_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_ruledOut_reason_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.ruledOut.reason.value",
+      "text":"Grounds for elimination"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.ruledOut.reason.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_prognosis(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.prognosis");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.prognosis"
+    }
+    var childQuestions = [];    serializeClinicalImpression_prognosis_value(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_prognosis_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.prognosis.value",
+      "text":"Estimate of likely outcome"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.prognosis.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.plan");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.plan",
+      "text":"Plan of action after assessment"
+    }
+    var childQuestions = [];    serializeClinicalImpression_plan__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__type(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__CarePlan_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._CarePlan[1]ClinicalImpression.plan._CarePlan.value",
+      "text":"CarePlan"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._CarePlan[1]ClinicalImpression.plan._CarePlan.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__Appointment_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._Appointment[1]ClinicalImpression.plan._Appointment.value",
+      "text":"Appointment"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._Appointment[1]ClinicalImpression.plan._Appointment.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__CommunicationRequest_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._CommunicationRequest[1]ClinicalImpression.plan._CommunicationRequest.value",
+      "text":"CommunicationRequest"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._CommunicationRequest[1]ClinicalImpression.plan._CommunicationRequest.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__DeviceUseRequest_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._DeviceUseRequest[1]ClinicalImpression.plan._DeviceUseRequest.value",
+      "text":"DeviceUseRequest"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._DeviceUseRequest[1]ClinicalImpression.plan._DeviceUseRequest.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__DiagnosticOrder_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._DiagnosticOrder[1]ClinicalImpression.plan._DiagnosticOrder.value",
+      "text":"DiagnosticOrder"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._DiagnosticOrder[1]ClinicalImpression.plan._DiagnosticOrder.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__MedicationPrescription_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._MedicationPrescription[1]ClinicalImpression.plan._MedicationPrescription.value",
+      "text":"MedicationPrescription"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._MedicationPrescription[1]ClinicalImpression.plan._MedicationPrescription.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__NutritionOrder_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._NutritionOrder[1]ClinicalImpression.plan._NutritionOrder.value",
+      "text":"NutritionOrder"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._NutritionOrder[1]ClinicalImpression.plan._NutritionOrder.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__Order_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._Order[1]ClinicalImpression.plan._Order.value",
+      "text":"Order"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._Order[1]ClinicalImpression.plan._Order.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__ProcedureRequest_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._ProcedureRequest[1]ClinicalImpression.plan._ProcedureRequest.value",
+      "text":"ProcedureRequest"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._ProcedureRequest[1]ClinicalImpression.plan._ProcedureRequest.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__ProcessRequest_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._ProcessRequest[1]ClinicalImpression.plan._ProcessRequest.value",
+      "text":"ProcessRequest"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._ProcessRequest[1]ClinicalImpression.plan._ProcessRequest.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__ReferralRequest_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._ReferralRequest[1]ClinicalImpression.plan._ReferralRequest.value",
+      "text":"ReferralRequest"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._ReferralRequest[1]ClinicalImpression.plan._ReferralRequest.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__Supply_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._Supply[1]ClinicalImpression.plan._Supply.value",
+      "text":"Supply"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._Supply[1]ClinicalImpression.plan._Supply.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_plan__VisionPrescription_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.plan._VisionPrescription[1]ClinicalImpression.plan._VisionPrescription.value",
+      "text":"VisionPrescription"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.plan._VisionPrescription[1]ClinicalImpression.plan._VisionPrescription.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action(node, groups) {
+  var groupNodes = findDiv(node, "ClinicalImpression.action");
+  for (var i=0; i<groupNodes.length;i++) {
+    var group = {
+      "linkId":"ClinicalImpression.action",
+      "text":"Actions taken during assessment"
+    }
+    var childQuestions = [];    serializeClinicalImpression_action__type(groupNodes[i], childQuestions);
+    if (childQuestions.length != 0){
+      group.question = childQuestions;
+      groups.push(group);
+    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action__type(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.action._type",
+      "text":"type"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._type");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action__ReferralRequest_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.action._ReferralRequest[1]ClinicalImpression.action._ReferralRequest.value",
+      "text":"ReferralRequest"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._ReferralRequest[1]ClinicalImpression.action._ReferralRequest.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action__ProcedureRequest_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.action._ProcedureRequest[1]ClinicalImpression.action._ProcedureRequest.value",
+      "text":"ProcedureRequest"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._ProcedureRequest[1]ClinicalImpression.action._ProcedureRequest.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action__Procedure_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.action._Procedure[1]ClinicalImpression.action._Procedure.value",
+      "text":"Procedure"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._Procedure[1]ClinicalImpression.action._Procedure.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action__MedicationPrescription_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.action._MedicationPrescription[1]ClinicalImpression.action._MedicationPrescription.value",
+      "text":"MedicationPrescription"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._MedicationPrescription[1]ClinicalImpression.action._MedicationPrescription.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action__DiagnosticOrder_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.action._DiagnosticOrder[1]ClinicalImpression.action._DiagnosticOrder.value",
+      "text":"DiagnosticOrder"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._DiagnosticOrder[1]ClinicalImpression.action._DiagnosticOrder.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action__NutritionOrder_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.action._NutritionOrder[1]ClinicalImpression.action._NutritionOrder.value",
+      "text":"NutritionOrder"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._NutritionOrder[1]ClinicalImpression.action._NutritionOrder.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action__Supply_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.action._Supply[1]ClinicalImpression.action._Supply.value",
+      "text":"Supply"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._Supply[1]ClinicalImpression.action._Supply.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+
+function serializeClinicalImpression_action__Appointment_value(node, answers) {
+  var question = {
+      "linkId":"ClinicalImpression.action._Appointment[1]ClinicalImpression.action._Appointment.value",
+      "text":"Appointment"
+    }
+  var answerNodes = findAnswers(node, "ClinicalImpression.action._Appointment[1]ClinicalImpression.action._Appointment.value");
+  if (answerNodes.length != 0) {
+    for (int i=0; i < answerNodes.length; i++) {    }
+  }
+
+}
+
+function validateQuestionnaire() {
+  return validateClinicalImpression(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function serializeQuestionnaire() {
+  var rootGroup = serializeClinicalImpression(document.getElementById("div-cnt"));
+  if (rootGroup.length == 0)
+    delete answers.group
+  else
+    answers.group = rootGroup;
+  return answers;
+} --></script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/json2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/statuspage.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jtip.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/jcookie.js" type="text/javascript"> </script>
+      <script src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js" type="text/javascript"> </script>
+      <script type="text/javascript">  <!-- var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>"; --></script>
+      <script type="text/javascript">  <!-- var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+        && this.style.display != "none";
+  });
+}
+
+function setAddFocus(node, linkId) {
+  $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId
+  }).last().next(":input").focus();
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  serializeQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    serializeQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+} --></script>
+      <script type="text/javascript">  <!-- var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/StructureDefinition\/valueset-definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+} --></script>
+      <script type="text/javascript">  <!-- var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+} --></script>
+      <style type="null">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript">  <!-- //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      } --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+<div id="div-cnt">
+         <h3><span class="sectioncount">4.6.6.1<a name="4.6.6.1"> </a></span> A clinical assessment performed when planning treatments and management strategies for a patient <a href="clinicalimpression.questionnaire.html#4.6.6.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e387">
+            <span style="display:none">ClinicalImpression</span>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e405.1">
+               <span style="display:none">ClinicalImpression.id</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.id.value</span> Logical id of this artifact</td>
+                        <td>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.id[1]ClinicalImpression.id.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e405.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.id</span>
+            <span style="display:none">1</span>
+            <p>Metadata about the resource</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e443.1">
+               <span style="display:none">ClinicalImpression.meta</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e443.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.meta</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e462.1">
+               <span style="display:none">ClinicalImpression.implicitRules</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.implicitRules[1]ClinicalImpression.implicitRules.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e462.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.implicitRules</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e500.1">
+               <span style="display:none">ClinicalImpression.language</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e500.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e538.1">
+               <span style="display:none">ClinicalImpression.text</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e538.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e558.1">
+               <span style="display:none">ClinicalImpression.contained</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e558.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.contained</span>
+            <span style="display:none">1</span>
+            <p>Additional Content defined by implementations</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e577.1">
+               <span style="display:none">ClinicalImpression.extension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e577.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.extension</span>
+            <span style="display:none">1</span>
+            <p>Extensions that cannot be ignored</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e596.1">
+               <span style="display:none">ClinicalImpression.modifierExtension</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e596.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.modifierExtension</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e615.1">
+               <span style="display:none">ClinicalImpression.patient</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.patient.value</span> The patient being assessed</td>
+                        <td>
+                           <input tabindex="text" name="Path:ClinicalImpression[1]ClinicalImpression.patient[1]ClinicalImpression.patient.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e615.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.patient</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e658.1">
+               <span style="display:none">ClinicalImpression.assessor</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.assessor.value</span> The clinician performing the assessment</td>
+                        <td>
+                           <input tabindex="text" name="Path:ClinicalImpression[1]ClinicalImpression.assessor[1]ClinicalImpression.assessor.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e658.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.assessor</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e701.1">
+               <span style="display:none">ClinicalImpression.status</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.status.value</span> status</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e701.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.status</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e740.1">
+               <span style="display:none">ClinicalImpression.date</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.date.value</span> When the assessment occurred</td>
+                        <td>
+                           <input onblur="checkDateTime(this)" maxlength="26" name="Path:ClinicalImpression[1]ClinicalImpression.date[1]ClinicalImpression.date.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e740.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.date</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e778.1">
+               <span style="display:none">ClinicalImpression.description</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.description.value</span> Why/how the assessment was performed</td>
+                        <td>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.description[1]ClinicalImpression.description.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e778.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.description</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e816.1">
+               <span style="display:none">ClinicalImpression.previous</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.previous.value</span> Reference to last assessment</td>
+                        <td>
+                           <input tabindex="text" name="Path:ClinicalImpression[1]ClinicalImpression.previous[1]ClinicalImpression.previous.value[1]"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e816.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.previous</span>
+            <span style="display:none">1</span>
+            <p>General assessment of patient state</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e859.1">
+               <span style="display:none">ClinicalImpression.problem</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.problem._type</span> type</td>
+                        <td>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.problem[1]" type="radio" value="Condition"/>
+                           <span> Condition</span>
+                           <br/>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.problem[1]" type="radio" value="AllergyIntolerance"/>
+                           <span> AllergyIntolerance</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e859.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.problem</span>
+            <span style="display:none">1</span>
+            <p>Request or event that necessitated this assessment</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e949.1">
+               <span style="display:none">ClinicalImpression.trigger[x]</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.trigger[x]._type</span> type</td>
+                        <td>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.trigger[x][1]" type="radio" value="CodeableConcept"/>
+                           <span> CodeableConcept</span>
+                           <br/>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.trigger[x][1]" type="radio" value="Resource"/>
+                           <span> Resource</span>
+                           <br/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <p>CodeableConcept</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e995.1.1">
+                  <span style="display:none">ClinicalImpression.trigger[x]._CodeableConcept</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.trigger[x]._CodeableConcept.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.trigger[x]._CodeableConcept.text</span> text:</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.trigger[x][1]ClinicalImpression.trigger[x]._type[1]ClinicalImpression.trigger[x]._CodeableConcept[1]ClinicalImpression.trigger[x]._CodeableConcept.text[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e995.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.trigger[x]._CodeableConcept</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e949.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.trigger[x]</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">4.6.6.1.1<a name="4.6.6.1.1"> </a></span> One or more sets of investigations (signs, symptions, etc) <a href="clinicalimpression.questionnaire.html#4.6.6.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1065.1">
+               <span style="display:none">ClinicalImpression.investigations</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1083.1.1">
+                  <span style="display:none">ClinicalImpression.investigations.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.investigations.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.investigations[1]ClinicalImpression.investigations.id[1]ClinicalImpression.investigations.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1083.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.investigations.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1121.1.1">
+                  <span style="display:none">ClinicalImpression.investigations.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1121.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.investigations.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1140.1.1">
+                  <span style="display:none">ClinicalImpression.investigations.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1140.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.investigations.modifierExtension</span>
+               <span style="display:none">1</span>
+               <p>A name/code for the set</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1159.1.1">
+                  <span style="display:none">ClinicalImpression.investigations.code</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.investigations.code.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.investigations.code.text</span> text:</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.investigations[1]ClinicalImpression.investigations.code[1]ClinicalImpression.investigations.code.text[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1159.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.investigations.code</span>
+               <span style="display:none">1</span>
+               <p>Record of a specific investigation</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1215.1.1">
+                  <span style="display:none">ClinicalImpression.investigations.item</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.investigations.item._type</span> type</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.investigations[1]ClinicalImpression.investigations.item[1]" type="radio" value="Observation"/>
+                              <span> Observation</span>
+                              <br/>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.investigations[1]ClinicalImpression.investigations.item[1]" type="radio" value="QuestionnaireAnswers"/>
+                              <span> QuestionnaireAnswers</span>
+                              <br/>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.investigations[1]ClinicalImpression.investigations.item[1]" type="radio" value="FamilyMemberHistory"/>
+                              <span> FamilyMemberHistory</span>
+                              <br/>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.investigations[1]ClinicalImpression.investigations.item[1]" type="radio" value="DiagnosticReport"/>
+                              <span> DiagnosticReport</span>
+                              <br/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1215.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.investigations.item</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1065.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.investigations</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1358.1">
+               <span style="display:none">ClinicalImpression.protocol</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.protocol.value</span> Clinical Protocol followed</td>
+                        <td>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.protocol[1]ClinicalImpression.protocol.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1358.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.protocol</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1396.1">
+               <span style="display:none">ClinicalImpression.summary</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.summary.value</span> Summary of the assessment</td>
+                        <td>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.summary[1]ClinicalImpression.summary.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1396.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.summary</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">4.6.6.1.2<a name="4.6.6.1.2"> </a></span> Possible or likely findings and diagnoses <a href="clinicalimpression.questionnaire.html#4.6.6.1.2" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1434.1">
+               <span style="display:none">ClinicalImpression.finding</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1452.1.1">
+                  <span style="display:none">ClinicalImpression.finding.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.finding.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.finding[1]ClinicalImpression.finding.id[1]ClinicalImpression.finding.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1452.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.finding.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1490.1.1">
+                  <span style="display:none">ClinicalImpression.finding.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1490.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.finding.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1509.1.1">
+                  <span style="display:none">ClinicalImpression.finding.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1509.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.finding.modifierExtension</span>
+               <span style="display:none">1</span>
+               <p>Specific text or code for finding</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1528.1.1">
+                  <span style="display:none">ClinicalImpression.finding.item</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.finding.item.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.finding.item.text</span> text:</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.finding[1]ClinicalImpression.finding.item[1]ClinicalImpression.finding.item.text[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1528.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.finding.item</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1584.1.1">
+                  <span style="display:none">ClinicalImpression.finding.cause</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.finding.cause.value</span> Which investigations support finding</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.finding[1]ClinicalImpression.finding.cause[1]ClinicalImpression.finding.cause.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1584.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.finding.cause</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1434.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.finding</span>
+            <span style="display:none">1</span>
+            <p>Diagnosies/conditions resolved since previous assessment</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1623.1">
+               <span style="display:none">ClinicalImpression.resolved</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.resolved.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.resolved.text</span> text:</td>
+                        <td>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.resolved[1]ClinicalImpression.resolved.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1623.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.resolved</span>
+            <span style="display:none">1</span>
+            <h4><span class="sectioncount">4.6.6.1.3<a name="4.6.6.1.3"> </a></span> Diagnosis considered not possible <a href="clinicalimpression.questionnaire.html#4.6.6.1.3" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1679.1">
+               <span style="display:none">ClinicalImpression.ruledOut</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1697.1.1">
+                  <span style="display:none">ClinicalImpression.ruledOut.id</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.ruledOut.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.ruledOut[1]ClinicalImpression.ruledOut.id[1]ClinicalImpression.ruledOut.id.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1697.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.ruledOut.id</span>
+               <span style="display:none">1</span>
+               <p>Additional Content defined by implementations</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1735.1.1">
+                  <span style="display:none">ClinicalImpression.ruledOut.extension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1735.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.ruledOut.extension</span>
+               <span style="display:none">1</span>
+               <p>Extensions that cannot be ignored</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1754.1.1">
+                  <span style="display:none">ClinicalImpression.ruledOut.modifierExtension</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1754.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.ruledOut.modifierExtension</span>
+               <span style="display:none">1</span>
+               <p>Specific text of code for diagnosis</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1773.1.1">
+                  <span style="display:none">ClinicalImpression.ruledOut.item</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.ruledOut.item.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.ruledOut.item.text</span> text:</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.ruledOut[1]ClinicalImpression.ruledOut.item[1]ClinicalImpression.ruledOut.item.text[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1773.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.ruledOut.item</span>
+               <span style="display:none">1</span>
+               <br/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1829.1.1">
+                  <span style="display:none">ClinicalImpression.ruledOut.reason</span>
+                  <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">ClinicalImpression.ruledOut.reason.value</span> Grounds for elimination</td>
+                           <td>
+                              <input name="Path:ClinicalImpression[1]ClinicalImpression.ruledOut[1]ClinicalImpression.ruledOut.reason[1]ClinicalImpression.ruledOut.reason.value[1]" type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1829.1.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+               <span style="display:none">ClinicalImpression.ruledOut.reason</span>
+               <span style="display:none">1</span>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1679.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.ruledOut</span>
+            <span style="display:none">1</span>
+            <br/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1868.1">
+               <span style="display:none">ClinicalImpression.prognosis</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.prognosis.value</span> Estimate of likely outcome</td>
+                        <td>
+                           <input name="Path:ClinicalImpression[1]ClinicalImpression.prognosis[1]ClinicalImpression.prognosis.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1868.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.prognosis</span>
+            <span style="display:none">1</span>
+            <p>Plan of action after assessment</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e1907.1">
+               <span style="display:none">ClinicalImpression.plan</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.plan._type</span> type</td>
+                        <td>
+                           <select name="Path:ClinicalImpression[1]ClinicalImpression.plan[1]">
+                              <option value="CarePlan"> CarePlan</option>
+                              <option value="Appointment"> Appointment</option>
+                              <option value="CommunicationRequest"> CommunicationRequest</option>
+                              <option value="DeviceUseRequest"> DeviceUseRequest</option>
+                              <option value="DiagnosticOrder"> DiagnosticOrder</option>
+                              <option value="MedicationPrescription"> MedicationPrescription</option>
+                              <option value="NutritionOrder"> NutritionOrder</option>
+                              <option value="Order"> Order</option>
+                              <option value="ProcedureRequest"> ProcedureRequest</option>
+                              <option value="ProcessRequest"> ProcessRequest</option>
+                              <option value="ReferralRequest"> ReferralRequest</option>
+                              <option value="Supply"> Supply</option>
+                              <option value="VisionPrescription"> VisionPrescription</option>
+                           </select>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e1907.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.plan</span>
+            <span style="display:none">1</span>
+            <p>Actions taken during assessment</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e2275.1">
+               <span style="display:none">ClinicalImpression.action</span>
+               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">ClinicalImpression.action._type</span> type</td>
+                        <td>
+                           <select name="Path:ClinicalImpression[1]ClinicalImpression.action[1]">
+                              <option value="ReferralRequest"> ReferralRequest</option>
+                              <option value="ProcedureRequest"> ProcedureRequest</option>
+                              <option value="Procedure"> Procedure</option>
+                              <option value="MedicationPrescription"> MedicationPrescription</option>
+                              <option value="DiagnosticOrder"> DiagnosticOrder</option>
+                              <option value="NutritionOrder"> NutritionOrder</option>
+                              <option value="Supply"> Supply</option>
+                              <option value="Appointment"> Appointment</option>
+                           </select>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e2275.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+            <span style="display:none">ClinicalImpression.action</span>
+            <span style="display:none">1</span>
+         </div>
+         <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e387', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
+         <span style="display:none">ClinicalImpression</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+</body>
+</html>
+
+<p>
+  <!-- spacer -->
+ 
+</p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:33-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fclinicalimpression.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fclinicalimpression.questionnaire.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

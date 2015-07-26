@@ -1,0 +1,646 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Profilelist - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/profilelist.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="implementation.html">Implementation</a></li>
+        <li><b>Profile List</b></li>          <!-- profilelist.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h2><span class="sectioncount">2.16<a name="2.16"> </a></span> Profiles defined as part of FHIR <a href="profilelist.html#2.16" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+<table class="cols"><tr><td id="wg"><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm" _target="blank">FHIR Infrastructure</a> Work Group</td><td id="fmm"><a href="resource.html#maturity">Maturity Level</a>: N/A</td><td id="ballot"><a href="help.html#status">Ballot Status</a>: <a href="history.html#pubs">DSTU 2</a></td></tr></table>
+ 
+<p>
+This specification is a common platform standard that must be <a href="profiling.html">adapted to particular
+use cases</a>. 
+
+Some particular use cases are common or important enough to be described as a part of the 
+specification itself.
+These are published as a &quot;Profile&quot; - a group of <a href="structuredefinition.html">Structure Definitions</a> (Constraints or Extensions),
+<a href="valueset.html">Value Sets</a>, and examples that are all defined with a common purpose. 
+</p>
+
+<table class="grid">
+  <tr>
+    <td><b>Name</b></td>
+    <td><b>Usage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>General</b></td>
+  </tr>
+  <tr>
+    <td><a href="adverseevent-qicore.html">QICore-AdverseEvent</a></td>
+    <td>An adverse event caused by exposure to some agent (e.g., a medication, immunization, food, or environmental agent). An adverse reaction can range from a mild reaction, such as a harmless rash to a severe and life-threatening condition. They can occur immediately or develop over time. For example, a patient may develop a rash after taking a particular medication.</td>
+ </tr>
+  <tr>
+    <td><a href="allergyintolerance-daf.html">U.S. Data Access Framework (DAF) AllergyIntolerance Profile</a></td>
+    <td>Defines constraints and extensions on the AllergyIntolerance resource for use in querying and retrieving allergy information.</td>
+ </tr>
+  <tr>
+    <td><a href="allergyintolerance-qicore.html">QICore-AllergyIntolerance</a></td>
+    <td>Profile of AllergyIntolerance for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="auditevent-ehrs-rle.html">EHRS FM Record Lifecycle Event - Audit Event</a></td>
+    <td>Defines the elements to be supported within the AuditEvent resource in order to conform with the Electronic Health Record System Functional Model Record Lifecycle Event standard</td>
+ </tr>
+  <tr>
+    <td><a href="basic-cqif-extensions.html">Basic CQIF Extensions</a></td>
+    <td>Defines common extensions used by the Clinical Quality Improvement Framework profiles.</td>
+ </tr>
+  <tr>
+    <td><a href="basic-cqif-guidance-extensions.html">Basic CQIF Guidance Extensions</a></td>
+    <td>Defines common extensions used by the Decision Support-Specific Clinical Quality Improvement Framework profiles.</td>
+ </tr>
+  <tr>
+    <td><a href="bodysite-qicore.html">QICore-BodySite</a></td>
+    <td>Profile of BodySite for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="communication-qicore.html">QICore-Communication</a></td>
+    <td>Profile of Communication for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="communicationrequest-qicore.html">QICore-CommunicationRequest</a></td>
+    <td>Profile of CommunicationRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="cond-uslab.html">US Laboratory Condition Profile</a></td>
+    <td>The Condition(s) referenced in USRealm laboratory test  and reporting in ambulatory care setting.</td>
+ </tr>
+  <tr>
+    <td><a href="condition-daf.html">U.S. Data Access Framework (DAF) Condition (a.k.a Problem) Profile</a></td>
+    <td>Defines constraints and extensions on the condition resource for use in querying and retrieving patient's information related to problems which includes conditions, findings, symptoms etc.</td>
+ </tr>
+  <tr>
+    <td><a href="condition-qicore.html">QICore-Condition</a></td>
+    <td>Profile of Condition for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="dataelement-sdc.html">Structured Data Capture Data Element</a></td>
+    <td>Sets expectations for data elements registered or used as part of the structured data capture project</td>
+ </tr>
+  <tr>
+    <td><a href="dataelement-sdc-de.html">Structured Data Capture Data Element Exchange</a></td>
+    <td>Sets expectations for data elements exchanged or maintained within data element registries according to requirements established by the structured data capture project</td>
+ </tr>
+  <tr>
+    <td><a href="device-qicore.html">QICore-Device</a></td>
+    <td>Profile of Device for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="deviceuserequest-qicore.html">QICore-DeviceUseRequest</a></td>
+    <td>Profile of DeviceUseRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="deviceusestatement-qicore.html">QICore-DeviceUseStatement</a></td>
+    <td>Profile of DeviceUseStatement for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="diagnosticorder-daf.html">U.S. Data Access Framework (DAF) DiagnosticOrder Profile</a></td>
+    <td>Defines constraints and extensions on the DiagnosticOrder resource for use in querying and retrieving DiagnosticOrder information.</td>
+ </tr>
+  <tr>
+    <td><a href="diagnosticorder-qicore.html">QICore-DiagnosticOrder</a></td>
+    <td>Profile of DiagnosticOrder for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="diagnosticreport-daf.html">U.S. Data Access Framework (DAF) DiagnosticReport Profile</a></td>
+    <td>Defines constraints and extensions on the DiagnosticReport resource for use in querying and retrieving diagnostic reports associated with a patient</td>
+ </tr>
+  <tr>
+    <td><a href="diagnosticreport-qicore.html">QICore-DiagnosticReport</a></td>
+    <td>Profile of DiagnosticReport for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="do-uslab.html">US Laboratory Diagnostic Order Profile</a></td>
+    <td>Constraints and extensions for the US Realm laboratory ordering in ambulatory care setting</td>
+ </tr>
+  <tr>
+    <td><a href="dr-uslab.html">US Laboratory Diagnostic Report Profile</a></td>
+    <td>Constraints and extensions for the US Realm laboratory result report in ambulatory care setting</td>
+ </tr>
+  <tr>
+    <td><a href="element-extensions.html">Element-definition Extensions for use by FHIR Implementers</a></td>
+    <td>A set of extensions that constrain data elements, whether used in DataElements, StructureDefinitions or Questionnaires</td>
+ </tr>
+  <tr>
+    <td><a href="elementdefinition-11179.html">ISO 11179 Element Definition Profile</a></td>
+    <td>A profile showing how to use ElementDefinition to express 11179 Data_Element and Concept_Elements.  At present, the profile is a partially-complete place-holder</td>
+ </tr>
+  <tr>
+    <td><a href="elementdefinition-de.html">DataElement constraint on ElementDefinition data type</a></td>
+    <td>Identifies how the ElementDefinition data type is used when it appears within a data element</td>
+ </tr>
+  <tr>
+    <td><a href="elementdefinition-extensions.html">Common extensions for ElementDefinition data type</a></td>
+    <td>Defines &quot;common&quot; extensions for use with the DataElement data type</td>
+ </tr>
+  <tr>
+    <td><a href="encounter-daf.html">U.S. Data Access Framework (DAF) Encounter profile</a></td>
+    <td>Defines constraints and extensions on the Encounter resource for use in querying and retrieving a patient's encounter related information.</td>
+ </tr>
+  <tr>
+    <td><a href="encounter-qicore.html">QICore-Encounter</a></td>
+    <td>Profile of Encounter for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="evidence-cqif.html">CQIF-Evidence</a></td>
+    <td>An evidence profile describes evidence to support a particular evaluation result or care recommendation.</td>
+ </tr>
+  <tr>
+    <td><a href="familymemberhistory-daf.html">U.S. Data Access Framework (DAF) FamilyMemberHistory Profile</a></td>
+    <td>Defines constraints and extensions on the FamilyMemberHistory resource for use in querying and retrieving patient's family member's history information.</td>
+ </tr>
+  <tr>
+    <td><a href="familymemberhistory-qicore.html">QICore-FamilyMemberHistory</a></td>
+    <td>Profile of Family Member History for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="flag-qicore.html">QICore-Flag</a></td>
+    <td>Profile of Flag for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="general-extensions.html">General Extensions for use by FHIR Implementers</a></td>
+    <td>A set of general extensions defined for the convenience of implementers that use FHIR resources</td>
+ </tr>
+  <tr>
+    <td><a href="goal-qicore.html">QICore-Goal</a></td>
+    <td>Profile of Goal for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="guidancerequest-cqif.html">CQIF-GuidanceRequest</a></td>
+    <td>A guidance request is a derivative of a knowledge request specifically focused on the decision support use case, providing information relevant to decision support such as workflow and user context.</td>
+ </tr>
+  <tr>
+    <td><a href="guidanceresponse-cqif.html">CQIF-GuidanceResponse</a></td>
+    <td>A guidance response is the formal response to a previous guidance request. It is a derivative of the knowledge response that provides additional information relevant specifically to clinical decision support such as a description of any proposed actions to be taken.</td>
+ </tr>
+  <tr>
+    <td><a href="imagingstudy-qicore.html">QICore-ImagingStudy</a></td>
+    <td>Profile of ImagingStudy for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="immunization-daf.html">U.S. Data Access Framework (DAF) Immunization Profile</a></td>
+    <td>Defines constraints and extensions on the Immunization resource for use in querying and retrieving patient's immunization information.</td>
+ </tr>
+  <tr>
+    <td><a href="immunization-qicore.html">QICore-Immunization</a></td>
+    <td>Profile of Immunization for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="immunizationrecommendation-qicore.html">QICore-ImmunizationRecommendation</a></td>
+    <td>Profile of ImmunizationRecommendation for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="iso-21090.html">ISO 21090 Data Type Extensions</a></td>
+    <td>Extra ISO 21090 features not included in data types because of core design policy</td>
+ </tr>
+  <tr>
+    <td><a href="knowledgemodule-cqif.html">CQIF-KnowledgeModule</a></td>
+    <td>A knowledge module is a description of a quality improvement function made available by a knowledge evaluation service. A module may correspond directly to an artifact or group of related artifacts, or it may correspond to functionality provided by the service and not necessarily associated with any tangible knowledge artifact. The knowledge module serves as the descriptive unit for functionality supported by a knowledge service such as a decision support service, measure evaluation service, or other quality improvement service.</td>
+ </tr>
+  <tr>
+    <td><a href="knowledgerequest-cqif.html">CQIF-KnowledgeRequest</a></td>
+    <td>A knowledge request is a formal request for the evaluation of some artifact or group of artifacts as part of a clinical quality workflow. This may be part of a direct, point-of-care, workflow, such as a decision support request, or it may be part of a clinical quality assessment such as a request to calculate a particular quality measure.</td>
+ </tr>
+  <tr>
+    <td><a href="knowledgeresponse-cqif.html">CQIF-KnowledgeResponse</a></td>
+    <td>A knowledge response is the formal response to a previous knowledge request, describing the result of the evaluation of the requested artifact or artifacts. This information is used as part of the knowledgeEvaluation operation definition.</td>
+ </tr>
+  <tr>
+    <td><a href="list-daf.html">U.S. Data Access Framework (DAF) List Profile</a></td>
+    <td>Defines constraints and extensions on the List resource for use in querying and retrieving lists of DAF FHIR resources</td>
+ </tr>
+  <tr>
+    <td><a href="location-daf.html">U.S. Data Access Framework (DAF) Location Profile</a></td>
+    <td>Defines basic constraints and extensions on the Location resource for use with other DAF resources</td>
+ </tr>
+  <tr>
+    <td><a href="location-hspcservicedeliverylocation.html">HSPCServiceDeliveryLocation</a></td>
+    <td>ServiceDeliveryLocation is a role played by a place at which services may be provided. Note that a single physical place can play multiple service delivery location roles each with its own attributes.</td>
+ </tr>
+  <tr>
+    <td><a href="location-qicore.html">QICore-Location</a></td>
+    <td>Profile of Location for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="medication-daf.html">U.S. Data Access Framework (DAF) Medication Profile</a></td>
+    <td>Defines constraints and extensions on the Medication resource for use in querying and retrieving patient's medication information.</td>
+ </tr>
+  <tr>
+    <td><a href="medication-qicore.html">QICore-Medication</a></td>
+    <td>Profile of Medication for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="medicationadministration-daf.html">U.S. Data Access Framework (DAF) Medication Administration Profile</a></td>
+    <td>Defines constraints and extensions on the MedicationAdministration resource for use in querying and retrieving patient's medication information that was administered.</td>
+ </tr>
+  <tr>
+    <td><a href="medicationadministration-qicore.html">QICore-MedicationAdministration</a></td>
+    <td>Profile of MedicationAdministration for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="medicationdispense-daf.html">U.S. Data Access Framework (DAF) MedicationDispense Profile</a></td>
+    <td>Defines constraints and extensions on the MedicationDispense resource for use in querying and retrieving dispense information.</td>
+ </tr>
+  <tr>
+    <td><a href="medicationdispense-qicore.html">QICore-MedicationDispense</a></td>
+    <td>Profile of MedicationDispense for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="medicationprescription-daf.html">U.S. Data Access Framework (DAF) MedicationPrescription Profile</a></td>
+    <td>Defines constraints and extensions on the MedicationPrescription resource for use in querying and retrieving prescription information.</td>
+ </tr>
+  <tr>
+    <td><a href="medicationprescription-qicore.html">QICore-MedicationPrescription</a></td>
+    <td>Profile of MedicationPrescription for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="medicationstatement-daf.html">U.S. Data Access Framework (DAF) MedicationStatement Profile</a></td>
+    <td>Defines constraints and extensions on the MedicationStatement resource for use in querying and retrieving patient's medication information.</td>
+ </tr>
+  <tr>
+    <td><a href="medicationstatement-qicore.html">QICore-MedicationStatement</a></td>
+    <td>Profile of MedicationStatement for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="obs-uslab.html">US Laboratory Observation Profile</a></td>
+    <td>Constraints and extensions to the Observation resource for the US Realm laboratory ordering  and resulting in ambulatory care setting</td>
+ </tr>
+  <tr>
+    <td><a href="observation-daf-results.html">U.S. Data Access Framework (DAF) Lab Results Profile Version 2</a></td>
+    <td>Defines constraints and extensions on the Observation resource for use in querying and retrieving Lab Results information.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-daf-smokingstatus.html">U.S. Data Access Framework (DAF) Smoking Status Profile</a></td>
+    <td>Defines constraints and extensions on the Observation resource for use in querying and retrieving Smoking Status information.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-daf-vitalsigns.html">U.S. Data Access Framework (DAF) Vital Signs Profile</a></td>
+    <td>Defines constraints and extensions on the Observation resource for use in querying and retrieving Vital Signs information.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-age-profile-spreadsheet.html">HSPC Age Profile</a></td>
+    <td>The HSPC specific profile for the observation of an indivudual's age.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-bmi.html">HSPC Body Mass Index</a></td>
+    <td>The HSPC specific profile for a body mass index observation</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-bodyweight.html">HSPC Body Weight Profile</a></td>
+    <td>The HSPC specific profile for the observation of one's body weight.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-boneage.html">HSPC Bone Age Profile</a></td>
+    <td>The HSPC specific profile for a bone age via x-ray observation</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-estimatedduedate.html">HSPC Estimated Due Date Profile</a></td>
+    <td>The HSPC specific profile for the observation of an estimated pregnancy due date</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-gestationalageatbirth.html">HSPC Gestational Age at Birth</a></td>
+    <td>The HSPC specific profile for the observation of the length of time from conception to birth.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-headcircumference.html">HSPC Head Occipital Frontal Circumference Profile</a></td>
+    <td>The HSPC specific profile for the observation of the occipital-frontal head circumference.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-heartrate.html">HSPC Heart Rate Profile</a></td>
+    <td>The HSPC specific profile for the observation of the speed at which one's heart is beating.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-height.html">HSPC Height Profile</a></td>
+    <td>The HSPC specific profile for the observation of one's height or body length.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-respiratoryrate.html">HSPC Respiratory Rate Profile</a></td>
+    <td>The HSPC specific profile for the observation of the rate at which one is breathing.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-standardlabobs.html">HSPC Standard Lab Observation</a></td>
+    <td>StandardLabObs is the base Model for standard laboratory test results/observations such as hematology, chemistry, coagulation, serology and blood bank.  This model will not be used for microbiology, and anatomic pathology data</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-standardlabobs-coded.html">HSPC Standard Coded Lab Observation</a></td>
+    <td>StandardLabObsCoded is the model for laboratory test results that have coded values.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-standardlabobs-ivlpq.html">HSPC Standard IVLPQ Lab Observation</a></td>
+    <td>Standard IVLPQ lab observation is the model for laboratory tests that have interval physical quantity values.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-standardlabobs-narrative.html">HSPC Standard Narrative Lab Observation</a></td>
+    <td>StandardLabObsNarrative is the model for laboratory test results that have narrative or textual values.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-standardlabobs-ordinal.html">HSPC Standard Ordinal Lab Observation</a></td>
+    <td>Standard Ordinal Lab Observation is the model for laboratory test results that use ordinal values such as 1+, 2+, Positive, Negative, etc.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-standardlabobs-quantitative.html">HSPC Standard Quantitative Lab Observation</a></td>
+    <td>StandardLabObs is the base Model for standard laboratory test results/observations such as hematology, chemistry, coagulation, serology and blood bank.  This model will not be used for microbiology, and anatomic pathology data</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-standardlabobs-real.html">HSPC Standard Real Lab Observation</a></td>
+    <td>StandardLabObsReal is the model for laboratory tests that have integer, decimal, or other numeric values that are not typically reported with a unit of measure.</td>
+ </tr>
+  <tr>
+    <td><a href="observation-hspc-standardlabobs-titer.html">HSPC Standard Titer Lab Observation</a></td>
+    <td>StandardLabObsTiter is the model for laboratory test results that have titration results</td>
+ </tr>
+  <tr>
+    <td><a href="observation-qicore.html">QICore-Observation</a></td>
+    <td>Profile of Observation for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="org-daf.html">U.S. DAF Organization Profile</a></td>
+    <td>Defines basic constraints and extensions on the Organization resource for use with other DAF resources</td>
+ </tr>
+  <tr>
+    <td><a href="org-uslab.html">US Laboratory Organization Profile</a></td>
+    <td>The Organizations referenced in US Realm laboratory test  and reporting in ambulatory care setting.  They include the orderer's organization, the performing laboratory, and the public health agency.</td>
+ </tr>
+  <tr>
+    <td><a href="organization-hspcorganization.html">HSPCOrganization</a></td>
+    <td>The &quot;Organization&quot; model describes an organization.  A Provider Organization is a role played by an instance of this organization.</td>
+ </tr>
+  <tr>
+    <td><a href="organization-qicore.html">QICore-Organization</a></td>
+    <td>Profile of Organization for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="patient-daf.html">U.S. Data Access Framework (DAF) Patient Profile</a></td>
+    <td>Defines constraints and extensions on the patient resource for use in querying and retrieving patient demographic information.</td>
+ </tr>
+  <tr>
+    <td><a href="patient-hspc.html">HSPC-Patient</a></td>
+    <td>The HSPC Patient profile.  The demographics and attributes for an individual receiving health care.</td>
+ </tr>
+  <tr>
+    <td><a href="patient-qicore.html">QICore-Patient</a></td>
+    <td>Profile of Patient for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="patient-uslab.html">US Laboratory Patient Profile</a></td>
+    <td>USLabPatient: The patient (subject) referenced in USRealm laboratory test and reporting to provider in ambulatory care setting.
+USLabPHPatient: The patient (subject) referenced in USRealm laboratory reporting to Public Health.
+Note:  The patient can also be the target of a copy to request.</td>
+ </tr>
+  <tr>
+    <td><a href="pharmacy-core.html">International Realm Pharmacy Extensions Profile</a></td>
+    <td>Contains a number of pharmacy domain extensions relevant to a number of medication-related resources.</td>
+ </tr>
+  <tr>
+    <td><a href="pract-daf.html">U.S. Data Access Framework (DAF) Practitioner Profile</a></td>
+    <td>The practitioner(s) referenced in DAF profiles.</td>
+ </tr>
+  <tr>
+    <td><a href="pract-uslab.html">US Laboratory Practitioner Profile</a></td>
+    <td>The practitioner(s) referenced in USRealm laboratory test  and reporting in ambulatory care setting.  They include the orderer and non-ordering copy to providers.</td>
+ </tr>
+  <tr>
+    <td><a href="practitioner-hspc-profile.html">HSPC ProviderPractitioner</a></td>
+    <td>ProviderPractitioner captures the demographic and preofessional information of a health care provider/practitioner.</td>
+ </tr>
+  <tr>
+    <td><a href="practitioner-qicore.html">QICore-Practitioner</a></td>
+    <td>Profile of Practitioner for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="procedure-daf.html">U.S. Data Access Framework (DAF) Procedure Profile</a></td>
+    <td>Defines constraints and extensions on the Procedure resource for use in querying and retrieving procedure information.</td>
+ </tr>
+  <tr>
+    <td><a href="procedure-qicore.html">QICore-Procedure</a></td>
+    <td>Profile of Procedure for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="procedurerequest-qicore.html">QICore-ProcedureRequest</a></td>
+    <td>Profile of ProcedureRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="provenance-ehrs-rle.html">EHRS FM Record Lifecycle Event - Provenance</a></td>
+    <td>Defines the elements to be supported within the Provenance resource in order to conform with the Electronic Health Record System Functional Model Record Lifecycle Event standard</td>
+ </tr>
+  <tr>
+    <td><a href="provenance-hspcattribution.html">Health Services Platform Consortion (HSPC) Attribution</a></td>
+    <td>Explanation of what this profile contains/is for</td>
+ </tr>
+  <tr>
+    <td><a href="questionnaire-sdc.html">Structured Data Capture Questionnaire Design</a></td>
+    <td>Defines how Questionnaire is used to reflect form definitions to be used within the ONC's Structured Data Capture standard.</td>
+ </tr>
+  <tr>
+    <td><a href="questionnaireanswers-sdc.html">Structured Data Capture Data Capture</a></td>
+    <td>Defines how the questionnaire answers resource is used to reflect form data within the ONC's Structured Data Capture standard.</td>
+ </tr>
+  <tr>
+    <td><a href="referralrequest-qicore.html">QICore-ReferralRequest</a></td>
+    <td>Profile of ReferralRequest for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="relatedperson-daf.html">U.S. DAF Related Person Profile</a></td>
+    <td>Defines basic constraints and extensions on the Related Person resource for use with other DAF resources</td>
+ </tr>
+  <tr>
+    <td><a href="relatedperson-qicore.html">QICore-RelatedPerson</a></td>
+    <td>Profile of RelatedPerson for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="rendering-extensions.html">Extensions for rendering data elements</a></td>
+    <td>A set of extensions dealing with controlling how particular data elements are rendered when displayed.  Initially created for questionnaires, but potentially useable elsewhere.</td>
+ </tr>
+  <tr>
+    <td><a href="spec-uslab.html">US Laboratory Specimen Profile</a></td>
+    <td>The Specimen resource referenced in USRealm laboratory test  and reporting in ambulatory care setting.</td>
+ </tr>
+  <tr>
+    <td><a href="specimen-qicore.html">QICore-Specimen</a></td>
+    <td>Profile of Specimen for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="substance-daf.html">DAF Substance Profile</a></td>
+    <td>Defines basic constraints and extensions on the Substance resource for use with other DAF resources</td>
+ </tr>
+  <tr>
+    <td><a href="substance-qicore.html">QICore-Substance</a></td>
+    <td>Profile of Substance for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.</td>
+ </tr>
+  <tr>
+    <td><a href="us-core.html">United States Realm FHIR Profile</a></td>
+    <td>Contains constraints and extensions to the FHIR specification specific to the US realm</td>
+ </tr>
+  <tr>
+    <td><a href="valueset-sdc.html">Structured Data Capture Value Set</a></td>
+    <td>Defines how ValueSet is used to reflect code lists found in data element defintions and form definitions to be used within the ONC's Structured Data Capture standard.</td>
+ </tr>
+  <tr>
+    <td><a href="valueset-sdc-de.html">Structured Data Capture Data Element Exchange Value Set</a></td>
+    <td>Defines how ValueSet is used to reflect code lists found in data element defintions for exchange and maintenance between data element registries according to requirements established by the ONC's Structured Data Capture standard.</td>
+ </tr>
+</table>
+
+
+<p>
+Other profiles may be found in the general profile repository (reference to be provided).
+</p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fprofilelist.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fprofilelist.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+</body>
+</html>

@@ -1,0 +1,1731 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Encounter - FHIR v0.5.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/fhir/encounter-operations.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Current Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" alt="visit the hl7 website" height="50"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="administration.html">Administrative</a></li>        <li><a href="encounter.html">Encounter</a></li>        <li><b>Operations</b></li>          <!-- encounter.html / res-Operations / Encounter -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="encounter.html">Content</a></li><li><a href="encounter-examples.html">Examples</a></li><li><a href="encounter-definitions.html">Detailed Descriptions</a></li><li><a href="encounter-mappings.html">Mappings</a></li><li><a href="encounter-profiles.html">Profiles</a></li><li><a href="encounter.questionnaire.html">HTML Form</a></li><li class="active"><a href="#">Operations</a></li></ul>
+
+<h2><span class="sectioncount">5.19.14<a name="5.19.14"> </a></span> Resource Encounter - Operations <a href="encounter-operations.html#5.19.14" title="link to here" class="self-link"><img src="target.png"/></a></h2>
+
+<p>
+This resource has 1 operation associated with it:
+</p>
+<table class="list">
+<tr><td><a href="#everything">$everything</a></td><td>Fetch Encounter Record</td></tr>
+</table>
+
+<p>
+For more information about operations, including how they are invoked, see <a href="operations.html">Operations</a>.
+</p>
+
+<h3><span class="sectioncount">5.19.14.1<a name="5.19.14.1"> </a></span> Fetch Encounter Record<a name="everything"> </a> <a href="encounter-operations.html#5.19.14.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+<p>This operation is used to return all the information related to an encounter described in the resource on which this operation is invoked. The response is a bundle of type &quot;searchset&quot;. At a minimum, the encounter resource itself is returned, along with any other resources that the server has available for the given encounter for the user. The server also returns whatever resources are needed to support the records - e.g. linked practitioners, locations, organizations etc. The principle intended use for rhis operation is to provide a patient with access to their record, or to allow a client to retrieve everything for an encounter for efficient display).</p>
+<p>The server SHOULD return all resources that it has that are in the encounter compartment for the identified encounter, and any resource referenced from those, including binaries and attachments. In the US Realm, At a mimimum, the resources returned SHALL include all the data covered by the meaningful use common data elements (ref to be provided). Other applicable implementation guides may make additional rules about the information that is returned.</p>
+<p>Note that for many resources, the exact nature of the link to encounter can be ambiguous (e.g. for a DiagnosticReport, is it the encounter when it was initiated, or when it was reported?)</p>
+
+<p><a href="operation-encounter-everything.html">Formal Definition</a> (as a <a href="operationdefinition.html">OperationDefinition</a>).</p>
+<p>URL: [base]/Encounter/[id]/$everything</p>
+<table class="grid">
+<tr><td colspan="5"><b>Out Parameters:</b></td></tr>
+<tr><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Profile</b></td><td><b>Documentation</b></td></tr><tr><td>return</td><td>1..1</td><td><a href="bundle.html">Bundle</a></td><td/><td/><td><p>The bundle type is &quot;searchset&quot;</p>
+<p>Note: as this the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource</p></td></tr></table>
+<p>The key differences between this operation and simply searching the encounter compartment are:</p>
+<ul>
+<li>unless the client requests otherwise, the server returns the entire result set in a single bundle (rather than using paging)</li>
+<li>the server is responsible for determining what resources to return as included resources (rather than the client specifying which ones)</li>
+</ul>
+
+<h4><span class="sectioncount">5.19.14.1.1<a name="5.19.14.1.1"> </a></span> Examples <a href="encounter-operations.html#5.19.14.1.1" title="link to here" class="self-link"><img src="target.png"/></a></h4>
+<p>Get all resources linked to a single patient (Request):</p>
+<pre>
+
+GET /open/Encounter/example/$everything
+[some headers]
+</pre>
+<p>Everything linked to the nominated patient (in this case, built automatically by the publication tooling) (Response):</p>
+<pre>
+
+HTTP/1.1 200 OK
+[other headers]
+
+&lt;Bundle xml=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;id value=&quot;ad24aa26-1255-4ccb-a739-f5ba09cc12ad&quot;/&gt;
+  &lt;type value=&quot;searchset&quot;/&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/Encounter/example&quot;/&gt;
+    &lt;resource&gt;
+     &lt;Encounter xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+       &lt;id value=&quot;example&quot;/&gt;
+       &lt;text&gt;
+         &lt;status value=&quot;generated&quot;/&gt;
+         &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;Encounter with patient @example&lt;/div&gt;
+       &lt;/text&gt; 
+       &lt;status value=&quot;in-progress&quot;/&gt;
+       &lt;class value=&quot;inpatient&quot;/&gt;
+       &lt;patient&gt;
+         &lt;reference value=&quot;Patient/example&quot;/&gt;
+       &lt;/patient&gt;
+     &lt;/Encounter&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/fiberrestricteddiet&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;fiberrestricteddiet&quot;/&gt;
+     	&lt;!-- id = fiberrestricteddiet  file name = nutritionorder-example-fiberrestricteddiet.xml Name= Low Fat and Fiber Restricted Diet Description = Nutrition Order Fiber Restricted and Low Fat Diet l Example
+     edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Fiber Restricted and Low Fat Diet l Example&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Known Allergies: &lt;/b&gt;Cashew Nuts&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Food Preferences: &lt;/b&gt;dairy-free:  Excludes dairy products&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Oral Diet Type: &lt;/b&gt;
+     					&lt;ol&gt;
+     						&lt;li&gt;Fiber restricted diet&lt;/li&gt;
+     						&lt;li&gt;Low Fat diet&lt;/li&gt;
+     					&lt;/ol&gt;
+     				&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Nutrients Requirements: &lt;/b&gt;
+     					&lt;ol&gt;
+     						&lt;li&gt;50 grams Fat&lt;/li&gt;
+     					&lt;/ol&gt;
+     				&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Schedule: &lt;/b&gt;three times a day starting at breakfast on 2/10&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://goodhealthhospital.org/nutrition-orders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;!--EH  Show all the elements in this examples for preference, and intolerance --&gt;
+     	&lt;allergyIntolerance&gt;
+     		&lt;reference value=&quot;AllergyIntolerance/example&quot;/&gt;
+     		&lt;display value=&quot;Cashew Nuts&quot;/&gt;
+     	&lt;/allergyIntolerance&gt;
+     	&lt;foodPreferenceModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://hl7.org/fhir/diet&quot;/&gt;
+     			&lt;code value=&quot;dairy-free&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/foodPreferenceModifier&gt;
+     	&lt;excludeFoodModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     			&lt;version value=&quot;20140730&quot;/&gt;
+     			&lt;code value=&quot;227493005&quot;/&gt;
+     			&lt;display value=&quot;Cashew Nut&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/excludeFoodModifier&gt;
+     	&lt;!-- EH: use oral Diet element --&gt;
+     	&lt;oralDiet&gt;
+     		&lt;!-- EH:  list type of diet showing standard code and local codes --&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;15108003&quot;/&gt;
+     				&lt;display value=&quot;Restricted fiber diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/diet-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1000&quot;/&gt;
+     				&lt;display value=&quot;Fiber restricted&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;Fiber restricted diet&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;16208003&quot;/&gt;
+     				&lt;display value=&quot;Low fat diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/diet-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1100&quot;/&gt;
+     				&lt;display value=&quot;Low Fat&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;Low fat diet&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;!-- EH example of three times a day starting on 2/10  --&gt;
+     		&lt;schedule&gt;
+     			&lt;repeat&gt;
+             &lt;boundsPeriod&gt;
+               &lt;start value=&quot;2015-02-10&quot;/&gt;
+             &lt;/boundsPeriod&gt;
+     				&lt;frequency value=&quot;3&quot;/&gt;
+     				&lt;period value=&quot;1&quot;/&gt;
+     				&lt;periodUnits value=&quot;d&quot;/&gt;
+     			&lt;/repeat&gt;
+     		&lt;/schedule&gt;
+     		&lt;nutrient&gt;
+     			&lt;!-- list nutrients and amounts here --&gt;
+     			&lt;modifier&gt;
+     				&lt;coding&gt;
+     					&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     					&lt;code value=&quot;256674009&quot;/&gt;
+     					&lt;display value=&quot;Fat&quot;/&gt;
+     				&lt;/coding&gt;
+     			&lt;/modifier&gt;
+     			&lt;amount&gt;
+     				&lt;value value=&quot;50&quot;/&gt;
+     				&lt;units value=&quot;grams&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;g&quot;/&gt;
+     			&lt;/amount&gt;
+     		&lt;/nutrient&gt;
+     	&lt;/oralDiet&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/enteralbolus&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;enteralbolus&quot;/&gt;
+     	&lt;!-- id = enteralbolus  file name = nutritionorder-example-enteralbolus.xml Name= Enteral Bolus  Description = Nutrition Order Enteral Bolus Feeding  Example
+     Tube feedings are given in boluses several times a day   edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Enteral Bolus Feeding Example(Tube feedings given in boluses several times a day)&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Known Allergies: &lt;/b&gt;Cashew Nuts&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Food Preferences: &lt;/b&gt;Kosher&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Enteral base (Brand): &lt;/b&gt;Adult high protein formula(Acme High Protein Formula)&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Additive (Brand): &lt;/b&gt;Modular lipid enteral formula component(Acme Lipid Additive)&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Route: &lt;/b&gt;Instillation, gastrostomy tube&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Rate: &lt;/b&gt;Starting 2014-09-17, 240 mls every 4hrs not to exceed 1440 mls/day&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://www.acme.org/nutritionorders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;!--EH  Show all the elements in this examples for preference, and intolerance --&gt;
+     	&lt;allergyIntolerance&gt;
+     		&lt;reference value=&quot;AllergyIntolerance/example&quot;/&gt;
+     		&lt;display value=&quot;Cashew Nuts&quot;/&gt;
+     	&lt;/allergyIntolerance&gt;
+     	&lt;foodPreferenceModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://hl7.org/fhir/diet&quot;/&gt;
+     			&lt;code value=&quot;dairy-free&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/foodPreferenceModifier&gt;
+     	&lt;excludeFoodModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     			&lt;version value=&quot;20140730&quot;/&gt;
+     			&lt;code value=&quot;227493005&quot;/&gt;
+     			&lt;display value=&quot;Cashew Nut&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/excludeFoodModifier&gt;
+     	&lt;enteralFormula&gt;
+     		
+     		&lt;baseFormulaType&gt;
+     			&lt;coding&gt;
+     				&lt;!--EH:  bolus tube feeding instruction in text--&gt;
+     				&lt;system value=&quot;http://usextension/snomed.info/sct&quot;/&gt;
+     				&lt;!--EH  temporary system value for us extension --&gt;
+     				&lt;code value=&quot;659311000124118&quot;/&gt;
+     				&lt;display value=&quot;Adult high protein formula&quot;/&gt;
+     			&lt;/coding&gt;
+     		&lt;/baseFormulaType&gt;
+     		&lt;baseFormulaProductName value=&quot;Acme High Protein Formula&quot;/&gt;
+     
+     		&lt;additiveType&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://hl7.org/fhir/entformula-additive&quot;/&gt;
+     				&lt;code value=&quot;lipid&quot;/&gt;
+     				&lt;display value=&quot;Modular lipid enteral formula component&quot;/&gt;
+     			&lt;/coding&gt;
+     		&lt;/additiveType&gt;
+     		&lt;additiveProductName value=&quot;Acme Lipid Additive&quot;/&gt;
+     		&lt;caloricDensity&gt;
+     			&lt;value value=&quot;1.5&quot;/&gt;
+     			&lt;units value=&quot;calories per milliliter&quot;/&gt;
+     			&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     			&lt;code value=&quot;cal/mL&quot;/&gt;
+     		&lt;/caloricDensity&gt;
+     		&lt;routeofAdministration&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://hl7.org/fhir/v3/RouteOfAdministration&quot;/&gt;
+     				&lt;code value=&quot;GT&quot;/&gt;
+     				&lt;display value=&quot;Instillation, gastrostomy tube&quot;/&gt;
+     			&lt;/coding&gt;
+     		&lt;/routeofAdministration&gt;
+     		&lt;administration&gt;
+     			&lt;schedule&gt;
+     				&lt;repeat&gt;
+     				&lt;boundsPeriod&gt;
+     				  &lt;start value=&quot;2014-09-17T16:00:00Z&quot;/&gt;
+     				&lt;/boundsPeriod&gt;
+     					&lt;frequency value=&quot;1&quot;/&gt;
+     					&lt;period value=&quot;4&quot;/&gt;
+     					&lt;periodUnits value=&quot;h&quot;/&gt;
+     				&lt;/repeat&gt;
+     			&lt;/schedule&gt;
+     			&lt;quantity&gt;
+     				&lt;value value=&quot;240&quot;/&gt;
+     				&lt;units value=&quot;milliliters&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;mL&quot;/&gt;
+     			&lt;/quantity&gt;
+     		&lt;/administration&gt;
+     		&lt;maxVolumeToDeliver&gt;
+     			&lt;value value=&quot;1440&quot;/&gt;
+     			&lt;units value=&quot;milliliter/day&quot;/&gt;
+     			&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     			&lt;code value=&quot;mL/d&quot;/&gt;
+     		&lt;/maxVolumeToDeliver&gt;
+     		&lt;administrationInstruction value=&quot;240 mls every 4hrs &quot;/&gt;
+     	&lt;/enteralFormula&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/CarePlan/gpvisit&quot;/&gt;
+    &lt;resource&gt;
+     &lt;CarePlan xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+       &lt;id value=&quot;gpvisit&quot;/&gt;
+       &lt;text&gt;
+         &lt;status value=&quot;additional&quot;/&gt;
+         &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+           &lt;p&gt;  Represents the flow of a patient within a practice. The plan is created when
+             they arrive and represents the 'care' of the patient over the course of that encounter.
+             They first see the nurse for basic observations (BP, pulse, temp) then the doctor for
+             the consultation and finally the nurse again for a tetanus immunization. As the plan is
+             updated (e.g. a new activity added), different versions of the plan exist, and workflow timings
+             for reporting can be gained by examining the plan history. This example is the version after
+             seeing the doctor, and waiting for the nurse.The plan can either be created 'ad hoc' and modified as
+             the parient progresses, or start with a standard template (which can, of course, be altered to suit the patient.&lt;/p&gt;
+         &lt;/div&gt;
+       &lt;/text&gt;
+       &lt;contained&gt;
+         &lt;!-- This is the reason for the encounter. It is referenced by the concern --&gt;
+         &lt;Condition&gt;
+           &lt;id value=&quot;p1&quot;/&gt;
+           &lt;patient&gt;
+             &lt;reference value=&quot;Patient/100&quot;/&gt;
+             &lt;display value=&quot;Peter James Chalmers&quot;/&gt;
+           &lt;/patient&gt;
+           &lt;code&gt;
+             &lt;!-- Could coded if we wanted to...--&gt;
+             &lt;text value=&quot;Overseas encounter&quot;/&gt;
+           &lt;/code&gt;
+           &lt;clinicalStatus value=&quot;confirmed&quot;/&gt;
+         &lt;/Condition&gt;
+       &lt;/contained&gt;
+       &lt;contained&gt;
+         &lt;Goal&gt;
+           &lt;id value=&quot;goal&quot;/&gt;
+           &lt;patient&gt;
+             &lt;reference value=&quot;Patient/100&quot;/&gt;
+             &lt;display value=&quot;Peter James Chalmers&quot;/&gt;
+           &lt;/patient&gt;
+           &lt;description value=&quot;Complete consultation&quot;/&gt;
+           &lt;status value=&quot;planned&quot;/&gt;
+         &lt;/Goal&gt;
+       &lt;/contained&gt;
+       &lt;patient&gt;
+         &lt;reference value=&quot;Patient/100&quot;/&gt;
+         &lt;display value=&quot;Peter James Chalmers&quot;/&gt;
+       &lt;/patient&gt;
+       &lt;status value=&quot;active&quot;/&gt;
+       &lt;period&gt;
+         &lt;!-- This is the time the plan started - i.e. when they arrived--&gt;
+         &lt;start value=&quot;2013-01-01T10:30:00+00:00&quot;/&gt;
+         &lt;!-- No end yet as the encounter is still in progress.--&gt;
+       &lt;/period&gt;
+       &lt;concern&gt;
+         &lt;reference value=&quot;#p1&quot;/&gt;
+         &lt;display value=&quot;obesity&quot;/&gt;
+       &lt;/concern&gt;
+       &lt;participant id=&quot;part1&quot;&gt;
+         &lt;role&gt;
+           &lt;coding&gt;
+             &lt;system value=&quot;http://example.org/local&quot;/&gt;
+             &lt;code value=&quot;nur&quot;/&gt;
+           &lt;/coding&gt;
+           &lt;text value=&quot;nurse&quot;/&gt;
+         &lt;/role&gt;
+         &lt;member&gt;
+           &lt;reference value=&quot;Practitioner/13&quot;/&gt;
+           &lt;display value=&quot;Nurse Nancy&quot;/&gt;
+         &lt;/member&gt;
+       &lt;/participant&gt;
+       &lt;participant id=&quot;part2&quot;&gt;
+         &lt;role&gt;
+           &lt;coding&gt;
+             &lt;system value=&quot;http://example.org/local&quot;/&gt;
+             &lt;code value=&quot;doc&quot;/&gt;
+           &lt;/coding&gt;
+           &lt;text value=&quot;doctor&quot;/&gt;
+         &lt;/role&gt;
+         &lt;member&gt;
+           &lt;reference value=&quot;Practitioner/14&quot;/&gt;
+           &lt;display value=&quot;Doctor Dave&quot;/&gt;
+         &lt;/member&gt;
+       &lt;/participant&gt;
+       &lt;goal&gt;
+         &lt;reference value=&quot;#goal&quot;/&gt;
+       &lt;/goal&gt;
+       &lt;activity&gt;
+         &lt;actionResulting&gt;
+           &lt;!-- This is a link to the nurse encounter. The assumption is that all contacts with practitioners
+                 are modelled as separate encounters. Ideally, there will be  a 'master/parent' encounter that ties them together.
+                 If there is a single encounter, then all participants will be linked to that encounter.--&gt;
+           &lt;reference value=&quot;Encounter/example&quot;/&gt;
+         &lt;/actionResulting&gt;
+         &lt;detail&gt;
+           &lt;!-- This activity is for the initial nurse encounter where vitals are taken. It has been completed.--&gt;
+           &lt;category value=&quot;encounter&quot;/&gt;
+           &lt;code&gt;
+             &lt;coding&gt;
+               &lt;system value=&quot;http://example.org/local&quot;/&gt;
+               &lt;code value=&quot;nursecon&quot;/&gt;
+             &lt;/coding&gt;
+             &lt;text value=&quot;Nurse Consultation&quot;/&gt;
+           &lt;/code&gt;
+           &lt;status value=&quot;completed&quot;/&gt;
+           &lt;prohibited value=&quot;false&quot;/&gt;
+           &lt;scheduledPeriod&gt;
+             &lt;!-- the nurse saw the patient between 10:38 and 10:50 --&gt;
+             &lt;start value=&quot;2013-01-01T10:38:00+00:00&quot;/&gt;
+             &lt;end value=&quot;2013-01-01T10:50:00+00:00&quot;/&gt;
+           &lt;/scheduledPeriod&gt;
+           &lt;performer&gt;
+             &lt;!-- refer to the participant (the nurse) in this resource--&gt;
+             &lt;reference value=&quot;Practitioner/13&quot;/&gt;
+             &lt;display value=&quot;Nurse Nancy&quot;/&gt;
+           &lt;/performer&gt;
+         &lt;/detail&gt;
+       &lt;/activity&gt;
+       &lt;activity&gt;
+         &lt;detail&gt;
+           &lt;!-- This activity is for the encounter with the doctor. It is scheduled, but not yet started,
+                   so there is no timing[x]  or actionTaken element yet --&gt;
+           &lt;category value=&quot;encounter&quot;/&gt;
+           &lt;code&gt;
+             &lt;coding&gt;
+               &lt;system value=&quot;http://example.org/local&quot;/&gt;
+               &lt;code value=&quot;doccon&quot;/&gt;
+             &lt;/coding&gt;
+             &lt;text value=&quot;Doctor Consultation&quot;/&gt;
+           &lt;/code&gt;
+           &lt;status value=&quot;scheduled&quot;/&gt;
+           &lt;prohibited value=&quot;false&quot;/&gt;
+           &lt;!-- The status is 'scheduled' so the doctor knows the patient is waiting.  --&gt;
+           &lt;performer&gt;
+             &lt;!-- refer to the participant (the nurse) in this resource--&gt;
+             &lt;reference value=&quot;Practitioner/14&quot;/&gt;
+             &lt;display value=&quot;Doctor Dave&quot;/&gt;
+           &lt;/performer&gt;
+         &lt;/detail&gt;
+       &lt;/activity&gt;
+     &lt;/CarePlan&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/diabeticdiet&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;diabeticdiet&quot;/&gt;
+     	&lt;!-- id = diabeticdiet  file name = nutritionorder-example-diabeticdiet.xml Name= Diabetic Diet  Description = Nutrition Order Diabetic Diet Canonical Example
+     edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Diabetic Diet Canonical Example&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Known Allergies: &lt;/b&gt;Cashew Nuts&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Food Preferences: &lt;/b&gt;dairy-free:  Excludes dairy products&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Oral Diet Type: &lt;/b&gt;DD - Diabetic diet&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Nutrients Requirements: &lt;/b&gt;
+     					&lt;ol&gt;
+     						&lt;li&gt;75 grams Carbohydrate (per meal) &lt;/li&gt;
+     					&lt;/ol&gt;
+     				&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Schedule: &lt;/b&gt;three times a day starting at breakfast on 2/10&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;!--EH  Show all the elements in this examples for preference, and intolerance --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://goodhealthhospital.org/nutrition-orders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;allergyIntolerance&gt;
+     		&lt;reference value=&quot;AllergyIntolerance/example&quot;/&gt;
+     		&lt;display value=&quot;Cashew Nuts&quot;/&gt;
+     	&lt;/allergyIntolerance&gt;
+     	&lt;foodPreferenceModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://hl7.org/fhir/diet&quot;/&gt;
+     			&lt;code value=&quot;dairy-free&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/foodPreferenceModifier&gt;
+     	&lt;excludeFoodModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     			&lt;version value=&quot;20140730&quot;/&gt;
+     			&lt;code value=&quot;227493005&quot;/&gt;
+     			&lt;display value=&quot;Cashew Nut&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/excludeFoodModifier&gt;
+     	&lt;!-- EH: use oral Diet element --&gt;
+     	&lt;oralDiet&gt;
+     		&lt;!-- EH:  list type of diet showing standard code and local codes --&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;160670007&quot;/&gt;
+     				&lt;display value=&quot;Diabetic diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/diet-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1030&quot;/&gt;
+     				&lt;display value=&quot;DD - Diabetic diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;DD - Diabetic diet&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;!-- EH example of three times a day starting on 2/10 using schedule --&gt;
+     		&lt;schedule&gt;
+     			&lt;repeat&gt;
+             &lt;boundsPeriod&gt;
+               &lt;start value=&quot;2015-02-10&quot;/&gt;
+             &lt;/boundsPeriod&gt;
+     				&lt;frequency value=&quot;3&quot;/&gt;
+     				&lt;period value=&quot;1&quot;/&gt;
+     				&lt;periodUnits value=&quot;d&quot;/&gt;
+     			&lt;/repeat&gt;
+     		&lt;/schedule&gt;
+     		&lt;!-- list nutrients and amounts here --&gt;
+     		&lt;nutrient&gt;
+     			&lt;modifier&gt;
+     				&lt;coding&gt;
+     					&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     					&lt;code value=&quot;2331003&quot;/&gt;
+     					&lt;display value=&quot;Carbohydrate&quot;/&gt;
+     				&lt;/coding&gt;
+     			&lt;/modifier&gt;
+     			&lt;amount&gt;
+     				&lt;value value=&quot;75&quot;/&gt;
+     				&lt;units value=&quot;grams&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;g&quot;/&gt;
+     			&lt;/amount&gt;
+     		&lt;/nutrient&gt;
+     	&lt;/oralDiet&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/diabeticsupplement&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;diabeticsupplement&quot;/&gt;
+     	&lt;!-- id = diabeticsupplement  file name = nutritionorder-example-diabeticsupplement.xml Name= Diabetic Supplement  Description = Nutrition Order Diabetic Supplement Canonical Example
+     edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Diabetic Supplement Canonical Example&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Known Allergies: &lt;/b&gt;Cashew Nuts&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Food Preferences: &lt;/b&gt;Kosher&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Supplement(Brand): &lt;/b&gt;Adult diabetic formula (Glucerna)&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Schedule: &lt;/b&gt;3pm and HS&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://goodhealthhospital.org/nutrition-orders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;allergyIntolerance&gt;
+     		&lt;reference value=&quot;AllergyIntolerance/example&quot;/&gt;
+     		&lt;display value=&quot;Cashew Nuts&quot;/&gt;
+     	&lt;/allergyIntolerance&gt;
+     	&lt;foodPreferenceModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://hl7.org/fhir/diet&quot;/&gt;
+     			&lt;code value=&quot;kosher&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/foodPreferenceModifier&gt;
+     	&lt;excludeFoodModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     			&lt;version value=&quot;20140730&quot;/&gt;
+     			&lt;code value=&quot;227493005&quot;/&gt;
+     			&lt;display value=&quot;Cashew Nut&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/excludeFoodModifier&gt;
+     	&lt;!-- EH: use supplement element --&gt;
+     	&lt;supplement&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;443051000124104&quot;/&gt;
+     				&lt;display value=&quot;Adult diabetes specialty formula&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/supplement-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1010&quot;/&gt;
+     				&lt;display value=&quot;Adult diabetic formula&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;Adult diabetic formula&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;productName value=&quot;Glucerna&quot;/&gt;
+     		&lt;!--EH:Glucerna Shake at 3pm and HS--&gt;
+     		&lt;schedule&gt;
+     			&lt;repeat&gt;
+     				&lt;boundsPeriod&gt;
+     					&lt;start value=&quot;2015-02-10T15:00:00Z&quot;/&gt;
+     				&lt;/boundsPeriod&gt;
+     				&lt;frequency value=&quot;1&quot;/&gt;
+     				&lt;period value=&quot;24&quot;/&gt;
+     				&lt;periodUnits value=&quot;h&quot;/&gt;
+     			&lt;/repeat&gt;
+     		&lt;/schedule&gt;
+     		&lt;schedule&gt;
+     			&lt;repeat&gt;
+     				&lt;duration value=&quot;1&quot;/&gt;
+     				&lt;durationUnits value=&quot;h&quot;/&gt;
+     				&lt;when value=&quot;HS&quot;/&gt;
+     			&lt;/repeat&gt;
+     		&lt;/schedule&gt;
+     		&lt;quantity&gt;
+     			&lt;value value=&quot;1&quot;/&gt;
+     			&lt;units value=&quot;8 oz bottle&quot;/&gt;
+     		&lt;/quantity&gt;
+     		&lt;!-- EH:  use the .instructions element to list diet  supplement order
+     		&lt;instruction value=&quot;Glucerna Shake at 3pm and HS&quot;/&gt;
+     --&gt;
+     	&lt;/supplement&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/proteinsupplement&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;proteinsupplement&quot;/&gt;
+     	&lt;!-- id = proteinsupplement  file name = nutritionorder-example-proteinsupplement.xml  Name= Protein Supplement  Description = Nutrition Order Protein Supplement Canonical Example
+     edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Protein Supplement Canonical Example&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Supplement(Brand): &lt;/b&gt;High protein powder ( Beneprotein )&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Schedule: &lt;/b&gt;1 scoop with meal&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;&lt;!-- EH: This example has no food exclusions or preferences --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://goodhealthhospital.org/nutrition-orders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;	&lt;status value=&quot;active&quot;/&gt;
+     
+     
+     	&lt;!-- EH: use supplement element --&gt;
+     	&lt;supplement&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;442991000124104&quot;/&gt;
+     				&lt;display value=&quot;Adult high protein formula&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/supplement-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1000&quot;/&gt;
+     				&lt;display value=&quot;High Protein Powder&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;High Protein Powder&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;productName value=&quot;Beneprotein&quot;/&gt;
+     		&lt;schedule&gt;
+     			&lt;repeat&gt;
+             &lt;boundsPeriod&gt;
+               &lt;start value=&quot;2015-02-10&quot;/&gt;
+             &lt;/boundsPeriod&gt;
+     				&lt;when value=&quot;C&quot;/&gt;
+     			&lt;/repeat&gt;
+     		&lt;/schedule&gt;
+     		&lt;quantity&gt;
+     			&lt;value value=&quot;1&quot;/&gt;
+     			&lt;units value=&quot;scoop&quot;/&gt;
+     			&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     			&lt;code value=&quot;{scoop}&quot;/&gt;
+     		&lt;/quantity&gt;
+     		&lt;!-- EH:  use the .instructions element to list diet  supplement order--&gt;
+     		&lt;instruction value=&quot;Beneprotein 1 scoop TID with meal.starting on  2015-02-10&quot;/&gt;
+     	&lt;/supplement&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/pureeddiet&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;pureeddiet&quot;/&gt;
+     	&lt;!-- id = pureediet  file name = nutritionorder-example-pureeddiet.xml Name= Pureed Diet  Description = Nutrition Order Pureed Diet Canonical Example
+     edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Pureed Diet Canonical Example&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Known Allergies: &lt;/b&gt;Cashew Nuts&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Food Preferences: &lt;/b&gt;dairy-free:  Excludes dairy products&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Oral Diet Type: &lt;/b&gt;Pureed Diet&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Texture: &lt;/b&gt;Pureed&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Fluid Consistency: &lt;/b&gt;Nectar thick liquids&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Schedule: &lt;/b&gt;three times a day starting at breakfast on 2/10&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://goodhealthhospital.org/nutrition-orders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;!--EH  Show all the elements in this examples for preference, and intolerance --&gt;
+     	&lt;allergyIntolerance&gt;
+     		&lt;reference value=&quot;AllergyIntolerance/example&quot;/&gt;
+     		&lt;display value=&quot;Cashew Nuts&quot;/&gt;
+     	&lt;/allergyIntolerance&gt;
+     	&lt;foodPreferenceModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://hl7.org/fhir/diet&quot;/&gt;
+     			&lt;code value=&quot;dairy-free&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/foodPreferenceModifier&gt;
+     	&lt;excludeFoodModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     			&lt;version value=&quot;20140730&quot;/&gt;
+     			&lt;code value=&quot;227493005&quot;/&gt;
+     			&lt;display value=&quot;Cashew Nut&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/excludeFoodModifier&gt;
+     	&lt;!-- EH: use oral Diet element --&gt;
+     	&lt;oralDiet&gt;
+     		&lt;!-- EH:  list type of diet showing standard code and local codes --&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;226211001&quot;/&gt;
+     				&lt;display value=&quot;Pureed diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/diet-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1010&quot;/&gt;
+     				&lt;display value=&quot;Pureed diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;Pureed diet&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;!-- EH example of three times a day starting on 2/10  --&gt;
+     		&lt;schedule&gt;
+     			&lt;repeat&gt;
+             &lt;boundsPeriod&gt;
+               &lt;start value=&quot;2015-02-10&quot;/&gt;
+             &lt;/boundsPeriod&gt;
+     				&lt;frequency value=&quot;3&quot;/&gt;
+     				&lt;period value=&quot;1&quot;/&gt;
+     				&lt;periodUnits value=&quot;d&quot;/&gt;
+     			&lt;/repeat&gt;
+     		&lt;/schedule&gt;
+     		&lt;!--EH: this example showing how to code for texture modification --&gt;
+     		&lt;texture&gt;
+     			&lt;modifier&gt;
+     				&lt;coding&gt;
+     					&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     					&lt;code value=&quot;228055009&quot;/&gt;
+     					&lt;display value=&quot;Liquidized food&quot;/&gt;
+     				&lt;/coding&gt;
+     				&lt;text value=&quot;Pureed&quot;/&gt;
+     			&lt;/modifier&gt;
+     		&lt;/texture&gt;
+     		&lt;fluidConsistencyType&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;439021000124105&quot;/&gt;
+     				&lt;display value=&quot;Dietary liquid consistency - nectar thick liquid&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;Nectar thick liquids&quot;/&gt;
+     		&lt;/fluidConsistencyType&gt;
+     	&lt;/oralDiet&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/enteralcontinuous&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;enteralcontinuous&quot;/&gt;
+     	&lt;!-- id = enteralcontinuous  file name = nutritionorder-example-enteralcontinuous.xml  Name= Enteral Continuous Feeding  Description = Nutrition Order Enteral Continuous Feeding Canonical Example
+     editor Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Enteral Continuous Feeding Example (Tube feedings given as continuous rate)&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Enteral base (Brand): &lt;/b&gt;Diabetic specialty enteral formula(Acme Diabetes Formula)&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Route: &lt;/b&gt;Instillation, nasogastrostomy tube&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Rate: &lt;/b&gt;60 mls/hr not to exceed 880 mls/day&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://www.acme.org/nutritionorders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;!-- Tube feedings given as continuous rate --&gt;
+     	&lt;enteralFormula&gt;
+     		&lt;baseFormulaType&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed/sct&quot;/&gt;
+     				&lt;code value=&quot;6547210000124112&quot;/&gt;
+     				&lt;display value=&quot;Diabetic specialty enteral formula&quot;/&gt;
+     			&lt;/coding&gt;
+     		&lt;/baseFormulaType&gt;
+     		&lt;baseFormulaProductName value=&quot; Acme Diabetes Formula&quot;/&gt;
+     		
+     		&lt;caloricDensity&gt;
+     			&lt;value value=&quot;1&quot;/&gt;
+     			&lt;units value=&quot;calories per milliliter&quot;/&gt;
+     			&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     			&lt;code value=&quot;cal/mL&quot;/&gt;
+     		&lt;/caloricDensity&gt;
+     		&lt;routeofAdministration&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://hl7.org/fhir/v3/RouteOfAdministration&quot;/&gt;
+     				&lt;code value=&quot;NGT&quot;/&gt;
+     				&lt;display value=&quot;Instillation, nasogastric tube&quot;/&gt;
+     			&lt;/coding&gt;
+     		&lt;!--step up rate of tube feeding by 20 ml/hr every 4 hours --&gt;
+     		&lt;/routeofAdministration&gt;
+     		&lt;administration&gt;
+     			
+     			&lt;schedule&gt;
+     			&lt;repeat&gt;
+     				&lt;boundsPeriod&gt;
+     				  &lt;start value=&quot;2014-09-17T07:00:00Z&quot;/&gt;
+     				&lt;/boundsPeriod&gt;
+     			&lt;/repeat&gt;
+     			&lt;/schedule&gt;
+     			&lt;rateQuantity&gt;
+     				&lt;value value=&quot;60&quot;/&gt;
+     				&lt;units value=&quot;ml/hr&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;mL/h&quot;/&gt;
+     			&lt;/rateQuantity&gt;
+     		&lt;/administration&gt;
+     		&lt;administration&gt;	
+     			&lt;schedule&gt;
+     			&lt;repeat&gt;
+     				&lt;boundsPeriod&gt;
+     				  &lt;start value=&quot;2014-09-17T11:00:00Z&quot;/&gt;
+     				&lt;/boundsPeriod&gt;
+     			&lt;/repeat&gt;
+     			&lt;/schedule&gt;
+     			&lt;rateQuantity&gt;
+     				&lt;value value=&quot;80&quot;/&gt;
+     				&lt;units value=&quot;ml/hr&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;mL/h&quot;/&gt;
+     			&lt;/rateQuantity&gt;
+     		&lt;/administration&gt;
+     		&lt;administration&gt;		
+     			&lt;schedule&gt;
+     			&lt;repeat&gt;
+     				&lt;boundsPeriod&gt;
+     				  &lt;start value=&quot;2014-09-17T15:00:00Z&quot;/&gt;
+     				&lt;/boundsPeriod&gt;
+     			&lt;/repeat&gt;
+     			&lt;/schedule&gt;
+     			&lt;rateQuantity&gt;
+     				&lt;value value=&quot;100&quot;/&gt;
+     				&lt;units value=&quot;ml/hr&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;mL/h&quot;/&gt;
+     			&lt;/rateQuantity&gt;
+     		&lt;/administration&gt;
+     		
+     		&lt;maxVolumeToDeliver&gt;
+     			&lt;value value=&quot;880&quot;/&gt;
+     			&lt;units value=&quot;milliliter/day&quot;/&gt;
+     			&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     			&lt;code value=&quot;mL/d&quot;/&gt;
+     		&lt;/maxVolumeToDeliver&gt;
+     		&lt;administrationInstruction value=&quot;Hold feedings from 7 pm to 7 am. Add MCT oil to increase calories from 1.0 cal/mL to 1.5 cal/mL&quot;/&gt;
+     		
+     	&lt;/enteralFormula&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/cardiacdiet&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;cardiacdiet&quot;/&gt;
+     	&lt;!-- id = cardiacdiet  file name = nutritionorder-example-cardiacdiet.xml  Name= Low Sodium and Fiber Restricted Diet  Description = Nutrition Order Low Sodium and Fiber Restricted Diet Example
+     edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Low Sodium and Fiber Restricted Diet Example&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Known Allergies: &lt;/b&gt;Cashew Nuts&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Food Preferences: &lt;/b&gt;dairy-free:  Excludes dairy products&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Oral Diet Type: &lt;/b&gt;
+     					&lt;ol&gt;
+     						&lt;li&gt;Low Sodium Diet&lt;/li&gt;
+     						&lt;li&gt;Fluid restricted diet&lt;/li&gt;
+     					&lt;/ol&gt;
+     				&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Nutrients Requirements: &lt;/b&gt;
+     					&lt;ol&gt;
+     						&lt;li&gt;2g sodium&lt;/li&gt;
+     						&lt;li&gt;1500 cc fluid restriction&lt;/li&gt;
+     					&lt;/ol&gt;
+     				&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Instructions: &lt;/b&gt;Starting on 2/10 breakfast, maximum 400 ml fluids per meal&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;!--EH  Show all the elements in this examples for preference, and intolerance --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://goodhealthhospital.org/nutrition-orders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;allergyIntolerance&gt;
+     		&lt;reference value=&quot;AllergyIntolerance/example&quot;/&gt;
+     		&lt;display value=&quot;Cashew Nuts&quot;/&gt;
+     	&lt;/allergyIntolerance&gt;
+     	&lt;foodPreferenceModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://hl7.org/fhir/diet&quot;/&gt;
+     			&lt;code value=&quot;dairy-free&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/foodPreferenceModifier&gt;
+     	&lt;excludeFoodModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     			&lt;version value=&quot;20140730&quot;/&gt;
+     			&lt;code value=&quot;227493005&quot;/&gt;
+     			&lt;display value=&quot;Cashew Nut&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/excludeFoodModifier&gt;
+     	&lt;!-- EH: use oral Diet element --&gt;
+     	&lt;oralDiet&gt;
+     		&lt;!-- EH:  list type of diet showing standard code and local codes --&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;386619000&quot;/&gt;
+     				&lt;display value=&quot;Low sodium diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/diet-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1040&quot;/&gt;
+     				&lt;display value=&quot;Low Sodium Diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;Low sodium diet&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;226208002&quot;/&gt;
+     				&lt;display value=&quot;Fluid restricted diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/diet-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1040&quot;/&gt;
+     				&lt;display value=&quot;Fluid restricted diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;Fluid restricted diet&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;!-- list nutrients and amounts here --&gt;
+     		&lt;nutrient&gt;
+     			&lt;modifier&gt;
+     				&lt;coding&gt;
+     					&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     					&lt;code value=&quot;39972003&quot;/&gt;
+     					&lt;display value=&quot;Sodium&quot;/&gt;
+     				&lt;/coding&gt;
+     			&lt;/modifier&gt;
+     			&lt;amount&gt;
+     				&lt;value value=&quot;2&quot;/&gt;
+     				&lt;units value=&quot;grams&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;g&quot;/&gt;
+     			&lt;/amount&gt;
+     		&lt;/nutrient&gt;
+     		&lt;nutrient&gt;
+     			&lt;modifier&gt;
+     				&lt;coding&gt;
+     					&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     					&lt;code value=&quot;33463005&quot;/&gt;
+     					&lt;display value=&quot;Fluid&quot;/&gt;
+     				&lt;/coding&gt;
+     			&lt;/modifier&gt;
+     			&lt;amount&gt;
+     				&lt;value value=&quot;1500&quot;/&gt;
+     				&lt;units value=&quot;milliliter&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;mL&quot;/&gt;
+     			&lt;/amount&gt;
+     		&lt;/nutrient&gt;
+     		&lt;!--instructions as free text --&gt;
+     		&lt;instruction value=&quot;Starting on 2/10 breakfast, maximum 400 ml fluids per meal&quot;/&gt;
+     	&lt;/oralDiet&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/renaldiet&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;renaldiet&quot;/&gt;
+     	&lt;!-- id = renaldiet  file name = nutritionorder-example-renaldiet.xml Name= Renal Diet  Description = Nutrition Order Renal Diet Example
+     edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Renal Diet Example&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Known Allergies: &lt;/b&gt;Cashew Nuts&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Food Preferences: &lt;/b&gt;dairy-free:  Excludes dairy products&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Oral Diet Type: &lt;/b&gt;Renal Diet&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Nutrients Requirements: &lt;/b&gt;
+     					&lt;ol&gt;
+     						&lt;li&gt;1000 milligrams Phosphorus&lt;/li&gt;
+     						&lt;li&gt;2 grams Sodium&lt;/li&gt;
+     						&lt;li&gt;2 grams Potassium&lt;/li&gt;
+     					&lt;/ol&gt;
+     				&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Schedule: &lt;/b&gt;three times a day starting on  breakfast 2/10&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://goodhealthhospital.org/nutrition-orders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;allergyIntolerance&gt;
+     		&lt;!--EH  Show all the elements in this examples for preference, and intolerance --&gt;
+     		&lt;reference value=&quot;AllergyIntolerance/example&quot;/&gt;
+     		&lt;display value=&quot;Cashew Nuts&quot;/&gt;
+     	&lt;/allergyIntolerance&gt;
+     	&lt;foodPreferenceModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://hl7.org/fhir/diet&quot;/&gt;
+     			&lt;code value=&quot;dairy-free&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/foodPreferenceModifier&gt;
+     	&lt;excludeFoodModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     			&lt;version value=&quot;20140730&quot;/&gt;
+     			&lt;code value=&quot;227493005&quot;/&gt;
+     			&lt;display value=&quot;Cashew Nut&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/excludeFoodModifier&gt;
+     	&lt;!-- EH: use oral Diet element --&gt;
+     	&lt;oralDiet&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;33489005&quot;/&gt;
+     				&lt;display value=&quot;Renal diet&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/diet-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1050&quot;/&gt;
+     				&lt;display value=&quot;Renal&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;Renal Diet&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;!-- EH example of three times a day starting on 2/10 --&gt;
+     		&lt;schedule&gt;
+     			&lt;repeat&gt;
+             &lt;boundsPeriod&gt;
+               &lt;start value=&quot;2015-02-10&quot;/&gt;
+             &lt;/boundsPeriod&gt;
+     				&lt;frequency value=&quot;3&quot;/&gt;
+     				&lt;period value=&quot;1&quot;/&gt;
+     				&lt;periodUnits value=&quot;d&quot;/&gt;
+     			&lt;/repeat&gt;
+     		&lt;/schedule&gt;
+     		&lt;nutrient&gt;
+     			&lt;!-- list nutrients and amounts here --&gt;
+     			&lt;modifier&gt;
+     				&lt;coding&gt;
+     					&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     					&lt;code value=&quot;39972003&quot;/&gt;
+     					&lt;display value=&quot;Sodium&quot;/&gt;
+     				&lt;/coding&gt;
+     			&lt;/modifier&gt;
+     			&lt;amount&gt;
+     				&lt;value value=&quot;2&quot;/&gt;
+     				&lt;units value=&quot;grams&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;g&quot;/&gt;
+     			&lt;/amount&gt;
+     		&lt;/nutrient&gt;
+     		&lt;nutrient&gt;
+     			&lt;modifier&gt;
+     				&lt;coding&gt;
+     					&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     					&lt;code value=&quot;30820000&quot;/&gt;
+     					&lt;display value=&quot;Phosphorus&quot;/&gt;
+     				&lt;/coding&gt;
+     			&lt;/modifier&gt;
+     			&lt;amount&gt;
+     				&lt;value value=&quot;1000&quot;/&gt;
+     				&lt;units value=&quot;milligrams&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;mg&quot;/&gt;
+     			&lt;/amount&gt;
+     		&lt;/nutrient&gt;
+     		&lt;nutrient&gt;
+     			&lt;modifier&gt;
+     				&lt;coding&gt;
+     					&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     					&lt;code value=&quot;88480006&quot;/&gt;
+     					&lt;display value=&quot;Potassium&quot;/&gt;
+     				&lt;/coding&gt;
+     			&lt;/modifier&gt;
+     			&lt;amount&gt;
+     				&lt;value value=&quot;2&quot;/&gt;
+     				&lt;units value=&quot;grams&quot;/&gt;
+     				&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     				&lt;code value=&quot;g&quot;/&gt;
+     			&lt;/amount&gt;
+     		&lt;/nutrient&gt;
+     	&lt;/oralDiet&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/infantenteral&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;infantenteral&quot;/&gt;
+     	&lt;!-- id = infantenteral  file name = nutritionorder-infantenteral-example.xml  Name= Infant Enteral  Description = Nutrition Order Infant Enteral Feeding Canonical Example
+     edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Infant Enteral Feeding Example (oral feedings given to an infant several times a day)&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Enteral base (Brand): &lt;/b&gt;infant formula + iron(Acme Infant Formula + Iron)&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Additive (Brand): &lt;/b&gt;Modular carbohydrate enteral formula component(Acme High Carbohydrate Additive)&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Route: &lt;/b&gt;Swallow, oral&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Rate: &lt;/b&gt;4 oz every 3hrs not to exceed 32 oz/day starting 2014-09-17&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://www.acme.org/nutritionorders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;enteralFormula&gt;
+     		&lt;baseFormulaType&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;412414007&quot;/&gt;
+     				&lt;display value=&quot;infant formula + iron&quot;/&gt;
+     			&lt;/coding&gt;
+     		&lt;/baseFormulaType&gt;
+     		&lt;baseFormulaProductName value=&quot;Acme Infant Formula + Iron&quot;/&gt;
+     		
+     		&lt;additiveType&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://hl7.org/fhir/entformula-additive&quot;/&gt;
+     				&lt;code value=&quot;carbohydrate&quot;/&gt;
+     				&lt;display value=&quot;Modular carbohydrate enteral formula component&quot;/&gt;
+     			&lt;/coding&gt;
+     		&lt;/additiveType&gt;
+     		&lt;additiveProductName value=&quot;Acme High Carbohydrate Additive&quot;/&gt;
+     		&lt;caloricDensity&gt;
+     			&lt;value value=&quot;20&quot;/&gt;
+     			&lt;units value=&quot;calories per ounce&quot;/&gt;
+     			&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     			&lt;code value=&quot;cal/[foz_us]&quot;/&gt;
+     		&lt;/caloricDensity&gt;
+     		&lt;routeofAdministration&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://hl7.org/fhir/v3/RouteOfAdministration&quot;/&gt;
+     				&lt;code value=&quot;PO&quot;/&gt;
+     				&lt;display value=&quot;Swallow, oral&quot;/&gt;
+     				&lt;userSelected value=&quot;true&quot;/&gt;
+     			&lt;/coding&gt;
+     		&lt;/routeofAdministration&gt;
+     		&lt;administration&gt;
+     		&lt;!-- scheduled 4 oz every 3hrs not to exceed 32 oz/day--&gt;
+     		&lt;schedule&gt;
+     			&lt;repeat&gt;
+     			&lt;boundsPeriod&gt;
+     			  &lt;start value=&quot;2014-09-17&quot;/&gt;
+     			&lt;/boundsPeriod&gt;
+     				&lt;frequency value=&quot;1&quot;/&gt;
+     				&lt;period value=&quot;3&quot;/&gt;
+     				&lt;periodUnits value=&quot;h&quot;/&gt;
+     			&lt;/repeat&gt;
+     		&lt;/schedule&gt;
+     		&lt;quantity&gt;
+     			&lt;value value=&quot;4&quot;/&gt;
+     			&lt;units value=&quot;ounces&quot;/&gt;
+     			&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     			&lt;code value=&quot;[foz_us]&quot;/&gt;
+     		&lt;/quantity&gt;
+     		&lt;/administration&gt;
+     		&lt;maxVolumeToDeliver&gt;
+     			&lt;value value=&quot;32&quot;/&gt;
+     			&lt;units value=&quot;ounces&quot;/&gt;
+     			&lt;system value=&quot;http://unitsofmeasure.org&quot;/&gt;
+     			&lt;code value=&quot;[foz_us]&quot;/&gt;
+     		&lt;/maxVolumeToDeliver&gt;
+     		&lt;!-- EH infant feeding instruction and additional instructions --&gt;
+     		&lt;administrationInstruction value=&quot;Add high calorie high carbohydrate additive to increase cal/oz from 24 cal/oz to 27 cal/oz.&quot;/&gt;
+     		
+     	&lt;/enteralFormula&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;fullUrl value=&quot;http://hl7.org/fhir/NutritionOrder/energysupplement&quot;/&gt;
+    &lt;resource&gt;
+     &lt;NutritionOrder xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+     	&lt;id value=&quot;energysupplement&quot;/&gt;
+     	&lt;!-- id = energysupplement  file name = nutritionorder-example-energysupplement.xml  Name= Energy Supplement  Description = Nutrition Order Energy Supplement Canonical Example
+     edited by Eric Haas Health eData Inc
+     ...narrative generated by FHIR build
+     	&lt;text&gt;
+     		&lt;status value=&quot;generated&quot;/&gt;
+     		&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     			&lt;h3&gt;Nutrition Order Protein Supplement Canonical Example&lt;/h3&gt;
+     			&lt;ul&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Patient: &lt;/b&gt;Peter Chalmers&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Orderer: &lt;/b&gt;Dr Adam Careful&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Date: &lt;/b&gt;2014-09-17&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Known Allergies: &lt;/b&gt;Cashew Nuts&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Food Preferences: &lt;/b&gt;Kosher&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Supplement(Brand): &lt;/b&gt;Adult high energy drink (Ensure)&lt;/li&gt;
+     				&lt;li&gt;
+     					&lt;b&gt;Schedule: &lt;/b&gt;1 8 oz can tid&lt;/li&gt;
+     			&lt;/ul&gt;
+     		&lt;/div&gt;
+     	&lt;/text&gt;
+     --&gt;
+     	&lt;patient&gt;
+     		&lt;reference value=&quot;Patient/example&quot;/&gt;
+     		&lt;display value=&quot;Peter Chalmers&quot;/&gt;
+     	&lt;/patient&gt;
+     	&lt;orderer&gt;
+     		&lt;reference value=&quot;Practitioner/example&quot;/&gt;
+     		&lt;display value=&quot;Dr Adam Careful&quot;/&gt;
+     	&lt;/orderer&gt;
+     	&lt;identifier&gt;
+     		&lt;system value=&quot;http://goodhealthhospital.org/nutrition-orders&quot;/&gt;
+     		&lt;value value=&quot;123&quot;/&gt;
+     	&lt;/identifier&gt;
+     	&lt;encounter&gt;
+     		&lt;reference value=&quot;Encounter/example&quot;/&gt;
+     		&lt;display value=&quot;Inpatient&quot;/&gt;
+     	&lt;/encounter&gt;
+     	&lt;dateTime value=&quot;2014-09-17&quot;/&gt;
+     	&lt;status value=&quot;active&quot;/&gt;
+     	&lt;!--EH  Show all the elements in this examples for preference, and intolerance --&gt;
+     	&lt;allergyIntolerance&gt;
+     		&lt;reference value=&quot;AllergyIntolerance/example&quot;/&gt;
+     		&lt;display value=&quot;Cashew Nuts&quot;/&gt;
+     	&lt;/allergyIntolerance&gt;
+     	&lt;foodPreferenceModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://hl7.org/fhir/diet&quot;/&gt;
+     			&lt;code value=&quot;kosher&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/foodPreferenceModifier&gt;
+     	&lt;excludeFoodModifier&gt;
+     		&lt;coding&gt;
+     			&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     			&lt;version value=&quot;20140730&quot;/&gt;
+     			&lt;code value=&quot;227493005&quot;/&gt;
+     			&lt;display value=&quot;Cashew Nut&quot;/&gt;
+     		&lt;/coding&gt;
+     	&lt;/excludeFoodModifier&gt;
+     	&lt;!-- EH: use supplement element --&gt;
+     	&lt;supplement&gt;
+     		&lt;type&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;
+     				&lt;code value=&quot;442971000124100&quot;/&gt;
+     				&lt;display value=&quot;Adult high energy formula&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;coding&gt;
+     				&lt;system value=&quot;http://goodhealthhospital.org/supplement-type-codes&quot;/&gt;
+     				&lt;code value=&quot;1010&quot;/&gt;
+     				&lt;display value=&quot;Adult high energy drink&quot;/&gt;
+     			&lt;/coding&gt;
+     			&lt;text value=&quot;Adult high energy drink&quot;/&gt;
+     		&lt;/type&gt;
+     		&lt;productName value=&quot;Ensure&quot;/&gt;
+     		&lt;!--EH:  1 8 oz can tid using coded data --&gt;
+     		&lt;schedule&gt;
+     			&lt;repeat&gt;
+             &lt;boundsPeriod&gt;
+               &lt;start value=&quot;2015-02-10&quot;/&gt;
+             &lt;/boundsPeriod&gt;
+     				&lt;frequency value=&quot;3&quot;/&gt;
+     				&lt;period value=&quot;1&quot;/&gt;
+     				&lt;periodUnits value=&quot;d&quot;/&gt;
+     			&lt;/repeat&gt;
+     		&lt;/schedule&gt;
+     		&lt;quantity&gt;
+     			&lt;value value=&quot;1&quot;/&gt;
+     			&lt;units value=&quot;8 oz can&quot;/&gt;
+     		&lt;/quantity&gt;
+     	&lt;/supplement&gt;
+     &lt;/NutritionOrder&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+&lt;/Bundle&gt;
+</pre>
+<p> </p>
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:33-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Table of Contents</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fencounter-operations.html&amp;doc2=http%3A%2F%2Fhl7.org%2Ffhir%2FDSTU1%2Fencounter-operations.html">Compare to DSTU</a> | 
+               <a rel="license" style="color: #81BEF7" href="license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> | 
+               <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+  "resourceType": "Observation",
+  "id": "f202",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f202</p><p><b>code</b>: Body temperature <span>(Details : {http://acme.lab code 'BT' = 'BT', given as 'Body temperature'}; {LOINC code '8310-5' = 'Body temperature', given as 'Body temperature'})</span></p><p><b>value</b>: 39 degrees C<span> (Details: SNOMED CT code 258710007 = 'degrees C')</span></p><p><b>interpretation</b>: Above high normal <span>(Details : {http://hl7.org/fhir/v2/0078 code 'H' = 'Above high normal)</span></p><p><b>issued</b>: Apr 4, 2013 1:27:00 PM</p><p><b>status</b>: entered-in-error</p><p><b>reliability</b>: questionable</p><p><b>bodySite</b>: Oral cavity <span>(Details : {SNOMED CT code '74262004' = 'Oral cavity', given as 'Oral cavity'})</span></p><p><b>method</b>: Oral temperature taking <span>(Details : {SNOMED CT code '89003005' = 'Oral temperature taking', given as 'Oral temperature taking'})</span></p><p><b>subject</b>: <a>Roel</a></p><p><b>performer</b>: <a>Practitioner/f201</a></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td></tr><tr><td>*</td><td>37.5 degrees C</td></tr></table></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://acme.lab",
+        "code": "BT",
+        "display": "Body temperature"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8310-5",
+        "display": "Body temperature"
+      }
+    ],
+    "text": "Body temperature"
+  },
+  "valueQuantity": {
+    "value": 39,
+    "units": "degrees C",
+    "system": "http://snomed.info/sct",
+    "code": "258710007"
+  },
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v2/0078",
+        "code": "H"
+      }
+    ]
+  },
+  "issued": "2013-04-04T13:27:00+01:00",
+  "status": "entered-in-error",
+  "reliability": "questionable",
+  "bodySiteCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "74262004",
+        "display": "Oral cavity"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "89003005",
+        "display": "Oral temperature taking"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/f201"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 37.5,
+        "units": "degrees C"
+      }
+    }
+  ]
+}

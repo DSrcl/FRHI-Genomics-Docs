@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "id": "observation-hspc-dataOriginationMode",
+  "meta": {
+    "lastUpdated": "2015-07-26T15:54:10.186-04:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Data Origination Mode</h2><p>The description of how the data came into being.</p><p><b>Copyright Statement:</b> TBD</p><p>This value set has an inline code system Intermountain Healthcare HDD, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>14610118<a name=\"14610118\"> </a></td><td>Stated</td><td>Information that is given directly, either verbally or written, that is not the result of a measurement or estimate.</td></tr></table><p>In addition, this value set includes codes from other code systems:</p><ul><li>Include these codes as defined in http://snomed.info/sct<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>414135002</td><td>Estimated</td><td/></tr><tr><td>258104002</td><td>Measured</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "2.16.840.1.113883.4.642.2.0"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/observation-hspc-dataOriginationMode",
+  "version": "0.01",
+  "name": "HSPC Data Origination Mode",
+  "immutable": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "The description of how the data came into being.",
+  "copyright": "TBD",
+  "status": "draft",
+  "experimental": true,
+  "extensible": true,
+  "date": "2015-05-19",
+  "codeSystem": {
+    "system": "Intermountain Healthcare HDD",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "14610118",
+        "display": "Stated",
+        "definition": "Information that is given directly, either verbally or written, that is not the result of a measurement or estimate."
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "414135002",
+            "display": "Estimated"
+          },
+          {
+            "code": "258104002",
+            "display": "Measured"
+          }
+        ]
+      }
+    ]
+  }
+}
