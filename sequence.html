@@ -408,12 +408,12 @@ Terminology Bindings
 <h3><span class="sectioncount">4.30.2.2<a name="4.30.2.2"> </a></span> Constraints <a href="sequence.html#4.30.2.2" title="link to here" class="self-link"><img src="target.png"/></a></h3><ul><li><b title="Formal Invariant Identifier">tla-1</b>: Start and end position should be non-negative, and end position must be larger than start position. (xpath: <span style="font-family: Courier New, monospace">boolean(f:start/@value &gt;= 0) and boolean(f:start/@value &gt;=0) and boolean(f:end/@value &gt; f:start/@value)</span>)</li><li><b title="Formal Invariant Identifier">tla-2</b>: CIGAR string should conform with extended-cigar's syntax. (xpath: <span style="font-family: Courier New, monospace">matches(f:cigar/@value, '\*|([0-9]+[MIDNSHPX=])+')</span>)</li></ul>
 
     <ul>
-        <li>Start position is inclusive and end position of exclusive. E.g. a start position `123` and end position of `124` means a single base located at base `123` (0-based).</li>
+        <li>Start position is inclusive and end position of exclusive. E.g. a start position <code>123</code> and end position of <code>124</code> means a single base located at base <code>123</code> (0-based).</li>
         <li>
             The type of <code>chromosome</code> is <code>string</code> (instead of <code>code</code> or <code>Coding</code>) because sequence represented by the resource can be one from other species, and there are currently no ontology that handles such a range of chromosome identifiers. For similar reason, type of <code>genomeAssembly</code> is also <code>string</code>.
         </li> 
-        <li>The field `quantity` records the amound of molecules encoded by the sequence present in the sample. A common use case is using this to represent gene expression in the case of `RNA` sequences, by recording the amound of certain `RNA` sequences present in the sample.</li>
-        <li>The value of `referenceBases` SHOULD match the bases in reference genome (i.e. the value of `genomeBuild`) at genomic position specified.</li> 
+        <li>The field <code>quantity</code> records the amount of molecules present in the sample. A common use case is using <code>quantity</code> to represent gene expression, by recording the amount of <code>RNA</code> sequences present in the sample.</li>
+        <li>The value of <code>referenceBases</code> SHOULD match the bases in reference genome (i.e. the value of <code>genomeBuild</code>) at genomic position specified.</li> 
     </ul> 
 
 
@@ -450,7 +450,7 @@ Terminology Bindings
 		<div class="container">  <!-- container -->
 			<div class="inner-wrapper">
 				<p>
-        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Mon, Jul 27, 2015 18:52-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Mon, Jul 27, 2015 19:30-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
