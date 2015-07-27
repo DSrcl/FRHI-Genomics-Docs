@@ -122,6 +122,9 @@
 {
   &quot;resourceType&quot;: &quot;StructureDefinition&quot;,
   &quot;id&quot;: &quot;Sequence&quot;,
+  &quot;meta&quot;: {
+    &quot;lastUpdated&quot;: &quot;2015-07-27T18:49:39.421-04:00&quot;
+  },
   &quot;text&quot;: {
     &quot;status&quot;: &quot;generated&quot;,
     &quot;div&quot;: &quot;&lt;div&gt;!-- Snipped for Brevity --&gt;&lt;/div&gt;&quot;
@@ -155,7 +158,7 @@
   ],
   &quot;description&quot;: &quot;Base StructureDefinition for Sequence Resource&quot;,
   &quot;status&quot;: &quot;draft&quot;,
-  &quot;date&quot;: &quot;2015-07-26T15:54:10-04:00&quot;,
+  &quot;date&quot;: &quot;2015-07-27T18:49:39-04:00&quot;,
   &quot;mapping&quot;: [
     {
       &quot;identity&quot;: &quot;rim&quot;,
@@ -357,7 +360,7 @@
       {
         &quot;path&quot;: &quot;Sequence.startPosition&quot;,
         &quot;short&quot;: &quot;Start position of the sequence&quot;,
-        &quot;definition&quot;: &quot;0-based location start position of the sequence.&quot;,
+        &quot;definition&quot;: &quot;0-based location start position (inclusive) of the sequence.&quot;,
         &quot;min&quot;: 1,
         &quot;max&quot;: &quot;1&quot;,
         &quot;type&quot;: [
@@ -521,7 +524,7 @@
         }
       },
       {
-        &quot;path&quot;: &quot;Sequence.referenceBases&quot;,
+        &quot;path&quot;: &quot;Sequence.referenceSequence&quot;,
         &quot;short&quot;: &quot;Reference bases of the sequence&quot;,
         &quot;definition&quot;: &quot;Reference bases of the sequence.&quot;,
         &quot;min&quot;: 0,
@@ -533,7 +536,7 @@
         ]
       },
       {
-        &quot;path&quot;: &quot;Sequence.observedBases&quot;,
+        &quot;path&quot;: &quot;Sequence.observedSequence&quot;,
         &quot;short&quot;: &quot;Observed bases of the sequence&quot;,
         &quot;definition&quot;: &quot;Observed bases of the sequence.&quot;,
         &quot;min&quot;: 1,
@@ -546,13 +549,13 @@
       },
       {
         &quot;path&quot;: &quot;Sequence.name&quot;,
-        &quot;short&quot;: &quot;Name of the sequence. i.e.  Rs6313&quot;,
-        &quot;definition&quot;: &quot;Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text.&quot;,
+        &quot;short&quot;: &quot;Name of the sequence. I.e.  rs6313&quot;,
+        &quot;definition&quot;: &quot;Alterantive name of the sequence -- e.g. gene covered by the sequence, exome region in which the sequence is located, rsid of the sequence if it's a SNP, etc.&quot;,
         &quot;min&quot;: 0,
         &quot;max&quot;: &quot;*&quot;,
         &quot;type&quot;: [
           {
-            &quot;code&quot;: &quot;string&quot;
+            &quot;code&quot;: &quot;CodeableConcept&quot;
           }
         ]
       }
@@ -601,7 +604,7 @@
       {
         &quot;path&quot;: &quot;Sequence.startPosition&quot;,
         &quot;short&quot;: &quot;Start position of the sequence&quot;,
-        &quot;definition&quot;: &quot;0-based location start position of the sequence.&quot;,
+        &quot;definition&quot;: &quot;0-based location start position (inclusive) of the sequence.&quot;,
         &quot;min&quot;: 1,
         &quot;max&quot;: &quot;1&quot;,
         &quot;type&quot;: [
@@ -765,7 +768,7 @@
         }
       },
       {
-        &quot;path&quot;: &quot;Sequence.referenceBases&quot;,
+        &quot;path&quot;: &quot;Sequence.referenceSequence&quot;,
         &quot;short&quot;: &quot;Reference bases of the sequence&quot;,
         &quot;definition&quot;: &quot;Reference bases of the sequence.&quot;,
         &quot;min&quot;: 0,
@@ -777,7 +780,7 @@
         ]
       },
       {
-        &quot;path&quot;: &quot;Sequence.observedBases&quot;,
+        &quot;path&quot;: &quot;Sequence.observedSequence&quot;,
         &quot;short&quot;: &quot;Observed bases of the sequence&quot;,
         &quot;definition&quot;: &quot;Observed bases of the sequence.&quot;,
         &quot;min&quot;: 1,
@@ -790,13 +793,13 @@
       },
       {
         &quot;path&quot;: &quot;Sequence.name&quot;,
-        &quot;short&quot;: &quot;Name of the sequence. i.e.  Rs6313&quot;,
-        &quot;definition&quot;: &quot;Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text.&quot;,
+        &quot;short&quot;: &quot;Name of the sequence. I.e.  rs6313&quot;,
+        &quot;definition&quot;: &quot;Alterantive name of the sequence -- e.g. gene covered by the sequence, exome region in which the sequence is located, rsid of the sequence if it's a SNP, etc.&quot;,
         &quot;min&quot;: 0,
         &quot;max&quot;: &quot;*&quot;,
         &quot;type&quot;: [
           {
-            &quot;code&quot;: &quot;string&quot;
+            &quot;code&quot;: &quot;CodeableConcept&quot;
           }
         ]
       }
@@ -827,7 +830,7 @@ of the specification.
 		<div class="container"><!-- container -->
 			<div class="inner-wrapper">
 				<p>
-        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Sun, Jul 26, 2015 15:55-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Mon, Jul 27, 2015 18:52-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 

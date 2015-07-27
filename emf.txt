@@ -1,5 +1,5 @@
 ﻿package fhir fhir "http://hl7.org/fhir/emf" {
-// version 0.5.0.5997, generated Fri, Jul 24, 2015 17:31-0400
+// version 0.5.0.5997, generated Mon, Jul 27, 2015 18:49-0400
 
   // FHIR Basic Reference Model
   
@@ -4087,23 +4087,20 @@
     }
 
     attribute String chromosome (1..1);    // Chromosome of the sequence. E.g. "1" for chromosome 1. Note that value of `chromosome` is not limited to a human's chromosomes, as the sequence can be from other species such as Tuberculosis.
-    attribute Integer startPosition (1..1);    // 0-based location start position of the sequence.
-    attribute Integer endPosition (1..1);    // 0-based location (exclusive) end position of the sequence.
-    attribute StrandDirection direction (0..1);    // Direction of the strand.  Forward means the sequence is in 5-3 direction, reverse otherwise.
-    attribute String cigar (0..1);    // Extended CIGAR string for aligning the sequence with reference bases. See link for detailed specification.
-    attribute SampleType sample (0..1);    // Sample used to determine the sequence.
+    attribute Integer startPosition (1..1);    // 0-based location start position (inclusive) of the sequence.
+    attribute Integer endPosition (1..1);    // 0-based end location (exclusive) of the sequence.
+    attribute StrandDirection direction (0..1);    // Direction of the strand.  Forward means the sequence is in 5'-3' direction, reverse otherwise.
+    attribute String cigar (0..1);    // Extended CIGAR string for aligning the sequence with reference bases. See detailed documentation [here](http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm).
+    attribute SampleType sample (0..1);    // Tissue sample from which molecules encoded by the sequence are extracted.
     attribute ResourceReference lab (0..1);    // Lab where the sequence is determined.
-    attribute ResourceReference patient (1..1);    // Whom the sequence is determined for.
-    attribute CodeableConcept species (1..1);    // Species of the organism whom the sequence belongs to.
+    attribute ResourceReference patient (1..1);    // Whom the sequence is determined for. In a prenatal sequencing test, the patient being referenced is the birthgiver.
+    attribute CodeableConcept species (1..1);    // Species of the organism whom the sequence belongs to. The species is not limited to Homo sapiens. E.g. the sequence can be a DNA sequence of a bacteria.
     attribute Quantity quantity (0..1);    // Quantity of molecule encoded by the sequence presenting in the sample.
-    attribute String genomeBuild (0..1);    // Genome assembly.
-    attribute SequenceType type (1..1);    // Type of the sequence.
-    attribute String referenceBases (0..1);    // Reference bases of the sequence.
-    attribute String observedBases (1..1);    // Observed bases of the sequence.
-    attribute String name (0..-1);    // Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text.
-    attribute Uri gaRepository (0..1);    // GA4GH Repository where the seuqence can be located.
-    attribute String gaCallId (0..1);    // Call id of the sequence in a GA4GH repository.
-    attribute String gaReadGroupSetId (0..1);    // ReadGroupSet id of the sequence in a GA4GH repository.
+    attribute String genomeBuild (0..1);    // Genome assembly used to align the sequence.
+    attribute SequenceType type (1..1);    // Type of the sequence. E.g. DNA.
+    attribute String referenceSequence (0..1);    // Reference bases of the sequence.
+    attribute String observedSequence (1..1);    // Observed bases of the sequence.
+    attribute CodeableConcept name (0..-1);    // Alterantive name of the sequence -- e.g. gene covered by the sequence, exome region in which the sequence is located, rsid of the sequence if it's a SNP, etc.
   }
 
   class Slot extends Resource {    // A slot of time on a schedule that may be available for booking appointments.

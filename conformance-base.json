@@ -21,7 +21,7 @@
   ],
   "description": "This is the base conformance statement for FHIR. It represents a server that provides the full set of functionality defined by FHIR. It is provided to use as a template for system designers to build their own conformance statements from",
   "status": "draft",
-  "date": "2015-07-26T15:54:10-04:00",
+  "date": "2015-07-27T18:49:39-04:00",
   "fhirVersion": "0.5.0",
   "acceptUnknown": false,
   "format": [
@@ -7614,6 +7614,12 @@
               "documentation": "Search for sequences within a genomic region. For example region \"1:123-456\" can be translated into \"1$gte123$lt456\""
             },
             {
+              "name": "species",
+              "definition": "http://hl7.org/fhir/SearchParameter/sequence-species",
+              "type": "token",
+              "documentation": "Species of the orgism whom the sequence belong sto"
+            },
+            {
               "name": "patient",
               "definition": "http://hl7.org/fhir/SearchParameter/sequence-patient",
               "type": "reference",
@@ -7634,7 +7640,7 @@
             {
               "name": "name",
               "definition": "http://hl7.org/fhir/SearchParameter/sequence-name",
-              "type": "string",
+              "type": "token",
               "documentation": "Human readable name of the sequence."
             },
             {

@@ -128,7 +128,7 @@
     }
   ],
   &quot;status&quot;: &quot;draft&quot;,
-  &quot;date&quot;: &quot;2015-07-24T17:31:16-04:00&quot;,
+  &quot;date&quot;: &quot;2015-07-27T18:49:39-04:00&quot;,
   &quot;publisher&quot;: &quot;Health Level Seven International (Clinical Genomics)&quot;,
   &quot;group&quot;: {
     &quot;extension&quot;: [
@@ -138,7 +138,7 @@
       }
     ],
     &quot;linkId&quot;: &quot;Sequence&quot;,
-    &quot;title&quot;: &quot;Sequence of a molecule&quot;,
+    &quot;title&quot;: &quot;Sequence of a macromolecule&quot;,
     &quot;required&quot;: false,
     &quot;repeats&quot;: true,
     &quot;group&quot;: [
@@ -302,7 +302,7 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;0-based location start position of the sequence.&quot;
+            &quot;valueString&quot;: &quot;0-based location start position (inclusive) of the sequence.&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
@@ -315,7 +315,7 @@
         &quot;question&quot;: [
           {
             &quot;linkId&quot;: &quot;Sequence.startPosition.value&quot;,
-            &quot;text&quot;: &quot;Start of the sequence&quot;,
+            &quot;text&quot;: &quot;Start position of the sequence&quot;,
             &quot;type&quot;: &quot;integer&quot;,
             &quot;required&quot;: false,
             &quot;repeats&quot;: false
@@ -326,7 +326,7 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;0-based location (exclusive) end position of the sequence.&quot;
+            &quot;valueString&quot;: &quot;0-based end location (exclusive) of the sequence.&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
@@ -339,7 +339,7 @@
         &quot;question&quot;: [
           {
             &quot;linkId&quot;: &quot;Sequence.endPosition.value&quot;,
-            &quot;text&quot;: &quot;End of the sequence&quot;,
+            &quot;text&quot;: &quot;End position of the sequence&quot;,
             &quot;type&quot;: &quot;integer&quot;,
             &quot;required&quot;: false,
             &quot;repeats&quot;: false
@@ -350,7 +350,7 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;Direction of the strand.  Forward means the sequence is in 5-3 direction, reverse otherwise.&quot;
+            &quot;valueString&quot;: &quot;Direction of the strand.  Forward means the sequence is in 5'-3' direction, reverse otherwise.&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
@@ -374,7 +374,7 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;Extended CIGAR string for aligning the sequence with reference bases. See link for detailed specification.&quot;
+            &quot;valueString&quot;: &quot;Extended CIGAR string for aligning the sequence with reference bases. See detailed documentation [here](http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm).&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
@@ -398,7 +398,7 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;Sample used to determine the sequence.&quot;
+            &quot;valueString&quot;: &quot;Tissue sample from which molecules encoded by the sequence are extracted.&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
@@ -452,7 +452,7 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;Whom the sequence is determined for.&quot;
+            &quot;valueString&quot;: &quot;Whom the sequence is determined for. In a prenatal sequencing test, the patient being referenced is the birthgiver.&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
@@ -482,7 +482,7 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;Species of the organism whom the sequence belongs to.&quot;
+            &quot;valueString&quot;: &quot;Species of the organism whom the sequence belongs to. The species is not limited to Homo sapiens. E.g. the sequence can be a DNA sequence of a bacteria.&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
@@ -497,7 +497,7 @@
           {
             &quot;linkId&quot;: &quot;Sequence.species.coding&quot;,
             &quot;text&quot;: &quot;code:&quot;,
-            &quot;type&quot;: &quot;open-choice&quot;,
+            &quot;type&quot;: &quot;choice&quot;,
             &quot;required&quot;: false,
             &quot;repeats&quot;: false
           },
@@ -567,7 +567,7 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;Genome assembly.&quot;
+            &quot;valueString&quot;: &quot;Genome assembly used to align the sequence.&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
@@ -591,7 +591,7 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;Type of the sequence.&quot;
+            &quot;valueString&quot;: &quot;Type of the sequence. E.g. DNA.&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
@@ -622,12 +622,12 @@
             &quot;valueString&quot;: &quot;string&quot;
           }
         ],
-        &quot;linkId&quot;: &quot;Sequence.referenceBases&quot;,
+        &quot;linkId&quot;: &quot;Sequence.referenceSequence&quot;,
         &quot;required&quot;: false,
         &quot;repeats&quot;: true,
         &quot;question&quot;: [
           {
-            &quot;linkId&quot;: &quot;Sequence.referenceBases.value&quot;,
+            &quot;linkId&quot;: &quot;Sequence.referenceSequence.value&quot;,
             &quot;text&quot;: &quot;Reference bases of the sequence&quot;,
             &quot;type&quot;: &quot;string&quot;,
             &quot;required&quot;: false,
@@ -646,12 +646,12 @@
             &quot;valueString&quot;: &quot;string&quot;
           }
         ],
-        &quot;linkId&quot;: &quot;Sequence.observedBases&quot;,
+        &quot;linkId&quot;: &quot;Sequence.observedSequence&quot;,
         &quot;required&quot;: true,
         &quot;repeats&quot;: true,
         &quot;question&quot;: [
           {
-            &quot;linkId&quot;: &quot;Sequence.observedBases.value&quot;,
+            &quot;linkId&quot;: &quot;Sequence.observedSequence.value&quot;,
             &quot;text&quot;: &quot;Observed bases of the sequence&quot;,
             &quot;type&quot;: &quot;string&quot;,
             &quot;required&quot;: false,
@@ -663,92 +663,28 @@
         &quot;extension&quot;: [
           {
             &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text.&quot;
+            &quot;valueString&quot;: &quot;Alterantive name of the sequence -- e.g. gene covered by the sequence, exome region in which the sequence is located, rsid of the sequence if it's a SNP, etc.&quot;
           },
           {
             &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
-            &quot;valueString&quot;: &quot;string&quot;
+            &quot;valueString&quot;: &quot;CodeableConcept&quot;
           }
         ],
         &quot;linkId&quot;: &quot;Sequence.name&quot;,
+        &quot;text&quot;: &quot;Name of the sequence. I.e.  rs6313&quot;,
         &quot;required&quot;: false,
         &quot;repeats&quot;: true,
         &quot;question&quot;: [
           {
-            &quot;linkId&quot;: &quot;Sequence.name.value&quot;,
-            &quot;text&quot;: &quot;Name of the sequence. i.e.  Rs6313&quot;,
-            &quot;type&quot;: &quot;string&quot;,
+            &quot;linkId&quot;: &quot;Sequence.name.coding&quot;,
+            &quot;text&quot;: &quot;code:&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;,
             &quot;required&quot;: false,
             &quot;repeats&quot;: false
-          }
-        ]
-      },
-      {
-        &quot;extension&quot;: [
-          {
-            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;GA4GH Repository where the seuqence can be located.&quot;
           },
           {
-            &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
-            &quot;valueString&quot;: &quot;uri&quot;
-          }
-        ],
-        &quot;linkId&quot;: &quot;Sequence.gaRepository&quot;,
-        &quot;required&quot;: false,
-        &quot;repeats&quot;: true,
-        &quot;question&quot;: [
-          {
-            &quot;linkId&quot;: &quot;Sequence.gaRepository.value&quot;,
-            &quot;text&quot;: &quot;GA4GH Repository where the seuqence can be located&quot;,
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;required&quot;: false,
-            &quot;repeats&quot;: false
-          }
-        ]
-      },
-      {
-        &quot;extension&quot;: [
-          {
-            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;Call id of the sequence in a GA4GH repository.&quot;
-          },
-          {
-            &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
-            &quot;valueString&quot;: &quot;string&quot;
-          }
-        ],
-        &quot;linkId&quot;: &quot;Sequence.gaCallId&quot;,
-        &quot;required&quot;: false,
-        &quot;repeats&quot;: true,
-        &quot;question&quot;: [
-          {
-            &quot;linkId&quot;: &quot;Sequence.gaCallId.value&quot;,
-            &quot;text&quot;: &quot;Call id of the sequence in a GA4GH repository&quot;,
-            &quot;type&quot;: &quot;string&quot;,
-            &quot;required&quot;: false,
-            &quot;repeats&quot;: false
-          }
-        ]
-      },
-      {
-        &quot;extension&quot;: [
-          {
-            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;,
-            &quot;valueString&quot;: &quot;ReadGroupSet id of the sequence in a GA4GH repository.&quot;
-          },
-          {
-            &quot;url&quot;: &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;,
-            &quot;valueString&quot;: &quot;string&quot;
-          }
-        ],
-        &quot;linkId&quot;: &quot;Sequence.gaReadGroupSetId&quot;,
-        &quot;required&quot;: false,
-        &quot;repeats&quot;: true,
-        &quot;question&quot;: [
-          {
-            &quot;linkId&quot;: &quot;Sequence.gaReadGroupSetId.value&quot;,
-            &quot;text&quot;: &quot;ReadGroupSet id of the sequence in a GA4GH repository&quot;,
+            &quot;linkId&quot;: &quot;Sequence.name.text&quot;,
+            &quot;text&quot;: &quot;text:&quot;,
             &quot;type&quot;: &quot;string&quot;,
             &quot;required&quot;: false,
             &quot;repeats&quot;: false
@@ -782,7 +718,7 @@ of the specification.
 		<div class="container"><!-- container -->
 			<div class="inner-wrapper">
 				<p>
-        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Mon, Jul 27, 2015 18:52-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 

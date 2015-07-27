@@ -150,12 +150,9 @@ function validateSequence(node) {
          && validateSequence_quantity(divNode, "Sequence.quantity")
          && validateSequence_genomeBuild(divNode, "Sequence.genomeBuild")
          && validateSequence_type(divNode, "Sequence.type")
-         && validateSequence_referenceBases(divNode, "Sequence.referenceBases")
-         && validateSequence_observedBases(divNode, "Sequence.observedBases")
-         && validateSequence_name(divNode, "Sequence.name")
-         && validateSequence_gaRepository(divNode, "Sequence.gaRepository")
-         && validateSequence_gaCallId(divNode, "Sequence.gaCallId")
-         && validateSequence_gaReadGroupSetId(divNode, "Sequence.gaReadGroupSetId");
+         && validateSequence_referenceSequence(divNode, "Sequence.referenceSequence")
+         && validateSequence_observedSequence(divNode, "Sequence.observedSequence")
+         && validateSequence_name(divNode, "Sequence.name");
     }
     return valid;
   }
@@ -597,30 +594,30 @@ function validateSequence_type_value(node) {
   }
 }
 
-function validateSequence_referenceBases(node) {
-  var groupNodes = findDiv(node, "Sequence.referenceBases");
+function validateSequence_referenceSequence(node) {
+  var groupNodes = findDiv(node, "Sequence.referenceSequence");
   if (groupNodes != null) {
     var valid = true;
     for (var i=0; i<groupNodes.length && valid; i++) {
       var divNode = groupNodes[i];
-      valid = validateSequence_referenceBases_value(divNode, "Sequence.referenceBases.value");
+      valid = validateSequence_referenceSequence_value(divNode, "Sequence.referenceSequence.value");
     }
     return valid;
   }
 }
 
 
-function validateSequence_referenceBases_value(node) {
-  var answerNodes = findAnswers(node, "Sequence.referenceBases.value");
+function validateSequence_referenceSequence_value(node) {
+  var answerNodes = findAnswers(node, "Sequence.referenceSequence.value");
   if (answerNodes != null) {
     return true;
   }
 }
 
-function validateSequence_observedBases(node) {
-  var groupNodes = findDiv(node, "Sequence.observedBases");
+function validateSequence_observedSequence(node) {
+  var groupNodes = findDiv(node, "Sequence.observedSequence");
   if (groupNodes.length < 1) {
-    setAddFocus(node, "Sequence.observedBases");
+    setAddFocus(node, "Sequence.observedSequence");
     node.focus()
     alert('Must have at least 1 occurrences of: group');
     return false
@@ -628,15 +625,15 @@ function validateSequence_observedBases(node) {
     var valid = true;
     for (var i=0; i<groupNodes.length && valid; i++) {
       var divNode = groupNodes[i];
-      valid = validateSequence_observedBases_value(divNode, "Sequence.observedBases.value");
+      valid = validateSequence_observedSequence_value(divNode, "Sequence.observedSequence.value");
     }
     return valid;
   }
 }
 
 
-function validateSequence_observedBases_value(node) {
-  var answerNodes = findAnswers(node, "Sequence.observedBases.value");
+function validateSequence_observedSequence_value(node) {
+  var answerNodes = findAnswers(node, "Sequence.observedSequence.value");
   if (answerNodes != null) {
     return true;
   }
@@ -648,75 +645,23 @@ function validateSequence_name(node) {
     var valid = true;
     for (var i=0; i<groupNodes.length && valid; i++) {
       var divNode = groupNodes[i];
-      valid = validateSequence_name_value(divNode, "Sequence.name.value");
+      valid = validateSequence_name_coding(divNode, "Sequence.name.coding")
+         && validateSequence_name_text(divNode, "Sequence.name.text");
     }
     return valid;
   }
 }
 
 
-function validateSequence_name_value(node) {
-  var answerNodes = findAnswers(node, "Sequence.name.value");
+function validateSequence_name_coding(node) {
+  var answerNodes = findAnswers(node, "Sequence.name.coding");
   if (answerNodes != null) {
     return true;
   }
 }
 
-function validateSequence_gaRepository(node) {
-  var groupNodes = findDiv(node, "Sequence.gaRepository");
-  if (groupNodes != null) {
-    var valid = true;
-    for (var i=0; i<groupNodes.length && valid; i++) {
-      var divNode = groupNodes[i];
-      valid = validateSequence_gaRepository_value(divNode, "Sequence.gaRepository.value");
-    }
-    return valid;
-  }
-}
-
-
-function validateSequence_gaRepository_value(node) {
-  var answerNodes = findAnswers(node, "Sequence.gaRepository.value");
-  if (answerNodes != null) {
-    return true;
-  }
-}
-
-function validateSequence_gaCallId(node) {
-  var groupNodes = findDiv(node, "Sequence.gaCallId");
-  if (groupNodes != null) {
-    var valid = true;
-    for (var i=0; i<groupNodes.length && valid; i++) {
-      var divNode = groupNodes[i];
-      valid = validateSequence_gaCallId_value(divNode, "Sequence.gaCallId.value");
-    }
-    return valid;
-  }
-}
-
-
-function validateSequence_gaCallId_value(node) {
-  var answerNodes = findAnswers(node, "Sequence.gaCallId.value");
-  if (answerNodes != null) {
-    return true;
-  }
-}
-
-function validateSequence_gaReadGroupSetId(node) {
-  var groupNodes = findDiv(node, "Sequence.gaReadGroupSetId");
-  if (groupNodes != null) {
-    var valid = true;
-    for (var i=0; i<groupNodes.length && valid; i++) {
-      var divNode = groupNodes[i];
-      valid = validateSequence_gaReadGroupSetId_value(divNode, "Sequence.gaReadGroupSetId.value");
-    }
-    return valid;
-  }
-}
-
-
-function validateSequence_gaReadGroupSetId_value(node) {
-  var answerNodes = findAnswers(node, "Sequence.gaReadGroupSetId.value");
+function validateSequence_name_text(node) {
+  var answerNodes = findAnswers(node, "Sequence.name.text");
   if (answerNodes != null) {
     return true;
   }
@@ -727,7 +672,7 @@ function serializeSequence(node, groups) {
   for (var i=0; i<groupNodes.length;i++) {
     var group = {
       "linkId":"Sequence",
-      "title":"Sequence of a molecule"
+      "title":"Sequence of a macromolecule"
     }
     var childGroups = [];    serializeSequence_id(groupNodes[i], childGroups);
     serializeSequence_meta(groupNodes[i], childGroups);
@@ -749,12 +694,9 @@ function serializeSequence(node, groups) {
     serializeSequence_quantity(groupNodes[i], childGroups);
     serializeSequence_genomeBuild(groupNodes[i], childGroups);
     serializeSequence_type(groupNodes[i], childGroups);
-    serializeSequence_referenceBases(groupNodes[i], childGroups);
-    serializeSequence_observedBases(groupNodes[i], childGroups);
+    serializeSequence_referenceSequence(groupNodes[i], childGroups);
+    serializeSequence_observedSequence(groupNodes[i], childGroups);
     serializeSequence_name(groupNodes[i], childGroups);
-    serializeSequence_gaRepository(groupNodes[i], childGroups);
-    serializeSequence_gaCallId(groupNodes[i], childGroups);
-    serializeSequence_gaReadGroupSetId(groupNodes[i], childGroups);
     if (childGroups.length != 0) {
       group.group = childGroups;
       groups.push(group);
@@ -959,7 +901,7 @@ function serializeSequence_startPosition(node, groups) {
 function serializeSequence_startPosition_value(node, answers) {
   var question = {
       "linkId":"Sequence.startPosition.value",
-      "text":"Start of the sequence"
+      "text":"Start position of the sequence"
     }
   var answerNodes = findAnswers(node, "Sequence.startPosition.value");
   if (answerNodes.length != 0) {
@@ -988,7 +930,7 @@ function serializeSequence_endPosition(node, groups) {
 function serializeSequence_endPosition_value(node, answers) {
   var question = {
       "linkId":"Sequence.endPosition.value",
-      "text":"End of the sequence"
+      "text":"End position of the sequence"
     }
   var answerNodes = findAnswers(node, "Sequence.endPosition.value");
   if (answerNodes.length != 0) {
@@ -1331,13 +1273,13 @@ function serializeSequence_type_value(node, answers) {
 }
 
 
-function serializeSequence_referenceBases(node, groups) {
-  var groupNodes = findDiv(node, "Sequence.referenceBases");
+function serializeSequence_referenceSequence(node, groups) {
+  var groupNodes = findDiv(node, "Sequence.referenceSequence");
   for (var i=0; i<groupNodes.length;i++) {
     var group = {
-      "linkId":"Sequence.referenceBases"
+      "linkId":"Sequence.referenceSequence"
     }
-    var childQuestions = [];    serializeSequence_referenceBases_value(groupNodes[i], childQuestions);
+    var childQuestions = [];    serializeSequence_referenceSequence_value(groupNodes[i], childQuestions);
     if (childQuestions.length != 0){
       group.question = childQuestions;
       groups.push(group);
@@ -1347,12 +1289,12 @@ function serializeSequence_referenceBases(node, groups) {
 }
 
 
-function serializeSequence_referenceBases_value(node, answers) {
+function serializeSequence_referenceSequence_value(node, answers) {
   var question = {
-      "linkId":"Sequence.referenceBases.value",
+      "linkId":"Sequence.referenceSequence.value",
       "text":"Reference bases of the sequence"
     }
-  var answerNodes = findAnswers(node, "Sequence.referenceBases.value");
+  var answerNodes = findAnswers(node, "Sequence.referenceSequence.value");
   if (answerNodes.length != 0) {
     for (int i=0; i < answerNodes.length; i++) {    }
   }
@@ -1360,13 +1302,13 @@ function serializeSequence_referenceBases_value(node, answers) {
 }
 
 
-function serializeSequence_observedBases(node, groups) {
-  var groupNodes = findDiv(node, "Sequence.observedBases");
+function serializeSequence_observedSequence(node, groups) {
+  var groupNodes = findDiv(node, "Sequence.observedSequence");
   for (var i=0; i<groupNodes.length;i++) {
     var group = {
-      "linkId":"Sequence.observedBases"
+      "linkId":"Sequence.observedSequence"
     }
-    var childQuestions = [];    serializeSequence_observedBases_value(groupNodes[i], childQuestions);
+    var childQuestions = [];    serializeSequence_observedSequence_value(groupNodes[i], childQuestions);
     if (childQuestions.length != 0){
       group.question = childQuestions;
       groups.push(group);
@@ -1376,12 +1318,12 @@ function serializeSequence_observedBases(node, groups) {
 }
 
 
-function serializeSequence_observedBases_value(node, answers) {
+function serializeSequence_observedSequence_value(node, answers) {
   var question = {
-      "linkId":"Sequence.observedBases.value",
+      "linkId":"Sequence.observedSequence.value",
       "text":"Observed bases of the sequence"
     }
-  var answerNodes = findAnswers(node, "Sequence.observedBases.value");
+  var answerNodes = findAnswers(node, "Sequence.observedSequence.value");
   if (answerNodes.length != 0) {
     for (int i=0; i < answerNodes.length; i++) {    }
   }
@@ -1393,9 +1335,11 @@ function serializeSequence_name(node, groups) {
   var groupNodes = findDiv(node, "Sequence.name");
   for (var i=0; i<groupNodes.length;i++) {
     var group = {
-      "linkId":"Sequence.name"
+      "linkId":"Sequence.name",
+      "text":"Name of the sequence. I.e.  rs6313"
     }
-    var childQuestions = [];    serializeSequence_name_value(groupNodes[i], childQuestions);
+    var childQuestions = [];    serializeSequence_name_coding(groupNodes[i], childQuestions);
+    serializeSequence_name_text(groupNodes[i], childQuestions);
     if (childQuestions.length != 0){
       group.question = childQuestions;
       groups.push(group);
@@ -1405,12 +1349,12 @@ function serializeSequence_name(node, groups) {
 }
 
 
-function serializeSequence_name_value(node, answers) {
+function serializeSequence_name_coding(node, answers) {
   var question = {
-      "linkId":"Sequence.name.value",
-      "text":"Name of the sequence. i.e.  Rs6313"
+      "linkId":"Sequence.name.coding",
+      "text":"code:"
     }
-  var answerNodes = findAnswers(node, "Sequence.name.value");
+  var answerNodes = findAnswers(node, "Sequence.name.coding");
   if (answerNodes.length != 0) {
     for (int i=0; i < answerNodes.length; i++) {    }
   }
@@ -1418,86 +1362,12 @@ function serializeSequence_name_value(node, answers) {
 }
 
 
-function serializeSequence_gaRepository(node, groups) {
-  var groupNodes = findDiv(node, "Sequence.gaRepository");
-  for (var i=0; i<groupNodes.length;i++) {
-    var group = {
-      "linkId":"Sequence.gaRepository"
-    }
-    var childQuestions = [];    serializeSequence_gaRepository_value(groupNodes[i], childQuestions);
-    if (childQuestions.length != 0){
-      group.question = childQuestions;
-      groups.push(group);
-    }
-  }
-
-}
-
-
-function serializeSequence_gaRepository_value(node, answers) {
+function serializeSequence_name_text(node, answers) {
   var question = {
-      "linkId":"Sequence.gaRepository.value",
-      "text":"GA4GH Repository where the seuqence can be located"
+      "linkId":"Sequence.name.text",
+      "text":"text:"
     }
-  var answerNodes = findAnswers(node, "Sequence.gaRepository.value");
-  if (answerNodes.length != 0) {
-    for (int i=0; i < answerNodes.length; i++) {    }
-  }
-
-}
-
-
-function serializeSequence_gaCallId(node, groups) {
-  var groupNodes = findDiv(node, "Sequence.gaCallId");
-  for (var i=0; i<groupNodes.length;i++) {
-    var group = {
-      "linkId":"Sequence.gaCallId"
-    }
-    var childQuestions = [];    serializeSequence_gaCallId_value(groupNodes[i], childQuestions);
-    if (childQuestions.length != 0){
-      group.question = childQuestions;
-      groups.push(group);
-    }
-  }
-
-}
-
-
-function serializeSequence_gaCallId_value(node, answers) {
-  var question = {
-      "linkId":"Sequence.gaCallId.value",
-      "text":"Call id of the sequence in a GA4GH repository"
-    }
-  var answerNodes = findAnswers(node, "Sequence.gaCallId.value");
-  if (answerNodes.length != 0) {
-    for (int i=0; i < answerNodes.length; i++) {    }
-  }
-
-}
-
-
-function serializeSequence_gaReadGroupSetId(node, groups) {
-  var groupNodes = findDiv(node, "Sequence.gaReadGroupSetId");
-  for (var i=0; i<groupNodes.length;i++) {
-    var group = {
-      "linkId":"Sequence.gaReadGroupSetId"
-    }
-    var childQuestions = [];    serializeSequence_gaReadGroupSetId_value(groupNodes[i], childQuestions);
-    if (childQuestions.length != 0){
-      group.question = childQuestions;
-      groups.push(group);
-    }
-  }
-
-}
-
-
-function serializeSequence_gaReadGroupSetId_value(node, answers) {
-  var question = {
-      "linkId":"Sequence.gaReadGroupSetId.value",
-      "text":"ReadGroupSet id of the sequence in a GA4GH repository"
-    }
-  var answerNodes = findAnswers(node, "Sequence.gaReadGroupSetId.value");
+  var answerNodes = findAnswers(node, "Sequence.name.text");
   if (answerNodes.length != 0) {
     for (int i=0; i < answerNodes.length; i++) {    }
   }
@@ -2443,7 +2313,7 @@ function closeReferenceSelect() {
    </head>
    <body onload="loadAnswers()">
 <div id="div-cnt">
-         <h3><span class="sectioncount">4.30.4.1<a name="4.30.4.1"> </a></span> Sequence of a molecule <a href="sequence.questionnaire.html#4.30.4.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
+         <h3><span class="sectioncount">4.30.4.1<a name="4.30.4.1"> </a></span> Sequence of a macromolecule <a href="sequence.questionnaire.html#4.30.4.1" title="link to here" class="self-link"><img src="target.png"/></a></h3>
          <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e17">
             <span style="display:none">Sequence</span>
             <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
@@ -2569,7 +2439,7 @@ function closeReferenceSelect() {
                   <tbody>
                      <tr>
                         <td style="vertical-align:top;">
-                           <span style="display:none;">Sequence.startPosition.value</span> Start of the sequence</td>
+                           <span style="display:none;">Sequence.startPosition.value</span> Start position of the sequence</td>
                         <td>
                            <input onblur="checkInteger(this)" name="Path:Sequence[1]Sequence.startPosition[1]Sequence.startPosition.value[1]" type="text"/>
                         </td>
@@ -2588,7 +2458,7 @@ function closeReferenceSelect() {
                   <tbody>
                      <tr>
                         <td style="vertical-align:top;">
-                           <span style="display:none;">Sequence.endPosition.value</span> End of the sequence</td>
+                           <span style="display:none;">Sequence.endPosition.value</span> End position of the sequence</td>
                         <td>
                            <input onblur="checkInteger(this)" name="Path:Sequence[1]Sequence.endPosition[1]Sequence.endPosition.value[1]" type="text"/>
                         </td>
@@ -2797,43 +2667,43 @@ function closeReferenceSelect() {
             <span style="display:none">1</span>
             <br/>
             <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e798.1">
-               <span style="display:none">Sequence.referenceBases</span>
+               <span style="display:none">Sequence.referenceSequence</span>
                <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
                <table>
                   <tbody>
                      <tr>
                         <td style="vertical-align:top;">
-                           <span style="display:none;">Sequence.referenceBases.value</span> Reference bases of the sequence</td>
+                           <span style="display:none;">Sequence.referenceSequence.value</span> Reference bases of the sequence</td>
                         <td>
-                           <input name="Path:Sequence[1]Sequence.referenceBases[1]Sequence.referenceBases.value[1]" type="text"/>
+                           <input name="Path:Sequence[1]Sequence.referenceSequence[1]Sequence.referenceSequence.value[1]" type="text"/>
                         </td>
                      </tr>
                   </tbody>
                </table>
             </div>
             <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e798.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
-            <span style="display:none">Sequence.referenceBases</span>
+            <span style="display:none">Sequence.referenceSequence</span>
             <span style="display:none">1</span>
             <br/>
             <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e836.1">
-               <span style="display:none">Sequence.observedBases</span>
+               <span style="display:none">Sequence.observedSequence</span>
                <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
                <table>
                   <tbody>
                      <tr>
                         <td style="vertical-align:top;">
-                           <span style="display:none;">Sequence.observedBases.value</span> Observed bases of the sequence</td>
+                           <span style="display:none;">Sequence.observedSequence.value</span> Observed bases of the sequence</td>
                         <td>
-                           <input name="Path:Sequence[1]Sequence.observedBases[1]Sequence.observedBases.value[1]" type="text"/>
+                           <input name="Path:Sequence[1]Sequence.observedSequence[1]Sequence.observedSequence.value[1]" type="text"/>
                         </td>
                      </tr>
                   </tbody>
                </table>
             </div>
             <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e836.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
-            <span style="display:none">Sequence.observedBases</span>
+            <span style="display:none">Sequence.observedSequence</span>
             <span style="display:none">1</span>
-            <br/>
+            <p>Name of the sequence. I.e.  rs6313</p>
             <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e874.1">
                <span style="display:none">Sequence.name</span>
                <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
@@ -2841,9 +2711,14 @@ function closeReferenceSelect() {
                   <tbody>
                      <tr>
                         <td style="vertical-align:top;">
-                           <span style="display:none;">Sequence.name.value</span> Name of the sequence. i.e.  Rs6313</td>
+                           <span style="display:none;">Sequence.name.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Sequence.name.text</span> text:</td>
                         <td>
-                           <input name="Path:Sequence[1]Sequence.name[1]Sequence.name.value[1]" type="text"/>
+                           <input name="Path:Sequence[1]Sequence.name[1]Sequence.name.text[1]" type="text"/>
                         </td>
                      </tr>
                   </tbody>
@@ -2851,63 +2726,6 @@ function closeReferenceSelect() {
             </div>
             <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e874.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
             <span style="display:none">Sequence.name</span>
-            <span style="display:none">1</span>
-            <br/>
-            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e913.1">
-               <span style="display:none">Sequence.gaRepository</span>
-               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
-               <table>
-                  <tbody>
-                     <tr>
-                        <td style="vertical-align:top;">
-                           <span style="display:none;">Sequence.gaRepository.value</span> GA4GH Repository where the seuqence can be located</td>
-                        <td>
-                           <input name="Path:Sequence[1]Sequence.gaRepository[1]Sequence.gaRepository.value[1]" type="text"/>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e913.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
-            <span style="display:none">Sequence.gaRepository</span>
-            <span style="display:none">1</span>
-            <br/>
-            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e951.1">
-               <span style="display:none">Sequence.gaCallId</span>
-               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
-               <table>
-                  <tbody>
-                     <tr>
-                        <td style="vertical-align:top;">
-                           <span style="display:none;">Sequence.gaCallId.value</span> Call id of the sequence in a GA4GH repository</td>
-                        <td>
-                           <input name="Path:Sequence[1]Sequence.gaCallId[1]Sequence.gaCallId.value[1]" type="text"/>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e951.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
-            <span style="display:none">Sequence.gaCallId</span>
-            <span style="display:none">1</span>
-            <br/>
-            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;" id="d2e989.1">
-               <span style="display:none">Sequence.gaReadGroupSetId</span>
-               <input src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" onclick="deleteGroup(this)" alt="Remove" style="width:10px;height:10px;" type="image"/>
-               <table>
-                  <tbody>
-                     <tr>
-                        <td style="vertical-align:top;">
-                           <span style="display:none;">Sequence.gaReadGroupSetId.value</span> ReadGroupSet id of the sequence in a GA4GH repository</td>
-                        <td>
-                           <input name="Path:Sequence[1]Sequence.gaReadGroupSetId[1]Sequence.gaReadGroupSetId.value[1]" type="text"/>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e989.1', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
-            <span style="display:none">Sequence.gaReadGroupSetId</span>
             <span style="display:none">1</span>
          </div>
          <input src="http://fhir-dev.healthintersections.com.au/html-form-add.png" onclick="addGroup('d2e17', this)" alt="Add section" style="margin:0em 2em;width:10px;height:10px;" type="image"/>
@@ -2949,7 +2767,7 @@ function closeReferenceSelect() {
 		<div class="container">  <!-- container -->
 			<div class="inner-wrapper">
 				<p>
-        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Fri, Jul 24, 2015 17:34-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Mon, Jul 27, 2015 18:52-0400.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 

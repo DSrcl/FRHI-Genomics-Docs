@@ -6,14 +6,14 @@
     <system value="urn:ietf:rfc:3986"/>
   </identifier>
   <status value="draft"/>
-  <date value="2015-07-24T17:31:16-04:00"/>
+  <date value="2015-07-27T18:49:39-04:00"/>
   <publisher value="Health Level Seven International (Clinical Genomics)"/>
   <group>
     <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
       <valueString value="This resource records information about sequence of a moleculde. E.g. a DNA sequence."/>
     </extension>
     <linkId value="Sequence"/>
-    <title value="Sequence of a molecule"/>
+    <title value="Sequence of a macromolecule"/>
     <required value="false"/>
     <repeats value="true"/>
     <group>
@@ -135,7 +135,7 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="0-based location start position of the sequence."/>
+        <valueString value="0-based location start position (inclusive) of the sequence."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="integer"/>
@@ -145,7 +145,7 @@
       <repeats value="true"/>
       <question>
         <linkId value="Sequence.startPosition.value"/>
-        <text value="Start of the sequence"/>
+        <text value="Start position of the sequence"/>
         <type value="integer"/>
         <required value="false"/>
         <repeats value="false"/>
@@ -153,7 +153,7 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="0-based location (exclusive) end position of the sequence."/>
+        <valueString value="0-based end location (exclusive) of the sequence."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="integer"/>
@@ -163,7 +163,7 @@
       <repeats value="true"/>
       <question>
         <linkId value="Sequence.endPosition.value"/>
-        <text value="End of the sequence"/>
+        <text value="End position of the sequence"/>
         <type value="integer"/>
         <required value="false"/>
         <repeats value="false"/>
@@ -171,7 +171,7 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="Direction of the strand.  Forward means the sequence is in 5-3 direction, reverse otherwise."/>
+        <valueString value="Direction of the strand.  Forward means the sequence is in 5&#39;-3&#39; direction, reverse otherwise."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="code"/>
@@ -189,7 +189,7 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="Extended CIGAR string for aligning the sequence with reference bases. See link for detailed specification."/>
+        <valueString value="Extended CIGAR string for aligning the sequence with reference bases. See detailed documentation [here](http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm)."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="string"/>
@@ -207,7 +207,7 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="Sample used to determine the sequence."/>
+        <valueString value="Tissue sample from which molecules encoded by the sequence are extracted."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="code"/>
@@ -246,7 +246,7 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="Whom the sequence is determined for."/>
+        <valueString value="Whom the sequence is determined for. In a prenatal sequencing test, the patient being referenced is the birthgiver."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="Reference"/>
@@ -267,7 +267,7 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="Species of the organism whom the sequence belongs to."/>
+        <valueString value="Species of the organism whom the sequence belongs to. The species is not limited to Homo sapiens. E.g. the sequence can be a DNA sequence of a bacteria."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="CodeableConcept"/>
@@ -279,7 +279,7 @@
       <question>
         <linkId value="Sequence.species.coding"/>
         <text value="code:"/>
-        <type value="open-choice"/>
+        <type value="choice"/>
         <required value="false"/>
         <repeats value="false"/>
       </question>
@@ -340,7 +340,7 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="Genome assembly."/>
+        <valueString value="Genome assembly used to align the sequence."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="string"/>
@@ -358,7 +358,7 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="Type of the sequence."/>
+        <valueString value="Type of the sequence. E.g. DNA."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="code"/>
@@ -381,11 +381,11 @@
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="string"/>
       </extension>
-      <linkId value="Sequence.referenceBases"/>
+      <linkId value="Sequence.referenceSequence"/>
       <required value="false"/>
       <repeats value="true"/>
       <question>
-        <linkId value="Sequence.referenceBases.value"/>
+        <linkId value="Sequence.referenceSequence.value"/>
         <text value="Reference bases of the sequence"/>
         <type value="string"/>
         <required value="false"/>
@@ -399,11 +399,11 @@
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
         <valueString value="string"/>
       </extension>
-      <linkId value="Sequence.observedBases"/>
+      <linkId value="Sequence.observedSequence"/>
       <required value="true"/>
       <repeats value="true"/>
       <question>
-        <linkId value="Sequence.observedBases.value"/>
+        <linkId value="Sequence.observedSequence.value"/>
         <text value="Observed bases of the sequence"/>
         <type value="string"/>
         <required value="false"/>
@@ -412,71 +412,25 @@
     </group>
     <group>
       <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text."/>
+        <valueString value="Alterantive name of the sequence -- e.g. gene covered by the sequence, exome region in which the sequence is located, rsid of the sequence if it&#39;s a SNP, etc."/>
       </extension>
       <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
-        <valueString value="string"/>
+        <valueString value="CodeableConcept"/>
       </extension>
       <linkId value="Sequence.name"/>
+      <text value="Name of the sequence. I.e.  rs6313"/>
       <required value="false"/>
       <repeats value="true"/>
       <question>
-        <linkId value="Sequence.name.value"/>
-        <text value="Name of the sequence. i.e.  Rs6313"/>
-        <type value="string"/>
+        <linkId value="Sequence.name.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
         <required value="false"/>
         <repeats value="false"/>
       </question>
-    </group>
-    <group>
-      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="GA4GH Repository where the seuqence can be located."/>
-      </extension>
-      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
-        <valueString value="uri"/>
-      </extension>
-      <linkId value="Sequence.gaRepository"/>
-      <required value="false"/>
-      <repeats value="true"/>
       <question>
-        <linkId value="Sequence.gaRepository.value"/>
-        <text value="GA4GH Repository where the seuqence can be located"/>
-        <type value="string"/>
-        <required value="false"/>
-        <repeats value="false"/>
-      </question>
-    </group>
-    <group>
-      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="Call id of the sequence in a GA4GH repository."/>
-      </extension>
-      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
-        <valueString value="string"/>
-      </extension>
-      <linkId value="Sequence.gaCallId"/>
-      <required value="false"/>
-      <repeats value="true"/>
-      <question>
-        <linkId value="Sequence.gaCallId.value"/>
-        <text value="Call id of the sequence in a GA4GH repository"/>
-        <type value="string"/>
-        <required value="false"/>
-        <repeats value="false"/>
-      </question>
-    </group>
-    <group>
-      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
-        <valueString value="ReadGroupSet id of the sequence in a GA4GH repository."/>
-      </extension>
-      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
-        <valueString value="string"/>
-      </extension>
-      <linkId value="Sequence.gaReadGroupSetId"/>
-      <required value="false"/>
-      <repeats value="true"/>
-      <question>
-        <linkId value="Sequence.gaReadGroupSetId.value"/>
-        <text value="ReadGroupSet id of the sequence in a GA4GH repository"/>
+        <linkId value="Sequence.name.text"/>
+        <text value="text:"/>
         <type value="string"/>
         <required value="false"/>
         <repeats value="false"/>

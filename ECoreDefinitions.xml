@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fhir:Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fhir="http://hl7.org/fhir/definitions" date="2015-07-26T15:54:10.186-0400" version="0.5.0">
+<fhir:Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fhir="http://hl7.org/fhir/definitions" date="2015-07-27T18:49:39.421-0400" version="0.5.0">
   <type xsi:type="fhir:CompositeTypeDefn" name="Address" fullName="Address">
     <annotations shortDefinition="A postal address" definition="There is a variety of postal address formats defined around the world. This format defines a superset that is the basis for all addresses around the world." comment="Note: address is for postal addresses, not physical locations." requirements="Need to be able to record postal addresses, along with notes about their use." rimMapping="AD" v2Mapping="XAD"/>
     <binding id="2168" name="AddressType" fullName="Address.AddressType" binding="CodeList" reference="address-type" source="address.xml" description="" definition="The type of an address (physical / postal)" v2Map="" v3Map="AddressUse">
@@ -23253,7 +23253,7 @@
     </element>
     <element name="startPosition" minCardinality="1" maxCardinality="1">
       <type name="integer" fullName="integer"/>
-      <annotation shortDefinition="Start position of the sequence" definition="0-based location start position of the sequence."/>
+      <annotation shortDefinition="Start position of the sequence" definition="0-based location start position (inclusive) of the sequence."/>
     </element>
     <element name="endPosition" minCardinality="1" maxCardinality="1">
       <type name="integer" fullName="integer"/>
@@ -23299,26 +23299,30 @@
       <type name="code" fullName="code" bindingRef="SequenceType" fullBindingRef="Sequence.SequenceType"/>
       <annotation shortDefinition="dna | rna | aa" definition="Type of the sequence. E.g. DNA."/>
     </element>
-    <element name="referenceBases" minCardinality="0" maxCardinality="1">
+    <element name="referenceSequence" minCardinality="0" maxCardinality="1">
       <type name="string" fullName="string"/>
       <annotation shortDefinition="Reference bases of the sequence" definition="Reference bases of the sequence."/>
     </element>
-    <element name="observedBases" minCardinality="1" maxCardinality="1">
+    <element name="observedSequence" minCardinality="1" maxCardinality="1">
       <type name="string" fullName="string"/>
       <annotation shortDefinition="Observed bases of the sequence" definition="Observed bases of the sequence."/>
     </element>
     <element name="name" minCardinality="0" maxCardinality="-1">
-      <type name="string" fullName="string"/>
-      <annotation shortDefinition="Name of the sequence. i.e.  Rs6313" definition="Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text."/>
+      <type name="CodeableConcept" fullName="CodeableConcept"/>
+      <annotation shortDefinition="Name of the sequence. I.e.  rs6313" definition="Alterantive name of the sequence -- e.g. gene covered by the sequence, exome region in which the sequence is located, rsid of the sequence if it's a SNP, etc."/>
     </element>
     <invariant name="tla-1" human="Start and end position should be non-negative, and end position must be larger than start position." xpath="boolean(f:start/@value >= 0) and boolean(f:start/@value >=0) and boolean(f:end/@value > f:start/@value)"/>
     <invariant name="tla-2" human="CIGAR string should conform with extended-cigar's syntax." xpath="matches(f:cigar/@value, '\*|([0-9]+[MIDNSHPX=])+')"/>
     <baseType name="DomainResource" fullName="DomainResource"/>
     <example name="Example" description="Real world example of a DNA sequence" identity="example" type="Csv"/>
+    <example name="EGFR" description="Example of a sequence for gene EGFR" identity="example-egfr" type="Csv"/>
     <search name="coordinate" description="Search for sequences within a genomic region. For example region &quot;1:123-456&quot; can be translated into &quot;1$gte123$lt456&quot;">
       <composite>chromosome</composite>
       <composite>start</composite>
       <composite>end</composite>
+    </search>
+    <search name="species" description="Species of the orgism whom the sequence belong sto" type="token">
+      <path>Sequence.species</path>
     </search>
     <search name="patient" description="Patient to whom the sequence belongs to" type="reference">
       <path>Sequence.patient</path>
@@ -23330,7 +23334,7 @@
     <search name="start" description="Start position of the sequence" type="number">
       <path>Sequence.startPosition</path>
     </search>
-    <search name="name" description="Human readable name of the sequence." type="string">
+    <search name="name" description="Human readable name of the sequence." type="token">
       <path>Sequence.name</path>
     </search>
     <search name="end" description="End position of the sequence" type="number">

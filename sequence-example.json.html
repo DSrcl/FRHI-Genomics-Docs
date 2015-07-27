@@ -124,7 +124,7 @@
   &quot;id&quot;: &quot;example&quot;,
   &quot;text&quot;: {
     &quot;status&quot;: &quot;generated&quot;,
-    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: example&lt;/p&gt;&lt;p&gt;&lt;b&gt;chromosome&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;startPosition&lt;/b&gt;: 89909&lt;/p&gt;&lt;p&gt;&lt;b&gt;endPosition&lt;/b&gt;: 89910&lt;/p&gt;&lt;p&gt;&lt;b&gt;direction&lt;/b&gt;: forward&lt;/p&gt;&lt;p&gt;&lt;b&gt;sample&lt;/b&gt;: germline&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a&gt;Peter J. Chamlers&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;species&lt;/b&gt;: Homo sapiens &lt;span&gt;(Details : {SNOMED CT code '337915000' = '337915000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;genomeBuild&lt;/b&gt;: GRCh37&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: dna&lt;/p&gt;&lt;p&gt;&lt;b&gt;referenceBases&lt;/b&gt;: C&lt;/p&gt;&lt;p&gt;&lt;b&gt;observedBases&lt;/b&gt;: A&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: rs300789&lt;/p&gt;&lt;/div&gt;&quot;
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: example&lt;/p&gt;&lt;p&gt;&lt;b&gt;chromosome&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;startPosition&lt;/b&gt;: 89909&lt;/p&gt;&lt;p&gt;&lt;b&gt;endPosition&lt;/b&gt;: 89910&lt;/p&gt;&lt;p&gt;&lt;b&gt;direction&lt;/b&gt;: forward&lt;/p&gt;&lt;p&gt;&lt;b&gt;sample&lt;/b&gt;: germline&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a&gt;Peter J. Chamlers&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;species&lt;/b&gt;: Homo sapiens &lt;span&gt;(Details : {SNOMED CT code '337915000' = '337915000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;genomeBuild&lt;/b&gt;: GRCh37&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: dna&lt;/p&gt;&lt;p&gt;&lt;b&gt;referenceSequence&lt;/b&gt;: C&lt;/p&gt;&lt;p&gt;&lt;b&gt;observedSequence&lt;/b&gt;: A&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: rs300789 &lt;span&gt;(Details )&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   },
   &quot;chromosome&quot;: &quot;2&quot;,
   &quot;startPosition&quot;: 89909,
@@ -146,10 +146,12 @@
   },
   &quot;genomeBuild&quot;: &quot;GRCh37&quot;,
   &quot;type&quot;: &quot;dna&quot;,
-  &quot;referenceBases&quot;: &quot;C&quot;,
-  &quot;observedBases&quot;: &quot;A&quot;,
+  &quot;referenceSequence&quot;: &quot;C&quot;,
+  &quot;observedSequence&quot;: &quot;A&quot;,
   &quot;name&quot;: [
-    &quot;rs300789&quot;
+    {
+      &quot;text&quot;: &quot;rs300789&quot;
+    }
   ]
 }
 </pre>
@@ -176,7 +178,7 @@ of the specification.
 		<div class="container"><!-- container -->
 			<div class="inner-wrapper">
 				<p>
-        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Sun, Jul 26, 2015 15:55-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        © HL7.org 2011+. FHIR DSTU (v0.5.0-5997) generated on Mon, Jul 27, 2015 18:52-0400. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 

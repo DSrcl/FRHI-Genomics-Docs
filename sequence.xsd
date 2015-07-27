@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Jul 26, 2015 15:54-0400 for FHIR v0.5.0 
+  Generated on Mon, Jul 27, 2015 18:49-0400 for FHIR v0.5.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="1.0">
   <xs:include schemaLocation="fhir-base.xsd"/>
@@ -51,7 +51,7 @@
           </xs:element>
           <xs:element name="startPosition" minOccurs="1" maxOccurs="1" type="integer">
             <xs:annotation>
-              <xs:documentation xml:lang="en">0-based location start position of the sequence.</xs:documentation>
+              <xs:documentation xml:lang="en">0-based location start position (inclusive) of the sequence.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="endPosition" minOccurs="1" maxOccurs="1" type="integer">
@@ -104,19 +104,19 @@
               <xs:documentation xml:lang="en">Type of the sequence. E.g. DNA.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="referenceBases" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="referenceSequence" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Reference bases of the sequence.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="observedBases" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="observedSequence" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Observed bases of the sequence.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="string">
+          <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Human readable name of the sequence -- i.e. rs6313. This field makes the sequence searchable by text.</xs:documentation>
+              <xs:documentation xml:lang="en">Alterantive name of the sequence -- e.g. gene covered by the sequence, exome region in which the sequence is located, rsid of the sequence if it's a SNP, etc.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
