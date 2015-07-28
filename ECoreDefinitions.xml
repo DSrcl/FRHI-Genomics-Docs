@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fhir:Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fhir="http://hl7.org/fhir/definitions" date="2015-07-27T19:29:22.983-0400" version="0.5.0">
+<fhir:Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fhir="http://hl7.org/fhir/definitions" date="2015-07-28T16:38:26.691-0400" version="0.5.0">
   <type xsi:type="fhir:CompositeTypeDefn" name="Address" fullName="Address">
     <annotations shortDefinition="A postal address" definition="There is a variety of postal address formats defined around the world. This format defines a superset that is the basis for all addresses around the world." comment="Note: address is for postal addresses, not physical locations." requirements="Need to be able to record postal addresses, along with notes about their use." rimMapping="AD" v2Mapping="XAD"/>
     <binding id="2168" name="AddressType" fullName="Address.AddressType" binding="CodeList" reference="address-type" source="address.xml" description="" definition="The type of an address (physical / postal)" v2Map="" v3Map="AddressUse">
@@ -23273,7 +23273,7 @@
     </element>
     <element name="lab" minCardinality="0" maxCardinality="1">
       <type name="Reference" fullName="Reference">
-        <resourceParams>Procedure</resourceParams>
+        <resourceParams>DiagnosticOrder</resourceParams>
       </type>
       <annotation shortDefinition="Lab where the sequence is determined" definition="Lab where the sequence is determined."/>
     </element>
@@ -23345,7 +23345,7 @@
     </search>
     <search name="lab" description="Lab in which the sequence is determined" type="reference">
       <path>Sequence.lab</path>
-      <target>Procedure</target>
+      <target>DiagnosticOrder</target>
     </search>
     <search name="sample" description="Type of sample used to determine the sequence" type="token">
       <path>Sequence.sample</path>
