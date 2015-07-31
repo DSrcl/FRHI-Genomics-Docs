@@ -2,9 +2,6 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Sequence"/>
-  <meta>
-    <lastUpdated value="2015-07-28T17:31:19.511-04:00"/>
-  </meta>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -282,11 +279,11 @@
             <img src="data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="heirarchy"/>
             <img src="data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="heirarchy"/>
             <img src="data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gYBFzI0BrFQCwAAAERJREFUOMtj/P//PwMlgImBQjDwBrCcOnWKokBgYWBgYDCU+06W5i8MUggvnH/EOVJjAW4AuQHJ+O75LYqikXE0LzAAALePEntTkEoSAAAAAElFTkSuQmCC" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="heirarchy"/> 
-            <span title="Sequence.observedSequence : Observed bases of the sequence.">observedSequence</span>
+            <span title="Sequence.observedSequence : Observed bases of the sequence. Ploidy is represented by number of `observedSequence`.">observedSequence</span>
             <a name="Sequence.observedSequence"> </a>
           </td>
           <td style="vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px" class="heirarchy"/>
-          <td style="vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px" class="heirarchy">1..1</td>
+          <td style="vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px" class="heirarchy">1..*</td>
           <td style="vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px" class="heirarchy">
             <a href="datatypes.html#string">string</a>
           </td>
@@ -332,7 +329,7 @@
   </contact>
   <description value="Base StructureDefinition for Sequence Resource"/>
   <status value="draft"/>
-  <date value="2015-07-28T17:31:19-04:00"/>
+  <date value="2015-07-31T11:48:06-04:00"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
@@ -641,9 +638,9 @@
     <element>
       <path value="Sequence.observedSequence"/>
       <short value="Observed bases of the sequence"/>
-      <definition value="Observed bases of the sequence."/>
+      <definition value="Observed bases of the sequence. Ploidy is represented by number of `observedSequence`."/>
       <min value="1"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="string"/>
       </type>
@@ -845,9 +842,9 @@
     <element>
       <path value="Sequence.observedSequence"/>
       <short value="Observed bases of the sequence"/>
-      <definition value="Observed bases of the sequence."/>
+      <definition value="Observed bases of the sequence. Ploidy is represented by number of `observedSequence`."/>
       <min value="1"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="string"/>
       </type>

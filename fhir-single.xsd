@@ -27,7 +27,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Tue, Jul 28, 2015 17:31-0400 for FHIR v0.5.0 
+  Generated on Fri, Jul 31, 2015 11:48-0400 for FHIR v0.5.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="0.5.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -19320,9 +19320,9 @@ other observer (for example a relative or EMT), or any observation made about th
               <xs:documentation xml:lang="en">Reference bases of the sequence.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="observedSequence" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="observedSequence" minOccurs="1" maxOccurs="unbounded" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Observed bases of the sequence.</xs:documentation>
+              <xs:documentation xml:lang="en">Observed bases of the sequence. Ploidy is represented by number of `observedSequence`.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
